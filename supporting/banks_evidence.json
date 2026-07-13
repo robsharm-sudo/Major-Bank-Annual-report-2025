@@ -1,0 +1,240 @@
+[
+ {
+  "bank": "Commonwealth Bank of Australia (CBA)",
+  "report": "2025 Annual Report, year ended 30 June 2025 (Board approval 13 August 2025)",
+  "url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/2025-annual-report.pdf",
+  "findings": [
+   {
+    "topic": "FX line on face of income statement",
+    "answer": "No",
+    "tag": "VERBATIM",
+    "ref": "Income Statements, printed p.222",
+    "evidence": "Face line items: Interest income: Effective interest income / Other interest income / Interest expense / Net interest income / Net other operating income [Note 2.3] / Total net operating income before operating expenses and impairment / Operating expenses / Loan impairment expense / Net profit before income tax / Income tax expense / Net profit after income tax from continuing operations / Net loss after income tax from discontinued operations / Net profit after income tax. No foreign exchange line appears."
+   },
+   {
+    "topic": "Face line containing FX",
+    "answer": "Net other operating income (Note 2.3), Group FY25 $4,267m",
+    "tag": "VERBATIM label; containment PARAPHRASE from Note 2.3 policy",
+    "ref": "printed p.222 / Note 2.3 pp.239-240",
+    "evidence": "Trading FX within 'Net income from trading and non-trading financial instruments' ($1,262m); monetary-item revaluation FX within 'Other'."
+   },
+   {
+    "topic": "FX component in note",
+    "answer": "No separately labelled/quantified FX component in FY25 Note 2.3",
+    "tag": "VERBATIM policy text",
+    "ref": "Note 2.3, printed p.240",
+    "evidence": "Other income also includes the impact of foreign currency revaluations for foreign currency monetary assets and liabilities. These assets and liabilities are translated at the spot rate at the balance sheet date. Exchange differences arising upon settling or translating monetary items at different rates to those at which they were initially recognised or previously reported, are recognised in the Income Statement."
+   },
+   {
+    "topic": "AASB 121.52(a) quantified FX-in-P&L amount",
+    "answer": "Not located in FY25 report",
+    "tag": "UNVERIFIED (negative finding)",
+    "ref": "whole report searched",
+    "evidence": "Only qualitative policy plus foreign currency translation reserve (OCI) disclosures found."
+   },
+   {
+    "topic": "Statement of compliance (GPFS)",
+    "answer": "Yes — general purpose financial report, AAS + IFRS, Corporations Act 2001",
+    "tag": "VERBATIM",
+    "ref": "Note 1.1 Basis of accounting, printed p.229",
+    "evidence": "The Financial Report: is a general purpose financial report; has been prepared in accordance with the Australian Accounting Standards and Interpretation issued by the Australian Accounting Standards Board (AASB) and International Financial Reporting Standards (IFRS) as issued by the International Accounting Standards Board (IASB); has been prepared in accordance with the requirements of the Corporations Act 2001 (Cth)."
+   },
+   {
+    "topic": "AASB 18 status",
+    "answer": "Issued not yet effective; effective for Group from 1 July 2027; impact being assessed",
+    "tag": "VERBATIM",
+    "ref": "Note 1.1 Future accounting developments, printed p.230",
+    "evidence": "In June 2024, the AASB issued a new standard AASB 18 Presentation and Disclosure in Financial Statements, which will be effective for the Group from 1 July 2027 and is required to be applied retrospectively. AASB 18 will replace AASB 101 Presentation of Financial Statements... The Group continues to assess the impact of adopting AASB 18."
+   }
+  ]
+ },
+ {
+  "bank": "ANZ Group Holdings Limited (ANZ)",
+  "report": "ANZ 2025 Annual Report, year ended 30 September 2025 (authorised 7 November 2025)",
+  "url": "https://www.anz.com/content/dam/anzcom/shareholder/2025-annual-report/anz-2025-annual-report.pdf",
+  "findings": [
+   {
+    "topic": "FX line on face of income statement",
+    "answer": "No",
+    "tag": "VERBATIM",
+    "ref": "Income Statement, printed p.96",
+    "evidence": "Face line items: Interest income / Interest expense / Net interest income [Note 2] / Other operating income [Note 3] / Operating income / Operating expenses / Profit before credit impairment and income tax / Credit impairment (charge)/release / Profit before income tax / Income tax expense / Profit for the year. No FX line."
+   },
+   {
+    "topic": "Face line containing FX",
+    "answer": "Other operating income (Note 3), FY25 $4,225m",
+    "tag": "VERBATIM label",
+    "ref": "printed p.96",
+    "evidence": ""
+   },
+   {
+    "topic": "FX component in note",
+    "answer": "Quantified combined line: 'Net foreign exchange earnings and other financial instruments income' — 2025: $2,346m; 2024: $2,166m",
+    "tag": "VERBATIM",
+    "ref": "Note 3 Other operating income, printed p.105",
+    "evidence": "Footnote: Includes fair value movements (excluding realised and accrued interest) on derivatives not designated as accounting hedges entered into to manage interest rate and foreign exchange risk, ineffective portions of cash flow hedges, and fair value movements in financial assets and liabilities at FVTPL."
+   },
+   {
+    "topic": "AASB 121.52(a)",
+    "answer": "Partial — FX combined with other financial-instruments income; pure FX-only amount not disclosed",
+    "tag": "VERBATIM policy",
+    "ref": "Note 3 recognition & measurement, printed p.106",
+    "evidence": "We recognise the following as net foreign exchange earnings and other financial instruments income: exchange rate differences arising on the settlement of monetary items and translation differences on monetary items translated at rates different to those at which they were initially recognised or included in a previous financial report; fair value movements (excluding realised and accrued interest) on derivatives not designated as accounting hedges that we use to manage interest rate and foreign exchange risk on funding instruments; the ineffective portions of fair value hedges, cash flow hedges and net investment hedges; ... fair value movements on financial assets and financial liabilities at FVTPL or held for trading."
+   },
+   {
+    "topic": "Statement of compliance (GPFS)",
+    "answer": "Yes — explicitly 'general purpose (Tier 1)'",
+    "tag": "VERBATIM",
+    "ref": "Note 1, printed p.101",
+    "evidence": "This financial report is a general purpose (Tier 1) financial report prepared by a 'for profit' entity, in accordance with Australian Accounting Standards (AASs) and other authoritative pronouncements of the Australian Accounting Standards Board (AASB), the Corporations Act 2001, and International Financial Reporting Standards (IFRS) and interpretations published by the International Accounting Standards Board (IASB)."
+   },
+   {
+    "topic": "AASB 18 status",
+    "answer": "Effective for financial year beginning 1 October 2027; impact being assessed",
+    "tag": "VERBATIM",
+    "ref": "Note 1 Accounting standards not early adopted, printed p.103",
+    "evidence": "In June 2024, the AASB issued AASB 18 Presentation and Disclosure in Financial Statements (AASB 18) which updates and replaces requirements for the presentation and disclosure of information in financial statements. AASB 18 introduces new defined subtotals to be presented in the consolidated Income Statement, disclosure of management-defined performance measures and requirements for grouping of information. This standard will be effective for the financial year beginning 1 October 2027. We are currently assessing the impact of adopting this standard."
+   }
+  ]
+ },
+ {
+  "bank": "National Australia Bank Limited (NAB)",
+  "report": "Annual Report 2025, year ended 30 September 2025",
+  "url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+  "findings": [
+   {
+    "topic": "FX line on face of income statement",
+    "answer": "No",
+    "tag": "VERBATIM",
+    "ref": "Income statements, printed p.145",
+    "evidence": "Face line items: Interest income / Effective interest rate method / Fair value through profit or loss / Interest expense / Net interest income [Note 3] / Other operating income [Note 4] / Operating expenses / Credit impairment charge / Profit before income tax / Income tax expense / Net profit for the year from continuing operations / Net loss after tax for the year from discontinued operations / Net profit for the year. No FX line."
+   },
+   {
+    "topic": "Face line containing FX",
+    "answer": "Other operating income (Note 4), Group FY25 $3,469m",
+    "tag": "VERBATIM label",
+    "ref": "printed p.145",
+    "evidence": ""
+   },
+   {
+    "topic": "FX component in note",
+    "answer": "No FX-labelled component. Trading-book FX is inherently within 'Gains less losses on financial instruments at fair value — Trading instruments' $1,125m (2024: $2,097m). The words 'foreign exchange' do not appear in Note 4, and the report does not state where transactional FX on monetary items is presented (the only AASB 121 policy located concerns the OCI translation reserve, Note 28).",
+    "tag": "VERBATIM line label; containment INFERRED (trading-book FX only) — report is silent on transactional FX location",
+    "ref": "Note 4 Other operating income, printed pp.158-159",
+    "evidence": "Policy: Trading derivatives - Total fair value change including interest income or expense... Trading assets - All fair value changes except for interest income or expense, which is recognised within net interest income."
+   },
+   {
+    "topic": "AASB 121.52(a)",
+    "answer": "Not located — no quantified P&L FX amount; only OCI translation-reserve policy found",
+    "tag": "UNVERIFIED (negative finding)",
+    "ref": "Note 28 Reserves, printed p.214",
+    "evidence": "Exchange differences arising on translation of the Group's foreign operations, any offsetting gains or losses on net investment hedges and any associated tax effect are reflected in the foreign currency translation reserve."
+   },
+   {
+    "topic": "Statement of compliance (GPFS)",
+    "answer": "Yes",
+    "tag": "VERBATIM",
+    "ref": "Note 1 Basis of preparation, printed p.152",
+    "evidence": "This general purpose financial report has been prepared by a for-profit company, in accordance with the requirements of the Corporations Act 2001 (Cth) and accounting standards and interpretations issued by the Australian Accounting Standards Board (AASB). Compliance with standards and interpretations issued by the AASB ensures that this financial report complies with International Financial Reporting Standards (IFRS) as issued by the International Accounting Standards Board (IASB)."
+   },
+   {
+    "topic": "AASB 18 status",
+    "answer": "Effective for the Group from 1 October 2027; impact being assessed",
+    "tag": "VERBATIM",
+    "ref": "Note 1 Future accounting developments, printed p.153",
+    "evidence": "AASB 18 Presentation and Disclosure in Financial Statements (AASB 18) was issued in June 2024 and replaces AASB 101 Presentation of Financial Statements and will be effective for the Group from 1 October 2027. AASB 18 introduces enhanced presentation requirements in the financial statements, including new categories and subtotals in the income statement, disclosures about management-defined performance measures (i.e. cash earnings), and enhanced guidance on the grouping of information. The Group is currently assessing the impact of this new standard."
+   }
+  ]
+ },
+ {
+  "bank": "Westpac Banking Corporation (WBC)",
+  "report": "Westpac 2025 Annual Report, year ended 30 September 2025 (authorised 2 November 2025)",
+  "url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2025.pdf",
+  "findings": [
+   {
+    "topic": "FX line on face of income statement",
+    "answer": "No — but non-interest income is disaggregated on the face into Net fees / Net wealth management / Trading / Other; no FX-labelled line",
+    "tag": "VERBATIM",
+    "ref": "Income statements, printed p.104",
+    "evidence": "Face items include: Non-interest income / Net fees [Note 4] / Net wealth management [Note 4] / Trading [Note 4] / Other [Note 4] / Total non-interest income."
+   },
+   {
+    "topic": "Face line containing FX",
+    "answer": "'Trading' (within Non-interest income, Note 4), FY25 Consolidated $717m — trading-book FX inherently within this line; the Note 1(a)(v) policy says monetary-item FX is 'recognised in the income statement' without stating the line",
+    "tag": "VERBATIM label; containment INFERRED for trading-book FX; transactional FX line not stated in report",
+    "ref": "printed p.104; strategic review p.19 (unaudited): 'Trading and other income increased by 7% mainly due to higher foreign exchange income and favourable derivative value adjustments.'",
+    "evidence": ""
+   },
+   {
+    "topic": "FX component in note",
+    "answer": "No FX-labelled or FX-quantified component in Note 4",
+    "tag": "VERBATIM policy",
+    "ref": "Note 4 Non-interest income, printed pp.123-124",
+    "evidence": "Trading income: Realised and unrealised gains or losses from changes in the fair value of trading assets, liabilities and derivatives are recognised in the period in which they arise (except day one profits or losses which are deferred, refer to Note 22); and Net income related to Treasury's interest rate and liquidity management activities is included in net interest income."
+   },
+   {
+    "topic": "AASB 121.52(a)",
+    "answer": "Policy only; quantified amount not located",
+    "tag": "VERBATIM policy",
+    "ref": "Note 1(a)(v) Foreign currency translation, printed p.111",
+    "evidence": "Foreign currency transactions are translated into the functional currency of the relevant branch or subsidiary using the exchange rates prevailing at the dates of the transactions. Foreign exchange (FX) gains and losses resulting from the settlement of such transactions and from the translation at year end exchange rates of monetary assets and liabilities denominated in foreign currencies are recognised in the income statement, except when deferred in OCI for qualifying cash flow hedges and qualifying net investment hedges."
+   },
+   {
+    "topic": "Statement of compliance (GPFS)",
+    "answer": "Yes — GPFS; also cites ADI requirements under the Banking Act 1959",
+    "tag": "VERBATIM",
+    "ref": "Note 1(a)(i) Basis of accounting, printed p.110",
+    "evidence": "This financial report is a general purpose financial report prepared in accordance with: The requirements for an Authorised Deposit-taking Institution (ADI) under the Banking Act 1959 (as amended); Australian Accounting Standards (AAS) and Interpretations as issued by the Australian Accounting Standards Board (AASB); and The Corporations Act 2001. ... The financial report also complies with International Financial Reporting Accounting Standards (IFRS) as issued by the International Accounting Standards Board (IASB)."
+   },
+   {
+    "topic": "AASB 18 status",
+    "answer": "Effective for the 30 September 2028 year end unless early adopted [VERBATIM]; equivalently the FY beginning 1 October 2027 [INFERRED arithmetic]; impact being assessed",
+    "tag": "VERBATIM",
+    "ref": "Note 1(c) Future developments, printed p.112",
+    "evidence": "AASB 18 Presentation and Disclosure in Financial Statements (AASB 18) was issued on 7 June 2024 and will be effective for the 30 September 2028 year end unless early adopted. AASB 18 will replace AASB 101 Presentation of Financial Statements. This standard will not change the recognition and measurement of items in the financial statements, but will impact the presentation and disclosure in the financial statements, including: new categories and subtotals in the income statement to enhance comparability; enhancing the disclosure of management defined performance measures; and changes to the grouping of information in the financial statements to provide more useful information. Westpac is continuing to assess the impact of adopting AASB 18."
+   }
+  ]
+ },
+ {
+  "bank": "Macquarie Group Limited (MQG)",
+  "report": "Macquarie Group 2025 Annual Report, year ended 31 March 2025 (Financial Report authorised 9 May 2025)",
+  "url": "https://www.macquarie.com/assets/macq/investor/reports/2025/macquarie-group-fy25-annual-report.pdf",
+  "findings": [
+   {
+    "topic": "FX line on face of income statement",
+    "answer": "No — 'Net trading income/(loss)' ($5,370m) is a face line; FX is not",
+    "tag": "VERBATIM",
+    "ref": "Income statements, printed p.157",
+    "evidence": "Face line items: Interest income [Note 2] / Interest expense [Note 2] / Net interest income / Net trading income/(loss) [Note 2] / Net interest and trading income/(loss) / Fee and commission income [Note 2] / Share of net profits/(losses) from associates and joint ventures / Net credit impairment (charges)/reversals / Net other impairment (charges)/reversals / Net other operating income / Net operating income / ... / Operating profit before income tax."
+   },
+   {
+    "topic": "FX component in note",
+    "answer": "Net trading income split: Commodities $3,313m / Equities $1,466m / 'Interest rate, foreign exchange and credit products' $591m (2024: $712m) — FX combined with interest rate and credit",
+    "tag": "VERBATIM",
+    "ref": "Note 2 Operating profit before income tax, printed p.166",
+    "evidence": "Footnote: Includes gains/(losses) for Trading Assets, Derivatives and Other Financial Assets and Financial Liabilities held at fair value including any ineffectiveness recorded on hedging transactions."
+   },
+   {
+    "topic": "AASB 121.52(a)",
+    "answer": "Policy only; no standalone quantified FX amount",
+    "tag": "VERBATIM policy",
+    "ref": "Note 44(iii) Foreign currency translation, printed ~p.267",
+    "evidence": "Foreign exchange gains and losses arising from the settlement or translation of monetary items, or non-monetary items measured at fair value, are recognised in net trading income with one exception being where such monetary items are designated as hedging instruments in qualifying cash flow hedge or net investment hedge relationships. In such circumstances, the foreign exchange gains and losses may be deferred in OCI to the extent the hedge is effective."
+   },
+   {
+    "topic": "Statement of compliance (GPFS)",
+    "answer": "Yes",
+    "tag": "VERBATIM",
+    "ref": "Note 1 Basis of preparation, printed p.163",
+    "evidence": "This Financial Report is a General Purpose Financial Report which has been prepared in accordance with Australian Accounting Standards and the Corporations Act 2001 (Cth). Macquarie Group Limited is a for-profit company for the purposes of preparing this Financial Report. ... Compliance with Australian Accounting Standards ensures that this Financial Report complies with International Financial Reporting Standards (IFRS) as issued by the International Accounting Standards Board (IASB)."
+   },
+   {
+    "topic": "AASB 18 status",
+    "answer": "Effective for the Consolidated Entity from 1 April 2027, applied retrospectively; impact being assessed",
+    "tag": "VERBATIM",
+    "ref": "Note 1(v)(a), printed ~p.164",
+    "evidence": "In June 2024, the Australian Accounting Standards Board (AASB) issued AASB 18 Presentation and Disclosure in Financial Statements (AASB 18). This new standard will be effective for the Consolidated Entity from 1 April 2027 and is applied retrospectively. AASB 18 supersedes AASB 101 Presentation of Financial Statements. While it does not impact the recognition and measurement of items in the financial statements, it introduces new requirements for the presentation and disclosure of information in general purpose financial statements. The Consolidated Entity is continuing to assess the presentation and disclosure impact of adopting AASB 18."
+   }
+  ]
+ }
+]

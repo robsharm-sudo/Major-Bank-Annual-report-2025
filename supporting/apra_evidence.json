@@ -1,0 +1,93 @@
+[
+ {
+  "topic": "AASB 1053 — public accountability definition",
+  "tag": "VERBATIM",
+  "source": "AASB 1053 Application of Tiers of Australian Accounting Standards (compiled May 2022), Appendix A",
+  "url": "https://standards.aasb.gov.au/aasb-1053-may-2022",
+  "text": "Public accountability – an entity has public accountability if: (a) its debt or equity instruments are traded in a public market or it is in the process of issuing such instruments for trading in a public market (a domestic or foreign stock exchange or an over-the-counter market, including local and regional markets); or (b) it holds assets in a fiduciary capacity for a broad group of outsiders as one of its primary businesses."
+ },
+ {
+  "topic": "AASB 1053 — ADIs deemed publicly accountable",
+  "tag": "VERBATIM",
+  "source": "AASB 1053, Appendix B, paragraph B2",
+  "url": "https://standards.aasb.gov.au/aasb-1053-may-2022",
+  "text": "The following for-profit entities are deemed to have public accountability: (a) disclosing entities, even if their debt or equity instruments are not traded in a public market or are not in the process of being issued for trading in a public market; (b) co-operatives that issue debentures; (c) registered managed investment schemes; (d) superannuation plans regulated by the Australian Prudential Regulation Authority (APRA) other than Small APRA Funds as defined by APRA Superannuation Circular No. III.E.1 Regulation of Small APRA Funds, December 2000; and (e) authorised deposit-taking institutions."
+ },
+ {
+  "topic": "AASB 1053 — Tier 1 mandatory",
+  "tag": "VERBATIM",
+  "source": "AASB 1053, paragraph 11",
+  "url": "https://standards.aasb.gov.au/aasb-1053-may-2022",
+  "text": "The following types of entities shall prepare general purpose financial statements that comply with Tier 1 reporting requirements: (a) for-profit private sector entities that have public accountability and are required by legislation to prepare financial statements that comply with either Australian Accounting Standards or accounting standards; and (b) the Australian Government and State, Territory and Local Governments."
+ },
+ {
+  "topic": "SPFS removal",
+  "tag": "VERBATIM (extract)",
+  "source": "AASB 2020-2 Amendments to Australian Accounting Standards – Removal of Special Purpose Financial Statements for Certain For-Profit Private Sector Entities (F2020L00271), Objective",
+  "url": "https://www.legislation.gov.au/F2020L00271/asmade",
+  "text": "...to update the set of for-profit entities for which the reporting entity concept in SAC 1 is no longer relevant. Such entities are therefore not able to prepare special purpose financial statements when financial statements are required to comply with Australian Accounting Standards or when legislation requires financial statements to comply with accounting standards. [Applies to annual reporting periods beginning on or after 1 July 2021.]"
+ },
+ {
+  "topic": "ARS 330.0 — legal basis",
+  "tag": "VERBATIM",
+  "source": "Reporting Standard ARS 330.0 Statement of Financial Performance (FSCODA determination No. 25 of 2018; F2018L00370), Objective",
+  "url": "https://www.legislation.gov.au/F2018L00370/asmade",
+  "text": "This Reporting Standard is made under section 13 of the Financial Sector (Collection of Data) Act 2001 and outlines the overall requirements for the provision of information to APRA relating to an authorised deposit-taking institution's statement of financial performance."
+ },
+ {
+  "topic": "ARF 330.2 — existing single 'Foreign exchange' item (KEY PRECEDENT)",
+  "tag": "labels VERBATIM; form structure described, not quoted (verified by PDF-coordinate extraction, F2018L00367.pdf pp. 9-10). FRLI status as at 13 July 2026: In force (sunset 1 April 2028).",
+  "source": "Reporting Form ARF 330.2 Other Operating Income (Schedule to F2018L00367)",
+  "url": "https://www.legislation.gov.au/F2018L00367/asmade",
+  "text": "Form ARF 330.2 income items: Item 2 'Trading Income' (sub-items 2.1 'Trading securities revenue'; 2.2 'Unrealised fair value gains and (losses) from trading book derivatives'; 2.3 'Net Realised profit/(loss) on sale of trading book securities' (2.3.1 Physical; 2.3.2 Derivatives); 2.4 'Other'); Item 3 'Unrealised fair value gains and (losses) from banking book derivatives'; Item 4 'Net Realised Profit/(Loss) on Sale of Investment Securities'; Item 5 'Foreign exchange' (a single, undissected income item)."
+ },
+ {
+  "topic": "ARF 330.2 instructions — AAS default (recommendatory form)",
+  "tag": "VERBATIM",
+  "source": "ARF 330.2 Instructions (Schedule to F2018L00367), Basis of preparation",
+  "url": "https://www.legislation.gov.au/F2018L00367/asmade",
+  "text": "In completing this form, unless otherwise specifically stated, institutions are recommended to follow the Australian accounting standards regarding the: interpretation/definition of items of income and expense; measurement basis of items of income and expense; and netting of items of income and expense."
+ },
+ {
+  "topic": "ARF 730.0 instructions — AAS default (mandatory form)",
+  "tag": "VERBATIM",
+  "source": "ARF 730.0 Instructions (Schedule to ARS 730.0, FSCODA determination No. 33 of 2021; F2021L01101), Values",
+  "url": "https://www.legislation.gov.au/F2021L01101/asmade",
+  "text": "Unless otherwise specifically stated, report all items on ARF 730.0 in accordance with Australian Accounting Standards regarding the measurement of financial performance, including: interpretation/definition of items of income and expense; measurement basis of items of income and expense; and netting of items of income and expense. [Followed by:] Convert amounts denominated in foreign currency to AUD in accordance with AASB 121 The Effects of Changes in Foreign Exchange Rates."
+ },
+ {
+  "topic": "ARF 730.0 — no explicit FX item; worked example of express departure",
+  "tag": "VERBATIM",
+  "source": "ARF 730.0 (F2021L01101): non-interest income items 2.1.1–2.1.6; Instructions, Taxation",
+  "url": "https://www.legislation.gov.au/F2021L01101/asmade",
+  "text": "Non-interest income items: 2.1.1 Rental income on operating leases; 2.1.2 Fee and commission income; 2.1.3 Dividends income; 2.1.4 Holding gains / losses on assets and liabilities; 2.1.5 Related party management fee income; 2.1.6 Other non-interest income. Express-departure example: 'Report the Major Bank Levy at item 8.1.9. Other operating expenses. This treatment is not in line with statutory accounting treatment.'"
+ },
+ {
+  "topic": "ARS 701.0 — definition covering FX/trading results in EFS",
+  "tag": "VERBATIM",
+  "source": "Reporting Standard ARS 701.0 ABS/RBA Definitions for the EFS Collection (July 2019)",
+  "url": "https://www.apra.gov.au/sites/default/files/reporting_standard_ars_701.0_abs-rba_definitions_for_the_efs_collection_-_clean.pdf",
+  "text": "Holding gains / losses on assets and liabilities — Refers to realised and unrealised gains / losses on assets and liabilities. Realised gains / losses on assets and liabilities refer to changes in the value of assets and liabilities as a result of closing or disposal of assets and liabilities. Unrealised gains / losses on assets and liabilities refer to changes in the value of assets and liabilities as a result of changes in the market value of those assets and liabilities."
+ },
+ {
+  "topic": "APRA Connect taxonomy context",
+  "tag": "VERBATIM (page text)",
+  "source": "APRA Connect taxonomy artefacts page",
+  "url": "https://www.apra.gov.au/apra-connect-taxonomy-artefacts",
+  "text": "APRA Connect taxonomy artefacts are provided to help entities prepare data for submission on APRA Connect. ... The artefacts include validations, reporting taxonomy and XSD files."
+ },
+ {
+  "topic": "IFRS 18 equivalence",
+  "tag": "VERBATIM + verified paraphrase",
+  "source": "AASB 18 (F2024L00708), Comparison with IFRS 18",
+  "url": "https://www.legislation.gov.au/F2024L00708/asmade",
+  "text": "AASB 18 Presentation and Disclosure in Financial Statements incorporates IFRS 18 Presentation and Disclosure in Financial Statements issued by the International Accounting Standards Board (IASB). ... For-profit entities complying with AASB 18 also comply with IFRS 18. [Paraphrase, locally verified: no Aus paragraphs exist in the B65–B68 region; paragraph numbers B65–B68 are identical in IFRS 18; AASB 18 reads 'applying AASB 121' where IFRS 18 reads 'applying IAS 21'.]"
+ },
+ {
+  "topic": "IFRIC April 2026 agenda decision (persuasive authority)",
+  "tag": "PARAPHRASE (lead)",
+  "source": "IFRS Interpretations Committee, Classification of a Foreign Exchange Difference from an Intragroup Monetary Liability (or Asset) (IFRS 18), April 2026",
+  "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2026/classification-of-fx-diff-from-intragroup-monetary-liability-or-asset-apr-26.pdf",
+  "text": "Addresses B65/B68 application to intragroup FX in consolidated accounts; where classification per B65 would involve undue cost or effort, the exchange difference is classified in the operating category."
+ }
+]

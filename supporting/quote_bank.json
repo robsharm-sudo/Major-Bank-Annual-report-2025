@@ -1,0 +1,392 @@
+[
+ {
+  "id": "Q01",
+  "source": "AASB 18",
+  "para": "47",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 13,
+  "role": "Establishes the five mandatory classification categories in the statement of profit or loss.",
+  "text": "An entity shall classify income and expenses included in the statement of profit or loss in one of five categories (see paragraph B29): (a) the operating category (see paragraph 52); (b) the investing category (see paragraphs 53–58); (c) the financing category (see paragraphs 59–66); (d) the income taxes category (see paragraph 67); and (e) the discontinued operations category (see paragraph 68)."
+ },
+ {
+  "id": "Q02",
+  "source": "AASB 18",
+  "para": "52",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 14,
+  "role": "The operating category is the residual CATEGORY. There is no residual line item.",
+  "text": "An entity shall classify in the operating category all income and expenses included in the statement of profit or loss that are not classified in (see paragraph B42): (a) the investing category; (b) the financing category; (c) the income taxes category; or (d) the discontinued operations category."
+ },
+ {
+  "id": "Q03",
+  "source": "AASB 18",
+  "para": "B65",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 38,
+  "role": "Core FX rule: FX differences follow the classification of the item that gave rise to them.",
+  "text": "To apply paragraph 47, an entity shall classify foreign exchange differences included in the statement of profit or loss applying AASB 121 in the same category as the income and expenses from the items that gave rise to the foreign exchange differences, unless doing so would involve undue cost or effort (see paragraph B68)."
+ },
+ {
+  "id": "Q04",
+  "source": "AASB 18",
+  "para": "B66",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 38,
+  "role": "Worked examples; confirms bank-specific outcome via paragraph 65.",
+  "text": "For example, an entity classifies foreign exchange differences on: (a) a receivable described in paragraph B48(b) denominated in a foreign currency, in the same category as the income and expenses from that asset – that is, in the operating category; and (b) a debt instrument that is a liability described in paragraph B51(a) denominated in a foreign currency, in the same category as the income and expenses on that liability – that is, in the financing category (unless the entity provides financing to customers as a main business activity and classifies the income and expenses from the liability in the operating category applying paragraph 65)."
+ },
+ {
+  "id": "Q05",
+  "source": "AASB 18",
+  "para": "B67 (operative sentences; paragraph opens with an illustrative example)",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 38,
+  "role": "Mixed transactions: judgement subject to B68; PROHIBITION on allocating (splitting/plugging) a single FX difference between categories; consistency required for similar liabilities.",
+  "text": "In such cases, subject to paragraph B68, an entity shall use its judgement to determine whether the foreign exchange difference relates to the amount classified in the financing category – and classify it in that category – or whether it relates to the amount classified in another category – and classify it in that category. An entity shall not allocate between categories a foreign exchange difference arising on a liability from a transaction that does not involve only the raising of finance. In making its judgements about how to classify the foreign exchange differences, an entity need not classify in the same category the foreign exchange differences on all such liabilities. However, an entity shall classify in the same category foreign exchange differences on similar liabilities."
+ },
+ {
+  "id": "Q06",
+  "source": "AASB 18",
+  "para": "B68",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 38,
+  "role": "Undue cost or effort relief: affected FX goes to operating; assessment is item-by-item, not a blanket policy.",
+  "text": "If applying the requirements in paragraphs B65 and B67 would involve undue cost or effort, an entity shall instead classify the affected foreign exchange differences in the operating category. An entity shall assess whether classifying foreign exchange differences as described in paragraphs B65 and B67 involves undue cost or effort for each item that gives rise to foreign exchange differences. The assessment is specific to the facts and circumstances related to each item. If the same facts and circumstances relate to a number of items, an entity could apply the same assessment to each of the items."
+ },
+ {
+  "id": "Q07",
+  "source": "AASB 18",
+  "para": "67",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 16,
+  "role": "FX related to income tax items belongs to the income taxes category.",
+  "text": "An entity shall classify in the income taxes category tax expense or tax income that is included in the statement of profit or loss applying AASB 112 Income Taxes, and any related foreign exchange differences (see paragraphs B65–B68)."
+ },
+ {
+  "id": "Q08",
+  "source": "AASB 18",
+  "para": "65 (chapeau and (a)(i))",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 16,
+  "role": "Bank-specific rule: customer-financing liabilities' income/expenses (and, via B65, their FX) classify to operating.",
+  "text": "If an entity provides financing to customers as a main business activity, it shall classify income and expenses (see paragraph B59): (a) from the liabilities specified in paragraph 59(a) (that is, liabilities that arise from transactions that involve only the raising of finance): (i) if the liabilities relate to providing financing to customers – in the operating category."
+ },
+ {
+  "id": "Q09",
+  "source": "AASB 18",
+  "para": "41(a)",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 13,
+  "role": "Aggregation principle (a): line items must be built on shared characteristics.",
+  "text": "classify and aggregate assets, liabilities, equity, income, expenses or cash flows into items based on shared characteristics;"
+ },
+ {
+  "id": "Q09b",
+  "source": "AASB 18",
+  "para": "41(e)",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 13,
+  "role": "Aggregation must not obscure material information.",
+  "text": "ensure that aggregation and disaggregation in the financial statements do not obscure material information (see paragraph B3)."
+ },
+ {
+  "id": "Q10",
+  "source": "AASB 18",
+  "para": "43 (first sentence)",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 13,
+  "role": "Faithful labelling requirement for any FX line item.",
+  "text": "An entity shall label and describe items presented in the primary financial statements (that is, totals, subtotals and line items) or items disclosed in the notes in a way that faithfully represents the characteristics of the item (see paragraphs B24–B26)."
+ },
+ {
+  "id": "Q11",
+  "source": "AASB 18",
+  "para": "44",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 13,
+  "role": "General offsetting prohibition; gateway to B28.",
+  "text": "An entity shall not offset assets and liabilities or income and expenses, unless required or permitted by an Australian Accounting Standard (see paragraphs B27–B28)."
+ },
+ {
+  "id": "Q12",
+  "source": "AASB 18",
+  "para": "B28",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 32,
+  "role": "Net FX presentation is permitted ONLY within the same category.",
+  "text": "In addition, an entity presents on a net basis gains and losses arising from a group of similar transactions – for example, foreign exchange gains and losses or gains and losses arising on financial instruments held for trading that are included in the same category of the statement(s) of financial performance applying paragraphs 47–68. However, an entity shall disclose such gains and losses separately in the notes if doing so provides material information."
+ },
+ {
+  "id": "Q13",
+  "source": "AASB 18",
+  "para": "B25 (first sentence)",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 31,
+  "role": "Constraint on residual-style 'other' labelling.",
+  "text": "An entity shall label items presented or disclosed as ‘other’ only if it cannot find a more informative label."
+ },
+ {
+  "id": "Q14",
+  "source": "AASB 18",
+  "para": "B42 (final sentence)",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 33,
+  "role": "Operating category as residual category, including volatile items.",
+  "text": "It includes all income and expenses that are not classified by an entity in the other categories applying paragraphs 53–68, including such income or expenses that are volatile or non-recurring."
+ },
+ {
+  "id": "Q15",
+  "source": "AASB 121",
+  "para": "28",
+  "verified": true,
+  "verify_method": "exact (space-insensitive; PDF text layer has mid-word spaces)",
+  "pdf_page": "9 (spans page break)",
+  "role": "Recognition rule producing the FX differences that AASB 18 B65 classifies.",
+  "text": "Exchange differences arising on the settlement of monetary items or on translating monetary items at rates different from those at which they were translated on initial recognition during the period or in previous financial statements shall be recognised in profit or loss in the period in which they arise, except as described in paragraph 32."
+ },
+ {
+  "id": "Q16",
+  "source": "AASB 121",
+  "para": "52(a)",
+  "verified": true,
+  "verify_method": "exact (space-insensitive; PDF text layer has mid-word spaces)",
+  "pdf_page": null,
+  "role": "Required NOTE disclosure of the P&L FX amount — the natural anchor for a single FX data element in a taxonomy.",
+  "text": "the amount of exchange differences recognised in profit or loss except for those arising on financial instruments measured at fair value through profit or loss in accordance with AASB 9; and"
+ },
+ {
+  "id": "Q17",
+  "source": "AASB 18",
+  "para": "1",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 8,
+  "role": "AASB 18 applies to general purpose financial statements.",
+  "text": "This Standard sets out requirements for the presentation and disclosure of information in general purpose financial statements (financial statements) to help ensure they provide relevant information that faithfully represents an entity’s assets, liabilities, equity, income and expenses."
+ },
+ {
+  "id": "Q18",
+  "source": "AASB 18",
+  "para": "49",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 14,
+  "role": "Gateway to the bank-specific classification regime.",
+  "text": "To classify income and expenses in the operating, investing and financing categories, an entity shall assess whether it has a specified main business activity – that is a main business activity of (see paragraphs B30– B41): (a) investing in particular types of assets, referred to hereafter as investing in assets (see paragraph 53); or (b) providing financing to customers."
+ },
+ {
+  "id": "Q19",
+  "source": "AASB 18",
+  "para": "C1 (Appendix C)",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": 51,
+  "role": "Effective date: annual reporting periods beginning on or after 1 January 2027 (banks/insurers; AusC1.1 deferral applies only to NFP and superannuation entities).",
+  "text": "An entity shall apply this Standard for annual reporting periods beginning on or after 1 January 2027. Earlier application is permitted. If an entity applies this Standard for an earlier period, it shall disclose that fact in the notes."
+ },
+ {
+  "id": "Q20",
+  "source": "AASB 1053 (Compilation, May 2022)",
+  "para": "Appendix A (Defined terms)",
+  "verified": true,
+  "verify_method": "extracted from AASB standards portal HTML (whitespace-normalised)",
+  "url": "https://standards.aasb.gov.au/aasb-1053-may-2022",
+  "role": "Definition of public accountability.",
+  "text": "Public accountability – an entity has public accountability if: (a) its debt or equity instruments are traded in a public market or it is in the process of issuing such instruments for trading in a public market (a domestic or foreign stock exchange or an over-the-counter market, including local and regional markets); or (b) it holds assets in a fiduciary capacity for a broad group of outsiders as one of its primary businesses."
+ },
+ {
+  "id": "Q21",
+  "source": "AASB 1053 (Compilation, May 2022)",
+  "para": "Appendix B, B2",
+  "verified": true,
+  "verify_method": "exact (space-insensitive; source text layer has mid-word spaces)",
+  "url": "https://standards.aasb.gov.au/aasb-1053-may-2022",
+  "role": "ADIs deemed publicly accountable; Appendix B is an integral part of AASB 1053.",
+  "text": "The following for-profit entities are deemed to have public accountability: (a) disclosing entities, even if their debt or equity instruments are not traded in a public market or are not in the process of being issued for trading in a public market; (b) co-operatives that issue debentures; (c) registered managed investment schemes; (d) superannuation plans regulated by the Australian Prudential Regulation Authority (APRA) other than Small APRA Funds as defined by APRA Superannuation Circular No. III.E.1 Regulation of Small APRA Funds, December 2000; and (e) authorised deposit-taking institutions."
+ },
+ {
+  "id": "Q22",
+  "source": "AASB 1053 (Compilation, May 2022)",
+  "para": "11",
+  "verified": true,
+  "verify_method": "extracted from AASB standards portal HTML (whitespace-normalised)",
+  "url": "https://standards.aasb.gov.au/aasb-1053-may-2022",
+  "role": "Tier 1 mandatory for publicly accountable for-profit private sector entities lodging under legislation.",
+  "text": "The following types of entities shall prepare general purpose financial statements that comply with Tier 1 reporting requirements: (a) for-profit private sector entities that have public accountability and are required by legislation to prepare financial statements that comply with either Australian Accounting Standards or accounting standards; and (b) the Australian Government and State, Territory and Local Governments."
+ },
+ {
+  "id": "Q23",
+  "source": "AASB 2020-2 (authorised version F2020L00271)",
+  "para": "Objective (extract)",
+  "verified": true,
+  "verify_method": "pypdf extraction of authorised PDF (whitespace-normalised; PDF text layer has mid-word spaces)",
+  "url": "https://aasb.gov.au/admin/file/content105/c9/AASB_2020-2_03-20.pdf",
+  "role": "SPFS removed for certain for-profit private sector entities.",
+  "text": "to update the set of for-profit entities for which the reporting entity concept in SAC 1 is no longer relevant. Such entities are therefore not able to prepare special purpose financial statements when financial statements are required to comply with Australian Accounting Standards or when legislation requires financial statements to comply with accounting standards."
+ },
+ {
+  "id": "Q24",
+  "source": "Reporting Standard ARS 330.0 (FSCODA determination No. 25 of 2018, F2018L00370)",
+  "para": "Objective of this Reporting Standard",
+  "verified": true,
+  "verify_method": "exact (space-insensitive; source text layer has mid-word spaces)",
+  "url": "https://www.legislation.gov.au/F2018L00370/asmade",
+  "role": "APRA's ADI P&L collection; made under FSCODA s 13.",
+  "text": "This Reporting Standard is made under section 13 of the Financial Sector (Collection of Data) Act 2001 and outlines the overall requirements for the provision of information to APRA relating to an authorised deposit-taking institution's statement of financial performance."
+ },
+ {
+  "id": "Q25",
+  "source": "Reporting Form ARF 330.2 Other Operating Income (in Reporting Standard ARS 330.2, F2018L00367)",
+  "para": "Form item labels",
+  "verified": true,
+  "verify_method": "labels verbatim; form structure described, not quoted (verified by PDF-coordinate extraction of F2018L00367.pdf pp. 9-10)",
+  "url": "https://www.legislation.gov.au/F2018L00367/asmade",
+  "role": "KEY PRECEDENT: APRA's in-force ADI collection already defines a single, undissected 'Foreign exchange' income item (item 5) as a regulatory data concept under FSCODA s 13.",
+  "text": "Form ARF 330.2 income items: Item 2 'Trading Income' (sub-items 2.1 'Trading securities revenue'; 2.2 'Unrealised fair value gains and (losses) from trading book derivatives'; 2.3 'Net Realised profit/(loss) on sale of trading book securities' (2.3.1 Physical; 2.3.2 Derivatives); 2.4 'Other'); Item 3 'Unrealised fair value gains and (losses) from banking book derivatives'; Item 4 'Net Realised Profit/(Loss) on Sale of Investment Securities'; Item 5 'Foreign exchange'."
+ },
+ {
+  "id": "Q26",
+  "source": "ARF 330.2 Instructions (Schedule to F2018L00367)",
+  "para": "Basis of preparation",
+  "verified": true,
+  "verify_method": "pypdf extraction of authorised PDF (whitespace-normalised); bulleted list run on",
+  "url": "https://www.legislation.gov.au/F2018L00367/asmade",
+  "role": "330-series default to AAS is 'recommended', subject to 'unless otherwise specifically stated'.",
+  "text": "In completing this form, unless otherwise specifically stated, institutions are recommended to follow the Australian accounting standards regarding the: interpretation/definition of items of income and expense; measurement basis of items of income and expense; and netting of items of income and expense."
+ },
+ {
+  "id": "Q27",
+  "source": "ARF 730.0 Instructions (Schedule to FSCODA determination No. 33 of 2021, F2021L01101) - Reporting Standard ARS 730.0 ABS/RBA Statement of Financial Performance",
+  "para": "Values",
+  "verified": true,
+  "verify_method": "pypdf extraction of authorised PDF (whitespace-normalised; PDF text layer has mid-word spaces); bulleted list run on",
+  "url": "https://www.legislation.gov.au/F2021L01101/asmade",
+  "role": "EFS P&L form: mandatory AAS default with 'unless otherwise specifically stated' carve-out; AASB 121 conversion.",
+  "text": "Unless otherwise specifically stated, report all items on ARF 730.0 in accordance with Australian Accounting Standards regarding the measurement of financial performance, including: interpretation/definition of items of income and expense; measurement basis of items of income and expense; and netting of items of income and expense. Convert amounts denominated in foreign currency to AUD in accordance with AASB 121 The Effects of Changes in Foreign Exchange Rates."
+ },
+ {
+  "id": "Q28",
+  "source": "ARF 730.0 Instructions (F2021L01101)",
+  "para": "Taxation",
+  "verified": true,
+  "verify_method": "pypdf extraction of authorised PDF (whitespace-normalised)",
+  "url": "https://www.legislation.gov.au/F2021L01101/asmade",
+  "role": "Example of an explicit departure from accounting treatment in an APRA form.",
+  "text": "Report the Major Bank Levy at item 8.1.9. Other operating expenses. This treatment is not in line with statutory accounting treatment."
+ },
+ {
+  "id": "Q29",
+  "source": "Reporting Standard ARS 701.0 ABS/RBA Definitions for the EFS Collection (July 2019)",
+  "para": "Definition: Holding gains / losses on assets and liabilities",
+  "verified": true,
+  "verify_method": "pypdf extraction of APRA-published PDF (whitespace-normalised)",
+  "url": "https://www.apra.gov.au/sites/default/files/reporting_standard_ars_701.0_abs-rba_definitions_for_the_efs_collection_-_clean.pdf",
+  "role": "EFS P&L has no explicit FX item; FX/trading gains sit in 'holding gains / losses' (ARF 730.0 item 2.1.4).",
+  "text": "Refers to realised and unrealised gains / losses on assets and liabilities. Realised gains / losses on assets and liabilities refer to changes in the value of assets and liabilities as a result of closing or disposal of assets and liabilities. Unrealised gains / losses on assets and liabilities refer to changes in the value of assets and liabilities as a result of changes in the market value of those assets and liabilities."
+ },
+ {
+  "id": "Q30",
+  "source": "AASB 18 (authorised version F2024L00708)",
+  "para": "Comparison with IFRS 18",
+  "verified": true,
+  "verify_method": "pypdf extraction of authorised PDF (whitespace-normalised)",
+  "url": "https://www.legislation.gov.au/F2024L00708/asmade",
+  "role": "IFRS 18 / AASB 18 paragraph equivalence basis.",
+  "text": "AASB 18 Presentation and Disclosure in Financial Statements incorporates IFRS 18 Presentation and Disclosure in Financial Statements issued by the International Accounting Standards Board (IASB). Australian-specific paragraphs (which are not included in IFRS 18) are identified with the prefix “Aus”. Paragraphs that apply only to not-for-profit entities begin by identifying their limited applicability. ... For-profit entities complying with AASB 18 also comply with IFRS 18."
+ },
+ {
+  "id": "Q31",
+  "source": "AASB 18",
+  "para": "75 (chapeau and (a))",
+  "text": "An entity shall present in the statement of profit or loss line items for (see paragraph B77): (a) amounts required by this Standard, namely: (i) revenue, presenting separately the line items described in (b)(i) and (c)(i); (ii) operating expenses, presenting separately line items as required by paragraphs 78 and 82(a); (iii) share of the profit or loss of associates and joint ventures accounted for using the equity method; (iv) income tax expense or income; and (v) a single amount for the total of discontinued operations (see AASB 5);",
+  "role": "Mandatory line items: NO foreign exchange line item is required on the face (paragraph 75(b) AASB 9 items and 75(c) AASB 17 items also contain no FX line).",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": null
+ },
+ {
+  "id": "Q32",
+  "source": "AASB 18",
+  "para": "65 (full)",
+  "text": "If an entity provides financing to customers as a main business activity, it shall classify income and expenses (see paragraph B59): (a) from the liabilities specified in paragraph 59(a) (that is, liabilities that arise from transactions that involve only the raising of finance): (i) if the liabilities relate to providing financing to customers – in the operating category. (ii) if the liabilities do not relate to providing financing to customers – by applying an accounting policy choice to classify the income and expenses specified in paragraph 60 in the operating category or the financing category. The choice of accounting policy shall be consistent with that made by the entity for the purpose of the related accounting policy for income and expenses from cash and cash equivalents in paragraph 56(b)(ii). (b) from the liabilities specified in paragraph 59(b) (that is, liabilities that arise from transactions that do not involve only the raising of finance): (i) if the income and expenses are specified in paragraph 61 – in the financing category; or (ii) if the income and expenses are not specified in paragraph 61 – in the operating category.",
+  "role": "Bank rule IN FULL: 65(a)(ii) contains an accounting policy CHOICE (operating or financing) for non-customer-financing liabilities — a bank electing financing has financing-category FX on that funding (via B65), defeating a single-operating-line outcome absent B68 relief or immateriality. Paragraph 66 fallback: cannot distinguish → all operating.",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": null
+ },
+ {
+  "id": "Q33",
+  "source": "AASB 18",
+  "para": "19",
+  "text": "Some Australian Accounting Standards specify information that is required to be presented in the primary financial statements or disclosed in the notes. An entity need not provide a specific presentation or disclosure required by Australian Accounting Standards if the information resulting from that presentation or disclosure is not material. This is the case even if Australian Accounting Standards contain a list of specific requirements or describe them as minimum requirements.",
+  "role": "Materiality route: immaterial cross-category FX does not disturb a single-category net FX presentation (see also paragraph 15: 'An entity need only present or disclose material information').",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": null
+ },
+ {
+  "id": "Q34",
+  "source": "AASB 18",
+  "para": "B76",
+  "text": "The requirements in paragraphs B70–B75 specify only how to classify income and expenses into categories of the statement of profit or loss. They do not prescribe the line item (or line items) in which to include such income and expenses, nor do they override the requirements in other Australian Accounting Standards.",
+  "role": "Category vs line item distinction stated by the Standard itself (for derivative/hedging gains and losses).",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": null
+ },
+ {
+  "id": "Q35",
+  "source": "AASB 18",
+  "para": "B77 (first sentence)",
+  "text": "An entity may be required to present a line item listed in paragraph 75, or specified in another Australian Accounting Standard, in more than one of the categories listed in paragraph 47.",
+  "role": "One-line-per-category presentation is AASB 18-native: the same line item can recur in more than one category.",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": null
+ },
+ {
+  "id": "Q36",
+  "source": "AASB 121",
+  "para": "3(a)",
+  "text": "in accounting for transactions and balances in foreign currencies, except for those derivative transactions and balances that are within the scope of AASB 9 Financial Instruments;",
+  "role": "FX derivatives are OUTSIDE AASB 121 entirely — their results are AASB 9 gains/losses classified under AASB 18 B70–B76, not B65; critical to defining any FX data element.",
+  "verified": true,
+  "verify_method": "exact (whitespace-normalised)",
+  "pdf_page": null
+ },
+ {
+  "id": "Q37",
+  "source": "AASB 121",
+  "para": "30 (second sentence)",
+  "text": "Conversely, when a gain or loss on a non-monetary item is recognised in profit or loss, any exchange component of that gain or loss shall be recognised in profit or loss.",
+  "role": "P&L FX also arises under AASB 121 paragraph 30 (non-monetary items), not only paragraph 28 — an FX data element anchored to paragraph 28 alone under-captures.",
+  "verified": true,
+  "verify_method": "exact (space-insensitive; PDF text layer has mid-word spaces)",
+  "pdf_page": null
+ },
+ {
+  "id": "Q38",
+  "source": "AASB 112 (as amended by AASB 18, Appendix D)",
+  "para": "78 (amended text)",
+  "text": "AASB 121 requires certain exchange differences to be recognised as income or expense but does not specify where such differences should be presented in the statement of comprehensive income. If exchange differences on foreign currency denominated assets and liabilities arising from income taxes are recognised in profit or loss in accordance with AASB 121, such differences shall be classified applying the requirements in paragraph 67 of AASB 18 Presentation and Disclosure in Financial Statements.",
+  "role": "Corroborates the tax-FX reading: exchange differences on tax-related FCY assets/liabilities are classified under AASB 18 paragraph 67 (income taxes category, subject to B65–B68).",
+  "verified": true,
+  "verify_method": "amended text reconstructed from the marked-up Appendix D of AASB 18 (F2024L00708), in which new text is underlined and deleted text struck through; reconstruction verified word-by-word against the marked-up source — not a contiguous verbatim extraction",
+  "pdf_page": null
+ }
+]
