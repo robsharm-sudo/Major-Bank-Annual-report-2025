@@ -39,8 +39,8 @@ REQUIREMENTS = [
             "credit, markets, operations, compliance and human resources — and across all purposes, "
             "whether or not the model produces a regulatory number.",
         ],
-        "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "APRA-CPS220", "ECB-GIM"],
-        "principles": "OCC 2011-12 / SR 11-7 §III; PRA SS1/23 Principle 1; OSFI E-23 enterprise-wide MRM",
+        "sources": ["US-MRM-2026", "PRA-SS1-23", "OSFI-E23", "APRA-CPS220", "ECB-GIM"],
+        "principles": "US interagency guidance 2026 §III; PRA SS1/23 Principle 1; OSFI E-23 enterprise-wide MRM",
         "provenance": "Extracted",
         "rationale": (
             "Every comparator applies model risk management on an enterprise basis and none permits "
@@ -62,10 +62,12 @@ REQUIREMENTS = [
             "from decisions based on incorrect or misused model outputs."
         ),
         "guidance": [
-            "This definition follows the long-established three-part formulation — an information input "
-            "component, a processing component and a reporting component — and is deliberately function-based "
-            "rather than technology-based. Whether the processing is a regression, a decision tree, a "
-            "deterministic actuarial formula or a neural network does not change the analysis.",
+            "The definition is deliberately function-based rather than technology-based. Whether the "
+            "processing is a regression, a decision tree, a deterministic actuarial formula or a neural "
+            "network does not change the analysis. It is also deliberately broad: it captures "
+            "deterministic actuarial and financial calculations, which the current United States "
+            "guidance excludes, because in an Australian cross-industry context such calculations "
+            "determine insurance liabilities and unit prices and carry model risk of the first order.",
             "Model risk has two principal sources: a model may have fundamental errors and produce inaccurate "
             "outputs relative to its design objective and intended use; or a model may be used incorrectly or "
             "inappropriately, including outside the purpose for which it was approved. Both must be managed.",
@@ -73,12 +75,15 @@ REQUIREMENTS = [
             "unclear whether a tool is a model, the entity should record the determination and the reasoning, "
             "and should manage the residual risk under this Prudential Standard or under an equivalent control.",
         ],
-        "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23"],
-        "principles": "OCC 2011-12 / SR 11-7 §III definition of model; PRA SS1/23 Principle 1; OSFI E-23 model definition",
-        "provenance": "Extracted",
+        "sources": ["US-MRM-2026", "PRA-SS1-23", "OSFI-E23"],
+        "principles": "PRA SS1/23 Principle 1.1 Model definition; OSFI E-23 (2027) key terms; US interagency guidance 2026 §II (narrower — excludes deterministic and arithmetic methods)",
+        "provenance": "Extracted + inferred",
         "rationale": (
-            "The three-part definition and the two sources of model risk are the most consistently adopted "
-            "formulations across the comparator set and provide a stable, technology-neutral perimeter."
+            "A broad, function-based definition follows the PRA and OSFI approach. The United States "
+            "narrowed its definition in April 2026 to complex methods only, expressly excluding "
+            "spreadsheet arithmetic and deterministic rule-based processes; that narrowing is not "
+            "adopted here because it would exclude actuarial and unit pricing calculations central to "
+            "the Australian cross-industry perimeter. The divergence is deliberate and recorded."
         ),
         "policy_choice": False,
         "legal_flag": False,
@@ -129,8 +134,8 @@ REQUIREMENTS = [
             "must be able to demonstrate that the difference reflects risk rather than convenience.",
             "An exception register that grows without expiry dates is itself an indicator of framework weakness.",
         ],
-        "sources": ["PRA-SS1-23", "OSFI-E23", "OCC-SR117", "APRA-CPS220", "BCBS-239"],
-        "principles": "PRA SS1/23 proportionality; OSFI E-23 risk-based application; OCC 2011-12 / SR 11-7 §II",
+        "sources": ["PRA-SS1-23", "OSFI-E23", "US-MRM-2026", "APRA-CPS220", "BCBS-239"],
+        "principles": "PRA SS1/23 proportionality; OSFI E-23 risk-based application; US interagency guidance 2026 §II",
         "provenance": "Extracted + inferred",
         "rationale": (
             "Proportionality is universal across the comparators; the explicit control of exceptions is drawn from "
@@ -161,8 +166,8 @@ REQUIREMENTS = [
             "A Board that receives only a model count and a traffic-light summary is unlikely to be positioned to "
             "provide effective challenge.",
         ],
-        "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "APRA-CPS220", "ECB-GIM"],
-        "principles": "PRA SS1/23 Principle 2 (governance); OCC 2011-12 / SR 11-7 §VI; OSFI E-23 governance",
+        "sources": ["US-MRM-2026", "PRA-SS1-23", "OSFI-E23", "APRA-CPS220", "ECB-GIM"],
+        "principles": "PRA SS1/23 Principle 2 (governance); US interagency guidance 2026 §VI; OSFI E-23 governance",
         "provenance": "Extracted",
         "rationale": "Board approval of the framework and appetite is common to every comparator.",
         "policy_choice": False,
@@ -184,7 +189,7 @@ REQUIREMENTS = [
             "The designation should be recorded in the entity's accountability arrangements and should be consistent "
             "with its obligations under the applicable accountability regime.",
         ],
-        "sources": ["PRA-SS1-23", "OCC-SR117", "OSFI-E23", "APRA-CPS220"],
+        "sources": ["PRA-SS1-23", "US-MRM-2026", "OSFI-E23", "APRA-CPS220"],
         "principles": "PRA SS1/23 Principle 2 (senior management function accountability); OSFI E-23 accountability",
         "provenance": "Extracted",
         "rationale": (
@@ -211,8 +216,8 @@ REQUIREMENTS = [
             "Where a model is used by more than one business, the entity should be explicit about who owns the model "
             "and who owns each use of it, because the two can fail independently.",
         ],
-        "sources": ["OCC-SR117", "OSFI-E23", "PRA-SS1-23", "ECB-GIM"],
-        "principles": "OCC 2011-12 / SR 11-7 §VI roles; OSFI E-23 roles and responsibilities; ECB internal governance",
+        "sources": ["US-MRM-2026", "OSFI-E23", "PRA-SS1-23", "ECB-GIM"],
+        "principles": "US interagency guidance 2026 §VI roles; OSFI E-23 roles and responsibilities; ECB internal governance",
         "provenance": "Extracted",
         "rationale": "Role definition with named model owners is explicit in the US, Canadian and ECB material.",
         "policy_choice": False,
@@ -238,8 +243,8 @@ REQUIREMENTS = [
             "development, or by engaging an external provider, provided the entity retains the capability to "
             "understand, direct and challenge the work and does not simply accept its conclusions.",
         ],
-        "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "ECB-GIM", "MAS-AIMRM-2024"],
-        "principles": "OCC 2011-12 / SR 11-7 §V independence; PRA SS1/23 Principle 4; ECB internal validation",
+        "sources": ["US-MRM-2026", "PRA-SS1-23", "OSFI-E23", "ECB-GIM", "MAS-AIMRM-2024"],
+        "principles": "US interagency guidance 2026 §V; PRA SS1/23 Principle 4.1; PRA SS1/23 Principle 4; ECB internal validation",
         "provenance": "Extracted",
         "rationale": "Independent validation is a core element of every comparator regime.",
         "policy_choice": False,
@@ -266,8 +271,8 @@ REQUIREMENTS = [
             "risk, information security, operational risk, service provider management, change management and "
             "internal audit.",
         ],
-        "sources": ["PRA-SS1-23", "OSFI-E23", "OCC-SR117", "APRA-CPS220", "APRA-CPS230"],
-        "principles": "PRA SS1/23 Principle 2; OSFI E-23 enterprise framework; OCC 2011-12 / SR 11-7 §VI",
+        "sources": ["PRA-SS1-23", "OSFI-E23", "US-MRM-2026", "APRA-CPS220", "APRA-CPS230"],
+        "principles": "PRA SS1/23 Principle 2; OSFI E-23 enterprise framework; US interagency guidance 2026 §VI",
         "provenance": "Extracted",
         "rationale": "A documented enterprise framework is required by each of the comparator regimes.",
         "policy_choice": False,
@@ -291,7 +296,7 @@ REQUIREMENTS = [
             "Where an entity cannot yet quantify aggregate model risk, it should say so, use qualitative and coverage-based "
             "measures in the interim, and set out how it intends to close the gap.",
         ],
-        "sources": ["PRA-SS1-23", "OSFI-E23", "APRA-CPS220", "OCC-SR117"],
+        "sources": ["PRA-SS1-23", "OSFI-E23", "APRA-CPS220", "US-MRM-2026"],
         "principles": "PRA SS1/23 Principle 2 (risk appetite); OSFI E-23 framework aligned to risk appetite",
         "provenance": "Extracted + inferred",
         "rationale": (
@@ -316,8 +321,8 @@ REQUIREMENTS = [
             "different development, validation or documentation standards to models of equivalent risk, the entity "
             "should be able to justify the difference on risk grounds.",
         ],
-        "sources": ["OCC-SR117", "OSFI-E23", "PRA-SS1-23", "ECB-GIM"],
-        "principles": "OCC 2011-12 / SR 11-7 §VI policies; OSFI E-23 policies and procedures",
+        "sources": ["US-MRM-2026", "OSFI-E23", "PRA-SS1-23", "ECB-GIM"],
+        "principles": "US interagency guidance 2026 §VI policies; OSFI E-23 policies and procedures",
         "provenance": "Extracted",
         "rationale": "Policy and standards documentation is an explicit expectation across the comparator set.",
         "policy_choice": False,
@@ -340,7 +345,7 @@ REQUIREMENTS = [
             "Escalation criteria should be set in advance. Deciding after the event whether a model failure was "
             "material enough to escalate produces predictable results.",
         ],
-        "sources": ["PRA-SS1-23", "OSFI-E23", "OCC-SR117", "BCBS-239", "APRA-CPS220"],
+        "sources": ["PRA-SS1-23", "OSFI-E23", "US-MRM-2026", "BCBS-239", "APRA-CPS220"],
         "principles": "PRA SS1/23 Principle 5; OSFI E-23 reporting; BCBS 239 risk reporting practices",
         "provenance": "Extracted",
         "rationale": "Reporting on model risk to the Board is required or expected by every comparator.",
@@ -368,8 +373,8 @@ REQUIREMENTS = [
             "Retired models require particular care where a decision, a provision, a capital number or a customer "
             "outcome produced by the model remains in force after the model itself has been switched off.",
         ],
-        "sources": ["PRA-SS1-23", "OCC-SR117", "OSFI-E23", "ECB-GIM", "MAS-AIMRM-2024"],
-        "principles": "PRA SS1/23 Principle 1; OCC 2011-12 / SR 11-7 §VI inventory; OSFI E-23 model inventory",
+        "sources": ["PRA-SS1-23", "US-MRM-2026", "OSFI-E23", "ECB-GIM", "MAS-AIMRM-2024"],
+        "principles": "PRA SS1/23 Principle 1; US interagency guidance 2026 §VI inventory; OSFI E-23 model inventory",
         "provenance": "Extracted",
         "rationale": "A comprehensive inventory is required by every comparator regime without exception.",
         "policy_choice": False,
@@ -395,7 +400,7 @@ REQUIREMENTS = [
             "The tier should drive real differences in control. A tiering scheme that produces the same treatment for "
             "every tier is an administrative exercise rather than a risk control.",
         ],
-        "sources": ["PRA-SS1-23", "OSFI-E23", "OCC-SR117", "MAS-AIMRM-2024", "ECB-GIM"],
+        "sources": ["PRA-SS1-23", "OSFI-E23", "US-MRM-2026", "MAS-AIMRM-2024", "ECB-GIM"],
         "principles": "PRA SS1/23 Principle 1 (model risk classification); OSFI E-23 model risk rating",
         "provenance": "Extracted",
         "rationale": (
@@ -420,7 +425,7 @@ REQUIREMENTS = [
             "version, an upstream data source changing definition, or a portfolio migrating into a segment the model "
             "was not developed on.",
         ],
-        "sources": ["OSFI-E23", "PRA-SS1-23", "ECB-GIM", "OCC-SR117"],
+        "sources": ["OSFI-E23", "PRA-SS1-23", "ECB-GIM", "US-MRM-2026"],
         "principles": "OSFI E-23 review triggers; ECB model change management",
         "provenance": "Extracted + inferred",
         "rationale": "Trigger-based reassessment is explicit in OSFI and ECB material.",
@@ -449,8 +454,8 @@ REQUIREMENTS = [
             "Developmental evidence should include the testing carried out during development, its results, and the "
             "limitations that testing did not resolve — not only the tests the model passed.",
         ],
-        "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "ECB-GIM"],
-        "principles": "OCC 2011-12 / SR 11-7 §IV; PRA SS1/23 Principle 3; ECB internal models general topics",
+        "sources": ["US-MRM-2026", "PRA-SS1-23", "OSFI-E23", "ECB-GIM"],
+        "principles": "US interagency guidance 2026 §IV; PRA SS1/23 Principle 3; ECB internal models general topics",
         "provenance": "Extracted",
         "rationale": "Conceptual soundness is the central development concept in the US, UK, Canadian and ECB regimes.",
         "policy_choice": False,
@@ -476,8 +481,8 @@ REQUIREMENTS = [
             "Synthetic data used for development or testing should be identified as such, with its generation method "
             "and its representativeness assessed.",
         ],
-        "sources": ["BCBS-239", "OCC-SR117", "OSFI-E23", "ECB-GIM", "APRA-CPG235", "ECB-RDARR"],
-        "principles": "BCBS 239 risk data aggregation capabilities; OCC 2011-12 / SR 11-7 §IV data; ECB data quality",
+        "sources": ["BCBS-239", "US-MRM-2026", "OSFI-E23", "ECB-GIM", "APRA-CPG235", "ECB-RDARR"],
+        "principles": "BCBS 239 risk data aggregation capabilities; US interagency guidance 2026 §IV data; ECB data quality",
         "provenance": "Extracted",
         "rationale": "Data quality and appropriateness obligations are present in all comparator regimes.",
         "policy_choice": False,
@@ -501,8 +506,8 @@ REQUIREMENTS = [
             "Documentation should be maintained through the model's life rather than assembled for validation or for "
             "a supervisory request.",
         ],
-        "sources": ["OCC-SR117", "PRA-SS1-23", "ECB-GIM", "OSFI-E23"],
-        "principles": "OCC 2011-12 / SR 11-7 §VI documentation; PRA SS1/23 Principle 3; ECB documentation requirements",
+        "sources": ["US-MRM-2026", "PRA-SS1-23", "ECB-GIM", "OSFI-E23"],
+        "principles": "US interagency guidance 2026 §VI documentation; PRA SS1/23 Principle 3; ECB documentation requirements",
         "provenance": "Extracted",
         "rationale": "The reproducibility standard for documentation is common to the US, UK and ECB regimes.",
         "policy_choice": False,
@@ -527,8 +532,8 @@ REQUIREMENTS = [
             "Testing should use data that is sufficiently independent of the data used to build the model. A model "
             "tested only on the data it was fitted to has not been tested.",
         ],
-        "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "ECB-GIM", "MAS-AIMRM-2024"],
-        "principles": "OCC 2011-12 / SR 11-7 §IV testing; PRA SS1/23 Principle 3; ECB pre-approval testing",
+        "sources": ["US-MRM-2026", "PRA-SS1-23", "OSFI-E23", "ECB-GIM", "MAS-AIMRM-2024"],
+        "principles": "US interagency guidance 2026 §IV (model testing); PRA SS1/23 Principle 3; ECB pre-approval testing",
         "provenance": "Extracted + inferred",
         "rationale": (
             "Development testing is universal; expressing it as a bar to use for material purposes makes it an "
@@ -556,8 +561,8 @@ REQUIREMENTS = [
             "discharge the entity's obligation, because they were not designed around the entity's data, portfolio, "
             "controls or use.",
         ],
-        "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "ECB-GIM", "MAS-NOTICE637"],
-        "principles": "OCC 2011-12 / SR 11-7 §V; PRA SS1/23 Principle 4; OSFI E-23 independent review; ECB internal validation",
+        "sources": ["US-MRM-2026", "PRA-SS1-23", "OSFI-E23", "ECB-GIM", "MAS-NOTICE637"],
+        "principles": "US interagency guidance 2026 §V; PRA SS1/23 Principle 4; OSFI E-23 independent review; ECB internal validation",
         "provenance": "Extracted",
         "rationale": "Independent validation is a named principle or core element in every comparator regime.",
         "policy_choice": False,
@@ -569,10 +574,10 @@ REQUIREMENTS = [
         "section": "13. Independent validation",
         "title": "Scope of validation",
         "requirement": (
-            "Validation of a model must address the conceptual soundness of its design and construction, ongoing "
-            "monitoring including process verification and benchmarking, and outcomes analysis comparing model "
-            "outputs to actual results, and must reach an explicit conclusion on the model's fitness for its "
-            "intended use together with any conditions or limitations."
+            "Validation of a model must address conceptual soundness, outcomes analysis comparing model "
+            "outputs with corresponding actual outcomes, and ongoing model monitoring, and must reach an "
+            "explicit conclusion on the model's fitness for its intended use together with any conditions "
+            "or limitations."
         ),
         "guidance": [
             "These three elements are complementary and none is sufficient alone. Conceptual soundness alone cannot "
@@ -582,8 +587,8 @@ REQUIREMENTS = [
             "A validation that records observations without reaching a conclusion leaves the approval decision "
             "without the input it was designed to receive.",
         ],
-        "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "ECB-GIM"],
-        "principles": "OCC 2011-12 / SR 11-7 §V three core elements; PRA SS1/23 Principle 4",
+        "sources": ["US-MRM-2026", "PRA-SS1-23", "OSFI-E23", "ECB-GIM"],
+        "principles": "US interagency guidance 2026 §V (components of model validation); PRA SS1/23 Principle 4",
         "provenance": "Extracted",
         "rationale": (
             "The three core elements of validation are the most widely adopted formulation in the discipline and "
@@ -598,9 +603,10 @@ REQUIREMENTS = [
         "section": "13. Independent validation",
         "title": "Effective challenge",
         "requirement": (
-            "An APRA-regulated entity must ensure that its models are subject to effective challenge by parties with "
-            "the competence, influence and incentive to identify and escalate deficiencies and to require their "
-            "resolution."
+            "An APRA-regulated entity must ensure that its models are subject to effective challenge — "
+            "critical and objective analysis by persons with the expertise to identify model limitations, "
+            "sufficient independence to maintain objectivity, and the organisational standing and influence "
+            "to effect change."
         ),
         "guidance": [
             "Effective challenge depends on three things together: the challenger must know enough to find the "
@@ -610,8 +616,8 @@ REQUIREMENTS = [
             "explanation rather than change, findings downgraded without new evidence, and validation reports whose "
             "conclusions change late in the approval process.",
         ],
-        "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23"],
-        "principles": "OCC 2011-12 / SR 11-7 §III effective challenge; PRA SS1/23 Principle 4",
+        "sources": ["US-MRM-2026", "PRA-SS1-23", "OSFI-E23"],
+        "principles": "US interagency guidance 2026 §III (effective challenge); PRA SS1/23 Principle 4",
         "provenance": "Extracted",
         "rationale": (
             "Effective challenge is the organising concept of the US guidance and is adopted in substance by the "
@@ -637,8 +643,8 @@ REQUIREMENTS = [
             "Approval notwithstanding unresolved high-severity findings should be exceptional, time-bound, supported by "
             "compensating controls and escalated.",
         ],
-        "sources": ["OCC-SR117", "OSFI-E23", "ECB-GIM", "PRA-SS1-23"],
-        "principles": "OSFI E-23 approval; ECB model approval and use; OCC 2011-12 / SR 11-7 §VI",
+        "sources": ["US-MRM-2026", "OSFI-E23", "ECB-GIM", "PRA-SS1-23"],
+        "principles": "OSFI E-23 approval; ECB model approval and use; US interagency guidance 2026 §VI",
         "provenance": "Extracted + inferred",
         "rationale": "Approval with defined conditions of use is explicit in the Canadian and ECB regimes.",
         "policy_choice": False,
@@ -661,8 +667,8 @@ REQUIREMENTS = [
             "detect. Differences between the development environment and production — in data definitions, rounding, "
             "library versions, treatment of missing values or execution order — can change results materially.",
         ],
-        "sources": ["OCC-SR117", "ECB-GIM", "OSFI-E23"],
-        "principles": "OCC 2011-12 / SR 11-7 §IV implementation; ECB internal models implementation",
+        "sources": ["US-MRM-2026", "ECB-GIM", "OSFI-E23"],
+        "principles": "Former SR 11-7 §IV (implementation); not carried forward in 2026; ECB internal models implementation",
         "provenance": "Extracted",
         "rationale": "Implementation control is explicit in the US guidance and the ECB internal models framework.",
         "policy_choice": False,
@@ -684,7 +690,7 @@ REQUIREMENTS = [
             "Changes initiated by a vendor, or by an upstream data provider, are changes to the entity's model risk "
             "profile even though the entity did not make them, and should enter the same assessment.",
         ],
-        "sources": ["ECB-GIM", "OSFI-E23", "OCC-SR117", "PRA-SS1-23"],
+        "sources": ["ECB-GIM", "OSFI-E23", "US-MRM-2026", "PRA-SS1-23"],
         "principles": "ECB management of model changes; OSFI E-23 model changes; PRA SS1/23 Principle 3",
         "provenance": "Extracted",
         "rationale": "Model change management is a distinct and detailed obligation in the ECB regime.",
@@ -708,8 +714,8 @@ REQUIREMENTS = [
             "Users should receive the limitations, not merely have access to them. Limitations recorded only in a "
             "validation report that users do not read are not disclosed in any meaningful sense.",
         ],
-        "sources": ["OCC-SR117", "PRA-SS1-23", "ECB-GIM", "OSFI-E23"],
-        "principles": "OCC 2011-12 / SR 11-7 §IV use; PRA SS1/23 Principle 3; ECB use test",
+        "sources": ["US-MRM-2026", "PRA-SS1-23", "ECB-GIM", "OSFI-E23"],
+        "principles": "US interagency guidance 2026 §IV (model use); PRA SS1/23 Principle 3; ECB use test",
         "provenance": "Extracted",
         "rationale": "Controlling model use is one of the two limbs of the standard definition of model risk.",
         "policy_choice": False,
@@ -732,7 +738,7 @@ REQUIREMENTS = [
             "Overlays should be reported in aggregate to the Board and senior management, because individually approved "
             "adjustments can collectively become the dominant driver of a reported figure.",
         ],
-        "sources": ["ECB-GIM", "PRA-SS1-23", "OSFI-E23", "OCC-SR117"],
+        "sources": ["ECB-GIM", "PRA-SS1-23", "OSFI-E23", "US-MRM-2026"],
         "principles": "PRA SS1/23 Principle 5 (post-model adjustments); ECB margin of conservatism",
         "provenance": "Extracted",
         "rationale": (
@@ -758,8 +764,8 @@ REQUIREMENTS = [
             "Thresholds should be set in advance and should be linked to a defined response — investigation, "
             "restriction, revalidation, overlay or withdrawal — so that a breach produces an action rather than a note.",
         ],
-        "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "ECB-GIM", "MAS-AIMRM-2024"],
-        "principles": "OCC 2011-12 / SR 11-7 §V ongoing monitoring; PRA SS1/23 Principle 3; OSFI E-23 monitoring",
+        "sources": ["US-MRM-2026", "PRA-SS1-23", "OSFI-E23", "ECB-GIM", "MAS-AIMRM-2024"],
+        "principles": "US interagency guidance 2026 §V (ongoing model monitoring); PRA SS1/23 Principle 3; OSFI E-23 monitoring",
         "provenance": "Extracted",
         "rationale": "Ongoing monitoring is one of the three core validation elements and is universal.",
         "policy_choice": False,
@@ -781,7 +787,7 @@ REQUIREMENTS = [
             "The entity should be able to demonstrate that findings are closed because they were fixed, and should "
             "monitor the rate at which findings are closed by rationale, deferral or reclassification.",
         ],
-        "sources": ["PRA-SS1-23", "OCC-SR117", "OSFI-E23", "ECB-GIM"],
+        "sources": ["PRA-SS1-23", "US-MRM-2026", "OSFI-E23", "ECB-GIM"],
         "principles": "PRA SS1/23 Principle 5 (model risk mitigants); OSFI E-23 issue management",
         "provenance": "Extracted",
         "rationale": (
@@ -833,8 +839,8 @@ REQUIREMENTS = [
             "The entity should not accept a level of opacity for a high-tier model that it would not accept from an "
             "internal development team.",
         ],
-        "sources": ["OCC-SR117", "OSFI-E23", "BCBS-TPRM", "APRA-CPS230", "PRA-SS1-23"],
-        "principles": "OCC 2011-12 / SR 11-7 vendor models; OSFI E-23 third-party models; BCBS third-party principles",
+        "sources": ["US-MRM-2026", "OSFI-E23", "BCBS-TPRM", "APRA-CPS230", "PRA-SS1-23"],
+        "principles": "US interagency guidance 2026 §VII (vendor and other third-party products); OSFI E-23 third-party models; BCBS third-party principles",
         "provenance": "Extracted",
         "rationale": "Vendor models are expressly within scope of the US, Canadian and UK regimes.",
         "policy_choice": False,
@@ -977,7 +983,7 @@ REQUIREMENTS = [
             "Independent price verification is a distinct control from validation and both are required for material "
             "valuation models.",
         ],
-        "sources": ["BCBS-FVP", "ECB-GIM", "APRA-CPS220", "OCC-SR117"],
+        "sources": ["BCBS-FVP", "ECB-GIM", "APRA-CPS220", "US-MRM-2026"],
         "principles": "BCBS supervisory guidance on fair value practices; ECB internal models market risk",
         "provenance": "Extracted",
         "rationale": "Valuation model governance and independent price verification are established supervisory expectations.",
@@ -1083,7 +1089,7 @@ REQUIREMENTS = [
             "Where an entity concludes that no capital is required in respect of model risk, that conclusion should be "
             "reasoned and documented rather than reached by omission.",
         ],
-        "sources": ["PRA-SS1-23", "ECB-GIM", "OCC-SR117", "APRA-CPS220"],
+        "sources": ["PRA-SS1-23", "ECB-GIM", "US-MRM-2026", "APRA-CPS220"],
         "principles": "PRA SS1/23 Principle 5 (aggregate model risk); ECB model risk in the SREP",
         "provenance": "Extracted",
         "rationale": (
@@ -1109,8 +1115,8 @@ REQUIREMENTS = [
             "Retention periods should align with the entity's other prudential record-keeping obligations and with the "
             "period over which the decisions the model informed remain material.",
         ],
-        "sources": ["OCC-SR117", "ECB-GIM", "OSFI-E23", "APRA-CPS220"],
-        "principles": "OCC 2011-12 / SR 11-7 §VI documentation and records; ECB documentation",
+        "sources": ["US-MRM-2026", "ECB-GIM", "OSFI-E23", "APRA-CPS220"],
+        "principles": "US interagency guidance 2026 §VI documentation and records; ECB documentation",
         "provenance": "Extracted + inferred",
         "rationale": "Record-keeping is explicit across comparators; the reconstruction standard is a drafting choice.",
         "policy_choice": False,
@@ -1134,8 +1140,8 @@ REQUIREMENTS = [
             "Where internal audit lacks the technical capability to assess validation quality, the entity should "
             "obtain that capability rather than narrow the scope of the assurance.",
         ],
-        "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "ECB-GIM"],
-        "principles": "OCC 2011-12 / SR 11-7 §VI internal audit; ECB internal audit of internal models",
+        "sources": ["US-MRM-2026", "PRA-SS1-23", "OSFI-E23", "ECB-GIM"],
+        "principles": "US interagency guidance 2026 §VI internal audit; ECB internal audit of internal models",
         "provenance": "Extracted",
         "rationale": "Internal audit coverage of the model risk framework is explicit in the US and ECB regimes.",
         "policy_choice": False,
