@@ -21,6 +21,7 @@ Tools fall into four groups:
 
 from __future__ import annotations
 
+import importlib
 import json
 import subprocess
 import sys
@@ -42,6 +43,23 @@ import content_scoring as SC  # noqa: E402
 import content_sources as S  # noqa: E402
 
 mcp = FastMCP("mrm-policy")
+
+
+def _reload_content() -> None:
+    """Re-read the content modules from disk.
+
+    A long-running server would otherwise answer from the copy it imported at
+    startup, so an edit under build/ would not show up until the server was
+    restarted — and the counts it reported would look authoritative while being
+    stale. Reloaded in dependency order: sources first, since the others read
+    from it.
+    """
+    global G, R, SC, S
+    S = importlib.reload(S)
+    R = importlib.reload(R)
+    G = importlib.reload(G)
+    SC = importlib.reload(SC)
+
 
 ARTEFACTS = {
     "standard": REPO / "CPS_XXXX_Model_Risk_Management.docx",
@@ -112,6 +130,7 @@ def verify_package() -> dict[str, Any]:
     presence of each artefact. Does not touch the network — use
     check_source_urls for that.
     """
+    _reload_content()
     from docx_common import audit_fonts
 
     problems: list[str] = []
@@ -222,6 +241,7 @@ def check_source_urls(timeout_seconds: int = 20) -> dict[str, Any]:
     worth re-running before relying on the package. Reports status per source
     rather than failing on the first error.
     """
+    _reload_content()
     def probe(src: dict) -> dict:
         url = src["url"]
         req = urllib.request.Request(
@@ -258,6 +278,7 @@ def list_requirements(part: str = "", policy_choices_only: bool = False,
         policy_choices_only: only requirements not mandated by any comparator.
         legal_flags_only: only requirements carrying a legal-drafting reservation.
     """
+    _reload_content()
     _, req_map, _, _ = G.numbered()
     out = []
     for r in R.REQUIREMENTS:
@@ -281,6 +302,7 @@ def list_requirements(part: str = "", policy_choices_only: bool = False,
 @mcp.tool()
 def get_requirement(requirement_id: str) -> dict[str, Any]:
     """Return one requirement in full, with its guidance paragraphs inlined."""
+    _reload_content()
     match = [r for r in R.REQUIREMENTS if r["id"].upper() == requirement_id.upper()]
     if not match:
         return {"error": f"unknown requirement {requirement_id}",
@@ -296,6 +318,7 @@ def get_requirement(requirement_id: str) -> dict[str, Any]:
 @mcp.tool()
 def list_sources(authority: str = "", unverified_only: bool = False) -> list[dict[str, Any]]:
     """Return the source register, optionally filtered by authority."""
+    _reload_content()
     out = []
     for s in S.SOURCES:
         if authority and authority.lower() not in s["authority"].lower():
@@ -313,6 +336,7 @@ def get_principles(authority: str = "") -> list[dict[str, Any]]:
     Labels and titles are reproduced as printed by the issuing authority, so
     these are safe to cite directly in drafting.
     """
+    _reload_content()
     return [f for f in S.PRINCIPLE_FRAMEWORKS
             if not authority or authority.lower() in f["authority"].lower()]
 
@@ -320,6 +344,7 @@ def get_principles(authority: str = "") -> list[dict[str, Any]]:
 @mcp.tool()
 def get_crosswalk(topic: str = "") -> list[dict[str, Any]]:
     """Return the eight-authority regulatory crosswalk, optionally by topic."""
+    _reload_content()
     cols = ["topic", "APRA_current", "US", "PRA", "OSFI", "ECB", "MAS", "BCBS",
             "FSB", "proposed_CPS_XXXX"]
     out = []
@@ -337,6 +362,7 @@ def get_audit_trail(severity: str = "") -> dict[str, Any]:
     Args:
         severity: filter red-team entries to "High", "Medium" or "Low".
     """
+    _reload_content()
     rt_cols = ["id", "initial_statement", "challenge", "correction", "effect",
                "evidence", "severity", "status"]
     led_cols = ["id", "artefact", "topic", "statement", "provenance",
@@ -364,6 +390,7 @@ def score_gaps(weights: dict[str, float] | None = None,
         weights: domain name to weight. Unspecified domains keep their default.
         critical, high, medium: weighted-gap thresholds for the priority bands.
     """
+    _reload_content()
     weights = weights or {}
     unknown = [k for k in weights if k not in {d["domain"] for d in SC.DOMAINS}]
     if unknown:
@@ -408,6 +435,7 @@ def score_gaps(weights: dict[str, float] | None = None,
 @mcp.tool()
 def scoring_methodology() -> dict[str, Any]:
     """Return the scoring rubric, dimensions, bands and default weights."""
+    _reload_content()
     return {
         "what_is_scored": (
             "How well the CURRENT Australian prudential framework addresses each "

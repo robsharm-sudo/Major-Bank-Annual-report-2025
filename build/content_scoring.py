@@ -455,7 +455,7 @@ DOMAINS = [
                "absence of a general model risk discipline around the capital model estate, and "
                "less developed guidance on model change than the ECB provides.",
         "action": "Preserve the capital standards unchanged and position CPS XXXX to sit alongside "
-                  "them, with the more specific requirement prevailing.",
+                  "them, with the specific capital requirement governing approval, change and conditions of use.",
         "owner": "Policy + Capital",
     },
     {
@@ -468,7 +468,7 @@ DOMAINS = [
         "sources": ["BCBS-FVP", "ECB-GIM"],
         "gap": "Valuation model governance and independent price verification are not addressed on a "
                "cross-industry basis, despite the output being the reported number itself.",
-        "action": "Bring valuation and expected credit loss models expressly within scope and require "
+        "action": "Bring valuation and financial reporting models expressly within scope and require "
                   "independent price verification as a control distinct from validation.",
         "owner": "Policy",
     },

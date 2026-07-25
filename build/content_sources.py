@@ -2536,6 +2536,25 @@ REDTEAM_ROWS = [
      "numbers.",
      "Low", "Closed — correction incorporated"],
 
+    ["RT-59",
+     "The RT-56 correction was applied to the practice guide but not to the standard. M38's "
+     "guidance still read that 'where the two overlap the more specific requirement in APS 220 "
+     "prevails', while the guide had been changed to say the two are cumulative.",
+     "Found on re-executing the pipeline after RT-56. Two questions: did the correction reach "
+     "every locus, and is the precedence formulation right anywhere it appears?",
+     "It had not, and it was not. The two documents contradicted each other, and the formulation "
+     "was actively wrong for M38 — it would let an ADI satisfy the bare APS 220 validation "
+     "obligation and disregard the validation discipline M38 exists to supply. M38 now carries "
+     "the cumulative formulation. M36's parallel deference to the capital standards was kept, "
+     "because APS 113 contains a complete and more demanding model regime where APS 220 contains "
+     "a bare obligation, but it was made precise: the capital standard governs approval, change "
+     "and conditions of use, and does not relieve the entity of the framework obligations it does "
+     "not address. The valuation scoring action was also still referring to expected credit loss "
+     "models after RT-54 moved them to M38.",
+     "M36, M38, and two recommended actions in the scoring model.",
+     "Detected by rebuilding from source and reading the assembled output rather than the diff.",
+     "High", "Closed — correction incorporated"],
+
     ["RT-18",
      "The Comptroller's Handbook model risk management booklet was cited as a source.",
      "Is it retrievable, and is it current?",

@@ -1036,7 +1036,10 @@ REQUIREMENTS = [
         ),
         "guidance": [
             "This Prudential Standard does not alter or displace the model approval requirements in the capital "
-            "standards. Where the two overlap, the more specific requirement in the capital standard prevails.",
+            "standards. Where a capital standard imposes a specific requirement on a matter this Prudential "
+            "Standard also addresses — approval, change, or the conditions of use of an approved model — that "
+            "requirement governs the matter. It does not relieve the entity of the framework obligations the "
+            "capital standard does not address, which continue to apply to capital models as they do to others.",
             "The requirement that an approved capital model be used in internal risk management is longstanding and "
             "substantive. A model maintained for regulatory reporting while the business is run on a different basis "
             "indicates that one of the two is not trusted.",
@@ -1095,8 +1098,9 @@ REQUIREMENTS = [
             "APS 220 already requires an ADI to have sound policies and processes in place to appropriately "
             "validate models used to assess and measure expected credit losses. This Prudential Standard supplies "
             "the model risk discipline that requirement assumes: what validation consists of, who may perform it, "
-            "how often, and what happens when it finds something. It does not displace APS 220, and where the two "
-            "overlap the more specific requirement in APS 220 prevails.",
+            "how often, and what happens when it finds something. The two are cumulative: an ADI complies with "
+            "both, neither reads down the other, and where this Prudential Standard requires more of an expected "
+            "credit loss model than APS 220 does, the higher obligation is the one to meet.",
             "Expected credit loss models sit at the point where model risk becomes reported financial risk. The "
             "output is the provision itself rather than an input to a decision a person subsequently makes, and "
             "an error is realised directly in the financial statements and in regulatory capital.",
