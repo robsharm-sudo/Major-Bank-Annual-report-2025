@@ -642,15 +642,15 @@ REQUIREMENTS = [
         "section": "13. Independent validation",
         "title": "Scope of validation",
         "requirement": (
-            "Validation of a model must address conceptual soundness, ongoing model monitoring, and outcomes "
-            "analysis comparing model outputs with corresponding actual outcomes to the extent those outcomes "
-            "are observable and sufficient for the purpose, and must reach an explicit conclusion on the "
+            "Validation of a model must address conceptual soundness, outcomes analysis comparing model outputs "
+            "with corresponding actual outcomes to the extent those outcomes are observable and sufficient "
+            "for the purpose, and ongoing model monitoring, and must reach an explicit conclusion on the "
             "model's fitness for its intended use together with any conditions or limitations. Where outcomes "
             "are not observable, the entity must apply alternative evidence of performance, including "
             "benchmarking, sensitivity analysis and assessment of assumptions."
         ),
         "guidance": [
-            "These three elements are complementary and none is sufficient alone. Conceptual soundness alone cannot "
+            "These three components are complementary and none is sufficient alone. Conceptual soundness alone cannot "
             "detect deterioration; outcomes analysis alone cannot explain it.",
             "Validation should assess implementation as well as design — that the model as coded and deployed is the "
             "model as documented and approved.",
@@ -679,9 +679,11 @@ REQUIREMENTS = [
             "to effect change."
         ),
         "guidance": [
-            "Effective challenge depends on three things together: the challenger must know enough to find the "
-            "problem, must be senior and independent enough for the finding to carry weight, and must be rewarded "
-            "for raising it rather than for clearing models. Removing any one of the three defeats the control.",
+            "The three attributes operate together: expertise to identify the limitation, sufficient independence "
+            "to reach an objective view of it, and the organisational standing and influence to have it acted on. "
+            "Removing any one defeats the control while leaving its documentation intact. Incentives are a "
+            "practical condition of the third attribute: a challenger whose workload, progression or remuneration "
+            "depends on models being approved will not exercise influence for long.",
             "Indicators that challenge is not effective include validation findings that are consistently closed by "
             "explanation rather than change, findings downgraded without new evidence, and validation reports whose "
             "conclusions change late in the approval process.",
@@ -1028,8 +1030,9 @@ REQUIREMENTS = [
         "requirement": (
             "An APRA-regulated entity that uses a model to determine a regulatory capital requirement must satisfy "
             "the requirements of the applicable prudential standard for that model in addition to this Prudential "
-            "Standard, must not change an approved model without APRA's approval where the applicable standard so "
-            "requires, and must ensure the model is used in the entity's internal risk management."
+            "Standard, must not change an approved model without APRA's approval where the applicable prudential "
+            "standard requires that approval, and must ensure the model is used in the entity's internal risk "
+            "management to the extent the applicable prudential standard so requires."
         ),
         "guidance": [
             "This Prudential Standard does not alter or displace the model approval requirements in the capital "

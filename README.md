@@ -84,7 +84,7 @@ paragraph numbering at build time, so the two documents cannot drift apart.
 
 ## A note on what was corrected
 
-The package was red-teamed against primary sources across five challenge lenses and 51
+The package was red-teamed against primary sources across five challenge lenses and 53
 corrections are recorded in the Red Team Audit sheet. The most consequential: **OCC Bulletin 2011-12 / Federal Reserve
 SR 11-7 was rescinded on 17 April 2026** and replaced by interagency guidance SR 26-2 /
 OCC 2026-13 / FDIC FIL-15-2026, which narrows the model definition, expressly excludes

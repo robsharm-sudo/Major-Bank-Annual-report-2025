@@ -376,7 +376,7 @@ SOURCES = [
         "id": "FSB-SP-2026", "authority": "FSB",
         "title": "Sound Practices for Responsible Adoption of Artificial Intelligence — "
                  "consultation report",
-        "published": "June 2026", "effective": "n/a",
+        "published": "10 June 2026", "effective": "n/a",
         "date": "Jun 2026 (consultation)",
         "status": "Consultation report. The FSB states expressly that the sound practices are not "
                   "intended to establish an international standard. Not binding anywhere.",
@@ -415,6 +415,19 @@ SOURCES = [
         "verification": V_PRIMARY, "checked": CHECKED,
     },
     # ---------------------------------------------------------------- APRA
+    {
+        "id": "APRA-CPS001", "authority": "APRA",
+        "title": "Prudential Standard CPS 001 Defined terms",
+        "published": "Current at the as-of date", "effective": "In force at the as-of date",
+        "date": "In force; commencement not separately verified",
+        "status": "Binding prudential standard.",
+        "scope": "APRA-regulated entities, as the source of cross-industry defined terms.",
+        "relevant": "The centralised definitions instrument. Paragraph A6 provides that a term not "
+                    "defined in Annex A takes its meaning from CPS 001, so the two must be "
+                    "reconciled before issue.",
+        "url": "https://www.apra.gov.au/standards/cps-001",
+        "verification": "Verified — secondary source", "checked": "25 Jul 2026",
+    },
     {
         "id": "APRA-CPS220", "authority": "APRA",
         "title": "Prudential Standard CPS 220 Risk Management",
@@ -565,15 +578,15 @@ SOURCE_ALIASES = {}
 DEFINITIONS = [
     ["Model", "A quantitative method, system or approach that applies statistical, economic, "
               "financial, actuarial or mathematical theories, techniques or assumptions to process "
-              "input data into quantitative estimates. A model comprises an information input "
-              "component, a processing component and a reporting component."],
+              "input data into quantitative estimates."],
     ["Model risk", "The potential for adverse consequences from decisions based on incorrect or "
                    "misused model outputs. Model risk arises where a model has fundamental errors "
                    "and produces inaccurate outputs relative to its design objective and intended "
                    "use, or where a model is used incorrectly or inappropriately."],
-    ["Material model", "A model whose failure or misuse could have a non-negligible effect on the "
-                       "entity's financial position, regulatory obligations, customers, "
-                       "beneficiaries or critical operations."],
+    ["Material model", "A model that is used for a material purpose, or whose failure or misuse "
+                       "could otherwise have a material effect on the entity's financial position, "
+                       "its regulatory obligations, its critical operations, or amounts or "
+                       "entitlements attributable to its customers or beneficiaries."],
     ["Model owner", "The person accountable for a model being fit for its approved purpose "
                     "throughout its lifecycle, including its documentation, performance monitoring, "
                     "communication of limitations and remediation of findings."],
@@ -704,8 +717,9 @@ LEGAL_SETTLEMENT = [
      "Settle how the independent validation requirement operates alongside CPS 320 and the "
      "sectoral actuarial standards, and confirm that no gap in independent review arises."],
     ["Application to RSE licensees",
-     "Confirm the model classes named for RSE licensees and the interaction with SPS 530 and "
-     "SPS 515."],
+     "Confirm the model classes named for RSE licensees and the interaction with SPS 530, "
+     "SPS 515 and SPS 114, the last of which governs the operational risk financial "
+     "requirement that paragraph M41 refers to."],
     ["Accountability regime",
      "Settle the designation of the accountable senior executive and its interaction with the "
      "applicable accountability regime."],
@@ -714,7 +728,10 @@ LEGAL_SETTLEMENT = [
      "whether any model-specific notification trigger is justified."],
     ["APRA powers",
      "Settle the powers to require information, restriction of model use, independent review or "
-     "remediation, and ensure procedural fairness."],
+     "remediation, and ensure procedural fairness. Paragraph A5 confers the adjustment and "
+     "exclusion power and the Interpretation section requires every power under this Prudential "
+     "Standard to be exercised in writing; the procedural requirements attaching to each need "
+     "settlement."],
     ["Commencement and transition",
      "Set commencement, transitional milestones for inventory, tiering and validation coverage, "
      "and the treatment of models already in use. Paragraph A4 splits entity-level from "
@@ -2234,6 +2251,43 @@ REDTEAM_ROWS = [
      "cross-reference points at an identifier that does not exist.",
      "Automated resequencing with verification by the package integrity check.",
      "Medium", "Closed — resequenced and verified"],
+
+    ["RT-52",
+     "Full adversarial verification of the five red-team lenses returned 57 findings, of which 31 "
+     "were refuted outright and 24 were reduced to a smaller residual.",
+     "Most findings were raised against snapshots of the package taken before earlier corrections "
+     "landed. Verifiers repeatedly established that a quoted defect no longer existed, and that "
+     "the proposed fix would either be a no-op or would reopen a closed correction. Acting on the "
+     "raw findings would have undone RT-27, RT-31, RT-33, RT-34, RT-42, RT-46 and RT-47.",
+     "Only the verified residuals were applied. M23's explanatory paragraph stated a different "
+     "three-limb test from its own bold paragraph and reintroduced incentives as a co-equal limb; "
+     "it now tracks the requirement and demotes incentives to a practical condition. M22 now "
+     "prints the validation components in the order the current US guidance uses. M36's approval "
+     "and use-test limbs are now expressly conditional on the applicable capital standard. Annex "
+     "A's model definition carried a sentence M02 does not contain, and 'material model' used a "
+     "non-negligible-effect trigger where 'material purpose' used a material-effect one; both are "
+     "aligned. Three stale attributions in the practice guide were corrected: PRA Principle 5 for "
+     "aggregate model risk, the exception paragraph reading as though it could except a "
+     "requirement, and the superseded bias phrasing in the AI chapter.",
+     "M22, M23, M36, two Annex A definitions and three practice guide paragraphs; CPS 001 and "
+     "SPS 114 registered; two Annex F items extended.",
+     "PRA SS1/23 Principles 2.1 and 5; US interagency guidance 2026 §§III and V; the package's own "
+     "closed audit entries.",
+     "High", "Closed — verified residuals applied"],
+
+    ["RT-53",
+     "Two findings survived verification intact rather than being reduced.",
+     "The Annex A model definition retained a three-component sentence that the operative "
+     "definition in M02 does not contain, so the defined term and the requirement said different "
+     "things; and M36 imposed an unconditional obligation to obtain APRA approval for model "
+     "change and to use the model in internal risk management, where those duties arise only "
+     "where the applicable capital standard imposes them.",
+     "Both were applied as verified. The definition now matches M02 word for word, with the "
+     "three-component description retained in the practice guide where it is explanatory. M36's "
+     "limbs are now conditional on the applicable prudential standard.",
+     "Annex A and M36.",
+     "Independent verification at the locus; APS 113 and the ECB internal models framework.",
+     "High", "Closed — correction incorporated"],
 
     ["RT-18",
      "The Comptroller's Handbook model risk management booklet was cited as a source.",

@@ -525,7 +525,7 @@ DOMAINS = [
         "bench": 5, "bench_auth": "PRA",
         "post": 4.0,
         "reqs": ["M41"],
-        "sources": ["PRA-SS1-23", "ECB-GIM"],
+        "sources": ["PRA-SS1-23", "ECB-GIM", "US-MRM-2026", "APRA-SPS114"],
         "gap": "Nothing requires an entity to form a view of model risk in aggregate or to consider "
                "it in internal capital assessment, so correlated failure across models sharing data, "
                "vendors or assumptions is invisible.",
