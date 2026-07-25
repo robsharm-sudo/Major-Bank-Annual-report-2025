@@ -2711,6 +2711,58 @@ REDTEAM_ROWS = [
      "Independent red-team lens; the same reasoning applied at RT-54.",
      "Low", "Closed — correction incorporated"],
 
+    ["RT-64",
+     "The two \'Capturing economic uncertainty\' paragraphs in the expected credit loss chapter of "
+     "the practice guide were tagged to requirements M38 and M40.",
+     "Independent lens: inserting M38 renumbered the requirements above it, so does M40 still mean "
+     "what the chapter was drafted against?",
+     "It does not. Before the insertion M40 was stress testing; after it, M40 is \'Models used by "
+     "RSE licensees\' and stress testing became M41. The guide chapter was drafted against the "
+     "pre-insertion numbering, so the superannuation requirement\'s guidance pointer reached two "
+     "paragraphs about expected credit loss sensitivity analysis and internal capital adequacy "
+     "assessment, and the stress testing requirement lost them. Both tags corrected to M41. "
+     "M40 now resolves to paragraphs 116 to 117 and M41 to 118 to 119 and 126 to 127. "
+     "This class of error passes every existing check: both identifiers exist, so the "
+     "cross-reference verification confirms the pointer resolves while it points at the wrong "
+     "requirement. It was found only by an independent reader asking what the identifier now "
+     "means.",
+     "Two guide paragraphs; the guidance cross-references under M40 and M41 in the standard.",
+     "content_guide.numbered() before and after; the diff of the commit that introduced M38.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-65",
+     "Annex G focus area 5 tested the indicators used to transfer exposures into Stage 2 and the "
+     "sensitivity of the provision to staging thresholds.",
+     "Independent lens: does the Annex ever test the measurement consequence of the transfer, as "
+     "distinct from its trigger?",
+     "It did not. A search of the whole package returned no occurrence of \'12-month\', "
+     "\'credit-impaired\', \'definition of default\' or \'cure\'. The point of a Stage 2 transfer is "
+     "that it changes the measurement basis from twelve-month to lifetime expected credit losses, "
+     "and a review that tested only the trigger would not reach the consequence that makes the "
+     "trigger matter. Area 5 was retitled and now tests whether the staging outcome selects the "
+     "correct measurement basis through all three stages, and whether the definitions of default "
+     "and cure are consistent with those used in credit risk management and regulatory capital. "
+     "Evidence now includes a stage reconciliation with movements explained.",
+     "Annex G focus area 5.",
+     "AASB 9 measurement requirements; absence confirmed by search across all content modules.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-66",
+     "Annex G focus area 4 asked whether the entity compares expected credit losses previously "
+     "recognised against losses actually realised.",
+     "Independent lens: an AASB 9 estimate is a probability-weighted expectation across scenarios, "
+     "so is single-period comparison against outcomes a coherent test at all?",
+     "Partly. Verification rejected the wider claim — the area asks for bias identified across "
+     "periods, not single-period falsification — but confirmed a real defect inside it: the area "
+     "did not require the comparison to be made on a matched horizon, and a lifetime estimate "
+     "compared against one year of write-offs is not a test of anything. The area now requires "
+     "twelve-month estimates to be compared against the following twelve months and lifetime "
+     "estimates only over multi-period cohorts, states expressly that a single period falsifies "
+     "nothing, and adds comparison of realised macroeconomic conditions against the scenario set.",
+     "Annex G focus area 4.",
+     "Adversarial verification of an overstated finding, which reduced it to the part that held.",
+     "Medium", "Closed — correction incorporated"],
+
     ["RT-18",
      "The Comptroller's Handbook model risk management booklet was cited as a source.",
      "Is it retrievable, and is it current?",
@@ -2768,17 +2820,30 @@ ECL_REVIEW_FOCUS = [
 
     ["4. Outcomes analysis and back-testing of the estimate",
      "Whether the entity compares expected credit losses previously recognised against losses "
-     "actually realised, at a granularity that can identify bias, and whether persistent over- or "
-     "under-estimation has been acted upon rather than observed.",
-     "Back-testing of ECL against realised write-offs and recoveries by portfolio and vintage; "
-     "measures of bias and their trend; the entity's response where bias was identified."],
+     "actually realised on a like-for-like horizon — twelve-month estimates against the following "
+     "twelve months, and lifetime estimates only over multi-period cohorts — at a granularity "
+     "that can identify bias, and whether persistent over- or under-estimation has been acted "
+     "upon rather than observed. An expected credit loss estimate is a probability-weighted "
+     "expectation across scenarios, so a single period's outcome falsifies nothing on its own; "
+     "what a review looks for is bias that persists once the horizon is matched.",
+     "Back-testing of ECL against realised write-offs and recoveries by portfolio and vintage, "
+     "with the estimation horizon stated; measures of bias and their trend; comparison of "
+     "realised macroeconomic conditions against the scenario set used; the entity's response "
+     "where bias was identified."],
 
-    ["5. Staging and significant increase in credit risk",
+    ["5. Staging, significant increase in credit risk and measurement basis",
      "Whether the indicators used to transfer exposures into Stage 2 are validated as models in "
      "their own right, whether they operate for vulnerable sectors, and what the provision would "
-     "be under alternative reasonable staging criteria.",
+     "be under alternative reasonable staging criteria. Whether the staging outcome selects the "
+     "correct measurement basis — twelve-month expected credit losses before a significant "
+     "increase in credit risk, lifetime losses after it, and lifetime losses with interest "
+     "revenue on the net carrying amount once an exposure is credit-impaired — since the transfer "
+     "changes what is measured and not only how much. Whether the definitions of default and of "
+     "cure are consistent with those used in credit risk management and in regulatory capital.",
      "Staging criteria and their validation; transfer volumes and triggers; sector-level staging "
-     "outcomes; sensitivity of the provision to staging thresholds."],
+     "outcomes; sensitivity of the provision to staging thresholds; reconciliation of exposures "
+     "and provisions by stage, with movements between stages explained; the default and cure "
+     "definitions and evidence they are applied consistently."],
 
     ["6. Segmentation and collective assessment",
      "Whether segmentation is granular enough for the portfolio's risk profile, whether collective "
