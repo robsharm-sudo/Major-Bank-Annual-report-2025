@@ -165,14 +165,13 @@ def front_matter(doc):
           "coverage, staged commencement with earlier milestones for inventory and tiering than "
           "for validation would be consistent with the transition periods adopted by comparable "
           "authorities."]),
-        ("A4", "Transitional arrangements for models already in use",
-         "An APRA-regulated entity must bring a model that is in use at the commencement of this "
-         "Prudential Standard into compliance in accordance with a documented remediation plan "
-         "approved by the Board or a Board committee, within the period determined by APRA.",
-         ["Without this paragraph, requirements expressed as a bar on use — such as the "
-          "pre-implementation testing and independent validation requirements — would on "
-          "commencement prohibit the continued use of models the entity is already relying on. "
-          "That is not the intended effect.",
+        ("A4", "Transitional arrangements",
+         "An APRA-regulated entity must comply with the framework, governance and identification "
+         "requirements of this Prudential Standard from commencement, and must bring each model "
+         "that is in use at commencement into compliance with the remaining requirements in "
+         "accordance with a documented remediation plan approved by the Board or a Board "
+         "committee, within the period determined by APRA.",
+         ["The two limbs address different problems. Entity-level obligations — the framework, the accountable executive, policies, appetite and the inventory — can be met from commencement and are the foundation for everything else. Model-level obligations expressed as a bar on use, such as pre-implementation testing and independent validation, would on commencement prohibit the continued use of models the entity is already relying on, which is not the intended effect.",
           "The remediation plan should sequence by model risk tier rather than by convenience, "
           "and should identify the models the entity cannot bring into compliance within the "
           "period and what it proposes to do about them."]),
@@ -185,13 +184,15 @@ def front_matter(doc):
           "alongside.",
           "The scope of the power, and the procedural requirements attaching to its exercise, "
           "require legal settlement."]),
-        ("A6", "Interpretation and previous determinations",
-         "Terms defined in Annex A have the meaning given in that Annex, and a reference to a "
-         "prudential standard is a reference to that standard as in force from time to time.",
-         ["Where an AI system meets the definition of a model, this Prudential Standard applies to "
-          "it. The interaction with any separate prudential standard on artificial intelligence "
-          "risk management is addressed in M34 and is a matter for settlement once the numbering "
-          "and scope of that instrument are known."]),
+        ("A6", "Interpretation, defined terms and foreign ADIs",
+         "Terms defined in Annex A have the meaning given in that Annex; a term not so defined has "
+         "the meaning given in Prudential Standard CPS 001 Defined Terms; a reference to a "
+         "prudential standard is a reference to that standard as in force from time to time; and, "
+         "for a foreign ADI, a reference to the Board is a reference to the senior officer outside "
+         "Australia to whom authority has been delegated, and this Prudential Standard applies in "
+         "respect of the models used in or affecting its Australian operations.",
+         ["Where an artificial intelligence system meets the definition of a model, this Prudential Standard applies to it. The interaction with any separate prudential standard on artificial intelligence risk management is addressed in M34 and is a matter for settlement once the numbering and scope of that instrument are known.",
+          "The read-down for foreign ADIs follows the approach taken in the other cross-industry standards. Without it, every governance obligation expressed in terms of the Board would be incapable of performance by a branch."]),
     ]
 
     for pid, title, operative, notes in items:

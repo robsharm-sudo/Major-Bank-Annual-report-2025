@@ -512,6 +512,19 @@ SOURCES = [
         "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
+        "id": "APRA-HPS110", "authority": "APRA",
+        "title": "Prudential Standard HPS 110 Capital Adequacy (private health insurance)",
+        "published": "Current at the as-of date", "effective": "In force at the as-of date",
+        "date": "In force; commencement not separately verified",
+        "status": "Binding prudential standard.",
+        "scope": "Private health insurers.",
+        "relevant": "Capital adequacy for private health insurers. Named here because private "
+                    "health insurance is within the enabling authority for this Prudential "
+                    "Standard and its liability and risk equalisation calculations are modelled.",
+        "url": "https://www.apra.gov.au/standards/hps-110",
+        "verification": V_SECONDARY, "checked": CHECKED,
+    },
+    {
         "id": "APRA-SPS114", "authority": "APRA",
         "title": "Prudential Standard SPS 114 Operational Risk Financial Requirement",
         "published": "Current at the as-of date", "effective": "In force at the as-of date",
@@ -698,7 +711,17 @@ LEGAL_SETTLEMENT = [
      "remediation, and ensure procedural fairness."],
     ["Commencement and transition",
      "Set commencement, transitional milestones for inventory, tiering and validation coverage, "
-     "and the treatment of models already in use."],
+     "and the treatment of models already in use. Paragraph A4 splits entity-level from "
+     "model-level obligations; the periods for each require settlement."],
+    ["Simplified compliance for smaller entities",
+     "Decide whether a de minimis threshold or a simplified compliance pathway is warranted. As "
+     "drafted, all requirements apply to every APRA-regulated entity and proportionality operates "
+     "on control intensity rather than on scope. The OCC has taken the alternative route of "
+     "confining its guidance to institutions above a size threshold. This is a policy choice for "
+     "consultation and is not settled in this draft."],
+    ["Foreign ADIs and branches",
+     "Confirm the read-down in paragraph A6 for foreign ADIs, and settle whether the standard "
+     "reaches models operated outside Australia that affect Australian operations."],
     ["Records and privacy",
      "Balance the reconstructability requirement against data minimisation, security and technical "
      "feasibility."],
@@ -2068,6 +2091,53 @@ REDTEAM_ROWS = [
      "back at M13.",
      "M13 and Annex B.",
      "The standard's own interpretation rule that only bold paragraphs are mandatory.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-46",
+     "Every governance obligation was expressed in terms of 'the Board'; private health insurance "
+     "appeared nowhere despite being in the enabling authority; A4's transition reached only "
+     "model-level obligations; and Annex A's bespoke definitions were not tied to CPS 001.",
+     "A foreign ADI has no Australian Board, so those obligations were incapable of performance by "
+     "a branch. A named industry with no coverage would not survive consultation. Entity-level "
+     "obligations with no transition would all fall due on commencement. And bespoke definitions "
+     "floating free of CPS 001 invite inconsistency with the rest of the framework.",
+     "A6 now reads down 'the Board' for foreign ADIs and ties undefined terms to CPS 001. A4 was "
+     "split into entity-level obligations from commencement and model-level obligations on a "
+     "remediation plan. M37 now names private health insurers, deferred claims liabilities and "
+     "risk equalisation, and cites HPS 110. Annex F gained items for foreign ADIs and for whether "
+     "a simplified pathway for smaller entities is warranted.",
+     "A4, A6, M37, Annex F and the source register.",
+     "Cross-industry drafting practice in CPS 220, CPS 230 and CPS 234; the enabling authority in A1.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-47",
+     "M03's carve-out excluded any tool whose output is fully determined by its inputs and "
+     "documented rules.",
+     "A unit price calculation is fully determined by its inputs. The carve-out would therefore "
+     "have excluded the very models M02 and M38 were drafted to capture — the ones whose errors "
+     "transfer value between members irreversibly.",
+     "M03's test now turns on consequence as well as method: a tool is outside the definition only "
+     "where it also does not determine a regulatory figure, a reported valuation or an amount "
+     "attributable to a customer or beneficiary.",
+     "M03; resolves a direct contradiction with M02 and M38.",
+     "Internal consistency analysis across M02, M03 and M38.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-48",
+     "No requirement addressed the outputs a failed model had already produced, and M30 conferred "
+     "a power to suspend a model without requiring anything to fall back on. Group and offshore "
+     "model governance was unaddressed.",
+     "Remediating a finding is not the same as remediating its consequences: a model that "
+     "mispriced units or understated a provision leaves balances and figures that need "
+     "correcting. A power to suspend a model the entity has no alternative to is not usable. And "
+     "for many Australian entities the model is built and validated by an offshore parent.",
+     "M29 now requires the entity, on identifying a material error or failure, to determine its "
+     "cause, assess whether the weakness affects other models, and address the effect on figures, "
+     "balances and customer or beneficiary amounts already produced. M30 requires an identified "
+     "alternative basis for highest-tier models. M07 requires the entity to satisfy itself about "
+     "group-performed work and retain the ability to direct and challenge it.",
+     "M07, M29 and M30.",
+     "ECB guide on group-level model governance; OSFI E-23 lifecycle stages.",
      "High", "Closed — correction incorporated"],
 
     ["RT-18",

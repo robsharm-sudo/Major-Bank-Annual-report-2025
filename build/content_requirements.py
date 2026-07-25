@@ -97,8 +97,9 @@ REQUIREMENTS = [
             "An APRA-regulated entity must identify material quantitative decision tools that fall outside its "
             "model definition — being tools whose output is fully determined by their inputs and "
             "documented rules, without estimation, statistical inference or an embedded assumption "
-            "about an uncertain quantity — record them, and apply controls proportionate to the risk "
-            "they present."
+            "about an uncertain quantity, and whose output does not determine a regulatory figure, a "
+            "reported valuation or an amount attributable to a customer or beneficiary — record them, and "
+            "apply controls proportionate to the risk they present."
         ),
         "guidance": [
             "Deterministic calculators, complex spreadsheets, rules engines, allocation keys and end-user computing "
@@ -211,7 +212,10 @@ REQUIREMENTS = [
         "requirement": (
             "An APRA-regulated entity must assign, for each model, a model owner accountable for the model "
             "throughout its lifecycle, and must define the roles, responsibilities and required independence of "
-            "developers, validators, approvers, users and those responsible for monitoring."
+            "developers, validators, approvers, users and those responsible for monitoring. Where development, "
+            "validation, approval or monitoring is performed by another member of the entity's group or by a "
+            "related body corporate, the entity must satisfy itself that the work meets the requirements of this "
+            "Prudential Standard and must retain the ability to direct, challenge and obtain evidence of it."
         ),
         "guidance": [
             "The model owner is accountable for the model being fit for its approved purpose, for its documentation "
@@ -793,8 +797,12 @@ REQUIREMENTS = [
         "title": "Limitations, compensating controls and remediation",
         "requirement": (
             "An APRA-regulated entity must record known model limitations and deficiencies, apply compensating "
-            "controls where a limitation is material and not immediately resolvable, track remediation to completion "
-            "against owners and dates, and escalate overdue or unresolved material findings."
+            "controls where a limitation is material and not immediately resolvable, track remediation to "
+            "completion against owners and dates, and escalate overdue or unresolved material findings. On "
+            "identifying a material model error or failure, the entity must determine its cause, assess whether "
+            "the same weakness affects other models, and assess and address the effect on decisions, figures, "
+            "balances and amounts attributable to customers or beneficiaries that the model has already "
+            "produced."
         ),
         "guidance": [
             "Compensating controls should be specific to the limitation they address. A general statement that outputs "
@@ -820,7 +828,10 @@ REQUIREMENTS = [
         "requirement": (
             "An APRA-regulated entity must be able to restrict, suspend, replace or decommission a model that is "
             "unfit for its purpose, and must manage decommissioning so that dependent processes, downstream models "
-            "and outputs that remain in force are addressed and records are retained."
+            "and outputs that remain in force are addressed and records are retained. Where a model in the entity's highest risk tier "
+            "is material to a decision or figure, the entity must identify and periodically assess the "
+            "alternative basis on which that decision or figure would be determined if the model were "
+            "unavailable."
         ),
         "guidance": [
             "The entity should know, before it needs to act, what it would do if a material model became unusable — "
@@ -1017,8 +1028,10 @@ REQUIREMENTS = [
         "section": "24. Actuarial and insurance models",
         "title": "Actuarial, reserving and insurance liability models",
         "requirement": (
-            "An APRA-regulated insurer must apply this Prudential Standard to models used to determine insurance "
-            "liabilities, premiums, reinsurance recoveries and capital, and must ensure that the role of the "
+            "An APRA-regulated insurer, including a private health insurer, must apply this Prudential Standard to "
+            "models used to determine insurance liabilities, including deferred claims liabilities and, for a "
+            "private health insurer, amounts arising under the risk equalisation arrangements, and to models "
+            "used to determine premiums, reinsurance recoveries and capital, and must ensure that the role of the "
             "Appointed Actuary and this Prudential Standard's validation requirements operate together without gaps "
             "in independent review. Independent review performed under CPS 320 and the sectoral actuarial standards "
             "may satisfy the independent validation requirement for an actuarial model to the extent the reviewer "
@@ -1032,7 +1045,7 @@ REQUIREMENTS = [
             "The insurer should map which elements of validation are discharged through the actuarial control cycle "
             "and which require separate work, rather than assuming complete overlap in either direction.",
         ],
-        "sources": ["APRA-CPS320", "OSFI-E23"],
+        "sources": ["APRA-CPS320", "APRA-HPS110", "OSFI-E23"],
         "principles": "APRA Appointed Actuary framework; OSFI E-23 application to insurers",
         "provenance": "Extracted + inferred",
         "rationale": (
