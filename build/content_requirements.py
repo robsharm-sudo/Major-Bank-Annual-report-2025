@@ -95,7 +95,10 @@ REQUIREMENTS = [
         "title": "Quantitative tools that are not models",
         "requirement": (
             "An APRA-regulated entity must identify material quantitative decision tools that fall outside its "
-            "model definition, record them, and apply controls proportionate to the risk they present."
+            "model definition — being tools whose output is fully determined by their inputs and "
+            "documented rules, without estimation, statistical inference or an embedded assumption "
+            "about an uncertain quantity — record them, and apply controls proportionate to the risk "
+            "they present."
         ),
         "guidance": [
             "Deterministic calculators, complex spreadsheets, rules engines, allocation keys and end-user computing "
@@ -123,12 +126,13 @@ REQUIREMENTS = [
         "requirement": (
             "An APRA-regulated entity must apply this Prudential Standard in a manner proportionate to the "
             "materiality, complexity, autonomy and criticality of each model and to the size and business mix of "
-            "the entity, and must document, time-bound, approve at an authority commensurate with the risk, and "
-            "periodically review any exception to or reduction of the controls otherwise required."
+            "the entity, must be able to demonstrate that the intensity of controls applied to each model "
+            "reflects its model risk tier and that models of equivalent tier are treated consistently, and must "
+            "document, time-bound, approve at an authority commensurate with the risk and periodically review "
+            "any departure from its own model risk policies and standards."
         ),
         "guidance": [
-            "Proportionality changes the depth, frequency and formality of controls. It does not change whether a "
-            "model must be identified, owned, classified or capable of being explained to the Board and to APRA.",
+            "Proportionality changes the depth, frequency and formality of controls. It does not permit an entity to except itself from a requirement of this Prudential Standard. Only APRA may adjust or exclude a requirement, under paragraph A5.",
             "A small entity with a handful of vendor models has a materially different obligation from a large "
             "entity operating hundreds of internally developed models across several regulated businesses. Both "
             "must be able to demonstrate that the difference reflects risk rather than convenience.",
@@ -360,9 +364,10 @@ REQUIREMENTS = [
         "section": "7. Inventory",
         "title": "Model identification and enterprise inventory",
         "requirement": (
-            "An APRA-regulated entity must maintain a complete, accurate and current enterprise-wide inventory of "
-            "its models, including models supplied by third parties, models embedded in acquired systems, models "
-            "under development and models that have been retired but whose outputs remain in use."
+            "An APRA-regulated entity must maintain an enterprise-wide inventory of its models and must "
+            "maintain processes designed to ensure that the inventory is complete, accurate and current, "
+            "including models supplied by third parties, models embedded in acquired systems, models under "
+            "development and models that have been retired but whose outputs remain in use."
         ),
         "guidance": [
             "The inventory is the foundation of the framework: nothing else in this Prudential Standard can be "
@@ -549,9 +554,12 @@ REQUIREMENTS = [
         "title": "Independent validation",
         "requirement": (
             "An APRA-regulated entity must subject each model to independent validation before it is used for a "
-            "material purpose and periodically thereafter at a frequency determined by its tier, and must not treat "
-            "validation performed by the model's developer, its business sponsor or its vendor as satisfying this "
-            "requirement."
+            "material purpose and periodically thereafter at a frequency determined by its tier, and must not "
+            "treat validation performed by the model's developer, its business sponsor or its vendor as "
+            "satisfying this requirement. Where an urgent business need requires a model to be used before "
+            "independent validation is complete, the entity must approve that use at an authority commensurate "
+            "with the model's tier, apply compensating controls, inform users of the limitation and complete "
+            "the validation within a defined period."
         ),
         "guidance": [
             "Validation is a distinct exercise from development testing. Its purpose is to form an independent view "
@@ -574,10 +582,12 @@ REQUIREMENTS = [
         "section": "13. Independent validation",
         "title": "Scope of validation",
         "requirement": (
-            "Validation of a model must address conceptual soundness, outcomes analysis comparing model "
-            "outputs with corresponding actual outcomes, and ongoing model monitoring, and must reach an "
-            "explicit conclusion on the model's fitness for its intended use together with any conditions "
-            "or limitations."
+            "Validation of a model must address conceptual soundness, ongoing model monitoring, and outcomes "
+            "analysis comparing model outputs with corresponding actual outcomes to the extent those outcomes "
+            "are observable and sufficient for the purpose, and must reach an explicit conclusion on the "
+            "model's fitness for its intended use together with any conditions or limitations. Where outcomes "
+            "are not observable, the entity must apply alternative evidence of performance, including "
+            "benchmarking, sensitivity analysis and assessment of assumptions."
         ),
         "guidance": [
             "These three elements are complementary and none is sufficient alone. Conceptual soundness alone cannot "
@@ -827,10 +837,12 @@ REQUIREMENTS = [
         "section": "20. Third-party models",
         "title": "Vendor and externally developed models",
         "requirement": (
-            "An APRA-regulated entity must apply this Prudential Standard to models supplied, hosted or operated by "
-            "third parties, and must obtain information sufficient to understand the model's design, data, "
-            "assumptions, limitations and performance, or implement compensating controls where that information "
-            "cannot be obtained."
+            "An APRA-regulated entity must apply this Prudential Standard to models supplied, hosted or "
+            "operated by third parties, and must obtain information sufficient to understand the model's "
+            "design, data, assumptions, limitations and performance. Where the entity cannot itself discharge "
+            "an obligation in this Prudential Standard in relation to a third-party model, it must obtain "
+            "equivalent assurance from the provider or implement compensating controls, and must record which "
+            "obligations are met in that way."
         ),
         "guidance": [
             "Where a provider will not disclose methodology, the entity should intensify what it can do itself: "
@@ -855,7 +867,9 @@ REQUIREMENTS = [
             "An APRA-regulated entity must maintain contractual and governance arrangements giving it timely access "
             "to the information and assurance it needs to meet its obligations in relation to a material third-party "
             "model, and must identify and manage concentration and substitutability risk arising from common models, "
-            "data sources, platforms and providers."
+            "data sources, platforms and providers. Where an arrangement is already on foot at the commencement of "
+            "this Prudential Standard, this paragraph applies from the earlier of the next renewal or material "
+            "variation of that arrangement and the end of the transition period determined by APRA."
         ),
         "guidance": [
             "Information rights should be practically usable rather than nominally present. A right to audit that the "
@@ -999,7 +1013,10 @@ REQUIREMENTS = [
             "An APRA-regulated insurer must apply this Prudential Standard to models used to determine insurance "
             "liabilities, premiums, reinsurance recoveries and capital, and must ensure that the role of the "
             "Appointed Actuary and this Prudential Standard's validation requirements operate together without gaps "
-            "in independent review."
+            "in independent review. Independent review performed under CPS 320 and the sectoral actuarial standards "
+            "may satisfy the independent validation requirement for an actuarial model to the extent the reviewer "
+            "was not responsible for developing the model or setting its assumptions, and the insurer must identify "
+            "and separately address any element not so covered."
         ),
         "guidance": [
             "The Appointed Actuary provides a form of independent professional review that is well established and, "
@@ -1078,9 +1095,10 @@ REQUIREMENTS = [
         "section": "27. Aggregate model risk",
         "title": "Aggregate assessment of model risk",
         "requirement": (
-            "An APRA-regulated entity must assess model risk in aggregate across its model portfolio, must consider "
-            "the effect of that aggregate risk in its internal capital assessment, and must be able to explain the "
-            "basis and limitations of the assessment."
+            "An APRA-regulated entity must assess model risk in aggregate across its model portfolio, must "
+            "consider the effect of that aggregate risk in its internal capital adequacy assessment or, for an "
+            "RSE licensee, in determining its operational risk financial requirement target amount, and must "
+            "be able to explain the basis and limitations of the assessment."
         ),
         "guidance": [
             "Aggregate assessment need not be a single number. Concentration of reliance, correlation of methodology "
@@ -1153,7 +1171,7 @@ REQUIREMENTS = [
         "section": "30. APRA engagement",
         "title": "Notification and provision of information to APRA",
         "requirement": (
-            "An APRA-regulated entity must notify APRA of a model failure or model risk event that has, or is likely "
+            "An APRA-regulated entity must notify APRA as soon as practicable, and within the timeframe applicable under CPS 230 or CPS 234 where the event also falls within those standards, of a model failure or model risk event that has, or is likely "
             "to have, a material impact on its financial position, its regulatory reporting or its ability to meet "
             "its prudential obligations, and must provide APRA with information relating to its models and model risk "
             "management on request."

@@ -1749,6 +1749,131 @@ REDTEAM_ROWS = [
      "APRA standards page for CPS 320; July 2019 primary PDF.",
      "Medium", "Closed — limitation disclosed rather than concealed"],
 
+    ["RT-26",
+     "The standard opened at 'Objectives and key requirements' with no Authority, Application, "
+     "Commencement or Adjustments and exclusions paragraphs.",
+     "Every APRA prudential standard carries this front matter. Without an adjustments and "
+     "exclusions paragraph there is no lawful route for APRA to vary a requirement for an "
+     "individual entity, making the instrument more rigid than every standard it sits alongside. "
+     "Without a transitional paragraph, requirements expressed as a bar on use would on "
+     "commencement prohibit continued use of models entities already rely on.",
+     "Paragraphs A1 to A6 were added: authority, application, commencement, transitional "
+     "arrangements for models already in use, adjustments and exclusions, and interpretation. "
+     "Each carries a note identifying what requires legal settlement.",
+     "Six new mandatory paragraphs; the standard is now structurally complete as an instrument.",
+     "CPS 230 paragraphs 1 to 11 as the structural precedent.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-27",
+     "M04 required an entity to document and approve 'any exception to or reduction of the "
+     "controls otherwise required' by the standard.",
+     "The controls otherwise required are the mandatory paragraphs. As drafted, a proportionality "
+     "clause purported to let an entity except itself from the instrument's own requirements at "
+     "its own approval authority.",
+     "M04 was split in substance: it now requires the entity to demonstrate that control intensity "
+     "reflects the model's tier and that equivalent models are treated consistently, and confines "
+     "the exception machinery to departures from the entity's own policies and standards. The "
+     "guidance states plainly that only APRA may adjust or exclude a requirement, under A5.",
+     "M04 redrafted; its guidance rewritten; the adjustment power now sits in A5 where it belongs.",
+     "Internal analysis of the interaction between M04 and the mandatory paragraphs.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-28",
+     "M21 required validation to address outcomes analysis comparing model outputs with "
+     "corresponding actual outcomes, without qualification.",
+     "For several model classes the standard expressly brings into scope — stress testing, "
+     "scenario analysis, capital planning and forward-looking climate models — no corresponding "
+     "actual outcome exists. The requirement was impossible to satisfy for them.",
+     "M21 now requires outcomes analysis to the extent outcomes are observable and sufficient for "
+     "the purpose, and requires alternative evidence of performance — benchmarking, sensitivity "
+     "analysis and assessment of assumptions — where they are not.",
+     "M21 redrafted; the validation intensity table in the guide realigned.",
+     "M39 scope; BCBS stress testing principles 7 and 8.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-29",
+     "M20 barred use of a model for a material purpose until independent validation was complete, "
+     "with no exception path.",
+     "The current US guidance expressly contemplates use before validation on urgent business "
+     "need with compensating controls. An absolute bar with no exception and no transition would "
+     "on commencement prohibit continued use of every insufficiently validated model in the "
+     "industry.",
+     "M20 now permits use before validation completes where there is an urgent business need, "
+     "subject to approval at an authority commensurate with tier, compensating controls, informing "
+     "users of the limitation and completing validation within a defined period. Paragraph A4 "
+     "provides the transition for models already in use.",
+     "M20 redrafted; A4 added.",
+     "US interagency guidance 2026 §V.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-30",
+     "M40 required every APRA-regulated entity to consider aggregate model risk in its internal "
+     "capital assessment.",
+     "RSE licensees have no internal capital assessment. The requirement was inapplicable to an "
+     "entire regulated industry the standard purports to cover.",
+     "M40 now refers to the internal capital adequacy assessment or, for an RSE licensee, to "
+     "determining the operational risk financial requirement target amount.",
+     "M40 redrafted sector-neutrally.",
+     "Superannuation prudential framework; SPS 114 operational risk financial requirement.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-31",
+     "M13 required a complete, accurate and current inventory in absolute terms; M31's "
+     "compensating-control escape reached only the information limb; M32 had no transition for "
+     "contracts already on foot; and M37 left the Appointed Actuary conflict to the guide.",
+     "Absolute completeness is not demonstrable and not testable. A hosted vendor model cannot be "
+     "subjected to the entity's own implementation controls. Existing contracts cannot be reopened "
+     "on commencement. And for most insurers the Appointed Actuary sets the assumptions, so M08 "
+     "and M20 would disqualify the very review CPS 320 requires.",
+     "M13 now requires the inventory plus processes designed to ensure completeness. M31's escape "
+     "extends to any obligation the entity cannot itself discharge for a third-party model, with a "
+     "record of which are met that way. M32 applies to existing arrangements from the earlier of "
+     "renewal, material variation or the end of the transition period. M37 resolves the actuarial "
+     "interaction in the standard: CPS 320 review satisfies independent validation to the extent "
+     "the reviewer did not develop the model or set its assumptions.",
+     "Four requirements redrafted.",
+     "CPS 230 transitional precedent for service provider arrangements; CPS 320.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-32",
+     "The practice guide's validation intensity table prescribed 'at least annually' for the "
+     "highest tier and 'every two to three years' for the second, while its own caption called the "
+     "frequencies illustrative.",
+     "A table that states an interval will be read as the expectation whatever the caption says. "
+     "No comparator prescribes cross-industry validation frequencies, and the OCC has expressly "
+     "confirmed that its guidance does not require annual validation.",
+     "The frequency cells now state the drivers rather than intervals, and the caption and "
+     "verification note explain why no interval is given.",
+     "Chapter 8 of the practice guide.",
+     "OCC Bulletin 2025-26; US interagency guidance 2026 §V; PRA SS1/23 Principle 4.5.",
+     "Medium", "Closed — correction incorporated"],
+
+    ["RT-33",
+     "M43 created a notification obligation with no timeframe and no threshold beyond 'material', "
+     "while the guidance beneath it told entities to use CPS 230 and CPS 234 timeframes.",
+     "The requirement and its guidance said different things, and the requirement as drafted was "
+     "not testable.",
+     "M43 now states the timing expectation on the face of the requirement and ties it to the "
+     "CPS 230 and CPS 234 timeframes where the event falls within those standards, resolving the "
+     "inconsistency without creating a competing deadline.",
+     "M43 redrafted.",
+     "CPS 230; CPS 234.",
+     "Medium", "Closed — correction incorporated"],
+
+    ["RT-34",
+     "M03 identified non-model quantitative tools by example only — spreadsheets, rules engines, "
+     "allocation keys — with no stated criterion.",
+     "Examples cannot draw a perimeter. A complex spreadsheet running a regression is a model; a "
+     "complex spreadsheet applying documented arithmetic is not. The examples invited the wrong "
+     "reading.",
+     "M03 now states the criterion on the face of the requirement: a tool falls outside the model "
+     "definition only where its output is fully determined by its inputs and documented rules, "
+     "without estimation, statistical inference or an embedded assumption about an uncertain "
+     "quantity.",
+     "M03 redrafted.",
+     "PRA SS1/23 Principle 1.1; US interagency guidance 2026 §II exclusions.",
+     "Medium", "Closed — correction incorporated"],
+
     ["RT-18",
      "The Comptroller's Handbook model risk management booklet was cited as a source.",
      "Is it retrievable, and is it current?",

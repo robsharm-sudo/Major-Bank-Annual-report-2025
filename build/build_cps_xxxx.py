@@ -122,8 +122,93 @@ def interpretation(doc):
          "Guidance")
 
 
+def front_matter(doc):
+    """Authority, application, commencement and the adjustment power.
+
+    Every APRA prudential standard opens with these. Without an adjustments and
+    exclusions paragraph in particular there is no lawful route to vary a
+    requirement for an individual entity, which would make the instrument far
+    more rigid than any comparable standard.
+    """
+    doc.add_paragraph("Authority, application and commencement", style="Heading 1")
+
+    items = [
+        ("A1", "Authority",
+         "This Prudential Standard is made under the enabling provisions of the Banking Act 1959, "
+         "the Insurance Act 1973, the Life Insurance Act 1995, the Private Health Insurance "
+         "(Prudential Supervision) Act 2015 and the Superannuation Industry (Supervision) Act 1993, "
+         "as applicable to each class of APRA-regulated entity.",
+         ["The precise enabling sections, and whether a single cross-industry instrument can be "
+          "made for all classes of APRA-regulated entity or whether companion instruments are "
+          "required, must be settled by APRA Legal and the Office of Parliamentary Counsel. "
+          "Annex F records this."]),
+        ("A2", "Application",
+         "This Prudential Standard applies to all APRA-regulated entities, in accordance with the "
+         "classes specified in this paragraph and subject to any adjustment or exclusion "
+         "determined under paragraph A5.",
+         ["The classes to which this Prudential Standard applies, including the treatment of "
+          "foreign ADIs and branches, non-operating holding companies, private health insurers "
+          "and application at Level 1, Level 2 and Level 3, require settlement before "
+          "consultation.",
+          "An APRA-regulated entity that is a member of a group must comply with this Prudential "
+          "Standard both as an individual entity and, where APRA so determines, on a group basis."]),
+        ("A3", "Commencement",
+         "This Prudential Standard commences on a date to be determined.",
+         ["Commencement and any transitional arrangements are matters for settlement. Given the "
+          "uplift required in model identification, inventory completeness and validation "
+          "coverage, staged commencement with earlier milestones for inventory and tiering than "
+          "for validation would be consistent with the transition periods adopted by comparable "
+          "authorities."]),
+        ("A4", "Transitional arrangements for models already in use",
+         "An APRA-regulated entity must bring a model that is in use at the commencement of this "
+         "Prudential Standard into compliance in accordance with a documented remediation plan "
+         "approved by the Board or a Board committee, within the period determined by APRA.",
+         ["Without this paragraph, requirements expressed as a bar on use — such as the "
+          "pre-implementation testing and independent validation requirements — would on "
+          "commencement prohibit the continued use of models the entity is already relying on. "
+          "That is not the intended effect.",
+          "The remediation plan should sequence by model risk tier rather than by convenience, "
+          "and should identify the models the entity cannot bring into compliance within the "
+          "period and what it proposes to do about them."]),
+        ("A5", "Adjustments and exclusions",
+         "APRA may, by notice in writing to an APRA-regulated entity, adjust or exclude a specific "
+         "requirement in this Prudential Standard in relation to that entity.",
+         ["This mirrors the adjustment power in the other cross-industry prudential standards. It "
+          "is the route by which a requirement can be varied for an individual entity, and its "
+          "absence would make this Prudential Standard less flexible than the instruments it sits "
+          "alongside.",
+          "The scope of the power, and the procedural requirements attaching to its exercise, "
+          "require legal settlement."]),
+        ("A6", "Interpretation and previous determinations",
+         "Terms defined in Annex A have the meaning given in that Annex, and a reference to a "
+         "prudential standard is a reference to that standard as in force from time to time.",
+         ["Where an AI system meets the definition of a model, this Prudential Standard applies to "
+          "it. The interaction with any separate prudential standard on artificial intelligence "
+          "risk management is addressed in M34 and is a matter for settlement once the numbering "
+          "and scope of that instrument are known."]),
+    ]
+
+    for pid, title, operative, notes in items:
+        doc.add_paragraph(f"{pid} — {title}", style="Heading 3")
+        p = doc.add_paragraph(style="Requirement")
+        p.add_run(f"{pid}. {operative}").bold = True
+        for n in notes:
+            para(doc, n, "Guidance")
+
+    callout(
+        doc,
+        "Front matter is drafting scaffolding",
+        "Paragraphs A1 to A6 set out the instrument mechanics that every APRA prudential standard "
+        "carries. They are drafted here so that the standard is structurally complete and can be "
+        "read as an instrument, but the enabling provisions, application classes, commencement, "
+        "transition period and the scope of the adjustment power are all matters for APRA Legal "
+        "and the Office of Parliamentary Counsel. Annex F records each of them.",
+    )
+
+
 def contents(doc):
     doc.add_paragraph("Contents", style="Heading 1")
+    para(doc, "Authority, application and commencement  (A1–A6)", "ContentsHead")
     seen = []
     for r in R.REQUIREMENTS:
         if r["part"] not in seen:
@@ -294,6 +379,7 @@ def main():
     cover(doc)
     objectives(doc)
     interpretation(doc)
+    front_matter(doc)
     contents(doc)
     body(doc, req_map)
     annex_a(doc)
