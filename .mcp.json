@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "mrm-policy": {
+      "command": "python3",
+      "args": ["mcp/mrm_policy_server.py"],
+      "env": {}
+    }
+  }
+}

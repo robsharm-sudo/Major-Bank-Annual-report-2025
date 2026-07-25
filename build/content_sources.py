@@ -171,9 +171,7 @@ SOURCES = [
         "scope": "Banks, foreign bank branches, life insurance and fraternal companies, property "
                  "and casualty companies, and trust and loan companies. Does not apply to "
                  "federally regulated pension plans.",
-        "relevant": "Three outcomes and twelve principles numbered 1.1 to 3.6, covering "
-                    "enterprise-wide model risk management, a risk-based approach, and model "
-                    "lifecycle management. Expressly covers AI and machine learning models.",
+        "relevant": "Three outcomes and twelve principles numbered 1.1 to 3.6, covering enterprise-wide model risk management, a risk-based approach, and model lifecycle management. Appendix 1, Information tracking for models, sets out minimum model inventory content. Expressly covers AI and machine learning models.",
         "url": "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/guideline-e-23-model-risk-management-2027",
         "verification": V_PRIMARY, "checked": CHECKED,
     },
@@ -183,8 +181,7 @@ SOURCES = [
                  "Institutions (2017)",
         "published": "30 September 2017", "effective": "On issue",
         "date": "Sep 2017 (superseded)",
-        "status": "Supervisory guideline, superseded by the 2027 guideline with effect from "
-                  "1 May 2027.",
+        "status": "Supervisory guideline. OSFI's guidance library presents the 2027 guideline as its replacement from 1 May 2027, but no express supersession clause was located in either the 2027 guideline or its covering letter, so the relationship is stated as OSFI presents it rather than as a quoted provision.",
         "scope": "Federally regulated deposit-taking institutions only.",
         "relevant": "The predecessor framework, structured as numbered sections rather than "
                     "principles. Included for contrast with the expanded 2027 scope.",
@@ -201,7 +198,7 @@ SOURCES = [
         "relevant": "Third-party arrangements including externally supplied models and the "
                     "information rights needed to govern them.",
         "url": "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/third-party-risk-management-guideline",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
     # ---------------------------------------------------------------- EU
     {
@@ -244,14 +241,14 @@ SOURCES = [
     {
         "id": "ECB-RDARR", "authority": "ECB",
         "title": "Guide on effective risk data aggregation and risk reporting",
-        "published": "May 2024", "effective": "On issue",
+        "published": "3 May 2024", "effective": "On issue",
         "date": "May 2024",
         "status": "Supervisory guide. Sets out ECB expectations; not a legal act.",
         "scope": "Significant institutions directly supervised by the ECB.",
         "relevant": "Data governance, data quality and the reliability of risk data feeding "
                     "models and risk reporting.",
-        "url": "https://www.bankingsupervision.europa.eu/press/pr/date/2024/html/ssm.pr240503~9c07f30f24.en.html",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "url": "https://www.bankingsupervision.europa.eu/framework/legal-framework/public-consultations/html/rdarr.en.html",
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
     # ---------------------------------------------------------------- Singapore
     {
@@ -265,8 +262,8 @@ SOURCES = [
         "scope": "Banks selected for the MAS thematic review; of general interest more broadly.",
         "relevant": "Governance and oversight, key risk management systems and processes, and "
                     "development and deployment controls for AI models, including generative AI.",
-        "url": "https://www.mas.gov.sg/publications/monographs-or-information-paper/2024/information-paper-on-ai-model-risk-management",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "url": "https://www.mas.gov.sg/publications/monographs-or-information-paper/2024/artificial-intelligence-model-risk-management",
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
         "id": "MAS-FEAT", "authority": "MAS",
@@ -280,7 +277,7 @@ SOURCES = [
         "relevant": "Fairness, ethics, accountability and transparency principles applied to "
                     "analytics and AI-driven decisions.",
         "url": "https://www.mas.gov.sg/publications/monographs-or-information-paper/2018/feat",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
         "id": "MAS-NOTICE637", "authority": "MAS",
@@ -293,7 +290,7 @@ SOURCES = [
         "relevant": "Internal ratings-based and internal models provisions, including model "
                     "validation, independent review and the use test for regulatory capital models.",
         "url": "https://www.mas.gov.sg/regulation/notices/notice-637",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
     # ---------------------------------------------------------------- BCBS
     {
@@ -316,7 +313,7 @@ SOURCES = [
         "title": "Stress testing principles",
         "published": "October 2018", "effective": "n/a",
         "date": "Oct 2018",
-        "status": "International principles. Effect depends on domestic implementation.",
+        "status": "BIS-classified Guidelines. The document expressly states that the principles do not constitute Standards, for which the Basel Committee expects full implementation. Domestic effect depends on implementation by national authorities.",
         "scope": "Banks and supervisors, applied proportionately.",
         "relevant": "Nine principles on stress testing governance, including the models used and "
                     "the assumptions and expert judgement embedded in them.",
@@ -334,7 +331,7 @@ SOURCES = [
         "relevant": "Valuation governance, valuation model validation, independent price "
                     "verification and the treatment of valuation uncertainty.",
         "url": "https://www.bis.org/publ/bcbs153.htm",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
         "id": "BCBS-DIGI", "authority": "BCBS",
@@ -365,7 +362,7 @@ SOURCES = [
         "title": "Principles for the sound management of third-party risk (BCBS d605)",
         "published": "2025", "effective": "n/a",
         "date": "2025",
-        "status": "International principles. Effect depends on domestic implementation.",
+        "status": "BIS-classified Guidelines, not a Standard. Domestic effect depends on implementation by national authorities.",
         "scope": "Primarily internationally active banks and their supervisors.",
         "relevant": "Twelve principles covering governance, risk management and strategy, risk "
                     "assessment, due diligence, contracting, onboarding, ongoing monitoring, "
@@ -410,8 +407,8 @@ SOURCES = [
                  "counterpart.",
         "relevant": "Risk management framework, risk appetite, Board and senior management "
                     "responsibilities. Does not name model risk as a distinct risk type.",
-        "url": "https://www.apra.gov.au/prudential-standard-cps-220-risk-management",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "url": "https://www.apra.gov.au/standards/cps-220",
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
         "id": "APRA-SPS220", "authority": "APRA",
@@ -421,8 +418,8 @@ SOURCES = [
         "status": "Binding prudential standard.",
         "scope": "RSE licensees.",
         "relevant": "Risk management framework and governance obligations for superannuation.",
-        "url": "https://www.apra.gov.au/prudential-standard-sps-220-risk-management",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "url": "https://www.apra.gov.au/standards/sps-220",
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
         "id": "APRA-CPS230", "authority": "APRA",
@@ -433,8 +430,8 @@ SOURCES = [
         "scope": "APRA-regulated entities as defined in CPS 230.",
         "relevant": "Operational risk controls, critical operations and tolerance levels, incident "
                     "management and notification, and service provider management.",
-        "url": "https://www.apra.gov.au/prudential-standard-cps-230-operational-risk-management",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "url": "https://www.apra.gov.au/standards/cps-230",
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
         "id": "APRA-CPS234", "authority": "APRA",
@@ -445,8 +442,8 @@ SOURCES = [
         "scope": "APRA-regulated entities as defined in CPS 234.",
         "relevant": "Information security capability, control testing, incident notification and "
                     "assurance.",
-        "url": "https://www.apra.gov.au/prudential-standard-cps-234-information-security",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "url": "https://www.apra.gov.au/standards/cps-234",
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
         "id": "APRA-CPG235", "authority": "APRA",
@@ -457,8 +454,8 @@ SOURCES = [
         "scope": "APRA-regulated entities.",
         "relevant": "Data governance, data lifecycle, data quality and controls. Predates modern "
                     "model data concerns such as proxy and synthetic data.",
-        "url": "https://www.apra.gov.au/prudential-practice-guide-cpg-235-managing-data-risk",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "url": "https://www.apra.gov.au/system/files/Prudential-Practice-Guide-CPG-235-Managing-Data-Risk_1.pdf",
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
         "id": "APRA-APS113", "authority": "APRA",
@@ -470,8 +467,8 @@ SOURCES = [
         "scope": "ADIs approved by APRA to use the internal ratings-based approach.",
         "relevant": "The most developed model governance requirements in the Australian framework: "
                     "model approval, independent review, validation, the use test and model change.",
-        "url": "https://www.apra.gov.au/prudential-standard-aps-113-capital-adequacy-internal-ratings-based-approach-to-credit-risk",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "url": "https://www.apra.gov.au/standards/aps-113",
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
         "id": "APRA-CPS320", "authority": "APRA",
@@ -482,8 +479,8 @@ SOURCES = [
         "scope": "Insurers as defined in the standard.",
         "relevant": "Appointed Actuary role, actuarial advice and review of insurance liabilities "
                     "— a form of independent professional review of actuarial models.",
-        "url": "https://www.apra.gov.au/prudential-standard-cps-320-actuarial-and-related-matters",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "url": "https://www.apra.gov.au/standards/cps-320",
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
         "id": "APRA-SPS530", "authority": "APRA",
@@ -494,8 +491,8 @@ SOURCES = [
         "scope": "RSE licensees.",
         "relevant": "Investment governance, valuation, liquidity management and stress testing "
                     "obligations that rely on models.",
-        "url": "https://www.apra.gov.au/prudential-standard-sps-530-investment-governance",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "url": "https://www.apra.gov.au/standards/sps-530",
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
         "id": "APRA-SPS515", "authority": "APRA",
@@ -506,8 +503,8 @@ SOURCES = [
         "scope": "RSE licensees.",
         "relevant": "Business performance review and member outcomes assessment, which rely on "
                     "modelled projections.",
-        "url": "https://www.apra.gov.au/prudential-standard-sps-515-strategic-planning-and-member-outcomes",
-        "verification": V_SECONDARY, "checked": CHECKED,
+        "url": "https://www.apra.gov.au/standards/sps-515",
+        "verification": V_PRIMARY, "checked": CHECKED,
     },
 ]
 
@@ -707,9 +704,7 @@ PRINCIPLE_FRAMEWORKS = [
     {
         "authority": "OSFI", "confidence": V_PRIMARY,
         "instrument": "OSFI Guideline E-23 — Model Risk Management (2027)",
-        "note": "Structured as three outcomes, each heading a group of principles numbered X.Y "
-                "where X is the parent outcome. Twelve principles in total. A mapping that treats "
-                "E-23 as having only three citable units under-represents it by twelve.",
+        "note": "Structured as three outcomes, each heading a group of principles numbered X.Y where X is the parent outcome. Twelve principles in total. A mapping that treats E-23 as having only three citable units under-represents it by twelve. The guideline also carries Appendix 1, Information tracking for models, which sets out minimum inventory content and informed Annex B of CPS 240.",
         "items": [
             ["Outcome 1", "Model risk is well understood and managed across the enterprise."],
             ["Principle 1.1", "Effective reporting structures and proper resourcing should enable sound model governance."],
@@ -1642,6 +1637,43 @@ REDTEAM_ROWS = [
      "M38; the superannuation domain carries no benchmark authority in the gap assessment.",
      "Scope statements of each comparator instrument.",
      "Medium", "Closed — verified, no correction required"],
+
+    ["RT-19",
+     "APRA and several other source URLs were recorded from expected URL patterns rather than "
+     "from a successful fetch.",
+     "Do the registered URLs actually resolve? A source register whose links are dead is not an "
+     "evidence base.",
+     "Eleven of thirty-four URLs returned HTTP 404 on the first automated check — all nine APRA "
+     "entries plus the ECB risk data aggregation guide and the MAS AI model risk information "
+     "paper. Correct URLs were located on each official domain and substituted. All thirty-four "
+     "now resolve, and the affected sources moved from secondary to primary verification.",
+     "Source register URLs and verification labels; thirty-three of thirty-four sources are now "
+     "verified from primary text.",
+     "Automated fetch of every registered URL; re-run at any time through the check_source_urls "
+     "tool on the accompanying MCP server.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-20",
+     "BCBS stress testing principles and third-party principles were described as international "
+     "principles without qualification.",
+     "Does the BIS classify these as Standards, and do they carry their own status disclaimers?",
+     "Neither is a Standard. The BIS classifies both as Guidelines, and the stress testing "
+     "principles carry an express statement that they do not constitute Standards, for which the "
+     "Committee expects full implementation. Both entries were requalified.",
+     "Legal status matrix and source register entries for the two BCBS instruments.",
+     "BCBS d450 introduction; BIS publication classification for d450 and d605.",
+     "Medium", "Closed — correction incorporated"],
+
+    ["RT-21",
+     "The superseded OSFI E-23 (2017) was described as 'superseded by the 2027 guideline with "
+     "effect from 1 May 2027'.",
+     "Is there an express supersession clause, or is that an inference from the guidance library?",
+     "No express supersession clause was located in either the 2027 guideline or its covering "
+     "letter. The entry now states the relationship as OSFI presents it in its guidance library "
+     "rather than quoting a provision that does not exist.",
+     "Source register entry for the 2017 guideline.",
+     "OSFI E-23 (2027) body and covering letter; OSFI guidance library.",
+     "Low", "Closed — correction incorporated"],
 
     ["RT-18",
      "The Comptroller's Handbook model risk management booklet was cited as a source.",
