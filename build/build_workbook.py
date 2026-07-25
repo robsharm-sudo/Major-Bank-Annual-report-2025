@@ -79,6 +79,7 @@ def s_readme(wb):
 
 
 def s_exec(wb):
+    last = FIRST_DATA_ROW + len(SC.DOMAINS) - 1
     ws = wb.create_sheet("Executive Summary")
     sheet_frame(ws, "Executive summary",
                 f"{STATUS} | Counts are formulas linked to the detailed sheets.",
@@ -93,15 +94,15 @@ def s_exec(wb):
          "Carry an express legal-drafting reservation."],
         ["Guidance paragraphs in draft CPG XXXX", "=COUNTA(Traceability!A5:A200)",
          "Every requirement has at least one supporting guidance paragraph."],
-        ["Domains assessed", "=COUNTA('Gap Assessment'!A5:A37)",
+        ["Domains assessed", f"=COUNTA('Gap Assessment'!A5:A{last})",
          "Model risk domains scored against the strongest comparator."],
-        ["Mean current Australian score (0-5)", "=ROUND(AVERAGE('Gap Assessment'!H5:H37),2)",
+        ["Mean current Australian score (0-5)", f"=ROUND(AVERAGE('Gap Assessment'!H5:H{last}),2)",
          "Weighted mean across all domains of the framework as it stands today."],
-        ["Mean expected score after CPS XXXX", "=ROUND(AVERAGE('Gap Assessment'!L5:L37),2)",
+        ["Mean expected score after CPS XXXX", f"=ROUND(AVERAGE('Gap Assessment'!L5:L{last}),2)",
          "Expected position once CPS XXXX and CPG XXXX are in force."],
-        ["Critical priority gaps", "=COUNTIF('Gap Assessment'!K5:K37,\"Critical\")",
+        ["Critical priority gaps", f"=COUNTIF('Gap Assessment'!K5:K{last},\"Critical\")",
          "Gaps that could permit material unmanaged model risk."],
-        ["High priority gaps", "=COUNTIF('Gap Assessment'!K5:K37,\"High\")",
+        ["High priority gaps", f"=COUNTIF('Gap Assessment'!K5:K{last},\"High\")",
          "Significant divergence from the strongest comparator."],
         ["Red-team corrections recorded", "=COUNTA('Red Team Audit'!A5:A200)",
          "Challenges and corrections preserved with evidence."],

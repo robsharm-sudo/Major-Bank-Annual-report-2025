@@ -118,6 +118,12 @@ def interpretation(doc):
          "Standard does not create a separate deadline.",
          "Guidance")
     para(doc,
+         "Exercise of APRA powers. Where this Prudential Standard provides for APRA to determine, "
+         "approve, require or adjust anything, that power is to be exercised in writing. The "
+         "procedural requirements attaching to each such power are matters for legal settlement "
+         "and are recorded in Annex F.",
+         "Guidance")
+    para(doc,
          "Terms defined in Annex A have the meaning given in that Annex.",
          "Guidance")
 
@@ -283,7 +289,7 @@ def annex_b(doc):
     page_break(doc)
     doc.add_paragraph("Annex B — Minimum model inventory fields", style="Heading 1")
     para(doc,
-         "An APRA-regulated entity's model inventory must record at least the following for each "
+         "M13 requires the enterprise model inventory to record at least the following for each "
          "model. These are minimum fields; an entity should record whatever further information its "
          "framework requires.",
          "Guidance")

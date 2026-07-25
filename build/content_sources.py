@@ -298,8 +298,8 @@ SOURCES = [
         "title": "Principles for effective risk data aggregation and risk reporting (BCBS 239)",
         "published": "January 2013", "effective": "1 January 2016 for G-SIBs",
         "date": "Jan 2013",
-        "status": "International standard. Not directly binding; effect depends on domestic "
-                  "implementation by national authorities.",
+        "status": "BIS-classified Guidelines, not a Standard. Not directly binding; effect "
+                  "depends on domestic implementation by national authorities.",
         "scope": "Global systemically important banks, and domestic systemically important banks "
                  "at national discretion.",
         "relevant": "Fourteen principles on governance, data architecture, accuracy, "
@@ -372,6 +372,24 @@ SOURCES = [
         "verification": V_PRIMARY, "checked": CHECKED,
     },
     # ---------------------------------------------------------------- FSB
+    {
+        "id": "FSB-SP-2026", "authority": "FSB",
+        "title": "Sound Practices for Responsible Adoption of Artificial Intelligence — "
+                 "consultation report",
+        "published": "June 2026", "effective": "n/a",
+        "date": "Jun 2026 (consultation)",
+        "status": "Consultation report. The FSB states expressly that the sound practices are not "
+                  "intended to establish an international standard. Not binding anywhere.",
+        "scope": "Financial institutions of all types, applied proportionately.",
+        "relevant": "Twelve sound practices spanning strategic direction and oversight, governance "
+                    "and accountability, risk management framework, organisational adaptability, "
+                    "materiality and risk assessment, selection, data governance, explainability "
+                    "and transparency, performance management, human oversight, cyber and ICT "
+                    "risk, and third-party AI risk. Addresses AI rather than model risk generally, "
+                    "and is used here only as comparative input.",
+        "url": "https://www.fsb.org/2026/06/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai/",
+        "verification": V_SECONDARY, "checked": CHECKED,
+    },
     {
         "id": "FSB-AI-2024", "authority": "FSB",
         "title": "The Financial Stability Implications of Artificial Intelligence",
@@ -494,6 +512,20 @@ SOURCES = [
         "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
+        "id": "APRA-SPS114", "authority": "APRA",
+        "title": "Prudential Standard SPS 114 Operational Risk Financial Requirement",
+        "published": "Current at the as-of date", "effective": "In force at the as-of date",
+        "date": "In force; commencement not separately verified",
+        "status": "Binding prudential standard.",
+        "scope": "RSE licensees.",
+        "relevant": "Determination and maintenance of the operational risk financial requirement "
+                    "target amount — the superannuation counterpart to an internal capital "
+                    "assessment, and therefore the place where aggregate model risk is considered "
+                    "for an RSE licensee.",
+        "url": "https://www.apra.gov.au/standards/sps-114",
+        "verification": V_SECONDARY, "checked": CHECKED,
+    },
+    {
         "id": "APRA-SPS515", "authority": "APRA",
         "title": "Prudential Standard SPS 515 Strategic Planning and Member Outcomes",
         "published": "Current at the as-of date", "effective": "In force at the as-of date",
@@ -508,11 +540,9 @@ SOURCES = [
 ]
 
 # Some requirement source IDs are aliases of registered sources.
-SOURCE_ALIASES = {
-    "APRA-GPS320": "APRA-CPS320",
-    "APRA-LPS320": "APRA-CPS320",
-    "BCBS-FW": "BCBS-239",
-}
+# No aliases. Every source ID cited by a requirement resolves to a registered entry,
+# so nothing can be cited that does not appear in Annex E.
+SOURCE_ALIASES = {}
 
 
 # --------------------------------------------------------------------------- #
@@ -539,9 +569,10 @@ DEFINITIONS = [
     ["Independent validation", "An assessment of a model's fitness for its intended use performed "
                                "by persons who did not develop the model and who are not "
                                "accountable to those who developed it or who sponsor its use."],
-    ["Effective challenge", "Critical analysis by parties with the competence to identify "
-                            "deficiencies, the standing for their findings to carry weight, and "
-                            "incentives that reward raising issues."],
+    ["Effective challenge", "Critical and objective analysis by persons with the expertise to "
+                            "identify model limitations, sufficient independence to maintain "
+                            "objectivity, and the organisational standing and influence to effect "
+                            "change."],
     ["Conceptual soundness", "The quality of a model's design, theory, methodology and assumptions "
                              "as appropriate for the purpose for which the model will be used."],
     ["Outcomes analysis", "Comparison of model outputs with corresponding actual outcomes, used to "
@@ -550,6 +581,24 @@ DEFINITIONS = [
                 "overlays, post-model adjustments and model overrides."],
     ["Quantitative decision tool", "A quantitative method that materially informs a decision but "
                                    "does not meet the definition of a model."],
+    ["Material purpose", "A purpose where an incorrect or misused model output could have a "
+                         "material effect on the entity's financial position, its regulatory "
+                         "obligations, its critical operations, or amounts or entitlements "
+                         "attributable to its customers or beneficiaries."],
+    ["Ongoing model monitoring", "Evaluation of whether a model continues to perform as expected "
+                                 "given changes in products, exposures, activities, customers, data "
+                                 "relevance or market conditions."],
+    ["Independent price verification", "Verification of valuation inputs and prices by a function "
+                                       "independent of the business that originated the position, "
+                                       "distinct from validation of the valuation model itself."],
+    ["Model failure", "An event in which a model produces materially incorrect output, is materially "
+                      "misused, or becomes unavailable, in each case in circumstances affecting a "
+                      "material purpose."],
+    ["Artificial intelligence system", "A machine-based system that infers from inputs how to "
+                                       "generate outputs such as predictions, content, "
+                                       "recommendations, decisions or actions. An artificial "
+                                       "intelligence system that produces quantitative estimates "
+                                       "relied upon for a material purpose is a model."],
     ["Third-party model", "A model developed, supplied, hosted or operated by a party other than "
                           "the entity, including a model embedded in a supplied system."],
 ]
@@ -601,7 +650,7 @@ TIER_INDICATORS = [
     "Determines or materially influences an amount credited to or debited from a customer or "
     "member account, including unit prices and fee calculations.",
     "Makes, recommends or materially influences decisions affecting a person's access to a "
-    "financial product, a claim, a benefit, a price or an employment outcome.",
+    "financial product, a claim, a benefit or a price.",
     "Supports a critical operation, or its failure could cause a tolerance level under CPS 230 to "
     "be breached.",
     "Is applied automatically at volume, or its output is acted upon without effective human "
@@ -959,7 +1008,7 @@ CROSSWALK_ROWS_FULL = [
     ["Definition of a model",
      "Not defined on a cross-industry basis.",
      "Narrowed in April 2026 to complex methods applying statistical, economic or financial theories; excludes spreadsheet arithmetic, deterministic rules, and generative and agentic AI.",
-     "Firms set their own definition; Principle 1.1 requires one, and requires consideration of methods falling outside it.",
+     "Principle 1.1(a) sets out a definition firms should adopt as the basis for the scope of their framework, and expects consideration of quantitative methods falling outside it.",
      "Model definition expressly includes AI and machine learning.",
      "Internal models for regulatory capital; machine learning addressed as a technique within them.",
      "Capital models defined in Notice 637; AI models addressed separately.",
@@ -1115,7 +1164,7 @@ CROSSWALK_ROWS_FULL = [
      "Recognised that a sound model can carry high model risk if misapplied or misused.",
      "Principle 3 covers model use.",
      "Principle 1.3 models should be appropriate for their business purposes.",
-     "Section 6 model use; CRR Article 174 use of models is binding.",
+     "Credit risk chapter, general topics Section 6 model use; CRR Article 174 use of models is binding.",
      "Use test for capital models.",
      "Not addressed.",
      "Human oversight sound practice.",
@@ -1873,6 +1922,153 @@ REDTEAM_ROWS = [
      "M03 redrafted.",
      "PRA SS1/23 Principle 1.1; US interagency guidance 2026 §II exclusions.",
      "Medium", "Closed — correction incorporated"],
+
+    ["RT-35",
+     "Annex A defined effective challenge as competence, standing and incentives, and defined a "
+     "model with a three-component sentence that M02 does not contain.",
+     "The Annex A definitions are operative. Leaving the rescinded 2011 formulation there meant "
+     "the standard defined its own central concept two different ways in two places, and the "
+     "definition that would be applied is the one in the Annex.",
+     "The Annex A definition of effective challenge now matches M22 word for word. The "
+     "three-component sentence was removed from the Annex A definition of a model, so it matches "
+     "M02; the description survives in the practice guide where it is explanatory.",
+     "Annex A of the standard; the glossary sheet.",
+     "US interagency guidance 2026 §III; M22 and M02 as drafted.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-36",
+     "Aggregate model risk and board reporting were attributed to PRA SS1/23 Principle 5 in four "
+     "places.",
+     "Principle 5 is 'Model risk mitigants' — post-model adjustments, restrictions on model use, "
+     "and exceptions and escalations. It says nothing about aggregate model risk or board "
+     "reporting, which sit under Principle 2.1.",
+     "M12 and M40 now cite Principle 2.1. M40's rationale was rewritten to lead with the 2026 US "
+     "guidance, which does expressly call for model risk to be assessed individually and in "
+     "aggregate reflecting common assumptions, data and methodologies.",
+     "M12 and M40 principle mappings and M40's rationale.",
+     "PRA SS1/23 Principle 5 and Principle 2.1 primary text; US interagency guidance 2026 §III.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-37",
+     "M37 cited GPS 320 and LPS 320; M35 cited a Basel Framework identifier that the alias map "
+     "silently resolved to BCBS 239.",
+     "GPS 320 and LPS 320 were replaced by CPS 320 in 2019 and no longer exist. BCBS 239 concerns "
+     "risk data aggregation and says nothing about internal model approval or the use test. The "
+     "integrity check passed because it treated aliases as registered sources, so three citations "
+     "appeared in the requirements register that had no entry in the source register.",
+     "All three citations were removed and the alias map was deleted entirely. Every source ID "
+     "cited by a requirement now resolves to a registered entry, so nothing can be cited that "
+     "does not appear in Annex E. The integrity check was tightened to match.",
+     "M35 and M37 sources; SOURCE_ALIASES removed; verify_package strengthened.",
+     "APRA instrument history for GPS/LPS 320; BCBS 239 subject matter.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-38",
+     "The scoring rubric defined 5 and 4 as 'addressed in a binding instrument', while 25 of the "
+     "33 benchmarks were set by supervisory guidance that is not binding anywhere.",
+     "The rubric contradicted its own application. Read literally, no comparator could score above "
+     "3 in most domains, which would have inverted every gap in the assessment.",
+     "The rubric now scores the quality and specificity of the expectation irrespective of "
+     "instrument type, and the enforceability dimension is stated to apply to Australia only — "
+     "which is what the assessment was actually measuring.",
+     "Scoring methodology sheet and the rubric shown in the workbook.",
+     "Internal consistency analysis of the rubric against the benchmark assignments.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-39",
+     "The superannuation domain was scored with a benchmark of 0 because no comparator addresses "
+     "superannuation model risk.",
+     "A zero benchmark floors the gap at zero, which returned a priority of 'Low' — published as "
+     "meaning 'broadly comparable to international practice'. The domain with no international "
+     "coverage at all was therefore reported as the least urgent.",
+     "The domain is now benchmarked at 5 against the standard's own cross-industry objective, with "
+     "the benchmark authority recorded as 'No comparator'. It now scores 4.38 weighted and ranks "
+     "High, which reflects the position.",
+     "Gap assessment and areas for improvement ranking.",
+     "Scope statements of each comparator; the methodology's own treatment of absent benchmarks.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-40",
+     "M08, M09 and M11 — capability and independence, the integrated framework, and policies and "
+     "standards — were cited by no scoring domain.",
+     "The framework obligation itself was unscored, so the assessment measured the parts of model "
+     "risk management without measuring whether there is a framework at all.",
+     "A 'MRM framework, policies and capability' domain was added covering all three, benchmarked "
+     "against PRA Principle 2 and OSFI Principle 3.1. Every requirement is now covered by at least "
+     "one domain.",
+     "Gap assessment gains a 34th domain; the executive summary counts update automatically.",
+     "Coverage check of scoring domains against the requirement register.",
+     "Medium", "Closed — correction incorporated"],
+
+    ["RT-41",
+     "Annex C directed the highest tier where a model influences 'an employment outcome', and M01 "
+     "extended enterprise scope to human resources models. M33 required entities to address the "
+     "'potential for biased outcomes'.",
+     "APRA is a prudential regulator. Employment decisions and unbounded bias obligations sit with "
+     "other regulators and other legislation, and asserting them here would invite a scope "
+     "objection that would distract from the prudential case.",
+     "Employment outcomes were removed from the Annex C indicator and human resources from M01's "
+     "guidance. M33's limb was recast in model-performance terms: systematic differences in model "
+     "performance across segments of the population to which the model is applied.",
+     "Annex C, M01 guidance and M33.",
+     "Prudential remit analysis.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-42",
+     "M43 imposed a standing duty to provide APRA with information 'on request', open as to scope, "
+     "form and requester. M34 required entities to apply AI risk management arrangements that "
+     "nothing obliged them to have. M40's RSE limb referred to the operational risk financial "
+     "requirement without citing the standard that governs it.",
+     "An open-ended information duty with no stated legal form is not how the other cross-industry "
+     "standards are drafted. M34 assumed an instrument that does not exist. M40 pointed at a "
+     "determination made under an uncited standard.",
+     "M43 now applies where APRA requires information in writing, and its notification trigger "
+     "covers amounts credited to or debited from customer and beneficiary accounts. M34 gains a "
+     "limb for entities with no separate AI arrangements. M40 cites SPS 114, which is now "
+     "registered as a source. An interpretation clause was added requiring every APRA power under "
+     "the standard to be exercised in writing.",
+     "M34, M40, M43, the Interpretation section and the source register.",
+     "CPS 230 drafting form for information powers; SPS 114.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-43",
+     "The FSB sound practices supplied twelve entries of the principles register, were cited in "
+     "eight crosswalk cells and were the subject of a statement-ledger entry, but had no entry in "
+     "the source register.",
+     "A source relied on that heavily with no registered entry has no recorded status, date or "
+     "URL, and a reader cannot check what it is or whether it binds anything.",
+     "Registered as FSB-SP-2026 with its consultation status recorded — the FSB states expressly "
+     "that the practices are not intended to establish an international standard. The integrity "
+     "check now covers sources cited by the principles register and the crosswalk, not only those "
+     "cited by requirements.",
+     "Source register, legal status matrix and the integrity check.",
+     "FSB consultation report.",
+     "Medium", "Closed — correction incorporated"],
+
+    ["RT-44",
+     "Five source attribution lines in the practice guide used a status code, '[B where "
+     "implemented]', that appears in neither the guide's legend nor Annex D.",
+     "A reader cannot interpret a status code that is not defined, and the code implied a degree "
+     "of bindingness that BIS guidelines do not have.",
+     "The four BCBS instruments now carry [G], with the domestic-implementation qualification "
+     "carried in the prose of the attribution line. BCBS 239's register status was corrected from "
+     "'International standard' to BIS-classified Guidelines.",
+     "Practice guide attribution lines; BCBS 239 source register entry.",
+     "BIS publication classification for bcbs239, d450, d516 and d605.",
+     "Medium", "Closed — correction incorporated"],
+
+    ["RT-45",
+     "Annex B opened 'An APRA-regulated entity's model inventory must record at least the "
+     "following', in the guidance style.",
+     "The build audit forbids bold text in a guidance paragraph, so the only statement making "
+     "Annex B mandatory was rendered as explanatory text. On the standard's own reading rule, "
+     "Annex B imposed nothing.",
+     "M13 now requires the inventory to record at least the fields set out in Annex B, so the "
+     "obligation sits in a bold mandatory paragraph. Annex B's opening line was reworded to point "
+     "back at M13.",
+     "M13 and Annex B.",
+     "The standard's own interpretation rule that only bold paragraphs are mandatory.",
+     "High", "Closed — correction incorporated"],
 
     ["RT-18",
      "The Comptroller's Handbook model risk management booklet was cited as a source.",

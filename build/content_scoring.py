@@ -27,14 +27,16 @@ reader can re-weight and watch priorities move.
 
 RUBRIC = [
     (5, "Leading practice",
-     "Addressed comprehensively in a binding instrument, with expectations specific enough to be "
-     "evidenced and supervised. Matches or exceeds the strongest comparator."),
+     "Addressed comprehensively and specifically enough that compliance can be evidenced and "
+     "supervised. Matches or exceeds the strongest comparator. Scored on the quality and "
+     "specificity of the expectation, irrespective of the instrument type carrying it — "
+     "enforceability is scored separately."),
     (4, "Strong",
-     "Addressed in a binding instrument with clear expectations. Minor gaps in specificity or in "
-     "coverage of edge cases relative to the strongest comparator."),
+     "Addressed with clear expectations. Minor gaps in specificity or in coverage of edge cases "
+     "relative to the strongest comparator."),
     (3, "Adequate",
-     "Addressed, but either in guidance rather than a binding instrument, or in a binding "
-     "instrument at a level of generality that leaves material discretion."),
+     "Addressed, but at a level of generality that leaves material discretion, or in a way that "
+     "would be difficult to supervise consistently."),
     (2, "Partial",
      "Addressed indirectly or by implication, through a general obligation not specific to model "
      "risk. Compliance would be difficult to evidence or to supervise consistently."),
@@ -47,7 +49,7 @@ RUBRIC = [
 DIMENSIONS = [
     ("Coverage", "Is the domain addressed at all in the framework?"),
     ("Specificity", "Is the expectation precise enough to be evidenced and supervised?"),
-    ("Enforceability", "Binding instrument, guidance, or nothing?"),
+    ("Enforceability", "For Australia: binding instrument, guidance, or nothing? Comparator benchmarks are not scored on this dimension, since most of the strongest model risk expectations internationally sit in supervisory guidance rather than law."),
     ("Alignment", "Does it match the strongest comparator practice?"),
 ]
 
@@ -163,6 +165,23 @@ DOMAINS = [
         "owner": "Policy + Legal",
     },
     {
+        "domain": "MRM framework, policies and capability",
+        "weight": 1.25,
+        "au": (2, 1, 3, 2),
+        "bench": 5, "bench_auth": "PRA / OSFI",
+        "post": 4.5,
+        "reqs": ["M08", "M09", "M11"],
+        "sources": ["PRA-SS1-23", "OSFI-E23", "APRA-CPS220"],
+        "gap": "There is no requirement to maintain a model risk management framework as such, no "
+               "documented model risk policy standard, and no requirement for capability and "
+               "independence sufficient to validate and challenge models. Model governance "
+               "obligations sit inside instruments written for other purposes.",
+        "action": "Require a documented framework integrated with the risk management framework, "
+                  "policies applied consistently across the entity, and capability and "
+                  "independence sufficient to develop, use, validate, challenge and assure models.",
+        "owner": "Policy",
+    },
+    {
         "domain": "Model risk appetite",
         "weight": 1.00,
         "au": (2, 1, 3, 2),
@@ -246,7 +265,7 @@ DOMAINS = [
                "driving material decisions outside those regimes may never be independently "
                "reviewed.",
         "action": "Require independent validation for material models, structured around conceptual "
-                  "soundness, ongoing monitoring and outcomes analysis, at an intensity set by tier.",
+                  "soundness, outcomes analysis and ongoing model monitoring, at an intensity set by tier.",
         "owner": "Policy + Supervision",
     },
     {
@@ -470,7 +489,7 @@ DOMAINS = [
         "domain": "Superannuation models",
         "weight": 1.25,
         "au": (1, 1, 3, 1),
-        "bench": 0, "bench_auth": "No comparator",
+        "bench": 5, "bench_auth": "No comparator — assessed against the standard's own cross-industry objective",
         "post": 4.0,
         "reqs": ["M38"],
         "sources": ["APRA-SPS530", "APRA-SPS515"],

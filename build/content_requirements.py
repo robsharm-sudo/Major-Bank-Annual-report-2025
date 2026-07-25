@@ -36,7 +36,7 @@ REQUIREMENTS = [
             "being wrong or being used incorrectly, and cannot transfer that exposure by contract.",
             "Enterprise-wide means across all business lines, legal entities within the APRA-regulated "
             "group, and functions — including models used in finance, treasury, actuarial, capital, "
-            "credit, markets, operations, compliance and human resources — and across all purposes, "
+            "credit, markets, operations and compliance — and across all purposes, "
             "whether or not the model produces a regulatory number.",
         ],
         "sources": ["US-MRM-2026", "PRA-SS1-23", "OSFI-E23", "APRA-CPS220", "ECB-GIM"],
@@ -350,7 +350,7 @@ REQUIREMENTS = [
             "material enough to escalate produces predictable results.",
         ],
         "sources": ["PRA-SS1-23", "OSFI-E23", "US-MRM-2026", "BCBS-239", "APRA-CPS220"],
-        "principles": "PRA SS1/23 Principle 5; OSFI E-23 reporting; BCBS 239 risk reporting practices",
+        "principles": "PRA SS1/23 Principle 2.1 (board responsibilities, including reporting on model risk); OSFI E-23 (2027) Outcome 1; BCBS 239 risk reporting practices",
         "provenance": "Extracted",
         "rationale": "Reporting on model risk to the Board is required or expected by every comparator.",
         "policy_choice": False,
@@ -367,7 +367,8 @@ REQUIREMENTS = [
             "An APRA-regulated entity must maintain an enterprise-wide inventory of its models and must "
             "maintain processes designed to ensure that the inventory is complete, accurate and current, "
             "including models supplied by third parties, models embedded in acquired systems, models under "
-            "development and models that have been retired but whose outputs remain in use."
+            "development and models that have been retired but whose outputs remain in use, recording at "
+            "least the fields set out in Annex B."
         ),
         "guidance": [
             "The inventory is the foundation of the framework: nothing else in this Prudential Standard can be "
@@ -381,7 +382,9 @@ REQUIREMENTS = [
         "sources": ["PRA-SS1-23", "US-MRM-2026", "OSFI-E23", "ECB-GIM", "MAS-AIMRM-2024"],
         "principles": "PRA SS1/23 Principle 1; US interagency guidance 2026 §VI inventory; OSFI E-23 model inventory",
         "provenance": "Extracted",
-        "rationale": "A comprehensive inventory is required by every comparator regime without exception.",
+        "rationale": "A comprehensive inventory is a named principle for the PRA (1.2) and OSFI (2.1). The 2026 US "
+            "guidance describes it as common industry practice rather than an expectation, which is one reason to "
+            "state it as a requirement here.",
         "policy_choice": False,
         "legal_flag": False,
     },
@@ -514,7 +517,9 @@ REQUIREMENTS = [
         "sources": ["US-MRM-2026", "PRA-SS1-23", "ECB-GIM", "OSFI-E23"],
         "principles": "US interagency guidance 2026 §VI documentation; PRA SS1/23 Principle 3; ECB documentation requirements",
         "provenance": "Extracted",
-        "rationale": "The reproducibility standard for documentation is common to the US, UK and ECB regimes.",
+        "rationale": "Documentation obligations are explicit for the PRA (3.5) and binding under CRR Article 188 as "
+            "interpreted by the ECB guide. The 2026 US guidance reduced its treatment to a permissive statement, so "
+            "the reconstruction standard is stated here rather than inherited.",
         "policy_choice": False,
         "legal_flag": False,
     },
@@ -677,10 +682,10 @@ REQUIREMENTS = [
             "detect. Differences between the development environment and production — in data definitions, rounding, "
             "library versions, treatment of missing values or execution order — can change results materially.",
         ],
-        "sources": ["US-MRM-2026", "ECB-GIM", "OSFI-E23"],
-        "principles": "Former SR 11-7 §IV (implementation); not carried forward in 2026; ECB internal models implementation",
+        "sources": ["ECB-GIM", "OSFI-E23"],
+        "principles": "ECB guide §10 and credit risk chapter (implementation of a changed or extended model); OSFI E-23 (2027) Principle 3.5; the rescinded 2011 US guidance §IV, not carried forward in 2026",
         "provenance": "Extracted",
-        "rationale": "Implementation control is explicit in the US guidance and the ECB internal models framework.",
+        "rationale": "Implementation control is explicit in the ECB internal models framework and in OSFI E-23 Principle 3.5. The 2026 US guidance does not carry forward the 2011 implementation section, so no current US support is claimed.",
         "policy_choice": False,
         "legal_flag": False,
     },
@@ -866,8 +871,8 @@ REQUIREMENTS = [
         "requirement": (
             "An APRA-regulated entity must maintain contractual and governance arrangements giving it timely access "
             "to the information and assurance it needs to meet its obligations in relation to a material third-party "
-            "model, and must identify and manage concentration and substitutability risk arising from common models, "
-            "data sources, platforms and providers. Where an arrangement is already on foot at the commencement of "
+            "model, and must identify and manage concentration and substitutability risk in its own reliance on models, "
+            "data sources, platforms and providers, including where that reliance is shared with other entities. Where an arrangement is already on foot at the commencement of "
             "this Prudential Standard, this paragraph applies from the earlier of the next renewal or material "
             "variation of that arrangement and the end of the transition period determined by APRA."
         ),
@@ -896,7 +901,8 @@ REQUIREMENTS = [
         "requirement": (
             "Where a model uses artificial intelligence or machine learning techniques, an APRA-regulated entity "
             "must address the additional risks arising from those techniques, including limited explainability, "
-            "sensitivity to data drift, instability under retraining, feature leakage, potential for biased outcomes, "
+            "sensitivity to data drift, instability under retraining, feature leakage, systematic differences in model "
+            "performance across segments of the population to which the model is applied, "
             "and dependence on externally supplied models whose construction the entity cannot inspect."
         ),
         "guidance": [
@@ -926,7 +932,8 @@ REQUIREMENTS = [
         "title": "Boundary with the AI risk management framework",
         "requirement": (
             "An APRA-regulated entity must apply this Prudential Standard to any artificial intelligence system that "
-            "meets the definition of a model, must apply its AI risk management arrangements to the wider risks of "
+            "meets the definition of a model, must apply its artificial intelligence risk management arrangements to the "
+            "wider risks of "
             "that system, and must ensure that no material AI system falls between the two."
         ),
         "guidance": [
@@ -969,7 +976,7 @@ REQUIREMENTS = [
             "substantive. A model maintained for regulatory reporting while the business is run on a different basis "
             "indicates that one of the two is not trusted.",
         ],
-        "sources": ["APRA-APS113", "ECB-GIM", "ECB-CRR", "BCBS-FW", "PRA-SS1-23"],
+        "sources": ["APRA-APS113", "ECB-GIM", "ECB-CRR", "PRA-SS1-23"],
         "principles": "ECB Guide to internal models; CRR internal model requirements; APS 113 model requirements",
         "provenance": "Extracted",
         "rationale": (
@@ -1025,7 +1032,7 @@ REQUIREMENTS = [
             "The insurer should map which elements of validation are discharged through the actuarial control cycle "
             "and which require separate work, rather than assuming complete overlap in either direction.",
         ],
-        "sources": ["APRA-CPS320", "APRA-GPS320", "APRA-LPS320", "OSFI-E23"],
+        "sources": ["APRA-CPS320", "OSFI-E23"],
         "principles": "APRA Appointed Actuary framework; OSFI E-23 application to insurers",
         "provenance": "Extracted + inferred",
         "rationale": (
@@ -1097,7 +1104,8 @@ REQUIREMENTS = [
         "requirement": (
             "An APRA-regulated entity must assess model risk in aggregate across its model portfolio, must "
             "consider the effect of that aggregate risk in its internal capital adequacy assessment or, for an "
-            "RSE licensee, in determining its operational risk financial requirement target amount, and must "
+            "RSE licensee, in the assessment of operational risk that informs the operational risk financial requirement "
+            "target amount determined under SPS 114, and must "
             "be able to explain the basis and limitations of the assessment."
         ),
         "guidance": [
@@ -1107,12 +1115,14 @@ REQUIREMENTS = [
             "Where an entity concludes that no capital is required in respect of model risk, that conclusion should be "
             "reasoned and documented rather than reached by omission.",
         ],
-        "sources": ["PRA-SS1-23", "ECB-GIM", "US-MRM-2026", "APRA-CPS220"],
-        "principles": "PRA SS1/23 Principle 5 (aggregate model risk); ECB model risk in the SREP",
+        "sources": ["PRA-SS1-23", "ECB-GIM", "US-MRM-2026", "APRA-CPS220", "APRA-SPS114"],
+        "principles": "PRA SS1/23 Principle 2.1 (board understanding and reporting of model risk in aggregate); ECB model risk in the supervisory review process",
         "provenance": "Extracted",
         "rationale": (
-            "Aggregate model risk assessment and its capital implications are addressed by the PRA and by the ECB "
-            "supervisory review process."
+            "The 2026 US guidance expressly calls for model risk to be assessed individually and in aggregate, "
+            "reflecting interactions, dependencies and reliance on common assumptions, data or methodologies. The "
+            "PRA addresses board understanding of aggregate model risk; the ECB addresses it through supervisory "
+            "review."
         ),
         "policy_choice": False,
         "legal_flag": False,
@@ -1172,9 +1182,10 @@ REQUIREMENTS = [
         "title": "Notification and provision of information to APRA",
         "requirement": (
             "An APRA-regulated entity must notify APRA as soon as practicable, and within the timeframe applicable under CPS 230 or CPS 234 where the event also falls within those standards, of a model failure or model risk event that has, or is likely "
-            "to have, a material impact on its financial position, its regulatory reporting or its ability to meet "
+            "to have, a material impact on its financial position, on amounts credited to or debited from the accounts "
+            "of its customers or beneficiaries, on its regulatory reporting or on its ability to meet "
             "its prudential obligations, and must provide APRA with information relating to its models and model risk "
-            "management on request."
+            "management where APRA requires it in writing."
         ),
         "guidance": [
             "Where a model failure is also an operational risk incident or an information security incident, the "

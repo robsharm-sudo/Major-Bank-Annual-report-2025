@@ -126,16 +126,40 @@ def verify_package() -> dict[str, Any]:
     if phantom:
         problems.append(f"guidance references unknown requirement IDs: {phantom}")
 
-    # every source ID relied on is registered
-    registered = {s["id"] for s in S.SOURCES} | set(S.SOURCE_ALIASES)
+    # Every source ID relied on must resolve to a real registered entry. Aliases are
+    # deliberately not treated as registration: an alias once masked three citations to
+    # instruments that either no longer exist or were the wrong document entirely.
+    registered = {s["id"] for s in S.SOURCES}
+    alias_targets = set(getattr(S, "SOURCE_ALIASES", {}).values())
+    dangling = sorted(alias_targets - registered)
+    if dangling:
+        problems.append(f"source aliases pointing at unregistered entries: {dangling}")
+
     used: set[str] = set()
     for r in R.REQUIREMENTS:
         used.update(r["sources"])
     for d in SC.DOMAINS:
         used.update(d["sources"])
-    unregistered = sorted(used - registered)
+    unregistered = sorted(used - registered - set(getattr(S, "SOURCE_ALIASES", {})))
     if unregistered:
         problems.append(f"source IDs used but not registered: {unregistered}")
+
+    # Authorities relied on by the principles register and the crosswalk must appear in
+    # the source register too, not only those cited by a requirement.
+    reg_authorities = {s["authority"] for s in S.SOURCES}
+    for fw in S.PRINCIPLE_FRAMEWORKS:
+        if fw["authority"] not in reg_authorities and fw["authority"] not in ("EU",):
+            problems.append(
+                f"principles register cites authority with no registered source: {fw['authority']}")
+
+    # Every requirement must be covered by at least one scoring domain, or the assessment
+    # measures something narrower than the standard it is assessing.
+    scored = set()
+    for d in SC.DOMAINS:
+        scored.update(d["reqs"])
+    uncovered = sorted({r["id"] for r in R.REQUIREMENTS} - scored)
+    if uncovered:
+        problems.append(f"requirements covered by no scoring domain: {uncovered}")
 
     # no requirement may rest on an unverified source
     unverified = {s["id"] for s in S.SOURCES if s["verification"].startswith("Unverified")}

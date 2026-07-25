@@ -25,7 +25,7 @@ home jurisdiction.
 
 ## What the scoring measures
 
-How well the **current** Australian prudential framework addresses each of 33 model risk
+How well the **current** Australian prudential framework addresses each of 34 model risk
 domains, against the strongest comparator practice in that domain. It does not score entity
 maturity and does not rank the comparator authorities against one another.
 
@@ -84,8 +84,8 @@ paragraph numbering at build time, so the two documents cannot drift apart.
 
 ## A note on what was corrected
 
-The package was red-teamed against primary sources and 21 corrections are recorded in the
-Red Team Audit sheet. The most consequential: **OCC Bulletin 2011-12 / Federal Reserve
+The package was red-teamed against primary sources across five challenge lenses and 45
+corrections are recorded in the Red Team Audit sheet. The most consequential: **OCC Bulletin 2011-12 / Federal Reserve
 SR 11-7 was rescinded on 17 April 2026** and replaced by interagency guidance SR 26-2 /
 OCC 2026-13 / FDIC FIL-15-2026, which narrows the model definition, expressly excludes
 generative and agentic AI, applies mainly above $30 billion in total assets and is
