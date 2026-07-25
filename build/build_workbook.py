@@ -39,7 +39,7 @@ def s_readme(wb):
                 f"{STATUS} | Information verified to {AS_OF}",
                 ["Item", "Explanation"], [30, 130])
     rows = [
-        ["Package status", STATUS + ". This workbook, the draft CPS 240 and the draft CPG 240 are "
+        ["Package status", STATUS + ". This workbook, the draft CPS XXXX and the draft CPG XXXX are "
          "policy-development artefacts with no legal effect."],
         ["As-of date", AS_OF + ". Source status was checked on this date. Regulatory positions "
          "change; re-verify before relying on any status statement."],
@@ -85,20 +85,20 @@ def s_exec(wb):
                 ["Metric", "Value", "Interpretation"], [52, 14, 92])
     rows = [
         ["Draft mandatory requirements", "=COUNTA('Requirements Register'!A5:A200)",
-         "Bold mandatory paragraphs in draft CPS 240."],
+         "Bold mandatory paragraphs in draft CPS XXXX."],
         ["Requirements that are policy choices", "=COUNTIF('Requirements Register'!I5:I200,\"Yes\")",
          "Proposed by the drafter rather than mandated by a comparator. Require consultation and "
          "cost-benefit testing."],
         ["Requirements flagged for legal settlement", "=COUNTIF('Requirements Register'!J5:J200,\"Yes\")",
          "Carry an express legal-drafting reservation."],
-        ["Guidance paragraphs in draft CPG 240", "=COUNTA(Traceability!A5:A200)",
+        ["Guidance paragraphs in draft CPG XXXX", "=COUNTA(Traceability!A5:A200)",
          "Every requirement has at least one supporting guidance paragraph."],
         ["Domains assessed", "=COUNTA('Gap Assessment'!A5:A37)",
          "Model risk domains scored against the strongest comparator."],
         ["Mean current Australian score (0-5)", "=ROUND(AVERAGE('Gap Assessment'!H5:H37),2)",
          "Weighted mean across all domains of the framework as it stands today."],
-        ["Mean expected score after CPS 240", "=ROUND(AVERAGE('Gap Assessment'!L5:L37),2)",
-         "Expected position once CPS 240 and CPG 240 are in force."],
+        ["Mean expected score after CPS XXXX", "=ROUND(AVERAGE('Gap Assessment'!L5:L37),2)",
+         "Expected position once CPS XXXX and CPG XXXX are in force."],
         ["Critical priority gaps", "=COUNTIF('Gap Assessment'!K5:K37,\"Critical\")",
          "Gaps that could permit material unmanaged model risk."],
         ["High priority gaps", "=COUNTIF('Gap Assessment'!K5:K37,\"High\")",
@@ -198,7 +198,7 @@ def s_method(wb):
         ["Gap", "MAX(0, Benchmark − Domain score). Negative gaps are floored at zero: where "
          "Australia already matches or exceeds the benchmark there is nothing to close."],
         ["Weighted gap", "Gap × domain weight. This is what drives the priority band."],
-        ["Expected score after CPS 240", "Assessed position once the draft standard and guide are "
+        ["Expected score after CPS XXXX", "Assessed position once the draft standard and guide are "
          "in force, on the same 0–5 scale. The difference from the current score is the value the "
          "instrument is expected to add."],
     ]
@@ -253,7 +253,7 @@ def s_method(wb):
           f"{now:.2f}. The strongest comparator is {ex['bench_auth']} at {ex['bench']}. The gap is "
           f"{ex['bench']} − {now:.2f} = {ex['bench'] - now:.2f}. The domain weight is "
           f"{ex['weight']}, so the weighted gap is {(ex['bench'] - now) * ex['weight']:.2f}, which "
-          f"falls in the Critical band. After CPS 240 the expected score is {ex['post']}.")
+          f"falls in the Critical band. After CPS XXXX the expected score is {ex['post']}.")
     ws[f"A{r}"].alignment = Alignment(wrap_text=True, vertical="top")
     ws.merge_cells(f"A{r}:C{r}")
     ws.row_dimensions[r].height = 62
@@ -269,7 +269,7 @@ def s_method(wb):
         "leading one.",
         "Legal status is scored as it stands in the home jurisdiction. It does not imply that any "
         "overseas instrument has effect in Australia.",
-        "The expected post-CPS 240 score assumes the draft is issued substantially as drafted and "
+        "The expected post-CPS XXXX score assumes the draft is issued substantially as drafted and "
         "is implemented as intended. It is a design expectation, not an outcome.",
     ]:
         label(ws, f"A{r}", "• " + lim)
@@ -285,7 +285,7 @@ def s_gap(wb, band_cells, weight_cells):
     ws = wb.create_sheet("Gap Assessment")
     headers = ["Domain", "Coverage", "Specificity", "Enforceability", "Alignment", "Weight",
                "Benchmark authority", "AU score now", "Benchmark", "Weighted gap", "Priority",
-               "Expected after CPS 240", "Uplift", "CPS 240 requirements", "Source IDs"]
+               "Expected after CPS XXXX", "Uplift", "CPS XXXX requirements", "Source IDs"]
     widths = [34, 9, 10, 12, 10, 8, 20, 11, 11, 11, 11, 12, 9, 20, 26]
     sheet_frame(ws, "Gap assessment — current Australian framework against strongest comparator",
                 f"{STATUS} | Scores 0–5 per the Scoring Methodology sheet. Every score cell carries "
@@ -314,7 +314,7 @@ def s_gap(wb, band_cells, weight_cells):
         ws.cell(row=r, column=15, value=", ".join(d["sources"]))
 
         note(ws, f"B{r}", f"{d['domain']}\n\nObserved gap:\n{d['gap']}")
-        note(ws, f"L{r}", f"Expected position after CPS 240:\n\n{d['action']}")
+        note(ws, f"L{r}", f"Expected position after CPS XXXX:\n\n{d['action']}")
 
         for c in range(1, 16):
             cell = ws.cell(row=r, column=c)
@@ -353,7 +353,7 @@ def s_gap(wb, band_cells, weight_cells):
 def s_areas(wb, gap_last):
     ws = wb.create_sheet("Areas for Improvement")
     headers = ["Rank", "Domain", "Priority", "Weighted gap", "Observed gap",
-               "Recommended action", "CPS 240 requirements", "Indicative owner", "Status"]
+               "Recommended action", "CPS XXXX requirements", "Indicative owner", "Status"]
     widths = [7, 32, 11, 12, 62, 62, 20, 22, 20]
     sheet_frame(ws, "Areas for improvement",
                 f"{STATUS} | Ordered by weighted gap. Priority and weighted gap are linked to the "
@@ -400,7 +400,7 @@ def s_areas(wb, gap_last):
 def s_crosswalk(wb):
     ws = wb.create_sheet("Regulatory Crosswalk")
     headers = ["Domain", "APRA (current)", "OCC / Federal Reserve", "PRA", "OSFI", "ECB / SSM",
-               "MAS", "BCBS", "FSB", "Proposed CPS 240 position"]
+               "MAS", "BCBS", "FSB", "Proposed CPS XXXX position"]
     widths = [26] + [40] * 8 + [46]
     sheet_frame(ws, "Regulatory crosswalk — model risk management",
                 f"{STATUS} | Compares substantive content. Legal enforceability differs between "
@@ -430,9 +430,9 @@ def s_requirements(wb):
     ws = wb.create_sheet("Requirements Register")
     headers = ["ID", "Part", "Section", "Title", "Mandatory requirement", "Source IDs",
                "Provenance", "Rationale", "Policy choice?", "Legal flag?",
-               "International principle", "CPG 240 paragraphs"]
+               "International principle", "CPG XXXX paragraphs"]
     widths = [7, 30, 26, 34, 84, 26, 22, 60, 12, 11, 46, 20]
-    sheet_frame(ws, "Draft CPS 240 requirements register",
+    sheet_frame(ws, "Draft CPS XXXX requirements register",
                 f"{STATUS} | Mandatory wording appears in bold in the Word standard; this sheet "
                 f"records provenance and rationale.",
                 headers, widths, freeze_col="B")
@@ -466,7 +466,7 @@ def s_test(wb):
 
 def s_trace(wb):
     ws = wb.create_sheet("Traceability")
-    headers = ["CPG 240 paragraph", "Chapter", "Guidance text", "Supports CPS 240",
+    headers = ["CPG XXXX paragraph", "Chapter", "Guidance text", "Supports CPS XXXX",
                "Source attribution", "Verification note"]
     widths = [14, 30, 96, 18, 56, 56]
     sheet_frame(ws, "Guidance-to-requirement traceability",

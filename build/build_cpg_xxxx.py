@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build CPG 240 Model Risk Management — the draft prudential practice guide.
+"""Build CPG XXXX Model Risk Management — the draft prudential practice guide.
 
 Follows the construction of APG 250, supplied as a model: numbered "should"
 paragraphs, a cross-reference strip opening each chapter, source attribution
@@ -25,7 +25,7 @@ from docx_common import (
     add_header_footer, build_styles, table, xref_box,
 )
 
-OUT = Path(__file__).resolve().parents[1] / "CPG_240_Model_Risk_Management.docx"
+OUT = Path(__file__).resolve().parents[1] / "CPG_XXXX_Model_Risk_Management.docx"
 AS_OF = "25 July 2026"
 STATUS = "POLICY DEVELOPMENT DRAFT — NOT IN FORCE"
 
@@ -37,7 +37,7 @@ def cover(doc):
     p.runs[0].font.size = Pt(9)
     p.runs[0].bold = True
 
-    p = para(doc, "Prudential Practice Guide CPG 240", "DocTitle")
+    p = para(doc, "Prudential Practice Guide CPG XXXX", "DocTitle")
     bottom_rule(p)
     para(doc, "Model Risk Management", "DocSubtitle").runs[0].bold = True
     para(doc, "Draft cross-industry prudential practice guide", "DocMeta")
@@ -52,7 +52,7 @@ def cover(doc):
         "This guide uses 'should' to indicate APRA's expectations. Compliance with a practice guide "
         "is not mandatory, but APRA expects an entity either to apply the guidance or to be able to "
         "explain the alternative approach it has adopted and why that approach meets the "
-        "requirements of CPS 240. Requirements use 'must' and appear only in CPS 240. Verification "
+        "requirements of CPS XXXX. Requirements use 'must' and appear only in CPS XXXX. Verification "
         "annotations appear in amber throughout, recording the evidential basis for statements "
         "about overseas frameworks.",
     )
@@ -63,7 +63,7 @@ def chapter_xref(doc, chapter_name, chapter_reqs):
     if not ids:
         return
     titles = ", ".join(ids)
-    xref_box(doc, f"CPS 240 cross-reference: {titles}")
+    xref_box(doc, f"CPS XXXX cross-reference: {titles}")
 
 
 def render_items(doc, flat, chapter_reqs):
@@ -106,7 +106,7 @@ def annex_traceability(doc, req_map):
     page_break(doc)
     doc.add_paragraph("Annex A — Requirement to guidance traceability", style="Heading 1")
     para(doc,
-         "Every mandatory requirement in CPS 240 and the paragraphs of this guide that address it. "
+         "Every mandatory requirement in CPS XXXX and the paragraphs of this guide that address it. "
          "Requirements with no guidance paragraph would indicate a gap in this guide; there are none.",
          "GuideBody")
     rows = []
@@ -115,7 +115,7 @@ def annex_traceability(doc, req_map):
         rows.append([r["id"], r["title"], G.ranges(nums) or "—",
                      r["provenance"],
                      "Yes" if r["policy_choice"] else "No"])
-    table(doc, ["CPS 240", "Requirement", "CPG 240 paragraphs", "Provenance", "Policy choice"],
+    table(doc, ["CPS XXXX", "Requirement", "CPG XXXX paragraphs", "Provenance", "Policy choice"],
           rows, [1.5, 6.4, 3.4, 3.3, 2.0], font_pt=8)
 
 
@@ -123,13 +123,13 @@ def annex_principles(doc):
     landscape_section(doc)
     doc.add_paragraph("Annex B — Mapping to international principles", style="Heading 1")
     para(doc,
-         "Where each CPS 240 requirement sits against the enumerated principles, outcomes and core "
+         "Where each CPS XXXX requirement sits against the enumerated principles, outcomes and core "
          "elements of the comparator frameworks. Principle labels are reproduced as printed by the "
          "issuing authority. A blank cell indicates that the framework does not address the "
          "requirement through an enumerated principle, not that it is silent on the subject.",
          "GuideBody")
     rows = [[r["id"], r["title"], r["principles"]] for r in R.REQUIREMENTS]
-    table(doc, ["CPS 240", "Requirement", "Corresponding international principle"],
+    table(doc, ["CPS XXXX", "Requirement", "Corresponding international principle"],
           rows, [1.8, 6.0, 16.2], font_pt=7.5)
     portrait_section(doc)
 
@@ -165,7 +165,7 @@ def main():
     doc = Document()
     build_styles(doc)
     page_setup(doc)
-    add_header_footer(doc, f"CPG 240 Model Risk Management — {STATUS}",
+    add_header_footer(doc, f"CPG XXXX Model Risk Management — {STATUS}",
                       "Australian Prudential Regulation Authority")
 
     flat, req_map, chapter_reqs, total = G.numbered()

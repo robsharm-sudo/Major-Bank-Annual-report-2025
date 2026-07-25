@@ -7,8 +7,8 @@ Instrument numbers are placeholders. Information was verified to **25 July 2026*
 
 | File | What it is |
 |---|---|
-| `CPS_240_Model_Risk_Management.docx` | Draft cross-industry prudential standard. 43 bold mandatory requirements with plain-text explanatory guidance beneath each, and six annexes including a full international comparison. 28 pages, Arial throughout. |
-| `CPG_240_Model_Risk_Management.docx` | Draft prudential practice guide. 125 numbered "should" paragraphs across 15 chapters, with cross-reference strips, source attribution carrying legal-status codes, and amber verification annotations. 34 pages. |
+| `CPS_XXXX_Model_Risk_Management.docx` | Draft cross-industry prudential standard. 43 bold mandatory requirements with plain-text explanatory guidance beneath each, and six annexes including a full international comparison. 28 pages, Arial throughout. |
+| `CPG_XXXX_Model_Risk_Management.docx` | Draft prudential practice guide. 125 numbered "should" paragraphs across 15 chapters, with cross-reference strips, source attribution carrying legal-status codes, and amber verification annotations. 34 pages. |
 | `MRM_Regulatory_Comparison_and_Improvement_Assessment.xlsx` | 15-sheet evidence base: gap scoring with a documented methodology, an eight-authority crosswalk, requirement-by-authority challenge, traceability, statement provenance ledger, red-team audit trail and source register. 249 live formulas. |
 
 Bold means mandatory. Everything not bold is explanatory and imposes no obligation.
@@ -41,8 +41,8 @@ audit trail can be regenerated and re-checked rather than taken on trust.
 
 ```bash
 pip install python-docx openpyxl mcp
-python build/build_cps240.py
-python build/build_cpg240.py
+python build/build_cps_xxxx.py
+python build/build_cpg_xxxx.py
 python build/build_workbook.py
 ```
 

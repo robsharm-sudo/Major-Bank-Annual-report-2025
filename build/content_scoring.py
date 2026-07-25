@@ -4,11 +4,11 @@ The question the scoring answers is narrow and stated deliberately:
 
     Against the strongest comparator practice, how well does the *current*
     Australian prudential framework address each model risk domain, and how
-    much of that gap would the proposed CPS 240 close?
+    much of that gap would the proposed CPS XXXX close?
 
 It does not score entity maturity, and it does not rank the comparator
 authorities against one another. A low Australian score is a statement about
-the framework as it stands today, before CPS 240, and is the basis for the
+the framework as it stands today, before CPS XXXX, and is the basis for the
 "areas for improvement" register.
 
 Scoring runs on four dimensions, each 0-5:
@@ -65,8 +65,8 @@ BANDS = [
 # Domain assessment
 #
 # au = (coverage, specificity, enforceability, alignment) for the Australian
-#      framework AS IT STANDS TODAY, before CPS 240.
-# post = expected weighted domain score once CPS 240 and CPG 240 are in force.
+#      framework AS IT STANDS TODAY, before CPS XXXX.
+# post = expected weighted domain score once CPS XXXX and CPG XXXX are in force.
 # bench = the strongest comparator score, with the authority that sets it.
 # --------------------------------------------------------------------------- #
 
@@ -433,7 +433,7 @@ DOMAINS = [
         "gap": "This is the strongest part of the Australian framework. The residual gap is the "
                "absence of a general model risk discipline around the capital model estate, and "
                "less developed guidance on model change than the ECB provides.",
-        "action": "Preserve the capital standards unchanged and position CPS 240 to sit alongside "
+        "action": "Preserve the capital standards unchanged and position CPS XXXX to sit alongside "
                   "them, with the more specific requirement prevailing.",
         "owner": "Policy + Capital",
     },

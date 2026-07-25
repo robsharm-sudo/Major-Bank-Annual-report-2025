@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""MCP server for the CPS 240 / CPG 240 model risk management package.
+"""MCP server for the CPS XXXX / CPG XXXX model risk management package.
 
 Exposes the drafting pipeline as callable tools so the package can be
 regenerated, queried, re-verified and re-scored without re-running the
@@ -44,14 +44,14 @@ import content_sources as S  # noqa: E402
 mcp = FastMCP("mrm-policy")
 
 ARTEFACTS = {
-    "standard": REPO / "CPS_240_Model_Risk_Management.docx",
-    "guide": REPO / "CPG_240_Model_Risk_Management.docx",
+    "standard": REPO / "CPS_XXXX_Model_Risk_Management.docx",
+    "guide": REPO / "CPG_XXXX_Model_Risk_Management.docx",
     "workbook": REPO / "MRM_Regulatory_Comparison_and_Improvement_Assessment.xlsx",
 }
 
 BUILDERS = {
-    "standard": "build_cps240.py",
-    "guide": "build_cpg240.py",
+    "standard": "build_cps_xxxx.py",
+    "guide": "build_cpg_xxxx.py",
     "workbook": "build_workbook.py",
 }
 
@@ -227,7 +227,7 @@ def check_source_urls(timeout_seconds: int = 20) -> dict[str, Any]:
 @mcp.tool()
 def list_requirements(part: str = "", policy_choices_only: bool = False,
                       legal_flags_only: bool = False) -> list[dict[str, Any]]:
-    """List the CPS 240 requirements, optionally filtered.
+    """List the CPS XXXX requirements, optionally filtered.
 
     Args:
         part: substring match against the part name, e.g. "Governance".
@@ -297,7 +297,7 @@ def get_principles(authority: str = "") -> list[dict[str, Any]]:
 def get_crosswalk(topic: str = "") -> list[dict[str, Any]]:
     """Return the eight-authority regulatory crosswalk, optionally by topic."""
     cols = ["topic", "APRA_current", "US", "PRA", "OSFI", "ECB", "MAS", "BCBS",
-            "FSB", "proposed_CPS_240"]
+            "FSB", "proposed_CPS_XXXX"]
     out = []
     for row in S.CROSSWALK_ROWS_FULL:
         if topic and topic.lower() not in row[0].lower():
@@ -405,7 +405,7 @@ def scoring_methodology() -> dict[str, Any]:
             "The benchmark is the strongest comparator practice, which is a demanding bar.",
             "Legal status is scored as it stands in the home jurisdiction and implies nothing "
             "about effect in Australia.",
-            "The expected post-CPS 240 score is a design expectation, not an outcome.",
+            "The expected post-CPS XXXX score is a design expectation, not an outcome.",
         ],
     }
 

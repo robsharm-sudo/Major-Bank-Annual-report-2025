@@ -704,7 +704,7 @@ PRINCIPLE_FRAMEWORKS = [
     {
         "authority": "OSFI", "confidence": V_PRIMARY,
         "instrument": "OSFI Guideline E-23 — Model Risk Management (2027)",
-        "note": "Structured as three outcomes, each heading a group of principles numbered X.Y where X is the parent outcome. Twelve principles in total. A mapping that treats E-23 as having only three citable units under-represents it by twelve. The guideline also carries Appendix 1, Information tracking for models, which sets out minimum inventory content and informed Annex B of CPS 240.",
+        "note": "Structured as three outcomes, each heading a group of principles numbered X.Y where X is the parent outcome. Twelve principles in total. A mapping that treats E-23 as having only three citable units under-represents it by twelve. The guideline also carries Appendix 1, Information tracking for models, which sets out minimum inventory content and informed Annex B. Section A.4 defines six stakeholder roles — Model Owner, Model Developer, Model Reviewer, Model Approver, Model User and Model Stakeholder. Principle 2.1 covers all models in use or recently decommissioned: models of negligible risk are not outside the identification obligation, only outside the heavier controls.",
         "items": [
             ["Outcome 1", "Model risk is well understood and managed across the enterprise."],
             ["Principle 1.1", "Effective reporting structures and proper resourcing should enable sound model governance."],
@@ -909,7 +909,7 @@ PRINCIPLE_FRAMEWORKS = [
         "note": "APRA has no model risk prudential standard and no enumerated model risk "
                 "principles. Model governance obligations are distributed across instruments "
                 "written for other purposes, and cannot be mapped one-to-one against a comparator "
-                "principle set. That distribution is the gap CPS 240 addresses. Paragraph "
+                "principle set. That distribution is the gap CPS XXXX addresses. Paragraph "
                 "references below were read from the primary instruments.",
         "items": [
             ["APS 113 paras 15–19", "Key principles"],
@@ -942,7 +942,7 @@ PRINCIPLE_FRAMEWORKS = [
 # --------------------------------------------------------------------------- #
 # Regulatory crosswalk
 # Columns: domain | APRA current | US | PRA | OSFI | ECB | MAS | BCBS | FSB |
-#          proposed CPS 240
+#          proposed CPS XXXX
 # --------------------------------------------------------------------------- #
 
 CROSSWALK_ROWS_FULL = [
@@ -1268,7 +1268,7 @@ DIVERGES = "Diverges"
 _OVERRIDES = {
     ("M02", "OCC/Fed"): (DIVERGES, "The April 2026 guidance narrows the definition to complex "
                                    "methods and excludes spreadsheet arithmetic, deterministic "
-                                   "rules and generative and agentic AI. CPS 240 does not follow."),
+                                   "rules and generative and agentic AI. CPS XXXX does not follow."),
     ("M03", "OCC/Fed"): (DIVERGES, "Expressly excludes such tools from the model definition and "
                                    "states no control obligation for them."),
     ("M20", "OCC/Fed"): (MODERATE, "Retains validation but states its quality depends on the "
@@ -1333,7 +1333,7 @@ def build_requirement_test(requirements):
 # --------------------------------------------------------------------------- #
 
 LEDGER_ROWS = [
-    ["ST-01", "CPS 240 / CPG 240", "US legal status",
+    ["ST-01", "CPS XXXX / CPG XXXX", "US legal status",
      "The United States model risk guidance is supervisory guidance and does not have the force "
      "and effect of law.",
      "Extracted", V_PRIMARY,
@@ -1349,21 +1349,21 @@ LEDGER_ROWS = [
      "2026-13; FDIC FIL-15-2026; and the 'RESCINDED — Replaced, see OCC 2026-13' watermark on the "
      "OCC copy of the 2011 attachment.",
      "Corrected. The package initially cited SR 11-7 as current throughout. See RT-01."],
-    ["ST-03", "CPS 240 M02", "US model definition",
-     "The current US definition is narrower than the definition adopted in CPS 240 and excludes "
+    ["ST-03", "CPS XXXX M02", "US model definition",
+     "The current US definition is narrower than the definition adopted in CPS XXXX and excludes "
      "spreadsheet arithmetic, deterministic rule-based processes, and generative and agentic AI.",
      "Extracted", V_PRIMARY,
      "SR 26-2 §II and footnote 3.",
      "Corrected. The draft initially attributed a broad three-part definition to current US "
      "guidance. See RT-02."],
-    ["ST-04", "CPS 240 M22 / CPG 240", "Effective challenge",
+    ["ST-04", "CPS XXXX M22 / CPG XXXX", "Effective challenge",
      "Effective challenge survives in the 2026 US guidance, reformulated around expertise, "
      "sufficient independence, and organisational standing and influence to effect change.",
      "Extracted", V_PRIMARY,
      "SR 26-2 §III. The rescinded 2011 formulation was a combination of incentives, competence "
      "and influence.",
      "Corrected. The draft initially used the 2011 formulation. See RT-03."],
-    ["ST-05", "CPS 240 M21 / CPG 240", "Components of validation",
+    ["ST-05", "CPS XXXX M21 / CPG XXXX", "Components of validation",
      "The components of validation are conceptual soundness, outcomes analysis and ongoing model "
      "monitoring.",
      "Extracted", V_PRIMARY,
@@ -1397,7 +1397,7 @@ LEDGER_ROWS = [
      "Extracted", V_PRIMARY,
      "ECB guide to internal models, chapter and section headings.",
      "Corrected from an initial citation of the February 2024 release. See RT-07."],
-    ["ST-10", "CPG 240 Annex", "CRR binding articles",
+    ["ST-10", "CPG XXXX Annex", "CRR binding articles",
      "The binding EU obligations on internal models sit in CRR Articles 174, 179, 185, 188, 189 "
      "and 191; the ECB guide interprets them and is not itself a legal act.",
      "Extracted", V_PRIMARY,
@@ -1415,19 +1415,19 @@ LEDGER_ROWS = [
      "Extracted", V_PRIMARY,
      "BIS publication d605, principle headings.",
      "Corrected from an initial reference to d588. See RT-08."],
-    ["ST-13", "CPS 240 M38 / CPG 240", "Superannuation",
+    ["ST-13", "CPS XXXX M38 / CPG XXXX", "Superannuation",
      "No comparator authority addresses model risk in superannuation.",
      "Inferred", V_PRIMARY,
      "Scope statements of each comparator instrument. OSFI expressly excludes federally regulated "
      "pension plans.",
      "None required. Recorded as a policy design choice with no benchmark."],
-    ["ST-14", "CPS 240 M43 / CPG 240", "Notification",
+    ["ST-14", "CPS XXXX M43 / CPG XXXX", "Notification",
      "No comparator authority imposes a model-risk-specific supervisory notification deadline.",
      "Inferred", V_PRIMARY,
      "Review of each comparator instrument. CPS 230 and CPS 234 provide the Australian "
      "notification architecture.",
      "A model-specific deadline was drafted and then removed as conflicting. See RT-09."],
-    ["ST-15", "CPG 240", "Community bank proportionality",
+    ["ST-15", "CPG XXXX", "Community bank proportionality",
      "The OCC has confirmed that its guidance does not require community banks to perform annual "
      "model validation.",
      "Extracted", V_PRIMARY,
@@ -1467,14 +1467,14 @@ REDTEAM_ROWS = [
      "High", "Closed — correction incorporated"],
 
     ["RT-02",
-     "CPS 240's model definition was presented as following the established three-part US "
+     "CPS XXXX's model definition was presented as following the established three-part US "
      "formulation, implying current US support for a broad definition.",
      "Does the current US guidance still support a broad definition? If not, the standard is "
      "claiming alignment it does not have.",
      "The 2026 US guidance narrows the definition to a 'complex' quantitative method applying "
      "statistical, economic or financial theories and expressly excludes simple arithmetic such "
      "as spreadsheet calculations, deterministic rule-based processes, and generative and agentic "
-     "AI. CPS 240 retains the broad definition — deliberately, because the narrow one would "
+     "AI. CPS XXXX retains the broad definition — deliberately, because the narrow one would "
      "exclude actuarial and unit pricing calculations central to the Australian cross-industry "
      "perimeter — and the divergence is now stated openly rather than concealed by a citation.",
      "M02 rewritten; its provenance changed from Extracted to Extracted + inferred; the "

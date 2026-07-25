@@ -1,4 +1,4 @@
-"""Shared document furniture for the CPS 240 / CPG 240 prudential drafting package.
+"""Shared document furniture for the CPS XXXX / CPG XXXX prudential drafting package.
 
 Both Word deliverables are built from the same style sheet so that the standard and
 the practice guide read as one family of instruments. Everything is Arial: the

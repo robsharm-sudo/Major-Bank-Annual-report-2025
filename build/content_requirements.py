@@ -1,4 +1,4 @@
-"""CPS 240 requirement register — the operative content of the draft standard.
+"""CPS XXXX requirement register — the operative content of the draft standard.
 
 Each entry carries the mandatory sentence (rendered bold), the explanatory guidance
 that sits beneath it (rendered plain), the source
@@ -217,7 +217,7 @@ REQUIREMENTS = [
             "and who owns each use of it, because the two can fail independently.",
         ],
         "sources": ["US-MRM-2026", "OSFI-E23", "PRA-SS1-23", "ECB-GIM"],
-        "principles": "US interagency guidance 2026 §VI roles; OSFI E-23 roles and responsibilities; ECB internal governance",
+        "principles": "US interagency guidance 2026 §VI (roles and responsibilities); OSFI E-23 (2027) §A.4, defining Model Owner, Model Developer, Model Reviewer, Model Approver, Model User and Model Stakeholder; ECB guide §5",
         "provenance": "Extracted",
         "rationale": "Role definition with named model owners is explicit in the US, Canadian and ECB material.",
         "policy_choice": False,

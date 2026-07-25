@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build CPS 240 Model Risk Management — the draft cross-industry prudential standard.
+"""Build CPS XXXX Model Risk Management — the draft cross-industry prudential standard.
 
 Bold paragraphs are mandatory requirements. Everything else is explanatory.
-Cross-references into CPG 240 are computed from the guide's own paragraph
+Cross-references into CPG XXXX are computed from the guide's own paragraph
 numbering, so the two documents cannot fall out of step.
 """
 
@@ -26,7 +26,7 @@ from docx_common import (
     page_setup, add_header_footer, build_styles, table, xref_box,
 )
 
-OUT = Path(__file__).resolve().parents[1] / "CPS_240_Model_Risk_Management.docx"
+OUT = Path(__file__).resolve().parents[1] / "CPS_XXXX_Model_Risk_Management.docx"
 AS_OF = "25 July 2026"
 STATUS = "POLICY DEVELOPMENT DRAFT — NOT IN FORCE"
 
@@ -36,7 +36,7 @@ def cover(doc):
     p.runs[0].font.size = Pt(9)
     p.runs[0].bold = True
 
-    p = para(doc, "Prudential Standard CPS 240", "DocTitle")
+    p = para(doc, "Prudential Standard CPS XXXX", "DocTitle")
     bottom_rule(p)
     para(doc, "Model Risk Management", "DocSubtitle").runs[0].bold = True
     para(doc, "Draft cross-industry prudential standard", "DocMeta")
@@ -52,7 +52,7 @@ def cover(doc):
         "APRA Legal and the Office of Parliamentary Counsel must settle the enabling provisions, "
         "sectoral application, instrument numbering, definitions, commencement, transition, "
         "enforcement powers and interaction with existing CPS and SPS instruments before "
-        "consultation or issue. Annex F records the decisions required. The number 'CPS 240' is a "
+        "consultation or issue. Annex F records the decisions required. The number 'CPS XXXX' is a "
         "placeholder adopted for drafting convenience and does not indicate an allocated instrument "
         "number.",
     )
@@ -102,7 +102,7 @@ def interpretation(doc):
         "How to read this Prudential Standard",
         "Every numbered paragraph set in bold is a proposed mandatory requirement. Text that is not "
         "bold is explanatory and does not itself impose an obligation. Each requirement is followed "
-        "by explanatory text and by a cross-reference to the paragraphs of CPG 240 Model Risk "
+        "by explanatory text and by a cross-reference to the paragraphs of CPG XXXX Model Risk "
         "Management that provide guidance on meeting it.",
     )
     para(doc,
@@ -179,7 +179,7 @@ def body(doc, req_map):
 
         nums = req_map.get(r["id"], [])
         if nums:
-            xr = para(doc, f"→ Guidance: CPG 240 paragraphs {G.ranges(nums)}.", "CrossRef")
+            xr = para(doc, f"→ Guidance: CPG XXXX paragraphs {G.ranges(nums)}.", "CrossRef")
             xr.runs[0].italic = True
 
 
@@ -234,7 +234,7 @@ def annex_d(doc):
          "[—] not addressed.",
          "SourceNote")
 
-    headers = ["Domain", "APRA (proposed CPS 240)", "OCC / Federal Reserve (US)",
+    headers = ["Domain", "APRA (proposed CPS XXXX)", "OCC / Federal Reserve (US)",
                "PRA (UK)", "OSFI (Canada)", "ECB / SSM (EU)", "MAS (Singapore)",
                "BCBS", "FSB"]
     widths = [2.5, 3.1, 3.0, 3.0, 3.0, 3.0, 2.9, 2.7, 2.5]
@@ -246,7 +246,7 @@ def annex_d(doc):
 def annex_e(doc):
     doc.add_paragraph("Annex E — Source register", style="Heading 1")
     para(doc,
-         "Every source relied upon in this Prudential Standard and in CPG 240. URLs are to official "
+         "Every source relied upon in this Prudential Standard and in CPG XXXX. URLs are to official "
          "authority websites and were checked on the date shown. Where a source could not be "
          "confirmed from an official domain it is marked accordingly and has not been relied upon "
          "for any statement of requirement.",
@@ -286,7 +286,7 @@ def main():
     doc = Document()
     build_styles(doc)
     page_setup(doc)
-    add_header_footer(doc, f"CPS 240 Model Risk Management — {STATUS}",
+    add_header_footer(doc, f"CPS XXXX Model Risk Management — {STATUS}",
                       "Australian Prudential Regulation Authority")
 
     _, req_map, _, _ = G.numbered()

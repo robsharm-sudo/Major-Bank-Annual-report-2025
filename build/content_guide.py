@@ -1,4 +1,4 @@
-"""CPG 240 practice guide content.
+"""CPG XXXX practice guide content.
 
 Structure mirrors APG 250, which was supplied as a model: numbered "should"
 paragraphs, a cross-reference strip at the head of each chapter, source
@@ -10,7 +10,7 @@ the cross-references in both directions are derived from the ``req`` tags. Nothi
 is hand-numbered, so the two documents cannot drift apart.
 
 Entry kinds:
-    p      numbered guidance paragraph; ``req`` lists the CPS 240 requirements it supports
+    p      numbered guidance paragraph; ``req`` lists the CPS XXXX requirements it supports
     src    source attribution line, attaches to the preceding paragraph
     ver    verification annotation, rendered amber
     h      sub-heading within a chapter
@@ -29,15 +29,15 @@ GUIDE = [
  # ================================================================ Chapter 1
  {"chapter": "Introduction",
   "intro": "This Prudential Practice Guide assists an APRA-regulated entity to comply with "
-           "Prudential Standard CPS 240 Model Risk Management. It uses 'should' to indicate "
-           "expectations. Compliance with this guide is not itself mandatory; CPS 240 uses "
+           "Prudential Standard CPS XXXX Model Risk Management. It uses 'should' to indicate "
+           "expectations. Compliance with this guide is not itself mandatory; CPS XXXX uses "
            "'must' for requirements.",
   "items": [
-   {"k": "p", "req": [], "t": "This guide is structured to follow CPS 240. Each chapter opens with the requirements it supports, so that a reader working from the standard can find the corresponding guidance, and a reader working from the guidance can identify the obligation it explains."},
-   {"k": "p", "req": [], "t": "Guidance in this guide is drawn from Australian prudential requirements and from the model risk frameworks of comparable authorities. International sources are labelled by legal status: [B] binding in its home jurisdiction, [SE] supervisory expectation, [G] guidance, [PB] proposed or consultative, and [A] analytical or advisory. An overseas instrument is not binding in Australia whatever its status at home, and is used here only to inform expectations under CPS 240."},
+   {"k": "p", "req": [], "t": "This guide is structured to follow CPS XXXX. Each chapter opens with the requirements it supports, so that a reader working from the standard can find the corresponding guidance, and a reader working from the guidance can identify the obligation it explains."},
+   {"k": "p", "req": [], "t": "Guidance in this guide is drawn from Australian prudential requirements and from the model risk frameworks of comparable authorities. International sources are labelled by legal status: [B] binding in its home jurisdiction, [SE] supervisory expectation, [G] guidance, [PB] proposed or consultative, and [A] analytical or advisory. An overseas instrument is not binding in Australia whatever its status at home, and is used here only to inform expectations under CPS XXXX."},
    {"k": "src", "t": "Status classification follows Annex D of this guide and the source register in the accompanying assessment workbook."},
    {"k": "p", "req": [], "t": "APRA expects this guide to be applied proportionately. An entity with a small number of vendor models and one with several hundred internally developed models across banking, insurance and superannuation businesses face the same obligations but will meet them very differently."},
-   {"k": "p", "req": [], "t": "This guide does not create obligations, does not vary CPS 240, and does not limit APRA's discretion in supervising an entity. Where this guide and CPS 240 appear to differ, CPS 240 prevails."},
+   {"k": "p", "req": [], "t": "This guide does not create obligations, does not vary CPS XXXX, and does not limit APRA's discretion in supervising an entity. Where this guide and CPS XXXX appear to differ, CPS XXXX prevails."},
    {"k": "h", "t": "Why model risk warrants a dedicated standard"},
    {"k": "p", "req": [], "t": "Regulated entities have increased their reliance on models faster than they have increased their capacity to govern them. Models now determine capital, provisions, valuations, insurance liabilities, unit prices, credit decisions, fraud interventions and member outcomes. The consequence of a model being wrong has grown with the consequence of the decisions it drives."},
    {"k": "p", "req": [], "t": "Model risk has historically been managed inside the frameworks for the risks the models measure — credit models under credit risk, valuation models under market risk — with the result that no one is accountable for the risk that the measurement itself is wrong. Comparable authorities have moved model risk into its own discipline for this reason."},
@@ -51,7 +51,7 @@ GUIDE = [
    {"k": "p", "req": ["M02"], "t": "An entity should adopt a single enterprise definition of a model and apply it consistently. Fragmented definitions applied differently by business line produce inconsistent coverage and make aggregate model risk impossible to assess."},
    {"k": "p", "req": ["M02"], "t": "It is useful to think of a model as having three parts: an information input component that delivers data and assumptions, a processing component that transforms inputs into estimates, and a reporting component that translates the estimates into information a business can use. Each part can fail independently, and a failure in the first or third is as consequential as a failure in the second."},
    {"k": "src", "t": "Source: PRA SS1/23 Principle 1.1 Model definition [SE]. OSFI Guideline E-23 (2027), key terms [SE]. The three-component description originated in the 2011 United States interagency guidance, which was rescinded on 17 April 2026; the description remains analytically useful and is retained here on that basis rather than as a current citation."},
-   {"k": "ver", "t": "Verification: the United States interagency guidance was revised on 17 April 2026 (SR 26-2, OCC Bulletin 2026-13, FDIC FIL-15-2026), rescinding the 2011 guidance. The 2026 definition is narrower — a 'complex' quantitative method applying statistical, economic or financial theories, expressly excluding simple arithmetic such as spreadsheet calculations and deterministic rule-based processes, and expressly excluding generative and agentic AI. CPS 240 does not adopt that narrowing, for the reasons given in the standard. The divergence is deliberate."},
+   {"k": "ver", "t": "Verification: the United States interagency guidance was revised on 17 April 2026 (SR 26-2, OCC Bulletin 2026-13, FDIC FIL-15-2026), rescinding the 2011 guidance. The 2026 definition is narrower — a 'complex' quantitative method applying statistical, economic or financial theories, expressly excluding simple arithmetic such as spreadsheet calculations and deterministic rule-based processes, and expressly excluding generative and agentic AI. CPS XXXX does not adopt that narrowing, for the reasons given in the standard. The divergence is deliberate."},
    {"k": "p", "req": ["M02"], "t": "The definition is function-based. Whether the processing component is a linear regression, a deterministic actuarial projection, a decision tree, a gradient-boosted ensemble or a large language model does not change whether the tool is a model. Defining scope by technology creates a perimeter that moves every time the technology does."},
    {"k": "p", "req": ["M02"], "t": "Quantitative estimates include forecasts, valuations, risk measures, scores, rankings, classifications and probabilities. A tool that produces a categorical output, such as an approve or decline recommendation, is producing a quantitative estimate expressed categorically."},
    {"k": "h", "t": "Applying the definition at the margin"},
@@ -107,7 +107,7 @@ GUIDE = [
    {"k": "p", "req": ["M06"], "t": "A single senior executive should be accountable for the framework itself — its coverage, its consistency of application and its effectiveness. This is distinct from accountability for individual models, and exists so that framework-level failures have an owner."},
    {"k": "src", "t": "Source: PRA SS1/23 Principle 2.2, SMF accountability for the model risk management framework [SE]. OSFI Guideline E-23 (2027) Principle 1.1 [SE]."},
    {"k": "p", "req": ["M06"], "t": "The accountable executive should be positioned to require change. Accountability without the authority to direct remediation, or without independence from the businesses whose models are being governed, is unlikely to be effective."},
-   {"k": "ver", "t": "Verification: the PRA allocates model risk management framework accountability to a designated senior management function. The precise interaction with the Australian accountability regime requires legal settlement and is flagged in Annex F of CPS 240."},
+   {"k": "ver", "t": "Verification: the PRA allocates model risk management framework accountability to a designated senior management function. The precise interaction with the Australian accountability regime requires legal settlement and is flagged in Annex F of CPS XXXX."},
    {"k": "h", "t": "Model ownership"},
    {"k": "p", "req": ["M07"], "t": "Each model should have a named owner accountable for it being fit for its approved purpose, for its documentation being current, for its performance being monitored, for its limitations being communicated to users, and for the remediation of findings. Ownership recorded in the inventory but not exercised is not ownership."},
    {"k": "p", "req": ["M07"], "t": "Where several businesses use the same model, the entity should distinguish ownership of the model from ownership of each use. The model can be sound while a particular use of it is not, and the two failures require different responses."},
@@ -139,7 +139,7 @@ GUIDE = [
  # ================================================================ Chapter 6
  {"chapter": "Identification and inventory",
   "items": [
-   {"k": "p", "req": ["M13"], "t": "The inventory is the foundation of the framework. No requirement in CPS 240 can be demonstrated for a model the entity does not know it has, and inventory completeness is therefore the first thing an entity should be able to evidence."},
+   {"k": "p", "req": ["M13"], "t": "The inventory is the foundation of the framework. No requirement in CPS XXXX can be demonstrated for a model the entity does not know it has, and inventory completeness is therefore the first thing an entity should be able to evidence."},
    {"k": "src", "t": "Source: PRA SS1/23 Principle 1.2 Model inventory [SE]. OSFI Guideline E-23 (2027) Principle 2.1, on identifying and tracking all models in use or recently decommissioned [SE]. US interagency guidance 2026 §VI, model inventory [SE]."},
    {"k": "p", "req": ["M13"], "t": "Identification requires active discovery. Voluntary registration reliably under-reports, because the models least likely to be declared are those adopted without formal approval — precisely the population of greatest concern."},
    {"k": "p", "req": ["M13"], "t": "Discovery mechanisms that entities have found effective include:"},
@@ -152,7 +152,7 @@ GUIDE = [
      "targeted enquiry following an acquisition or a platform upgrade",
    ]},
    {"k": "p", "req": ["M13"], "t": "The inventory should record decommissioned models where outputs they produced remain in force. A retired model that set a provision, a capital number, a customer price or an insurance liability that has not yet run off continues to carry model risk after the model itself has been switched off."},
-   {"k": "p", "req": ["M13"], "t": "Annex B of CPS 240 sets out the minimum inventory fields. Entities should treat these as a floor. The inventory should be maintained as a controlled record with defined update responsibilities rather than as a periodically refreshed spreadsheet."},
+   {"k": "p", "req": ["M13"], "t": "Annex B of CPS XXXX sets out the minimum inventory fields. Entities should treat these as a floor. The inventory should be maintained as a controlled record with defined update responsibilities rather than as a periodically refreshed spreadsheet."},
    {"k": "ver", "t": "Verification: inventory obligations were confirmed from the primary text of the PRA, OSFI and US instruments. OSFI's express inclusion of recently decommissioned models is extracted from Principle 2.1 of Guideline E-23 (2027)."},
   ]},
 
@@ -264,7 +264,7 @@ GUIDE = [
    {"k": "h", "t": "Information rights"},
    {"k": "p", "req": ["M32"], "t": "Information rights should be usable in practice. A contractual audit right the entity has neither the capability nor the intention to exercise provides little assurance. Rights to timely notice of material model change, to performance information and to incident notification are generally more valuable."},
    {"k": "src", "t": "Source: CPS 230 Operational Risk Management, service provider management [B]. BCBS Principles for the sound management of third-party risk [B where implemented]."},
-   {"k": "p", "req": ["M32"], "t": "CPS 240 does not require access to vendor source code or training data. It requires sufficient information, or sufficient compensating control, for the entity to form a view on fitness for its own use."},
+   {"k": "p", "req": ["M32"], "t": "CPS XXXX does not require access to vendor source code or training data. It requires sufficient information, or sufficient compensating control, for the entity to form a view on fitness for its own use."},
    {"k": "h", "t": "Concentration"},
    {"k": "p", "req": ["M32"], "t": "Concentration should be assessed at entity level and, so far as observable, across the industry. Widespread reliance on the same external model, data source or platform can produce correlated error across firms even where each firm's own governance is sound, and this is a supervisory concern that no individual firm's controls address."},
    {"k": "src", "t": "Source: FSB, The Financial Stability Implications of Artificial Intelligence [A]. BCBS Principles for the sound management of third-party risk [B where implemented]."},
@@ -273,7 +273,7 @@ GUIDE = [
  # ================================================================ Chapter 12
  {"chapter": "Artificial intelligence and machine learning models",
   "items": [
-   {"k": "p", "req": ["M33"], "t": "An artificial intelligence or machine learning model is a model. Every requirement of CPS 240 applies to it. This chapter addresses the respects in which those requirements are harder to satisfy, not a separate regime."},
+   {"k": "p", "req": ["M33"], "t": "An artificial intelligence or machine learning model is a model. Every requirement of CPS XXXX applies to it. This chapter addresses the respects in which those requirements are harder to satisfy, not a separate regime."},
    {"k": "src", "t": "Source: OSFI Guideline E-23 (2027), which expressly brings AI and machine learning models within model risk management [SE]. MAS, Artificial Intelligence Model Risk Management information paper [G]. BCBS, Digitalisation of finance [A]."},
    {"k": "p", "req": ["M33"], "t": "The characteristic difficulties are limited explainability, sensitivity to data drift, instability across retraining cycles, susceptibility to feature leakage, the potential for outcomes that differ systematically across groups, and dependence on externally supplied models whose construction cannot be inspected."},
    {"k": "h", "t": "Explainability"},
@@ -284,16 +284,16 @@ GUIDE = [
    {"k": "p", "req": ["M33", "M25"], "t": "Where a model retrains automatically, the entity should define the envelope within which retraining is authorised — the data it may use, the performance bounds it must remain within, and the parameters it may adjust — and should treat movement outside that envelope as a model change requiring assessment."},
    {"k": "p", "req": ["M33"], "t": "Retraining should be monitored for stability. A model whose behaviour changes materially between retraining cycles on similar data is exhibiting a form of instability that periodic validation will not detect."},
    {"k": "h", "t": "Boundary with AI risk management"},
-   {"k": "p", "req": ["M34"], "t": "Where an entity operates a separate AI risk management framework, the two address different risks in the same system. CPS 240 governs whether a quantitative output is fit to be relied upon. AI risk management governs the wider consequences of the system's operation, including security, autonomy, data handling, human oversight and resilience."},
+   {"k": "p", "req": ["M34"], "t": "Where an entity operates a separate AI risk management framework, the two address different risks in the same system. CPS XXXX governs whether a quantitative output is fit to be relied upon. AI risk management governs the wider consequences of the system's operation, including security, autonomy, data handling, human oversight and resilience."},
    {"k": "p", "req": ["M34"], "t": "A generative or agentic system that produces no quantitative estimate used in decision-making is generally not a model, but remains subject to the entity's AI risk arrangements. A generative system used to produce an estimate that drives a material decision falls within both."},
    {"k": "p", "req": ["M34"], "t": "The entity should record, for each AI system, which framework or frameworks apply, so that the boundary is a documented determination that can be reviewed rather than an assumption that can leave a system ungoverned."},
-   {"k": "ver", "t": "Verification: no comparator authority operates parallel model risk and AI risk instruments; OSFI deliberately brought AI within a single model risk guideline. The boundary rule in CPS 240 is therefore an Australian drafting choice arising from the proposed two-instrument architecture, and is identified as a policy design choice requiring consultation."},
+   {"k": "ver", "t": "Verification: no comparator authority operates parallel model risk and AI risk instruments; OSFI deliberately brought AI within a single model risk guideline. The boundary rule in CPS XXXX is therefore an Australian drafting choice arising from the proposed two-instrument architecture, and is identified as a policy design choice requiring consultation."},
   ]},
 
  # ================================================================ Chapter 13
  {"chapter": "Specialist model classes",
   "items": [
-   {"k": "p", "req": ["M35"], "t": "Models used to determine a regulatory capital requirement remain subject to the approval and change requirements of the applicable capital standard. CPS 240 sits alongside those requirements and does not displace them; where the two overlap, the more specific requirement prevails."},
+   {"k": "p", "req": ["M35"], "t": "Models used to determine a regulatory capital requirement remain subject to the approval and change requirements of the applicable capital standard. CPS XXXX sits alongside those requirements and does not displace them; where the two overlap, the more specific requirement prevails."},
    {"k": "src", "t": "Source: APS 113 Capital Adequacy: Internal Ratings-based Approach to Credit Risk [B]. ECB Guide to internal models [SE], interpreting binding Capital Requirements Regulation provisions [B]. PRA SS1/23, which applies to firms with internal model approval [SE]."},
    {"k": "p", "req": ["M35"], "t": "The requirement that an approved capital model be used in internal risk management is substantive rather than formal. Where a model is maintained for regulatory reporting while the business is managed on a different basis, one of the two is not trusted, and the entity should be able to explain which and why."},
    {"k": "h", "t": "Valuation and financial reporting"},
@@ -302,7 +302,7 @@ GUIDE = [
    {"k": "p", "req": ["M36"], "t": "Independent price verification is a distinct control from model validation. Both are expected for material valuation models, and an entity should not treat the presence of one as satisfying the other."},
    {"k": "h", "t": "Actuarial and insurance models"},
    {"k": "p", "req": ["M37"], "t": "For an insurer, the Appointed Actuary framework already provides a form of independent professional review that will discharge a substantial part of the validation expectation for many actuarial models. It does not automatically discharge all of it, particularly implementation verification and data quality assessment."},
-   {"k": "p", "req": ["M37"], "t": "Insurers should map which elements of CPS 240 validation are met through the actuarial control cycle and which require separate work, rather than assuming complete overlap in either direction. The mapping should be documented and reviewed."},
+   {"k": "p", "req": ["M37"], "t": "Insurers should map which elements of CPS XXXX validation are met through the actuarial control cycle and which require separate work, rather than assuming complete overlap in either direction. The mapping should be documented and reviewed."},
    {"k": "ver", "t": "Verification: OSFI's extension of Guideline E-23 (2027) to life and property and casualty insurers establishes the precedent for applying model risk management to insurance models. The specific interaction with the Australian Appointed Actuary framework is an Australian drafting question flagged for legal settlement."},
    {"k": "h", "t": "Superannuation models"},
    {"k": "p", "req": ["M38"], "t": "For an RSE licensee, unit pricing and asset valuation models directly determine amounts credited to member accounts. An error is realised as a transfer of value between members and is frequently difficult to reverse, which places these models at the higher end of any reasonable tiering assessment."},
@@ -330,14 +330,14 @@ GUIDE = [
    {"k": "p", "req": ["M42"], "t": "Where internal audit lacks the technical capability to assess validation quality, the entity should obtain that capability, through co-sourcing or specialist recruitment, rather than narrow the scope of the assurance to what the existing team can cover."},
    {"k": "h", "t": "Engagement with APRA"},
    {"k": "p", "req": ["M43"], "t": "Early engagement is expected where an entity identifies a material weakness in a model used for regulatory capital, reserving or reporting. Engagement at the point the correction is finalised gives APRA no opportunity to consider the issue while options remain open."},
-   {"k": "p", "req": ["M43"], "t": "Where a model failure is also an operational risk or information security incident, the notification requirements of the applicable prudential standards apply. CPS 240 does not create a separate or conflicting deadline."},
+   {"k": "p", "req": ["M43"], "t": "Where a model failure is also an operational risk or information security incident, the notification requirements of the applicable prudential standards apply. CPS XXXX does not create a separate or conflicting deadline."},
    {"k": "ver", "t": "Verification: the decision not to introduce a model-risk-specific notification deadline was deliberate. Introducing one risked conflicting with existing materiality criteria and timeframes, and is recorded as a correction in the red-team audit trail."},
   ]},
 
  # ================================================================ Chapter 15
  {"chapter": "Implementation",
   "items": [
-   {"k": "p", "req": [], "t": "APRA recognises that meeting CPS 240 will require material uplift for many entities, particularly in inventory completeness, tiering consistency and validation coverage. The following phasing is indicative and would be settled through consultation."},
+   {"k": "p", "req": [], "t": "APRA recognises that meeting CPS XXXX will require material uplift for many entities, particularly in inventory completeness, tiering consistency and validation coverage. The following phasing is indicative and would be settled through consultation."},
    {"k": "tbl", "caption": "Indicative implementation phasing. Dates are illustrative and subject to consultation and to the commencement provisions ultimately settled.",
     "headers": ["Phase", "Focus", "Indicative activities"],
     "widths": [3.4, 4.0, 9.2],
