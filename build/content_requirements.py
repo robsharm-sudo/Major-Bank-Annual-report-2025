@@ -1,7 +1,7 @@
 """CPS 240 requirement register — the operative content of the draft standard.
 
 Each entry carries the mandatory sentence (rendered bold), the explanatory guidance
-that sits beneath it (rendered plain), the cross-reference into CPG 240, the source
+that sits beneath it (rendered plain), the source
 IDs relied on, the international principle it maps to, and a provenance label.
 
 Provenance vocabulary, inherited from the AI package supplied as input:
@@ -39,7 +39,6 @@ REQUIREMENTS = [
             "credit, markets, operations, compliance and human resources — and across all purposes, "
             "whether or not the model produces a regulatory number.",
         ],
-        "cpg": "CPG 240 paragraphs 5–12",
         "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "APRA-CPS220", "ECB-GIM"],
         "principles": "OCC 2011-12 / SR 11-7 §III; PRA SS1/23 Principle 1; OSFI E-23 enterprise-wide MRM",
         "provenance": "Extracted",
@@ -74,7 +73,6 @@ REQUIREMENTS = [
             "unclear whether a tool is a model, the entity should record the determination and the reasoning, "
             "and should manage the residual risk under this Prudential Standard or under an equivalent control.",
         ],
-        "cpg": "CPG 240 paragraphs 13–22",
         "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23"],
         "principles": "OCC 2011-12 / SR 11-7 §III definition of model; PRA SS1/23 Principle 1; OSFI E-23 model definition",
         "provenance": "Extracted",
@@ -102,7 +100,6 @@ REQUIREMENTS = [
             "control, periodic review and a check that the tool still does what it is meant to do will usually be "
             "sufficient for tools that are not material.",
         ],
-        "cpg": "CPG 240 paragraphs 23–26",
         "sources": ["PRA-SS1-23", "OSFI-E23"],
         "principles": "PRA SS1/23 Principle 1 (identification of non-model quantitative methods)",
         "provenance": "Extracted",
@@ -132,7 +129,6 @@ REQUIREMENTS = [
             "must be able to demonstrate that the difference reflects risk rather than convenience.",
             "An exception register that grows without expiry dates is itself an indicator of framework weakness.",
         ],
-        "cpg": "CPG 240 paragraphs 27–34",
         "sources": ["PRA-SS1-23", "OSFI-E23", "OCC-SR117", "APRA-CPS220", "BCBS-239"],
         "principles": "PRA SS1/23 proportionality; OSFI E-23 risk-based application; OCC 2011-12 / SR 11-7 §II",
         "provenance": "Extracted + inferred",
@@ -165,7 +161,6 @@ REQUIREMENTS = [
             "A Board that receives only a model count and a traffic-light summary is unlikely to be positioned to "
             "provide effective challenge.",
         ],
-        "cpg": "CPG 240 paragraphs 35–43",
         "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "APRA-CPS220", "ECB-GIM"],
         "principles": "PRA SS1/23 Principle 2 (governance); OCC 2011-12 / SR 11-7 §VI; OSFI E-23 governance",
         "provenance": "Extracted",
@@ -189,7 +184,6 @@ REQUIREMENTS = [
             "The designation should be recorded in the entity's accountability arrangements and should be consistent "
             "with its obligations under the applicable accountability regime.",
         ],
-        "cpg": "CPG 240 paragraphs 44–48",
         "sources": ["PRA-SS1-23", "OCC-SR117", "OSFI-E23", "APRA-CPS220"],
         "principles": "PRA SS1/23 Principle 2 (senior management function accountability); OSFI E-23 accountability",
         "provenance": "Extracted",
@@ -217,7 +211,6 @@ REQUIREMENTS = [
             "Where a model is used by more than one business, the entity should be explicit about who owns the model "
             "and who owns each use of it, because the two can fail independently.",
         ],
-        "cpg": "CPG 240 paragraphs 49–55",
         "sources": ["OCC-SR117", "OSFI-E23", "PRA-SS1-23", "ECB-GIM"],
         "principles": "OCC 2011-12 / SR 11-7 §VI roles; OSFI E-23 roles and responsibilities; ECB internal governance",
         "provenance": "Extracted",
@@ -245,7 +238,6 @@ REQUIREMENTS = [
             "development, or by engaging an external provider, provided the entity retains the capability to "
             "understand, direct and challenge the work and does not simply accept its conclusions.",
         ],
-        "cpg": "CPG 240 paragraphs 56–64",
         "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "ECB-GIM", "MAS-AIMRM-2024"],
         "principles": "OCC 2011-12 / SR 11-7 §V independence; PRA SS1/23 Principle 4; ECB internal validation",
         "provenance": "Extracted",
@@ -274,7 +266,6 @@ REQUIREMENTS = [
             "risk, information security, operational risk, service provider management, change management and "
             "internal audit.",
         ],
-        "cpg": "CPG 240 paragraphs 65–72",
         "sources": ["PRA-SS1-23", "OSFI-E23", "OCC-SR117", "APRA-CPS220", "APRA-CPS230"],
         "principles": "PRA SS1/23 Principle 2; OSFI E-23 enterprise framework; OCC 2011-12 / SR 11-7 §VI",
         "provenance": "Extracted",
@@ -300,7 +291,6 @@ REQUIREMENTS = [
             "Where an entity cannot yet quantify aggregate model risk, it should say so, use qualitative and coverage-based "
             "measures in the interim, and set out how it intends to close the gap.",
         ],
-        "cpg": "CPG 240 paragraphs 73–79",
         "sources": ["PRA-SS1-23", "OSFI-E23", "APRA-CPS220", "OCC-SR117"],
         "principles": "PRA SS1/23 Principle 2 (risk appetite); OSFI E-23 framework aligned to risk appetite",
         "provenance": "Extracted + inferred",
@@ -326,7 +316,6 @@ REQUIREMENTS = [
             "different development, validation or documentation standards to models of equivalent risk, the entity "
             "should be able to justify the difference on risk grounds.",
         ],
-        "cpg": "CPG 240 paragraphs 80–83",
         "sources": ["OCC-SR117", "OSFI-E23", "PRA-SS1-23", "ECB-GIM"],
         "principles": "OCC 2011-12 / SR 11-7 §VI policies; OSFI E-23 policies and procedures",
         "provenance": "Extracted",
@@ -351,7 +340,6 @@ REQUIREMENTS = [
             "Escalation criteria should be set in advance. Deciding after the event whether a model failure was "
             "material enough to escalate produces predictable results.",
         ],
-        "cpg": "CPG 240 paragraphs 84–90",
         "sources": ["PRA-SS1-23", "OSFI-E23", "OCC-SR117", "BCBS-239", "APRA-CPS220"],
         "principles": "PRA SS1/23 Principle 5; OSFI E-23 reporting; BCBS 239 risk reporting practices",
         "provenance": "Extracted",
@@ -380,7 +368,6 @@ REQUIREMENTS = [
             "Retired models require particular care where a decision, a provision, a capital number or a customer "
             "outcome produced by the model remains in force after the model itself has been switched off.",
         ],
-        "cpg": "CPG 240 paragraphs 91–100",
         "sources": ["PRA-SS1-23", "OCC-SR117", "OSFI-E23", "ECB-GIM", "MAS-AIMRM-2024"],
         "principles": "PRA SS1/23 Principle 1; OCC 2011-12 / SR 11-7 §VI inventory; OSFI E-23 model inventory",
         "provenance": "Extracted",
@@ -408,7 +395,6 @@ REQUIREMENTS = [
             "The tier should drive real differences in control. A tiering scheme that produces the same treatment for "
             "every tier is an administrative exercise rather than a risk control.",
         ],
-        "cpg": "CPG 240 paragraphs 101–112",
         "sources": ["PRA-SS1-23", "OSFI-E23", "OCC-SR117", "MAS-AIMRM-2024", "ECB-GIM"],
         "principles": "PRA SS1/23 Principle 1 (model risk classification); OSFI E-23 model risk rating",
         "provenance": "Extracted",
@@ -434,7 +420,6 @@ REQUIREMENTS = [
             "version, an upstream data source changing definition, or a portfolio migrating into a segment the model "
             "was not developed on.",
         ],
-        "cpg": "CPG 240 paragraphs 113–117",
         "sources": ["OSFI-E23", "PRA-SS1-23", "ECB-GIM", "OCC-SR117"],
         "principles": "OSFI E-23 review triggers; ECB model change management",
         "provenance": "Extracted + inferred",
@@ -464,7 +449,6 @@ REQUIREMENTS = [
             "Developmental evidence should include the testing carried out during development, its results, and the "
             "limitations that testing did not resolve — not only the tests the model passed.",
         ],
-        "cpg": "CPG 240 paragraphs 118–130",
         "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "ECB-GIM"],
         "principles": "OCC 2011-12 / SR 11-7 §IV; PRA SS1/23 Principle 3; ECB internal models general topics",
         "provenance": "Extracted",
@@ -492,7 +476,6 @@ REQUIREMENTS = [
             "Synthetic data used for development or testing should be identified as such, with its generation method "
             "and its representativeness assessed.",
         ],
-        "cpg": "CPG 240 paragraphs 131–142",
         "sources": ["BCBS-239", "OCC-SR117", "OSFI-E23", "ECB-GIM", "APRA-CPG235", "ECB-RDARR"],
         "principles": "BCBS 239 risk data aggregation capabilities; OCC 2011-12 / SR 11-7 §IV data; ECB data quality",
         "provenance": "Extracted",
@@ -518,7 +501,6 @@ REQUIREMENTS = [
             "Documentation should be maintained through the model's life rather than assembled for validation or for "
             "a supervisory request.",
         ],
-        "cpg": "CPG 240 paragraphs 143–150",
         "sources": ["OCC-SR117", "PRA-SS1-23", "ECB-GIM", "OSFI-E23"],
         "principles": "OCC 2011-12 / SR 11-7 §VI documentation; PRA SS1/23 Principle 3; ECB documentation requirements",
         "provenance": "Extracted",
@@ -545,7 +527,6 @@ REQUIREMENTS = [
             "Testing should use data that is sufficiently independent of the data used to build the model. A model "
             "tested only on the data it was fitted to has not been tested.",
         ],
-        "cpg": "CPG 240 paragraphs 151–160",
         "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "ECB-GIM", "MAS-AIMRM-2024"],
         "principles": "OCC 2011-12 / SR 11-7 §IV testing; PRA SS1/23 Principle 3; ECB pre-approval testing",
         "provenance": "Extracted + inferred",
@@ -575,7 +556,6 @@ REQUIREMENTS = [
             "discharge the entity's obligation, because they were not designed around the entity's data, portfolio, "
             "controls or use.",
         ],
-        "cpg": "CPG 240 paragraphs 161–172",
         "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "ECB-GIM", "MAS-NOTICE637"],
         "principles": "OCC 2011-12 / SR 11-7 §V; PRA SS1/23 Principle 4; OSFI E-23 independent review; ECB internal validation",
         "provenance": "Extracted",
@@ -602,7 +582,6 @@ REQUIREMENTS = [
             "A validation that records observations without reaching a conclusion leaves the approval decision "
             "without the input it was designed to receive.",
         ],
-        "cpg": "CPG 240 paragraphs 173–186",
         "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "ECB-GIM"],
         "principles": "OCC 2011-12 / SR 11-7 §V three core elements; PRA SS1/23 Principle 4",
         "provenance": "Extracted",
@@ -631,7 +610,6 @@ REQUIREMENTS = [
             "explanation rather than change, findings downgraded without new evidence, and validation reports whose "
             "conclusions change late in the approval process.",
         ],
-        "cpg": "CPG 240 paragraphs 187–194",
         "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23"],
         "principles": "OCC 2011-12 / SR 11-7 §III effective challenge; PRA SS1/23 Principle 4",
         "provenance": "Extracted",
@@ -659,7 +637,6 @@ REQUIREMENTS = [
             "Approval notwithstanding unresolved high-severity findings should be exceptional, time-bound, supported by "
             "compensating controls and escalated.",
         ],
-        "cpg": "CPG 240 paragraphs 195–202",
         "sources": ["OCC-SR117", "OSFI-E23", "ECB-GIM", "PRA-SS1-23"],
         "principles": "OSFI E-23 approval; ECB model approval and use; OCC 2011-12 / SR 11-7 §VI",
         "provenance": "Extracted + inferred",
@@ -684,7 +661,6 @@ REQUIREMENTS = [
             "detect. Differences between the development environment and production — in data definitions, rounding, "
             "library versions, treatment of missing values or execution order — can change results materially.",
         ],
-        "cpg": "CPG 240 paragraphs 203–209",
         "sources": ["OCC-SR117", "ECB-GIM", "OSFI-E23"],
         "principles": "OCC 2011-12 / SR 11-7 §IV implementation; ECB internal models implementation",
         "provenance": "Extracted",
@@ -708,7 +684,6 @@ REQUIREMENTS = [
             "Changes initiated by a vendor, or by an upstream data provider, are changes to the entity's model risk "
             "profile even though the entity did not make them, and should enter the same assessment.",
         ],
-        "cpg": "CPG 240 paragraphs 210–219",
         "sources": ["ECB-GIM", "OSFI-E23", "OCC-SR117", "PRA-SS1-23"],
         "principles": "ECB management of model changes; OSFI E-23 model changes; PRA SS1/23 Principle 3",
         "provenance": "Extracted",
@@ -733,7 +708,6 @@ REQUIREMENTS = [
             "Users should receive the limitations, not merely have access to them. Limitations recorded only in a "
             "validation report that users do not read are not disclosed in any meaningful sense.",
         ],
-        "cpg": "CPG 240 paragraphs 220–228",
         "sources": ["OCC-SR117", "PRA-SS1-23", "ECB-GIM", "OSFI-E23"],
         "principles": "OCC 2011-12 / SR 11-7 §IV use; PRA SS1/23 Principle 3; ECB use test",
         "provenance": "Extracted",
@@ -758,7 +732,6 @@ REQUIREMENTS = [
             "Overlays should be reported in aggregate to the Board and senior management, because individually approved "
             "adjustments can collectively become the dominant driver of a reported figure.",
         ],
-        "cpg": "CPG 240 paragraphs 229–238",
         "sources": ["ECB-GIM", "PRA-SS1-23", "OSFI-E23", "OCC-SR117"],
         "principles": "PRA SS1/23 Principle 5 (post-model adjustments); ECB margin of conservatism",
         "provenance": "Extracted",
@@ -785,7 +758,6 @@ REQUIREMENTS = [
             "Thresholds should be set in advance and should be linked to a defined response — investigation, "
             "restriction, revalidation, overlay or withdrawal — so that a breach produces an action rather than a note.",
         ],
-        "cpg": "CPG 240 paragraphs 239–248",
         "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "ECB-GIM", "MAS-AIMRM-2024"],
         "principles": "OCC 2011-12 / SR 11-7 §V ongoing monitoring; PRA SS1/23 Principle 3; OSFI E-23 monitoring",
         "provenance": "Extracted",
@@ -809,7 +781,6 @@ REQUIREMENTS = [
             "The entity should be able to demonstrate that findings are closed because they were fixed, and should "
             "monitor the rate at which findings are closed by rationale, deferral or reclassification.",
         ],
-        "cpg": "CPG 240 paragraphs 249–257",
         "sources": ["PRA-SS1-23", "OCC-SR117", "OSFI-E23", "ECB-GIM"],
         "principles": "PRA SS1/23 Principle 5 (model risk mitigants); OSFI E-23 issue management",
         "provenance": "Extracted",
@@ -835,7 +806,6 @@ REQUIREMENTS = [
             "whether an alternative exists, how long it would take to stand up, and what the interim basis for "
             "decisions would be.",
         ],
-        "cpg": "CPG 240 paragraphs 258–264",
         "sources": ["OSFI-E23", "PRA-SS1-23", "APRA-CPS230", "ECB-GIM"],
         "principles": "OSFI E-23 decommissioning; CPS 230 critical operations and tolerance levels",
         "provenance": "Extracted + inferred",
@@ -863,7 +833,6 @@ REQUIREMENTS = [
             "The entity should not accept a level of opacity for a high-tier model that it would not accept from an "
             "internal development team.",
         ],
-        "cpg": "CPG 240 paragraphs 265–276",
         "sources": ["OCC-SR117", "OSFI-E23", "BCBS-TPRM", "APRA-CPS230", "PRA-SS1-23"],
         "principles": "OCC 2011-12 / SR 11-7 vendor models; OSFI E-23 third-party models; BCBS third-party principles",
         "provenance": "Extracted",
@@ -889,7 +858,6 @@ REQUIREMENTS = [
             "level. Widespread reliance on the same external model or data source can produce correlated error across "
             "firms even where each firm's own governance is sound.",
         ],
-        "cpg": "CPG 240 paragraphs 277–285",
         "sources": ["APRA-CPS230", "BCBS-TPRM", "FSB-AI-2024", "OSFI-E23"],
         "principles": "CPS 230 service provider management; BCBS third-party principles; FSB concentration analysis",
         "provenance": "Extracted + inferred",
@@ -921,7 +889,6 @@ REQUIREMENTS = [
             "Where a model retrains automatically, the entity should define the operating envelope within which "
             "retraining is authorised, and should treat movement outside that envelope as a model change.",
         ],
-        "cpg": "CPG 240 paragraphs 286–300",
         "sources": ["OSFI-E23", "MAS-AIMRM-2024", "BCBS-DIGI", "PRA-SS1-23", "FSB-AI-2024"],
         "principles": "OSFI E-23 AI/ML considerations; MAS AI model risk management observations; BCBS digitalisation report",
         "provenance": "Extracted",
@@ -952,7 +919,6 @@ REQUIREMENTS = [
             "The entity should maintain a single register that records, for each AI system, which regime or regimes "
             "apply, so that the boundary is a documented determination rather than an assumption.",
         ],
-        "cpg": "CPG 240 paragraphs 301–310",
         "sources": ["OSFI-E23", "MAS-AIMRM-2024", "FSB-AI-2024"],
         "principles": "OSFI E-23 single framework for models including AI",
         "provenance": "Policy choice",
@@ -983,7 +949,6 @@ REQUIREMENTS = [
             "substantive. A model maintained for regulatory reporting while the business is run on a different basis "
             "indicates that one of the two is not trusted.",
         ],
-        "cpg": "CPG 240 paragraphs 311–320",
         "sources": ["APRA-APS113", "ECB-GIM", "ECB-CRR", "BCBS-FW", "PRA-SS1-23"],
         "principles": "ECB Guide to internal models; CRR internal model requirements; APS 113 model requirements",
         "provenance": "Extracted",
@@ -1012,7 +977,6 @@ REQUIREMENTS = [
             "Independent price verification is a distinct control from validation and both are required for material "
             "valuation models.",
         ],
-        "cpg": "CPG 240 paragraphs 321–330",
         "sources": ["BCBS-FVP", "ECB-GIM", "APRA-CPS220", "OCC-SR117"],
         "principles": "BCBS supervisory guidance on fair value practices; ECB internal models market risk",
         "provenance": "Extracted",
@@ -1038,7 +1002,6 @@ REQUIREMENTS = [
             "The insurer should map which elements of validation are discharged through the actuarial control cycle "
             "and which require separate work, rather than assuming complete overlap in either direction.",
         ],
-        "cpg": "CPG 240 paragraphs 331–340",
         "sources": ["APRA-CPS320", "APRA-GPS320", "APRA-LPS320", "OSFI-E23"],
         "principles": "APRA Appointed Actuary framework; OSFI E-23 application to insurers",
         "provenance": "Extracted + inferred",
@@ -1066,7 +1029,6 @@ REQUIREMENTS = [
             "Liquidity stress models used to support investment strategy should be tested against the conditions in "
             "which they would actually be relied upon.",
         ],
-        "cpg": "CPG 240 paragraphs 341–348",
         "sources": ["APRA-SPS220", "APRA-SPS530", "APRA-SPS515"],
         "principles": "SPS 530 investment governance; SPS 515 business performance review",
         "provenance": "Inferred",
@@ -1095,7 +1057,6 @@ REQUIREMENTS = [
             "scenarios, should be used with explicit acknowledgement of the uncertainty in their outputs, and should "
             "not be presented to decision-makers with a precision the method cannot support.",
         ],
-        "cpg": "CPG 240 paragraphs 349–358",
         "sources": ["BCBS-STRESS", "PRA-SS1-23", "ECB-GIM", "APRA-CPS220"],
         "principles": "BCBS stress testing principles; PRA SS1/23 application to stress testing models",
         "provenance": "Extracted",
@@ -1122,7 +1083,6 @@ REQUIREMENTS = [
             "Where an entity concludes that no capital is required in respect of model risk, that conclusion should be "
             "reasoned and documented rather than reached by omission.",
         ],
-        "cpg": "CPG 240 paragraphs 359–368",
         "sources": ["PRA-SS1-23", "ECB-GIM", "OCC-SR117", "APRA-CPS220"],
         "principles": "PRA SS1/23 Principle 5 (aggregate model risk); ECB model risk in the SREP",
         "provenance": "Extracted",
@@ -1149,7 +1109,6 @@ REQUIREMENTS = [
             "Retention periods should align with the entity's other prudential record-keeping obligations and with the "
             "period over which the decisions the model informed remain material.",
         ],
-        "cpg": "CPG 240 paragraphs 369–375",
         "sources": ["OCC-SR117", "ECB-GIM", "OSFI-E23", "APRA-CPS220"],
         "principles": "OCC 2011-12 / SR 11-7 §VI documentation and records; ECB documentation",
         "provenance": "Extracted + inferred",
@@ -1175,7 +1134,6 @@ REQUIREMENTS = [
             "Where internal audit lacks the technical capability to assess validation quality, the entity should "
             "obtain that capability rather than narrow the scope of the assurance.",
         ],
-        "cpg": "CPG 240 paragraphs 376–384",
         "sources": ["OCC-SR117", "PRA-SS1-23", "OSFI-E23", "ECB-GIM"],
         "principles": "OCC 2011-12 / SR 11-7 §VI internal audit; ECB internal audit of internal models",
         "provenance": "Extracted",
@@ -1201,7 +1159,6 @@ REQUIREMENTS = [
             "Early engagement is expected where an entity identifies a material weakness in a model used for "
             "regulatory capital, reserving or reporting, rather than at the point the correction is finalised.",
         ],
-        "cpg": "CPG 240 paragraphs 385–392",
         "sources": ["APRA-CPS230", "APRA-CPS234", "APRA-CPS220", "OSFI-E23"],
         "principles": "CPS 230 incident notification; OSFI E-23 supervisory engagement",
         "provenance": "Extracted + inferred; legal drafting required",
