@@ -400,8 +400,8 @@ SOURCES = [
     {
         "id": "APRA-CPS220", "authority": "APRA",
         "title": "Prudential Standard CPS 220 Risk Management",
-        "published": "Current at the as-of date", "effective": "In force",
-        "date": "In force",
+        "published": "July 2019 text", "effective": "Commenced 1 July 2019",
+        "date": "Commenced 1 Jul 2019",
         "status": "Binding cross-industry prudential standard.",
         "scope": "APRA-regulated entities as defined in CPS 220. SPS 220 is the RSE licensee "
                  "counterpart.",
@@ -413,8 +413,8 @@ SOURCES = [
     {
         "id": "APRA-SPS220", "authority": "APRA",
         "title": "Prudential Standard SPS 220 Risk Management",
-        "published": "Current at the as-of date", "effective": "In force",
-        "date": "In force",
+        "published": "January 2023 text", "effective": "Commenced 1 January 2023",
+        "date": "Commenced 1 Jan 2023",
         "status": "Binding prudential standard.",
         "scope": "RSE licensees.",
         "relevant": "Risk management framework and governance obligations for superannuation.",
@@ -436,8 +436,8 @@ SOURCES = [
     {
         "id": "APRA-CPS234", "authority": "APRA",
         "title": "Prudential Standard CPS 234 Information Security",
-        "published": "Current at the as-of date", "effective": "1 July 2019",
-        "date": "Eff. 1 Jul 2019",
+        "published": "July 2019 text", "effective": "Commenced 1 July 2019",
+        "date": "Commenced 1 Jul 2019",
         "status": "Binding cross-industry prudential standard.",
         "scope": "APRA-regulated entities as defined in CPS 234.",
         "relevant": "Information security capability, control testing, incident notification and "
@@ -461,8 +461,8 @@ SOURCES = [
         "id": "APRA-APS113", "authority": "APRA",
         "title": "Prudential Standard APS 113 Capital Adequacy: Internal Ratings-based Approach "
                  "to Credit Risk",
-        "published": "Current at the as-of date", "effective": "In force",
-        "date": "In force",
+        "published": "Final released 4 June 2026", "effective": "Commenced 30 June 2026",
+        "date": "Released 4 Jun 2026; commenced 30 Jun 2026",
         "status": "Binding prudential standard.",
         "scope": "ADIs approved by APRA to use the internal ratings-based approach.",
         "relevant": "The most developed model governance requirements in the Australian framework: "
@@ -473,20 +473,19 @@ SOURCES = [
     {
         "id": "APRA-CPS320", "authority": "APRA",
         "title": "Prudential Standard CPS 320 Actuarial and Related Matters",
-        "published": "Current at the as-of date", "effective": "In force",
-        "date": "In force",
+        "published": "Determination made 29 April 2026", "effective": "Commenced 1 July 2026",
+        "date": "Determined 29 Apr 2026; commenced 1 Jul 2026",
         "status": "Binding prudential standard.",
         "scope": "Insurers as defined in the standard.",
-        "relevant": "Appointed Actuary role, actuarial advice and review of insurance liabilities "
-                    "— a form of independent professional review of actuarial models.",
+        "relevant": "Appointed Actuary role, actuarial advice framework, Financial Condition Report and Actuarial Valuation Report — a form of independent professional review of actuarial models. The commencement and structure of the current version were confirmed from the APRA standards page; the in-force PDF could not be downloaded, so paragraph references are taken from the July 2019 text and should be re-checked against the 1 July 2026 version.",
         "url": "https://www.apra.gov.au/standards/cps-320",
         "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
         "id": "APRA-SPS530", "authority": "APRA",
         "title": "Prudential Standard SPS 530 Investment Governance",
-        "published": "Current at the as-of date", "effective": "In force",
-        "date": "In force",
+        "published": "January 2023 text", "effective": "Commenced 1 January 2023",
+        "date": "Commenced 1 Jan 2023",
         "status": "Binding prudential standard.",
         "scope": "RSE licensees.",
         "relevant": "Investment governance, valuation, liquidity management and stress testing "
@@ -497,8 +496,8 @@ SOURCES = [
     {
         "id": "APRA-SPS515", "authority": "APRA",
         "title": "Prudential Standard SPS 515 Strategic Planning and Member Outcomes",
-        "published": "Current at the as-of date", "effective": "In force",
-        "date": "In force",
+        "published": "Current at the as-of date", "effective": "In force at the as-of date",
+        "date": "In force; commencement not separately verified",
         "status": "Binding prudential standard.",
         "scope": "RSE licensees.",
         "relevant": "Business performance review and member outcomes assessment, which rely on "
@@ -1718,6 +1717,37 @@ REDTEAM_ROWS = [
      "package.",
      "APS 113, APG 113, CPS 220, CPS 230, CPS 320 and SPS 530 primary text.",
      "Medium", "Closed — verified, register strengthened"],
+
+    ["RT-24",
+     "The Australian instruments the standard sits alongside were recorded as 'current at the "
+     "as-of date' without commencement dates.",
+     "Which version of each is actually in force, and has any been remade recently? The "
+     "Australian baseline is what the whole assessment is measured against, so a stale version "
+     "would distort every score.",
+     "Three of the nine had been remade in 2026 and the register did not say so. APS 113 — the "
+     "instrument carrying Australia's strongest existing model governance requirements — was "
+     "released in final form on 4 June 2026 and commenced 30 June 2026. CPS 320 was determined "
+     "on 29 April 2026 and commenced 1 July 2026. CPS 230's current determination was made on "
+     "23 April 2026 and commences 1 July 2026. Commencement dates were added for every APRA "
+     "instrument, and SPS 515 is marked as not separately verified rather than asserted.",
+     "Source register and legal status matrix; the gap assessment's Australian baseline is now "
+     "anchored to identified versions rather than to 'current'.",
+     "APRA standards pages and determinations for each instrument.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-25",
+     "CPS 320 paragraph references were taken from the instrument's structure.",
+     "Was the in-force text actually retrieved, or is the structure inferred from a landing page?",
+     "The 1 July 2026 in-force PDF could not be downloaded from apra.gov.au — the link is "
+     "rendered client-side and the legislation register record is a JavaScript application. "
+     "Title, commencement, status, instrument reference, scope and section headings were "
+     "confirmed from the APRA standards page; paragraph-level references come from the July 2019 "
+     "text. The register now says so, and flags that they should be re-checked against the "
+     "current version.",
+     "Source register entry for CPS 320; the paragraph anchors in the principles register carry "
+     "the same caveat.",
+     "APRA standards page for CPS 320; July 2019 primary PDF.",
+     "Medium", "Closed — limitation disclosed rather than concealed"],
 
     ["RT-18",
      "The Comptroller's Handbook model risk management booklet was cited as a source.",
