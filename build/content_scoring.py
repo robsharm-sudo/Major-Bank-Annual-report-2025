@@ -475,7 +475,7 @@ DOMAINS = [
     {
         "domain": "Expected credit loss and provisioning models",
         "weight": 1.50,
-        "au": (4, 4, 5, 4),
+        "au": (4, 3, 5, 4),
         "bench": 5, "bench_auth": "BCBS",
         "post": 4.75,
         "reqs": ["M38"],

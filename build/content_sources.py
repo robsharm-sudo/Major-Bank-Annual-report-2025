@@ -2603,7 +2603,7 @@ REDTEAM_ROWS = [
      "individually assessed exposures, the interaction of hardship, forbearance and write-off "
      "with measurement, and externally sourced components. Four new areas were added and the "
      "sequence reordered to follow the order in which an engagement would work through them.",
-     "Annex G, now sixteen focus areas.",
+     "Annex G, which gained four focus areas.",
      "Assessed against the measurement requirements of AASB 9 and the matters BCBS d350 and "
      "APRA's October 2023 letter direct to validation and credit judgement.",
      "High", "Closed — correction incorporated"],
@@ -2688,8 +2688,9 @@ REDTEAM_ROWS = [
      "Independent lens: RT-55 narrowed M45 to respect the APS 220 genus, and RT-57 enlarged Annex "
      "G in the same revision, but nobody re-tested the enlarged Annex against the narrowed genus.",
      "The over-claim had survived at a different locus, and in the standard rather than the guide. "
-     "Focus area 1 tests the model risk framework at large, area 13 third-party continuity and "
-     "area 15 regulatory reporting — none of which is credit risk management. With APS 310 now "
+     "The focus areas on model risk framework coverage, on third-party and vendor components and "
+     "on interaction with regulatory capital and reporting are none of them credit risk "
+     "management. With APS 310 now "
      "identified the problem largely dissolves, because the 310 standards reach risk management "
      "generally; the callout and the guide now attribute the credit risk and provisioning areas "
      "to APS 220 and the remainder to APS 310. Recorded because the pattern — a correction that "
@@ -2731,7 +2732,8 @@ REDTEAM_ROWS = [
      "High", "Closed — correction incorporated"],
 
     ["RT-65",
-     "Annex G focus area 5 tested the indicators used to transfer exposures into Stage 2 and the "
+     "The Annex G focus area on staging tested the indicators used to transfer exposures into "
+     "Stage 2 and the "
      "sensitivity of the provision to staging thresholds.",
      "Independent lens: does the Annex ever test the measurement consequence of the transfer, as "
      "distinct from its trigger?",
@@ -2739,16 +2741,17 @@ REDTEAM_ROWS = [
      "\'credit-impaired\', \'definition of default\' or \'cure\'. The point of a Stage 2 transfer is "
      "that it changes the measurement basis from twelve-month to lifetime expected credit losses, "
      "and a review that tested only the trigger would not reach the consequence that makes the "
-     "trigger matter. Area 5 was retitled and now tests whether the staging outcome selects the "
+     "trigger matter. That area was retitled and now tests whether the staging outcome selects the "
      "correct measurement basis through all three stages, and whether the definitions of default "
      "and cure are consistent with those used in credit risk management and regulatory capital. "
      "Evidence now includes a stage reconciliation with movements explained.",
-     "Annex G focus area 5.",
+     "The Annex G focus area on staging, significant increase in credit risk and measurement basis.",
      "AASB 9 measurement requirements; absence confirmed by search across all content modules.",
      "High", "Closed — correction incorporated"],
 
     ["RT-66",
-     "Annex G focus area 4 asked whether the entity compares expected credit losses previously "
+     "The Annex G focus area on outcomes analysis asked whether the entity compares expected "
+     "credit losses previously "
      "recognised against losses actually realised.",
      "Independent lens: an AASB 9 estimate is a probability-weighted expectation across scenarios, "
      "so is single-period comparison against outcomes a coherent test at all?",
@@ -2759,8 +2762,79 @@ REDTEAM_ROWS = [
      "twelve-month estimates to be compared against the following twelve months and lifetime "
      "estimates only over multi-period cohorts, states expressly that a single period falsifies "
      "nothing, and adds comparison of realised macroeconomic conditions against the scenario set.",
-     "Annex G focus area 4.",
+     "The Annex G focus area on outcomes analysis and back-testing of the estimate.",
      "Adversarial verification of an overstated finding, which reduced it to the part that held.",
+     "Medium", "Closed — correction incorporated"],
+
+    ["RT-67",
+     "Annex G never established the perimeter of the review.",
+     "Independent lens: could a reviewer conclude on whether the reported provision is "
+     "supportable without first knowing what is inside the estimate? \'Level 2\', \'subsidiar\' and "
+     "\'solo\' returned no hit in any focus area.",
+     "No. A new area, Perimeter and completeness of coverage, was added second, testing whether "
+     "every portfolio contributing to the provision is measured by a model within the framework, "
+     "whether every entity is identified including branches, offshore operations and run-off "
+     "books, whether any material portfolio is measured on a non-modelled or legacy basis, and "
+     "whether methodology differences across the group are deliberate. Evidence includes a "
+     "reconciliation from the reported provision to the models producing it, with any residual "
+     "measured outside a model quantified.",
+     "Annex G.",
+     "Independent red-team lens on review utility; absence confirmed by search.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-68",
+     "Annex G tested the models but never the plumbing that runs them.",
+     "Independent lens: is the model that produced the reported number the model that was "
+     "validated? A keyword scan returned no hit for implementation, production, ledger, "
+     "reconciliation, version or spreadsheet outside unrelated contexts.",
+     "A validated methodology and a correct reported number are different things, and the gap "
+     "between them is where end-user computing, unapproved versions and manual journals sit. A "
+     "new area, Implementation and production controls, was added after Aggregate effect of "
+     "adjustments, testing version control, implementation verification against the approved "
+     "model, end-user computing in the production path, authorisation of post-calculation manual "
+     "journals, and reconciliation from engine output to general ledger to reported provision. "
+     "It seats there because the preceding area requires the Board to see modelled result, "
+     "adjustments and final provision as three figures, and this is the test that the plumbing "
+     "producing them holds.",
+     "Annex G, now eighteen focus areas.",
+     "Independent red-team lens on review utility; M25 and M29 of this Prudential Standard.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-69",
+     "The expected credit loss scoring domain was scored au=(4, 4, 5, 4) — cell for cell "
+     "identical to the regulatory capital domain — and banded Low.",
+     "Independent lens: Specificity 4 means clear expectations with minor gaps, but the domain\'s "
+     "own gap text says the validation obligation exists without a framework defining what "
+     "validation consists of, who performs it and what follows a finding. Is that a minor gap? "
+     "And can a domain band Low while the change proposes a new mandatory paragraph for it?",
+     "Verification confirmed the narrower point and rejected the wider one. Specificity was "
+     "reduced from 4 to 3; Coverage 4, Enforceability 5 and Alignment 4 stand, because the "
+     "near-verbatim transposition of BCBS d350 Principle 5 into a binding standard supports "
+     "them. Specificity 2 was expressly rejected as describing a general obligation not specific "
+     "to model risk, which is the opposite of what APS 220 does, and the overlays domain was not "
+     "rescored because its Specificity 1 measures a different deficiency. The domain now scores "
+     "4.00 against a benchmark of 5, weighted gap 1.50, band Medium, which is consistent with an "
+     "action proposing a new mandatory paragraph, a guide chapter and an annex. Note that 1.50 "
+     "sits exactly on the Medium threshold, which is user-editable in the workbook.",
+     "The expected credit loss scoring domain.",
+     "The rubric in content_scoring.py read against the domain\'s own gap narrative and against "
+     "how comparable domains are scored.",
+     "Medium", "Closed — correction incorporated"],
+
+    ["RT-70",
+     "The audit trail cited Annex G areas by number — \'sixteen focus areas\', \'Focus area 1 ... "
+     "area 13 ... area 15\', \'focus area 5\', \'focus area 4\'.",
+     "Raised by the lens proposing two new areas: inserting them would renumber everything below "
+     "and silently invalidate every one of those citations.",
+     "This is the RT-64 defect class — a pointer that still resolves while pointing at the wrong "
+     "thing — and it would have been introduced by the very change that fixed two other defects. "
+     "Rather than renumber the references, every numeric citation of an Annex G area in the audit "
+     "trail was replaced with the area\'s name, so no future insertion can invalidate them. "
+     "Recorded separately because the structural fix, not the individual corrections, is the "
+     "point: this is the third appearance of the class after RT-59, RT-62 and RT-64.",
+     "Four entries in the red-team audit trail.",
+     "Anticipated by the lens before the change was made; verified by search for residual "
+     "numeric references, which returns none.",
      "Medium", "Closed — correction incorporated"],
 
     ["RT-18",
@@ -2793,134 +2867,163 @@ REQUIREMENT_TEST_ROWS = build_requirement_test(_REQS)
 ECL_REVIEW_FOCUS = [
     ["1. Model risk framework coverage",
      "Whether expected credit loss models are within the entity's model risk framework in "
-     "substance and not only on the register — tiered, owned, validated and monitored on the same "
-     "basis as other models of equivalent consequence.",
-     "Inventory entries with tier and owner; validation status and dates; evidence that ECL models "
-     "are not carved out of framework reporting."],
+     "substance and not only on the register — tiered, owned, validated and monitored on the "
+     "same basis as other models of equivalent consequence.",
+     "Inventory entries with tier and owner; validation status and dates; evidence that ECL "
+     "models are not carved out of framework reporting."],
 
-    ["2. Validation of ECL models",
-     "Whether validation addresses conceptual soundness, outcomes analysis and ongoing monitoring, "
-     "is performed by persons independent of development and of the provisioning outcome, and "
-     "reaches an explicit conclusion on fitness for use.",
+    ["2. Perimeter and completeness of coverage",
+     "Whether every portfolio whose exposures contribute to the reported provision is measured "
+     "by a model within the framework, and whether every entity whose exposures are included "
+     "is identified — including branches, offshore operations and recently acquired or run-off "
+     "books. Whether any material portfolio is measured on a non-modelled, legacy or locally "
+     "developed basis, and whether methodology differences between entities in the group are "
+     "deliberate and justified rather than unreconciled.",
+     "A reconciliation from the reported provision to the models that produce it, with any "
+     "residual measured outside a model identified and quantified; the list of entities and "
+     "portfolios in scope at Level 1 and Level 2; the basis on which offshore operations apply "
+     "the group methodology or a local one, and the approval of any departure."],
+
+    ["3. Validation of ECL models",
+     "Whether validation addresses conceptual soundness, outcomes analysis and ongoing "
+     "monitoring, is performed by persons independent of development and of the provisioning "
+     "outcome, and reaches an explicit conclusion on fitness for use.",
      "Validation reports with conclusions and conditions; independence assessment; findings "
      "register with severity, owner and closure evidence."],
 
-    ["3. Component models and measurement mechanics",
-     "Whether each component of the estimate is validated in its own right rather than only the "
-     "consolidated output — the probability of default and its lifetime term structure, loss given "
-     "default including collateral valuation and realisation assumptions, and exposure at default "
-     "including credit conversion factors for undrawn and off-balance-sheet commitments. Whether "
-     "the behavioural life and prepayment assumptions used for revolving and open-ended facilities "
-     "are supportable, and whether discounting is applied at the correct rate over the correct "
-     "horizon.",
+    ["4. Component models and measurement mechanics",
+     "Whether each component of the estimate is validated in its own right rather than only "
+     "the consolidated output — the probability of default and its lifetime term structure, "
+     "loss given default including collateral valuation and realisation assumptions, and "
+     "exposure at default including credit conversion factors for undrawn and "
+     "off-balance-sheet commitments. Whether the behavioural life and prepayment assumptions "
+     "used for revolving and open-ended facilities are supportable, and whether discounting is "
+     "applied at the correct rate over the correct horizon.",
      "Component-level validation reports; the derivation of the lifetime PD term structure; "
-     "collateral haircut and time-to-realisation evidence; credit conversion factor calibration; "
-     "behavioural life studies; the discounting methodology and its reconciliation to the effective "
-     "interest rate."],
+     "collateral haircut and time-to-realisation evidence; credit conversion factor "
+     "calibration; behavioural life studies; the discounting methodology and its "
+     "reconciliation to the effective interest rate."],
 
-    ["4. Outcomes analysis and back-testing of the estimate",
+    ["5. Outcomes analysis and back-testing of the estimate",
      "Whether the entity compares expected credit losses previously recognised against losses "
-     "actually realised on a like-for-like horizon — twelve-month estimates against the following "
-     "twelve months, and lifetime estimates only over multi-period cohorts — at a granularity "
-     "that can identify bias, and whether persistent over- or under-estimation has been acted "
-     "upon rather than observed. An expected credit loss estimate is a probability-weighted "
-     "expectation across scenarios, so a single period's outcome falsifies nothing on its own; "
-     "what a review looks for is bias that persists once the horizon is matched.",
+     "actually realised on a like-for-like horizon — twelve-month estimates against the "
+     "following twelve months, and lifetime estimates only over multi-period cohorts — at a "
+     "granularity that can identify bias, and whether persistent over- or under-estimation has "
+     "been acted upon rather than observed. An expected credit loss estimate is a "
+     "probability-weighted expectation across scenarios, so a single period's outcome "
+     "falsifies nothing on its own; what a review looks for is bias that persists once the "
+     "horizon is matched.",
      "Back-testing of ECL against realised write-offs and recoveries by portfolio and vintage, "
      "with the estimation horizon stated; measures of bias and their trend; comparison of "
      "realised macroeconomic conditions against the scenario set used; the entity's response "
      "where bias was identified."],
 
-    ["5. Staging, significant increase in credit risk and measurement basis",
-     "Whether the indicators used to transfer exposures into Stage 2 are validated as models in "
-     "their own right, whether they operate for vulnerable sectors, and what the provision would "
-     "be under alternative reasonable staging criteria. Whether the staging outcome selects the "
-     "correct measurement basis — twelve-month expected credit losses before a significant "
-     "increase in credit risk, lifetime losses after it, and lifetime losses with interest "
-     "revenue on the net carrying amount once an exposure is credit-impaired — since the transfer "
-     "changes what is measured and not only how much. Whether the definitions of default and of "
-     "cure are consistent with those used in credit risk management and in regulatory capital.",
-     "Staging criteria and their validation; transfer volumes and triggers; sector-level staging "
-     "outcomes; sensitivity of the provision to staging thresholds; reconciliation of exposures "
-     "and provisions by stage, with movements between stages explained; the default and cure "
-     "definitions and evidence they are applied consistently."],
+    ["6. Staging, significant increase in credit risk and measurement basis",
+     "Whether the indicators used to transfer exposures into Stage 2 are validated as models "
+     "in their own right, whether they operate for vulnerable sectors, and what the provision "
+     "would be under alternative reasonable staging criteria. Whether the staging outcome "
+     "selects the correct measurement basis — twelve-month expected credit losses before a "
+     "significant increase in credit risk, lifetime losses after it, and lifetime losses with "
+     "interest revenue on the net carrying amount once an exposure is credit-impaired — since "
+     "the transfer changes what is measured and not only how much. Whether the definitions of "
+     "default and of cure are consistent with those used in credit risk management and in "
+     "regulatory capital.",
+     "Staging criteria and their validation; transfer volumes and triggers; sector-level "
+     "staging outcomes; sensitivity of the provision to staging thresholds; reconciliation of "
+     "exposures and provisions by stage, with movements between stages explained; the default "
+     "and cure definitions and evidence they are applied consistently."],
 
-    ["6. Segmentation and collective assessment",
-     "Whether segmentation is granular enough for the portfolio's risk profile, whether collective "
-     "assessment groupings share genuine credit risk characteristics, and whether emerging "
-     "sectoral risk is identified systematically rather than manually.",
-     "Segmentation design and review; grouping rationale; systematic identification processes for "
-     "vulnerable sectors; evidence sectoral risk reaches loss estimates."],
+    ["7. Segmentation and collective assessment",
+     "Whether segmentation is granular enough for the portfolio's risk profile, whether "
+     "collective assessment groupings share genuine credit risk characteristics, and whether "
+     "emerging sectoral risk is identified systematically rather than manually.",
+     "Segmentation design and review; grouping rationale; systematic identification processes "
+     "for vulnerable sectors; evidence sectoral risk reaches loss estimates."],
 
-    ["7. Individually assessed exposures and account treatments",
-     "Whether individually assessed provisions are supported by documented cash flow scenarios and "
-     "probability weights rather than a single view, whether the boundary between individual and "
-     "collective assessment is applied consistently, and whether hardship, forbearance, "
-     "restructuring and write-off policies interact correctly with the measurement of expected "
-     "credit losses rather than masking deterioration.",
+    ["8. Individually assessed exposures and account treatments",
+     "Whether individually assessed provisions are supported by documented cash flow scenarios "
+     "and probability weights rather than a single view, whether the boundary between "
+     "individual and collective assessment is applied consistently, and whether hardship, "
+     "forbearance, restructuring and write-off policies interact correctly with the "
+     "measurement of expected credit losses rather than masking deterioration.",
      "Individual assessment files with scenarios, weights and approvals; the individual versus "
-     "collective boundary and its application; hardship and forbearance flags and their effect on "
-     "staging and measurement; write-off policy and its timing."],
+     "collective boundary and its application; hardship and forbearance flags and their effect "
+     "on staging and measurement; write-off policy and its timing."],
 
-    ["8. Forward-looking information and scenarios",
+    ["9. Forward-looking information and scenarios",
      "Whether macroeconomic scenarios, their weights and the process for setting them are "
      "governed, documented and challenged; and whether the scenario set remains reasonable and "
      "supportable in current conditions.",
      "Scenario governance papers; weighting rationale and approvals; challenge records; "
      "back-testing of prior scenario judgements."],
 
-    ["9. Sensitivity analysis",
+    ["10. Sensitivity analysis",
      "Whether comprehensive sensitivity analysis is performed regularly and timely across "
-     "portfolios and segments, and whether its results reach the Board in a form that supports a "
-     "provisioning decision.",
-     "Sensitivity analysis by segment, industry and geography; frequency evidence; the reporting in "
-     "which results were presented; linkage to ICAAP and risk appetite review."],
+     "portfolios and segments, and whether its results reach the Board in a form that supports "
+     "a provisioning decision.",
+     "Sensitivity analysis by segment, industry and geography; frequency evidence; the "
+     "reporting in which results were presented; linkage to ICAAP and risk appetite review."],
 
-    ["10. Judgement-based adjustments and overlays",
-     "Whether the basis, quantification, approval, duration and removal conditions of each overlay "
-     "are documented; whether overlays are monitored; and whether persistent same-direction "
-     "adjustment has triggered redevelopment rather than repetition.",
-     "Overlay register with quantification and approver; period-on-period movement and direction; "
-     "supporting analysis; senior management oversight records; redevelopment plans."],
+    ["11. Judgement-based adjustments and overlays",
+     "Whether the basis, quantification, approval, duration and removal conditions of each "
+     "overlay are documented; whether overlays are monitored; and whether persistent "
+     "same-direction adjustment has triggered redevelopment rather than repetition.",
+     "Overlay register with quantification and approver; period-on-period movement and "
+     "direction; supporting analysis; senior management oversight records; redevelopment "
+     "plans."],
 
-    ["11. Aggregate effect of adjustments",
-     "Whether the entity reports the aggregate size and direction of overlays against the modelled "
-     "result, so the Board can see how much of the provision is model output and how much is "
-     "judgement.",
-     "Board and committee reporting showing modelled result, adjustments and final provision as "
-     "separate figures over time."],
+    ["12. Aggregate effect of adjustments",
+     "Whether the entity reports the aggregate size and direction of overlays against the "
+     "modelled result, so the Board can see how much of the provision is model output and how "
+     "much is judgement.",
+     "Board and committee reporting showing modelled result, adjustments and final provision "
+     "as separate figures over time."],
 
-    ["12. Data",
-     "Whether the data used to develop, calibrate and run ECL models is appropriate, complete and "
-     "traceable to source, and whether known data limitations are the reason for overlays that "
-     "could instead be resolved.",
-     "Data lineage; quality metrics; documented limitations; the link between identified data gaps "
-     "and adjustments made in their place."],
+    ["13. Implementation and production controls",
+     "Whether the model that produced the reported number is the model that was validated — "
+     "that the calculation engine reproduces the approved methodology, that the version in "
+     "production is the version approved, and that changes since the last validation have been "
+     "assessed. What end-user computing sits in the production run, how post-calculation "
+     "manual journals are authorised and controlled, and whether the engine output reconciles "
+     "to the general ledger and to the provision as reported.",
+     "Version control and release records for the production engine; implementation "
+     "verification against the approved model; the inventory of spreadsheets and other "
+     "end-user computing in the production path, with their controls; the manual journal log "
+     "with approvals; the reconciliation from engine output to general ledger to reported "
+     "provision."],
 
-    ["13. Third-party and vendor components",
-     "Whether externally sourced models, scores, macroeconomic forecasts or calibration data used "
-     "in the estimate are understood, validated and monitored by the entity itself, and whether "
-     "the entity could continue to measure expected credit losses if the provider withdrew.",
+    ["14. Data",
+     "Whether the data used to develop, calibrate and run ECL models is appropriate, complete "
+     "and traceable to source, and whether known data limitations are the reason for overlays "
+     "that could instead be resolved.",
+     "Data lineage; quality metrics; documented limitations; the link between identified data "
+     "gaps and adjustments made in their place."],
+
+    ["15. Third-party and vendor components",
+     "Whether externally sourced models, scores, macroeconomic forecasts or calibration data "
+     "used in the estimate are understood, validated and monitored by the entity itself, and "
+     "whether the entity could continue to measure expected credit losses if the provider "
+     "withdrew.",
      "Vendor model documentation and the entity's own validation of it; the basis on which "
-     "external forecasts are selected and challenged; contractual access to methodology and data; "
-     "substitution arrangements."],
+     "external forecasts are selected and challenged; contractual access to methodology and "
+     "data; substitution arrangements."],
 
-    ["14. Governance, accountability and reporting",
-     "Whether accountability for the provision is clear, whether the Board receives information "
-     "sufficient to challenge it, and whether the entity's own committees have exercised that "
-     "challenge.",
-     "Accountability map; Board and committee papers and minutes showing challenge; escalation of "
-     "model performance issues."],
+    ["16. Governance, accountability and reporting",
+     "Whether accountability for the provision is clear, whether the Board receives "
+     "information sufficient to challenge it, and whether the entity's own committees have "
+     "exercised that challenge.",
+     "Accountability map; Board and committee papers and minutes showing challenge; escalation "
+     "of model performance issues."],
 
-    ["15. Interaction with regulatory capital and reporting",
+    ["17. Interaction with regulatory capital and reporting",
      "Whether provisioning outcomes flow correctly into regulatory capital and prudential "
      "reporting, and whether any prescribed provisioning requirement is correctly applied.",
-     "Reconciliation between accounting provisions and regulatory treatment; reporting controls; "
-     "evidence of correct classification of exposures."],
+     "Reconciliation between accounting provisions and regulatory treatment; reporting "
+     "controls; evidence of correct classification of exposures."],
 
-    ["16. Remediation and responsiveness",
-     "Whether previously identified weaknesses in ECL models have been remediated, and whether the "
-     "entity has acted on APRA's published observations on provisioning practice.",
+    ["18. Remediation and responsiveness",
+     "Whether previously identified weaknesses in ECL models have been remediated, and whether "
+     "the entity has acted on APRA's published observations on provisioning practice.",
      "Findings closure evidence; internal audit coverage; the entity's own assessment against "
      "APRA's October 2023 observations."],
 ]
