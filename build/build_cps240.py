@@ -129,16 +129,15 @@ def contents(doc):
         if r["part"] not in seen:
             seen.append(r["part"])
     for part in seen:
-        p = para(doc, part, "Guidance")
-        p.runs[0].bold = True
+        para(doc, part, "ContentsHead")
         secs = []
         for r in R.REQUIREMENTS:
             if r["part"] == part and r["section"] not in secs:
                 secs.append(r["section"])
         for s in secs:
             ids = [r["id"] for r in R.REQUIREMENTS if r["section"] == s]
-            para(doc, f"    {s}  ({ids[0]}–{ids[-1]})" if len(ids) > 1
-                 else f"    {s}  ({ids[0]})", "Guidance")
+            para(doc, f"{s}  ({ids[0]}–{ids[-1]})" if len(ids) > 1
+                 else f"{s}  ({ids[0]})", "ContentsItem")
     doc.add_paragraph(style="DocMeta")
     for a in ["Annex A — Definitions",
               "Annex B — Minimum model inventory fields",
@@ -146,17 +145,21 @@ def contents(doc):
               "Annex D — International comparison of model risk requirements",
               "Annex E — Source register",
               "Annex F — Matters requiring legal and policy settlement"]:
-        p = para(doc, a, "Guidance")
-        p.runs[0].bold = True
+        para(doc, a, "ContentsHead")
 
 
 def body(doc, req_map):
     current_part = None
     current_section = None
 
+    first = True
     for r in R.REQUIREMENTS:
         if r["part"] != current_part:
-            page_break(doc)
+            # Only the first operative part starts a fresh page; the rest flow, so
+            # the standard reads continuously rather than as ten short chapters.
+            if first:
+                page_break(doc)
+                first = False
             doc.add_paragraph(r["part"], style="Heading 1")
             current_part = r["part"]
             current_section = None

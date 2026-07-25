@@ -202,6 +202,12 @@ def build_styles(doc) -> None:
     _style(doc, "Requirement", size=10, bold=True, space_before=3, space_after=6, keep=True)
     _style(doc, "Guidance", size=10, space_before=0, space_after=6)
 
+    # Contents entries are bold for navigation. They use their own style so that
+    # "bold" remains an unambiguous signal of a mandatory requirement in the body,
+    # and so the build-time audit can enforce that invariant strictly.
+    _style(doc, "ContentsHead", size=10, bold=True, colour=NAVY, space_before=4, space_after=2)
+    _style(doc, "ContentsItem", size=10, space_before=0, space_after=1, left_indent=0.6)
+
     _style(doc, "CrossRef", size=9, italic=True, colour=SLATE, space_before=0, space_after=8)
     _style(doc, "SourceNote", size=9, italic=True, colour=GREY, space_before=0, space_after=4)
     _style(doc, "Verification", size=9, colour=AMBER, space_before=0, space_after=8)

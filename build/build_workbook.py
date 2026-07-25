@@ -93,7 +93,7 @@ def s_exec(wb):
          "Carry an express legal-drafting reservation."],
         ["Guidance paragraphs in draft CPG 240", "=COUNTA(Traceability!A5:A200)",
          "Every requirement has at least one supporting guidance paragraph."],
-        ["Domains assessed", "=COUNTA('Gap Assessment'!A5:A200)",
+        ["Domains assessed", "=COUNTA('Gap Assessment'!A5:A37)",
          "Model risk domains scored against the strongest comparator."],
         ["Mean current Australian score (0-5)", "=ROUND(AVERAGE('Gap Assessment'!H5:H37),2)",
          "Weighted mean across all domains of the framework as it stands today."],
@@ -195,9 +195,9 @@ def s_method(wb):
          "Assessment."],
         ["Benchmark", "The strongest comparator score in that domain, with the authority named. "
          "Column I of Gap Assessment."],
-        ["Gap", "=MAX(0, Benchmark − Domain score). Negative gaps are floored at zero: where "
+        ["Gap", "MAX(0, Benchmark − Domain score). Negative gaps are floored at zero: where "
          "Australia already matches or exceeds the benchmark there is nothing to close."],
-        ["Weighted gap", "=Gap × domain weight. This is what drives the priority band."],
+        ["Weighted gap", "Gap × domain weight. This is what drives the priority band."],
         ["Expected score after CPS 240", "Assessed position once the draft standard and guide are "
          "in force, on the same 0–5 scale. The difference from the current score is the value the "
          "instrument is expected to add."],
