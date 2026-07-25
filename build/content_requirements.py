@@ -150,9 +150,60 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
 
-    # ------------------------------------------------------------------ Part B
     {
         "id": "M05",
+        "part": "Part A — Application and interpretation",
+        "section": "2. Proportionality",
+        "title": "De minimis models",
+        "requirement": (
+            "An APRA-regulated entity may determine that a model is de minimis, and apply to that model only "
+            "the identification, inventory, ownership, classification and reassessment requirements of this "
+            "Prudential Standard, where the entity has assessed and documented that an error in, or misuse of, "
+            "the model could not have a material effect on its financial position, its regulatory obligations, "
+            "its critical operations, or amounts or entitlements attributable to its customers or "
+            "beneficiaries. The entity must record the determination and the reasoning for it, approve it at an "
+            "authority commensurate with the risk, assess whether models individually determined to be de "
+            "minimis are material in aggregate, and reassess each determination on the occurrence of a trigger "
+            "event and at a frequency set out in its model risk policy."
+        ),
+        "guidance": [
+            "A de minimis determination is a conclusion about consequence, not about size, complexity or cost. "
+            "The question is whether the entity could be materially wrong, or materially unfair to a customer or "
+            "beneficiary, if the model were wrong and no one noticed.",
+            "A de minimis model remains within the framework. It must still be identified, recorded in the "
+            "inventory, owned and classified, and its determination must still be reassessed. Without those "
+            "obligations an entity could not demonstrate that anything is de minimis, and the exception would "
+            "become a route out of the inventory rather than a route to lighter controls.",
+            "A model must not be determined to be de minimis where it is used to determine a regulatory capital "
+            "requirement, a provision, a technical or insurance liability, a valuation reported in the financial "
+            "statements, a unit price or another amount attributable to a customer or beneficiary, or where it "
+            "supports a critical operation.",
+            "The aggregate test matters. A single immaterial model is immaterial; two hundred of them, feeding "
+            "the same process or sharing the same flawed assumption, may not be. An entity should be able to "
+            "show that it has examined the population and not only the individual determinations.",
+            "A model must not be disaggregated into components in order to bring those components below the "
+            "threshold, and a determination made for one use does not carry over to another use of the same "
+            "model.",
+        ],
+        "sources": ["OSFI-E23", "PRA-SS1-23", "US-MRM-2026", "APRA-CPS220"],
+        "principles": "OSFI E-23 (2027) Principle 2.3 (scope, scale and intensity commensurate with model risk) "
+                      "read with Principle 2.1 (identify and track all models); PRA SS1/23 Principle 1.3 Model "
+                      "tiering; US interagency guidance 2026 §III (models deemed immaterial)",
+        "provenance": "Extracted + inferred",
+        "rationale": (
+            "Each comparator relieves low-consequence models of the full lifecycle while keeping them within "
+            "identification. The 2026 US guidance states that where models are deemed immaterial, model risk "
+            "management may consist of identifying those models and monitoring the conditions under which their "
+            "use may become material. OSFI reaches the same result through Principles 2.1 and 2.3. The aggregate "
+            "test, the prohibited classes and the anti-disaggregation limb are drafting choices that close the "
+            "obvious routes to misuse of the exception."
+        ),
+        "policy_choice": True,
+        "legal_flag": False,
+    },
+    # ------------------------------------------------------------------ Part B
+    {
+        "id": "M06",
         "part": "Part B — Governance and accountability",
         "section": "3. Board and senior management",
         "title": "Board oversight of model risk",
@@ -179,7 +230,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M06",
+        "id": "M07",
         "part": "Part B — Governance and accountability",
         "section": "3. Board and senior management",
         "title": "Senior accountability for the framework",
@@ -205,7 +256,7 @@ REQUIREMENTS = [
         "legal_flag": True,
     },
     {
-        "id": "M07",
+        "id": "M08",
         "part": "Part B — Governance and accountability",
         "section": "3. Board and senior management",
         "title": "Model ownership and defined lifecycle roles",
@@ -232,7 +283,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M08",
+        "id": "M09",
         "part": "Part B — Governance and accountability",
         "section": "4. Capability and independence",
         "title": "Capability, resourcing and independence",
@@ -261,7 +312,7 @@ REQUIREMENTS = [
 
     # ------------------------------------------------------------------ Part C
     {
-        "id": "M09",
+        "id": "M10",
         "part": "Part C — Framework, appetite and policy",
         "section": "5. Model risk management framework",
         "title": "Integrated model risk management framework",
@@ -287,7 +338,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M10",
+        "id": "M11",
         "part": "Part C — Framework, appetite and policy",
         "section": "5. Model risk management framework",
         "title": "Model risk appetite and limits",
@@ -315,7 +366,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M11",
+        "id": "M12",
         "part": "Part C — Framework, appetite and policy",
         "section": "5. Model risk management framework",
         "title": "Policy, standards and consistency of application",
@@ -337,7 +388,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M12",
+        "id": "M13",
         "part": "Part C — Framework, appetite and policy",
         "section": "6. Reporting and escalation",
         "title": "Management information and escalation",
@@ -363,7 +414,7 @@ REQUIREMENTS = [
 
     # ------------------------------------------------------------------ Part D
     {
-        "id": "M13",
+        "id": "M14",
         "part": "Part D — Identification, inventory and tiering",
         "section": "7. Inventory",
         "title": "Model identification and enterprise inventory",
@@ -393,7 +444,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M14",
+        "id": "M15",
         "part": "Part D — Identification, inventory and tiering",
         "section": "8. Tiering",
         "title": "Model risk tiering",
@@ -423,7 +474,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M15",
+        "id": "M16",
         "part": "Part D — Identification, inventory and tiering",
         "section": "8. Tiering",
         "title": "Reassessment and trigger events",
@@ -447,7 +498,7 @@ REQUIREMENTS = [
 
     # ------------------------------------------------------------------ Part E
     {
-        "id": "M16",
+        "id": "M17",
         "part": "Part E — Development, data and documentation",
         "section": "9. Development",
         "title": "Conceptual soundness and development standards",
@@ -474,7 +525,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M17",
+        "id": "M18",
         "part": "Part E — Development, data and documentation",
         "section": "10. Data",
         "title": "Data quality, provenance and appropriateness",
@@ -501,7 +552,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M18",
+        "id": "M19",
         "part": "Part E — Development, data and documentation",
         "section": "11. Documentation",
         "title": "Documentation sufficient for independent reconstruction",
@@ -530,7 +581,7 @@ REQUIREMENTS = [
 
     # ------------------------------------------------------------------ Part F
     {
-        "id": "M19",
+        "id": "M20",
         "part": "Part F — Testing, validation and approval",
         "section": "12. Testing before use",
         "title": "Pre-implementation testing",
@@ -557,7 +608,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M20",
+        "id": "M21",
         "part": "Part F — Testing, validation and approval",
         "section": "13. Independent validation",
         "title": "Independent validation",
@@ -586,7 +637,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M21",
+        "id": "M22",
         "part": "Part F — Testing, validation and approval",
         "section": "13. Independent validation",
         "title": "Scope of validation",
@@ -617,7 +668,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M22",
+        "id": "M23",
         "part": "Part F — Testing, validation and approval",
         "section": "13. Independent validation",
         "title": "Effective challenge",
@@ -646,7 +697,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M23",
+        "id": "M24",
         "part": "Part F — Testing, validation and approval",
         "section": "14. Approval",
         "title": "Approval and conditions of use",
@@ -672,7 +723,7 @@ REQUIREMENTS = [
 
     # ------------------------------------------------------------------ Part G
     {
-        "id": "M24",
+        "id": "M25",
         "part": "Part G — Implementation, use and change",
         "section": "15. Implementation",
         "title": "Implementation controls",
@@ -694,7 +745,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M25",
+        "id": "M26",
         "part": "Part G — Implementation, use and change",
         "section": "16. Change",
         "title": "Change management and re-approval",
@@ -717,7 +768,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M26",
+        "id": "M27",
         "part": "Part G — Implementation, use and change",
         "section": "17. Use",
         "title": "Use consistent with approved purpose",
@@ -741,7 +792,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M27",
+        "id": "M28",
         "part": "Part G — Implementation, use and change",
         "section": "17. Use",
         "title": "Overlays, adjustments and expert judgement",
@@ -768,7 +819,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M28",
+        "id": "M29",
         "part": "Part G — Implementation, use and change",
         "section": "18. Monitoring",
         "title": "Ongoing performance monitoring",
@@ -791,7 +842,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M29",
+        "id": "M30",
         "part": "Part G — Implementation, use and change",
         "section": "18. Monitoring",
         "title": "Limitations, compensating controls and remediation",
@@ -821,7 +872,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M30",
+        "id": "M31",
         "part": "Part G — Implementation, use and change",
         "section": "19. Retirement",
         "title": "Restriction, suspension and decommissioning",
@@ -848,7 +899,7 @@ REQUIREMENTS = [
 
     # ------------------------------------------------------------------ Part H
     {
-        "id": "M31",
+        "id": "M32",
         "part": "Part H — Third-party and AI models",
         "section": "20. Third-party models",
         "title": "Vendor and externally developed models",
@@ -875,7 +926,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M32",
+        "id": "M33",
         "part": "Part H — Third-party and AI models",
         "section": "20. Third-party models",
         "title": "Information rights, concentration and substitutability",
@@ -905,7 +956,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M33",
+        "id": "M34",
         "part": "Part H — Third-party and AI models",
         "section": "21. AI and machine learning models",
         "title": "Additional controls for AI and machine learning models",
@@ -937,7 +988,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M34",
+        "id": "M35",
         "part": "Part H — Third-party and AI models",
         "section": "21. AI and machine learning models",
         "title": "Boundary with the AI risk management framework",
@@ -970,7 +1021,7 @@ REQUIREMENTS = [
 
     # ------------------------------------------------------------------ Part I
     {
-        "id": "M35",
+        "id": "M36",
         "part": "Part I — Specialist model classes",
         "section": "22. Regulatory capital models",
         "title": "Models used to determine regulatory capital",
@@ -998,7 +1049,7 @@ REQUIREMENTS = [
         "legal_flag": True,
     },
     {
-        "id": "M36",
+        "id": "M37",
         "part": "Part I — Specialist model classes",
         "section": "23. Valuation and financial reporting models",
         "title": "Valuation and financial reporting models",
@@ -1023,7 +1074,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M37",
+        "id": "M38",
         "part": "Part I — Specialist model classes",
         "section": "24. Actuarial and insurance models",
         "title": "Actuarial, reserving and insurance liability models",
@@ -1056,7 +1107,7 @@ REQUIREMENTS = [
         "legal_flag": True,
     },
     {
-        "id": "M38",
+        "id": "M39",
         "part": "Part I — Specialist model classes",
         "section": "25. Superannuation models",
         "title": "Models used by RSE licensees",
@@ -1083,7 +1134,7 @@ REQUIREMENTS = [
         "legal_flag": True,
     },
     {
-        "id": "M39",
+        "id": "M40",
         "part": "Part I — Specialist model classes",
         "section": "26. Stress testing and scenario models",
         "title": "Stress testing, scenario and capital planning models",
@@ -1110,7 +1161,7 @@ REQUIREMENTS = [
 
     # ------------------------------------------------------------------ Part J
     {
-        "id": "M40",
+        "id": "M41",
         "part": "Part J — Aggregate risk, records and assurance",
         "section": "27. Aggregate model risk",
         "title": "Aggregate assessment of model risk",
@@ -1141,7 +1192,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M41",
+        "id": "M42",
         "part": "Part J — Aggregate risk, records and assurance",
         "section": "28. Records",
         "title": "Records and reconstructability",
@@ -1164,7 +1215,7 @@ REQUIREMENTS = [
         "legal_flag": True,
     },
     {
-        "id": "M42",
+        "id": "M43",
         "part": "Part J — Aggregate risk, records and assurance",
         "section": "29. Assurance",
         "title": "Internal audit and independent assurance",
@@ -1189,7 +1240,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M43",
+        "id": "M44",
         "part": "Part J — Aggregate risk, records and assurance",
         "section": "30. APRA engagement",
         "title": "Notification and provision of information to APRA",

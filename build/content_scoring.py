@@ -111,7 +111,7 @@ DOMAINS = [
         "au": (1, 1, 2, 1),
         "bench": 5, "bench_auth": "PRA",
         "post": 4.5,
-        "reqs": ["M13"],
+        "reqs": ["M14"],
         "sources": ["PRA-SS1-23", "OSFI-E23", "US-MRM-2026"],
         "gap": "No cross-industry inventory obligation. Without one, no other model risk obligation "
                "can be evidenced as complete, and APRA cannot assess sector-wide reliance.",
@@ -125,13 +125,15 @@ DOMAINS = [
         "au": (2, 1, 3, 2),
         "bench": 5, "bench_auth": "PRA",
         "post": 4.5,
-        "reqs": ["M04", "M14", "M15"],
+        "reqs": ["M04", "M05", "M15", "M16"],
         "sources": ["PRA-SS1-23", "OSFI-E23"],
         "gap": "Proportionality is a general principle across APRA standards but there is no model "
                "risk classification taxonomy, so control intensity is not systematically linked to "
                "model risk.",
         "action": "Require a documented tiering methodology using quantitative and qualitative "
-                  "factors that demonstrably drives validation, monitoring and approval intensity.",
+                  "factors that demonstrably drives validation, monitoring and approval intensity, "
+                  "with an express de minimis determination at model level that keeps low-consequence "
+                  "models within identification while relieving them of the full lifecycle.",
         "owner": "Policy",
     },
     {
@@ -140,7 +142,7 @@ DOMAINS = [
         "au": (2, 2, 4, 2),
         "bench": 5, "bench_auth": "PRA",
         "post": 4.5,
-        "reqs": ["M05", "M12"],
+        "reqs": ["M06", "M13"],
         "sources": ["PRA-SS1-23", "OSFI-E23", "APRA-CPS220"],
         "gap": "CPS 220 gives the Board responsibility for the risk management framework, but model "
                "risk is not identified as a risk requiring Board attention in its own right and no "
@@ -155,7 +157,7 @@ DOMAINS = [
         "au": (2, 2, 4, 2),
         "bench": 5, "bench_auth": "PRA",
         "post": 4.5,
-        "reqs": ["M06", "M07"],
+        "reqs": ["M07", "M08"],
         "sources": ["PRA-SS1-23", "OSFI-E23"],
         "gap": "No named accountability for model risk as a discipline. Accountability for "
                "individual models is implicit in business ownership but framework-level failures "
@@ -170,7 +172,7 @@ DOMAINS = [
         "au": (2, 1, 3, 2),
         "bench": 5, "bench_auth": "PRA / OSFI",
         "post": 4.5,
-        "reqs": ["M08", "M09", "M11"],
+        "reqs": ["M09", "M10", "M12"],
         "sources": ["PRA-SS1-23", "OSFI-E23", "APRA-CPS220"],
         "gap": "There is no requirement to maintain a model risk management framework as such, no "
                "documented model risk policy standard, and no requirement for capability and "
@@ -187,7 +189,7 @@ DOMAINS = [
         "au": (2, 1, 3, 2),
         "bench": 4, "bench_auth": "PRA",
         "post": 4.0,
-        "reqs": ["M10"],
+        "reqs": ["M11"],
         "sources": ["PRA-SS1-23", "OSFI-E23", "APRA-CPS220"],
         "gap": "Risk appetite obligations are general. Model risk is rarely expressed in appetite "
                "statements in monitorable terms, so it cannot be breached or escalated.",
@@ -201,7 +203,7 @@ DOMAINS = [
         "au": (2, 2, 4, 2),
         "bench": 5, "bench_auth": "US interagency (OCC/FRB/FDIC)",
         "post": 4.5,
-        "reqs": ["M16"],
+        "reqs": ["M17"],
         "sources": ["US-MRM-2026", "PRA-SS1-23", "ECB-GIM"],
         "gap": "Development standards exist only for capital models under APS 113 and for actuarial "
                "work. Models outside those regimes have no development expectation.",
@@ -215,7 +217,7 @@ DOMAINS = [
         "au": (3, 2, 3, 3),
         "bench": 5, "bench_auth": "BCBS / ECB",
         "post": 4.5,
-        "reqs": ["M17"],
+        "reqs": ["M18"],
         "sources": ["BCBS-239", "ECB-RDARR", "APRA-CPG235", "OSFI-E23"],
         "gap": "CPG 235 provides a data governance foundation but is a practice guide, is dated, and "
                "does not address model-specific concerns such as proxy data, representativeness or "
@@ -230,7 +232,7 @@ DOMAINS = [
         "au": (2, 2, 3, 2),
         "bench": 5, "bench_auth": "ECB / PRA",
         "post": 4.5,
-        "reqs": ["M18"],
+        "reqs": ["M19"],
         "sources": ["US-MRM-2026", "PRA-SS1-23", "ECB-GIM"],
         "gap": "No cross-industry documentation standard for models. Documentation adequacy is "
                "assessed only where a capital or actuarial standard applies.",
@@ -244,7 +246,7 @@ DOMAINS = [
         "au": (2, 1, 3, 2),
         "bench": 5, "bench_auth": "PRA / ECB",
         "post": 4.5,
-        "reqs": ["M19"],
+        "reqs": ["M20"],
         "sources": ["US-MRM-2026", "PRA-SS1-23", "OSFI-E23"],
         "gap": "No general bar on using an untested model. Testing expectations exist only within "
                "the capital model approval process.",
@@ -258,7 +260,7 @@ DOMAINS = [
         "au": (2, 2, 4, 2),
         "bench": 5, "bench_auth": "PRA",
         "post": 5.0,
-        "reqs": ["M20", "M21", "M24"],
+        "reqs": ["M21", "M22", "M25"],
         "sources": ["PRA-SS1-23", "US-MRM-2026", "OSFI-E23", "ECB-GIM"],
         "gap": "Independent validation is required for IRB models under APS 113 and, in a different "
                "form, through the Appointed Actuary. There is no general requirement, so a model "
@@ -274,7 +276,7 @@ DOMAINS = [
         "au": (1, 1, 2, 1),
         "bench": 5, "bench_auth": "US interagency (OCC/FRB/FDIC)",
         "post": 4.5,
-        "reqs": ["M22"],
+        "reqs": ["M23"],
         "sources": ["US-MRM-2026", "PRA-SS1-23"],
         "gap": "The concept is absent from the Australian framework. Validation can exist on paper "
                "without the competence, standing or incentives that make it effective, and nothing "
@@ -289,7 +291,7 @@ DOMAINS = [
         "au": (2, 2, 4, 2),
         "bench": 5, "bench_auth": "ECB",
         "post": 4.5,
-        "reqs": ["M23"],
+        "reqs": ["M24"],
         "sources": ["ECB-GIM", "OSFI-E23", "US-MRM-2026"],
         "gap": "Approval requirements exist for capital models only. Elsewhere, models enter use "
                "without a recorded approval of version, purpose or conditions.",
@@ -303,7 +305,7 @@ DOMAINS = [
         "au": (1, 1, 3, 1),
         "bench": 5, "bench_auth": "ECB",
         "post": 4.0,
-        "reqs": ["M24"],
+        "reqs": ["M25"],
         "sources": ["ECB-GIM", "US-MRM-2026", "OSFI-E23"],
         "gap": "Nothing requires verification that the deployed model reproduces the approved one. "
                "This is a recurrent source of failure that methodological validation does not catch.",
@@ -317,7 +319,7 @@ DOMAINS = [
         "au": (2, 2, 4, 2),
         "bench": 5, "bench_auth": "ECB",
         "post": 4.5,
-        "reqs": ["M25"],
+        "reqs": ["M26"],
         "sources": ["ECB-GIM", "OSFI-E23", "PRA-SS1-23"],
         "gap": "Model change control is prescribed only for capital models. Cumulative change and "
                "vendor-initiated change are not addressed anywhere in the framework.",
@@ -331,7 +333,7 @@ DOMAINS = [
         "au": (1, 1, 3, 1),
         "bench": 5, "bench_auth": "US interagency / ECB",
         "post": 4.5,
-        "reqs": ["M26"],
+        "reqs": ["M27"],
         "sources": ["US-MRM-2026", "ECB-GIM", "PRA-SS1-23"],
         "gap": "Misuse is one of the two recognised sources of model risk and is entirely unaddressed "
                "outside the capital use test. Nothing requires users to be told a model's limitations.",
@@ -345,7 +347,7 @@ DOMAINS = [
         "au": (2, 1, 3, 2),
         "bench": 5, "bench_auth": "PRA",
         "post": 4.5,
-        "reqs": ["M27"],
+        "reqs": ["M28"],
         "sources": ["PRA-SS1-23", "ECB-GIM"],
         "gap": "Post-model adjustments can become the dominant driver of a reported figure without "
                "any single approval considering that effect. No Australian instrument governs them "
@@ -360,7 +362,7 @@ DOMAINS = [
         "au": (2, 2, 3, 2),
         "bench": 5, "bench_auth": "US interagency / OSFI",
         "post": 4.5,
-        "reqs": ["M28"],
+        "reqs": ["M29"],
         "sources": ["US-MRM-2026", "OSFI-E23", "PRA-SS1-23"],
         "gap": "Monitoring expectations are limited to specific model classes. Thresholds are rarely "
                "linked to a defined response, so deterioration produces reporting rather than action.",
@@ -374,7 +376,7 @@ DOMAINS = [
         "au": (2, 1, 3, 2),
         "bench": 5, "bench_auth": "PRA",
         "post": 4.5,
-        "reqs": ["M29"],
+        "reqs": ["M30"],
         "sources": ["PRA-SS1-23", "US-MRM-2026"],
         "gap": "No requirement to record model limitations, apply compensating controls or track "
                "remediation to completion. Findings can be closed by explanation without change.",
@@ -388,7 +390,7 @@ DOMAINS = [
         "au": (1, 1, 2, 1),
         "bench": 4, "bench_auth": "OSFI",
         "post": 4.0,
-        "reqs": ["M30"],
+        "reqs": ["M31"],
         "sources": ["OSFI-E23", "APRA-CPS230"],
         "gap": "Retired models whose outputs remain in force — provisions, capital numbers, unit "
                "prices, insurance liabilities — are not addressed anywhere.",
@@ -402,7 +404,7 @@ DOMAINS = [
         "au": (2, 2, 4, 2),
         "bench": 5, "bench_auth": "US interagency / PRA",
         "post": 4.5,
-        "reqs": ["M31", "M32"],
+        "reqs": ["M32", "M33"],
         "sources": ["US-MRM-2026", "PRA-SS1-23", "BCBS-TPRM", "APRA-CPS230"],
         "gap": "CPS 230 governs service providers but not the model risk in a supplied model. "
                "Opacity is commonly accepted from vendors at a level that would not be accepted "
@@ -418,7 +420,7 @@ DOMAINS = [
         "au": (2, 1, 3, 2),
         "bench": 4, "bench_auth": "FSB / BCBS",
         "post": 4.0,
-        "reqs": ["M32"],
+        "reqs": ["M33"],
         "sources": ["FSB-AI-2024", "BCBS-TPRM", "APRA-CPS230"],
         "gap": "Bilateral service provider assessment does not capture correlated reliance on a "
                "common external model, data source or platform across the industry.",
@@ -432,7 +434,7 @@ DOMAINS = [
         "au": (2, 2, 3, 2),
         "bench": 5, "bench_auth": "OSFI",
         "post": 4.5,
-        "reqs": ["M33", "M34"],
+        "reqs": ["M34", "M35"],
         "sources": ["OSFI-E23", "MAS-AIMRM-2024", "BCBS-DIGI", "FSB-AI-2024"],
         "gap": "AI model risk is being addressed through a separate AI workstream, creating a risk "
                "that a model built with AI techniques is governed as an AI system but not as a "
@@ -447,7 +449,7 @@ DOMAINS = [
         "au": (4, 4, 5, 4),
         "bench": 5, "bench_auth": "ECB",
         "post": 4.75,
-        "reqs": ["M35"],
+        "reqs": ["M36"],
         "sources": ["APRA-APS113", "ECB-GIM", "ECB-CRR", "PRA-SS1-23"],
         "gap": "This is the strongest part of the Australian framework. The residual gap is the "
                "absence of a general model risk discipline around the capital model estate, and "
@@ -462,7 +464,7 @@ DOMAINS = [
         "au": (2, 2, 3, 2),
         "bench": 4, "bench_auth": "BCBS",
         "post": 4.0,
-        "reqs": ["M36"],
+        "reqs": ["M37"],
         "sources": ["BCBS-FVP", "ECB-GIM"],
         "gap": "Valuation model governance and independent price verification are not addressed on a "
                "cross-industry basis, despite the output being the reported number itself.",
@@ -476,7 +478,7 @@ DOMAINS = [
         "au": (3, 3, 4, 3),
         "bench": 4, "bench_auth": "OSFI",
         "post": 4.5,
-        "reqs": ["M37"],
+        "reqs": ["M38"],
         "sources": ["APRA-CPS320", "OSFI-E23"],
         "gap": "The Appointed Actuary framework is a genuine strength but was not designed as model "
                "risk management. Implementation verification and data quality assessment are not "
@@ -491,7 +493,7 @@ DOMAINS = [
         "au": (1, 1, 3, 1),
         "bench": 5, "bench_auth": "No comparator — assessed against the standard's own cross-industry objective",
         "post": 4.0,
-        "reqs": ["M38"],
+        "reqs": ["M39"],
         "sources": ["APRA-SPS530", "APRA-SPS515"],
         "gap": "No comparator authority addresses superannuation model risk, so there is no "
                "benchmark. Unit pricing and valuation models determine amounts credited to member "
@@ -507,7 +509,7 @@ DOMAINS = [
         "au": (3, 2, 4, 3),
         "bench": 5, "bench_auth": "PRA / BCBS",
         "post": 4.5,
-        "reqs": ["M39"],
+        "reqs": ["M40"],
         "sources": ["BCBS-STRESS", "PRA-SS3-18", "APRA-CPS220"],
         "gap": "APRA conducts stress testing but there is no standard governing the models used, "
                "whereas the PRA maintains a dedicated supervisory statement on model risk in stress "
@@ -522,7 +524,7 @@ DOMAINS = [
         "au": (1, 1, 2, 1),
         "bench": 5, "bench_auth": "PRA",
         "post": 4.0,
-        "reqs": ["M40"],
+        "reqs": ["M41"],
         "sources": ["PRA-SS1-23", "ECB-GIM"],
         "gap": "Nothing requires an entity to form a view of model risk in aggregate or to consider "
                "it in internal capital assessment, so correlated failure across models sharing data, "
@@ -537,7 +539,7 @@ DOMAINS = [
         "au": (2, 2, 4, 2),
         "bench": 4, "bench_auth": "ECB",
         "post": 4.0,
-        "reqs": ["M41"],
+        "reqs": ["M42"],
         "sources": ["ECB-GIM", "US-MRM-2026", "APRA-CPS220"],
         "gap": "General record-keeping obligations do not specify what must be retained to "
                "reconstruct a model's output, approval basis and performance.",
@@ -551,7 +553,7 @@ DOMAINS = [
         "au": (3, 2, 4, 3),
         "bench": 5, "bench_auth": "PRA",
         "post": 4.5,
-        "reqs": ["M42"],
+        "reqs": ["M43"],
         "sources": ["PRA-SS1-23", "US-MRM-2026", "ECB-GIM", "APRA-CPS220"],
         "gap": "Internal audit obligations are general. Audit of the model risk framework, and in "
                "particular of whether challenge is effective, is not specified and frequently "
@@ -566,7 +568,7 @@ DOMAINS = [
         "au": (3, 3, 4, 3),
         "bench": 4, "bench_auth": "OSFI",
         "post": 4.25,
-        "reqs": ["M43"],
+        "reqs": ["M44"],
         "sources": ["APRA-CPS230", "APRA-CPS234", "OSFI-E23"],
         "gap": "Notification architecture is sound but does not identify model failure as a "
                "notifiable event, so a material model error may not be reported unless it also "

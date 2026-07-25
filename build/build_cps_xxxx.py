@@ -191,7 +191,7 @@ def front_matter(doc):
          "for a foreign ADI, a reference to the Board is a reference to the senior officer outside "
          "Australia to whom authority has been delegated, and this Prudential Standard applies in "
          "respect of the models used in or affecting its Australian operations.",
-         ["Where an artificial intelligence system meets the definition of a model, this Prudential Standard applies to it. The interaction with any separate prudential standard on artificial intelligence risk management is addressed in M34 and is a matter for settlement once the numbering and scope of that instrument are known.",
+         ["Where an artificial intelligence system meets the definition of a model, this Prudential Standard applies to it. The interaction with any separate prudential standard on artificial intelligence risk management is addressed in M35 and is a matter for settlement once the numbering and scope of that instrument are known.",
           "The read-down for foreign ADIs follows the approach taken in the other cross-industry standards. Without it, every governance obligation expressed in terms of the Board would be incapable of performance by a branch."]),
     ]
 
@@ -290,7 +290,7 @@ def annex_b(doc):
     page_break(doc)
     doc.add_paragraph("Annex B — Minimum model inventory fields", style="Heading 1")
     para(doc,
-         "M13 requires the enterprise model inventory to record at least the following for each "
+         "M14 requires the enterprise model inventory to record at least the following for each "
          "model. These are minimum fields; an entity should record whatever further information its "
          "framework requires.",
          "Guidance")

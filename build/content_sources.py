@@ -594,6 +594,12 @@ DEFINITIONS = [
                 "overlays, post-model adjustments and model overrides."],
     ["Quantitative decision tool", "A quantitative method that materially informs a decision but "
                                    "does not meet the definition of a model."],
+    ["De minimis model", "A model that the entity has determined, and documented, could not have a "
+                          "material effect on its financial position, its regulatory obligations, its "
+                          "critical operations, or amounts or entitlements attributable to its customers "
+                          "or beneficiaries if it were wrong or misused. A de minimis model remains "
+                          "subject to identification, inventory, ownership, classification and "
+                          "reassessment."],
     ["Material purpose", "A purpose where an incorrect or misused model output could have a "
                          "material effect on the entity's financial position, its regulatory "
                          "obligations, its critical operations, or amounts or entitlements "
@@ -713,12 +719,14 @@ LEGAL_SETTLEMENT = [
      "Set commencement, transitional milestones for inventory, tiering and validation coverage, "
      "and the treatment of models already in use. Paragraph A4 splits entity-level from "
      "model-level obligations; the periods for each require settlement."],
-    ["Simplified compliance for smaller entities",
-     "Decide whether a de minimis threshold or a simplified compliance pathway is warranted. As "
-     "drafted, all requirements apply to every APRA-regulated entity and proportionality operates "
-     "on control intensity rather than on scope. The OCC has taken the alternative route of "
-     "confining its guidance to institutions above a size threshold. This is a policy choice for "
-     "consultation and is not settled in this draft."],
+    ["De minimis and simplified compliance",
+     "Paragraph M05 provides a de minimis exception at model level: a model of no material "
+     "consequence attracts only identification, inventory, ownership, classification and "
+     "reassessment. Settle the drafting of the prohibited classes, whether the aggregate test "
+     "should carry a stated threshold, and the approval authority for a determination. Separately, "
+     "decide whether an entity-level threshold or simplified pathway is also warranted; the United "
+     "States has taken that route by confining its guidance to institutions above a size "
+     "threshold. The entity-level question is not settled in this draft."],
     ["Foreign ADIs and branches",
      "Confirm the read-down in paragraph A6 for foreign ADIs, and settle whether the standard "
      "reaches models operated outside Australia that affect Australian operations."],
@@ -1072,6 +1080,16 @@ CROSSWALK_ROWS_FULL = [
      "Explicit proportionality by institution and use-case materiality.",
      "Proportionate by tier, with exceptions documented, time-bound, approved and reviewed."],
 
+    ["De minimis and scope relief",
+     "No mechanism; model requirements apply only where a capital or actuarial standard reaches them.",
+     "Models deemed immaterial may attract only identification and monitoring of the conditions under which their use could become material; the guidance also applies mainly above a $30bn entity threshold.",
+     "Tiering determines control intensity; no separate de minimis category.",
+     "Principle 2.3 scales scope, scale and intensity to model risk, but Principle 2.1 keeps all models within identification.",
+     "Materiality assessment within the internal model framework; no de minimis category.",
+     "Risk materiality drives control intensity.",
+     "Not addressed.",
+     "Proportionality by use-case materiality.",
+     "Express de minimis determination at model level, confined to identification, inventory, ownership, classification and reassessment, with prohibited classes, an aggregate test and an anti-disaggregation limb."],
     ["Model inventory",
      "No cross-industry obligation.",
      "Described as common industry practice rather than an expectation.",
@@ -1342,26 +1360,26 @@ _OVERRIDES = {
                                    "rules and generative and agentic AI. CPS XXXX does not follow."),
     ("M03", "OCC/Fed"): (DIVERGES, "Expressly excludes such tools from the model definition and "
                                    "states no control obligation for them."),
-    ("M20", "OCC/Fed"): (MODERATE, "Retains validation but states its quality depends on the "
+    ("M21", "OCC/Fed"): (MODERATE, "Retains validation but states its quality depends on the "
                                    "rigour of review rather than organisational structure, a "
                                    "softening from the rescinded 2011 text."),
-    ("M19", "OCC/Fed"): (MODERATE, "Validation generally precedes first use, but use before "
+    ("M20", "OCC/Fed"): (MODERATE, "Validation generally precedes first use, but use before "
                                    "validation is permitted for urgent business need with "
                                    "compensating controls."),
-    ("M33", "OCC/Fed"): (DIVERGES, "Generative and agentic AI are expressly outside scope; "
+    ("M34", "OCC/Fed"): (DIVERGES, "Generative and agentic AI are expressly outside scope; "
                                    "non-generative AI models are in scope."),
-    ("M34", "OCC/Fed"): (SILENT, "No parallel AI instrument, so no boundary rule arises."),
-    ("M34", "OSFI"): (STRONG, "Single framework covering models including AI removes the boundary "
+    ("M35", "OCC/Fed"): (SILENT, "No parallel AI instrument, so no boundary rule arises."),
+    ("M35", "OSFI"): (STRONG, "Single framework covering models including AI removes the boundary "
                               "problem entirely — the alternative architecture to the one proposed."),
-    ("M38", "OSFI"): (SILENT, "Superannuation is outside OSFI's perimeter; federally regulated "
+    ("M39", "OSFI"): (SILENT, "Superannuation is outside OSFI's perimeter; federally regulated "
                               "pension plans are expressly excluded from E-23."),
-    ("M13", "OCC/Fed"): (MODERATE, "Describes a comprehensive inventory as common industry "
+    ("M14", "OCC/Fed"): (MODERATE, "Describes a comprehensive inventory as common industry "
                                    "practice rather than stating it as an expectation."),
-    ("M18", "OCC/Fed"): (MODERATE, "Reduced in 2026 to a statement that adequate documentation "
+    ("M19", "OCC/Fed"): (MODERATE, "Reduced in 2026 to a statement that adequate documentation "
                                    "helps support model risk management."),
-    ("M30", "OSFI"): (STRONG, "Principle 3.6 expressly covers model decommission — the only "
+    ("M31", "OSFI"): (STRONG, "Principle 3.6 expressly covers model decommission — the only "
                               "comparator that does."),
-    ("M40", "OCC/Fed"): (STRONG, "Expressly requires assessment of model risk individually and in "
+    ("M41", "OCC/Fed"): (STRONG, "Expressly requires assessment of model risk individually and in "
                                  "aggregate, reflecting interactions and common dependencies."),
 }
 
@@ -1427,14 +1445,14 @@ LEDGER_ROWS = [
      "SR 26-2 §II and footnote 3.",
      "Corrected. The draft initially attributed a broad three-part definition to current US "
      "guidance. See RT-02."],
-    ["ST-04", "CPS XXXX M22 / CPG XXXX", "Effective challenge",
+    ["ST-04", "CPS XXXX M23 / CPG XXXX", "Effective challenge",
      "Effective challenge survives in the 2026 US guidance, reformulated around expertise, "
      "sufficient independence, and organisational standing and influence to effect change.",
      "Extracted", V_PRIMARY,
      "SR 26-2 §III. The rescinded 2011 formulation was a combination of incentives, competence "
      "and influence.",
      "Corrected. The draft initially used the 2011 formulation. See RT-03."],
-    ["ST-05", "CPS XXXX M21 / CPG XXXX", "Components of validation",
+    ["ST-05", "CPS XXXX M22 / CPG XXXX", "Components of validation",
      "The components of validation are conceptual soundness, outcomes analysis and ongoing model "
      "monitoring.",
      "Extracted", V_PRIMARY,
@@ -1486,13 +1504,13 @@ LEDGER_ROWS = [
      "Extracted", V_PRIMARY,
      "BIS publication d605, principle headings.",
      "Corrected from an initial reference to d588. See RT-08."],
-    ["ST-13", "CPS XXXX M38 / CPG XXXX", "Superannuation",
+    ["ST-13", "CPS XXXX M39 / CPG XXXX", "Superannuation",
      "No comparator authority addresses model risk in superannuation.",
      "Inferred", V_PRIMARY,
      "Scope statements of each comparator instrument. OSFI expressly excludes federally regulated "
      "pension plans.",
      "None required. Recorded as a policy design choice with no benchmark."],
-    ["ST-14", "CPS XXXX M43 / CPG XXXX", "Notification",
+    ["ST-14", "CPS XXXX M44 / CPG XXXX", "Notification",
      "No comparator authority imposes a model-risk-specific supervisory notification deadline.",
      "Inferred", V_PRIMARY,
      "Review of each comparator instrument. CPS 230 and CPS 234 provide the Australian "
@@ -1504,6 +1522,17 @@ LEDGER_ROWS = [
      "Extracted", V_PRIMARY,
      "OCC Bulletin 2025-26.",
      "None required. Informs the proportionality drafting rather than a requirement."],
+    ["ST-18", "CPS XXXX M05 / CPG XXXX", "De minimis exception",
+     "A model of no material consequence attracts only identification, inventory, ownership, "
+     "classification and reassessment.",
+     "Extracted + inferred", V_PRIMARY,
+     "US interagency guidance 2026 §III states that where models are deemed immaterial, model risk "
+     "management may consist of identifying those models and monitoring the conditions under which "
+     "their use may become material. OSFI E-23 Principle 2.3 scales scope, scale and intensity to "
+     "model risk while Principle 2.1 keeps all models within identification.",
+     "The prohibited classes, the aggregate test and the anti-disaggregation limb are Australian "
+     "drafting choices, not comparator requirements, and are labelled as a policy choice. See "
+     "RT-50."],
     ["ST-17", "Workbook / crosswalk", "BCBS and aggregate model risk",
      "The crosswalk originally recorded the BCBS position on aggregate model risk as 'not "
      "addressed'. Adversarial review suggested the Basel Framework's prudent valuation guidance "
@@ -1570,10 +1599,10 @@ REDTEAM_ROWS = [
      "Is that the current formulation, or the rescinded one?",
      "That was the 2011 formulation. The 2026 guidance reformulates effective challenge around "
      "expertise to identify limitations, sufficient independence to maintain objectivity, and "
-     "organisational standing and influence to effect change. M22 was redrafted to the current "
+     "organisational standing and influence to effect change. M23 was redrafted to the current "
      "formulation; incentives are retained in the practice guide as a practical consideration "
      "rather than presented as part of the definition.",
-     "M22 and the corresponding guidance paragraph rewritten.",
+     "M23 and the corresponding guidance paragraph rewritten.",
      "SR 26-2 §III; rescinded 2011 attachment §III for the superseded wording.",
      "Medium", "Closed — correction incorporated"],
 
@@ -1583,8 +1612,8 @@ REDTEAM_ROWS = [
      "Are those the current component names and does benchmarking sit where the draft places it?",
      "The 2026 guidance names the components conceptual soundness, outcomes analysis and ongoing "
      "model monitoring, in that order, and locates benchmarking under conceptual soundness rather "
-     "than ongoing monitoring. M21 and the guidance were realigned.",
-     "M21 and two guidance paragraphs rewritten.",
+     "than ongoing monitoring. M22 and the guidance were realigned.",
+     "M22 and two guidance paragraphs rewritten.",
      "SR 26-2 §V sub-headings.",
      "Medium", "Closed — correction incorporated"],
 
@@ -1635,10 +1664,10 @@ REDTEAM_ROWS = [
      "Is such a deadline supported by any comparator, and would it conflict with existing "
      "Australian notification architecture?",
      "No comparator imposes a model-specific notification deadline, and a new one risked "
-     "conflicting with the materiality criteria and timeframes in CPS 230 and CPS 234. M43 now "
+     "conflicting with the materiality criteria and timeframes in CPS 230 and CPS 234. M44 now "
      "cross-references the existing architecture and expects early engagement on material model "
      "weakness instead.",
-     "M43 redrafted; the notification domain scored against the existing architecture rather than "
+     "M44 redrafted; the notification domain scored against the existing architecture rather than "
      "a new obligation.",
      "CPS 230; CPS 234; comparator review.",
      "High", "Closed — correction incorporated"],
@@ -1672,7 +1701,7 @@ REDTEAM_ROWS = [
      "No comparator requires it universally, and the OCC has expressly confirmed that community "
      "banks need not validate annually. Validation frequency is now set by tier, with the "
      "highest tier at least annually and lower tiers on a risk-based cycle.",
-     "M20 and M24; the validation intensity table in the practice guide.",
+     "M21 and M25; the validation intensity table in the practice guide.",
      "OCC Bulletin 2025-26; PRA SS1/23 Principle 4.5; OSFI E-23 Principle 2.3.",
      "Medium", "Closed — correction incorporated"],
 
@@ -1682,9 +1711,9 @@ REDTEAM_ROWS = [
      "Is that achievable, and is it required by any comparator?",
      "It is frequently impracticable and raises intellectual property and security issues. No "
      "comparator requires it; the 2026 US guidance expressly acknowledges that proprietary "
-     "components may not be disclosed while maintaining that the principles still apply. M31 and "
-     "M32 now require sufficient information or compensating controls, expressed as an outcome.",
-     "M31 and M32; chapter 11 of the practice guide.",
+     "components may not be disclosed while maintaining that the principles still apply. M32 and "
+     "M33 now require sufficient information or compensating controls, expressed as an outcome.",
+     "M32 and M33; chapter 11 of the practice guide.",
      "SR 26-2 §VII; PRA SS1/23 Principle 2.6; BCBS d605.",
      "High", "Closed — correction incorporated"],
 
@@ -1710,7 +1739,7 @@ REDTEAM_ROWS = [
      "capital standards where more specific, requires insurers to map which validation elements "
      "the actuarial control cycle discharges, and flags enabling authority, sectoral application "
      "and instrument numbering for legal settlement in Annex F.",
-     "M35, M37, Annex F; seven requirements carry a legal flag.",
+     "M36, M38, Annex F; seven requirements carry a legal flag.",
      "APS 113; CPS 320; SPS 530; comparator review.",
      "High", "Open — referred for legal settlement"],
 
@@ -1720,10 +1749,10 @@ REDTEAM_ROWS = [
      "between them?",
      "No comparator does. OSFI deliberately brought AI within a single model risk guideline, and "
      "the 2026 US guidance excludes generative and agentic AI from model risk scope without "
-     "putting anything in its place. The boundary rule in M34 is therefore an Australian design "
+     "putting anything in its place. The boundary rule in M35 is therefore an Australian design "
      "choice, is labelled as one, and requires a single register recording which regime applies to "
      "each AI system so that the boundary is a documented determination.",
-     "M34 marked as a policy choice and carrying a legal flag; chapter 12 of the practice guide.",
+     "M35 marked as a policy choice and carrying a legal flag; chapter 12 of the practice guide.",
      "OSFI E-23 (2027) scope; SR 26-2 footnote 3.",
      "High", "Open — referred for consultation"],
 
@@ -1734,7 +1763,7 @@ REDTEAM_ROWS = [
      "framework covers banks with internal model approval; the US guidance covers banking "
      "organisations. The superannuation domain is scored with no benchmark and the requirement is "
      "labelled a policy design choice.",
-     "M38; the superannuation domain carries no benchmark authority in the gap assessment.",
+     "M39; the superannuation domain carries no benchmark authority in the gap assessment.",
      "Scope statements of each comparator instrument.",
      "Medium", "Closed — verified, no correction required"],
 
@@ -1863,56 +1892,56 @@ REDTEAM_ROWS = [
      "High", "Closed — correction incorporated"],
 
     ["RT-28",
-     "M21 required validation to address outcomes analysis comparing model outputs with "
+     "M22 required validation to address outcomes analysis comparing model outputs with "
      "corresponding actual outcomes, without qualification.",
      "For several model classes the standard expressly brings into scope — stress testing, "
      "scenario analysis, capital planning and forward-looking climate models — no corresponding "
      "actual outcome exists. The requirement was impossible to satisfy for them.",
-     "M21 now requires outcomes analysis to the extent outcomes are observable and sufficient for "
+     "M22 now requires outcomes analysis to the extent outcomes are observable and sufficient for "
      "the purpose, and requires alternative evidence of performance — benchmarking, sensitivity "
      "analysis and assessment of assumptions — where they are not.",
-     "M21 redrafted; the validation intensity table in the guide realigned.",
-     "M39 scope; BCBS stress testing principles 7 and 8.",
+     "M22 redrafted; the validation intensity table in the guide realigned.",
+     "M40 scope; BCBS stress testing principles 7 and 8.",
      "High", "Closed — correction incorporated"],
 
     ["RT-29",
-     "M20 barred use of a model for a material purpose until independent validation was complete, "
+     "M21 barred use of a model for a material purpose until independent validation was complete, "
      "with no exception path.",
      "The current US guidance expressly contemplates use before validation on urgent business "
      "need with compensating controls. An absolute bar with no exception and no transition would "
      "on commencement prohibit continued use of every insufficiently validated model in the "
      "industry.",
-     "M20 now permits use before validation completes where there is an urgent business need, "
+     "M21 now permits use before validation completes where there is an urgent business need, "
      "subject to approval at an authority commensurate with tier, compensating controls, informing "
      "users of the limitation and completing validation within a defined period. Paragraph A4 "
      "provides the transition for models already in use.",
-     "M20 redrafted; A4 added.",
+     "M21 redrafted; A4 added.",
      "US interagency guidance 2026 §V.",
      "High", "Closed — correction incorporated"],
 
     ["RT-30",
-     "M40 required every APRA-regulated entity to consider aggregate model risk in its internal "
+     "M41 required every APRA-regulated entity to consider aggregate model risk in its internal "
      "capital assessment.",
      "RSE licensees have no internal capital assessment. The requirement was inapplicable to an "
      "entire regulated industry the standard purports to cover.",
-     "M40 now refers to the internal capital adequacy assessment or, for an RSE licensee, to "
+     "M41 now refers to the internal capital adequacy assessment or, for an RSE licensee, to "
      "determining the operational risk financial requirement target amount.",
-     "M40 redrafted sector-neutrally.",
+     "M41 redrafted sector-neutrally.",
      "Superannuation prudential framework; SPS 114 operational risk financial requirement.",
      "High", "Closed — correction incorporated"],
 
     ["RT-31",
-     "M13 required a complete, accurate and current inventory in absolute terms; M31's "
-     "compensating-control escape reached only the information limb; M32 had no transition for "
-     "contracts already on foot; and M37 left the Appointed Actuary conflict to the guide.",
+     "M14 required a complete, accurate and current inventory in absolute terms; M32's "
+     "compensating-control escape reached only the information limb; M33 had no transition for "
+     "contracts already on foot; and M38 left the Appointed Actuary conflict to the guide.",
      "Absolute completeness is not demonstrable and not testable. A hosted vendor model cannot be "
      "subjected to the entity's own implementation controls. Existing contracts cannot be reopened "
-     "on commencement. And for most insurers the Appointed Actuary sets the assumptions, so M08 "
-     "and M20 would disqualify the very review CPS 320 requires.",
-     "M13 now requires the inventory plus processes designed to ensure completeness. M31's escape "
+     "on commencement. And for most insurers the Appointed Actuary sets the assumptions, so M09 "
+     "and M21 would disqualify the very review CPS 320 requires.",
+     "M14 now requires the inventory plus processes designed to ensure completeness. M32's escape "
      "extends to any obligation the entity cannot itself discharge for a third-party model, with a "
-     "record of which are met that way. M32 applies to existing arrangements from the earlier of "
-     "renewal, material variation or the end of the transition period. M37 resolves the actuarial "
+     "record of which are met that way. M33 applies to existing arrangements from the earlier of "
+     "renewal, material variation or the end of the transition period. M38 resolves the actuarial "
      "interaction in the standard: CPS 320 review satisfies independent validation to the extent "
      "the reviewer did not develop the model or set its assumptions.",
      "Four requirements redrafted.",
@@ -1933,14 +1962,14 @@ REDTEAM_ROWS = [
      "Medium", "Closed — correction incorporated"],
 
     ["RT-33",
-     "M43 created a notification obligation with no timeframe and no threshold beyond 'material', "
+     "M44 created a notification obligation with no timeframe and no threshold beyond 'material', "
      "while the guidance beneath it told entities to use CPS 230 and CPS 234 timeframes.",
      "The requirement and its guidance said different things, and the requirement as drafted was "
      "not testable.",
-     "M43 now states the timing expectation on the face of the requirement and ties it to the "
+     "M44 now states the timing expectation on the face of the requirement and ties it to the "
      "CPS 230 and CPS 234 timeframes where the event falls within those standards, resolving the "
      "inconsistency without creating a competing deadline.",
-     "M43 redrafted.",
+     "M44 redrafted.",
      "CPS 230; CPS 234.",
      "Medium", "Closed — correction incorporated"],
 
@@ -1964,11 +1993,11 @@ REDTEAM_ROWS = [
      "The Annex A definitions are operative. Leaving the rescinded 2011 formulation there meant "
      "the standard defined its own central concept two different ways in two places, and the "
      "definition that would be applied is the one in the Annex.",
-     "The Annex A definition of effective challenge now matches M22 word for word. The "
+     "The Annex A definition of effective challenge now matches M23 word for word. The "
      "three-component sentence was removed from the Annex A definition of a model, so it matches "
      "M02; the description survives in the practice guide where it is explanatory.",
      "Annex A of the standard; the glossary sheet.",
-     "US interagency guidance 2026 §III; M22 and M02 as drafted.",
+     "US interagency guidance 2026 §III; M23 and M02 as drafted.",
      "High", "Closed — correction incorporated"],
 
     ["RT-36",
@@ -1977,15 +2006,15 @@ REDTEAM_ROWS = [
      "Principle 5 is 'Model risk mitigants' — post-model adjustments, restrictions on model use, "
      "and exceptions and escalations. It says nothing about aggregate model risk or board "
      "reporting, which sit under Principle 2.1.",
-     "M12 and M40 now cite Principle 2.1. M40's rationale was rewritten to lead with the 2026 US "
+     "M13 and M41 now cite Principle 2.1. M41's rationale was rewritten to lead with the 2026 US "
      "guidance, which does expressly call for model risk to be assessed individually and in "
      "aggregate reflecting common assumptions, data and methodologies.",
-     "M12 and M40 principle mappings and M40's rationale.",
+     "M13 and M41 principle mappings and M41's rationale.",
      "PRA SS1/23 Principle 5 and Principle 2.1 primary text; US interagency guidance 2026 §III.",
      "High", "Closed — correction incorporated"],
 
     ["RT-37",
-     "M37 cited GPS 320 and LPS 320; M35 cited a Basel Framework identifier that the alias map "
+     "M38 cited GPS 320 and LPS 320; M36 cited a Basel Framework identifier that the alias map "
      "silently resolved to BCBS 239.",
      "GPS 320 and LPS 320 were replaced by CPS 320 in 2019 and no longer exist. BCBS 239 concerns "
      "risk data aggregation and says nothing about internal model approval or the use test. The "
@@ -1994,7 +2023,7 @@ REDTEAM_ROWS = [
      "All three citations were removed and the alias map was deleted entirely. Every source ID "
      "cited by a requirement now resolves to a registered entry, so nothing can be cited that "
      "does not appear in Annex E. The integrity check was tightened to match.",
-     "M35 and M37 sources; SOURCE_ALIASES removed; verify_package strengthened.",
+     "M36 and M38 sources; SOURCE_ALIASES removed; verify_package strengthened.",
      "APRA instrument history for GPS/LPS 320; BCBS 239 subject matter.",
      "High", "Closed — correction incorporated"],
 
@@ -2024,7 +2053,7 @@ REDTEAM_ROWS = [
      "High", "Closed — correction incorporated"],
 
     ["RT-40",
-     "M08, M09 and M11 — capability and independence, the integrated framework, and policies and "
+     "M09, M10 and M12 — capability and independence, the integrated framework, and policies and "
      "standards — were cited by no scoring domain.",
      "The framework obligation itself was unscored, so the assessment measured the parts of model "
      "risk management without measuring whether there is a framework at all.",
@@ -2037,32 +2066,32 @@ REDTEAM_ROWS = [
 
     ["RT-41",
      "Annex C directed the highest tier where a model influences 'an employment outcome', and M01 "
-     "extended enterprise scope to human resources models. M33 required entities to address the "
+     "extended enterprise scope to human resources models. M34 required entities to address the "
      "'potential for biased outcomes'.",
      "APRA is a prudential regulator. Employment decisions and unbounded bias obligations sit with "
      "other regulators and other legislation, and asserting them here would invite a scope "
      "objection that would distract from the prudential case.",
      "Employment outcomes were removed from the Annex C indicator and human resources from M01's "
-     "guidance. M33's limb was recast in model-performance terms: systematic differences in model "
+     "guidance. M34's limb was recast in model-performance terms: systematic differences in model "
      "performance across segments of the population to which the model is applied.",
-     "Annex C, M01 guidance and M33.",
+     "Annex C, M01 guidance and M34.",
      "Prudential remit analysis.",
      "High", "Closed — correction incorporated"],
 
     ["RT-42",
-     "M43 imposed a standing duty to provide APRA with information 'on request', open as to scope, "
-     "form and requester. M34 required entities to apply AI risk management arrangements that "
-     "nothing obliged them to have. M40's RSE limb referred to the operational risk financial "
+     "M44 imposed a standing duty to provide APRA with information 'on request', open as to scope, "
+     "form and requester. M35 required entities to apply AI risk management arrangements that "
+     "nothing obliged them to have. M41's RSE limb referred to the operational risk financial "
      "requirement without citing the standard that governs it.",
      "An open-ended information duty with no stated legal form is not how the other cross-industry "
-     "standards are drafted. M34 assumed an instrument that does not exist. M40 pointed at a "
+     "standards are drafted. M35 assumed an instrument that does not exist. M41 pointed at a "
      "determination made under an uncited standard.",
-     "M43 now applies where APRA requires information in writing, and its notification trigger "
-     "covers amounts credited to or debited from customer and beneficiary accounts. M34 gains a "
-     "limb for entities with no separate AI arrangements. M40 cites SPS 114, which is now "
+     "M44 now applies where APRA requires information in writing, and its notification trigger "
+     "covers amounts credited to or debited from customer and beneficiary accounts. M35 gains a "
+     "limb for entities with no separate AI arrangements. M41 cites SPS 114, which is now "
      "registered as a source. An interpretation clause was added requiring every APRA power under "
      "the standard to be exercised in writing.",
-     "M34, M40, M43, the Interpretation section and the source register.",
+     "M35, M41, M44, the Interpretation section and the source register.",
      "CPS 230 drafting form for information powers; SPS 114.",
      "High", "Closed — correction incorporated"],
 
@@ -2098,10 +2127,10 @@ REDTEAM_ROWS = [
      "The build audit forbids bold text in a guidance paragraph, so the only statement making "
      "Annex B mandatory was rendered as explanatory text. On the standard's own reading rule, "
      "Annex B imposed nothing.",
-     "M13 now requires the inventory to record at least the fields set out in Annex B, so the "
+     "M14 now requires the inventory to record at least the fields set out in Annex B, so the "
      "obligation sits in a bold mandatory paragraph. Annex B's opening line was reworded to point "
-     "back at M13.",
-     "M13 and Annex B.",
+     "back at M14.",
+     "M14 and Annex B.",
      "The standard's own interpretation rule that only bold paragraphs are mandatory.",
      "High", "Closed — correction incorporated"],
 
@@ -2115,10 +2144,10 @@ REDTEAM_ROWS = [
      "floating free of CPS 001 invite inconsistency with the rest of the framework.",
      "A6 now reads down 'the Board' for foreign ADIs and ties undefined terms to CPS 001. A4 was "
      "split into entity-level obligations from commencement and model-level obligations on a "
-     "remediation plan. M37 now names private health insurers, deferred claims liabilities and "
+     "remediation plan. M38 now names private health insurers, deferred claims liabilities and "
      "risk equalisation, and cites HPS 110. Annex F gained items for foreign ADIs and for whether "
      "a simplified pathway for smaller entities is warranted.",
-     "A4, A6, M37, Annex F and the source register.",
+     "A4, A6, M38, Annex F and the source register.",
      "Cross-industry drafting practice in CPS 220, CPS 230 and CPS 234; the enabling authority in A1.",
      "High", "Closed — correction incorporated"],
 
@@ -2126,29 +2155,29 @@ REDTEAM_ROWS = [
      "M03's carve-out excluded any tool whose output is fully determined by its inputs and "
      "documented rules.",
      "A unit price calculation is fully determined by its inputs. The carve-out would therefore "
-     "have excluded the very models M02 and M38 were drafted to capture — the ones whose errors "
+     "have excluded the very models M02 and M39 were drafted to capture — the ones whose errors "
      "transfer value between members irreversibly.",
      "M03's test now turns on consequence as well as method: a tool is outside the definition only "
      "where it also does not determine a regulatory figure, a reported valuation or an amount "
      "attributable to a customer or beneficiary.",
-     "M03; resolves a direct contradiction with M02 and M38.",
-     "Internal consistency analysis across M02, M03 and M38.",
+     "M03; resolves a direct contradiction with M02 and M39.",
+     "Internal consistency analysis across M02, M03 and M39.",
      "High", "Closed — correction incorporated"],
 
     ["RT-48",
-     "No requirement addressed the outputs a failed model had already produced, and M30 conferred "
+     "No requirement addressed the outputs a failed model had already produced, and M31 conferred "
      "a power to suspend a model without requiring anything to fall back on. Group and offshore "
      "model governance was unaddressed.",
      "Remediating a finding is not the same as remediating its consequences: a model that "
      "mispriced units or understated a provision leaves balances and figures that need "
      "correcting. A power to suspend a model the entity has no alternative to is not usable. And "
      "for many Australian entities the model is built and validated by an offshore parent.",
-     "M29 now requires the entity, on identifying a material error or failure, to determine its "
+     "M30 now requires the entity, on identifying a material error or failure, to determine its "
      "cause, assess whether the weakness affects other models, and address the effect on figures, "
-     "balances and customer or beneficiary amounts already produced. M30 requires an identified "
-     "alternative basis for highest-tier models. M07 requires the entity to satisfy itself about "
+     "balances and customer or beneficiary amounts already produced. M31 requires an identified "
+     "alternative basis for highest-tier models. M08 requires the entity to satisfy itself about "
      "group-performed work and retain the ability to direct and challenge it.",
-     "M07, M29 and M30.",
+     "M08, M30 and M31.",
      "ECB guide on group-level model governance; OSFI E-23 lifecycle stages.",
      "High", "Closed — correction incorporated"],
 
@@ -2165,6 +2194,46 @@ REDTEAM_ROWS = [
      "One crosswalk cell; one statement-ledger entry. No requirement relies on the point.",
      "BIS Basel Framework CAP50 chapter listing (title confirmed, text not retrievable).",
      "Medium", "Open — unresolved, disclosed"],
+
+    ["RT-50",
+     "The standard applied all requirements to every model, with proportionality operating only on "
+     "control intensity. Annex F recorded a de minimis exception as an open policy question.",
+     "Without a de minimis mechanism, a model that could not matter attracts the same lifecycle as "
+     "one that determines regulatory capital. Every comparator relieves low-consequence models of "
+     "the full lifecycle, and the 2026 US guidance says so expressly: where models are deemed "
+     "immaterial, model risk management may consist of identifying them and monitoring the "
+     "conditions under which their use may become material.",
+     "A de minimis exception was added at model level as M05. A model determined to be de minimis "
+     "attracts only identification, inventory, ownership, classification and reassessment. Three "
+     "anti-abuse limbs were drafted with it: prohibited classes that can never be de minimis "
+     "(regulatory capital, provisions, insurance liabilities, reported valuations, unit prices and "
+     "other customer or beneficiary amounts, and models supporting a critical operation); an "
+     "aggregate test, because a population of individually immaterial models sharing an assumption "
+     "may not be immaterial together; and a bar on disaggregating a model to bring its components "
+     "under the threshold. The exception deliberately does not release a model from the inventory, "
+     "since an entity that has removed a model cannot demonstrate the determination was ever made.",
+     "New requirement M05; six new guidance paragraphs; a new Annex A definition; a new crosswalk "
+     "topic; the proportionality scoring domain updated. Marked as a policy choice requiring "
+     "consultation and cost-benefit testing.",
+     "US interagency guidance 2026 §III; OSFI E-23 (2027) Principles 2.1 and 2.3; PRA SS1/23 "
+     "Principle 1.3.",
+     "High", "Closed — requirement added"],
+
+    ["RT-51",
+     "Inserting M05 into Part A shifted every subsequent requirement identifier.",
+     "An audit trail that references identifiers is only useful if those references still resolve. "
+     "Leaving the earlier entries pointing at pre-insertion numbers would have silently "
+     "misdirected every correction recorded before this one.",
+     "All identifiers from the former M05 onward were resequenced upward by one across the "
+     "requirement register, the practice guide, the scoring model, the crosswalk, this audit "
+     "trail and the statement ledger. The concordance is simply: M01 to M04 unchanged; former Mnn "
+     "for nn of 05 or above is now M(nn+1). References in this audit trail and the ledger have "
+     "been updated to current identifiers, so an entry describing a correction to the former M13 "
+     "now reads M14.",
+     "Every artefact. The integrity check confirms that no guidance paragraph, scoring domain or "
+     "cross-reference points at an identifier that does not exist.",
+     "Automated resequencing with verification by the package integrity check.",
+     "Medium", "Closed — resequenced and verified"],
 
     ["RT-18",
      "The Comptroller's Handbook model risk management booklet was cited as a source.",
