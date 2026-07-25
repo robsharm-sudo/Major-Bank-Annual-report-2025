@@ -5,31 +5,24 @@ Exposes the drafting pipeline as callable tools so the package can be
 regenerated, queried, re-verified and re-scored without re-running the
 research by hand.
 
-Run directly for stdio transport:
-
-    python mcp/mrm_policy_server.py
-
-Or register it with Claude Code via the .mcp.json at the repository root.
-
-Tools fall into four groups:
-
-  build      regenerate the three deliverables from the content modules
-  verify     integrity checks — cross-references, source coverage, live URLs
-  query      read the requirement register, sources, principles, audit trail
-  score      recompute the gap assessment, optionally with different weights
+Run `python mcp/mrm_policy_server.py` for stdio transport, or register it with
+Claude Code via the .mcp.json at the repository root. Tools fall into four
+groups: build regenerates the three deliverables; verify runs the integrity and
+live-URL checks; query reads the register, sources, principles and audit trail;
+score recomputes the gap assessment, optionally with different weights.
 """
 
 from __future__ import annotations
 
+import functools
 import importlib
-import json
 import subprocess
 import sys
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable, Iterable
 
 REPO = Path(__file__).resolve().parents[1]
 BUILD = REPO / "build"
@@ -44,23 +37,6 @@ import content_sources as S  # noqa: E402
 
 mcp = FastMCP("mrm-policy")
 
-
-def _reload_content() -> None:
-    """Re-read the content modules from disk.
-
-    A long-running server would otherwise answer from the copy it imported at
-    startup, so an edit under build/ would not show up until the server was
-    restarted — and the counts it reported would look authoritative while being
-    stale. Reloaded in dependency order: sources first, since the others read
-    from it.
-    """
-    global G, R, SC, S
-    S = importlib.reload(S)
-    R = importlib.reload(R)
-    G = importlib.reload(G)
-    SC = importlib.reload(SC)
-
-
 ARTEFACTS = {
     "standard": REPO / "CPS_XXXX_Model_Risk_Management.docx",
     "guide": REPO / "CPG_XXXX_Model_Risk_Management.docx",
@@ -73,10 +49,46 @@ BUILDERS = {
     "workbook": "build_workbook.py",
 }
 
+REDTEAM_COLS = ["id", "initial_statement", "challenge", "correction", "effect",
+                "evidence", "severity", "status"]
+LEDGER_COLS = ["id", "artefact", "topic", "statement", "provenance",
+               "verification", "basis", "correction_trail"]
+CROSSWALK_COLS = ["topic", "APRA_current", "US", "PRA", "OSFI", "ECB", "MAS",
+                  "BCBS", "FSB", "proposed_CPS_XXXX"]
 
-# --------------------------------------------------------------------------- #
-# build
-# --------------------------------------------------------------------------- #
+
+# --- helpers -------------------------------------------------------------
+
+def fresh(fn: Callable) -> Callable:
+    """Re-read the content modules from disk before the tool runs.
+
+    Without this a long-running server answers from the copy it imported at
+    startup, reporting counts that look authoritative but are stale. A decorator
+    rather than a call in each body, so a new tool cannot omit it. Sources
+    reload first; the others read from it.
+    """
+    @functools.wraps(fn)
+    def wrapper(*args, **kwargs):
+        global G, R, SC, S
+        S = importlib.reload(S)
+        R = importlib.reload(R)
+        G = importlib.reload(G)
+        SC = importlib.reload(SC)
+        return fn(*args, **kwargs)
+    return wrapper
+
+
+def like(needle: str, haystack: str) -> bool:
+    """Case-insensitive substring match; an empty needle matches everything."""
+    return not needle or needle.lower() in haystack.lower()
+
+
+def as_dicts(cols: list[str], rows: Iterable[Iterable]) -> list[dict[str, Any]]:
+    """Label positional content rows with their column names."""
+    return [dict(zip(cols, row)) for row in rows]
+
+
+# --- build ---------------------------------------------------------------
 
 @mcp.tool()
 def build_package(target: str = "all", recalculate: bool = True) -> dict[str, Any]:
@@ -117,41 +129,31 @@ def build_package(target: str = "all", recalculate: bool = True) -> dict[str, An
     return {"ok": all(r["exit_code"] == 0 for r in results.values()), "results": results}
 
 
-# --------------------------------------------------------------------------- #
-# verify
-# --------------------------------------------------------------------------- #
+# --- verify --------------------------------------------------------
+# Each check returns the problems it found, so a new invariant is one more
+# function rather than another branch in a 100-line procedure.
 
-@mcp.tool()
-def verify_package() -> dict[str, Any]:
-    """Run every offline integrity check over the content and the built files.
-
-    Checks requirement/guidance cross-references in both directions, source-ID
-    coverage, typography and the bold-means-mandatory invariant, and the
-    presence of each artefact. Does not touch the network — use
-    check_source_urls for that.
-    """
-    _reload_content()
-    from docx_common import audit_fonts
-
-    problems: list[str] = []
-    _, req_map, chapter_reqs, total_paras = G.numbered()
-    req_ids = {r["id"] for r in R.REQUIREMENTS}
-
-    # every requirement has guidance, and no guidance points at a phantom requirement
-    missing = sorted(req_ids - set(req_map))
-    if missing:
+def _check_xrefs(req_ids: set[str], req_map: dict) -> list[str]:
+    """Requirements must have guidance, and guidance must not cite phantom IDs."""
+    problems = []
+    if missing := sorted(req_ids - set(req_map)):
         problems.append(f"requirements with no guidance paragraph: {missing}")
-    phantom = sorted(set(req_map) - req_ids)
-    if phantom:
+    if phantom := sorted(set(req_map) - req_ids):
         problems.append(f"guidance references unknown requirement IDs: {phantom}")
+    return problems
 
-    # Every source ID relied on must resolve to a real registered entry. Aliases are
-    # deliberately not treated as registration: an alias once masked three citations to
-    # instruments that either no longer exist or were the wrong document entirely.
+
+def _check_sources() -> list[str]:
+    """Every source ID relied on must resolve to a real registered entry.
+
+    Aliases are deliberately not registration: one once masked three citations
+    to instruments that no longer exist or were the wrong document entirely.
+    """
+    problems = []
     registered = {s["id"] for s in S.SOURCES}
-    alias_targets = set(getattr(S, "SOURCE_ALIASES", {}).values())
-    dangling = sorted(alias_targets - registered)
-    if dangling:
+    aliases = getattr(S, "SOURCE_ALIASES", {})
+
+    if dangling := sorted(set(aliases.values()) - registered):
         problems.append(f"source aliases pointing at unregistered entries: {dangling}")
 
     used: set[str] = set()
@@ -159,44 +161,51 @@ def verify_package() -> dict[str, Any]:
         used.update(r["sources"])
     for d in SC.DOMAINS:
         used.update(d["sources"])
-    unregistered = sorted(used - registered - set(getattr(S, "SOURCE_ALIASES", {})))
-    if unregistered:
+    if unregistered := sorted(used - registered - set(aliases)):
         problems.append(f"source IDs used but not registered: {unregistered}")
 
-    # Authorities relied on by the principles register and the crosswalk must appear in
-    # the source register too, not only those cited by a requirement.
-    reg_authorities = {s["authority"] for s in S.SOURCES}
-    for fw in S.PRINCIPLE_FRAMEWORKS:
-        if fw["authority"] not in reg_authorities and fw["authority"] not in ("EU",):
-            problems.append(
-                f"principles register cites authority with no registered source: {fw['authority']}")
+    # Authorities in the principles register must be registered sources too,
+    # not only those cited by a requirement.
+    authorities = {s["authority"] for s in S.SOURCES}
+    problems += [
+        f"principles register cites authority with no registered source: {fw['authority']}"
+        for fw in S.PRINCIPLE_FRAMEWORKS
+        if fw["authority"] not in authorities and fw["authority"] not in ("EU",)
+    ]
 
-    # Every requirement must be covered by at least one scoring domain, or the assessment
-    # measures something narrower than the standard it is assessing.
-    scored = set()
+    # No requirement may rest on an unverified source.
+    unverified = {s["id"] for s in S.SOURCES if s["verification"].startswith("Unverified")}
+    problems += [
+        f"{r['id']} relies on unverified source(s): {bad}"
+        for r in R.REQUIREMENTS
+        if (bad := sorted(set(r["sources"]) & unverified))
+    ]
+    return problems
+
+
+def _check_scoring(req_ids: set[str]) -> list[str]:
+    """Domains must cite real requirements, score in range, and cover the standard."""
+    problems = []
+    scored: set[str] = set()
     for d in SC.DOMAINS:
         scored.update(d["reqs"])
-    uncovered = sorted({r["id"] for r in R.REQUIREMENTS} - scored)
-    if uncovered:
-        problems.append(f"requirements covered by no scoring domain: {uncovered}")
-
-    # no requirement may rest on an unverified source
-    unverified = {s["id"] for s in S.SOURCES if s["verification"].startswith("Unverified")}
-    for r in R.REQUIREMENTS:
-        bad = sorted(set(r["sources"]) & unverified)
-        if bad:
-            problems.append(f"{r['id']} relies on unverified source(s): {bad}")
-
-    # scoring integrity
-    for d in SC.DOMAINS:
-        for rid in d["reqs"]:
-            if rid not in req_ids:
-                problems.append(f"gap domain '{d['domain']}' cites unknown requirement {rid}")
+        problems += [f"gap domain '{d['domain']}' cites unknown requirement {rid}"
+                     for rid in d["reqs"] if rid not in req_ids]
         if not 0 <= d["bench"] <= 5 or not 0 <= d["post"] <= 5:
             problems.append(f"gap domain '{d['domain']}' has a score outside 0-5")
 
-    # built artefacts
-    artefacts = {}
+    # An uncovered requirement means the assessment measures something narrower
+    # than the standard it assesses.
+    if uncovered := sorted(req_ids - scored):
+        problems.append(f"requirements covered by no scoring domain: {uncovered}")
+    return problems
+
+
+def _check_artefacts() -> tuple[list[str], dict[str, Any]]:
+    """Each deliverable must exist, and each document must pass the font/bold audit."""
+    from docx_common import audit_fonts
+
+    problems, artefacts = [], {}
     for name, path in ARTEFACTS.items():
         if not path.exists():
             problems.append(f"artefact missing: {path.name}")
@@ -205,14 +214,32 @@ def verify_package() -> dict[str, Any]:
         entry = {"exists": True, "bytes": path.stat().st_size}
         if path.suffix == ".docx":
             audit = audit_fonts(path)
-            entry["requirement_paragraphs"] = audit["requirement_paras"]
-            entry["guidance_paragraphs"] = audit["guidance_paras"]
-            entry["typography_violations"] = len(audit["violations"])
+            entry |= {"requirement_paragraphs": audit["requirement_paras"],
+                      "guidance_paragraphs": audit["guidance_paras"],
+                      "typography_violations": len(audit["violations"])}
             if audit["violations"]:
-                problems.append(
-                    f"{path.name}: {len(audit['violations'])} typography or "
-                    f"bold/plain violations")
+                problems.append(f"{path.name}: {len(audit['violations'])} typography or "
+                                f"bold/plain violations")
         artefacts[name] = entry
+    return problems, artefacts
+
+
+@mcp.tool()
+@fresh
+def verify_package() -> dict[str, Any]:
+    """Run every offline integrity check over the content and the built files.
+
+    Checks requirement/guidance cross-references in both directions, source-ID
+    coverage, typography and the bold-means-mandatory invariant, and the
+    presence of each artefact. Does not touch the network — use
+    check_source_urls for that.
+    """
+    _, req_map, _, total_paras = G.numbered()
+    req_ids = {r["id"] for r in R.REQUIREMENTS}
+
+    artefact_problems, artefacts = _check_artefacts()
+    problems = (_check_xrefs(req_ids, req_map) + _check_sources()
+                + _check_scoring(req_ids) + artefact_problems)
 
     return {
         "ok": not problems,
@@ -234,6 +261,7 @@ def verify_package() -> dict[str, Any]:
 
 
 @mcp.tool()
+@fresh
 def check_source_urls(timeout_seconds: int = 20) -> dict[str, Any]:
     """Fetch every registered source URL and report whether it still resolves.
 
@@ -241,7 +269,6 @@ def check_source_urls(timeout_seconds: int = 20) -> dict[str, Any]:
     worth re-running before relying on the package. Reports status per source
     rather than failing on the first error.
     """
-    _reload_content()
     def probe(src: dict) -> dict:
         url = src["url"]
         req = urllib.request.Request(
@@ -264,11 +291,10 @@ def check_source_urls(timeout_seconds: int = 20) -> dict[str, Any]:
             "failed": failed, "results": results}
 
 
-# --------------------------------------------------------------------------- #
-# query
-# --------------------------------------------------------------------------- #
+# --- query ---------------------------------------------------------------
 
 @mcp.tool()
+@fresh
 def list_requirements(part: str = "", policy_choices_only: bool = False,
                       legal_flags_only: bool = False) -> list[dict[str, Any]]:
     """List the CPS XXXX requirements, optionally filtered.
@@ -278,31 +304,22 @@ def list_requirements(part: str = "", policy_choices_only: bool = False,
         policy_choices_only: only requirements not mandated by any comparator.
         legal_flags_only: only requirements carrying a legal-drafting reservation.
     """
-    _reload_content()
     _, req_map, _, _ = G.numbered()
-    out = []
-    for r in R.REQUIREMENTS:
-        if part and part.lower() not in r["part"].lower():
-            continue
-        if policy_choices_only and not r["policy_choice"]:
-            continue
-        if legal_flags_only and not r["legal_flag"]:
-            continue
-        out.append({
-            "id": r["id"], "part": r["part"], "section": r["section"],
-            "title": r["title"], "requirement": r["requirement"],
-            "sources": r["sources"], "principles": r["principles"],
-            "provenance": r["provenance"], "policy_choice": r["policy_choice"],
-            "legal_flag": r["legal_flag"],
-            "guidance_paragraphs": G.ranges(req_map.get(r["id"], [])),
-        })
-    return out
+    fields = ["id", "part", "section", "title", "requirement", "sources",
+              "principles", "provenance", "policy_choice", "legal_flag"]
+    return [
+        {f: r[f] for f in fields} | {"guidance_paragraphs": G.ranges(req_map.get(r["id"], []))}
+        for r in R.REQUIREMENTS
+        if like(part, r["part"])
+        and (r["policy_choice"] or not policy_choices_only)
+        and (r["legal_flag"] or not legal_flags_only)
+    ]
 
 
 @mcp.tool()
+@fresh
 def get_requirement(requirement_id: str) -> dict[str, Any]:
     """Return one requirement in full, with its guidance paragraphs inlined."""
-    _reload_content()
     match = [r for r in R.REQUIREMENTS if r["id"].upper() == requirement_id.upper()]
     if not match:
         return {"error": f"unknown requirement {requirement_id}",
@@ -316,68 +333,51 @@ def get_requirement(requirement_id: str) -> dict[str, Any]:
 
 
 @mcp.tool()
+@fresh
 def list_sources(authority: str = "", unverified_only: bool = False) -> list[dict[str, Any]]:
     """Return the source register, optionally filtered by authority."""
-    _reload_content()
-    out = []
-    for s in S.SOURCES:
-        if authority and authority.lower() not in s["authority"].lower():
-            continue
-        if unverified_only and not s["verification"].startswith("Unverified"):
-            continue
-        out.append(s)
-    return out
+    return [s for s in S.SOURCES
+            if like(authority, s["authority"])
+            and (s["verification"].startswith("Unverified") or not unverified_only)]
 
 
 @mcp.tool()
+@fresh
 def get_principles(authority: str = "") -> list[dict[str, Any]]:
     """Return the verbatim principles register for one or all authorities.
 
     Labels and titles are reproduced as printed by the issuing authority, so
     these are safe to cite directly in drafting.
     """
-    _reload_content()
-    return [f for f in S.PRINCIPLE_FRAMEWORKS
-            if not authority or authority.lower() in f["authority"].lower()]
+    return [f for f in S.PRINCIPLE_FRAMEWORKS if like(authority, f["authority"])]
 
 
 @mcp.tool()
+@fresh
 def get_crosswalk(topic: str = "") -> list[dict[str, Any]]:
     """Return the eight-authority regulatory crosswalk, optionally by topic."""
-    _reload_content()
-    cols = ["topic", "APRA_current", "US", "PRA", "OSFI", "ECB", "MAS", "BCBS",
-            "FSB", "proposed_CPS_XXXX"]
-    out = []
-    for row in S.CROSSWALK_ROWS_FULL:
-        if topic and topic.lower() not in row[0].lower():
-            continue
-        out.append(dict(zip(cols, row)))
-    return out
+    return as_dicts(CROSSWALK_COLS,
+                    (row for row in S.CROSSWALK_ROWS_FULL if like(topic, row[0])))
 
 
 @mcp.tool()
+@fresh
 def get_audit_trail(severity: str = "") -> dict[str, Any]:
     """Return the red-team correction audit trail and the statement ledger.
 
     Args:
         severity: filter red-team entries to "High", "Medium" or "Low".
     """
-    _reload_content()
-    rt_cols = ["id", "initial_statement", "challenge", "correction", "effect",
-               "evidence", "severity", "status"]
-    led_cols = ["id", "artefact", "topic", "statement", "provenance",
-                "verification", "basis", "correction_trail"]
-    rt = [dict(zip(rt_cols, r)) for r in S.REDTEAM_ROWS
-          if not severity or r[6].lower() == severity.lower()]
-    return {"red_team": rt,
-            "statement_ledger": [dict(zip(led_cols, r)) for r in S.LEDGER_ROWS]}
+    rows = [r for r in S.REDTEAM_ROWS
+            if not severity or r[6].lower() == severity.lower()]
+    return {"red_team": as_dicts(REDTEAM_COLS, rows),
+            "statement_ledger": as_dicts(LEDGER_COLS, S.LEDGER_ROWS)}
 
 
-# --------------------------------------------------------------------------- #
-# score
-# --------------------------------------------------------------------------- #
+# --- score ---------------------------------------------------------------
 
 @mcp.tool()
+@fresh
 def score_gaps(weights: dict[str, float] | None = None,
                critical: float = 4.5, high: float = 3.0,
                medium: float = 1.5) -> dict[str, Any]:
@@ -390,25 +390,24 @@ def score_gaps(weights: dict[str, float] | None = None,
         weights: domain name to weight. Unspecified domains keep their default.
         critical, high, medium: weighted-gap thresholds for the priority bands.
     """
-    _reload_content()
     weights = weights or {}
-    unknown = [k for k in weights if k not in {d["domain"] for d in SC.DOMAINS}]
-    if unknown:
+    if unknown := [k for k in weights if k not in {d["domain"] for d in SC.DOMAINS}]:
         return {"error": f"unknown domain(s): {unknown}",
                 "valid_domains": [d["domain"] for d in SC.DOMAINS]}
+
+    def band(gap: float) -> str:
+        return ("Critical" if gap >= critical else "High" if gap >= high else
+                "Medium" if gap >= medium else "Low")
 
     rows = []
     for d in SC.DOMAINS:
         w = weights.get(d["domain"], d["weight"])
         now = round(sum(d["au"]) / 4.0, 2)
         gap = round(max(0.0, d["bench"] - now) * w, 2)
-        band = ("Critical" if gap >= critical else
-                "High" if gap >= high else
-                "Medium" if gap >= medium else "Low")
         rows.append({
             "domain": d["domain"], "weight": w, "au_score_now": now,
             "benchmark": d["bench"], "benchmark_authority": d["bench_auth"],
-            "weighted_gap": gap, "priority": band,
+            "weighted_gap": gap, "priority": band(gap),
             "expected_after_cps_240": d["post"],
             "uplift": round(d["post"] - now, 2),
             "observed_gap": d["gap"], "recommended_action": d["action"],
@@ -416,35 +415,33 @@ def score_gaps(weights: dict[str, float] | None = None,
         })
     rows.sort(key=lambda r: -r["weighted_gap"])
 
+    mean = lambda key: round(sum(r[key] for r in rows) / len(rows), 2)  # noqa: E731
     return {
         "thresholds": {"critical": critical, "high": high, "medium": medium},
         "summary": {
             "domains": len(rows),
-            "mean_au_score_now": round(sum(r["au_score_now"] for r in rows) / len(rows), 2),
-            "mean_expected_after": round(sum(r["expected_after_cps_240"] for r in rows) / len(rows), 2),
+            "mean_au_score_now": mean("au_score_now"),
+            "mean_expected_after": mean("expected_after_cps_240"),
             "total_weighted_gap": round(sum(r["weighted_gap"] for r in rows), 2),
-            "critical": sum(1 for r in rows if r["priority"] == "Critical"),
-            "high": sum(1 for r in rows if r["priority"] == "High"),
-            "medium": sum(1 for r in rows if r["priority"] == "Medium"),
-            "low": sum(1 for r in rows if r["priority"] == "Low"),
+            **{b.lower(): sum(1 for r in rows if r["priority"] == b)
+               for b in ("Critical", "High", "Medium", "Low")},
         },
         "domains": rows,
     }
 
 
 @mcp.tool()
+@fresh
 def scoring_methodology() -> dict[str, Any]:
     """Return the scoring rubric, dimensions, bands and default weights."""
-    _reload_content()
     return {
         "what_is_scored": (
             "How well the CURRENT Australian prudential framework addresses each "
             "model risk domain, measured against the strongest comparator practice. "
             "Not entity maturity, and not a ranking of comparator authorities."),
-        "dimensions": [{"name": n, "question": q} for n, q in SC.DIMENSIONS],
-        "rubric": [{"score": s, "label": l, "meaning": m} for s, l, m in SC.RUBRIC],
-        "bands": [{"band": b, "weighted_gap_at_or_above": t, "meaning": m}
-                  for b, t, m in SC.BANDS],
+        "dimensions": as_dicts(["name", "question"], SC.DIMENSIONS),
+        "rubric": as_dicts(["score", "label", "meaning"], SC.RUBRIC),
+        "bands": as_dicts(["band", "weighted_gap_at_or_above", "meaning"], SC.BANDS),
         "derivation": {
             "domain_score": "mean of the four dimension scores",
             "gap": "max(0, benchmark - domain score)",
