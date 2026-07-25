@@ -1273,11 +1273,11 @@ CROSSWALK_ROWS_FULL = [
     ["Aggregate model risk",
      "Not required.",
      "Sound practice to assess model risk individually and in aggregate, reflecting interactions, dependencies and reliance on common assumptions, data or methodologies.",
-     "Principle 5 model risk mitigants, and aggregate model risk reporting.",
+     "Principle 2.1 board responsibilities, covering understanding and reporting of model risk in aggregate.",
      "Outcome 1 requires model risk to be understood across the enterprise.",
      "Model risk considered in supervisory review.",
      "Not addressed.",
-     "Not addressed.",
+     "Prudent valuation guidance (CAP50) and the Pillar 3 prudent valuation template may bear on aggregate model risk adjustment and disclosure; not confirmed from primary text at the as-of date.",
      "Not addressed.",
      "Aggregate assessment required and considered in internal capital assessment, with qualitative measures permitted where quantification is not yet feasible."],
 
@@ -1504,6 +1504,18 @@ LEDGER_ROWS = [
      "Extracted", V_PRIMARY,
      "OCC Bulletin 2025-26.",
      "None required. Informs the proportionality drafting rather than a requirement."],
+    ["ST-17", "Workbook / crosswalk", "BCBS and aggregate model risk",
+     "The crosswalk originally recorded the BCBS position on aggregate model risk as 'not "
+     "addressed'. Adversarial review suggested the Basel Framework's prudent valuation guidance "
+     "(CAP50) and the Pillar 3 prudent valuation template may require a model risk valuation "
+     "adjustment and its disclosure.",
+     "Unverified", V_NONE,
+     "The BIS Basel Framework chapter pages load their text client-side and could not be "
+     "retrieved in this session; the chapter's existence and title are confirmed but its "
+     "provisions were not read. Neither the original negative nor the suggested positive is "
+     "asserted.",
+     "The cell now records the lead and its unverified status instead of asserting a negative. "
+     "See RT-49. This should be resolved from the primary chapter before consultation."],
     ["ST-16", "Workbook", "Validation frequencies",
      "The validation frequencies shown by tier are illustrative drafting, not derived from any "
      "comparator instrument.",
@@ -2139,6 +2151,20 @@ REDTEAM_ROWS = [
      "M07, M29 and M30.",
      "ECB guide on group-level model governance; OSFI E-23 lifecycle stages.",
      "High", "Closed — correction incorporated"],
+
+    ["RT-49",
+     "The crosswalk asserted that the BCBS does not address aggregate model risk.",
+     "An asserted negative is a claim like any other. Adversarial review suggested the Basel "
+     "Framework's prudent valuation guidance and Pillar 3 prudent valuation template may in fact "
+     "require a model risk valuation adjustment and its public disclosure, which would make the "
+     "negative wrong.",
+     "The claim could not be resolved either way: the BIS Basel Framework chapter pages render "
+     "their text client-side and could not be retrieved. Rather than keep an unverified negative "
+     "or adopt an unverified positive, the cell now records the lead and its status. Ledger entry "
+     "ST-17 marks it for resolution from the primary chapter before consultation.",
+     "One crosswalk cell; one statement-ledger entry. No requirement relies on the point.",
+     "BIS Basel Framework CAP50 chapter listing (title confirmed, text not retrievable).",
+     "Medium", "Open — unresolved, disclosed"],
 
     ["RT-18",
      "The Comptroller's Handbook model risk management booklet was cited as a source.",
