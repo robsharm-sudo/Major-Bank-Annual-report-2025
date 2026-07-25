@@ -479,7 +479,7 @@ DOMAINS = [
         "bench": 5, "bench_auth": "BCBS",
         "post": 4.75,
         "reqs": ["M38"],
-        "sources": ["APRA-APS220", "APRA-APG220", "BCBS-ECL-2015", "APRA-PROV-2023", "AASB-9"],
+        "sources": ["APRA-APS220", "APRA-APG220", "BCBS-ECL-2015", "APRA-PROV-2023", "AASB-9", "APRA-APS310"],
         "gap": "This is a genuine strength. APS 220 transposes BCBS d350 Principle 5 into binding "
                "Australian form in near-identical language, requiring ADIs to have sound policies "
                "and processes to appropriately validate expected credit loss models, and APG 220 "
@@ -491,8 +491,8 @@ DOMAINS = [
         "action": "Connect the existing APS 220 validation obligation to the model risk framework "
                   "rather than restating it, govern overlays and scenario assumptions as model "
                   "risk, and publish the review focus areas so entities know what an APRA-"
-                  "commissioned review under the APS 220 special purpose engagements provision "
-                  "would examine.",
+                  "required review under the special purpose engagement provisions of the Audit "
+                  "and Related Matters standards, or under APS 220, would examine.",
         "owner": "Policy + Credit Risk",
     },
     {

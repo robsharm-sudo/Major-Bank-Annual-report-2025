@@ -364,13 +364,26 @@ def annex_g(doc):
 
     callout(
         doc,
-        "Special purpose engagements under APS 220",
-        "APS 220 provides, under the heading Special purpose engagements: \u201c"
-        + S.APS220_SPECIAL_PURPOSE + "\u201d  A review of expected credit loss models along the "
-        "lines set out in this Annex is the kind of engagement that provision contemplates, and "
-        "APRA may commission one on that basis. The terms of the review would be set by APRA and "
-        "the report provided to APRA.",
+        "Special purpose engagements",
+        "APRA may require a review of the matters in this Annex under the special purpose "
+        "engagement provisions of the Audit and Related Matters standards, which apply in every "
+        "industry and reach the entity's risk management. For an ADI there is a second and "
+        "narrower basis: APS 220 provides, under the heading Special purpose engagements: \u201c"
+        + S.APS220_SPECIAL_PURPOSE + "\u201d  Those focus areas directed at the entity's credit "
+        "risk management and provisioning practices fall within the APS 220 provision. Focus "
+        "areas that reach the model risk framework at large, third-party arrangements or "
+        "regulatory reporting rest on APS 310 rather than on APS 220. Under each provision the "
+        "review is at the entity's expense, and the report is provided to APRA.",
     )
+
+    doc.add_paragraph("Where the power comes from", style="Heading 2")
+    para(doc,
+         "Each provision below was read from the primary instrument. The subject matter is given "
+         "as the instrument expresses it, because the wording differs between industries and the "
+         "differences bear on what a review may cover.",
+         "Guidance")
+    table(doc, ["Standard", "Applies to", "Status", "Subject matter", "How it operates"],
+          S.SPECIAL_PURPOSE_POWERS, [2.1, 3.0, 2.6, 4.6, 4.3], font_pt=8)
 
     doc.add_paragraph("Focus areas", style="Heading 2")
     table(doc, ["Focus area", "What a review would test", "Evidence ordinarily expected"],

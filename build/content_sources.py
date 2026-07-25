@@ -467,6 +467,90 @@ SOURCES = [
         "verification": V_PRIMARY, "checked": CHECKED,
     },
     {
+        "id": "APRA-APS310",
+        "authority": "APRA",
+        "title": "Prudential Standard APS 310 Audit and Related Matters",
+        "published": "Current at the as-of date",
+        "effective": "Commenced 1 January 2023",
+        "date": "Commenced 1 Jan 2023",
+        "status": "Binding prudential standard.",
+        "scope": "Authorised deposit-taking institutions.",
+        "relevant": "Contains a Special purpose engagements provision under which APRA may require an "
+                    "ADI, by notice in writing, to appoint an auditor to report on a particular aspect "
+                    "of the ADI's operations, prudential reporting, risk management systems or "
+                    "financial position, at the ADI's expense. The reference to risk management "
+                    "systems is the express basis on which a review of model risk management may be "
+                    "required of an ADI.",
+        "url": "https://www.apra.gov.au/standards/aps-310",
+        "verification": "Verified — primary source",
+        "checked": "25 Jul 2026",
+    },
+    {
+        "id": "APRA-GPS310",
+        "authority": "APRA",
+        "title": "Prudential Standard GPS 310 Audit and Related Matters",
+        "published": "Current at the as-of date",
+        "effective": "Commenced 1 October 2024",
+        "date": "Commenced 1 Oct 2024",
+        "status": "Binding prudential standard.",
+        "scope": "General insurers and Level 2 insurance groups.",
+        "relevant": "Where APRA specifies in writing, the Appointed Auditor must undertake a special "
+                    "purpose review of matters relating to the insurer's operations, risk management "
+                    "or financial affairs, at the insurer's expense, reporting within three months.",
+        "url": "https://www.apra.gov.au/standards/gps-310",
+        "verification": "Verified — primary source",
+        "checked": "25 Jul 2026",
+    },
+    {
+        "id": "APRA-LPS310",
+        "authority": "APRA",
+        "title": "Prudential Standard LPS 310 Audit and Related Matters",
+        "published": "Current at the as-of date",
+        "effective": "Commenced 18 December 2023",
+        "date": "Commenced 18 Dec 2023",
+        "status": "Binding prudential standard.",
+        "scope": "Life companies, including friendly societies.",
+        "relevant": "Provides for a special purpose engagement relating to matters set out in writing "
+                    "by APRA concerning the life company's operations, risk management or financial "
+                    "affairs, at the life company's expense.",
+        "url": "https://www.apra.gov.au/standards/lps-310",
+        "verification": "Verified — primary source",
+        "checked": "25 Jul 2026",
+    },
+    {
+        "id": "APRA-HPS310",
+        "authority": "APRA",
+        "title": "Prudential Standard HPS 310 Audit and Related Matters",
+        "published": "Current at the as-of date",
+        "effective": "Commenced 1 July 2023",
+        "date": "Commenced 1 Jul 2023",
+        "status": "Binding prudential standard.",
+        "scope": "Private health insurers.",
+        "relevant": "Provides for a special purpose engagement relating to matters set out in writing "
+                    "by APRA concerning the private health insurer's operations, risk management or "
+                    "financial affairs, at the insurer's expense.",
+        "url": "https://www.apra.gov.au/standards/hps-310",
+        "verification": "Verified — primary source",
+        "checked": "25 Jul 2026",
+    },
+    {
+        "id": "APRA-SPS310",
+        "authority": "APRA",
+        "title": "Prudential Standard SPS 310 Audit and Related Matters",
+        "published": "Current at the as-of date",
+        "effective": "Commenced 30 June 2024",
+        "date": "Commenced 30 Jun 2024",
+        "status": "Binding prudential standard.",
+        "scope": "RSE licensees.",
+        "relevant": "APRA may require an RSE licensee to engage an auditor, being the existing RSE "
+                    "auditor or another auditor specified by APRA, to report on a particular aspect of "
+                    "the RSE licensee's business operations, compliance with prudential requirements "
+                    "or the RSE licensee's risk management framework, at the RSE licensee's expense.",
+        "url": "https://www.apra.gov.au/standards/sps-310",
+        "verification": "Verified — primary source",
+        "checked": "25 Jul 2026",
+    },
+    {
         "id": "APRA-APG220", "authority": "APRA",
         "title": "Prudential Practice Guide APG 220 Credit Risk Management",
         "published": "Current at the as-of date", "effective": "n/a",
@@ -840,21 +924,23 @@ LEGAL_SETTLEMENT = [
      "Confirm that CPS 230 and CPS 234 remain the primary notification requirements, and settle "
      "whether any model-specific notification trigger is justified."],
     ["APRA powers",
-     "Settle the powers to require information, restriction of model use, independent review or "
-     "remediation, and ensure procedural fairness. Paragraph A5 confers the adjustment and "
+     "Settle the powers to require information, restriction of model use and remediation, and "
+     "ensure procedural fairness. Independent review is dealt with separately below. "
+     "Paragraph A5 confers the adjustment and "
      "exclusion power and the Interpretation section requires every power under this Prudential "
      "Standard to be exercised in writing; the procedural requirements attaching to each need "
      "settlement."],
     ["Independent review and special purpose engagements",
-     "Settle whether this Prudential Standard should confer a power to require an entity to appoint "
-     "an independent party to review and report to APRA on its models or its model risk management, "
-     "and on what terms as to cost, consultation and procedural fairness. M45 presently states only "
-     "the entity's obligation to support such a review where the power is conferred elsewhere. The "
-     "Special purpose engagements provision of APS 220 supplies that power for ADIs, but it is "
-     "expressed in terms of credit risk management including provisioning practices, so it does not "
-     "extend to model risk management generally and does not reach insurers or RSE licensees. If a "
-     "cross-industry review power is intended, it needs its own basis and its own procedural "
-     "protections rather than being borrowed from APS 220."],
+     "Settle how M45 interacts with the special purpose engagement powers that already exist. The "
+     "Audit and Related Matters standards carry one in every industry this Prudential Standard "
+     "covers — APS 310, GPS 310, LPS 310, HPS 310 and SPS 310 — each reaching the entity's risk "
+     "management, and APS 220 carries a narrower one for ADIs confined to credit risk management "
+     "including provisioning practices. No new power is therefore needed. What needs settling is "
+     "whether M45's supporting obligation belongs in this Prudential Standard at all or is better "
+     "left to those standards; whether the reviewer under the 310 standards must be the Appointed "
+     "Auditor, who may not hold model risk expertise, and if not how an alternative is agreed; and "
+     "whether the three-month reporting period in those standards is workable for a review of a "
+     "material model estate."],
     ["Interaction with APS 220",
      "Settle how this Prudential Standard interacts with the expected credit loss provisions of "
      "APS 220 for ADIs, which already require sound policies and processes to validate expected "
@@ -2555,6 +2641,76 @@ REDTEAM_ROWS = [
      "Detected by rebuilding from source and reading the assembled output rather than the diff.",
      "High", "Closed — correction incorporated"],
 
+    ["RT-60",
+     "The package asserted that no special purpose engagement power reached an insurer or an RSE "
+     "licensee, and that APS 220 was the only instrument conferring one. M45, its guidance, "
+     "Annex F, Annex G and the practice guide were all drafted on that footing.",
+     "Raised by an independent red-team lens as an asserted negative from an unexamined field — "
+     "the same defect class as RT-42 — and then put directly by the reviewer, who asked whether "
+     "APS 220 or APS 310 allows expected credit loss models to be looked at.",
+     "The assertion was wrong. A special purpose engagement power exists in every industry this "
+     "Prudential Standard covers, in the Audit and Related Matters standards: APS 310 for ADIs "
+     "(operations, prudential reporting, risk management systems or financial position), GPS 310 "
+     "for general insurers, LPS 310 for life companies and HPS 310 for private health insurers "
+     "(operations, risk management or financial affairs), and SPS 310 for RSE licensees (business "
+     "operations, compliance with prudential requirements or the risk management framework). Each "
+     "was read from the primary instrument and each is in force. Because they reach risk "
+     "management rather than credit risk management, they are a better fit for a model risk "
+     "review than APS 220, which remains the narrower ADI-only basis for the credit risk and "
+     "provisioning aspects. M45 now rests on the 310 standards with APS 220 as a second basis; "
+     "Annex F's question changes from whether to confer a power to how M45 interacts with the "
+     "powers that exist; Annex G gains a table of the provisions; and the guide chapter and "
+     "scoring action were rewritten.",
+     "M45 and its guidance, two Annex F entries, the Annex G callout and a new table, the guide "
+     "chapter, the ECL scoring domain, and five new source register entries.",
+     "APS 310, GPS 310, LPS 310, HPS 310 and SPS 310 read from apra.gov.au on 25 July 2026.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-61",
+     "M45's limb required access to whatever \'the review requires\', and described the engagement "
+     "as one APRA may \'commission\'.",
+     "Independent lens: who fixes the scope of the obligation, and who appoints and pays?",
+     "Both were wrong. The extent of a binding obligation was left to a privately appointed "
+     "reviewer rather than to the matters APRA specifies; the limb now reads \'reasonably required "
+     "for the matters APRA has specified\'. And under every one of these provisions APRA requires "
+     "the entity to appoint and the entity bears the cost, so \'commission\' — the ordinary word "
+     "for engaging and paying a reviewer — told entities the opposite of what the provisions do. "
+     "Corrected in the Annex G callout, the guide and the scoring action. The limb was also "
+     "conditioned on \'a prudential standard\', which on its face included this one, making the "
+     "paragraph arguably its own enabling provision; it now reads \'another prudential standard\'.",
+     "M45; the Annex G callout; the guide chapter; the ECL scoring domain.",
+     "The verbatim provisions; the drafting principle applied at RT-55.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-62",
+     "The Annex G callout and M45's guidance said a review of the whole of Annex G was the kind of "
+     "engagement the APS 220 provision contemplates.",
+     "Independent lens: RT-55 narrowed M45 to respect the APS 220 genus, and RT-57 enlarged Annex "
+     "G in the same revision, but nobody re-tested the enlarged Annex against the narrowed genus.",
+     "The over-claim had survived at a different locus, and in the standard rather than the guide. "
+     "Focus area 1 tests the model risk framework at large, area 13 third-party continuity and "
+     "area 15 regulatory reporting — none of which is credit risk management. With APS 310 now "
+     "identified the problem largely dissolves, because the 310 standards reach risk management "
+     "generally; the callout and the guide now attribute the credit risk and provisioning areas "
+     "to APS 220 and the remainder to APS 310. Recorded because the pattern — a correction that "
+     "is right where it is applied and does not travel — is the same one as RT-59 and is now the "
+     "package's most frequent defect.",
+     "The Annex G callout; M45's guidance; the guide chapter.",
+     "Independent red-team lens on the special purpose engagement power.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-63",
+     "The pre-existing Annex F entry \'APRA powers\' listed independent review among the powers to "
+     "be settled, and the new entry on special purpose engagements owned the same decision.",
+     "Independent lens: two entries in one settlement register owning one decision, neither "
+     "cross-referencing the other.",
+     "Annex F is a work allocation to APRA Legal and the Office of Parliamentary Counsel, and "
+     "duplicated ownership invites either duplicated work or divergent resolution. Independent "
+     "review was struck from the general powers entry, which now points to the dedicated entry.",
+     "Two Annex F entries.",
+     "Independent red-team lens; the same reasoning applied at RT-54.",
+     "Low", "Closed — correction incorporated"],
+
     ["RT-18",
      "The Comptroller's Handbook model risk management booklet was cited as a source.",
      "Is it retrievable, and is it current?",
@@ -2731,3 +2887,45 @@ APS220_ECL = [
     "for expected credit losses.",
 ]
 
+
+
+# --------------------------------------------------------------------------- #
+# The Audit and Related Matters standards, which carry a special purpose
+# engagement power in every industry this Prudential Standard applies to. Each
+# was read from the primary instrument on 25 July 2026. The subject matter is
+# quoted as the instrument expresses it; the wording differs between industries
+# and the differences matter, so they are not paraphrased into a single form.
+# --------------------------------------------------------------------------- #
+
+SPECIAL_PURPOSE_POWERS = [
+    ["APS 310", "ADIs", "Commenced 1 Jan 2023",
+     "A particular aspect of the ADI's operations, prudential reporting, risk management systems "
+     "or financial position.",
+     "APRA may require the ADI, by notice in writing, to appoint an auditor — the existing "
+     "Appointed Auditor or another auditor. At the ADI's expense."],
+    ["GPS 310", "General insurers and Level 2 insurance groups", "Commenced 1 Oct 2024",
+     "Matters specified by APRA relating to the insurer's operations, risk management or "
+     "financial affairs.",
+     "Where APRA specifies in writing, the Appointed Auditor or Group Auditor undertakes the "
+     "review. At the insurer's expense. Report to APRA and the insurer within three months."],
+    ["LPS 310", "Life companies", "Commenced 18 Dec 2023",
+     "Matters set out in writing by APRA relating to the life company's operations, risk "
+     "management or financial affairs.",
+     "Ordinarily the Appointed Auditor; another auditor where APRA agrees in writing. At the life "
+     "company's expense. Report within three months."],
+    ["HPS 310", "Private health insurers", "Commenced 1 Jul 2023",
+     "Matters set out in writing by APRA relating to the private health insurer's operations, "
+     "risk management or financial affairs.",
+     "Ordinarily the Appointed Auditor; another auditor only where APRA agrees in writing. At the "
+     "insurer's expense."],
+    ["SPS 310", "RSE licensees", "Commenced 30 Jun 2024",
+     "A particular aspect of the RSE licensee's business operations, compliance with prudential "
+     "requirements or the RSE licensee's risk management framework.",
+     "APRA may require the RSE licensee to engage the existing RSE auditor or another auditor "
+     "specified by APRA. At the RSE licensee's expense."],
+    ["APS 220", "ADIs", "Commenced 1 Jan 2023",
+     "All or a particular aspect of the ADI's credit risk management, including provisioning "
+     "practices.",
+     "APRA may require the ADI to appoint an independent party, and may request the report "
+     "without prior consultation. APRA may set the terms of the review, at the ADI's expense."],
+]

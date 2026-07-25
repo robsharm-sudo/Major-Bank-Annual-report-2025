@@ -1302,12 +1302,12 @@ REQUIREMENTS = [
             "to have, a material impact on its financial position, on amounts credited to or debited from the accounts "
             "of its customers or beneficiaries, on its regulatory reporting or on its ability to meet "
             "its prudential obligations, and must provide APRA with information relating to its models and model risk "
-            "management where APRA requires it in writing. Where APRA requires an entity, under a "
-            "prudential standard or other instrument conferring that power, to appoint an independent "
-            "party to review and report to APRA on its models or its model risk management, or on its "
-            "credit risk management including its provisioning practices, the entity must support that "
-            "review and provide the reviewer with access to the models, data, documentation, systems "
-            "and personnel the review requires."
+            "management where APRA requires it in writing. Where APRA requires an entity, under another "
+            "prudential standard, to appoint an auditor or independent party to review and report to "
+            "APRA on a matter that includes its models or its model risk management, the entity must "
+            "support that review and must provide the reviewer with access to the models, data, "
+            "documentation, systems and personnel reasonably required for the matters APRA has "
+            "specified."
         ),
         "guidance": [
             "Where a model failure is also an operational risk incident or an information security incident, the "
@@ -1315,17 +1315,22 @@ REQUIREMENTS = [
             "create an additional or conflicting deadline.",
             "Early engagement is expected where an entity identifies a material weakness in a model used for "
             "regulatory capital, reserving or reporting, rather than at the point the correction is finalised.",
-            "This paragraph does not itself confer a power on APRA to require an independent review. It states "
-            "what an entity must do where APRA exercises such a power conferred by another instrument. For an "
-            "ADI, the Special purpose engagements provision of APS 220 confers that power in respect of credit "
-            "risk management, including provisioning practices, and a review of expected credit loss models "
-            "along the lines of Annex G falls within it. That provision applies to ADIs only and is expressed "
-            "in terms of credit risk management rather than model risk management generally, so it does not "
-            "supply a basis for an independent review of an entity's model risk management at large, nor any "
-            "basis at all for an insurer or an RSE licensee. Whether this Prudential Standard should confer a "
-            "review power of its own, and on what terms, is recorded in Annex F as a matter for settlement.",
+            "This paragraph does not itself confer a power on APRA to require a review. It states what an "
+            "entity must do where APRA exercises a power conferred by another prudential standard. The Audit "
+            "and Related Matters standards confer that power in every industry to which this Prudential "
+            "Standard applies — APS 310 for ADIs, GPS 310, LPS 310 and HPS 310 for insurers and SPS 310 for "
+            "RSE licensees — and each extends to the entity's risk management, which includes its management "
+            "of model risk. Annex G sets out what a review directed at expected credit loss models would "
+            "examine.",
+            "For an ADI there is a second and narrower basis. The Special purpose engagements provision of "
+            "APS 220 reaches all or a particular aspect of the ADI's credit risk management, including "
+            "provisioning practices. It is confined to credit risk management, so those aspects of a model "
+            "risk review that extend beyond credit risk rest on APS 310 rather than on APS 220. Under each "
+            "of these provisions the cost is borne by the entity, and under APS 220 APRA may set the terms "
+            "of the review and may request the report without prior consultation.",
         ],
-        "sources": ["APRA-CPS230", "APRA-CPS234", "APRA-CPS220", "APRA-APS220", "OSFI-E23"],
+        "sources": ["APRA-CPS230", "APRA-CPS234", "APRA-CPS220", "APRA-APS220", "APRA-APS310",
+                    "APRA-GPS310", "APRA-LPS310", "APRA-HPS310", "APRA-SPS310", "OSFI-E23"],
         "principles": "CPS 230 incident notification; OSFI E-23 supervisory engagement",
         "provenance": "Extracted + inferred; legal drafting required",
         "rationale": (
