@@ -424,9 +424,9 @@ SOURCES = [
     {
         "id": "APRA-CPS230", "authority": "APRA",
         "title": "Prudential Standard CPS 230 Operational Risk Management",
-        "published": "Current at the as-of date", "effective": "1 July 2025",
-        "date": "Eff. 1 Jul 2025",
-        "status": "Binding cross-industry prudential standard.",
+        "published": "Current determination made 23 April 2026", "effective": "1 July 2026",
+        "date": "Determined 23 Apr 2026; commences 1 Jul 2026",
+        "status": "Binding cross-industry prudential standard. The current determination revokes and replaces the 2023 determination, under which CPS 230 commenced on 1 July 2025.",
         "scope": "APRA-regulated entities as defined in CPS 230.",
         "relevant": "Operational risk controls, critical operations and tolerance levels, incident "
                     "management and notification, and service provider management.",
@@ -904,18 +904,35 @@ PRINCIPLE_FRAMEWORKS = [
         ],
     },
     {
-        "authority": "APRA", "confidence": V_SECONDARY,
+        "authority": "APRA", "confidence": V_PRIMARY,
         "instrument": "Australian instruments carrying model governance obligations",
-        "note": "APRA has no enumerated model risk principles. Model governance obligations sit "
-                "inside instruments written for other purposes, which is the gap CPS 240 addresses.",
+        "note": "APRA has no model risk prudential standard and no enumerated model risk "
+                "principles. Model governance obligations are distributed across instruments "
+                "written for other purposes, and cannot be mapped one-to-one against a comparator "
+                "principle set. That distribution is the gap CPS 240 addresses. Paragraph "
+                "references below were read from the primary instruments.",
         "items": [
-            ["APS 113", "Internal ratings-based approach — model approval, independent review, validation and the use test"],
-            ["CPS 220 / SPS 220", "Risk management framework and risk appetite; model risk not named"],
-            ["CPS 230", "Operational risk, critical operations, tolerance levels and service providers"],
-            ["CPS 234", "Information security controls and incident notification"],
+            ["APS 113 paras 15–19", "Key principles"],
+            ["APS 113 paras 20–23", "Governance and oversight"],
+            ["APS 113 para 27", "Independent review"],
+            ["APS 113 paras 42–56", "IRB approval, initial approval, phased roll-out, permanent partial use and ongoing requirements"],
+            ["APS 113 Att. D paras 29–35", "Use of statistical models in the rating process"],
+            ["APS 113 Att. D paras 67–68", "Use of internal ratings (the use test)"],
+            ["APS 113 Att. D paras 103–109", "Validation of internal estimates"],
+            ["APG 113 Chapter 7", "Validation of rating systems and risk estimates"],
+            ["CPS 220 paras 19–26", "Risk management framework"],
+            ["CPS 220 paras 27–28", "Risk appetite"],
+            ["CPS 220 paras 44–51", "Review of the risk management framework"],
+            ["CPS 230 paras 11–14", "Key principles"],
+            ["CPS 230 paras 28–30", "Operational risk controls"],
+            ["CPS 230 paras 34–38", "Critical operations and tolerance levels"],
+            ["CPS 234", "Information security controls, testing and incident notification"],
             ["CPG 235", "Managing data risk — practice guide, non-enforceable"],
-            ["CPS 320", "Actuarial and related matters, including the Appointed Actuary"],
-            ["SPS 530", "Investment governance, valuation, liquidity and stress testing"],
+            ["CPS 320 paras 22–23", "Actuarial advice framework"],
+            ["CPS 320 paras 24–33", "Financial Condition Report and Actuarial Valuation Report"],
+            ["CPS 320 paras 35–40", "Actuarial reviews required by APRA"],
+            ["SPS 530 paras 10–15", "Investment governance framework"],
+            ["SPS 530 paras 30–35", "Investment stress testing"],
             ["SPS 515", "Strategic planning and member outcomes"],
         ],
     },
@@ -1674,6 +1691,33 @@ REDTEAM_ROWS = [
      "Source register entry for the 2017 guideline.",
      "OSFI E-23 (2027) body and covering letter; OSFI guidance library.",
      "Low", "Closed — correction incorporated"],
+
+    ["RT-22",
+     "CPS 230 was recorded as commencing 1 July 2025.",
+     "Is that the current instrument? A superseded commencement date would misstate the "
+     "Australian baseline the whole assessment is measured against.",
+     "The current CPS 230 determination was made on 23 April 2026 and commences 1 July 2026, "
+     "revoking and replacing the 2023 determination under which CPS 230 first commenced on "
+     "1 July 2025. The source register now records both.",
+     "Source register and legal status matrix entry for CPS 230.",
+     "APRA CPS 230 determination, 23 April 2026.",
+     "Medium", "Closed — correction incorporated"],
+
+    ["RT-23",
+     "The APRA entry in the principles register listed instruments by name only, implying a "
+     "loose mapping.",
+     "Can APRA's distributed model governance obligations be located precisely, or is the claim "
+     "that they are scattered itself unevidenced?",
+     "They can. Paragraph-level anchors were read from the primary instruments — including "
+     "APS 113 paragraph 27 on independent review, Attachment D paragraphs 103 to 109 on "
+     "validation of internal estimates and paragraphs 67 to 68 on the use test, APG 113 "
+     "Chapter 7, CPS 320 paragraphs 22 to 40, and SPS 530 paragraphs 30 to 35. The entry now "
+     "carries 22 paragraph-level references, and independent verification confirmed that APRA "
+     "has no model risk prudential standard and no enumerated model risk principles.",
+     "Principles register; strengthens the evidential basis for the central premise of the "
+     "package.",
+     "APS 113, APG 113, CPS 220, CPS 230, CPS 320 and SPS 530 primary text.",
+     "Medium", "Closed — verified, register strengthened"],
 
     ["RT-18",
      "The Comptroller's Handbook model risk management booklet was cited as a source.",
