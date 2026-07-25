@@ -815,7 +815,7 @@ LEGAL_SETTLEMENT = [
     ["Instrument numbering and enabling authority",
      "Confirm the instrument number and determine whether one cross-industry standard can be made "
      "for ADIs, insurers and RSE licensees, or whether companion instruments are required. 'CPS "
-     "240' is a drafting placeholder only."],
+     "XXXX' is a drafting placeholder only."],
     ["Sectoral application",
      "Settle application to each regulated industry, to foreign ADIs and branches, to "
      "non-operating holding companies and at Level 1, Level 2 and Level 3."],
@@ -845,6 +845,23 @@ LEGAL_SETTLEMENT = [
      "exclusion power and the Interpretation section requires every power under this Prudential "
      "Standard to be exercised in writing; the procedural requirements attaching to each need "
      "settlement."],
+    ["Independent review and special purpose engagements",
+     "Settle whether this Prudential Standard should confer a power to require an entity to appoint "
+     "an independent party to review and report to APRA on its models or its model risk management, "
+     "and on what terms as to cost, consultation and procedural fairness. M45 presently states only "
+     "the entity's obligation to support such a review where the power is conferred elsewhere. The "
+     "Special purpose engagements provision of APS 220 supplies that power for ADIs, but it is "
+     "expressed in terms of credit risk management including provisioning practices, so it does not "
+     "extend to model risk management generally and does not reach insurers or RSE licensees. If a "
+     "cross-industry review power is intended, it needs its own basis and its own procedural "
+     "protections rather than being borrowed from APS 220."],
+    ["Interaction with APS 220",
+     "Settle how this Prudential Standard interacts with the expected credit loss provisions of "
+     "APS 220 for ADIs, which already require sound policies and processes to validate expected "
+     "credit loss models. The drafting treats the two as cumulative, with this Prudential Standard "
+     "supplying the validation discipline that APS 220 does not define. Confirm that reading, and "
+     "confirm the position for non-ADIs that determine provisions on a modelled basis and to whom "
+     "APS 220 does not apply."],
     ["Commencement and transition",
      "Set commencement, transitional milestones for inventory, tiering and validation coverage, "
      "and the treatment of models already in use. Paragraph A4 splits entity-level from "
@@ -2437,6 +2454,88 @@ REDTEAM_ROWS = [
      "Independent verification at the locus; APS 113 and the ECB internal models framework.",
      "High", "Closed — correction incorporated"],
 
+    ["RT-54",
+     "M37 and M38 both brought expected credit loss models into the scope of the Prudential "
+     "Standard. M37 applied it to models used 'to determine expected credit losses'; M38 applied "
+     "it to models used 'to assess and measure expected credit losses and to determine "
+     "provisions'.",
+     "Two mandatory paragraphs scoping the same models is a drafting defect. An entity cannot "
+     "tell which paragraph governs, and a duplicated scoping obligation invites the argument that "
+     "the two differ in some intended way.",
+     "The expected credit loss limb was removed from M37, leaving M38 as the single scoping "
+     "paragraph for expected credit loss and provisioning models. M37 now governs valuation and "
+     "financial and regulatory reporting models, with guidance signposting paragraph 38 and "
+     "confirming that both apply where one model serves both purposes.",
+     "M37 and M38.",
+     "Both requirement texts read at the locus.",
+     "Medium", "Closed — correction incorporated"],
+
+    ["RT-55",
+     "M45's independent review limb was drafted as applying where APRA requires a review of 'an "
+     "aspect of its model risk management, including its provisioning practices'.",
+     "Does the APS 220 Special purpose engagements provision, on which the limb rests, bear that "
+     "weight? Its verbatim words extend to 'all or a particular aspect of the ADI's credit risk "
+     "management, including provisioning practices'.",
+     "It does not. The drafting substituted model risk management for credit risk management as "
+     "the genus, converting a credit risk power into a model risk power, and did so in a "
+     "cross-industry instrument when APS 220 applies to ADIs only. M45 now states an entity's "
+     "obligation to support a review where the power is conferred by another instrument, without "
+     "purporting to confer the power itself, and preserves the APS 220 formulation accurately as "
+     "a separate limb. Guidance states expressly that the APS 220 provision does not reach model "
+     "risk management at large and supplies no basis at all for an insurer or RSE licensee.",
+     "M45 and its guidance; a new Annex F entry on independent review and special purpose "
+     "engagements.",
+     "APS 220 Special purpose engagements, verbatim; the drafting precedent set by RT-42, that "
+     "the package must not assume a power no cited instrument supplies.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-56",
+     "The practice guide stated that where this Prudential Standard and APS 220 overlap, 'APS 220 "
+     "prevails as the more specific instrument'.",
+     "Is that precedence rule established anywhere, and what would it do if this Prudential "
+     "Standard required more of a model than APS 220 does?",
+     "It is established nowhere. The standard's Interpretation section creates no such rule, and "
+     "as drafted the sentence would read down this Prudential Standard wherever it imposed the "
+     "higher obligation — the opposite of the intent. The guidance now states that the two are "
+     "cumulative, that neither reads down the other, and that the higher obligation is the one to "
+     "meet, with the formal interaction recorded in Annex F for settlement.",
+     "The expected credit loss chapter of the guide; a new Annex F entry on interaction with "
+     "APS 220.",
+     "The Interpretation section of the standard; APS 220.",
+     "Medium", "Closed — correction incorporated"],
+
+    ["RT-57",
+     "Annex G set out twelve focus areas for a review of expected credit loss models.",
+     "Would the annex let a reviewer appointed under a special purpose engagement form a view on "
+     "whether the reported provision is supportable?",
+     "Not on the measurement itself. The annex addressed framework, governance, staging, "
+     "segmentation, scenarios, overlays and data, but omitted the mechanics where expected credit "
+     "loss estimates actually fail: the component models and their validation, the lifetime "
+     "probability of default term structure, loss given default and collateral realisation, "
+     "exposure at default and credit conversion factors for undrawn commitments, behavioural life "
+     "and prepayment, discounting, back-testing of the estimate against realised losses, "
+     "individually assessed exposures, the interaction of hardship, forbearance and write-off "
+     "with measurement, and externally sourced components. Four new areas were added and the "
+     "sequence reordered to follow the order in which an engagement would work through them.",
+     "Annex G, now sixteen focus areas.",
+     "Assessed against the measurement requirements of AASB 9 and the matters BCBS d350 and "
+     "APRA's October 2023 letter direct to validation and credit judgement.",
+     "High", "Closed — correction incorporated"],
+
+    ["RT-58",
+     "Annex F stated that \'CPS 240\' is a drafting placeholder only, after the package had been "
+     "renumbered to CPS XXXX.",
+     "Did the renumbering reach every occurrence?",
+     "All but one. The string was split across two source lines, so it survived a search for the "
+     "whole phrase and remained in the one annex whose purpose is to record that the number is a "
+     "placeholder. Corrected, and the check was re-run over the assembled content of every module "
+     "rather than over the source lines, which is the only form of the check that would have "
+     "caught it.",
+     "Annex F.",
+     "Whole-package scan of assembled string values, which now reports no stale instrument "
+     "numbers.",
+     "Low", "Closed — correction incorporated"],
+
     ["RT-18",
      "The Comptroller's Handbook model risk management booklet was cited as a source.",
      "Is it retrievable, and is it current?",
@@ -2479,69 +2578,107 @@ ECL_REVIEW_FOCUS = [
      "Validation reports with conclusions and conditions; independence assessment; findings "
      "register with severity, owner and closure evidence."],
 
-    ["3. Judgement-based adjustments and overlays",
-     "Whether the basis, quantification, approval, duration and removal conditions of each overlay "
-     "are documented; whether overlays are monitored; and whether persistent same-direction "
-     "adjustment has triggered redevelopment rather than repetition.",
-     "Overlay register with quantification and approver; period-on-period movement and direction; "
-     "supporting analysis; senior management oversight records; redevelopment plans."],
+    ["3. Component models and measurement mechanics",
+     "Whether each component of the estimate is validated in its own right rather than only the "
+     "consolidated output — the probability of default and its lifetime term structure, loss given "
+     "default including collateral valuation and realisation assumptions, and exposure at default "
+     "including credit conversion factors for undrawn and off-balance-sheet commitments. Whether "
+     "the behavioural life and prepayment assumptions used for revolving and open-ended facilities "
+     "are supportable, and whether discounting is applied at the correct rate over the correct "
+     "horizon.",
+     "Component-level validation reports; the derivation of the lifetime PD term structure; "
+     "collateral haircut and time-to-realisation evidence; credit conversion factor calibration; "
+     "behavioural life studies; the discounting methodology and its reconciliation to the effective "
+     "interest rate."],
 
-    ["4. Aggregate effect of adjustments",
-     "Whether the entity reports the aggregate size and direction of overlays against the modelled "
-     "result, so the Board can see how much of the provision is model output and how much is "
-     "judgement.",
-     "Board and committee reporting showing modelled result, adjustments and final provision as "
-     "separate figures over time."],
+    ["4. Outcomes analysis and back-testing of the estimate",
+     "Whether the entity compares expected credit losses previously recognised against losses "
+     "actually realised, at a granularity that can identify bias, and whether persistent over- or "
+     "under-estimation has been acted upon rather than observed.",
+     "Back-testing of ECL against realised write-offs and recoveries by portfolio and vintage; "
+     "measures of bias and their trend; the entity's response where bias was identified."],
 
-    ["5. Forward-looking information and scenarios",
-     "Whether macroeconomic scenarios, their weights and the process for setting them are "
-     "governed, documented and challenged; and whether the scenario set remains reasonable and "
-     "supportable in current conditions.",
-     "Scenario governance papers; weighting rationale and approvals; challenge records; "
-     "back-testing of prior scenario judgements."],
-
-    ["6. Sensitivity analysis",
-     "Whether comprehensive sensitivity analysis is performed regularly and timely across "
-     "portfolios and segments, and whether its results reach the Board in a form that supports a "
-     "provisioning decision.",
-     "Sensitivity analysis by segment, industry and geography; frequency evidence; the reporting in "
-     "which results were presented; linkage to ICAAP and risk appetite review."],
-
-    ["7. Staging and significant increase in credit risk",
+    ["5. Staging and significant increase in credit risk",
      "Whether the indicators used to transfer exposures into Stage 2 are validated as models in "
      "their own right, whether they operate for vulnerable sectors, and what the provision would "
      "be under alternative reasonable staging criteria.",
      "Staging criteria and their validation; transfer volumes and triggers; sector-level staging "
      "outcomes; sensitivity of the provision to staging thresholds."],
 
-    ["8. Segmentation and vulnerable sectors",
+    ["6. Segmentation and collective assessment",
      "Whether segmentation is granular enough for the portfolio's risk profile, whether collective "
      "assessment groupings share genuine credit risk characteristics, and whether emerging "
      "sectoral risk is identified systematically rather than manually.",
      "Segmentation design and review; grouping rationale; systematic identification processes for "
      "vulnerable sectors; evidence sectoral risk reaches loss estimates."],
 
-    ["9. Data",
+    ["7. Individually assessed exposures and account treatments",
+     "Whether individually assessed provisions are supported by documented cash flow scenarios and "
+     "probability weights rather than a single view, whether the boundary between individual and "
+     "collective assessment is applied consistently, and whether hardship, forbearance, "
+     "restructuring and write-off policies interact correctly with the measurement of expected "
+     "credit losses rather than masking deterioration.",
+     "Individual assessment files with scenarios, weights and approvals; the individual versus "
+     "collective boundary and its application; hardship and forbearance flags and their effect on "
+     "staging and measurement; write-off policy and its timing."],
+
+    ["8. Forward-looking information and scenarios",
+     "Whether macroeconomic scenarios, their weights and the process for setting them are "
+     "governed, documented and challenged; and whether the scenario set remains reasonable and "
+     "supportable in current conditions.",
+     "Scenario governance papers; weighting rationale and approvals; challenge records; "
+     "back-testing of prior scenario judgements."],
+
+    ["9. Sensitivity analysis",
+     "Whether comprehensive sensitivity analysis is performed regularly and timely across "
+     "portfolios and segments, and whether its results reach the Board in a form that supports a "
+     "provisioning decision.",
+     "Sensitivity analysis by segment, industry and geography; frequency evidence; the reporting in "
+     "which results were presented; linkage to ICAAP and risk appetite review."],
+
+    ["10. Judgement-based adjustments and overlays",
+     "Whether the basis, quantification, approval, duration and removal conditions of each overlay "
+     "are documented; whether overlays are monitored; and whether persistent same-direction "
+     "adjustment has triggered redevelopment rather than repetition.",
+     "Overlay register with quantification and approver; period-on-period movement and direction; "
+     "supporting analysis; senior management oversight records; redevelopment plans."],
+
+    ["11. Aggregate effect of adjustments",
+     "Whether the entity reports the aggregate size and direction of overlays against the modelled "
+     "result, so the Board can see how much of the provision is model output and how much is "
+     "judgement.",
+     "Board and committee reporting showing modelled result, adjustments and final provision as "
+     "separate figures over time."],
+
+    ["12. Data",
      "Whether the data used to develop, calibrate and run ECL models is appropriate, complete and "
      "traceable to source, and whether known data limitations are the reason for overlays that "
      "could instead be resolved.",
      "Data lineage; quality metrics; documented limitations; the link between identified data gaps "
      "and adjustments made in their place."],
 
-    ["10. Governance, accountability and reporting",
+    ["13. Third-party and vendor components",
+     "Whether externally sourced models, scores, macroeconomic forecasts or calibration data used "
+     "in the estimate are understood, validated and monitored by the entity itself, and whether "
+     "the entity could continue to measure expected credit losses if the provider withdrew.",
+     "Vendor model documentation and the entity's own validation of it; the basis on which "
+     "external forecasts are selected and challenged; contractual access to methodology and data; "
+     "substitution arrangements."],
+
+    ["14. Governance, accountability and reporting",
      "Whether accountability for the provision is clear, whether the Board receives information "
      "sufficient to challenge it, and whether the entity's own committees have exercised that "
      "challenge.",
      "Accountability map; Board and committee papers and minutes showing challenge; escalation of "
      "model performance issues."],
 
-    ["11. Interaction with regulatory capital and reporting",
+    ["15. Interaction with regulatory capital and reporting",
      "Whether provisioning outcomes flow correctly into regulatory capital and prudential "
      "reporting, and whether any prescribed provisioning requirement is correctly applied.",
      "Reconciliation between accounting provisions and regulatory treatment; reporting controls; "
      "evidence of correct classification of exposures."],
 
-    ["12. Remediation and responsiveness",
+    ["16. Remediation and responsiveness",
      "Whether previously identified weaknesses in ECL models have been remediated, and whether the "
      "entity has acted on APRA's published observations on provisioning practice.",
      "Findings closure evidence; internal audit coverage; the entity's own assessment against "

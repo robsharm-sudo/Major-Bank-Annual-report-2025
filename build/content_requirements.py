@@ -1058,7 +1058,7 @@ REQUIREMENTS = [
         "title": "Valuation and financial reporting models",
         "requirement": (
             "An APRA-regulated entity must apply this Prudential Standard to models used to value assets and "
-            "liabilities, to determine expected credit losses and to produce financial and regulatory reporting, and "
+            "liabilities and to produce financial and regulatory reporting, and "
             "must ensure independent price verification and independent review of material valuation inputs and "
             "assumptions."
         ),
@@ -1068,6 +1068,9 @@ REQUIREMENTS = [
             "expected credit loss are the areas of greatest sensitivity to assumption choice.",
             "Independent price verification is a distinct control from validation and both are required for material "
             "valuation models.",
+            "Models used to assess and measure expected credit losses and to determine provisions are dealt with in "
+            "paragraph 38 rather than in this paragraph, so that the expected credit loss obligations sit in one "
+            "place. Where a single model serves both purposes, both paragraphs apply to it.",
         ],
         "sources": ["BCBS-FVP", "ECB-GIM", "APRA-CPS220", "US-MRM-2026"],
         "principles": "BCBS supervisory guidance on fair value practices; ECB internal models market risk",
@@ -1295,11 +1298,12 @@ REQUIREMENTS = [
             "to have, a material impact on its financial position, on amounts credited to or debited from the accounts "
             "of its customers or beneficiaries, on its regulatory reporting or on its ability to meet "
             "its prudential obligations, and must provide APRA with information relating to its models and model risk "
-            "management where APRA requires it in writing. Where APRA requires an entity to appoint an "
-            "independent party to review and report to APRA on an aspect of its model risk management, "
-            "including its provisioning practices, the entity must support that review and provide the "
-            "reviewer with access to the models, data, documentation, systems and personnel the review "
-            "requires."
+            "management where APRA requires it in writing. Where APRA requires an entity, under a "
+            "prudential standard or other instrument conferring that power, to appoint an independent "
+            "party to review and report to APRA on its models or its model risk management, or on its "
+            "credit risk management including its provisioning practices, the entity must support that "
+            "review and provide the reviewer with access to the models, data, documentation, systems "
+            "and personnel the review requires."
         ),
         "guidance": [
             "Where a model failure is also an operational risk incident or an information security incident, the "
@@ -1307,8 +1311,17 @@ REQUIREMENTS = [
             "create an additional or conflicting deadline.",
             "Early engagement is expected where an entity identifies a material weakness in a model used for "
             "regulatory capital, reserving or reporting, rather than at the point the correction is finalised.",
+            "This paragraph does not itself confer a power on APRA to require an independent review. It states "
+            "what an entity must do where APRA exercises such a power conferred by another instrument. For an "
+            "ADI, the Special purpose engagements provision of APS 220 confers that power in respect of credit "
+            "risk management, including provisioning practices, and a review of expected credit loss models "
+            "along the lines of Annex G falls within it. That provision applies to ADIs only and is expressed "
+            "in terms of credit risk management rather than model risk management generally, so it does not "
+            "supply a basis for an independent review of an entity's model risk management at large, nor any "
+            "basis at all for an insurer or an RSE licensee. Whether this Prudential Standard should confer a "
+            "review power of its own, and on what terms, is recorded in Annex F as a matter for settlement.",
         ],
-        "sources": ["APRA-CPS230", "APRA-CPS234", "APRA-CPS220", "OSFI-E23"],
+        "sources": ["APRA-CPS230", "APRA-CPS234", "APRA-CPS220", "APRA-APS220", "OSFI-E23"],
         "principles": "CPS 230 incident notification; OSFI E-23 supervisory engagement",
         "provenance": "Extracted + inferred; legal drafting required",
         "rationale": (
