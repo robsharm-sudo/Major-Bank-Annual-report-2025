@@ -1079,6 +1079,49 @@ REQUIREMENTS = [
     {
         "id": "M38",
         "part": "Part I — Specialist model classes",
+        "section": "23A. Expected credit loss and provisioning models",
+        "title": "Expected credit loss and provisioning models",
+        "requirement": (
+            "An APRA-regulated entity must apply this Prudential Standard to models used to assess and measure "
+            "expected credit losses and to determine provisions, and must govern the judgement-based "
+            "adjustments, overlays and post-model adjustments applied to modelled expected credit losses, and "
+            "the assumptions and scenarios on which those models depend, with the same discipline as the models "
+            "themselves."
+        ),
+        "guidance": [
+            "APS 220 already requires an ADI to have sound policies and processes in place to appropriately "
+            "validate models used to assess and measure expected credit losses. This Prudential Standard supplies "
+            "the model risk discipline that requirement assumes: what validation consists of, who may perform it, "
+            "how often, and what happens when it finds something. It does not displace APS 220, and where the two "
+            "overlap the more specific requirement in APS 220 prevails.",
+            "Expected credit loss models sit at the point where model risk becomes reported financial risk. The "
+            "output is the provision itself rather than an input to a decision a person subsequently makes, and "
+            "an error is realised directly in the financial statements and in regulatory capital.",
+            "Judgement-based adjustments are the distinguishing feature of expected credit loss estimation in "
+            "practice, and are frequently the largest single driver of the reported number. Overlays are "
+            "therefore governed by this Prudential Standard as a matter of substance, not merely of "
+            "documentation: their basis, quantification, approval, duration, monitoring and the conditions for "
+            "their removal must be recorded, and their aggregate size and direction reported.",
+            "Where an entity is not an ADI but determines credit loss provisions on a modelled basis, this "
+            "paragraph applies to those models in the same way.",
+        ],
+        "sources": ["APRA-APS220", "APRA-APG220", "BCBS-ECL-2015", "APRA-PROV-2023", "AASB-9"],
+        "principles": "BCBS d350 Principle 5 (ECL model validation), read with Principles 2, 4, 6 and 7; "
+                      "APS 220, Credit risk and accounting for expected credit losses; APG 220, which directs "
+                      "ADIs to have regard to the Basel guidance",
+        "provenance": "Extracted",
+        "rationale": (
+            "APS 220 transposes BCBS d350 Principle 5 into binding Australian form in near-identical language, "
+            "and APG 220 expressly directs ADIs to have regard to the Basel guidance. The obligation to validate "
+            "expected credit loss models therefore already exists; what is missing is the model risk framework "
+            "that gives it content. This paragraph connects the two."
+        ),
+        "policy_choice": False,
+        "legal_flag": False,
+    },
+    {
+        "id": "M39",
+        "part": "Part I — Specialist model classes",
         "section": "24. Actuarial and insurance models",
         "title": "Actuarial, reserving and insurance liability models",
         "requirement": (
@@ -1110,7 +1153,7 @@ REQUIREMENTS = [
         "legal_flag": True,
     },
     {
-        "id": "M39",
+        "id": "M40",
         "part": "Part I — Specialist model classes",
         "section": "25. Superannuation models",
         "title": "Models used by RSE licensees",
@@ -1137,7 +1180,7 @@ REQUIREMENTS = [
         "legal_flag": True,
     },
     {
-        "id": "M40",
+        "id": "M41",
         "part": "Part I — Specialist model classes",
         "section": "26. Stress testing and scenario models",
         "title": "Stress testing, scenario and capital planning models",
@@ -1164,7 +1207,7 @@ REQUIREMENTS = [
 
     # ------------------------------------------------------------------ Part J
     {
-        "id": "M41",
+        "id": "M42",
         "part": "Part J — Aggregate risk, records and assurance",
         "section": "27. Aggregate model risk",
         "title": "Aggregate assessment of model risk",
@@ -1195,7 +1238,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M42",
+        "id": "M43",
         "part": "Part J — Aggregate risk, records and assurance",
         "section": "28. Records",
         "title": "Records and reconstructability",
@@ -1218,7 +1261,7 @@ REQUIREMENTS = [
         "legal_flag": True,
     },
     {
-        "id": "M43",
+        "id": "M44",
         "part": "Part J — Aggregate risk, records and assurance",
         "section": "29. Assurance",
         "title": "Internal audit and independent assurance",
@@ -1243,7 +1286,7 @@ REQUIREMENTS = [
         "legal_flag": False,
     },
     {
-        "id": "M44",
+        "id": "M45",
         "part": "Part J — Aggregate risk, records and assurance",
         "section": "30. APRA engagement",
         "title": "Notification and provision of information to APRA",
@@ -1252,7 +1295,11 @@ REQUIREMENTS = [
             "to have, a material impact on its financial position, on amounts credited to or debited from the accounts "
             "of its customers or beneficiaries, on its regulatory reporting or on its ability to meet "
             "its prudential obligations, and must provide APRA with information relating to its models and model risk "
-            "management where APRA requires it in writing."
+            "management where APRA requires it in writing. Where APRA requires an entity to appoint an "
+            "independent party to review and report to APRA on an aspect of its model risk management, "
+            "including its provisioning practices, the entity must support that review and provide the "
+            "reviewer with access to the models, data, documentation, systems and personnel the review "
+            "requires."
         ),
         "guidance": [
             "Where a model failure is also an operational risk incident or an information security incident, the "

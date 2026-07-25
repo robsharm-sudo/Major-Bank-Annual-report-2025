@@ -7,9 +7,9 @@ Instrument numbers are placeholders. Information was verified to **25 July 2026*
 
 | File | What it is |
 |---|---|
-| `CPS_XXXX_Model_Risk_Management.docx` | Draft cross-industry prudential standard. 44 bold mandatory requirements with plain-text explanatory guidance beneath each, and six annexes including a full international comparison. 28 pages, Arial throughout. |
-| `CPG_XXXX_Model_Risk_Management.docx` | Draft prudential practice guide. 131 numbered "should" paragraphs across 15 chapters, with cross-reference strips, source attribution carrying legal-status codes, and amber verification annotations. 34 pages. |
-| `MRM_Regulatory_Comparison_and_Improvement_Assessment.xlsx` | 15-sheet evidence base: gap scoring with a documented methodology, an eight-authority crosswalk, requirement-by-authority challenge, traceability, statement provenance ledger, red-team audit trail and source register. 249 live formulas. |
+| `CPS_XXXX_Model_Risk_Management.docx` | Draft cross-industry prudential standard. 45 bold mandatory requirements with plain-text explanatory guidance beneath each, and seven annexes including a full international comparison and the expected credit loss review focus areas. Arial throughout. |
+| `CPG_XXXX_Model_Risk_Management.docx` | Draft prudential practice guide. 146 numbered "should" paragraphs across 16 chapters, with cross-reference strips, source attribution carrying legal-status codes, and amber verification annotations. 34 pages. |
+| `MRM_Regulatory_Comparison_and_Improvement_Assessment.xlsx` | 15-sheet evidence base: gap scoring with a documented methodology, an eight-authority crosswalk, requirement-by-authority challenge, traceability, statement provenance ledger, red-team audit trail and source register. live formulas throughout. |
 
 Bold means mandatory. Everything not bold is explanatory and imposes no obligation.
 
@@ -25,7 +25,7 @@ home jurisdiction.
 
 ## What the scoring measures
 
-How well the **current** Australian prudential framework addresses each of 34 model risk
+How well the **current** Australian prudential framework addresses each of 35 model risk
 domains, against the strongest comparator practice in that domain. It does not score entity
 maturity and does not rank the comparator authorities against one another.
 
@@ -68,7 +68,7 @@ URLs move and instruments get rescinded.
 
 ```
 build/
-  content_requirements.py   the 44 mandatory requirements, with provenance and rationale
+  content_requirements.py   the 45 mandatory requirements, with provenance and rationale
   content_guide.py          the practice guide, paragraph numbering derived at build time
   content_sources.py        source register, crosswalk, principles register, audit trail
   content_scoring.py        the gap scoring model and its rubric
@@ -81,6 +81,23 @@ mcp/
 
 Cross-references between the standard and the guide are computed from the guide's own
 paragraph numbering at build time, so the two documents cannot drift apart.
+
+## Expected credit loss and provisioning
+
+The package covers expected credit loss and provisioning models as a specialist model class
+(M38), on the footing that APS 220 already requires an ADI to have sound policies and processes
+to appropriately validate models used to assess and measure expected credit losses — a
+near-verbatim transposition of BCBS d350 Principle 5 — and APG 220 directs ADIs to have regard
+to the Basel guidance. What the Australian framework lacks is not the obligation but the model
+risk discipline giving it content.
+
+**Annex G** of the standard sets out twelve concrete focus areas for a review of expected credit
+loss models, each with what a review would test and the evidence ordinarily expected. It
+reproduces the APS 220 expected credit loss provisions and all eleven BCBS d350 principles
+verbatim, and records that APRA may commission such a review as a **special purpose engagement
+under APS 220**, under which APRA may require an ADI to appoint an independent party to review
+and report to APRA on its credit risk management including provisioning practices, may do so
+without prior consultation, may set the terms, and may do so at the ADI's expense.
 
 ## A note on what was corrected
 

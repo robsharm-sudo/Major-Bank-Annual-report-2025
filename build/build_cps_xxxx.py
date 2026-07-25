@@ -236,7 +236,8 @@ def contents(doc):
               "Annex C — Model risk tiering indicators",
               "Annex D — International comparison of model risk requirements",
               "Annex E — Source register",
-              "Annex F — Matters requiring legal and policy settlement"]:
+              "Annex F — Matters requiring legal and policy settlement",
+              "Annex G — Expected credit loss models: review focus areas"]:
         para(doc, a, "ContentsHead")
 
 
@@ -349,6 +350,51 @@ def annex_e(doc):
           rows, [1.9, 1.5, 4.4, 2.3, 3.0, 3.5], font_pt=7)
 
 
+def annex_g(doc):
+    """Focus areas for an APRA review of expected credit loss models."""
+    page_break(doc)
+    doc.add_paragraph("Annex G — Expected credit loss models: review focus areas",
+                      style="Heading 1")
+    para(doc,
+         "This Annex sets out the focus areas APRA would expect a review of an entity's expected "
+         "credit loss models to cover. It is drawn from APRA's published observations on "
+         "provisioning practice, from the expected credit loss provisions of APS 220, and from the "
+         "Basel guidance that APG 220 directs ADIs to have regard to.",
+         "Guidance")
+
+    callout(
+        doc,
+        "Special purpose engagements under APS 220",
+        "APS 220 provides, under the heading Special purpose engagements: \u201c"
+        + S.APS220_SPECIAL_PURPOSE + "\u201d  A review of expected credit loss models along the "
+        "lines set out in this Annex is the kind of engagement that provision contemplates, and "
+        "APRA may commission one on that basis. The terms of the review would be set by APRA and "
+        "the report provided to APRA.",
+    )
+
+    doc.add_paragraph("Focus areas", style="Heading 2")
+    table(doc, ["Focus area", "What a review would test", "Evidence ordinarily expected"],
+          S.ECL_REVIEW_FOCUS, [4.0, 6.4, 6.2], font_pt=8)
+
+    doc.add_paragraph("The expected credit loss provisions of APS 220", style="Heading 2")
+    para(doc,
+         "Reproduced from APS 220, under the heading Credit risk and accounting for expected "
+         "credit losses. These are binding obligations on an ADI and are not varied by this "
+         "Prudential Standard.",
+         "Guidance")
+    for t in S.APS220_ECL:
+        para(doc, "\u2022 " + t, "Bullet")
+
+    doc.add_paragraph("The Basel guidance APG 220 directs ADIs to have regard to", style="Heading 2")
+    para(doc,
+         "BCBS Guidance on credit risk and accounting for expected credit losses, 18 December "
+         "2015. Principles 1 to 8 address banks; Principles 9 to 11 address supervisors and "
+         "describe what a supervisory evaluation of these models is directed at. Principle 5 is "
+         "the direct antecedent of the model validation obligation in APS 220.",
+         "Guidance")
+    table(doc, ["Principle", "Statement"], S.BCBS_ECL_PRINCIPLES, [2.6, 14.0], font_pt=8)
+
+
 def annex_f(doc):
     page_break(doc)
     doc.add_paragraph("Annex F — Matters requiring legal and policy settlement", style="Heading 1")
@@ -395,6 +441,7 @@ def main():
     annex_d(doc)
     annex_e(doc)
     annex_f(doc)
+    annex_g(doc)
 
     doc.save(OUT)
     removed = force_arial(OUT)

@@ -416,6 +416,119 @@ SOURCES = [
     },
     # ---------------------------------------------------------------- APRA
     {
+        "id": "BCBS-ECL-2015", "authority": "BCBS",
+        "title": "Guidance on credit risk and accounting for expected credit losses (BCBS d350)",
+        "published": "18 December 2015", "effective": "n/a",
+        "date": "18 Dec 2015",
+        "status": "BIS-classified Guidelines. Supervisory guidance intended not to contradict "
+                  "applicable accounting standards. Domestic effect depends on implementation; in "
+                  "Australia APG 220 directs ADIs to have regard to it.",
+        "scope": "Banks and banking supervisors. Written around IFRS 9-type expected credit loss "
+                 "accounting frameworks.",
+        "relevant": "Eleven principles. Principles 1 to 8 address banks: board and management "
+                    "responsibilities; sound ECL methodologies; credit risk rating process and "
+                    "grouping; adequacy of the allowance; ECL model validation; experienced credit "
+                    "judgment; common data; and disclosure. Principles 9 to 11 address supervisors: "
+                    "periodic evaluation of credit risk practices; satisfaction that ECL "
+                    "measurement methods are appropriate; and consideration of credit risk "
+                    "practices in assessing capital adequacy. Principle 5 is the direct antecedent "
+                    "of the ECL model validation obligation in APS 220.",
+        "url": "https://www.bis.org/bcbs/publ/d350.htm",
+        "verification": V_PRIMARY, "checked": CHECKED,
+    },
+    {
+        "id": "BCBS-CR-NL-2023", "authority": "BCBS",
+        "title": "Newsletter on credit risk issues (bcbs_nl32)",
+        "published": "4 July 2023", "effective": "n/a",
+        "date": "4 Jul 2023",
+        "status": "Supervisory newsletter. Not a standard and not binding.",
+        "scope": "Banks and supervisors.",
+        "relevant": "Supervisory observations on credit risk practices, including expected credit "
+                    "loss provisioning. Cited by APRA's October 2023 letter on provisioning "
+                    "practices as reinforcing the same observations.",
+        "url": "https://www.bis.org/publ/bcbs_nl32.htm",
+        "verification": V_PRIMARY, "checked": CHECKED,
+    },
+    {
+        "id": "APRA-APS220", "authority": "APRA",
+        "title": "Prudential Standard APS 220 Credit Risk Management",
+        "published": "Current at the as-of date", "effective": "Commenced 1 January 2023",
+        "date": "Commenced 1 Jan 2023",
+        "status": "Binding prudential standard.",
+        "scope": "Authorised deposit-taking institutions.",
+        "relevant": "Credit risk management framework, classification of exposures and provisions, "
+                    "and a dedicated section on credit risk and accounting for expected credit "
+                    "losses which requires an ADI to have sound policies and processes in place to "
+                    "appropriately validate models used to assess and measure expected credit "
+                    "losses. Also contains the Special purpose engagements provision under which "
+                    "APRA may require an ADI to appoint an independent party to review and report "
+                    "to APRA on its credit risk management, including provisioning practices.",
+        "url": "https://www.apra.gov.au/standards/aps-220",
+        "verification": V_PRIMARY, "checked": CHECKED,
+    },
+    {
+        "id": "APRA-APG220", "authority": "APRA",
+        "title": "Prudential Practice Guide APG 220 Credit Risk Management",
+        "published": "Current at the as-of date", "effective": "n/a",
+        "date": "Current",
+        "status": "Prudential practice guide. Non-enforceable guidance.",
+        "scope": "ADIs implementing APS 220.",
+        "relevant": "Guidance on the APS 220 credit risk framework. Expressly states that the "
+                    "Basel Committee's Guidance on credit risk and accounting for expected credit "
+                    "losses of 18 December 2015 sets out guidance on sound credit risk practices "
+                    "associated with expected credit loss accounting frameworks, and that APRA "
+                    "expects ADIs to have regard to it.",
+        "url": "https://www.apra.gov.au/practice-guides/apg-220",
+        "verification": V_PRIMARY, "checked": CHECKED,
+    },
+    {
+        "id": "APRA-PROV-2023", "authority": "APRA",
+        "title": "Letter — Credit risk provisioning practices for locally incorporated "
+                 "authorised deposit-taking institutions",
+        "published": "19 October 2023", "effective": "n/a",
+        "date": "19 Oct 2023",
+        "status": "Letter to industry. Supervisory observations and expectations; not a "
+                  "prudential standard.",
+        "scope": "Locally incorporated ADIs.",
+        "relevant": "Sets out APRA's observations on expected credit loss provisioning across "
+                    "three areas: controls around model risk management, including judgement-based "
+                    "adjustments and overlays; capturing economic uncertainty through sensitivity "
+                    "analysis; and identifying credit deterioration in vulnerable sectors and "
+                    "borrowers, including the indicators used to transfer exposures to Stage 2 "
+                    "under AASB 9. The principal source for the review focus areas in Annex G.",
+        "url": "https://www.apra.gov.au/credit-risk-provisioning-practices-for-locally-incorporated-authorised-deposit-taking-institutions",
+        "verification": V_PRIMARY, "checked": CHECKED,
+    },
+    {
+        "id": "AASB-9", "authority": "AASB",
+        "title": "AASB 9 Financial Instruments",
+        "published": "As amended", "effective": "In force",
+        "date": "As amended",
+        "status": "Australian Accounting Standard. Binding for financial reporting purposes under "
+                  "the Corporations Act; not a prudential instrument.",
+        "scope": "Entities preparing financial statements under Australian Accounting Standards.",
+        "relevant": "The expected credit loss impairment model, including the three-stage "
+                    "approach and the assessment of significant increases in credit risk. APS 220 "
+                    "requires provisions to be adequate and consistent with the objectives of "
+                    "Australian Accounting Standards.",
+        "url": "https://www.aasb.gov.au/pronouncements/accounting-standards/",
+        "verification": V_SECONDARY, "checked": CHECKED,
+    },
+    {
+        "id": "APRA-CPG110", "authority": "APRA",
+        "title": "Prudential Practice Guide CPG 110 Internal Capital Adequacy Assessment Process "
+                 "and Supervisory Review",
+        "published": "Current at the as-of date", "effective": "n/a",
+        "date": "Current",
+        "status": "Prudential practice guide. Non-enforceable guidance.",
+        "scope": "APRA-regulated entities conducting an ICAAP.",
+        "relevant": "Guidance on the internal capital adequacy assessment process and on stress "
+                    "testing, which APRA's provisioning letter directs ADIs to follow when "
+                    "conducting sensitivity analysis on expected credit losses.",
+        "url": "https://www.apra.gov.au/practice-guides/cpg-110",
+        "verification": V_SECONDARY, "checked": CHECKED,
+    },
+    {
         "id": "APRA-CPS001", "authority": "APRA",
         "title": "Prudential Standard CPS 001 Defined terms",
         "published": "Current at the as-of date", "effective": "In force at the as-of date",
@@ -719,7 +832,7 @@ LEGAL_SETTLEMENT = [
     ["Application to RSE licensees",
      "Confirm the model classes named for RSE licensees and the interaction with SPS 530, "
      "SPS 515 and SPS 114, the last of which governs the operational risk financial "
-     "requirement that paragraph M41 refers to."],
+     "requirement that paragraph M42 refers to."],
     ["Accountability regime",
      "Settle the designation of the accountable senior executive and its interaction with the "
      "applicable accountability regime."],
@@ -759,6 +872,21 @@ LEGAL_SETTLEMENT = [
 # --------------------------------------------------------------------------- #
 # Principles register — labels and titles as printed by the issuing authority
 # --------------------------------------------------------------------------- #
+
+# BCBS d350 principles, verbatim. Principles 1-8 address banks; 9-11 address supervisors.
+BCBS_ECL_PRINCIPLES = [
+    ["Principle 1", "A bank's board of directors (or equivalent) and senior management are responsible for ensuring that the bank has appropriate credit risk practices, including an effective system of internal control, to consistently determine adequate allowances in accordance with the bank's stated policies and procedures, the applicable accounting framework and relevant supervisory guidance."],
+    ["Principle 2", "A bank should adopt, document and adhere to sound methodologies that address policies, procedures and controls for assessing and measuring credit risk on all lending exposures. The measurement of allowances should build upon those robust methodologies and result in the appropriate and timely recognition of expected credit losses in accordance with the applicable accounting framework."],
+    ["Principle 3", "A bank should have a credit risk rating process in place to appropriately group lending exposures on the basis of shared credit risk characteristics."],
+    ["Principle 4", "A bank's aggregate amount of allowances, regardless of whether allowance components are determined on a collective or an individual basis, should be adequate and consistent with the objectives of the applicable accounting framework."],
+    ["Principle 5", "A bank should have policies and procedures in place to appropriately validate models used to assess and measure expected credit losses."],
+    ["Principle 6", "A bank's use of experienced credit judgment, especially in the robust consideration of reasonable and supportable forward-looking information, including macroeconomic factors, is essential to the assessment and measurement of expected credit losses."],
+    ["Principle 7", "A bank should have a sound credit risk assessment and measurement process that provides it with a strong basis for common systems, tools and data to assess credit risk and to account for expected credit losses."],
+    ["Principle 8", "A bank's public disclosures should promote transparency and comparability by providing timely, relevant and decision-useful information."],
+    ["Principle 9", "Banking supervisors should periodically evaluate the effectiveness of a bank's credit risk practices."],
+    ["Principle 10", "Banking supervisors should be satisfied that the methods employed by a bank to determine accounting allowances lead to an appropriate measurement of expected credit losses in accordance with the applicable accounting framework."],
+    ["Principle 11", "Banking supervisors should consider a bank's credit risk practices when assessing a bank's capital adequacy."],
+]
 
 PRINCIPLE_FRAMEWORKS = [
     {
@@ -898,6 +1026,16 @@ PRINCIPLE_FRAMEWORKS = [
             ["Principle 13", "Remedial actions and supervisory measures"],
             ["Principle 14", "Home/host cooperation"],
         ],
+    },
+    {
+        "authority": "BCBS", "confidence": V_PRIMARY,
+        "instrument": "BCBS Guidance on credit risk and accounting for expected credit losses (d350, "
+                      "18 December 2015)",
+        "note": "Eleven principles. Principles 1 to 8 address banks; Principles 9 to 11 address "
+                "supervisors. Principle 5 is the direct antecedent of the expected credit loss "
+                "model validation obligation in APS 220, which transposes it in near-identical "
+                "binding language. APG 220 directs ADIs to have regard to this guidance.",
+        "items": [[lab, st] for lab, st in BCBS_ECL_PRINCIPLES],
     },
     {
         "authority": "BCBS", "confidence": V_PRIMARY,
@@ -1305,6 +1443,16 @@ CROSSWALK_ROWS_FULL = [
      "Twelve sound practices for AI adoption, expressly not a standard.",
      "AI models within the framework as a model class, with an express boundary rule against the separate AI instrument."],
 
+    ["Expected credit loss and provisioning models",
+     "APS 220 requires sound policies and processes to appropriately validate ECL models, sound measurement methodologies, adequate aggregate provisions and experienced credit judgement. APG 220 directs ADIs to have regard to the Basel guidance. APRA's October 2023 letter sets out observed practice.",
+     "Not addressed as a distinct model class in the model risk guidance; ECL sits in the accounting and credit supervision streams.",
+     "Covered where an ECL model falls within the firm's model definition; no dedicated ECL provision in SS1/23.",
+     "Covered by the general model definition; no dedicated ECL principle.",
+     "IFRS 9 ECL models fall within the internal models and credit risk supervisory frameworks; no dedicated chapter in the internal models guide.",
+     "Not addressed as a distinct model class.",
+     "Dedicated guidance: eleven principles on credit risk and accounting for expected credit losses, including Principle 5 on ECL model validation and Principles 9 to 11 on supervisory evaluation.",
+     "Not addressed.",
+     "Express requirement that ECL and provisioning models are within the model risk framework, with judgement-based adjustments, overlays, assumptions and scenarios governed with the same discipline as the models, and a set of review focus areas in Annex G."],
     ["Aggregate model risk",
      "Not required.",
      "Sound practice to assess model risk individually and in aggregate, reflecting interactions, dependencies and reliance on common assumptions, data or methodologies.",
@@ -1388,7 +1536,7 @@ _OVERRIDES = {
     ("M35", "OCC/Fed"): (SILENT, "No parallel AI instrument, so no boundary rule arises."),
     ("M35", "OSFI"): (STRONG, "Single framework covering models including AI removes the boundary "
                               "problem entirely — the alternative architecture to the one proposed."),
-    ("M39", "OSFI"): (SILENT, "Superannuation is outside OSFI's perimeter; federally regulated "
+    ("M40", "OSFI"): (SILENT, "Superannuation is outside OSFI's perimeter; federally regulated "
                               "pension plans are expressly excluded from E-23."),
     ("M14", "OCC/Fed"): (MODERATE, "Describes a comprehensive inventory as common industry "
                                    "practice rather than stating it as an expectation."),
@@ -1396,7 +1544,7 @@ _OVERRIDES = {
                                    "helps support model risk management."),
     ("M31", "OSFI"): (STRONG, "Principle 3.6 expressly covers model decommission — the only "
                               "comparator that does."),
-    ("M41", "OCC/Fed"): (STRONG, "Expressly requires assessment of model risk individually and in "
+    ("M42", "OCC/Fed"): (STRONG, "Expressly requires assessment of model risk individually and in "
                                  "aggregate, reflecting interactions and common dependencies."),
 }
 
@@ -1521,13 +1669,13 @@ LEDGER_ROWS = [
      "Extracted", V_PRIMARY,
      "BIS publication d605, principle headings.",
      "Corrected from an initial reference to d588. See RT-08."],
-    ["ST-13", "CPS XXXX M39 / CPG XXXX", "Superannuation",
+    ["ST-13", "CPS XXXX M40 / CPG XXXX", "Superannuation",
      "No comparator authority addresses model risk in superannuation.",
      "Inferred", V_PRIMARY,
      "Scope statements of each comparator instrument. OSFI expressly excludes federally regulated "
      "pension plans.",
      "None required. Recorded as a policy design choice with no benchmark."],
-    ["ST-14", "CPS XXXX M44 / CPG XXXX", "Notification",
+    ["ST-14", "CPS XXXX M45 / CPG XXXX", "Notification",
      "No comparator authority imposes a model-risk-specific supervisory notification deadline.",
      "Inferred", V_PRIMARY,
      "Review of each comparator instrument. CPS 230 and CPS 234 provide the Australian "
@@ -1681,10 +1829,10 @@ REDTEAM_ROWS = [
      "Is such a deadline supported by any comparator, and would it conflict with existing "
      "Australian notification architecture?",
      "No comparator imposes a model-specific notification deadline, and a new one risked "
-     "conflicting with the materiality criteria and timeframes in CPS 230 and CPS 234. M44 now "
+     "conflicting with the materiality criteria and timeframes in CPS 230 and CPS 234. M45 now "
      "cross-references the existing architecture and expects early engagement on material model "
      "weakness instead.",
-     "M44 redrafted; the notification domain scored against the existing architecture rather than "
+     "M45 redrafted; the notification domain scored against the existing architecture rather than "
      "a new obligation.",
      "CPS 230; CPS 234; comparator review.",
      "High", "Closed — correction incorporated"],
@@ -1756,7 +1904,7 @@ REDTEAM_ROWS = [
      "capital standards where more specific, requires insurers to map which validation elements "
      "the actuarial control cycle discharges, and flags enabling authority, sectoral application "
      "and instrument numbering for legal settlement in Annex F.",
-     "M36, M38, Annex F; seven requirements carry a legal flag.",
+     "M36, M39, Annex F; seven requirements carry a legal flag.",
      "APS 113; CPS 320; SPS 530; comparator review.",
      "High", "Open — referred for legal settlement"],
 
@@ -1780,7 +1928,7 @@ REDTEAM_ROWS = [
      "framework covers banks with internal model approval; the US guidance covers banking "
      "organisations. The superannuation domain is scored with no benchmark and the requirement is "
      "labelled a policy design choice.",
-     "M39; the superannuation domain carries no benchmark authority in the gap assessment.",
+     "M40; the superannuation domain carries no benchmark authority in the gap assessment.",
      "Scope statements of each comparator instrument.",
      "Medium", "Closed — verified, no correction required"],
 
@@ -1918,7 +2066,7 @@ REDTEAM_ROWS = [
      "the purpose, and requires alternative evidence of performance — benchmarking, sensitivity "
      "analysis and assessment of assumptions — where they are not.",
      "M22 redrafted; the validation intensity table in the guide realigned.",
-     "M40 scope; BCBS stress testing principles 7 and 8.",
+     "M41 scope; BCBS stress testing principles 7 and 8.",
      "High", "Closed — correction incorporated"],
 
     ["RT-29",
@@ -1937,20 +2085,20 @@ REDTEAM_ROWS = [
      "High", "Closed — correction incorporated"],
 
     ["RT-30",
-     "M41 required every APRA-regulated entity to consider aggregate model risk in its internal "
+     "M42 required every APRA-regulated entity to consider aggregate model risk in its internal "
      "capital assessment.",
      "RSE licensees have no internal capital assessment. The requirement was inapplicable to an "
      "entire regulated industry the standard purports to cover.",
-     "M41 now refers to the internal capital adequacy assessment or, for an RSE licensee, to "
+     "M42 now refers to the internal capital adequacy assessment or, for an RSE licensee, to "
      "determining the operational risk financial requirement target amount.",
-     "M41 redrafted sector-neutrally.",
+     "M42 redrafted sector-neutrally.",
      "Superannuation prudential framework; SPS 114 operational risk financial requirement.",
      "High", "Closed — correction incorporated"],
 
     ["RT-31",
      "M14 required a complete, accurate and current inventory in absolute terms; M32's "
      "compensating-control escape reached only the information limb; M33 had no transition for "
-     "contracts already on foot; and M38 left the Appointed Actuary conflict to the guide.",
+     "contracts already on foot; and M39 left the Appointed Actuary conflict to the guide.",
      "Absolute completeness is not demonstrable and not testable. A hosted vendor model cannot be "
      "subjected to the entity's own implementation controls. Existing contracts cannot be reopened "
      "on commencement. And for most insurers the Appointed Actuary sets the assumptions, so M09 "
@@ -1958,7 +2106,7 @@ REDTEAM_ROWS = [
      "M14 now requires the inventory plus processes designed to ensure completeness. M32's escape "
      "extends to any obligation the entity cannot itself discharge for a third-party model, with a "
      "record of which are met that way. M33 applies to existing arrangements from the earlier of "
-     "renewal, material variation or the end of the transition period. M38 resolves the actuarial "
+     "renewal, material variation or the end of the transition period. M39 resolves the actuarial "
      "interaction in the standard: CPS 320 review satisfies independent validation to the extent "
      "the reviewer did not develop the model or set its assumptions.",
      "Four requirements redrafted.",
@@ -1979,14 +2127,14 @@ REDTEAM_ROWS = [
      "Medium", "Closed — correction incorporated"],
 
     ["RT-33",
-     "M44 created a notification obligation with no timeframe and no threshold beyond 'material', "
+     "M45 created a notification obligation with no timeframe and no threshold beyond 'material', "
      "while the guidance beneath it told entities to use CPS 230 and CPS 234 timeframes.",
      "The requirement and its guidance said different things, and the requirement as drafted was "
      "not testable.",
-     "M44 now states the timing expectation on the face of the requirement and ties it to the "
+     "M45 now states the timing expectation on the face of the requirement and ties it to the "
      "CPS 230 and CPS 234 timeframes where the event falls within those standards, resolving the "
      "inconsistency without creating a competing deadline.",
-     "M44 redrafted.",
+     "M45 redrafted.",
      "CPS 230; CPS 234.",
      "Medium", "Closed — correction incorporated"],
 
@@ -2023,15 +2171,15 @@ REDTEAM_ROWS = [
      "Principle 5 is 'Model risk mitigants' — post-model adjustments, restrictions on model use, "
      "and exceptions and escalations. It says nothing about aggregate model risk or board "
      "reporting, which sit under Principle 2.1.",
-     "M13 and M41 now cite Principle 2.1. M41's rationale was rewritten to lead with the 2026 US "
+     "M13 and M42 now cite Principle 2.1. M42's rationale was rewritten to lead with the 2026 US "
      "guidance, which does expressly call for model risk to be assessed individually and in "
      "aggregate reflecting common assumptions, data and methodologies.",
-     "M13 and M41 principle mappings and M41's rationale.",
+     "M13 and M42 principle mappings and M42's rationale.",
      "PRA SS1/23 Principle 5 and Principle 2.1 primary text; US interagency guidance 2026 §III.",
      "High", "Closed — correction incorporated"],
 
     ["RT-37",
-     "M38 cited GPS 320 and LPS 320; M36 cited a Basel Framework identifier that the alias map "
+     "M39 cited GPS 320 and LPS 320; M36 cited a Basel Framework identifier that the alias map "
      "silently resolved to BCBS 239.",
      "GPS 320 and LPS 320 were replaced by CPS 320 in 2019 and no longer exist. BCBS 239 concerns "
      "risk data aggregation and says nothing about internal model approval or the use test. The "
@@ -2040,7 +2188,7 @@ REDTEAM_ROWS = [
      "All three citations were removed and the alias map was deleted entirely. Every source ID "
      "cited by a requirement now resolves to a registered entry, so nothing can be cited that "
      "does not appear in Annex E. The integrity check was tightened to match.",
-     "M36 and M38 sources; SOURCE_ALIASES removed; verify_package strengthened.",
+     "M36 and M39 sources; SOURCE_ALIASES removed; verify_package strengthened.",
      "APRA instrument history for GPS/LPS 320; BCBS 239 subject matter.",
      "High", "Closed — correction incorporated"],
 
@@ -2096,19 +2244,19 @@ REDTEAM_ROWS = [
      "High", "Closed — correction incorporated"],
 
     ["RT-42",
-     "M44 imposed a standing duty to provide APRA with information 'on request', open as to scope, "
+     "M45 imposed a standing duty to provide APRA with information 'on request', open as to scope, "
      "form and requester. M35 required entities to apply AI risk management arrangements that "
-     "nothing obliged them to have. M41's RSE limb referred to the operational risk financial "
+     "nothing obliged them to have. M42's RSE limb referred to the operational risk financial "
      "requirement without citing the standard that governs it.",
      "An open-ended information duty with no stated legal form is not how the other cross-industry "
-     "standards are drafted. M35 assumed an instrument that does not exist. M41 pointed at a "
+     "standards are drafted. M35 assumed an instrument that does not exist. M42 pointed at a "
      "determination made under an uncited standard.",
-     "M44 now applies where APRA requires information in writing, and its notification trigger "
+     "M45 now applies where APRA requires information in writing, and its notification trigger "
      "covers amounts credited to or debited from customer and beneficiary accounts. M35 gains a "
-     "limb for entities with no separate AI arrangements. M41 cites SPS 114, which is now "
+     "limb for entities with no separate AI arrangements. M42 cites SPS 114, which is now "
      "registered as a source. An interpretation clause was added requiring every APRA power under "
      "the standard to be exercised in writing.",
-     "M35, M41, M44, the Interpretation section and the source register.",
+     "M35, M42, M45, the Interpretation section and the source register.",
      "CPS 230 drafting form for information powers; SPS 114.",
      "High", "Closed — correction incorporated"],
 
@@ -2161,10 +2309,10 @@ REDTEAM_ROWS = [
      "floating free of CPS 001 invite inconsistency with the rest of the framework.",
      "A6 now reads down 'the Board' for foreign ADIs and ties undefined terms to CPS 001. A4 was "
      "split into entity-level obligations from commencement and model-level obligations on a "
-     "remediation plan. M38 now names private health insurers, deferred claims liabilities and "
+     "remediation plan. M39 now names private health insurers, deferred claims liabilities and "
      "risk equalisation, and cites HPS 110. Annex F gained items for foreign ADIs and for whether "
      "a simplified pathway for smaller entities is warranted.",
-     "A4, A6, M38, Annex F and the source register.",
+     "A4, A6, M39, Annex F and the source register.",
      "Cross-industry drafting practice in CPS 220, CPS 230 and CPS 234; the enabling authority in A1.",
      "High", "Closed — correction incorporated"],
 
@@ -2172,13 +2320,13 @@ REDTEAM_ROWS = [
      "M03's carve-out excluded any tool whose output is fully determined by its inputs and "
      "documented rules.",
      "A unit price calculation is fully determined by its inputs. The carve-out would therefore "
-     "have excluded the very models M02 and M39 were drafted to capture — the ones whose errors "
+     "have excluded the very models M02 and M40 were drafted to capture — the ones whose errors "
      "transfer value between members irreversibly.",
      "M03's test now turns on consequence as well as method: a tool is outside the definition only "
      "where it also does not determine a regulatory figure, a reported valuation or an amount "
      "attributable to a customer or beneficiary.",
-     "M03; resolves a direct contradiction with M02 and M39.",
-     "Internal consistency analysis across M02, M03 and M39.",
+     "M03; resolves a direct contradiction with M02 and M40.",
+     "Internal consistency analysis across M02, M03 and M40.",
      "High", "Closed — correction incorporated"],
 
     ["RT-48",
@@ -2305,3 +2453,125 @@ REDTEAM_ROWS = [
 from content_requirements import REQUIREMENTS as _REQS  # noqa: E402
 
 REQUIREMENT_TEST_ROWS = build_requirement_test(_REQS)
+
+
+# --------------------------------------------------------------------------- #
+# Annex G — focus areas for an APRA review of expected credit loss models
+#
+# Drawn from APRA's October 2023 letter on provisioning practices, the expected
+# credit loss provisions of APS 220, and BCBS d350, which APG 220 directs ADIs to
+# have regard to. Each row states what the area is, what a review would test, and
+# what evidence would ordinarily demonstrate it.
+# --------------------------------------------------------------------------- #
+
+ECL_REVIEW_FOCUS = [
+    ["1. Model risk framework coverage",
+     "Whether expected credit loss models are within the entity's model risk framework in "
+     "substance and not only on the register — tiered, owned, validated and monitored on the same "
+     "basis as other models of equivalent consequence.",
+     "Inventory entries with tier and owner; validation status and dates; evidence that ECL models "
+     "are not carved out of framework reporting."],
+
+    ["2. Validation of ECL models",
+     "Whether validation addresses conceptual soundness, outcomes analysis and ongoing monitoring, "
+     "is performed by persons independent of development and of the provisioning outcome, and "
+     "reaches an explicit conclusion on fitness for use.",
+     "Validation reports with conclusions and conditions; independence assessment; findings "
+     "register with severity, owner and closure evidence."],
+
+    ["3. Judgement-based adjustments and overlays",
+     "Whether the basis, quantification, approval, duration and removal conditions of each overlay "
+     "are documented; whether overlays are monitored; and whether persistent same-direction "
+     "adjustment has triggered redevelopment rather than repetition.",
+     "Overlay register with quantification and approver; period-on-period movement and direction; "
+     "supporting analysis; senior management oversight records; redevelopment plans."],
+
+    ["4. Aggregate effect of adjustments",
+     "Whether the entity reports the aggregate size and direction of overlays against the modelled "
+     "result, so the Board can see how much of the provision is model output and how much is "
+     "judgement.",
+     "Board and committee reporting showing modelled result, adjustments and final provision as "
+     "separate figures over time."],
+
+    ["5. Forward-looking information and scenarios",
+     "Whether macroeconomic scenarios, their weights and the process for setting them are "
+     "governed, documented and challenged; and whether the scenario set remains reasonable and "
+     "supportable in current conditions.",
+     "Scenario governance papers; weighting rationale and approvals; challenge records; "
+     "back-testing of prior scenario judgements."],
+
+    ["6. Sensitivity analysis",
+     "Whether comprehensive sensitivity analysis is performed regularly and timely across "
+     "portfolios and segments, and whether its results reach the Board in a form that supports a "
+     "provisioning decision.",
+     "Sensitivity analysis by segment, industry and geography; frequency evidence; the reporting in "
+     "which results were presented; linkage to ICAAP and risk appetite review."],
+
+    ["7. Staging and significant increase in credit risk",
+     "Whether the indicators used to transfer exposures into Stage 2 are validated as models in "
+     "their own right, whether they operate for vulnerable sectors, and what the provision would "
+     "be under alternative reasonable staging criteria.",
+     "Staging criteria and their validation; transfer volumes and triggers; sector-level staging "
+     "outcomes; sensitivity of the provision to staging thresholds."],
+
+    ["8. Segmentation and vulnerable sectors",
+     "Whether segmentation is granular enough for the portfolio's risk profile, whether collective "
+     "assessment groupings share genuine credit risk characteristics, and whether emerging "
+     "sectoral risk is identified systematically rather than manually.",
+     "Segmentation design and review; grouping rationale; systematic identification processes for "
+     "vulnerable sectors; evidence sectoral risk reaches loss estimates."],
+
+    ["9. Data",
+     "Whether the data used to develop, calibrate and run ECL models is appropriate, complete and "
+     "traceable to source, and whether known data limitations are the reason for overlays that "
+     "could instead be resolved.",
+     "Data lineage; quality metrics; documented limitations; the link between identified data gaps "
+     "and adjustments made in their place."],
+
+    ["10. Governance, accountability and reporting",
+     "Whether accountability for the provision is clear, whether the Board receives information "
+     "sufficient to challenge it, and whether the entity's own committees have exercised that "
+     "challenge.",
+     "Accountability map; Board and committee papers and minutes showing challenge; escalation of "
+     "model performance issues."],
+
+    ["11. Interaction with regulatory capital and reporting",
+     "Whether provisioning outcomes flow correctly into regulatory capital and prudential "
+     "reporting, and whether any prescribed provisioning requirement is correctly applied.",
+     "Reconciliation between accounting provisions and regulatory treatment; reporting controls; "
+     "evidence of correct classification of exposures."],
+
+    ["12. Remediation and responsiveness",
+     "Whether previously identified weaknesses in ECL models have been remediated, and whether the "
+     "entity has acted on APRA's published observations on provisioning practice.",
+     "Findings closure evidence; internal audit coverage; the entity's own assessment against "
+     "APRA's October 2023 observations."],
+]
+
+# The Special purpose engagements provision, quoted verbatim from APS 220.
+APS220_SPECIAL_PURPOSE = (
+    "APRA may require an ADI to appoint an independent party to review and provide a report to "
+    "APRA on all or a particular aspect of the ADI's credit risk management, including "
+    "provisioning practices. APRA may, however, request such a report without prior consultation "
+    "with an ADI. APRA may set the terms of the review and at the ADI's expense."
+)
+
+# The expected credit loss provisions of APS 220, quoted verbatim.
+APS220_ECL = [
+    "An ADI must adopt, document and adhere to sound methodologies that address policies, "
+    "processes and controls for assessing and measuring credit losses on all exposures. The "
+    "measurement of provisions must build on robust methodologies and result in the appropriate "
+    "and timely recognition of expected credit losses in accordance with Australian Accounting "
+    "Standards.",
+    "An ADI's aggregate amount of provisions must be adequate and consistent with the objectives "
+    "of Australian Accounting Standards.",
+    "An ADI must have sound policies and processes in place to appropriately validate models used "
+    "to assess and measure expected credit losses.",
+    "An ADI must use experienced credit judgement, particularly in the robust consideration of "
+    "reasonable and supportable forward-looking information, including macroeconomic factors, in "
+    "its assessment and measurement of expected credit losses.",
+    "An ADI must have an appropriate credit risk assessment and measurement process that provides "
+    "it with a sound basis for common systems, tools and data to assess credit risk and to account "
+    "for expected credit losses.",
+]
+

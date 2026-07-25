@@ -473,12 +473,35 @@ DOMAINS = [
         "owner": "Policy",
     },
     {
+        "domain": "Expected credit loss and provisioning models",
+        "weight": 1.50,
+        "au": (4, 4, 5, 4),
+        "bench": 5, "bench_auth": "BCBS",
+        "post": 4.75,
+        "reqs": ["M38"],
+        "sources": ["APRA-APS220", "APRA-APG220", "BCBS-ECL-2015", "APRA-PROV-2023", "AASB-9"],
+        "gap": "This is a genuine strength. APS 220 transposes BCBS d350 Principle 5 into binding "
+               "Australian form in near-identical language, requiring ADIs to have sound policies "
+               "and processes to appropriately validate expected credit loss models, and APG 220 "
+               "directs ADIs to have regard to the Basel guidance. The residual gap is that the "
+               "obligation to validate exists without a model risk framework defining what "
+               "validation consists of, who performs it and what follows a finding — and that "
+               "APRA's own observations record continuing reliance on sizeable judgement-based "
+               "adjustments that are not consistently well governed.",
+        "action": "Connect the existing APS 220 validation obligation to the model risk framework "
+                  "rather than restating it, govern overlays and scenario assumptions as model "
+                  "risk, and publish the review focus areas so entities know what an APRA-"
+                  "commissioned review under the APS 220 special purpose engagements provision "
+                  "would examine.",
+        "owner": "Policy + Credit Risk",
+    },
+    {
         "domain": "Actuarial and insurance models",
         "weight": 1.25,
         "au": (3, 3, 4, 3),
         "bench": 4, "bench_auth": "OSFI",
         "post": 4.5,
-        "reqs": ["M38"],
+        "reqs": ["M39"],
         "sources": ["APRA-CPS320", "OSFI-E23"],
         "gap": "The Appointed Actuary framework is a genuine strength but was not designed as model "
                "risk management. Implementation verification and data quality assessment are not "
@@ -493,7 +516,7 @@ DOMAINS = [
         "au": (1, 1, 3, 1),
         "bench": 5, "bench_auth": "No comparator — assessed against the standard's own cross-industry objective",
         "post": 4.0,
-        "reqs": ["M39"],
+        "reqs": ["M40"],
         "sources": ["APRA-SPS530", "APRA-SPS515"],
         "gap": "No comparator authority addresses superannuation model risk, so there is no "
                "benchmark. Unit pricing and valuation models determine amounts credited to member "
@@ -509,7 +532,7 @@ DOMAINS = [
         "au": (3, 2, 4, 3),
         "bench": 5, "bench_auth": "PRA / BCBS",
         "post": 4.5,
-        "reqs": ["M40"],
+        "reqs": ["M41"],
         "sources": ["BCBS-STRESS", "PRA-SS3-18", "APRA-CPS220"],
         "gap": "APRA conducts stress testing but there is no standard governing the models used, "
                "whereas the PRA maintains a dedicated supervisory statement on model risk in stress "
@@ -524,7 +547,7 @@ DOMAINS = [
         "au": (1, 1, 2, 1),
         "bench": 5, "bench_auth": "PRA",
         "post": 4.0,
-        "reqs": ["M41"],
+        "reqs": ["M42"],
         "sources": ["PRA-SS1-23", "ECB-GIM", "US-MRM-2026", "APRA-SPS114"],
         "gap": "Nothing requires an entity to form a view of model risk in aggregate or to consider "
                "it in internal capital assessment, so correlated failure across models sharing data, "
@@ -539,7 +562,7 @@ DOMAINS = [
         "au": (2, 2, 4, 2),
         "bench": 4, "bench_auth": "ECB",
         "post": 4.0,
-        "reqs": ["M42"],
+        "reqs": ["M43"],
         "sources": ["ECB-GIM", "US-MRM-2026", "APRA-CPS220"],
         "gap": "General record-keeping obligations do not specify what must be retained to "
                "reconstruct a model's output, approval basis and performance.",
@@ -553,7 +576,7 @@ DOMAINS = [
         "au": (3, 2, 4, 3),
         "bench": 5, "bench_auth": "PRA",
         "post": 4.5,
-        "reqs": ["M43"],
+        "reqs": ["M44"],
         "sources": ["PRA-SS1-23", "US-MRM-2026", "ECB-GIM", "APRA-CPS220"],
         "gap": "Internal audit obligations are general. Audit of the model risk framework, and in "
                "particular of whether challenge is effective, is not specified and frequently "
@@ -568,7 +591,7 @@ DOMAINS = [
         "au": (3, 3, 4, 3),
         "bench": 4, "bench_auth": "OSFI",
         "post": 4.25,
-        "reqs": ["M44"],
+        "reqs": ["M45"],
         "sources": ["APRA-CPS230", "APRA-CPS234", "OSFI-E23"],
         "gap": "Notification architecture is sound but does not identify model failure as a "
                "notifiable event, so a material model error may not be reported unless it also "
