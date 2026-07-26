@@ -7,3 +7,4 @@ __pycache__/
 *.pyc
 build/_note_*.txt
 build/*.docx
+build/_ann_*.json
