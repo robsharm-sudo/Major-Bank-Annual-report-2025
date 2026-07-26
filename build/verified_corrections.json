@@ -25,6 +25,41 @@
       "find": "SPS 530 paras 29-38",
       "replace": "SPS 530 paras 31-38",
       "why": "Range began at the wrong paragraph for the same reason."
+    },
+    {
+      "find": "commenced 1 July 2026",
+      "replace": "first applies from 1 July 2026 (the start of the 2026-27 income year)",
+      "why": "Division 296 commenced 1 April 2026 per the Act's commencement table; 1 July 2026 is first application. Page 1 was corrected and the annex must not contradict it."
+    },
+    {
+      "find": "commences 1 July 2026",
+      "replace": "first applies from 1 July 2026 (the start of the 2026-27 income year)",
+      "why": "Same, present tense."
+    },
+    {
+      "find": "commenced on 1 July 2026",
+      "replace": "first applied from 1 July 2026 (the start of the 2026-27 income year)",
+      "why": "Same, long form."
+    },
+    {
+      "find": "commencing 1 July 2026",
+      "replace": "first applying from 1 July 2026",
+      "why": "Same, participle."
+    },
+    {
+      "find": "twelve days before",
+      "replace": "thirteen days before",
+      "why": "Registration 18 June 2026, first measurement year began 1 July 2026: that is thirteen days, not twelve."
+    },
+    {
+      "find": "both measures commence 1 July 2026",
+      "replace": "both measures first apply from 1 July 2026",
+      "why": "Plural present tense missed by the singular rule. Payday Super commenced 1 July 2026; Division 296 commenced 1 April 2026 and first applies from 1 July 2026."
+    },
+    {
+      "find": "preceded commencement on 1 July 2026",
+      "replace": "preceded commencement on 1 April 2026",
+      "why": "The point (Assent precedes commencement, so no retrospectivity) still holds, but commencement was 1 April 2026."
     }
   ],
   "verified_facts": [

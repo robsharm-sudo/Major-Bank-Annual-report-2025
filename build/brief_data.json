@@ -4,44 +4,57 @@
     "subtitle": "What Australia's new tax on large superannuation balances asks of prudential regulation — and what it does not",
     "date": "26 July 2026",
     "doc_type": "Prudential research note",
-    "basis": "Prepared from publicly available sources. Not an official publication of any regulator, and not affiliated with or endorsed by APRA, the ATO or Treasury.",
+    "basis": "Prepared from publicly available sources. Not an official publication of any regulator, and not affiliated with APRA, the ATO or Treasury. Claims marked [S] sourced · [I] inferred · [C] created — see Annex C.",
     "footer_note": "Division 296 — prudential implications"
   },
   "bottom_line": [
-    "This is not a proposal. Division 296 received Royal Assent on 13 March 2026 and commenced on 1 April 2026. It applies from the 2026-27 income year, so the first measurement year has been running since 1 July 2026. The final regulations were registered on 18 June 2026, less than a fortnight before that year began, and the ATO's law companion ruling explaining how to perform the calculation has not yet been published.",
-    "It is not a liquidity event, and the evidence says so. In APRA's own System Risk Stress Test, six large funds absorbed $174 billion of cumulative liquidity demand — just under 16 per cent of net assets — while largely avoiding sales of unlisted assets, primarily selling listed equities instead. Division 296 outflows are a small fraction of that. A framing built on forced asset sales would not survive scrutiny.",
-    "The material change is that a trustee judgement now feeds an individual member's personal tax bill. Every large APRA-regulated fund must split fund earnings between members on a 'fair and reasonable' basis it designs itself, and report that figure to the ATO. Two funds holding identical assets for identical members can lawfully report different numbers. No prudential instrument governs how that judgement is made, signed off or independently checked.",
-    "The prudential framework mostly already covers this. Of 27 instruments examined, 11 need no change at all and only one needs amending — SRS 611.0, APRA's own member accounts collection, which cannot see above $1 million. The gaps are guidance, supervisory attention, and data — not authority."
+    {
+      "text": "This is not a proposal. Division 296 received Royal Assent on 13 March 2026 and commenced on 1 April 2026. It first applies from the 2026-27 income year, so the first measurement year has been running since 1 July 2026. The final regulations were registered on 18 June 2026, thirteen days before that year began, and the ATO's law companion ruling explaining how to perform the calculation has not yet been published.",
+      "provenance": "sourced"
+    },
+    {
+      "text": "It is unlikely to be a liquidity event, though that comparison is this note's, not an official one. APRA's System Risk Stress Test had six large funds absorb $174 billion of cumulative demand — just under 16 per cent of net assets, peaking near $30 billion a month — while largely avoiding unlisted sales, selling listed equities instead. No official estimate of Division 296 outflow exists; scaling Treasury's superseded-design costing to the APRA-regulated share gives an indicative $0.9 billion a year, of the order of 1 per cent of the lump sums those funds already pay. On that order of magnitude a forced-asset-sale framing is not supported. The residual risk is composition, not cash: meeting calls by selling listed assets lifted the unlisted share of MySuper options from roughly 29 to 37 per cent.",
+      "provenance": "sourced",
+      "mark": "[S] figures · [C] comparison"
+    },
+    {
+      "text": "The material change is that a trustee judgement now feeds an individual member's personal tax bill. Any APRA-regulated fund with more than six members and at least one member above the threshold must split fund earnings on a 'fair and reasonable' basis it designs itself, and produce that figure to the ATO on request — 28 calendar days for most funds, 10 business days for defined benefit interests. Two funds holding identical assets for identical members can lawfully report different numbers; how far apart has never been measured, and that dispersion is the most consequential unknown here. None of the 27 instruments examined governs how the judgement is made, signed off or checked.",
+      "provenance": "inferred"
+    },
+    {
+      "text": "The prudential framework mostly already covers this. Of 27 instruments examined, 11 need no change, 11 need supervisory attention, 4 warrant updated guidance, and exactly one needs amending — SRS 611.0, APRA's own member accounts collection, whose top bracket is an open-ended '$1,000,000+', so it cannot tell a $1.1 million account from a $20 million one. The gaps are guidance, supervisory attention and data — not authority.",
+      "provenance": "inferred"
+    }
   ],
   "captions": {
     "fig1": "Figure 1 — What Division 296 charges, and on which slice of a member's balance.",
     "fig2": "Figure 2 — The graded issues. Position shows materiality against how directly APRA can act; bubble size shows likelihood.",
     "fig3": "Figure 3 — What each part of the framework needs. Most of the hooks already exist.",
-    "fig4": "Figure 4 — The runway. Influence over the design is real only in the near term.",
+    "fig4": "Figure 4 — The runway. The method fixes when the ATO guidance finalises; the first measurement locks at 30 June 2027.",
     "fig5": "Figure A1 — Where the affected population actually sits. Most of it is outside the prudential perimeter.",
     "fig6": "Figure A2 — How much of the register APRA can act on directly."
   },
   "headline_numbers": [
     {
       "figure": "$3m / $10m",
-      "meaning": "The two thresholds, both now indexed. Extra tax applies only to the share of earnings above them — so someone just over $3m pays very little.",
+      "meaning": "Both indexed. Tax applies only to the share of earnings above them — roughly $1,800 at $3.2m, $9,000 at $4m, $63,000 at $10m (6% earnings).",
       "source": "Enacted design",
       "as_at": "1 July 2026",
-      "provenance": "sourced"
+      "provenance": "created"
     },
     {
       "figure": "$1m+",
-      "meaning": "APRA's highest member balance bracket — one third of the lower threshold. The affected population cannot be counted or located from APRA's own collections.",
+      "meaning": "APRA's top balance bracket — a third of the lower threshold. The affected population cannot be counted from APRA's collections.",
       "source": "SRS 611.0",
       "as_at": "26 July 2026",
-      "provenance": "sourced"
+      "provenance": "inferred"
     },
     {
       "figure": "30 Jun 2027",
-      "meaning": "First measurement of balances. The attribution method needs to be settled, documented and reproducible well before it.",
+      "meaning": "First measurement of balances. The attribution method must be settled and reproducible well before it.",
       "source": "IT(TP)A 1997 s 296-1",
       "as_at": "26 July 2026",
-      "provenance": "sourced"
+      "provenance": "inferred"
     }
   ],
   "all_headline_numbers": [
@@ -103,13 +116,13 @@
     },
     {
       "figure": "Income Tax Assessment (1997 Act) Amendment (Building a Stronger and Fairer Super System and Other Measures) Regulations 2026 (F2026L00726) registered 18 June 2026",
-      "meaning": "The regulations were registered twelve days before the first measurement year began on 1 July 2026. Every dividend, rent payment and asset sale since that date is already inside the tax base, while the ATO's detailed guidance on how to perform the calculation and attribution is still being developed through its co-design process.",
+      "meaning": "The regulations were registered thirteen days before the first measurement year began on 1 July 2026. Every dividend, rent payment and asset sale since that date is already inside the tax base, while the ATO's detailed guidance on how to perform the calculation and attribution is still being developed through its co-design process.",
       "source": "Federal Register of Legislation, F2026L00726 (title and registration date verified)",
       "as_at": "Registered 18 June 2026",
       "provenance": "sourced"
     },
     {
-      "figure": "Payday Super also commenced 1 July 2026, requiring contributions to be allocated or returned within three business days; APRA wrote to all RSE licensees on 25 March 2026 warning that a material number were not on track to deliver SuperStream 3.0",
+      "figure": "Payday Super also first applies from 1 July 2026 (the start of the 2026-27 income year), requiring contributions to be allocated or returned within three business days; APRA wrote to all RSE licensees on 25 March 2026 warning that a material number were not on track to deliver SuperStream 3.0",
       "meaning": "Two major changes landed on the same administration systems on the same day, competing for the same finite administrator change capacity - and Payday Super carried the earlier, more visible deadline. This is the change-saturation risk. It also supplies a precedent: the Payday Super letter did exactly what is proposed here for Division 296, including stating that contribution processing should be treated as a CPS 230 critical operation and that significant breaches 'would necessitate a breach notification to APRA' under s29JA of the SIS Act.",
       "source": "APRA, 'Payday Super Readiness' letter to all RSE licensees, 25 March 2026",
       "as_at": "25 March 2026",
@@ -136,19 +149,19 @@
       "provenance": "inferred"
     },
     {
-      "text": "The attribution standard is a discretion, not a formula. The dividing line is fund size, not which regulator applies, so the loose 'fair and reasonable' test falls on the large funds holding almost all the money.",
-      "provenance": "sourced"
+      "text": "The attribution standard is a discretion, not a formula. The dividing line is member count, not which regulator applies: funds with more than six members design their own 'fair and reasonable' basis, while funds of six or fewer — including APRA's own small funds — get a prescribed formula and an annual actuarial certificate. The principles-based test therefore falls on every APRA-regulated fund of any size.",
+      "provenance": "inferred"
     },
     {
-      "text": "It is a member-equity problem wearing a tax label. A whole-of-fund tax figure and a daily unit price cannot be reconciled exactly, so any method advantages some members over others — and industry has asked that the judgement sit outside AFCA's reach.",
+      "text": "It is a member-equity problem wearing a tax label. A whole-of-fund tax figure and a daily unit price cannot be reconciled exactly, so any method advantages some members over others — and ASFA has asked that the judgement sit outside AFCA's reach.",
       "provenance": "created"
     },
     {
-      "text": "There is a hard new duty on a short clock: 14 days for a fund to tell the ATO when an end benefit will be paid, and 7 to correct an error — attached to debt accounts that must survive mergers, transfers and changes of administrator.",
+      "text": "There is a hard new duty on a short clock: 14 days for a fund to tell the ATO when an end benefit will be paid, and 7 to correct a material error. The Commissioner keeps the Division 296 debt account for decades, so the fund's member-level records behind it must survive mergers, transfers and changes of administrator — on a transfer protocol that has not yet been settled.",
       "provenance": "sourced"
     },
     {
-      "text": "The affected population is largely invisible to the prudential regulator. APRA's highest published balance bracket is $1 million, and because the threshold spans everything a person holds, no per-fund collection could ever produce that view.",
+      "text": "The affected population is largely invisible to the prudential regulator. APRA's highest published balance bracket is $1 million, and more brackets would show where the very large accounts sit — but because the threshold spans everything a person holds across every fund, no per-fund collection can produce the threshold view. Only the ATO holds that.",
       "provenance": "sourced"
     }
   ],
@@ -187,33 +200,33 @@
     {
       "cite": "Regulations F2026L00726",
       "heading": "Attribution method",
-      "what": "The 'fair and reasonable' attribution standard for funds with more than six members, and the prescribed formula plus actuarial certificate for funds with six or fewer. Made 11 June 2026, registered 18 June 2026 — twelve days before the first measurement year began.",
+      "what": "The 'fair and reasonable' attribution standard for funds with more than six members, and the prescribed formula plus actuarial certificate for funds with six or fewer. Made 11 June 2026, registered 18 June 2026 — thirteen days before the first measurement year began.",
       "obliges": "The fund"
     }
   ],
   "figure_inputs": {
     "fig2_note": "Grades reflect prudential materiality, likelihood, and how directly APRA can act. A serious problem that belongs to Treasury is not automatically a grade A issue for the prudential regulator.",
     "fig3_note": "Of 27 instruments examined, 11 require no change. The single amendment needed is to APRA's own reporting standard.",
-    "fig4_note": "Influence over calculation and attribution is real only until the ATO co-design work concludes. After 30 June 2027 the first measurement is locked.",
+    "fig4_note": "The calculation and attribution method can still change while the ATO guidance is being developed. After 30 June 2027 the first measurement is locked.",
     "fig6_note": "Counted from the graded register.",
     "perimeter": {
       "smsf_pct": 60,
       "apra_pct": 40,
       "title": "Most of the affected population sits outside the prudential perimeter",
       "subtitle": "Treasury expected 31,800 of about 80,000 affected individuals to sit in APRA-regulated funds or exempt public sector schemes",
-      "note": "Source: Treasury Impact Analysis. Self-managed funds are regulated by the ATO, so roughly six in ten affected members sit where APRA has no standards, no data and no supervisory reach."
+      "note": "Source: Treasury Impact Analysis, January 2024 — struck on 2022 data under the superseded change-in-balance design, and the only Commonwealth estimate available. APRA supervises neither self-managed funds nor exempt public sector schemes, so more than six in ten affected members sit outside the perimeter. No headcount has been published for the enacted design."
     }
   },
-  "framework_intro": "The most useful finding here is a negative one. Division 296 does not require the prudential framework to be rewritten. Of 27 instruments examined: 11 need no change at all, 11 need only supervisory attention, 4 warrant updated guidance, and exactly one needs amending — SRS 611.0, APRA's own member accounts collection, whose highest balance bracket stops at a third of the lower threshold. The authority already exists. SPG 530 expressly names a change in government policy affecting access to member assets as a liquidity stress factor, and CPS 230 already requires fund administration to be treated as a critical operation. What is missing is guidance confirming these obligations apply to a tax event as much as a market one, supervisory attention on the cohort least able to absorb it, and data granular enough to observe how the measure lands.",
+  "framework_intro": "The most useful finding here is a negative one. Division 296 does not require the prudential framework to be rewritten. Of 27 instruments examined: 11 need no change at all, 11 need only supervisory attention, 4 warrant updated guidance, and exactly one needs amending — SRS 611.0, APRA's own member accounts collection, whose top bracket opens at $1,000,000 — a third of the lower threshold — and is not subdivided above it. The authority already exists. SPS 530 requires a Board-approved investment stress testing programme covering adverse scenarios, and SPG 530 para 79(e) expressly names a change in government policy affecting access to accrued member assets as a liquidity stress factor a prudent licensee would consider; CPS 230 para 36(c) requires an RSE licensee to classify investment management and fund administration as critical operations unless it can justify otherwise. What is missing is guidance confirming these obligations apply to a tax event as much as a market one, supervisory attention on the cohort facing the hardest attribution problem, and data granular enough to observe how the measure lands.",
   "recommendations": [
     {
       "horizon": "Now",
-      "text": "Carry a prudential perspective into the attribution work still under way. APRA engages with Treasury and the ATO, and the remaining calculation and attribution design is progressing through an ATO co-design process. There would be value in the prudential and member-outcomes dimensions being reflected in it.",
+      "text": "The attribution work still under way is the last point at which prudential and member-outcomes considerations can be reflected in how the measure operates. The attribution rule itself is settled in the final regulations; what remains open is the ATO's guidance on applying it, developed with industry through a co-design process. APRA engages with Treasury and the ATO.",
       "provenance": "created"
     },
     {
       "horizon": "Now",
-      "text": "A short letter to RSE licensees confirming that existing obligations already apply would need no new instrument — fund administration as a critical operation under CPS 230, policy-driven liquidity stress under SPG 530, and the annual board risk declaration under SPS 220.",
+      "text": "Confirming that existing obligations already attach would not require a new instrument: fund administration as a critical operation under CPS 230 para 36(c), investment stress testing covering adverse scenarios under SPS 530, and the annual risk management declaration under SPS 220. SPG 530 already names policy-driven liquidity stress as a factor a prudent licensee would consider, but it is guidance rather than an enforceable standard.",
       "provenance": "created"
     },
     {
@@ -223,17 +236,17 @@
     },
     {
       "horizon": "By Q4 2026",
-      "text": "The supervisory cohort is already named: the platform and wrap trustees identified in APRA's December 2024 thematic review, who hold the highest share of very large accounts and face the hardest attribution problem.",
+      "text": "A defensible cohort can be built from material APRA already holds: platform, wrap and member-directed trustees, where members choose their own investments so the attribution method changes the answer, and which show the highest concentration of accounts above $1 million in APRA's Quarterly Superannuation Fund Statistics (March 2026, Table 3). The December 2024 thematic is indicative of governance capacity in that group, not evidence about tax administration.",
       "provenance": "inferred"
     },
     {
       "horizon": "Before 30 Jun 2027",
-      "text": "Funds could be asked to model the 30 June 2027 measurement date — a stress SPG 530 already contemplates.",
+      "text": "Modelling the 30 June 2027 measurement date falls within the investment stress testing programme SPS 530 already requires, and SPG 530 para 79(e) gives policy-driven events as an example of a liquidity stress factor a prudent licensee would consider.",
       "provenance": "inferred"
     },
     {
       "horizon": "2027",
-      "text": "The data gap is fixable: extend the SRS 611.0 balance brackets above the thresholds, decompose SRS 551.0 outflows by driver, and agree an information-sharing route with the ATO for total superannuation balance.",
+      "text": "Two parts of the data gap sit within APRA's own collections: the SRS 611.0 balance brackets could be extended above the thresholds, and outflows decomposed by driver. The third does not — an ATO information-sharing route for total superannuation balance turns on whether the taxation secrecy provisions permit it. If they do not, the remedy is legislative and belongs to Treasury.",
       "provenance": "inferred"
     }
   ],
@@ -294,7 +307,7 @@
       "evidence_refs": [
         "LIKELIHOOD PROPOSITION: P(a material licensee fails, or materially misstates, its first Tax Office information request or a release authority payment during the FY2027-28 window, in a way requiring member-level rectification) = 3. It is not near-certain: there will be a Tax Office co-design process, a law companion ruling and at least one dry run before the first request lands.",
         "SOURCED: response windows - defined benefit and alternative-method funds 'generally given 10 business days to respond'; other APRA funds 'will commence issuing in April, with a response period of 28 calendar days' - ATO Superannuation Administration Group key messages, 20 May 2026, https://www.ato.gov.au/about-ato/consultation/in-detail/stakeholder-relationship-groups-key-messages/superannuation-administration-group/superannuation-administration-group-key-messages-20-may-2026 . CAVEAT: the 18 February 2026 key messages record different indicative dates (DB requests from November 2027, other APRA funds February 2028). The schedule moved between meetings and no year is stated in the May quote. Treat all dates as ATO indicative planning dates, not settled.",
-        "SOURCED: final regulations F2026L00726 made 11 June 2026, registered 18 June 2026 - twelve days before the first measurement year began - https://www.legislation.gov.au/F2026L00726/asmade",
+        "SOURCED: final regulations F2026L00726 made 11 June 2026, registered 18 June 2026 - thirteen days before the first measurement year began - https://www.legislation.gov.au/F2026L00726/asmade",
         "SOURCED: the ATO advice-under-development programme for superannuation (last updated 6 July 2026) lists five items, none of them Division 296 - https://www.ato.gov.au/about-ato/ato-advice-and-guidance/advice-under-development-program/advice-under-development-superannuation-issues . The separate ATO statement that it is 'currently drafting a law companion ruling' appears in ATO super funds newsroom material, not on this page; cite it to its own source or drop the quote.",
         "SOURCED: ASFA - 'It is relatively common for funds with more than 6 members to amend tax returns after they have been lodged ... (in particular, unlisted investment income)'; typical variation 'a few basis points'; ASFA asks for a 5% materiality threshold and a 12-month post-year-end reporting window - ASFA submission to Treasury, 7 April 2026, pp.4-5, https://www.superannuation.asn.au/wp-content/uploads/2026/05/202619_Treasury_Division-296_Regulations_7_April.pdf",
         "SOURCED: Tax Institute - amendment periods 'may extend for up to four years', so funds 'may be required to retrospectively identify affected members and re-perform attribution calculations across multiple income years' - Tax Institute submission, 16 April 2026",
@@ -375,7 +388,7 @@
       "id": "P5",
       "title": "Removing the tax on paper gains did not close the valuation file - the 30 June unit price still decides who is caught and how much",
       "plain_english": "The earlier 2023 version of this tax would have taxed increases in the value of assets that had not been sold. That is gone, and any argument built on forced sales to pay tax on paper gains is obsolete. But valuation still matters twice over: a member's balance at 30 June decides whether they are over the threshold at all, and the same balance sets what share of the fund's earnings is taxed. That balance comes from the unit price, which comes from how the fund values assets that are not traded on a market. The direction most people assume - that funds might hold valuations down to keep wealthy members under the line - is the less likely one, because it requires misconduct and it damages every other member's exit price. The more likely and more awkward direction is upward: a routine revaluation at 30 June pushes members over the line or raises their taxed share, entirely innocently, and the fund has to answer the complaint. APRA has already published findings that only eleven of twenty-three large trustees had a dedicated valuation committee, that some committees included people whose pay may depend on the valuation outcome, and that some assets go unvalued for several quarters.",
-      "why_it_matters": "The conflict is smaller than under the old design but sharper in character: it now touches a small, wealthy, individually identifiable group and produces a personal tax consequence, not only a unit-pricing one. The reputational exposure runs to APRA as much as to trustees, because APRA published adverse findings on this exact control in December 2024 and knew the measure commenced 1 July 2026. Supervisors should not treat the removal of unrealised-gains taxation as closing the valuation governance question.",
+      "why_it_matters": "The conflict is smaller than under the old design but sharper in character: it now touches a small, wealthy, individually identifiable group and produces a personal tax consequence, not only a unit-pricing one. The reputational exposure runs to APRA as much as to trustees, because APRA published adverse findings on this exact control in December 2024 and knew the measure first applies from 1 July 2026 (the start of the 2026-27 income year). Supervisors should not treat the removal of unrealised-gains taxation as closing the valuation governance question.",
       "materiality": 3,
       "likelihood": 3,
       "apra_proximity": 5,
@@ -434,8 +447,8 @@
     {
       "id": "P7",
       "title": "Two major changes commence on the same day, in the same systems, at the same providers - and Division 296 is the one that will get deprioritised",
-      "plain_english": "Payday Super also commenced on 1 July 2026. It requires funds to receive and allocate contributions, or return them, within three business days, delivered through a new data standard that started the same day. In March 2026 APRA wrote to all trustees warning that many were not on track. Both changes land on the same administration platforms, the same data pipelines and the same limited pool of administrator change capacity, in the same year. Payday Super has the earlier, louder and more visible deadline. Division 296 is the one with no published guidance, no external assurance and a four-year tail during which errors can be reopened. When capacity is short, that is the one that slips.",
-      "why_it_matters": "This is change management risk at industry scale, and it is the reason a readiness question asked in FY2027 is worth asking. It also supplies the two things the Division 296 case otherwise lacks: a precedent, because the Payday Super letter is exactly the intervention proposed here and is only four months old, and an argument, because APRA has already acted on one measure commencing 1 July 2026.",
+      "plain_english": "Payday Super also first applied from 1 July 2026 (the start of the 2026-27 income year). It requires funds to receive and allocate contributions, or return them, within three business days, delivered through a new data standard that started the same day. In March 2026 APRA wrote to all trustees warning that many were not on track. Both changes land on the same administration platforms, the same data pipelines and the same limited pool of administrator change capacity, in the same year. Payday Super has the earlier, louder and more visible deadline. Division 296 is the one with no published guidance, no external assurance and a four-year tail during which errors can be reopened. When capacity is short, that is the one that slips.",
+      "why_it_matters": "This is change management risk at industry scale, and it is the reason a readiness question asked in FY2027 is worth asking. It also supplies the two things the Division 296 case otherwise lacks: a precedent, because the Payday Super letter is exactly the intervention proposed here and is only four months old, and an argument, because APRA has already acted on one measure first applying from 1 July 2026.",
       "materiality": 3,
       "likelihood": 3,
       "apra_proximity": 5,
@@ -452,7 +465,7 @@
       "evidence_refs": [
         "LIKELIHOOD PROPOSITION: P(Division 296 implementation is materially deprioritised behind Payday Super at one or more major administrators, contributing to a first-year failure) = 3.",
         "SOURCED: APRA, 'Payday Super Readiness', 25 March 2026 - warns that many licensees were not on track to implement the Member Verification Request component of the new SuperStream standard, tells them to revisit implementation timelines, states that contribution processing should be treated as a CPS 230 critical operation, and states that significant breaches would necessitate a breach notification - https://www.apra.gov.au/news-and-publications/payday-super-readiness-0",
-        "SOURCED: Payday Super commences 1 July 2026, the same day Division 296 commences.",
+        "SOURCED: Payday Super first applies from 1 July 2026 (the start of the 2026-27 income year), the same day Division 296 commences.",
         "INFERRED: the two changes share platforms, pipelines and a finite pool of administrator change capacity; Payday Super carries the earlier and more visible deadline; therefore Division 296 is the more likely casualty of capacity constraints. Unquantified - state as an APRA analytical proposition."
       ],
       "provenance": "sourced"
@@ -669,7 +682,7 @@
       "id": "P15",
       "title": "APRA has an open channel to Treasury and the Tax Office, and a window to put a prudential view into the remaining design work",
       "plain_english": "The Government committed to further consultation on two things: how the fund's earnings are calculated, and how they are split between members. Both Treasury consultations have now closed, and that remaining work is progressing through a Tax Office co-design process with large funds, administrators and industry bodies, ahead of a public ruling. APRA engages with Treasury and the Tax Office bilaterally, so this is not a question of being shut out. It is a question of timing: once the ruling moves from draft to final, the method is effectively fixed, and the prudential consequences - how boards govern the judgement, how the operational load falls, how member equity is protected - are easier to shape before that than after. There is a practical detail worth knowing: the Council of Financial Regulators has four members and the Tax Office is not one of them. The grouping that includes the Tax Office is the broader CFR Plus arrangement.",
-      "why_it_matters": "Decisions being taken now determine operational load, data flows and member-equity outcomes for entities APRA supervises. Contributing a prudential perspective while the ruling is being written is cheap; supervising after the fact against a method APRA had no input into is not. There is also a precedent argument: APRA has already published a readiness letter on the other measure commencing 1 July 2026, so a Division 296 equivalent is a consistency step.",
+      "why_it_matters": "Decisions being taken now determine operational load, data flows and member-equity outcomes for entities APRA supervises. Contributing a prudential perspective while the ruling is being written is cheap; supervising after the fact against a method APRA had no input into is not. There is also a precedent argument: APRA has already published a readiness letter on the other measure first applying from 1 July 2026, so a Division 296 equivalent is a consistency step.",
       "materiality": 2,
       "likelihood": 2,
       "apra_proximity": 5,
@@ -730,7 +743,7 @@
     {
       "id": "P17",
       "title": "Post-death attribution is made law, not a draft - trustees must build to it, and it collides with the duty to pay death benefits promptly",
-      "plain_english": "When a member dies, the trustee must pay the death benefit as soon as practicable. Under the rules as made, fund earnings continue to be attributed to the deceased member's account until the death benefit is fully paid, and the liability may only be assessed after the money has gone - potentially leaving an estate with a tax bill and nothing left in super to pay it from. There is also an odd distinction: if the member had a pension that automatically continues to a spouse, attribution stops; if not, it continues. Identical families get different outcomes because of a paperwork choice. Three technical bodies contested this at consultation and it survived into the final regulations unchanged. That matters for what APRA says: these are not draft rules. Consultation closed on 7 April 2026, the regulations were made on 11 June and registered on 18 June 2026, and they commenced on 1 July 2026. Trustees must build to them.",
+      "plain_english": "When a member dies, the trustee must pay the death benefit as soon as practicable. Under the rules as made, fund earnings continue to be attributed to the deceased member's account until the death benefit is fully paid, and the liability may only be assessed after the money has gone - potentially leaving an estate with a tax bill and nothing left in super to pay it from. There is also an odd distinction: if the member had a pension that automatically continues to a spouse, attribution stops; if not, it continues. Identical families get different outcomes because of a paperwork choice. Three technical bodies contested this at consultation and it survived into the final regulations unchanged. That matters for what APRA says: these are not draft rules. Consultation closed on 7 April 2026, the regulations were made on 11 June and registered on 18 June 2026, and they first applied from 1 July 2026 (the start of the 2026-27 income year). Trustees must build to them.",
       "why_it_matters": "Death benefits are already the most litigated area of superannuation. A trustee that pays promptly may strand a liability with an estate; a trustee that holds back to protect the estate risks breaching the cashing rule. There is no clean answer and executors will press trustees on both sides. It also injects a tax consideration into trustee discretion and into the advice members receive about death benefit nominations. It is graded C because the remedy is Treasury's, not APRA's, and the population is small.",
       "materiality": 3,
       "likelihood": 3,
@@ -982,7 +995,7 @@
     "FRAMING NOTE FOR ALL OF THE BELOW. Both Treasury consultations on this measure have closed (exposure draft, and draft regulations closed 7 April 2026), so there is no open public process to lodge a submission into. The Government's October 2025 commitment to further consultation on how realised earnings are calculated and attributed is being progressed through an ATO co-design process, and APRA engages bilaterally with both Treasury and the ATO. These are therefore points to carry into that existing engagement and into the ATO's co-design work as guidance products are developed - an opportunity to add a prudential and member-outcomes perspective to work that is already under way, not a gap in anyone's current practice.",
     "OFFER A PRUDENTIAL PERSPECTIVE ON THE GOVERNANCE OF ATTRIBUTION, WITHOUT PRESCRIBING THE TAX METHOD. The method by which a fund attributes earnings to individual members is being settled through ATO guidance. APRA's distinctive contribution is not the arithmetic but the governance wrapper: that the choice of method is a member-equity decision within the investment governance framework, and so warrants a written and Board-approved methodology, applied consistently from year to year, documented well enough to be reproduced for the full amendment period, and subject to some form of independent review. Worth noting that industry has itself proposed governance by analogy to unit pricing and crediting rate practice. Also worth putting: a default or safe-harbour method that a trustee adopting it can rely on would do more to produce consistent member outcomes than any governance expectation APRA could set, and industry would likely support it - but the design of any such method is properly the ATO's and Treasury's call.",
     "RECORD THE THIRD-PARTY CONCENTRATION CONSEQUENCE. The calculation, attribution, reporting and payment functions will be delivered not by each licensee independently but largely by a small number of shared administrators and custodians - all of them mandatory material service providers under CPS 230 para 50. The prudential consequence worth putting on the record with the ATO is that a defect or delay at one provider is a common-mode event across many funds simultaneously, in the same annual window, rather than an isolated failure. This is relevant to how the ATO sequences its information requests, how much transition support it plans, and how it handles first-year extensions. APRA can inform this from the material service provider registers it already receives annually.",
-    "SETTLE THE TRANSFER PROTOCOL BEFORE THE FY2027 MERGER SEASON. The protocol for carrying member-level Division 296 information through a successor fund transfer or intra-fund transfer needs to be settled for transfers spanning the 30 June 2027 measurement date. This is squarely APRA's business because APRA actively encourages consolidation, so an unresolved protocol means APRA's own consolidation agenda could generate member-level tax errors. (The earlier industry discussion of a 'retrospective law' problem related to the abandoned 1 July 2025 commencement under the previous design and no longer applies: Royal Assent on 13 March 2026 preceded commencement on 1 July 2026.)",
+    "SETTLE THE TRANSFER PROTOCOL BEFORE THE FY2027 MERGER SEASON. The protocol for carrying member-level Division 296 information through a successor fund transfer or intra-fund transfer needs to be settled for transfers spanning the 30 June 2027 measurement date. This is squarely APRA's business because APRA actively encourages consolidation, so an unresolved protocol means APRA's own consolidation agenda could generate member-level tax errors. (The earlier industry discussion of a 'retrospective law' problem related to the abandoned 1 July 2025 commencement under the previous design and no longer applies: Royal Assent on 13 March 2026 preceded commencement on 1 April 2026.)",
     "ASK FOR A CURRENT IN-SCOPE HEADCOUNT, SPLIT BY SECTOR. The only Commonwealth estimate of the affected population was struck under the superseded design on older data, and no absolute headcount has been published for the enacted realised-earnings design. Without a current number split between APRA-regulated funds, exempt public sector schemes and self-managed funds, APRA cannot calibrate supervisory intensity, cannot test a licensee that says it has very few affected members, and cannot size the perimeter question. This is a low-cost ask and the ATO is the only party that can answer it.",
     "RESOLVE THE LEGAL GATEWAY BEFORE PURSUING A DATA EXCHANGE. A standing ATO-to-APRA data exchange covering balance distribution and Division 296 outflows by fund would substantially answer APRA's visibility problem without any change to APRA's own collections. The threshold question is whether taxpayer confidentiality in the taxation administration law permits it, and whether the existing APRA-ATO arrangements cover it or an amendment is needed. That question should be settled first, because if the answer is no, the remedy is a legislative one for Treasury rather than an administrative one for the ATO. Note also that the Council of Financial Regulators does not include the ATO, so this is a bilateral matter rather than a CFR one.",
     "PUT THE CHANGE-SATURATION POINT ON THE RECORD. Payday Super and Division 296 commenced on the same day, in the same administration systems, drawing on the same finite pool of administrator change capacity, with Payday Super carrying the earlier and more visible deadline. The foreseeable consequence is that Division 296 is the change most likely to be deprioritised - and it is the one with guidance still being developed, no external assurance, and a multi-year amendment tail. This is worth stating to Treasury and the ATO as a sequencing and transition-support consideration, and it is directly relevant to how much first-year flexibility the ATO builds in.",
@@ -990,7 +1003,7 @@
   ],
   "audit_trail": [
     {
-      "assertion": "Division 296 of the ITAA 1997 is enacted law: Treasury Laws Amendment (Building a Stronger and Fairer Super System) Act 2026 and Superannuation (Building a Stronger and Fairer Super System) Imposition Act 2026, Royal Assent 13 March 2026, commenced 1 July 2026, first measurement date 30 June 2027.",
+      "assertion": "Division 296 of the ITAA 1997 is enacted law: Treasury Laws Amendment (Building a Stronger and Fairer Super System) Act 2026 and Superannuation (Building a Stronger and Fairer Super System) Imposition Act 2026, Royal Assent 13 March 2026, first applies from 1 July 2026 (the start of the 2026-27 income year), first measurement date 30 June 2027.",
       "provenance": "sourced",
       "basis": "Enacting Acts as registered (C2026A00008 and the companion Imposition Act); Parliamentary Library Bills Digest No. 48, 2025-26. Established and independently confirmed in the workflow's settled-facts list. The Imposition Act is what fixes the rates and must be named alongside the amending Act.",
       "verified": "verified"
@@ -1044,7 +1057,7 @@
       "verified": "unverified"
     },
     {
-      "assertion": "The final regulations, Income Tax Assessment (1997 Act) Amendment Regulations 2026 (F2026L00726), were made 11 June 2026 and registered 18 June 2026 - twelve days before the first measurement year began.",
+      "assertion": "The final regulations, Income Tax Assessment (1997 Act) Amendment Regulations 2026 (F2026L00726), were made 11 June 2026 and registered 18 June 2026 - thirteen days before the first measurement year began.",
       "provenance": "sourced",
       "basis": "Federal Register of Legislation, F2026L00726 'as made' metadata (https://www.legislation.gov.au/F2026L00726/asmade). Registration and making dates are readable from the register listing even where the instrument text is not.",
       "verified": "verified"
@@ -1130,7 +1143,7 @@
     {
       "assertion": "Payday Super and Division 296 commence on the same day, 1 July 2026, and land on the same administration platforms, data pipelines and finite administrator change capacity; Payday Super carries the earlier and more visible deadline, so Division 296 is the change more likely to be deprioritised.",
       "provenance": "inferred",
-      "basis": "Chain: (1) both measures commence 1 July 2026 (APRA Payday Super Readiness letter; Division 296 commencement); (2) both are delivered through fund administration and registry systems, which CPS 230 para 36(c) treats as a critical operation; (3) Payday Super has a daily, visible, employer-facing deadline while Division 296 has no external test until the ATO's first information requests in 2027-28; (4) scarce change capacity is therefore allocated to the visible deadline. Behavioural claim, not measured.",
+      "basis": "Chain: (1) both measures first apply from 1 July 2026 (APRA Payday Super Readiness letter; Division 296 commencement); (2) both are delivered through fund administration and registry systems, which CPS 230 para 36(c) treats as a critical operation; (3) Payday Super has a daily, visible, employer-facing deadline while Division 296 has no external test until the ATO's first information requests in 2027-28; (4) scarce change capacity is therefore allocated to the visible deadline. Behavioural claim, not measured.",
       "verified": "unverified"
     },
     {
@@ -1499,7 +1512,7 @@
     {
       "attack": "The register misses APRA's own Payday Super readiness letter of 25 March 2026 - a four-month-old, self-authored precedent for exactly the intervention the register proposes, on a measure commencing the same day.",
       "outcome": "accepted-and-fixed",
-      "reasoning": "Strongest completeness addition. It supplies a precedent, drafting, and an answer to the 'is this APRA's business?' objection, and it makes the proposed Division 296 letter a consistency step rather than a new initiative. Cited in the engagement and readiness items. The related change-saturation point - both measures commencing 1 July 2026 on the same platforms and the same finite administrator change capacity - is added as a distinct operational risk."
+      "reasoning": "Strongest completeness addition. It supplies a precedent, drafting, and an answer to the 'is this APRA's business?' objection, and it makes the proposed Division 296 letter a consistency step rather than a new initiative. Cited in the engagement and readiness items. The related change-saturation point - both measures first applying from 1 July 2026 on the same platforms and the same finite administrator change capacity - is added as a distinct operational risk."
     },
     {
       "attack": "P11 stops at fee-setting governance and misses the transmission mechanism: costs recovered through administration fees feed the annual performance test, which carries a product-closure consequence. Regrade to A.",

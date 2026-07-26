@@ -31,9 +31,8 @@ v.fig_tier_ladder(p("fig1_tiers.png"), [
          rate=30, width=33, color=v.ORANGE, extra="15% fund tax\n+ 15% Div 296"),
     dict(band="Above $10m", sub="Division 296 adds 25%\non earnings from this slice",
          rate=40, width=33, color=v.MAGENTA, extra="15% fund tax\n+ 25% Div 296"),
-], note=("Rates shown for accumulation-phase earnings. Retirement-phase earnings are untaxed in the fund, so the Division 296\n"
-         "charge there is the full 15% or 25% rather than an increment. Both thresholds are indexed. The charge applies only to\n"
-         "earnings attributable to the slice of a balance above each threshold, not to the whole balance."))
+], note=("Accumulation-phase earnings. Retirement-phase earnings are untaxed in the fund, so the Division 296 charge there is the\n"
+         "full 15% or 25% rather than an increment. The charge applies only to earnings attributable to the slice above each threshold."))
 
 # --- Figure 2: the graded issue map ------------------------------------------
 if issues:
@@ -64,19 +63,19 @@ v.fig_timeline(p("fig4_timeline.png"), [
     dict(x=5,  date="13 Mar 2026", label="Royal Assent", color=v.MUTED, done=True),
     dict(x=19, date="1 Apr 2026",  label="Division 296\ncommences", color=v.MUTED, done=True),
     dict(x=33, date="1 Jul 2026",  label="2026–27 income year:\nfirst measurement\nyear begins", color=v.COBALT, done=True),
-    dict(x=55, date="2026–27",     label="ATO co-design group\nsettles calculation\nand attribution", color=v.ORANGE),
+    dict(x=55, date="2026–27",     label="ATO guidance on applying\nthe calculation and attribution —\nin development, no date published", color=v.ORANGE),
     dict(x=73, date="30 Jun 2027", label="First measurement\nof balances", color=v.TEAL),
     dict(x=93, date="2027–28",     label="First assessments\n& release authorities", color=v.MAGENTA),
-], today_x=38, note=fig.get("fig4_note", ""))
+], today_x=44, note=fig.get("fig4_note", ""))
 
 # --- Figure 5: the perimeter -------------------------------------------------
 per = fig.get("perimeter")
 if per:
     v.fig_perimeter(p("fig5_perimeter.png"), [
         dict(pct=per["smsf_pct"], label="In SMSFs",
-             sub="ATO-regulated —\noutside APRA's perimeter", color=v.ORANGE),
-        dict(pct=per["apra_pct"], label="In APRA-regulated funds",
-             sub="Where APRA's standards\nand data apply", color=v.COBALT),
+             sub="ATO-regulated —\noutside the perimeter", color=v.ORANGE),
+        dict(pct=per["apra_pct"], label="In APRA funds or exempt public sector schemes",
+             sub="APRA supervises\nonly part of this", color=v.COBALT),
     ], title=per.get("title", ""), subtitle=per.get("subtitle", ""),
        note=per.get("note", ""))
 

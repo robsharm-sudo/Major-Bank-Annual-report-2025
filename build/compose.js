@@ -74,13 +74,13 @@ function pageOne() {
       border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: B.RULE, space: 7 } },
     }));
   }
-  k.push(para("", { after: 95 }));
+  k.push(para("", { after: 70 }));
 
   k.push(callout("The bottom line", D.bottom_line || [], NAVY));
-  k.push(para("", { after: 115 }));
+  k.push(para("", { after: 80 }));
 
   k.push(h3("What Division 296 now does", { before: 0 }));
-  if (has("fig1_tiers.png")) k.push(...figure("fig1_tiers.png", FIG_W, D.captions?.fig1));
+  if (has("fig1_tiers.png")) k.push(...figure("fig1_tiers.png", 500, D.captions?.fig1));
 
   if ((D.headline_numbers || []).length) {
     k.push(...statTiles(D.headline_numbers));
@@ -143,7 +143,7 @@ function pageTwo() {
     }
   ));
   k.push(para([
-    t("A = raise now · B = press and monitor · C = watch.  Scores out of 5.  All 18 issues are in Annex A.", { size: 13, color: MUTED }),
+    t("A = high materiality, directly actionable · B = material, indirect or contingent · C = peripheral to the prudential remit.  Scores out of 5.  All 18 issues are in Annex A.", { size: 13, color: MUTED }),
   ], { before: 70, after: 0 }));
   return k;
 }
@@ -152,55 +152,31 @@ function pageTwo() {
 function pageThree() {
   const k = [pageBreak()];
   k.push(h2("What the prudential framework actually needs", { before: 0 }));
-  k.push(para(D.framework_intro || "", { after: 80, size: 17 }));
-  if (has("fig3_framework.png")) k.push(...figure("fig3_framework.png", FIG_W, D.captions?.fig3));
+  k.push(para(D.framework_intro || "", { after: 70, size: 16 }));
+  if (has("fig3_framework.png")) k.push(...figure("fig3_framework.png", 545, D.captions?.fig3));
 
-  k.push(h2("The runway — and APRA's window to act"));
-  if (has("fig4_timeline.png")) k.push(...figure("fig4_timeline.png", FIG_W, D.captions?.fig4));
+  k.push(h2("The runway — when the method fixes"));
+  if (has("fig4_timeline.png")) k.push(...figure("fig4_timeline.png", 545, D.captions?.fig4));
 
   k.push(h2("Implications"));
-  (D.recommendations || []).forEach(r => {
+  const recs = D.recommendations || [];
+  recs.forEach((r, i) => {
     k.push(new Paragraph({
       children: [
         t(r.horizon ? `${r.horizon}  ` : "", { size: 15, bold: true, color: TEAL, caps: true }),
-        t(r.text, { size: 18 }), prov(r.provenance),
+        t(r.text, { size: 17 }), prov(r.provenance),
       ],
       numbering: { reference: "brief-bullets", level: 0 },
-      spacing: { after: 48, line: 246 },
+      // No trailing space on the last bullet: it closes page 3, and the space
+      // after it is enough to spill onto a blank page 4.
+      spacing: { after: i === recs.length - 1 ? 0 : 34, line: 236 },
     }));
   });
 
   // The points to carry into engagement are in Annex E: there is no open public
   // consultation to submit into, and page 3 is full with the recommendations.
 
-  // provenance legend - every page-1..3 claim carries one of these
-  k.push(para("", { after: 60 }));
-  k.push(new Table({
-    rows: [new TableRow({
-      children: [new TableCell({
-        width: { size: CONTENT_W, type: WidthType.DXA },
-        shading: { type: ShadingType.CLEAR, fill: TINT, color: "auto" },
-        margins: { top: 90, bottom: 90, left: 150, right: 150 },
-        borders: { top: noBorder, bottom: noBorder, right: noBorder, left: { style: BorderStyle.SINGLE, size: 18, color: TEAL } },
-        children: [
-          new Paragraph({
-            children: [
-              t("How to read the provenance marks.  ", { size: 14, bold: true, color: NAVY }),
-              new TextRun({ text: "[S]", font: FONT, size: 14, bold: true, color: PROV_COLOR.sourced }),
-              t(" Sourced — stated in a citable document.  ", { size: 14, color: SECOND }),
-              new TextRun({ text: "[I]", font: FONT, size: 14, bold: true, color: PROV_COLOR.inferred }),
-              t(" Inferred — reasoning from sourced facts.  ", { size: 14, color: SECOND }),
-              new TextRun({ text: "[C]", font: FONT, size: 14, bold: true, color: PROV_COLOR.created }),
-              t(" Created — original analysis for this note, flagged deliberately.  Citations and reasoning chains are in Annex C.", { size: 14, color: SECOND }),
-            ],
-            spacing: { after: 0, line: 240 },
-          }),
-        ],
-      })],
-    })],
-    width: { size: CONTENT_W, type: WidthType.DXA },
-    columnWidths: [CONTENT_W], layout: "fixed",
-  }));
+  // The provenance key now sits on page 1 at first use, in the basis line.
   return k;
 }
 

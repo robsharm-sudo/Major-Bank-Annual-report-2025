@@ -182,10 +182,11 @@ function statTiles(nums) {
   const w = Math.floor(CONTENT_W / n);
   return [new Table({
     rows: [new TableRow({
+      cantSplit: true,   // never let the tiles break across a page
       children: nums.slice(0, n).map(s => new TableCell({
         width: { size: w, type: WidthType.DXA },
         shading: { type: ShadingType.CLEAR, fill: TINT, color: "auto" },
-        margins: { top: 130, bottom: 130, left: 150, right: 150 },
+        margins: { top: 85, bottom: 85, left: 140, right: 140 },
         borders: {
           top: { style: BorderStyle.SINGLE, size: 14, color: COBALT },
           bottom: noBorder,
@@ -194,11 +195,11 @@ function statTiles(nums) {
         },
         children: [
           new Paragraph({
-            children: [t(s.figure, { size: 34, bold: true, color: NAVY })],
-            spacing: { after: 30, line: 300 },
+            children: [t(s.figure, { size: 30, bold: true, color: NAVY })],
+            spacing: { after: 24, line: 270 },
           }),
           new Paragraph({
-            children: [t(s.meaning, { size: 14, color: SECOND }), prov(s.provenance)],
+            children: [t(s.meaning, { size: 13, color: SECOND }), prov(s.provenance)],
             spacing: { after: 0, line: 230 },
           }),
         ],
@@ -229,11 +230,27 @@ function callout(title, lines, color = NAVY) {
             children: [t(title, { size: 19, bold: true, color, caps: true })],
             spacing: { after: 80, line: 240 },
           }),
-          ...lines.map(l => new Paragraph({
-            children: Array.isArray(l) ? l : [t(l, { size: 18 })],
-            numbering: { reference: "brief-bullets", level: 0 },
-            spacing: { after: 60, line: 258 },
-          })),
+          ...lines.map(l => {
+            // Bottom-line bullets are objects carrying provenance, so the most
+            // quoted claims on page 1 are marked like every other claim in the
+            // note. A custom `mark` covers mixed cases (e.g. sourced figures
+            // combined with an original comparison).
+            let kids;
+            if (Array.isArray(l)) kids = l;
+            else if (typeof l === "string") kids = [t(l, { size: 17 })];
+            else {
+              kids = [t(l.text, { size: 17 })];
+              kids.push(l.mark
+                ? new TextRun({ text: ` ${l.mark}`, font: FONT, size: 12,
+                    color: MUTED, bold: true, superScript: true })
+                : prov(l.provenance));
+            }
+            return new Paragraph({
+              children: kids,
+              numbering: { reference: "brief-bullets", level: 0 },
+              spacing: { after: 60, line: 258 },
+            });
+          }),
         ],
       })],
     })],

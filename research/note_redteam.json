@@ -1,0 +1,289 @@
+{
+  "fixes": [
+    {
+      "quote": "The supervisory cohort is already named: the platform and wrap trustees identified in APRA's December 2024 thematic review, who hold the highest share of very large accounts and face the hardest attribution problem. [I]",
+      "location": "Implications, 'By Q4 2026' bullet, page 3",
+      "problem": "wrong-citation",
+      "severity": "critical",
+      "why": "Two separate evidence bases are fused and both attributed to one publication. APRA's 17 December 2024 review is 'Governance of unlisted asset valuation and liquidity risk management in superannuation' \u2014 it covered 23 licensees on valuation and liquidity governance, named no trustees, and says nothing about member account size. The account-concentration evidence is a different source entirely: the note's own register derives it from APRA Quarterly Superannuation Fund Statistics, March 2026, Table 3 (Macquarie 8.17% of accounts above $1m, Avanteos 7.37%, ASGARD 6.57%, Netwealth 5.89%, HUB24 4.77%, against 0.89% for industry funds). The register's own recommended position says to 'cite the December 2024 thematic only as indicative evidence of general governance capacity, flagged as such', and adds a CORRECTED REASONING note that the thematic 'is not evidence about tax and member administration capability'. The note drops the flag and converts indicative background into a naming. 'Already named' compounds it by implying APRA has designated the cohort.",
+      "fix": "By Q4 2026  A defensible cohort can be built from material APRA already holds, without new collection: platform, wrap and member-directed trustees, where members pick their own investments and the attribution method actually changes the answer, and which show the highest concentration of accounts above $1 million in APRA's own Quarterly Superannuation Fund Statistics (March 2026, Table 3). APRA's December 2024 thematic is indicative of general governance capacity in that group, not evidence about tax and member administration. [I]",
+      "confidence": "certain"
+    },
+    {
+      "quote": "It is not a liquidity event, and the evidence says so. In APRA's own System Risk Stress Test, six large funds absorbed $174 billion of cumulative liquidity demand \u2014 just under 16 per cent of net assets \u2014 while largely avoiding sales of unlisted assets, primarily selling listed equities instead. Division 296 outflows are a small fraction of that. A framing built on forced asset sales would not survive scrutiny.",
+      "location": "The bottom line, bullet 2, page 1",
+      "problem": "unsupported",
+      "severity": "critical",
+      "why": "The comparison has no numerator anywhere in the note. The stress test is a modelled severe-but-plausible scenario, so it calibrates capacity rather than evidencing Division 296 outflow \u2014 the register describes it exactly that way ('the right calibration against which to judge Division 296 outflow'), not as proof. The register already holds the missing number and the warning: an indicative $0.9bn a year on the APRA side (Treasury's superseded-design $2.3bn scaled by the 31,800-of-80,000 share), about 1.1% of annual lump sums, 0.03% of assets, about 3% of a single $30bn peak month \u2014 with the explicit note that an earlier version of this comparison mixed numerators and 'is wrong'. The register also records the composition effect (unlisted share rising ~29% to ~37%) as 'the reason liquidity should not be dismissed entirely'. Presenting an unverified own-derivation as 'the evidence says so', unmarked, in the most quotable paragraph in the document is the single largest credibility exposure here.",
+      "fix": "It is unlikely to be a liquidity event, and there is a benchmark for that. In APRA's System Risk Stress Test, six large funds absorbed $174 billion of cumulative liquidity demand \u2014 just under 16 per cent of net assets, with monthly calls peaking near $30 billion \u2014 while largely avoiding sales of unlisted assets, primarily selling listed equities instead. No official estimate of Division 296 outflow exists; scaling Treasury's superseded-design costing to the APRA-regulated share gives an indicative $0.9 billion a year, of the order of 1 per cent of the lump sums those funds already pay and about 3 per cent of a single peak month in the stress test. On that order of magnitude a forced-asset-sale framing is not supported. The residual point is composition, not cash: meeting calls by selling listed assets lifted the unlisted share of MySuper options from roughly 29 to 37 per cent. [S] figures \u00b7 [C] comparison",
+      "confidence": "certain"
+    },
+    {
+      "quote": "Every large APRA-regulated fund must split fund earnings between members on a 'fair and reasonable' basis it designs itself, and report that figure to the ATO. Two funds holding identical assets for identical members can lawfully report different numbers. No prudential instrument governs how that judgement is made, signed off or independently checked.",
+      "location": "The bottom line, bullet 3, page 1",
+      "problem": "overclaim",
+      "severity": "material",
+      "why": "Three overstatements in the note's most-quoted operative claim. (1) The statutory dividing line is member count, not fund size \u2014 the note's own provisions table says the 'fair and reasonable' standard applies to funds with more than six members and the prescribed formula to funds with six or fewer. (2) Reporting is request-driven, not a standing return: the note's own P2 text says funds 'answer the Tax Office when it asks', with 28 calendar days for other APRA funds and 10 business days for defined benefit and alternative-method funds. A fund with no in-scope member has nothing to attribute. (3) The unbounded universal negative rests on a 27-instrument review; bounding it to that review costs nothing and makes it unanswerable. Separately, the register's own P3 concedes that 'nobody has measured how far two lawful methods actually diverge, so the size of the equity problem is currently asserted rather than known' \u2014 stating the divergence flatly implies a materiality the research declines to assert.",
+      "fix": "The material change is that a trustee judgement now feeds an individual member's personal tax bill. Any APRA-regulated fund with more than six members and at least one member above the threshold must split fund earnings on a 'fair and reasonable' basis it designs itself, and produce that figure to the ATO on request \u2014 28 calendar days for most funds, 10 business days for defined benefit interests. Two funds holding identical assets for identical members can lawfully report different numbers; how far apart has never been measured, and that dispersion is the most consequential unknown here. None of the 27 prudential instruments examined governs how the judgement is made, signed off or independently checked. [I]",
+      "confidence": "certain"
+    },
+    {
+      "quote": "Of 27 instruments examined, 11 need no change at all and only one needs amending \u2014 SRS 611.0, APRA's own member accounts collection, which cannot see above $1 million. The gaps are guidance, supervisory attention, and data \u2014 not authority.",
+      "location": "The bottom line, bullet 4, page 1",
+      "problem": "misleading-framing",
+      "severity": "material",
+      "why": "Two problems. (1) Pairing '11 need no change at all' with 'only one needs amending' invites the reading that 26 of 27 instruments are untouched, when 15 of 27 require some action. Page 3 gives the full split correctly (11 / 11 / 4 / 1) \u2014 the bottom line silently drops the 15 in the middle, then asserts the gaps are 'guidance, supervisory attention, and data', which is precisely the population it just omitted. The conclusion is defensible on the full breakdown; it does not need the compression. (2) 'Cannot see above $1 million' is wrong. The top Members Benefit Bracket Type in SRF 611.0 is '$1,000,000+', an open-ended bracket \u2014 the register cites the instructions verbatim, and APRA publishes 305,000 accounts holding $441bn in it. The blind spot is resolution within the bracket, not visibility above the line. Page 3's 'stops at' has the same defect.",
+      "fix": "The prudential framework mostly already covers this. Of 27 instruments examined, 11 need no change, 11 need supervisory attention, 4 warrant updated guidance, and exactly one needs amending \u2014 SRS 611.0, APRA's own member accounts collection, whose top bracket is an open-ended '$1,000,000+', so it cannot tell a $1.1 million account from a $20 million one. The gaps are guidance, supervisory attention and data \u2014 not authority. [I]",
+      "confidence": "certain"
+    },
+    {
+      "quote": "The two thresholds, both now indexed. Extra tax applies only to the share of earnings above them \u2014 so someone just over $3m pays very little. [S]",
+      "location": "Stat tile 1 ($3m / $10m), page 1",
+      "problem": "unsupported",
+      "severity": "material",
+      "why": "The note never states, anywhere, what an affected member actually pays. 'Very little' is a conclusion without the arithmetic that supports it, marked [S] to 'Enacted design' when it is a derivation. The register holds the figures and flags their omission as a mistake in terms: '$1,800 at $3.2m, $9,000 at $4m, $63,000 at $10m, on a 6% earnings assumption ... It is the single most useful number in the pack and should appear in the brief.' The arithmetic checks: $3.2m x 6% = $192,000 earnings; (3.2-3)/3.2 = 6.25%; $12,000 taxable; at 15% = $1,800. Without it the tile asks for trust, and the behavioural argument that a member at $3.2m has no incentive to restructure loses its support. The wording is also loose: the proportion is taken from the balance, not by ranking earnings against a threshold.",
+      "fix": "The two thresholds, both now indexed. Extra tax applies only to the share of earnings matching the part of the balance above them: on a 6 per cent earnings assumption a member at $3.2m owes about $1,800, at $4m about $9,000, at $10m about $63,000. [S] design \u00b7 [C] own arithmetic from (TSB \u2212 $3m)/TSB",
+      "confidence": "certain"
+    },
+    {
+      "quote": "The attribution standard is a discretion, not a formula. The dividing line is fund size, not which regulator applies, so the loose 'fair and reasonable' test falls on the large funds holding almost all the money. [S]",
+      "location": "'Why this is a prudential matter', bullet 2, page 2",
+      "problem": "factually-wrong",
+      "severity": "material",
+      "why": "Three defects in one [S]-marked sentence. (1) 'Fund size' is wrong \u2014 the boundary is member count. A small APRA fund with $500m and four members gets the prescribed formula and an annual actuarial certificate; a $50m fund with 200 members gets the discretion. The sentence also erases the fact that APRA's own small funds carry the formula-plus-certificate burden. (2) 'Almost all the money' is unquantified and cuts against the note's own Figure A1, which puts more than six in ten affected members outside the APRA perimeter. (3) The [S] mark is not earned: the register's residual uncertainties record that 'the operative attribution text in F2026L00726 could not be read directly ... The \"more than six members\" boundary, the \"fair and reasonable\" wording, the prescribed formula and actuarial certificate for small funds ... all rest on the Bills Digest, industry submissions and practitioner commentary on the draft, not on the made instrument.' That is [I]. 'Loose' is also a pejorative characterisation of a statutory standard appearing inside a sourced mark.",
+      "fix": "The attribution standard is a discretion, not a formula. The dividing line is member count, not which regulator applies: funds with more than six members design their own 'fair and reasonable' basis, while funds of six or fewer \u2014 including APRA's own small funds \u2014 get a prescribed formula and an annual actuarial certificate. The principles-based test therefore falls on every APRA-regulated fund of any size. [I]",
+      "confidence": "certain"
+    },
+    {
+      "quote": "The authority already exists. SPG 530 expressly names a change in government policy affecting access to member assets as a liquidity stress factor, and CPS 230 already requires fund administration to be treated as a critical operation.",
+      "location": "'What the prudential framework actually needs', page 3",
+      "problem": "misleading-framing",
+      "severity": "material",
+      "why": "The four-word assertion is carried by two citations, only one of which is authority. SPG 530 is a Prudential Practice Guide: para 79 is framed as what a prudent RSE licensee 'would consider', and 79(e) gives 'policy driven events: a change in Government policy, for example, related to access to accrued member assets' as one such factor \u2014 accurate as a quotation, but it creates no obligation. The mandatory stress-testing hook is SPS 530 (the register's own instrument list cites 'SPS 530 paras 31-38, comprehensive investment stress testing programme at para 31'), which the note never cites. CPS 230 para 36 is also a rebuttable default: entities must classify the listed operations as critical 'unless it can justify otherwise', and para 36(c) covers investment management as well as fund administration. Presenting a practice guide as authority is the objection a regulator in the room will make first, and the note does not need it \u2014 the enforceable hooks are stronger.",
+      "fix": "The authority already exists. SPS 530 requires a Board-approved investment stress testing programme covering adverse scenarios, and SPG 530 para 79(e) expressly names a change in government policy affecting access to accrued member assets as a liquidity stress factor a prudent licensee would consider; CPS 230 para 36(c) requires an RSE licensee to classify investment management and fund administration as critical operations unless it can justify otherwise.",
+      "confidence": "certain"
+    },
+    {
+      "quote": "A short letter to RSE licensees confirming that existing obligations already apply would need no new instrument \u2014 fund administration as a critical operation under CPS 230, policy-driven liquidity stress under SPG 530, and the annual board risk declaration under SPS 220. [C]",
+      "location": "Implications, second 'Now' bullet, page 3",
+      "problem": "misleading-framing",
+      "severity": "material",
+      "why": "Same defect as the framework section, in the recommendation that would actually be actioned. Two of the three items are enforceable standards; the middle one is a practice guide and cannot sit in a list headed 'existing obligations'. The instrument name is also wrong \u2014 SPS 220 requires an annual risk management declaration signed by two directors, not a 'board risk declaration'. Separately, drafting the regulator's communication for it, and pronouncing on its legal feasibility, sits awkwardly with the basis line's disclaimer of affiliation; the analytical content survives a neutral restatement intact.",
+      "fix": "Now  Confirming that existing obligations already attach would not require a new instrument: fund administration as a critical operation under CPS 230 para 36(c), investment stress testing covering adverse scenarios under SPS 530, and the annual risk management declaration under SPS 220. SPG 530 already names policy-driven liquidity stress as a factor a prudent licensee would consider, but it is guidance rather than an enforceable standard. [C]",
+      "confidence": "certain"
+    },
+    {
+      "quote": "The data gap is fixable: extend the SRS 611.0 balance brackets above the thresholds, decompose SRS 551.0 outflows by driver, and agree an information-sharing route with the ATO for total superannuation balance. [I]",
+      "location": "Implications, '2027' bullet, page 3",
+      "problem": "overclaim",
+      "severity": "material",
+      "why": "'Fixable' is asserted for three items the register records as open, and the most important of the three may not be lawful. The register's own recommended position says: 'Before recommending an ATO data exchange, establish whether taxation secrecy permits it and whether the existing memorandum of understanding covers it; if not, the ask is a legislated disclosure exception, not an administrative arrangement', and separately flags as unverified 'whether Division 355 permits the ATO to give APRA aggregated by-fund Division 296 data'. On the first item the register flags an unresolved re-identification constraint on publishing fund-level counts in a $10m+ bracket. On the second it flags a GAP: 'could not obtain SRS 710.0 Conditions of Release or SRS 610.1 Changes in Membership Profile; check whether either decomposes outflows by reason before concluding no collection does.' Presenting a possibly-unlawful data exchange as a matter of agreement is the claim most likely to fail in the room.",
+      "fix": "2027  Two parts of the data gap sit within APRA's own collections: the SRS 611.0 balance brackets could be extended above the thresholds \u2014 subject to re-identification limits on publishing fund-level counts \u2014 and outflows decomposed by driver, after checking whether SRS 710.0 or SRS 610.1 already does so. The third does not: an ATO information-sharing route for total superannuation balance turns on whether the taxation secrecy provisions permit it. Settle that question first; if the answer is no, the remedy is legislative and belongs to Treasury. [I]",
+      "confidence": "certain"
+    },
+    {
+      "quote": "Payday Super also commenced 1 July 2026, the same day Division 296 commences.",
+      "location": "Annex \u2014 source line for P7; the same conflation recurs at roughly ten further annex points, including 'commenced 1 July 2026' in P5, P7, the enacted-law summary, the P7 reasoning chain and the transfer-protocol and change-saturation recommendations",
+      "problem": "internally-inconsistent",
+      "severity": "material",
+      "why": "The bottom line has been corrected to 'commenced on 1 April 2026 ... applies from the 2026-27 income year', and Figure 4 now carries '1 Apr 2026 Division 296 commences'. The annex was not swept and still says Division 296 commenced 1 July 2026 throughout. A reader who checks page 1 against the annex finds the note contradicting itself on its own headline date. The point is load-bearing: issue P7 ('Two major changes commence on the same day', Grade B) and the change-saturation recommendation both rest on it. The collision argument survives entirely \u2014 it just has to be restated in application terms.",
+      "fix": "Global sweep of the annex: replace every instance of Division 296 'commenced/commences 1 July 2026' with 'first applies from 1 July 2026 (the start of the 2026-27 income year)'. For the P7 source line: 'Payday Super commenced on 1 July 2026, the day Division 296 first applies \u2014 both changes therefore land on the same administration platforms, data pipelines and finite change capacity in the same period.' Retitle P7 to 'Two major changes land on the same day, in the same systems, at the same providers \u2014 and Division 296 is the one that will get deprioritised'.",
+      "confidence": "certain"
+    },
+    {
+      "quote": "This is not a proposal. Division 296 received Royal Assent on 13 March 2026 and commenced on 1 April 2026.",
+      "location": "The bottom line \u2014 all four bullets carry no provenance mark, page 1",
+      "problem": "provenance-gap",
+      "severity": "material",
+      "why": "The note's legend states that every claim carries [S], [I] or [C], and the rest of the document observes it \u2014 why_prudential, the recommendations and the stat tiles all have provenance fields. The four bottom-line bullets are the only unmarked assertions on the page, and they carry the note's strongest and most quotable claims. A reader who has learned the convention on pages 2 and 3 will read their absence on page 1 as 'these need no attribution', which is the reverse of the truth: bullet 2 is an unverified own-derivation and bullet 3 rests on an instrument the register records as never read directly. This is a schema omission, not a design choice \u2014 bottom_line in prose.json is a bare array of strings while every neighbouring block has a provenance field.",
+      "fix": "Add a provenance field to bottom_line in build/prose.json and render marks on all four bullets. Bullet 1 [S]; bullets 2, 3 and 4 carry the marks set out in the replacements above ([S] figures \u00b7 [C] comparison; [I]; [I]).",
+      "confidence": "certain"
+    },
+    {
+      "quote": "Treasury expected 31,800 of about 80,000 affected individuals to sit in APRA-regulated funds or exempt public sector schemes",
+      "location": "Figure A1 subtitle, with bar labels 'In APRA-regulated funds' and 'Where APRA's standards and data apply'",
+      "problem": "misleading-framing",
+      "severity": "material",
+      "why": "The chart labels the 40 per cent bar 'In APRA-regulated funds / Where APRA's standards and data apply', while its own subtitle concedes the 31,800 includes exempt public sector schemes, which APRA does not supervise. The in-perimeter share is therefore below 40 per cent, and the note understates its own case. The register is explicit that the figure 'is from the January 2024 Impact Analysis, struck on 2022-vintage data under the superseded change-in-balance design'. Rendering a four-year-old, superseded-design estimate as a clean 60/40 split gives it a precision it does not have \u2014 and the same caveat is why the note's own $0.9bn derivation is flagged as order-of-magnitude only.",
+      "fix": "Relabel the 40 per cent bar 'In APRA-regulated funds or exempt public sector schemes' with the sub-label 'APRA supervises only part of this'. Replace the note with: 'Source: Treasury Impact Analysis, January 2024 \u2014 struck on 2022 data under the superseded change-in-balance design, and the only Commonwealth estimate available. APRA supervises neither self-managed funds nor exempt public sector schemes, so more than six in ten affected members sit outside the perimeter. No headcount has been published for the enacted design.'",
+      "confidence": "certain"
+    },
+    {
+      "quote": "Carry a prudential perspective into the attribution work still under way. APRA engages with Treasury and the ATO, and the remaining calculation and attribution design is progressing through an ATO co-design process.",
+      "location": "Implications, first 'Now' bullet, page 3",
+      "problem": "internally-inconsistent",
+      "severity": "material",
+      "why": "Two problems. (1) The binding attribution rules were settled by the regulations the note's own bullet 1 calls 'the final regulations', registered 18 June 2026. What remains open is the ATO's guidance on applying them \u2014 the register puts it precisely: 'the ruling's move from draft to final is the point at which the method effectively fixes'. Describing the design itself as still in co-design contradicts page 1 and overstates the window for influence. (2) The bare imperative to a regulator is the first thing the reader meets after the heading, so it sets the register for all six bullets, and it sits directly against the basis line's statement that the note is not affiliated with or endorsed by APRA. The rest of the bullet is already indicative; only the opening sentence needs to move.",
+      "fix": "Now  The attribution work still under way is the last point at which prudential and member-outcomes considerations can be reflected in how the measure operates. The attribution rule itself is settled in the final regulations; what remains open is the ATO's guidance on applying it, which is being developed with industry through a co-design process. APRA engages with Treasury and the ATO. [C]",
+      "confidence": "certain"
+    },
+    {
+      "quote": "The runway \u2014 and APRA's window to act",
+      "location": "Section heading, page 3, with the Figure 4 note 'Influence over calculation and attribution is real only until the ATO co-design work concludes.'",
+      "problem": "tone-reads-as-insider",
+      "severity": "material",
+      "why": "Both the heading and the note are written from the position of a party with a window and an influence to exercise. Whose influence is never stated, and the note's basis line disclaims affiliation with the only party the sentence can be about. The underlying timing point \u2014 that the method fixes when the ATO ruling finalises, and the first measurement locks at 30 June 2027 \u2014 is sound and survives neutral restatement without losing any force.",
+      "fix": "Heading: 'The runway \u2014 when the method fixes'. Figure 4 note: 'The calculation and attribution method can still change while the ATO guidance is being developed. After 30 June 2027 the first measurement is locked.'",
+      "confidence": "likely"
+    },
+    {
+      "quote": "Made 11 June 2026, registered 18 June 2026 \u2014 twelve days before the first measurement year began.",
+      "location": "Provisions table, F2026L00726 row; repeated twice in Annex E and once in the P2 evidence line",
+      "problem": "factually-wrong",
+      "severity": "minor",
+      "why": "Off by one. Registration was 18 June 2026 and the first measurement year began 1 July 2026: June has 30 days, so 18 June plus 13 days is 1 July. Twelve days lands on 30 June, the last day before the year began. Bullet 1 was already corrected to 'less than a fortnight', which is right, but the annex and the provisions table still carry the arithmetic \u2014 and it appears in the one sentence whose whole rhetorical purpose is the shortness of the interval, which is exactly what a hostile reader checks with a calendar.",
+      "fix": "Made 11 June 2026, registered 18 June 2026 \u2014 thirteen days before the first measurement year began. (Apply to all four occurrences.)",
+      "confidence": "certain"
+    },
+    {
+      "quote": "There is a hard new duty on a short clock: 14 days for a fund to tell the ATO when an end benefit will be paid, and 7 to correct an error \u2014 attached to debt accounts that must survive mergers, transfers and changes of administrator. [S]",
+      "location": "'Why this is a prudential matter', bullet 4, page 2",
+      "problem": "factually-wrong",
+      "severity": "minor",
+      "why": "The Division 296 debt account is kept by the Commissioner, not by the fund \u2014 the note's own provisions table says so ('Where the Commissioner keeps a Division 296 debt account for an interest and the end benefit becomes payable, the provider must notify...'). What must survive a merger or a change of administrator is the fund's member-level record-keeping and the notification duty sitting behind the Commissioner's account. The [S] mark also over-reaches on the survival limb: the 14 and 7 day clocks are sourced to s 134-140 and s 134-145, but the transfer point is inferred, and the register records that 'the protocol for carrying member-level Division 296 information through a successor fund transfer or intra-fund transfer needs to be settled'.",
+      "fix": "There is a hard new duty on a short clock: 14 days for a fund to tell the ATO when an end benefit will be paid, and 7 to correct a material error. The Commissioner keeps the Division 296 debt account for decades, so the fund's member-level records behind it must survive mergers, transfers and changes of administrator \u2014 on a transfer protocol that has not yet been settled. [S/I]",
+      "confidence": "certain"
+    },
+    {
+      "quote": "and industry has asked that the judgement sit outside AFCA's reach",
+      "location": "'Why this is a prudential matter', bullet 3, page 2",
+      "problem": "unsupported",
+      "severity": "minor",
+      "why": "The ask is traceable to one body. The register carries the ASFA submission of 7 April 2026 verbatim \u2014 'the Regulations make it clear that fair and reasonable estimates of realised investment income by funds ... are outside of the scope of matters subject to AFCA review' \u2014 and no equivalent request is recorded from any other submitter. 'Industry' implies a common position that the evidence base does not establish, and it is the kind of generalisation an industry body in the room will correct on the spot. Naming ASFA costs one word and makes the point sharper, not weaker.",
+      "fix": "and ASFA has asked that the judgement sit outside AFCA's reach",
+      "confidence": "certain"
+    },
+    {
+      "quote": "First measurement of balances. The attribution method needs to be settled, documented and reproducible well before it. [S]",
+      "location": "Stat tile 3 (30 Jun 2027), page 1",
+      "problem": "provenance-gap",
+      "severity": "minor",
+      "why": "The date is sourced; the prescription is not. No citable document says the method must be settled 'well before' the measurement date \u2014 that is the note's own inference from the fact that the year is already running. Marking a normative 'ought' as [S] Sourced against IT(TP)A 1997 s 296-1 is the clearest register failure on page 1, and it is the mark a careful reader checks first because the sentence is the tile's whole payload. The substance is right and should stay; only the mark is wrong.",
+      "fix": "First measurement of balances. The attribution method needs to be settled, documented and reproducible well before it. [I]",
+      "confidence": "certain"
+    },
+    {
+      "quote": "APRA's highest member balance bracket \u2014 one third of the lower threshold. The affected population cannot be counted or located from APRA's own collections. [S]",
+      "location": "Stat tile 2 ($1m+), page 1",
+      "problem": "provenance-gap",
+      "severity": "minor",
+      "why": "The bracket ceiling is sourced to SRF 611.0; the conclusion that the affected population cannot be counted or located is an inference drawn from it, and it depends on a further step made only on page 2 \u2014 that the threshold spans everything a person holds across every fund. The register states the chain explicitly as an INFERRED CHAIN. Also, 'APRA's own collections' appears three times in the note; the possessive adds a faint gotcha inflection that a note disclaiming affiliation does not need.",
+      "fix": "APRA's highest member balance bracket \u2014 one third of the lower threshold. The affected population cannot be counted or located from APRA's collections. [I]",
+      "confidence": "certain"
+    },
+    {
+      "quote": "exactly one needs amending \u2014 SRS 611.0, APRA's own member accounts collection, whose highest balance bracket stops at a third of the lower threshold",
+      "location": "'What the prudential framework actually needs', page 3",
+      "problem": "internally-inconsistent",
+      "severity": "minor",
+      "why": "The bracket does not stop at $1,000,000 \u2014 it opens there and is unbounded above ('$1,000,000+'). The note's own 2027 recommendation gets this right ('extend the SRS 611.0 balance brackets above the thresholds'), which only makes sense if the existing top bracket is open-ended rather than truncated. The register's inferred chain states the real defect: 'More brackets improve large-account visibility but cannot produce the threshold view.'",
+      "fix": "exactly one needs amending \u2014 SRS 611.0, APRA's own member accounts collection, whose top bracket opens at $1,000,000 \u2014 a third of the lower threshold \u2014 and is not subdivided above it",
+      "confidence": "certain"
+    },
+    {
+      "quote": "APRA's highest published balance bracket is $1 million, and because the threshold spans everything a person holds, no per-fund collection could ever produce that view. [S]",
+      "location": "'Why this is a prudential matter', bullet 5, page 2",
+      "problem": "internally-inconsistent",
+      "severity": "minor",
+      "why": "As drafted this collides with the 2027 recommendation to 'extend the SRS 611.0 balance brackets above the thresholds', which is offered as a fix for the same gap. Two different views are being conflated. The register resolves it cleanly and the note drops the resolution: 'More brackets improve large-account visibility but cannot produce the threshold view.' Per-fund large-account visibility is observable and improvable; a person's total balance across every fund is not observable by APRA at all. Restoring the distinction saves both claims.",
+      "fix": "The affected population is largely invisible to the prudential regulator. APRA's highest published balance bracket is $1 million, and more brackets would show where the very large accounts sit \u2014 but because the threshold spans everything a person holds across every fund, no per-fund collection can produce the threshold view. Only the ATO holds that. [S]",
+      "confidence": "certain"
+    },
+    {
+      "quote": "Funds could be asked to model the 30 June 2027 measurement date \u2014 a stress SPG 530 already contemplates. [I]",
+      "location": "Implications, 'Before 30 Jun 2027' bullet, page 3",
+      "problem": "misleading-framing",
+      "severity": "minor",
+      "why": "SPG 530 is a practice guide: it creates no obligation and confers no authority to direct licensees to model a specific date. The passage relied on is para 79, framed as what a prudent RSE licensee 'would consider'. The mandatory hook is SPS 530's comprehensive investment stress testing programme covering adverse scenarios, which the register lists among P8's instruments and which the note never cites. Naming the binding standard alongside the guide strengthens the recommendation at no cost.",
+      "fix": "Before 30 Jun 2027  Modelling the 30 June 2027 measurement date falls within the investment stress testing programme SPS 530 already requires, and SPG 530 para 79(e) gives policy-driven events as an example of a liquidity stress factor a prudent licensee would consider. [I]",
+      "confidence": "likely"
+    },
+    {
+      "quote": "2026\u201327 \u00b7 ATO co-design group settles calculation and attribution",
+      "location": "Figure 4 timeline, fourth marker",
+      "problem": "unsupported",
+      "severity": "minor",
+      "why": "A prediction rendered as a scheduled milestone, and it contradicts bullet 1. The calculation and attribution rules are settled in the final regulations; what the co-design work is settling is administrative guidance. No completion date has been published \u2014 the register records that as at the ATO's 6 July 2026 update no Division 296 item appeared on its advice-under-development programme at all, so there is no basis for placing the settlement inside 2026-27. Given that the register identifies the ruling's move from draft to final as 'the point at which the method effectively fixes', a timeline that asserts the fixing date is the claim in the figure most likely to be wrong.",
+      "fix": "2026\u201327 \u00b7 ATO guidance on applying the calculation and attribution \u2014 in development, no completion date published",
+      "confidence": "certain"
+    },
+    {
+      "quote": "A = raise now \u00b7 B = press and monitor \u00b7 C = watch.  Scores out of 5.  All 18 issues are in Annex A.",
+      "location": "Grade legend, foot of the issues table, page 2",
+      "problem": "tone-reads-as-insider",
+      "severity": "minor",
+      "why": "The three grades are defined as instructions to the regulator rather than as descriptions of the issues, which contradicts the grading preamble two paragraphs above \u2014 that defines the grades on three descriptive dimensions (materiality, likelihood, and how directly APRA can act). An outside note can grade severity; 'raise now' tells the regulator what to do and is inconsistent with the note's own stated basis. Aligning the legend to the preamble also removes the reader's uncertainty about which definition is operative.",
+      "fix": "A = high materiality, directly actionable \u00b7 B = material, indirect or contingent \u00b7 C = peripheral to the prudential remit.  Scores out of 5.  All 18 issues are in Annex A.",
+      "confidence": "likely"
+    },
+    {
+      "quote": "supervisory attention on the cohort least able to absorb it",
+      "location": "Closing sentence of 'What the prudential framework actually needs', page 3",
+      "problem": "ambiguous",
+      "severity": "minor",
+      "why": "No cohort is identified in this sentence or anywhere on page 3, and 'least able to absorb it' is a capacity finding the note has not made and the register does not support. The page-3 recommendation names the cohort on a different basis entirely \u2014 attribution difficulty in member-directed options, and concentration of very large accounts. Two characterisations of the same cohort, neither cross-referenced, in adjacent paragraphs.",
+      "fix": "supervisory attention on the cohort facing the hardest attribution problem",
+      "confidence": "certain"
+    }
+  ],
+  "overall": "do-not-publish-until-fixed",
+  "rejected": [
+    {
+      "claim": "Bullet 1 says Division 296 'commenced on 1 July 2026' \u2014 commencement was 1 April 2026 (four reviewers, across all four lenses, two marking it critical).",
+      "why_rejected": "Already fixed. The shipped .docx reads 'received Royal Assent on 13 March 2026 and commenced on 1 April 2026. It applies from the 2026-27 income year, so the first measurement year has been running since 1 July 2026.' Four reviewers were working from build/_note_pages123.txt, a stale extract written at 06:13 against prose.json as it stood before the 06:27 correction. Nothing to do on page 1 \u2014 but the annex was NOT swept, and that live inconsistency is carried as a separate accepted fix."
+    },
+    {
+      "claim": "Figure 4 labels 1 July 2026 as 'Division 296 commences' (three reviewers, two marking it critical).",
+      "why_rejected": "Already fixed. make_figures.py now emits '1 Apr 2026 / Division 296 commences' and '1 Jul 2026 / 2026\u201327 income year: first measurement year begins', and the rendered fig4_timeline.png embedded in the .docx carries both. Separate cosmetic point the red team missed: in that render the '1 Jul 2026' label collides with the TODAY marker \u2014 worth nudging the marker x-position before the next build."
+    },
+    {
+      "claim": "'The ATO guidance explaining how to perform the calculation is still unwritten' \u2014 falsified by published ATO material; should be 'not yet published' (three reviewers).",
+      "why_rejected": "Already fixed. The shipped bullet 1 reads 'the ATO's law companion ruling explaining how to perform the calculation has not yet been published', and the annex P2 text independently says 'has not been published'. The reviewers' 'not published, not unwritten' analysis is correct and is exactly what the note now says. Note also that the specific ATO web-guidance and Superannuation Administration Group quotes offered by the 'numbers' reviewer as the correction do not appear in the note's evidence register and should not be pasted in unverified."
+    },
+    {
+      "claim": "Stat tile 3 and the Figure 4 note are wrong to call 30 June 2027 the 'first measurement': s 296-40(2) takes the greater of the opening (30 June 2026) and closing balance, so half the first measurement has already been struck and locked (two reviewers, one material, one material \u2014 a coordinated attack across the citations and logic lenses).",
+      "why_rejected": "Refuted by the note's own sourced evidence, and this is the one place the red team is confidently wrong in both directions. The register records: 'SOURCED: for 2026-27 liability is determined solely by the balance at the end of that year; from 2027-28 the reference amount is the greater of the opening and closing balance \u2014 Explanatory Memorandum para 1.219 via Bills Digest No. 48; ATO guidance on how Division 296 tax is calculated.' The greater-of rule is a steady-state rule with a first-year transitional carve-out that both reviewers read past. 30 June 2027 is the first measurement, the note is right, and the proposed 'the window is already half run' rewrite would introduce a fresh error into the most-read tile on page 1. Do not apply either version."
+    },
+    {
+      "claim": "Recommendation 3 is contradicted by the note's own annex: the material service provider register 'does not yet identify WHICH providers dominate the Division 296 build', so the page-3 claim that the registers 'can map which administrators will build this' asserts a capability the annex denies.",
+      "why_rejected": "Misreads the annex. The full register text is 'the register does not yet identify WHICH providers dominate the Division 296 build. That is an internal data query, not new collection, and should be run before the meeting' \u2014 i.e. APRA holds the data and has not yet run the query, which is precisely what 'can map' asserts. The register's own recommended position uses the same construction: 'Use the material service provider registers already held to map ... which administrators, custodians and tax agents will deliver the Division 296 calculation.' No inconsistency; the bullet stands as written."
+    },
+    {
+      "claim": "Figure 1's rate column should read 'up to 30%' and 'up to 40%', because the EM states the combined rates that way \u2014 15 per cent is a maximum fund rate and discounted capital gains are taxed at an effective 10 per cent.",
+      "why_rejected": "True in principle but unsupported in the note's own evidence base \u2014 the discounted-CGT point appears nowhere in register.json, so applying it would mean adding an unverified claim in response to a red team, which is worse than the defect. And relabelling the columns would blunt the only job that chart does. The existing footnote already carries the material qualifier ('Rates shown for accumulation-phase earnings. Retirement-phase earnings are untaxed in the fund, so the Division 296 charge there is the full 15% or 25% rather than an increment'). If the author wants it, verify against the EM first and add it as a footnote clause only \u2014 never in the column labels."
+    },
+    {
+      "claim": "Bullet 2's comparator should be sourced to revenue estimates of $100 million in 2027-28 and $2.05 billion in 2028-29.",
+      "why_rejected": "These figures are not in the register and conflict with the fiscal figures that are. The register's verified primary figure under the enacted design is MYEFO 2025-26 ('a $3.8bn decrease in receipts and $475.8m increase in payments over four years'), with Treasury's $2.3bn expressly flagged as superseded-design. Pasting in unsourced revenue numbers to fix an unsourced comparison compounds the original defect. The accepted fix for bullet 2 uses the register's own $0.9bn derivation, labelled as an order-of-magnitude estimate \u2014 which is what the research actually supports."
+    },
+    {
+      "claim": "Bullet 3's fix should cite reg 296-65.02's ten prescribed matters (paragraphs (a)-(j)), s 390-5(9)(ba) of Schedule 1 to the TAA 1953, and the s 296-70 formula carve-outs, and should note the basis is 'constrained, not self-designed'.",
+      "why_rejected": "The note cannot make these citations. The register's residual uncertainties are explicit: 'The operative attribution text in F2026L00726 could not be read directly \u2014 the Federal Register serves instrument documents through a JavaScript front end. The \"more than six members\" boundary, the \"fair and reasonable\" wording, the prescribed formula and actuarial certificate for small funds ... all rest on the Bills Digest, industry submissions and practitioner commentary on the draft, not on the made instrument.' Citing ten specific prescribed paragraphs from an instrument the research never read would convert a disclosed gap into a fabricated citation \u2014 a far worse defect than the one being fixed. The scope and mechanism corrections are accepted; the citation apparatus is not."
+    },
+    {
+      "claim": "'It is a member-equity problem wearing a tax label' is a rhetorical flourish that imputes intent \u2014 the tax label is implied to be a disguise.",
+      "why_rejected": "Overreads the metaphor. 'Wearing a tax label' describes how the measure is classified, not anyone's motive, and the sentence is doing real analytical work: it is the hinge on which the whole 'why this is prudential, not just tax' section turns. The proposed replacement ('The measure is framed as a tax, but its prudential character is one of member equity') says the same thing at twice the length and none of the force. Keep it."
+    },
+    {
+      "claim": "'This is not a proposal' opens by correcting an interlocutor who has not spoken.",
+      "why_rejected": "That is the sentence's job. The note's entire premise is that the design debate is over and the operational consequences are live \u2014 several annex entries exist specifically to retire arguments (paper gains, forced realisation, unindexed brackets) that the enacted design already answers. Opening by closing the design question is accurate, economical and load-bearing."
+    },
+    {
+      "claim": "'The most useful finding here is a negative one' has the author rating their own findings and presumes a purpose.",
+      "why_rejected": "Pedantic. 'Most useful' is ordinary analytical framing and signals to the reader that the section is about to disconfirm an expectation, which is genuinely useful information about how to read what follows. The proposed 'The principal finding' loses that signal for no gain."
+    },
+    {
+      "claim": "'A serious problem that belongs to Treasury is not automatically a priority for the prudential regulator' is written from inside the regulator's chair \u2014 it allocates ownership and sets priorities.",
+      "why_rejected": "Pedantic. Stating that a problem sits with the policy owner rather than the prudential regulator is a remit observation any outside analyst can make, and the sentence exists precisely to explain why the grading does not simply track severity. The proposed rewrite is a synonym swap."
+    },
+    {
+      "claim": "The P2 issue title 'on someone else's clock' is a colloquial flourish in a graded register entry.",
+      "why_rejected": "Low value and low visibility. The phrase is precise \u2014 the deadlines genuinely are set externally by the ATO \u2014 and the page-2 table already renders the title truncated to 'Fund administration must now perform a new statutory calculation', so the phrase survives only in the annex. Not worth an edit pass."
+    },
+    {
+      "claim": "The 'What this implies for APRA' heading mismatches six bullets written as a workplan; the horizon labels should be retitled from action-forcing to timing labels.",
+      "why_rejected": "Largely moot and partly wrong. The shipped heading is 'Implications', not 'What this implies for APRA', so the specific mismatch alleged does not exist. The horizon labels (Now / By Q4 2026 / Before 30 Jun 2027 / 2027) are already timing labels, not imperatives. The genuine residue \u2014 imperative voice in individual bullets \u2014 is addressed by the accepted per-bullet fixes to recommendations 1, 2, 5 and 6; a wholesale structural recast would be churn."
+    }
+  ],
+  "summary": "Two criticals must be fixed before this goes out: the 'By Q4 2026' cohort recommendation attributes to APRA's December 2024 thematic a finding that publication does not contain (the account-concentration evidence is Quarterly Superannuation Fund Statistics March 2026 Table 3, and your own register instructs you to flag the thematic as indicative only), and bottom-line bullet 2 asserts 'the evidence says so' for a comparison with no numerator anywhere in the note \u2014 your register already holds the $0.9bn derivation, the caveat that it is order-of-magnitude only, and the composition effect that cuts against a flat 'not a liquidity event'. Beyond those, the pattern worth fixing systematically is that page 1 carries the note's strongest claims with no provenance marks at all while every other page marks everything, and that SPG 530 is cited as authority in three places where the enforceable hook is SPS 530 or CPS 230 \u2014 both are exactly what a regulator in the room rebuts first. Four of the red team's headline findings (the 1 July commencement date in bullet 1, the Figure 4 label, 'still unwritten') were raised against build/_note_pages123.txt, a stale extract, and are already correct in the shipped .docx \u2014 but the annex was never swept and still says Division 296 'commenced 1 July 2026' in about ten places, which now contradicts your own page 1; and the coordinated two-reviewer attack claiming the 30 June 2026 opening balance is part of the first measurement is refuted by your own sourced EM para 1.219 note, so reject it in both places."
+}
