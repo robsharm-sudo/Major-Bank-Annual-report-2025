@@ -1,4 +1,4 @@
-/** Lays out the Division 296 prudential brief. Required by build_docx.js. */
+/** Lays out the Division 296 prudential research note. Required by build_docx.js. */
 const B = require("./build_docx.js");
 const fs = require("fs");
 const {
@@ -216,7 +216,7 @@ function annexes() {
     spacing: { after: 60, line: 330 },
     border: { bottom: { style: BorderStyle.SINGLE, size: 12, color: TEAL, space: 8 } },
   }));
-  k.push(para("Every claim in the three-page brief traces back to this annex. Nothing is asserted without a provenance mark, and all sources are public.", { after: 160, size: 17, color: SECOND }));
+  k.push(para("Every claim in the three-page note traces back to this annex. Nothing is asserted without a provenance mark, and all sources are public.", { after: 160, size: 17, color: SECOND }));
 
   // Where each part of the machinery actually sits. Placed first because the
   // numbering genuinely misleads - Division 296 itself obliges no fund.
@@ -330,7 +330,7 @@ function annexes() {
   // --- Annex C: audit trail
   k.push(pageBreak());
   k.push(h2("Annex C — Provenance and fact-check audit trail", { before: 0 }));
-  k.push(para("Every material assertion in the brief, classified and checked. 'Created' entries are original analysis written for this meeting and are marked so they are never mistaken for sourced fact.", { after: 120, size: 17, color: SECOND }));
+  k.push(para("Every material assertion in the note, classified and checked. 'Created' entries are original analysis written for this note and are marked so they are never mistaken for sourced fact.", { after: 120, size: 17, color: SECOND }));
   const WC = [3900, 800, 4306, 900];
   k.push(table(
     [

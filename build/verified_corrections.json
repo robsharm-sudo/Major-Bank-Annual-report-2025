@@ -1,6 +1,5 @@
 {
   "_note": "Paragraph-level corrections verified by reading the in-force instruments directly, not taken on trust from any agent. Applied by assemble.js across every text field of the register so a wrong citation cannot reach the page. Each entry records what was checked and how.",
-
   "corrections": [
     {
       "find": "CPS 230 para 23",
@@ -28,7 +27,6 @@
       "why": "Range began at the wrong paragraph for the same reason."
     }
   ],
-
   "verified_facts": [
     {
       "fact": "Subdivision 296-A of the ITAA 1997 contains only s 296-5, an objects clause, and imposes no obligation on any party.",
@@ -46,5 +44,38 @@
       "fact": "s 134-145 of Schedule 1 to the Taxation Administration Act 1953 requires a material change or omission in a s 134-140 notice to be corrected within 7 days of the entity becoming aware of it.",
       "basis": "Read verbatim from the as-made Act."
     }
-  ]
+  ],
+  "terminology": [
+    {
+      "find": "the brief",
+      "replace": "the note",
+      "why": "The document is a research note, not a brief. Applied to the researched register text so terminology is consistent throughout."
+    },
+    {
+      "find": "this brief",
+      "replace": "this note",
+      "why": "Same."
+    },
+    {
+      "find": "The brief",
+      "replace": "The note",
+      "why": "Same, sentence-initial."
+    },
+    {
+      "find": "This brief",
+      "replace": "This note",
+      "why": "Same, sentence-initial."
+    },
+    {
+      "find": "three-page brief",
+      "replace": "three-page note",
+      "why": "Same."
+    },
+    {
+      "find": "CEO brief",
+      "replace": "CEO-level note",
+      "why": "Refers to this document, which is a research note. The bare verb sense ('brief APRA's life insurance supervision') is deliberately left untouched."
+    }
+  ],
+  "_terminology_note": "Deliberately narrow patterns. A blanket brief->note substitution would corrupt the verb sense, which appears in the register as 'brief APRA's life insurance supervision'."
 }
