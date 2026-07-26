@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+build/*.pdf
+build/page-*.png
+build/page-*.jpg
+__pycache__/
+*.pyc
