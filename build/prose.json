@@ -11,7 +11,7 @@
     "This is not a proposal. Division 296 has been law since March and started on 1 July 2026. We are already inside the first measurement year. The final regulations were registered twelve days before it began, and the Tax Office guidance explaining how to do the calculation is still unwritten.",
     "It is not a liquidity event, and we should say so. In our own System Risk Stress Test, six large funds absorbed $174 billion of cumulative liquidity demand — just under 16 per cent of net assets — while largely avoiding sales of unlisted assets, primarily selling listed equities instead. Division 296 outflows are a small fraction of that. Leading with a liquidity warning would be wrong, and people in the room will know it.",
     "The real change is that a trustee judgement now feeds an individual member's personal tax bill. Every large fund we supervise must split fund earnings between members on a 'fair and reasonable' basis it designs itself, and report that figure to the Tax Office. Two funds holding identical assets for identical members can lawfully report different numbers. No standard governs how that judgement is made, signed off or independently checked.",
-    "The framework mostly already covers this. Of 23 instruments we examined, 11 need no change at all and only one needs amending — our own reporting standard, which cannot see above $1 million. What is missing is guidance telling trustees the existing obligations bite on a tax event, supervision aimed at the cohort least able to absorb it, and a prudential position carried into the room where the attribution method is actually being settled."
+    "The framework mostly already covers this. Of 23 instruments we examined, 11 need no change at all and only one needs amending — our own reporting standard, which cannot see above $1 million. What would add most value is guidance confirming that existing obligations apply to this measure, supervision focused on the cohort least able to absorb it, and a prudential perspective reflected in the attribution work still under way."
   ],
 
   "captions": {
@@ -46,22 +46,22 @@
     }
   ],
 
-  "framework_intro": "The most useful finding here is a negative one. Division 296 does not require us to rewrite the prudential framework. We examined 23 instruments: 11 need no change at all, 7 need only supervisory attention, 4 warrant updated guidance, and exactly one needs amending — SRS 611.0, our own member accounts collection, whose highest balance bracket stops at a third of the lower threshold. The authority is already there. SPG 530 expressly names a change in government policy affecting access to member assets as a liquidity stress factor. CPS 230 already forces fund administration to be treated as a critical operation. Boards already sign an annual risk declaration. What is missing is not power — it is guidance telling trustees these obligations bite on a tax event, supervision aimed at the cohort least able to cope, and data that would let us see any of it.",
+  "framework_intro": "The most useful finding here is a negative one. Division 296 does not require us to rewrite the prudential framework. We examined 23 instruments: 11 need no change at all, 7 need only supervisory attention, 4 warrant updated guidance, and exactly one needs amending — SRS 611.0, our own member accounts collection, whose highest balance bracket stops at a third of the lower threshold. The authority is already there. SPG 530 expressly names a change in government policy affecting access to member assets as a liquidity stress factor. CPS 230 already forces fund administration to be treated as a critical operation. Boards already sign an annual risk declaration. What would add most value is guidance confirming to trustees that these obligations apply to a tax event as much as a market one, supervisory attention on the cohort least able to absorb it, and better data so we can see how it is landing.",
 
   "recommendations": [
     {
       "horizon": "Now",
-      "text": "Use the bilateral channels deliberately, and ask for the co-design room. We already engage bilaterally with Treasury and the ATO, so the gap is not access — it is that the attribution methodology is being settled in a non-public ATO co-design group we do not sit in, and both public consultations have closed, so there is no submission process to use instead. Put a prudential position on attribution through the existing bilateral channels now, and ask to participate in or observe the co-design group specifically.",
+      "text": "Carry a prudential perspective into the work still under way. We engage with Treasury and the ATO, and the remaining calculation and attribution work is being progressed through an ATO co-design process now that both public consultations have closed. There would be value in ensuring the prudential and member-outcomes dimensions of attribution are reflected in that work, and in considering whether closer involvement in the co-design process would be useful.",
       "provenance": "created"
     },
     {
       "horizon": "Now",
-      "text": "Write to RSE licensees. A short letter stating that existing obligations already apply to Division 296 readiness — fund administration as a critical operation under CPS 230, policy-driven liquidity stress under SPG 530, and the annual board risk declaration under SPS 220 — costs us nothing, needs no new instrument, and sets an expectation before the first measurement year closes. We have published nothing on this measure to date.",
+      "text": "Consider writing to RSE licensees. A short letter confirming that existing obligations already apply to Division 296 readiness — fund administration as a critical operation under CPS 230, policy-driven liquidity stress under SPG 530, and the annual board risk declaration under SPS 220 — would need no new instrument and would set a clear expectation before the first measurement year closes.",
       "provenance": "created"
     },
     {
       "horizon": "Now",
-      "text": "Form a view on whether the attribution judgement should be reviewable, and say so. This is a member-outcomes question, not a tax question, and it is being decided without us.",
+      "text": "Form a view on whether the attribution judgement should be externally reviewable. Industry has asked that it sit outside AFCA's jurisdiction. This has a member-outcomes dimension as well as a tax one, and it would be worth our position being known while the question is still open.",
       "provenance": "created"
     },
     {
