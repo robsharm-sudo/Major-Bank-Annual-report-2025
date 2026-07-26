@@ -203,6 +203,33 @@ function annexes() {
   }));
   k.push(para("Everything in the three-page brief traces back to this annex. Nothing in the brief is asserted without a provenance mark.", { after: 160, size: 17, color: SECOND }));
 
+  // Where each part of the machinery actually sits. Placed first because the
+  // numbering genuinely misleads - Division 296 itself obliges no fund.
+  if ((D.provisions || []).length) {
+    k.push(h2("Where the obligations actually sit", { before: 0 }));
+    k.push(para(D.provisions_intro || "", { after: 120, size: 17, color: SECOND }));
+    const WP = [2300, 4900, 1500, 1206];
+    k.push(table(
+      [
+        { key: "cite", label: "Provision", w: WP[0] },
+        { key: "what", label: "What it does", w: WP[1] },
+        { key: "heading", label: "Heading", w: WP[2] },
+        { key: "obliges", label: "Obliges", w: WP[3], align: AlignmentType.CENTER },
+      ],
+      D.provisions,
+      (r, c) => {
+        if (c.key === "cite") return [t(r.cite, { size: 15, bold: true, color: NAVY })];
+        if (c.key === "obliges") {
+          const col = r.obliges === "The fund" ? MAGENTA : r.obliges === "No one" ? MUTED : COBALT;
+          return [t(r.obliges, { size: 14, bold: true, color: col })];
+        }
+        if (c.key === "heading") return [t(r.heading, { size: 14, italics: true, color: SECOND })];
+        return [t(r.what, { size: 14, color: SECOND })];
+      }
+    ));
+    k.push(para("", { after: 200 }));
+  }
+
   // Two orienting figures: where the affected population sits relative to our
   // perimeter, and how much of the register is actually ours to act on.
   if (has("fig5_perimeter.png")) k.push(...figure("fig5_perimeter.png", FIG_W, D.captions?.fig5));

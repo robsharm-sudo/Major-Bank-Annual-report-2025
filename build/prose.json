@@ -41,6 +41,10 @@
       "provenance": "sourced"
     },
     {
+      "text": "There is also a hard new duty with a short clock. Where the Tax Office keeps a deferred Division 296 debt account for a member — mainly defined benefit interests — the fund must notify it of the expected payment date within 14 days of the benefit becoming payable, and correct any material error within 7. That is a decades-long tracking obligation that has to survive mergers, successor fund transfers and changes of administrator.",
+      "provenance": "sourced"
+    },
+    {
       "text": "We cannot see the affected population. Our highest published balance bracket is $1 million and above — one third of the lower threshold. And because the threshold is measured across everything a person holds, including self-managed funds, no per-fund collection could ever produce that view.",
       "provenance": "sourced"
     }
@@ -84,6 +88,47 @@
   "redteam_intro": "The draft register was attacked by three independent adversarial reviewers before it reached this page: a hostile fact-checker instructed to refute rather than agree, a grading sceptic instructed to hunt for inflated ratings, and a completeness critic instructed to find what had been left out. Every challenge was dispositioned — accepted and fixed, partially accepted, or rejected with reasons. The table below is the full record, including the challenges we rejected.",
 
   "page2_rows": 9,
+
+  "provisions_intro": "A note on where to look, because the numbering misleads. Division 296 of the Income Tax Assessment Act 1997 does not itself place obligations on funds — its own Guide points to the Taxation Administration Act for the administration rules, and the term 'RSE licensee' does not appear in the Act at all. It uses 'superannuation provider'. The table below is where each part of the machinery actually sits.",
+
+  "provisions": [
+    {
+      "cite": "Subdivision 296-A (ITAA 1997)",
+      "heading": "Object of this Division",
+      "what": "A single objects clause, s 296-5, and nothing else. It imposes no obligation on the trustee, the member or the Commissioner. Its only legal work is interpretive — but that matters here, because it is the lens against which a trustee's 'fair and reasonable' attribution would be construed.",
+      "obliges": "No one"
+    },
+    {
+      "cite": "Subdivision 296-B (ITAA 1997)",
+      "heading": "Better targeted superannuation concessions",
+      "what": "Where the tax actually bites: liability (s 296-15), both thresholds (ss 296-30, 296-35), taxable and total superannuation earnings, Division 296 fund earnings (s 296-60), and the separate treatment of defined benefit and other interests (s 296-70).",
+      "obliges": "The member"
+    },
+    {
+      "cite": "s 134-140, Sch 1 TAA 1953",
+      "heading": "Division 296 end benefit notice",
+      "what": "The clearest new duty on a fund. Where the Commissioner keeps a Division 296 debt account for an interest and the end benefit becomes payable, the provider must notify the Commissioner of the expected payment date within 14 days, in the approved form. The section carries an express note that a dissatisfied person may complain under the AFCA scheme.",
+      "obliges": "The fund"
+    },
+    {
+      "cite": "s 134-145, Sch 1 TAA 1953",
+      "heading": "Material changes or omissions",
+      "what": "A material change or omission in a s 134-140 notice must be corrected within 7 days of the fund becoming aware of it.",
+      "obliges": "The fund"
+    },
+    {
+      "cite": "Division 131, Sch 1 TAA 1953",
+      "heading": "Release authorities",
+      "what": "Extends the existing release authority machinery to Division 296, so a member can direct that the liability be paid from their superannuation.",
+      "obliges": "The fund"
+    },
+    {
+      "cite": "Regulations F2026L00726",
+      "heading": "Attribution method",
+      "what": "The 'fair and reasonable' attribution standard for funds with more than six members, and the prescribed formula plus actuarial certificate for funds with six or fewer. Made 11 June 2026, registered 18 June 2026 — twelve days before the first measurement year began.",
+      "obliges": "The fund"
+    }
+  ],
 
   "figure_inputs": {
     "fig2_note": "Grades reflect prudential materiality, likelihood and how directly we can act. A serious problem that belongs to Treasury is not automatically a grade A issue for us.",
