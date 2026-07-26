@@ -61,21 +61,22 @@ if fw:
 
 # --- Figure 4: the runway ----------------------------------------------------
 v.fig_timeline(p("fig4_timeline.png"), [
-    dict(x=6,  date="13 Mar 2026", label="Royal Assent", color=v.MUTED, done=True),
-    dict(x=26, date="1 Jul 2026",  label="Division 296\ncommences", color=v.COBALT, done=True),
-    dict(x=50, date="2026–27",     label="ATO co-design group\nsettles calculation\nand attribution", color=v.ORANGE),
+    dict(x=5,  date="13 Mar 2026", label="Royal Assent", color=v.MUTED, done=True),
+    dict(x=19, date="1 Apr 2026",  label="Division 296\ncommences", color=v.MUTED, done=True),
+    dict(x=33, date="1 Jul 2026",  label="2026–27 income year:\nfirst measurement\nyear begins", color=v.COBALT, done=True),
+    dict(x=55, date="2026–27",     label="ATO co-design group\nsettles calculation\nand attribution", color=v.ORANGE),
     dict(x=73, date="30 Jun 2027", label="First measurement\nof balances", color=v.TEAL),
     dict(x=93, date="2027–28",     label="First assessments\n& release authorities", color=v.MAGENTA),
-], today_x=31, note=fig.get("fig4_note", ""))
+], today_x=38, note=fig.get("fig4_note", ""))
 
 # --- Figure 5: the perimeter -------------------------------------------------
 per = fig.get("perimeter")
 if per:
     v.fig_perimeter(p("fig5_perimeter.png"), [
         dict(pct=per["smsf_pct"], label="In SMSFs",
-             sub="ATO-regulated —\noutside our perimeter", color=v.ORANGE),
+             sub="ATO-regulated —\noutside APRA's perimeter", color=v.ORANGE),
         dict(pct=per["apra_pct"], label="In APRA-regulated funds",
-             sub="Where our standards\nand data apply", color=v.COBALT),
+             sub="Where APRA's standards\nand data apply", color=v.COBALT),
     ], title=per.get("title", ""), subtitle=per.get("subtitle", ""),
        note=per.get("note", ""))
 
@@ -84,11 +85,11 @@ if issues:
     def n_for(kinds):
         return sum(1 for i in issues if i.get("action_type") in kinds)
     counts = [
-        dict(label="Ours to fix — guidance or supervision",
+        dict(label="APRA can act directly — guidance or supervision",
              n=n_for({"new-or-updated-guidance", "supervisory-practice"}), color=v.COBALT),
         dict(label="Needs a change to a prudential standard",
              n=n_for({"standard-amendment"}), color=v.TEAL),
-        dict(label="Treasury or ATO policy — we can only press",
+        dict(label="Treasury or ATO policy — outside APRA's control",
              n=n_for({"legislative-change"}), color=v.ORANGE),
         dict(label="Monitor only", n=n_for({"no-change-monitor"}), color="#B8B7B0"),
     ]

@@ -74,10 +74,10 @@ function pageOne() {
       border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: B.RULE, space: 7 } },
     }));
   }
-  k.push(para("", { after: 130 }));
+  k.push(para("", { after: 95 }));
 
   k.push(callout("The bottom line", D.bottom_line || [], NAVY));
-  k.push(para("", { after: 160 }));
+  k.push(para("", { after: 115 }));
 
   k.push(h3("What Division 296 now does", { before: 0 }));
   if (has("fig1_tiers.png")) k.push(...figure("fig1_tiers.png", FIG_W, D.captions?.fig1));
@@ -158,7 +158,7 @@ function pageThree() {
   k.push(h2("The runway — and APRA's window to act"));
   if (has("fig4_timeline.png")) k.push(...figure("fig4_timeline.png", FIG_W, D.captions?.fig4));
 
-  k.push(h2("What this implies for APRA"));
+  k.push(h2("Implications"));
   (D.recommendations || []).forEach(r => {
     k.push(new Paragraph({
       children: [
