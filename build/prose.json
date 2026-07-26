@@ -1,52 +1,101 @@
 {
   "meta": {
     "title": "Division 296 and the prudential framework",
-    "subtitle": "What the new tax on large superannuation balances asks of APRA — and what it does not",
+    "subtitle": "What the new tax on large superannuation balances asks of us — and what it does not",
     "date": "26 July 2026",
     "classification": "OFFICIAL — SENSITIVE",
     "footer_note": "Division 296 — prudential implications"
   },
 
   "bottom_line": [
-    "Division 296 is not a proposal. It has been law since 13 March 2026 and commenced on 1 July 2026. The first measurement of balances is 30 June 2027, and the first assessments follow in 2027–28.",
-    "The liquidity story is not the story. On our own stress-test evidence, a wave of Division 296 payments is a small event for the funds we supervise. We should not lead with it.",
-    "The real exposure is operational and distributional. Every fund we supervise must now calculate the tax base itself and divide it between members on a 'fair and reasonable' basis of its own design — a new, unsupervised trustee discretion sitting inside our perimeter.",
-    "We cannot currently see any of this in our own data, and the design questions that matter most to us are being settled in a non-public working group rather than in a consultation we can respond to."
+    "This is not a proposal. Division 296 has been law since March and started on 1 July 2026. We are already inside the first measurement year. The final regulations were registered twelve days before it began, and the Tax Office guidance explaining how to do the calculation is still unwritten.",
+    "It is not a liquidity event, and we should say so. Our own stress test had six large funds absorb $174 billion of liquidity demand without selling a single unlisted asset. Division 296 outflows are a fraction of that. Leading with a liquidity warning would be wrong, and people in the room will know it.",
+    "The real change is that a trustee judgement now sets an individual member's personal tax bill. Every fund we supervise must split fund earnings between members on a 'fair and reasonable' basis it designs itself. Two funds with identical assets and identical members can lawfully report different numbers. No standard governs how that judgement is made, signed off or checked.",
+    "The framework mostly already covers this. Of 23 instruments we examined, 11 need no change at all and only one needs amending — our own reporting standard, which cannot see above $1 million. What is missing is guidance, supervisory attention, and a seat in the room where the rules are actually being written."
   ],
 
   "captions": {
     "fig1": "Figure 1 — What Division 296 charges, and on which slice of a member's balance.",
-    "fig2": "Figure 2 — The graded prudential issues. Position shows materiality against how directly we can act; size shows likelihood.",
-    "fig3": "Figure 3 — What each part of the prudential framework needs. Most of the hooks already exist.",
-    "fig4": "Figure 4 — The implementation runway, and where our influence is still real."
+    "fig2": "Figure 2 — The graded issues. Position shows materiality against how directly we can act; bubble size shows likelihood.",
+    "fig3": "Figure 3 — What each part of the framework needs. Most of the hooks already exist.",
+    "fig4": "Figure 4 — The runway. Our influence is real only in the near term.",
+    "fig5": "Figure A1 — Where the affected population actually sits. Most of it is outside our perimeter.",
+    "fig6": "Figure A2 — How much of the register is ours to act on."
   },
 
   "why_prudential": [
     {
-      "text": "The tax is assessed on the individual, but the work lands on the trustee. Funds must compute Division 296 earnings and attribute a share to each affected member — a function that did not exist before and that no prudential standard was written for.",
+      "text": "The tax is assessed on the member, but the work lands on the trustee. Funds must now calculate the tax base themselves and attribute a share to each affected member — a function that did not exist before, and that no prudential standard was written for.",
       "provenance": "inferred"
     },
     {
-      "text": "The attribution standard is a discretion, not a formula. Funds with more than six members — every fund we supervise — apply a principles-based 'fair and reasonable' test they design themselves. Funds with six or fewer members get a prescribed formula and an actuarial certificate. The looser standard applies exactly where we supervise.",
+      "text": "The attribution standard is a discretion, not a formula. Funds with more than six members — every fund we supervise — apply a 'fair and reasonable' test of their own design. Funds with six or fewer get a prescribed formula and an actuarial certificate. The loose standard applies exactly where we supervise.",
       "provenance": "sourced"
     },
     {
-      "text": "Attribution is a member-equity problem wearing a tax label. A fund produces one annual whole-of-fund tax number; a member's entitlement is a daily unit price computed on a different basis. The two cannot be reconciled exactly, so any attribution method is an estimate that advantages some members over others.",
+      "text": "This is a member-equity problem wearing a tax label. A fund produces one annual whole-of-fund tax figure; a member's entitlement is a daily unit price built on a different basis. The two cannot be reconciled exactly, so any method is an estimate that advantages some members over others.",
       "provenance": "created"
     },
     {
-      "text": "Industry has asked for the discretion to be insulated from challenge. ASFA has formally proposed that trustees' attribution decisions sit outside AFCA's jurisdiction and that trustees not handle member disputes on attribution at all. That is a member-outcomes question we should have a view on.",
+      "text": "Industry has asked for the judgement to be put beyond challenge — that trustees' attribution decisions sit outside AFCA's jurisdiction and that funds not handle member disputes about them at all. Either outcome creates a problem: a new class of complaint, or members with no recourse against a judgement that sets their personal tax.",
       "provenance": "sourced"
     },
     {
-      "text": "Our data cannot see the affected population. The highest member-balance bracket we collect is $1,000,000 and above — one third of the lower threshold and one tenth of the upper one. Total Superannuation Balance is a per-person, whole-of-system measure, and every collection we run is per-fund and per-account.",
+      "text": "We cannot see the affected population. Our highest published balance bracket is $1 million and above — one third of the lower threshold. And because the threshold is measured across everything a person holds, including self-managed funds, no per-fund collection could ever produce that view.",
       "provenance": "sourced"
     }
   ],
 
-  "framework_intro": "The useful finding here is a negative one. Division 296 does not require us to write new prudential standards. Almost every obligation it stresses is already written down — SPG 530 expressly names a change in government policy affecting access to member assets as a stress scenario, and CPS 230 already forces fund administration to be treated as a critical operation. What is missing is not authority. It is guidance telling trustees that these existing obligations apply to a tax event, supervisory attention on the attribution discretion, and data that would let us see any of it.",
+  "framework_intro": "The most useful finding here is a negative one. Division 296 does not require us to rewrite the prudential framework. We examined 23 instruments: 11 need no change at all, 7 need only supervisory attention, 4 warrant updated guidance, and exactly one needs amending — SRS 611.0, our own member accounts collection, whose highest balance bracket stops at a third of the lower threshold. The authority is already there. SPG 530 expressly names a change in government policy affecting access to member assets as a liquidity stress factor. CPS 230 already forces fund administration to be treated as a critical operation. Boards already sign an annual risk declaration. What is missing is not power — it is guidance telling trustees these obligations bite on a tax event, supervision aimed at the cohort least able to cope, and data that would let us see any of it.",
 
-  "redteam_intro": "The draft register was attacked by three independent adversarial reviewers before it reached this page: a hostile fact-checker instructed to refute rather than agree, a grading sceptic instructed to hunt for inflated risk ratings, and a completeness critic instructed to find what had been left out. Every challenge was dispositioned — accepted and fixed, partially accepted, or rejected with reasons. Several issues were downgraded and some were removed entirely as a result.",
+  "recommendations": [
+    {
+      "horizon": "Now",
+      "text": "Seek a prudential seat at the table. The remaining design work has moved into a non-public ATO co-design group of the Tax Office, large funds, administrators and one industry body. We are not in it, and there is no open consultation to submit into. Ask to participate or observe, and put our position on attribution in writing to Treasury and the ATO.",
+      "provenance": "created"
+    },
+    {
+      "horizon": "Now",
+      "text": "Write to RSE licensees. A short letter stating that existing obligations already apply to Division 296 readiness — fund administration as a critical operation under CPS 230, policy-driven liquidity stress under SPG 530, and the annual board risk declaration under SPS 220 — costs us nothing, needs no new instrument, and sets an expectation before the first measurement year closes. We have published nothing on this measure to date.",
+      "provenance": "created"
+    },
+    {
+      "horizon": "Now",
+      "text": "Form a view on whether the attribution judgement should be reviewable, and say so. This is a member-outcomes question, not a tax question, and it is being decided without us.",
+      "provenance": "created"
+    },
+    {
+      "horizon": "By Q4 2026",
+      "text": "Target the cohort we have already named. Our December 2024 thematic review found 12 of 23 large trustees needed material improvement in valuation or liquidity governance, and in June 2026 we took enforcement action against five platform trustees. Those same platform and wrap trustees hold the highest share of very large accounts and face the hardest attribution problem. This is an evidence-based shortlist that needs no new data.",
+      "provenance": "inferred"
+    },
+    {
+      "horizon": "Before 30 Jun 2027",
+      "text": "Require funds to model the 30 June 2027 window. In the first year only, liability turns solely on the balance at that date, making it a publicly known, one-off incentive to withdraw or restructure — landing in the sector's busiest operational period. SPG 530 already lets us require this stress to be modelled.",
+      "provenance": "inferred"
+    },
+    {
+      "horizon": "2027",
+      "text": "Fix our own blind spot. Amend the SRS 611.0 balance brackets so they extend above the thresholds, and decompose the SRS 551.0 liquidity collection by driver so Division 296 outflows are not lost inside a single net figure. Accept that neither gives us total superannuation balance — only the ATO holds that — so agree an information-sharing arrangement.",
+      "provenance": "inferred"
+    }
+  ],
 
-  "page2_rows": 9
+  "redteam_intro": "The draft register was attacked by three independent adversarial reviewers before it reached this page: a hostile fact-checker instructed to refute rather than agree, a grading sceptic instructed to hunt for inflated ratings, and a completeness critic instructed to find what had been left out. Every challenge was dispositioned — accepted and fixed, partially accepted, or rejected with reasons. The table below is the full record, including the challenges we rejected.",
+
+  "page2_rows": 9,
+
+  "figure_inputs": {
+    "fig2_note": "Grades reflect prudential materiality, likelihood and how directly we can act. A serious problem that belongs to Treasury is not automatically a grade A issue for us.",
+    "fig3_note": "Of 23 instruments examined, 11 require no change. The single amendment needed is to our own reporting standard.",
+    "fig4_note": "Our influence over calculation and attribution is real only until the ATO co-design work concludes. After 30 June 2027 the first measurement is locked.",
+    "fig6_note": "Counted from the graded register.",
+    "perimeter": {
+      "smsf_pct": 60,
+      "apra_pct": 40,
+      "title": "Most of the affected population is outside our perimeter",
+      "subtitle": "Treasury expected 31,800 of about 80,000 affected individuals to sit in APRA-regulated funds or exempt public sector schemes",
+      "note": "Source: Treasury Impact Analysis. Self-managed funds are regulated by the ATO, not by us — so roughly six in ten affected members sit where we have no standards, no data and no supervisory reach."
+    }
+  }
 }
