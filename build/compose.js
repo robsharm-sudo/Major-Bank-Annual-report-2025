@@ -23,51 +23,58 @@ const ordered = [...issues].sort((a, b) =>
 function pageOne() {
   const k = [];
 
-  // masthead: logo left, classification right
+  // Masthead: document type left, date right. Deliberately carries no regulator
+  // logo and no security classification - this is independent research written
+  // from public sources, and must not present as an official product.
   k.push(new Table({
     rows: [new TableRow({
       children: [
         new TableCell({
-          width: { size: Math.round(CONTENT_W * 0.5), type: WidthType.DXA },
+          width: { size: Math.round(CONTENT_W * 0.6), type: WidthType.DXA },
           borders: { top: noBorder, bottom: noBorder, left: noBorder, right: noBorder },
           margins: { top: 0, bottom: 0, left: 0, right: 0 },
           children: [new Paragraph({
-            children: has("apra-logo-navy.png") ? [img("apra-logo-navy.png", 108)] : [t("APRA", { size: 26, bold: true, color: NAVY })],
+            children: [t(D.meta.doc_type || "Research note", { size: 17, bold: true, color: TEAL, caps: true })],
             spacing: { after: 0 },
           })],
         }),
         new TableCell({
-          width: { size: Math.round(CONTENT_W * 0.5), type: WidthType.DXA },
+          width: { size: Math.round(CONTENT_W * 0.4), type: WidthType.DXA },
           borders: { top: noBorder, bottom: noBorder, left: noBorder, right: noBorder },
-          margins: { top: 40, bottom: 0, left: 0, right: 0 },
-          children: [
-            new Paragraph({
-              children: [t(D.meta.classification, { size: 15, bold: true, color: MAGENTA, caps: true })],
-              alignment: AlignmentType.RIGHT, spacing: { after: 20 },
-            }),
-            new Paragraph({
-              children: [t(D.meta.date, { size: 15, color: MUTED })],
-              alignment: AlignmentType.RIGHT, spacing: { after: 0 },
-            }),
-          ],
+          margins: { top: 0, bottom: 0, left: 0, right: 0 },
+          children: [new Paragraph({
+            children: [t(D.meta.date, { size: 15, color: MUTED })],
+            alignment: AlignmentType.RIGHT, spacing: { after: 0 },
+          })],
         }),
       ],
     })],
     width: { size: CONTENT_W, type: WidthType.DXA },
-    columnWidths: [Math.round(CONTENT_W * 0.5), Math.round(CONTENT_W * 0.5)],
+    columnWidths: [Math.round(CONTENT_W * 0.6), Math.round(CONTENT_W * 0.4)],
     layout: "fixed",
+    borders: {
+      top: noBorder, left: noBorder, right: noBorder,
+      insideHorizontal: noBorder, insideVertical: noBorder,
+      bottom: { style: BorderStyle.SINGLE, size: 8, color: TEAL },
+    },
   }));
 
   k.push(new Paragraph({
     children: [t(D.meta.title, { size: 34, bold: true, color: NAVY })],
-    spacing: { before: 220, after: 50, line: 340 },
+    spacing: { before: 200, after: 50, line: 340 },
   }));
   k.push(new Paragraph({
-    children: [t(D.meta.subtitle, { size: 20, color: SECOND })],
-    spacing: { after: 40, line: 270 },
-    border: { bottom: { style: BorderStyle.SINGLE, size: 12, color: TEAL, space: 8 } },
+    children: [t(D.meta.subtitle, { size: 19, color: SECOND })],
+    spacing: { after: 50, line: 265 },
   }));
-  k.push(para("", { after: 140 }));
+  if (D.meta.basis) {
+    k.push(new Paragraph({
+      children: [t(D.meta.basis, { size: 14, color: MUTED, italics: true })],
+      spacing: { after: 30, line: 235 },
+      border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: B.RULE, space: 7 } },
+    }));
+  }
+  k.push(para("", { after: 130 }));
 
   k.push(callout("The bottom line", D.bottom_line || [], NAVY));
   k.push(para("", { after: 160 }));
@@ -94,8 +101,8 @@ function pageTwo() {
 
   k.push(h2("Where the prudential risk actually sits"));
   k.push(para([
-    t("Each issue is graded on three things: how material it is prudentially, how likely the adverse consequence is to crystallise, and how directly we can act on it. ", { size: 17 }),
-    t("A serious problem that belongs to Treasury is not automatically a priority for us — the map separates the two.", { size: 17, bold: true }),
+    t("Each issue is graded on three things: how material it is prudentially, how likely the adverse consequence is to crystallise, and how directly APRA can act on it. ", { size: 17 }),
+    t("A serious problem that belongs to Treasury is not automatically a priority for the prudential regulator — the map separates the two.", { size: 17, bold: true }),
   ], { after: 90 }));
 
   if (has("fig2_grade_map.png")) k.push(...figure("fig2_grade_map.png", FIG_W, D.captions?.fig2));
@@ -145,13 +152,13 @@ function pageTwo() {
 function pageThree() {
   const k = [pageBreak()];
   k.push(h2("What the prudential framework actually needs", { before: 0 }));
-  k.push(para(D.framework_intro || "", { after: 90, size: 18 }));
+  k.push(para(D.framework_intro || "", { after: 80, size: 17 }));
   if (has("fig3_framework.png")) k.push(...figure("fig3_framework.png", FIG_W, D.captions?.fig3));
 
   k.push(h2("The runway — and APRA's window to act"));
   if (has("fig4_timeline.png")) k.push(...figure("fig4_timeline.png", FIG_W, D.captions?.fig4));
 
-  k.push(h2("What APRA should do"));
+  k.push(h2("What this implies for APRA"));
   (D.recommendations || []).forEach(r => {
     k.push(new Paragraph({
       children: [
@@ -159,7 +166,7 @@ function pageThree() {
         t(r.text, { size: 18 }), prov(r.provenance),
       ],
       numbering: { reference: "brief-bullets", level: 0 },
-      spacing: { after: 70, line: 258 },
+      spacing: { after: 48, line: 246 },
     }));
   });
 
@@ -167,7 +174,7 @@ function pageThree() {
   // consultation to submit into, and page 3 is full with the recommendations.
 
   // provenance legend - every page-1..3 claim carries one of these
-  k.push(para("", { after: 120 }));
+  k.push(para("", { after: 60 }));
   k.push(new Table({
     rows: [new TableRow({
       children: [new TableCell({
@@ -182,9 +189,9 @@ function pageThree() {
               new TextRun({ text: "[S]", font: FONT, size: 14, bold: true, color: PROV_COLOR.sourced }),
               t(" Sourced — stated in a citable document.  ", { size: 14, color: SECOND }),
               new TextRun({ text: "[I]", font: FONT, size: 14, bold: true, color: PROV_COLOR.inferred }),
-              t(" Inferred — our reasoning from sourced facts.  ", { size: 14, color: SECOND }),
+              t(" Inferred — reasoning from sourced facts.  ", { size: 14, color: SECOND }),
               new TextRun({ text: "[C]", font: FONT, size: 14, bold: true, color: PROV_COLOR.created }),
-              t(" Created — original judgement written for this meeting, flagged deliberately.  Citations and reasoning chains are in Annex C.", { size: 14, color: SECOND }),
+              t(" Created — original analysis for this note, flagged deliberately.  Citations and reasoning chains are in Annex C.", { size: 14, color: SECOND }),
             ],
             spacing: { after: 0, line: 240 },
           }),
@@ -209,7 +216,7 @@ function annexes() {
     spacing: { after: 60, line: 330 },
     border: { bottom: { style: BorderStyle.SINGLE, size: 12, color: TEAL, space: 8 } },
   }));
-  k.push(para("Everything in the three-page brief traces back to this annex. Nothing in the brief is asserted without a provenance mark.", { after: 160, size: 17, color: SECOND }));
+  k.push(para("Every claim in the three-page brief traces back to this annex. Nothing is asserted without a provenance mark, and all sources are public.", { after: 160, size: 17, color: SECOND }));
 
   // Where each part of the machinery actually sits. Placed first because the
   // numbering genuinely misleads - Division 296 itself obliges no fund.
@@ -377,7 +384,7 @@ function annexes() {
   }
 
   // --- Annex E2: uncertainties
-  k.push(h2("Annex E2 — What we still do not know"));
+  k.push(h2("Annex E2 — What remains unknown"));
   k.push(para("Stated plainly so the meeting does not over-read the analysis.", { after: 100, size: 17, color: SECOND }));
   (D.residual_uncertainties || []).forEach(u => k.push(bullet([t(u, { size: 17 })])));
 
@@ -417,7 +424,7 @@ const doc = new Document({
       default: new Footer({
         children: [new Paragraph({
           children: [
-            t(D.meta.classification + "  ·  " + D.meta.footer_note, { size: 13, color: MUTED }),
+            t((D.meta.doc_type ? D.meta.doc_type + "  ·  " : "") + D.meta.footer_note, { size: 13, color: MUTED }),
             new TextRun({ text: "\t", font: FONT }),
             new TextRun({ children: ["Page ", PageNumber.CURRENT, " of ", PageNumber.TOTAL_PAGES], font: FONT, size: 13, color: MUTED }),
           ],

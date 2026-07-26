@@ -1,24 +1,25 @@
 {
   "meta": {
     "title": "Division 296 and the prudential framework",
-    "subtitle": "What the new tax on large superannuation balances asks of us \u2014 and what it does not",
+    "subtitle": "What Australia's new tax on large superannuation balances asks of prudential regulation \u2014 and what it does not",
     "date": "26 July 2026",
-    "classification": "OFFICIAL \u2014 SENSITIVE",
+    "doc_type": "Prudential research note",
+    "basis": "Prepared from publicly available sources. Not an official publication of any regulator, and not affiliated with or endorsed by APRA, the ATO or Treasury.",
     "footer_note": "Division 296 \u2014 prudential implications"
   },
   "bottom_line": [
-    "This is not a proposal. Division 296 has been law since March and started on 1 July 2026. We are already inside the first measurement year. The final regulations were registered twelve days before it began, and the Tax Office guidance explaining how to do the calculation is still unwritten.",
-    "It is not a liquidity event, and we should say so. In our own System Risk Stress Test, six large funds absorbed $174 billion of cumulative liquidity demand \u2014 just under 16 per cent of net assets \u2014 while largely avoiding sales of unlisted assets, primarily selling listed equities instead. Division 296 outflows are a small fraction of that. Leading with a liquidity warning would be wrong, and people in the room will know it.",
-    "The real change is that a trustee judgement now feeds an individual member's personal tax bill. Every large fund we supervise must split fund earnings between members on a 'fair and reasonable' basis it designs itself, and report that figure to the Tax Office. Two funds holding identical assets for identical members can lawfully report different numbers. No standard governs how that judgement is made, signed off or independently checked.",
-    "The framework mostly already covers this. Of 23 instruments we examined, 11 need no change at all and only one needs amending \u2014 our own reporting standard, which cannot see above $1 million. What would add most value is guidance confirming that existing obligations apply to this measure, supervision focused on the cohort least able to absorb it, and a prudential perspective reflected in the attribution work still under way."
+    "This is not a proposal. Division 296 has been law since March 2026 and commenced on 1 July 2026. The first measurement year is already running. The final regulations were registered twelve days before it began, and the ATO guidance explaining how to perform the calculation is still unwritten.",
+    "It is not a liquidity event, and the evidence says so. In APRA's own System Risk Stress Test, six large funds absorbed $174 billion of cumulative liquidity demand \u2014 just under 16 per cent of net assets \u2014 while largely avoiding sales of unlisted assets, primarily selling listed equities instead. Division 296 outflows are a small fraction of that. A framing built on forced asset sales would not survive scrutiny.",
+    "The material change is that a trustee judgement now feeds an individual member's personal tax bill. Every large APRA-regulated fund must split fund earnings between members on a 'fair and reasonable' basis it designs itself, and report that figure to the ATO. Two funds holding identical assets for identical members can lawfully report different numbers. No prudential instrument governs how that judgement is made, signed off or independently checked.",
+    "The prudential framework mostly already covers this. Of 27 instruments examined, 11 need no change at all and only one needs amending \u2014 SRS 611.0, APRA's own member accounts collection, which cannot see above $1 million. The gaps are guidance, supervisory attention, and data \u2014 not authority."
   ],
   "captions": {
     "fig1": "Figure 1 \u2014 What Division 296 charges, and on which slice of a member's balance.",
-    "fig2": "Figure 2 \u2014 The graded issues. Position shows materiality against how directly we can act; bubble size shows likelihood.",
+    "fig2": "Figure 2 \u2014 The graded issues. Position shows materiality against how directly APRA can act; bubble size shows likelihood.",
     "fig3": "Figure 3 \u2014 What each part of the framework needs. Most of the hooks already exist.",
-    "fig4": "Figure 4 \u2014 The runway. Our influence is real only in the near term.",
-    "fig5": "Figure A1 \u2014 Where the affected population actually sits. Most of it is outside our perimeter.",
-    "fig6": "Figure A2 \u2014 How much of the register is ours to act on."
+    "fig4": "Figure 4 \u2014 The runway. Influence over the design is real only in the near term.",
+    "fig5": "Figure A1 \u2014 Where the affected population actually sits. Most of it is outside the prudential perimeter.",
+    "fig6": "Figure A2 \u2014 How much of the register APRA can act on directly."
   },
   "why_prudential": [
     {
@@ -26,7 +27,7 @@
       "provenance": "inferred"
     },
     {
-      "text": "The attribution standard is a discretion, not a formula. The dividing line is fund size, not who regulates, so the loose 'fair and reasonable' test lands on the large funds holding almost all the money.",
+      "text": "The attribution standard is a discretion, not a formula. The dividing line is fund size, not which regulator applies, so the loose 'fair and reasonable' test falls on the large funds holding almost all the money.",
       "provenance": "sourced"
     },
     {
@@ -34,48 +35,48 @@
       "provenance": "created"
     },
     {
-      "text": "There is a hard new duty on a short clock: 14 days to tell the Tax Office when an end benefit will be paid, 7 to correct an error \u2014 attached to debt accounts that must survive mergers, transfers and changes of administrator.",
+      "text": "There is a hard new duty on a short clock: 14 days for a fund to tell the ATO when an end benefit will be paid, and 7 to correct an error \u2014 attached to debt accounts that must survive mergers, transfers and changes of administrator.",
       "provenance": "sourced"
     },
     {
-      "text": "We cannot see the affected population. Our highest balance bracket is $1 million, and because the threshold spans everything a person holds, no per-fund collection could ever produce that view.",
+      "text": "The affected population is largely invisible to the prudential regulator. APRA's highest published balance bracket is $1 million, and because the threshold spans everything a person holds, no per-fund collection could ever produce that view.",
       "provenance": "sourced"
     }
   ],
-  "framework_intro": "The most useful finding here is a negative one. Division 296 does not require us to rewrite the prudential framework. We examined 27 instruments: 11 need no change at all, 11 need only supervisory attention, 4 warrant updated guidance, and exactly one needs amending \u2014 SRS 611.0, our own member accounts collection, whose highest balance bracket stops at a third of the lower threshold. The authority is already there. SPG 530 expressly names a change in government policy affecting access to member assets as a liquidity stress factor, and CPS 230 already forces fund administration to be treated as a critical operation. What would add most value is guidance confirming these obligations apply to a tax event as much as a market one, supervisory attention on the cohort least able to absorb it, and better data so we can see how it is landing.",
+  "framework_intro": "The most useful finding here is a negative one. Division 296 does not require the prudential framework to be rewritten. Of 27 instruments examined: 11 need no change at all, 11 need only supervisory attention, 4 warrant updated guidance, and exactly one needs amending \u2014 SRS 611.0, APRA's own member accounts collection, whose highest balance bracket stops at a third of the lower threshold. The authority already exists. SPG 530 expressly names a change in government policy affecting access to member assets as a liquidity stress factor, and CPS 230 already requires fund administration to be treated as a critical operation. What is missing is guidance confirming these obligations apply to a tax event as much as a market one, supervisory attention on the cohort least able to absorb it, and data granular enough to observe how the measure lands.",
   "recommendations": [
     {
       "horizon": "Now",
-      "text": "Carry a prudential perspective into the attribution work still under way with Treasury and the ATO, and consider whether closer involvement in the co-design process would be useful.",
+      "text": "Carry a prudential perspective into the attribution work still under way. APRA engages with Treasury and the ATO, and the remaining calculation and attribution design is progressing through an ATO co-design process. There would be value in the prudential and member-outcomes dimensions being reflected in it.",
       "provenance": "created"
     },
     {
       "horizon": "Now",
-      "text": "Consider a short letter to RSE licensees confirming that existing obligations already apply \u2014 fund administration as a critical operation under CPS 230, policy-driven liquidity stress under SPG 530, and the annual board risk declaration under SPS 220. No new instrument required.",
+      "text": "A short letter to RSE licensees confirming that existing obligations already apply would need no new instrument \u2014 fund administration as a critical operation under CPS 230, policy-driven liquidity stress under SPG 530, and the annual board risk declaration under SPS 220.",
       "provenance": "created"
     },
     {
       "horizon": "Now",
-      "text": "Use the material service provider registers we already hold to map which administrators will build this for how many funds, then engage provider by provider rather than licensee by licensee.",
+      "text": "The material service provider registers APRA already holds can map which administrators will build this for how many funds, allowing engagement provider by provider rather than licensee by licensee.",
       "provenance": "inferred"
     },
     {
       "horizon": "By Q4 2026",
-      "text": "Target the cohort we have already named \u2014 the platform and wrap trustees from the December 2024 thematic review, who hold the highest share of very large accounts and face the hardest attribution problem.",
+      "text": "The supervisory cohort is already named: the platform and wrap trustees identified in APRA's December 2024 thematic review, who hold the highest share of very large accounts and face the hardest attribution problem.",
       "provenance": "inferred"
     },
     {
       "horizon": "Before 30 Jun 2027",
-      "text": "Ask funds to model the 30 June 2027 measurement date, which SPG 530 already allows us to require.",
+      "text": "Funds could be asked to model the 30 June 2027 measurement date \u2014 a stress SPG 530 already contemplates.",
       "provenance": "inferred"
     },
     {
       "horizon": "2027",
-      "text": "Fix our own blind spot: extend the SRS 611.0 balance brackets above the thresholds, decompose SRS 551.0 outflows by driver, and agree an information-sharing route with the ATO for total balance.",
+      "text": "The data gap is fixable: extend the SRS 611.0 balance brackets above the thresholds, decompose SRS 551.0 outflows by driver, and agree an information-sharing route with the ATO for total superannuation balance.",
       "provenance": "inferred"
     }
   ],
-  "redteam_intro": "The draft register was attacked by three independent adversarial reviewers before it reached this page: a hostile fact-checker instructed to refute rather than agree, a grading sceptic instructed to hunt for inflated ratings, and a completeness critic instructed to find what had been left out. Every challenge was dispositioned \u2014 accepted and fixed, partially accepted, or rejected with reasons. The table below is the full record, including the challenges we rejected.",
+  "redteam_intro": "The draft register was attacked by three independent adversarial reviewers before it reached this page: a hostile fact-checker instructed to refute rather than agree, a grading sceptic instructed to hunt for inflated ratings, and a completeness critic instructed to find what had been left out. Every challenge was dispositioned \u2014 accepted and fixed, partially accepted, or rejected with reasons. The table below is the full record, including the challenges rejected.",
   "page2_rows": 7,
   "headline_override": [
     {
@@ -87,7 +88,7 @@
     },
     {
       "figure": "$1m+",
-      "meaning": "Our highest member balance bracket \u2014 one third of the lower threshold. We cannot count or locate the affected population from our own collections.",
+      "meaning": "APRA's highest member balance bracket \u2014 one third of the lower threshold. The affected population cannot be counted or located from APRA's own collections.",
       "source": "SRS 611.0",
       "as_at": "26 July 2026",
       "provenance": "sourced"
@@ -100,7 +101,7 @@
       "provenance": "sourced"
     }
   ],
-  "provisions_intro": "A note on where to look, because the numbering misleads. Division 296 of the Income Tax Assessment Act 1997 does not itself place obligations on funds \u2014 its own Guide points to the Taxation Administration Act for the administration rules, and the term 'RSE licensee' does not appear in the Act at all. It uses 'superannuation provider'. The table below is where each part of the machinery actually sits.",
+  "provisions_intro": "A note on where to look, because the numbering misleads. Division 296 of the Income Tax Assessment Act 1997 does not itself place obligations on funds \u2014 its own Guide points to the Taxation Administration Act for the administration rules, and the term 'RSE licensee' does not appear in the Act at all. It uses 'superannuation provider'. The table below sets out where each part of the machinery actually sits.",
   "provisions": [
     {
       "cite": "Subdivision 296-A (ITAA 1997)",
@@ -140,16 +141,16 @@
     }
   ],
   "figure_inputs": {
-    "fig2_note": "Grades reflect prudential materiality, likelihood and how directly we can act. A serious problem that belongs to Treasury is not automatically a grade A issue for us.",
-    "fig3_note": "Of 27 instruments examined, 11 require no change. The single amendment needed is to our own reporting standard.",
-    "fig4_note": "Our influence over calculation and attribution is real only until the ATO co-design work concludes. After 30 June 2027 the first measurement is locked.",
+    "fig2_note": "Grades reflect prudential materiality, likelihood, and how directly APRA can act. A serious problem that belongs to Treasury is not automatically a grade A issue for the prudential regulator.",
+    "fig3_note": "Of 27 instruments examined, 11 require no change. The single amendment needed is to APRA's own reporting standard.",
+    "fig4_note": "Influence over calculation and attribution is real only until the ATO co-design work concludes. After 30 June 2027 the first measurement is locked.",
     "fig6_note": "Counted from the graded register.",
     "perimeter": {
       "smsf_pct": 60,
       "apra_pct": 40,
-      "title": "Most of the affected population is outside our perimeter",
+      "title": "Most of the affected population sits outside the prudential perimeter",
       "subtitle": "Treasury expected 31,800 of about 80,000 affected individuals to sit in APRA-regulated funds or exempt public sector schemes",
-      "note": "Source: Treasury Impact Analysis. Self-managed funds are regulated by the ATO, not by us \u2014 so roughly six in ten affected members sit where we have no standards, no data and no supervisory reach."
+      "note": "Source: Treasury Impact Analysis. Self-managed funds are regulated by the ATO, so roughly six in ten affected members sit where APRA has no standards, no data and no supervisory reach."
     }
   }
 }
