@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Division 296 and the prudential framework",
+    "subtitle": "What the new tax on large superannuation balances asks of APRA — and what it does not",
+    "date": "26 July 2026",
+    "classification": "OFFICIAL — SENSITIVE",
+    "footer_note": "Division 296 — prudential implications"
+  },
+
+  "bottom_line": [
+    "Division 296 is not a proposal. It has been law since 13 March 2026 and commenced on 1 July 2026. The first measurement of balances is 30 June 2027, and the first assessments follow in 2027–28.",
+    "The liquidity story is not the story. On our own stress-test evidence, a wave of Division 296 payments is a small event for the funds we supervise. We should not lead with it.",
+    "The real exposure is operational and distributional. Every fund we supervise must now calculate the tax base itself and divide it between members on a 'fair and reasonable' basis of its own design — a new, unsupervised trustee discretion sitting inside our perimeter.",
+    "We cannot currently see any of this in our own data, and the design questions that matter most to us are being settled in a non-public working group rather than in a consultation we can respond to."
+  ],
+
+  "captions": {
+    "fig1": "Figure 1 — What Division 296 charges, and on which slice of a member's balance.",
+    "fig2": "Figure 2 — The graded prudential issues. Position shows materiality against how directly we can act; size shows likelihood.",
+    "fig3": "Figure 3 — What each part of the prudential framework needs. Most of the hooks already exist.",
+    "fig4": "Figure 4 — The implementation runway, and where our influence is still real."
+  },
+
+  "why_prudential": [
+    {
+      "text": "The tax is assessed on the individual, but the work lands on the trustee. Funds must compute Division 296 earnings and attribute a share to each affected member — a function that did not exist before and that no prudential standard was written for.",
+      "provenance": "inferred"
+    },
+    {
+      "text": "The attribution standard is a discretion, not a formula. Funds with more than six members — every fund we supervise — apply a principles-based 'fair and reasonable' test they design themselves. Funds with six or fewer members get a prescribed formula and an actuarial certificate. The looser standard applies exactly where we supervise.",
+      "provenance": "sourced"
+    },
+    {
+      "text": "Attribution is a member-equity problem wearing a tax label. A fund produces one annual whole-of-fund tax number; a member's entitlement is a daily unit price computed on a different basis. The two cannot be reconciled exactly, so any attribution method is an estimate that advantages some members over others.",
+      "provenance": "created"
+    },
+    {
+      "text": "Industry has asked for the discretion to be insulated from challenge. ASFA has formally proposed that trustees' attribution decisions sit outside AFCA's jurisdiction and that trustees not handle member disputes on attribution at all. That is a member-outcomes question we should have a view on.",
+      "provenance": "sourced"
+    },
+    {
+      "text": "Our data cannot see the affected population. The highest member-balance bracket we collect is $1,000,000 and above — one third of the lower threshold and one tenth of the upper one. Total Superannuation Balance is a per-person, whole-of-system measure, and every collection we run is per-fund and per-account.",
+      "provenance": "sourced"
+    }
+  ],
+
+  "framework_intro": "The useful finding here is a negative one. Division 296 does not require us to write new prudential standards. Almost every obligation it stresses is already written down — SPG 530 expressly names a change in government policy affecting access to member assets as a stress scenario, and CPS 230 already forces fund administration to be treated as a critical operation. What is missing is not authority. It is guidance telling trustees that these existing obligations apply to a tax event, supervisory attention on the attribution discretion, and data that would let us see any of it.",
+
+  "redteam_intro": "The draft register was attacked by three independent adversarial reviewers before it reached this page: a hostile fact-checker instructed to refute rather than agree, a grading sceptic instructed to hunt for inflated risk ratings, and a completeness critic instructed to find what had been left out. Every challenge was dispositioned — accepted and fixed, partially accepted, or rejected with reasons. Several issues were downgraded and some were removed entirely as a result.",
+
+  "page2_rows": 9
+}

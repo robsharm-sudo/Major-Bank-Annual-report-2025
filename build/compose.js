@@ -201,7 +201,15 @@ function annexes() {
     spacing: { after: 60, line: 330 },
     border: { bottom: { style: BorderStyle.SINGLE, size: 12, color: TEAL, space: 8 } },
   }));
-  k.push(para("Everything in the three-page brief traces back to this annex. Nothing in the brief is asserted without a provenance mark.", { after: 200, size: 17, color: SECOND }));
+  k.push(para("Everything in the three-page brief traces back to this annex. Nothing in the brief is asserted without a provenance mark.", { after: 160, size: 17, color: SECOND }));
+
+  // Two orienting figures: where the affected population sits relative to our
+  // perimeter, and how much of the register is actually ours to act on.
+  if (has("fig5_perimeter.png")) k.push(...figure("fig5_perimeter.png", FIG_W, D.captions?.fig5));
+  if (has("fig6_split.png")) {
+    k.push(h3("How much of this is ours to fix"));
+    k.push(...figure("fig6_split.png", 330, D.captions?.fig6));
+  }
 
   // --- Annex A: full issue register
   k.push(h2("Annex A — Full prudential issue register", { before: 0 }));
