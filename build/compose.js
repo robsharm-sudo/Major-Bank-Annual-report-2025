@@ -79,46 +79,65 @@ function pageOne() {
     k.push(...statTiles(D.headline_numbers));
   }
 
-  k.push(h3("Why this is a prudential matter, not just a tax matter"));
-  (D.why_prudential || []).forEach(b =>
-    k.push(bullet([t(b.text, { size: 18 }), prov(b.provenance)])));
-
   return k;
 }
 
 // ------------------------------------------------------------- page two -----
 function pageTwo() {
   const k = [pageBreak()];
-  k.push(h2("Where the prudential risk actually sits", { before: 0 }));
+
+  // Opens page 2 rather than page 1: page 1 is full after the rate figure and
+  // the stat tiles, and these bullets are the bridge into the graded map.
+  k.push(h3("Why this is a prudential matter, not just a tax matter", { before: 0 }));
+  (D.why_prudential || []).forEach(b =>
+    k.push(bullet([t(b.text, { size: 17 }), prov(b.provenance)], { after: 50 })));
+
+  k.push(h2("Where the prudential risk actually sits"));
   k.push(para([
-    t("Every issue below is graded on three things: how material it is prudentially, how likely it is to actually happen, and how directly APRA can act on it. ", { size: 18 }),
-    t("A serious problem that belongs to Treasury is not automatically an APRA priority — the map separates the two.", { size: 18, bold: true }),
-  ], { after: 100 }));
+    t("Each issue is graded on three things: how material it is prudentially, how likely the adverse consequence is to crystallise, and how directly we can act on it. ", { size: 17 }),
+    t("A serious problem that belongs to Treasury is not automatically a priority for us — the map separates the two.", { size: 17, bold: true }),
+  ], { after: 90 }));
 
   if (has("fig2_grade_map.png")) k.push(...figure("fig2_grade_map.png", FIG_W, D.captions?.fig2));
 
+  // Deliberately terse: full titles and full recommendations belong in Annex A.
+  // On the page the CEO reads, the job is to rank and route, not to explain.
+  const ACTION = {
+    "standard-amendment": "Amend a standard",
+    "new-or-updated-guidance": "Guidance",
+    "supervisory-practice": "Supervision",
+    "legislative-change": "Treasury / ATO call",
+    "no-change-monitor": "Monitor only",
+  };
+  const short = s => {
+    if (!s) return "";
+    const cut = s.split(/,| — | - |: /)[0];
+    const base = (cut.length >= 34 && cut.length <= 82) ? cut : s;
+    return base.length > 88 ? base.slice(0, 86).replace(/\s+\S*$/, "") + "…" : base;
+  };
+
   k.push(h3("The graded issues"));
-  const W = [700, 3250, 640, 2400, 2916];
+  const W = [560, 4400, 860, 1150, 2936];
   k.push(table(
     [
       { key: "id", label: "ID", w: W[0] },
       { key: "title", label: "Issue", w: W[1] },
       { key: "grade", label: "Grade", w: W[2], align: AlignmentType.CENTER },
-      { key: "who", label: "Who feels it", w: W[3] },
+      { key: "score", label: "M · L · P", w: W[3], align: AlignmentType.CENTER },
       { key: "action", label: "What it needs", w: W[4] },
     ],
     ordered.slice(0, D.page2_rows ?? 9),
     (r, c) => {
-      if (c.key === "id") return [t(r.id, { size: 16, bold: true, color: NAVY })];
-      if (c.key === "title") return [t(r.title, { size: 16, bold: true }), prov(r.provenance)];
+      if (c.key === "id") return [t(r.id, { size: 15, bold: true, color: NAVY })];
+      if (c.key === "title") return [t(short(r.title), { size: 15 }), prov(r.provenance)];
       if (c.key === "grade") return gradeRuns(r.grade);
-      if (c.key === "who") return [t(r.who_bears_it, { size: 15, color: SECOND })];
-      return [t(r.recommended_apra_position, { size: 15, color: SECOND })];
+      if (c.key === "score") return [t(`${r.materiality} · ${r.likelihood} · ${r.apra_proximity}`, { size: 14, color: MUTED })];
+      return [t(ACTION[r.action_type] || r.action_type, { size: 14, color: SECOND })];
     }
   ));
   k.push(para([
-    t("Grade A = raise in this meeting   ·   B = press and monitor   ·   C = watch", { size: 14, color: MUTED }),
-  ], { before: 90, after: 0 }));
+    t("A = raise now · B = press and monitor · C = watch.  Scores out of 5.  All 18 issues are in Annex A.", { size: 13, color: MUTED }),
+  ], { before: 70, after: 0 }));
   return k;
 }
 
@@ -144,11 +163,8 @@ function pageThree() {
     }));
   });
 
-  if ((D.open_consultation_asks || []).length) {
-    k.push(h3("What to put to Treasury in the open consultation"));
-    (D.open_consultation_asks || []).slice(0, 6).forEach(a =>
-      k.push(bullet([t(typeof a === "string" ? a : a.text, { size: 17 })])));
-  }
+  // The points to carry into engagement are in Annex E: there is no open public
+  // consultation to submit into, and page 3 is full with the recommendations.
 
   // provenance legend - every page-1..3 claim carries one of these
   k.push(para("", { after: 120 }));
@@ -157,28 +173,20 @@ function pageThree() {
       children: [new TableCell({
         width: { size: CONTENT_W, type: WidthType.DXA },
         shading: { type: ShadingType.CLEAR, fill: TINT, color: "auto" },
-        margins: { top: 110, bottom: 110, left: 150, right: 150 },
+        margins: { top: 90, bottom: 90, left: 150, right: 150 },
         borders: { top: noBorder, bottom: noBorder, right: noBorder, left: { style: BorderStyle.SINGLE, size: 18, color: TEAL } },
         children: [
           new Paragraph({
-            children: [t("How to read the provenance marks", { size: 16, bold: true, color: NAVY })],
-            spacing: { after: 60 },
-          }),
-          new Paragraph({
             children: [
-              new TextRun({ text: "[S]", font: FONT, size: 15, bold: true, color: PROV_COLOR.sourced }),
-              t("  Sourced — stated directly in a citable document; the citation is in Annex C.    ", { size: 15, color: SECOND }),
-              new TextRun({ text: "[I]", font: FONT, size: 15, bold: true, color: PROV_COLOR.inferred }),
-              t("  Inferred — our reasoning from sourced facts; the chain is shown in Annex C.", { size: 15, color: SECOND }),
+              t("How to read the provenance marks.  ", { size: 14, bold: true, color: NAVY }),
+              new TextRun({ text: "[S]", font: FONT, size: 14, bold: true, color: PROV_COLOR.sourced }),
+              t(" Sourced — stated in a citable document.  ", { size: 14, color: SECOND }),
+              new TextRun({ text: "[I]", font: FONT, size: 14, bold: true, color: PROV_COLOR.inferred }),
+              t(" Inferred — our reasoning from sourced facts.  ", { size: 14, color: SECOND }),
+              new TextRun({ text: "[C]", font: FONT, size: 14, bold: true, color: PROV_COLOR.created }),
+              t(" Created — original judgement written for this meeting, flagged deliberately.  Citations and reasoning chains are in Annex C.", { size: 14, color: SECOND }),
             ],
-            spacing: { after: 40, line: 250 },
-          }),
-          new Paragraph({
-            children: [
-              new TextRun({ text: "[C]", font: FONT, size: 15, bold: true, color: PROV_COLOR.created }),
-              t("  Created — an original analytical judgement written for this meeting. Not sourced, and flagged as such deliberately.", { size: 15, color: SECOND }),
-            ],
-            spacing: { after: 0, line: 250 },
+            spacing: { after: 0, line: 240 },
           }),
         ],
       })],
@@ -292,6 +300,26 @@ function annexes() {
     }
   ));
 
+  // --- Annex B2: the verified figures, in full
+  if ((D.all_headline_numbers || []).length) {
+    k.push(h2("Annex B2 — The figures, verified"));
+    k.push(para("Every figure re-checked against a named source with a date. Where a figure in the draft was wrong, the correction is stated rather than quietly applied.", { after: 120, size: 17, color: SECOND }));
+    const WN = [3400, 4600, 1906];
+    k.push(table(
+      [
+        { key: "figure", label: "Figure", w: WN[0] },
+        { key: "meaning", label: "What it means, and any correction", w: WN[1] },
+        { key: "source", label: "Source / as at", w: WN[2] },
+      ],
+      D.all_headline_numbers,
+      (r, c) => {
+        if (c.key === "figure") return [t(r.figure, { size: 14, bold: true, color: NAVY })];
+        if (c.key === "source") return [t(`${r.source}${r.as_at ? " · " + r.as_at : ""}`, { size: 13, color: MUTED })];
+        return [t(r.meaning, { size: 13, color: SECOND })];
+      }
+    ));
+  }
+
   // --- Annex C: audit trail
   k.push(pageBreak());
   k.push(h2("Annex C — Provenance and fact-check audit trail", { before: 0 }));
@@ -340,8 +368,16 @@ function annexes() {
     }
   ));
 
-  // --- Annex E: uncertainties
-  k.push(h2("Annex E — What we still do not know"));
+  // --- Annex E1: points to carry into engagement
+  if ((D.open_consultation_asks || []).length) {
+    k.push(h2("Annex E1 — Points to carry into engagement with Treasury and the ATO"));
+    k.push(para("Both public consultations on this measure have closed, so these are points for bilateral engagement and the ATO co-design process rather than a submission. They are confined to prudential and member-outcomes consequences; the tax design remedies are left to the policy owner.", { after: 120, size: 17, color: SECOND }));
+    (D.open_consultation_asks || []).forEach(a =>
+      k.push(bullet([t(typeof a === "string" ? a : a.text, { size: 17 })])));
+  }
+
+  // --- Annex E2: uncertainties
+  k.push(h2("Annex E2 — What we still do not know"));
   k.push(para("Stated plainly so the meeting does not over-read the analysis.", { after: 100, size: 17, color: SECOND }));
   (D.residual_uncertainties || []).forEach(u => k.push(bullet([t(u, { size: 17 })])));
 

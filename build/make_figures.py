@@ -38,12 +38,26 @@ v.fig_tier_ladder(p("fig1_tiers.png"), [
 # --- Figure 2: the graded issue map ------------------------------------------
 if issues:
     v.fig_grade_map(p("fig2_grade_map.png"), issues,
-                    note=fig.get("fig2_note", ""))
+                    note=fig.get("fig2_note", ""), show_title=False)
 
 # --- Figure 3: what the framework needs --------------------------------------
+# Counts, not an instrument-by-instrument map: with 27 verdicts the map renders
+# far taller than a page. The full per-instrument detail is Annex B.
 if fw:
-    v.fig_framework_map(p("fig3_framework.png"), fw,
-                        note=fig.get("fig3_note", ""))
+    ORDER = [
+        ("no-change", "No change needed", "#B8B7B0"),
+        ("supervisory-practice-only", "Supervisory\nattention only", v.TEAL),
+        ("update-guidance", "Updated\nguidance", v.COBALT),
+        ("amend-standard", "Amend a\nstandard", v.MAGENTA),
+    ]
+    counts = [dict(label=lab, n=sum(1 for x in fw if x.get("verdict") == key), color=col)
+              for key, lab, col in ORDER]
+    counts = [c for c in counts if c["n"] > 0]
+    amend = [x["instrument"] for x in fw if x.get("verdict") == "amend-standard"]
+    v.fig_verdict_summary(
+        p("fig3_framework.png"), counts,
+        callout=(f"The one amendment: {amend[0].split('(')[0].strip()}" if amend else None),
+        note=fig.get("fig3_note", ""))
 
 # --- Figure 4: the runway ----------------------------------------------------
 v.fig_timeline(p("fig4_timeline.png"), [

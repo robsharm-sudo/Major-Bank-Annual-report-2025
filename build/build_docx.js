@@ -207,7 +207,9 @@ function statTiles(nums) {
     width: { size: w * n, type: WidthType.DXA },
     columnWidths: Array(n).fill(w),
     layout: "fixed",
-  }), para("", { after: 60 })];
+  })];
+  // No trailing spacer paragraph: the tiles close page 1, and an empty
+  // paragraph after them is enough to spill onto a blank page 2.
 }
 
 /** Callout band used for the bottom line / recommended position. */

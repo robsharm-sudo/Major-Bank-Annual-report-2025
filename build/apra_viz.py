@@ -179,21 +179,21 @@ def fig_tier_ladder(path, tiers, note=None):
 
 
 # ============================================================ FIGURE 2 =======
-def fig_grade_map(path, issues, note=None):
+def fig_grade_map(path, issues, note=None, show_title=True):
     """Graded prudential issue map.
 
     x = how directly it is APRA's lever, y = prudential materiality,
     bubble size = likelihood, colour+letter = grade. Every point direct-labelled.
-    """
-    fig, ax = plt.subplots(figsize=(7.2, 4.3))
 
-    # quadrant wash - recessive, purely orienting
+    show_title=False when the document supplies its own heading, which also
+    buys back the vertical space the heading would consume.
+    """
+    fig, ax = plt.subplots(figsize=(7.2, 3.15 if not show_title else 4.3))
+
+    # quadrant wash - recessive, purely orienting. No text label: with 18 issues
+    # the top-right cells are occupied and any annotation placed there collides.
     ax.add_patch(Rectangle((3.0, 3.0), 2.6, 2.6, facecolor=PALEBLUE,
                            edgecolor="none", zorder=0, alpha=0.75))
-    # anchored bottom-right of the wash, clear of the y=5 / x=5 bubble lanes
-    ax.text(5.60, 3.10, "APRA's own lever\nand highly material",
-            ha="right", va="bottom", fontsize=7.2, color=COBALT,
-            style="italic", linespacing=1.4, zorder=1)
 
     for i in (1, 2, 3, 4, 5):
         ax.axhline(i, color=GRID, lw=0.6, zorder=1)
@@ -242,11 +242,13 @@ def fig_grade_map(path, issues, note=None):
     handles.append(Line2D([], [], marker="o", linestyle="none", markersize=6,
                           markerfacecolor=MUTED, markeredgecolor="white",
                           label="Bubble size = likelihood"))
-    ax.legend(handles=handles, loc="lower left", frameon=False, fontsize=7.6,
-              handletextpad=0.5, borderpad=0.2, labelspacing=0.5)
+    ax.legend(handles=handles, loc="lower left", frameon=False, fontsize=7.4,
+              handletextpad=0.5, borderpad=0.2, labelspacing=0.42, ncol=2,
+              columnspacing=1.4)
 
-    _title(ax, "Where the prudential risk actually sits",
-           "Bubble size shows likelihood. Letters are issue IDs — see the table.")
+    if show_title:
+        _title(ax, "Where the prudential risk actually sits",
+               "Bubble size shows likelihood. Letters are issue IDs — see the table.")
     if note:
         ax.text(0, -0.175, note, transform=ax.transAxes, fontsize=7,
                 color=MUTED, va="top", linespacing=1.4)
@@ -410,6 +412,43 @@ def fig_perimeter(path, segments, note=None, title="", subtitle=""):
     if note:
         ax.text(0, -1.42, note, fontsize=7, color=MUTED, va="top",
                 linespacing=1.4)
+    _save(fig, path)
+
+
+# ======================================================= FIGURE 3 (compact) ==
+def fig_verdict_summary(path, counts, note=None, callout=None):
+    """What the framework needs, as counts rather than an instrument-by-instrument
+    map. A 27-row map renders too tall for the page and is the wrong altitude for
+    an executive brief - the per-instrument detail belongs in the annex.
+    """
+    total = sum(c["n"] for c in counts) or 1
+    fig, ax = plt.subplots(figsize=(7.2, 1.55))
+    ax.set_xlim(0, 100); ax.set_ylim(-1.55, 1.35)
+    ax.axis("off")
+
+    x = 0.0
+    for c in counts:
+        w = 100.0 * c["n"] / total
+        ax.add_patch(FancyBboxPatch((x + 0.18, -0.30), max(w - 0.36, 0.4), 0.60,
+                                    boxstyle="round,pad=0,rounding_size=0.10",
+                                    facecolor=c["color"], edgecolor="none", zorder=2))
+        if w >= 7:
+            ax.text(x + w / 2, 0, str(c["n"]), ha="center", va="center",
+                    fontsize=13, fontweight="bold", color="white", zorder=3)
+        else:
+            ax.text(x + w / 2, 0.46, str(c["n"]), ha="center", va="bottom",
+                    fontsize=11, fontweight="bold", color=c["color"], zorder=3)
+        ax.text(x + w / 2, -0.48, c["label"], ha="center", va="top", fontsize=7.6,
+                fontweight="bold", color=c["color"], linespacing=1.4, zorder=3)
+        x += w
+
+    ax.text(0, 1.22, f"{total} prudential instruments examined", fontsize=8.6,
+            fontweight="bold", color=NAVY, va="top")
+    if callout:
+        ax.text(100, 1.22, callout, fontsize=8, color=MAGENTA, va="top", ha="right",
+                fontweight="bold")
+    if note:
+        ax.text(0, -1.05, note, fontsize=7, color=MUTED, va="top", linespacing=1.4)
     _save(fig, path)
 
 

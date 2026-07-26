@@ -83,6 +83,7 @@ const out = {
   bottom_line: P.bottom_line || [],
   captions: P.captions || {},
   headline_numbers: (P.headline_override || headline).slice(0, 3),
+  all_headline_numbers: headline,
   why_prudential: P.why_prudential || [],
   provisions_intro: P.provisions_intro || "",
   provisions: P.provisions || [],
