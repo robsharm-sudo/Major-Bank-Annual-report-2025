@@ -9,8 +9,8 @@
 
   "bottom_line": [
     "This is not a proposal. Division 296 has been law since March and started on 1 July 2026. We are already inside the first measurement year. The final regulations were registered twelve days before it began, and the Tax Office guidance explaining how to do the calculation is still unwritten.",
-    "It is not a liquidity event, and we should say so. Our own stress test had six large funds absorb $174 billion of liquidity demand without selling a single unlisted asset. Division 296 outflows are a fraction of that. Leading with a liquidity warning would be wrong, and people in the room will know it.",
-    "The real change is that a trustee judgement now sets an individual member's personal tax bill. Every fund we supervise must split fund earnings between members on a 'fair and reasonable' basis it designs itself. Two funds with identical assets and identical members can lawfully report different numbers. No standard governs how that judgement is made, signed off or checked.",
+    "It is not a liquidity event, and we should say so. In our own System Risk Stress Test, six large funds absorbed $174 billion of cumulative liquidity demand — just under 16 per cent of net assets — while largely avoiding sales of unlisted assets, primarily selling listed equities instead. Division 296 outflows are a small fraction of that. Leading with a liquidity warning would be wrong, and people in the room will know it.",
+    "The real change is that a trustee judgement now feeds an individual member's personal tax bill. Every large fund we supervise must split fund earnings between members on a 'fair and reasonable' basis it designs itself, and report that figure to the Tax Office. Two funds holding identical assets for identical members can lawfully report different numbers. No standard governs how that judgement is made, signed off or independently checked.",
     "The framework mostly already covers this. Of 23 instruments we examined, 11 need no change at all and only one needs amending — our own reporting standard, which cannot see above $1 million. What is missing is guidance, supervisory attention, and a seat in the room where the rules are actually being written."
   ],
 
@@ -29,7 +29,7 @@
       "provenance": "inferred"
     },
     {
-      "text": "The attribution standard is a discretion, not a formula. Funds with more than six members — every fund we supervise — apply a 'fair and reasonable' test of their own design. Funds with six or fewer get a prescribed formula and an actuarial certificate. The loose standard applies exactly where we supervise.",
+      "text": "The attribution standard is a discretion, not a formula. Funds with more than six members apply a 'fair and reasonable' test of their own design; funds with six or fewer get a prescribed formula and a compulsory actuarial certificate. That boundary is fund size, not who regulates — small APRA funds sit on the prescribed side despite being ours. The effect is that the loose standard lands on the large funds holding almost all the money.",
       "provenance": "sourced"
     },
     {
@@ -51,7 +51,7 @@
   "recommendations": [
     {
       "horizon": "Now",
-      "text": "Seek a prudential seat at the table. The remaining design work has moved into a non-public ATO co-design group of the Tax Office, large funds, administrators and one industry body. We are not in it, and there is no open consultation to submit into. Ask to participate or observe, and put our position on attribution in writing to Treasury and the ATO.",
+      "text": "Confirm our engagement, then secure a prudential seat. The remaining design work has moved into a non-public ATO co-design group of the Tax Office, large funds, administrators and one industry body, and both public consultations have closed. We could find no record of APRA participation or any published APRA material on this measure — but that is a search result, not an internal audit, so confirm it before it is said out loud. If it holds, ask to participate or observe and put our position on attribution in writing.",
       "provenance": "created"
     },
     {
