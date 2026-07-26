@@ -65,6 +65,18 @@ function requireProv(obj, where) {
   return obj.provenance;
 }
 
+// SPG entries in an instruments list read as obligations unless labelled.
+// A practice guide sets an APRA expectation; it creates no requirement.
+const SPG_NOTE = " - practice guide; APRA expectation, not an enforceable requirement";
+let spgLabelled = 0;
+const labelSPG = arr => (arr || []).map(x => {
+  if (typeof x === "string" && /^SPG\s/.test(x.trim()) && !x.includes(SPG_NOTE)) {
+    spgLabelled++;
+    return x + SPG_NOTE;
+  }
+  return x;
+});
+
 const issues = (final.issues || []).map((i, n) => ({
   ...i,
   id: i.id || `P${n + 1}`,
@@ -72,6 +84,7 @@ const issues = (final.issues || []).map((i, n) => ({
   materiality: Number(i.materiality) || 1,
   likelihood: Number(i.likelihood) || 1,
   apra_proximity: Number(i.apra_proximity) || 1,
+  instruments: labelSPG(i.instruments),
 }));
 
 const audit = (final.audit_trail || []).map((a, n) => ({
@@ -119,6 +132,7 @@ console.log(`  red-team dispositions: ${out.redteam_disposition.length}`);
 console.log(`  sources: ${out.sources.length}`);
 console.log(`  verified citation corrections applied: ${correctionCount}`);
 console.log(`  terminology (brief -> note) applied: ${termCount}`);
+console.log(`  SPG entries labelled as guidance: ${spgLabelled}`);
 if (problems.length) {
   console.log(`\n  ${problems.length} PROVENANCE PROBLEM(S) - defaulted to "created" so nothing is over-claimed:`);
   problems.slice(0, 20).forEach(p => console.log("   -", p));

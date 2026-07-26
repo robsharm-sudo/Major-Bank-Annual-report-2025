@@ -13,17 +13,17 @@
     },
     {
       "find": "SPS 530 para 29",
-      "replace": "SPS 530 para 31",
-      "why": "The comprehensive investment stress testing programme is para 31. Para 29 is the Board's duty to ensure a decision to amend an investment strategy is supported by sufficient justification and analysis. Self-confirmed by SPS 530 para 38, which refers to 'the comprehensive investment stress testing program required in paragraph 31'."
+      "replace": "SPS 530 para 30",
+      "why": "The comprehensive investment stress testing programme is para 30 ('An RSE licensee must have a comprehensive investment stress testing program that is approved by the Board'). Para 31 is only the adverse-scenarios component; para 29 is the Board's duty on amending an investment strategy. NOTE: para 38 cross-refers to 'paragraph 31', but that cross-reference is an erratum in the standard - it does not make 31 the programme. An earlier version of this rule relied on that erratum and pointed to 31; corrected against the paragraph text itself."
     },
     {
       "find": "SPS 530 paragraph 29",
-      "replace": "SPS 530 paragraph 31",
+      "replace": "SPS 530 paragraph 30",
       "why": "Same correction, long form."
     },
     {
       "find": "SPS 530 paras 29-38",
-      "replace": "SPS 530 paras 31-38",
+      "replace": "SPS 530 paras 30-38",
       "why": "Range began at the wrong paragraph for the same reason."
     },
     {
@@ -60,6 +60,351 @@
       "find": "preceded commencement on 1 July 2026",
       "replace": "preceded commencement on 1 April 2026",
       "why": "The point (Assent precedes commencement, so no retrospectivity) still holds, but commencement was 1 April 2026."
+    },
+    {
+      "find": "SPS 530 para 31",
+      "replace": "SPS 530 para 30",
+      "why": "Undoes an earlier incorrect rule that pointed the stress testing programme at para 31."
+    },
+    {
+      "find": "SPS 530 paras 31-38",
+      "replace": "SPS 530 paras 30-38",
+      "why": "Same."
+    },
+    {
+      "find": "stating the purpose is to 'help APRA identify concentration risks across the financial services sector'",
+      "replace": "which APRA describes as its 'preferred method for regulated entities to submit their registers to APRA for meeting the requirement of paragraph 51 of Prudential Standard CPS 230'. INFERRED: that registers submitted on a common template can be read across licensees to identify shared providers - no concentration-risk purpose is stated in that release",
+      "why": "FABRICATED QUOTATION. The cited APRA release contains no such sentence and states no concentration-risk purpose. Replaced with the release's actual wording plus an explicit inference label."
+    },
+    {
+      "find": "Assent (13 March 2026) precedes commencement (1 July 2026)",
+      "replace": "Assent (13 March 2026) precedes commencement on 1 April 2026, and the charge first applies only from the 2026-27 income year",
+      "why": "Contradicts the corrected note. Survived the literal sweep in P2's evidence and in the disposition that adjudicates retrospectivity."
+    },
+    {
+      "find": "the same day Division 296 commences",
+      "replace": "the same day Division 296 first applies (Division 296 itself commenced 1 April 2026)",
+      "why": "Paraphrase missed by the literal sweep, and tagged SOURCED in P7."
+    },
+    {
+      "find": "Payday Super and Division 296 commence on the same day, 1 July 2026",
+      "replace": "Payday Super commences on 1 July 2026 and Division 296 - which itself commenced on 1 April 2026 - first applies from that same date",
+      "why": "Audit row 24 was tagged 'verified' while asserting a wrong legal proposition."
+    },
+    {
+      "find": "both measures commence on the same day",
+      "replace": "both measures bite from the same day",
+      "why": "Same conflation, shorter form."
+    },
+    {
+      "find": "the legislated boundary is fund size - small funds, which include small APRA funds as well as SMSFs - not SMSF status",
+      "replace": "the legislated boundary is member count, not SMSF status and not fund size: the reset is available to 'small superannuation funds' - those with six or fewer members - which includes small APRA funds as well as SMSFs",
+      "why": "The note states the boundary is member count. A 'small superannuation fund' is defined by member count."
+    },
+    {
+      "find": "the design asymmetry is about fund size, not about who regulates the fund",
+      "replace": "the design asymmetry runs on member count, not on who regulates the fund",
+      "why": "Same error."
+    },
+    {
+      "find": "the size-based asymmetry",
+      "replace": "the member-count asymmetry",
+      "why": "Same error."
+    },
+    {
+      "find": "The legislated boundary is fund size, not SMSF versus APRA-regulated",
+      "replace": "The legislated boundary is member count - a small superannuation fund is one with six or fewer members - not SMSF versus APRA-regulated",
+      "why": "Same error."
+    },
+    {
+      "find": "P7 is restated around the size boundary",
+      "replace": "P7 is restated around the member-count boundary",
+      "why": "Same error."
+    },
+    {
+      "find": "differs by fund size rather than by regulator",
+      "replace": "differs by member count - the election is available to funds with six or fewer members - rather than by regulator",
+      "why": "Same error."
+    },
+    {
+      "find": "This is APRA's own derivation, not a Treasury or ATO figure",
+      "replace": "This is the authors' own arithmetic from published parameters, not a Treasury, ATO or APRA figure",
+      "why": "The note disclaims affiliation; it cannot label its own analysis as the regulator's."
+    },
+    {
+      "find": "CREATED (sizing inference APRA can own)",
+      "replace": "CREATED (sizing inference by the authors)",
+      "why": "Same."
+    },
+    {
+      "find": "On APRA's own derivation,",
+      "replace": "On this note's own derivation from published Treasury and APRA figures,",
+      "why": "Same."
+    },
+    {
+      "find": "is APRA's own arithmetic from the proportioning formula",
+      "replace": "is the authors' own arithmetic applied to the statutory proportioning formula",
+      "why": "Same."
+    },
+    {
+      "find": "It is the single most useful number in the pack",
+      "replace": "It is the single most useful figure in this note",
+      "why": "Same."
+    },
+    {
+      "find": "Presented in the note as APRA's own inference used to calibrate supervisory intensity",
+      "replace": "Presented as the authors' own inference from published APRA data",
+      "why": "Same."
+    },
+    {
+      "find": "Labelled in the note as APRA's own illustration",
+      "replace": "Labelled as the authors' own illustration",
+      "why": "Same."
+    },
+    {
+      "find": "are APRA's own analysis",
+      "replace": "are this note's own analysis",
+      "why": "Same."
+    },
+    {
+      "find": "labelled as APRA's own derivation",
+      "replace": "labelled as this note's own derivation from the enacted proportioning rule",
+      "why": "Same."
+    },
+    {
+      "find": "state as an APRA analytical proposition",
+      "replace": "state as an analytical proposition of this note",
+      "why": "Same."
+    },
+    {
+      "find": "INFERRED (unquantified, APRA's own proposition)",
+      "replace": "INFERRED (unquantified, this note's own proposition)",
+      "why": "Same."
+    },
+    {
+      "find": "service provider management limb (Part 4, paras 48-60)",
+      "replace": "service provider management limb (paras 47-60; policy at 47-48, material service provider register at 49, mandatory RSE licensee classifications at 50, annual submission to APRA at 51)",
+      "why": "Wrong pinpoint range."
+    },
+    {
+      "find": "CPS 230 Part 4 (service provider management)",
+      "replace": "CPS 230 paras 47-60 (management of service provider arrangements)",
+      "why": "Same."
+    },
+    {
+      "find": "and Part 4 (service provider management)",
+      "replace": "and paras 47-60 (management of service provider arrangements)",
+      "why": "Same."
+    },
+    {
+      "find": "is a member-equity question under SPG 530 para 9 and the s52(2) covenants",
+      "replace": "is a member-equity question under the s52(2) covenants, and one APRA has said in SPG 530 para 9 it expects the investment governance framework to consider",
+      "why": "SPG 530 is a practice guide and creates no obligation."
+    },
+    {
+      "find": "the eight-licensee liquidity subgroup (27% of funds under management, 5.4m accounts)",
+      "replace": "the eight licensees rated 'requires improvement' for liquidity risk management (27% of in-scope funds under management and 5.4m member accounts, in-scope meaning the 23 reviewed licensees)",
+      "why": "Scope of the percentage was unstated."
+    },
+    {
+      "find": "Income Tax Assessment (1997 Act) Amendment Regulations 2026 (F2026L00726)",
+      "replace": "Income Tax Assessment (1997 Act) Amendment (Building a Stronger and Fairer Super System and Other Measures) Regulations 2026 (F2026L00726)",
+      "why": "Incomplete short title."
+    },
+    {
+      "find": "The offsetting point is genuinely positive for a CEO conversation:",
+      "replace": "The offsetting point cuts the other way:",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "That is an internal data query, not new collection, and should be run before the meeting.",
+      "replace": "That would be an internal APRA data query rather than a new collection.",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "should not be carried into the meeting",
+      "replace": "should not be carried into the analysis",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "in a CEO-level conversation",
+      "replace": "in any public account of the measure",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "This is an original proposition for the meeting",
+      "replace": "This is an original proposition of this note",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "an original analytical proposition for this meeting",
+      "replace": "an original analytical proposition of this note",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "before the meeting.",
+      "replace": "before relying on it.",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "generated for this meeting",
+      "replace": "generated for this note",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "written for this meeting",
+      "replace": "written for this note",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "Editorial and methodological decision for this meeting",
+      "replace": "Editorial and methodological decision for this note",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "naming what is not affected is as useful to the meeting as naming what is",
+      "replace": "identifying which standards are not engaged is as informative as identifying those that are",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "Included to prevent an avoidable correction in the meeting.",
+      "replace": "Included because the CFR is sometimes assumed to be the coordinating forum for this measure.",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "in the pack",
+      "replace": "identified in this review",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "would cost credibility in the room",
+      "replace": "would cost the analysis credibility",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "adopted as a pre-meeting action",
+      "replace": "adopted as a prior step",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "pending confirmation with the ATO before the meeting",
+      "replace": "pending confirmation with the ATO",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "before it is put in front of the CEO",
+      "replace": "before publication",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "should be checked internally before the meeting",
+      "replace": "is not determinable from published sources",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "Note internally that",
+      "replace": "Note that",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "into the meeting - all four were answered",
+      "replace": "into the note - all four were answered",
+      "why": "Insider register: this is an independent research note, not a meeting pack."
+    },
+    {
+      "find": "SPS 530 para 30 is not the investment stress testing programme; para 31 is, confirmed by para 38's own cross-reference.",
+      "replace": "SPS 530 para 29 is not the investment stress testing programme.",
+      "why": "SELF-INFLICTED: an earlier blanket 29->30 rule corrupted this disposition into nonsense. Restored, with the substance corrected below."
+    },
+    {
+      "find": "Independently verified. Citation changed to para 31 and the range restated as paras 31-38 throughout.",
+      "replace": "Independently verified against the standard text. The programme is para 30 ('must have a comprehensive investment stress testing program'); para 31 sets the adverse stress scenarios. Citation corrected to para 30 and the range restated as paras 30-38. Note that para 38 cross-refers to 'paragraph 31' - that cross-reference is an erratum in the standard and must not be relied on.",
+      "why": "The original correction pointed at para 31 on the strength of para 38's cross-reference, which is itself wrong."
+    },
+    {
+      "find": "The comprehensive investment stress testing programme is SPS 530 paragraph 31, not paragraph 29; SPS 530 paragraph 38 cross-refers to 'paragraph 31'.",
+      "replace": "The comprehensive investment stress testing programme is SPS 530 paragraph 30, not paragraph 29 (paragraph 31 sets the adverse stress scenarios). Paragraph 38 cross-refers to 'paragraph 31', but that cross-reference is an erratum in the standard.",
+      "why": "Audit-trail row asserted the wrong paragraph as verified."
+    },
+    {
+      "find": "it is APRA's own derivation from a superseded-design revenue estimate",
+      "replace": "it is this note's own derivation from a superseded-design revenue estimate",
+      "why": "The note disclaims affiliation and cannot label its own analysis as APRA's."
+    },
+    {
+      "find": " A repeated off-by-one on the register's most-cited standard would have been corrected in the room.",
+      "replace": "",
+      "why": "Meeting-room register; the adjudicator directed deletion."
+    },
+    {
+      "find": "It usefully reframes the CEO conversation from loss of visibility to",
+      "replace": "It usefully reframes the issue from loss of visibility to",
+      "why": "Meeting register in an independent note."
+    },
+    {
+      "find": "CORRECTION: the draft cited para 29 for the stress testing programme; para 29 concerns Board justification when amending an investment strategy. The standard's own cross-reference in para 38 points to para 31.",
+      "replace": "CORRECTION: the draft cited para 29 for the stress testing programme. Para 29 concerns the Board's justification for any decision to amend an investment strategy following a review. The programme obligation is at para 30; para 31 requires the adverse stress scenarios. Para 38 refers to 'the comprehensive investment stress testing program required in paragraph 31' - that internal cross-reference is an erratum in SPS 530, since the programme is required by para 30, and it should not be relied on.",
+      "why": "The row justified its own correction from para 38's erratum, asserting both 30 and 31 as the programme."
+    },
+    {
+      "find": "the new annual actuarial valuation capability, the tighter response window, and decades-long deferred debt account tracking that must survive mergers and administrator changes.",
+      "replace": "the new annual actuarial valuation capability and the tighter response window - noting that the deferred debt account is maintained by the Commissioner and not by the fund, so what must survive mergers and administrator changes is the trustee's own valuation and member-level reporting record, not a debt account.",
+      "why": "Listed debt-account tracking as a trustee capability, inventing an obligation the law does not impose - in the disposition whose purpose is to separate genuine trustee duties from a category error."
+    },
+    {
+      "find": "SPS 515 paras 30, 36-44 (transfer preparation and successor fund transfers)",
+      "replace": "SPS 515 - remedial actions and transfer planning (steps to prepare for a transfer of beneficiaries out of, or into, an RSE); SIS Regulations reg 11.08 (written notice to APRA of a decision to undertake a successor fund transfer)",
+      "why": "SPS 515 has no numbered paragraphs at these pinpoints; replaced with the obligation described by name."
+    },
+    {
+      "find": "SPS 515 paras 30, 36-44 (transfer preparation)",
+      "replace": "SPS 515 - remedial actions and transfer planning (preparation for a transfer of beneficiaries out of, or into, an RSE)",
+      "why": "SPS 515 has no numbered paragraphs at these pinpoints; replaced with the obligation described by name."
+    },
+    {
+      "find": "SPS 515 paras 23-28 (business performance review, cohorts)",
+      "replace": "SPS 515 - business performance review (annual review against strategic objectives; outcomes assessed having regard to different cohorts of beneficiaries)",
+      "why": "SPS 515 has no numbered paragraphs at these pinpoints; replaced with the obligation described by name."
+    },
+    {
+      "find": "SPS 515 paras 24-28 and SPG 516 (business performance review, member cohorts)",
+      "replace": "SPS 515 - business performance review (outcomes assessed having regard to different cohorts of beneficiaries) and SPG 516 (guidance)",
+      "why": "SPS 515 has no numbered paragraphs at these pinpoints; replaced with the obligation described by name."
+    },
+    {
+      "find": "SPS 515 paras 13, 17-18 (fee-setting and expenditure decisions)",
+      "replace": "SPS 515 - setting fees (each fee set prudently and transparently) and expenditure management (purpose, funding source and monitoring of results)",
+      "why": "SPS 515 has no numbered paragraphs at these pinpoints; replaced with the obligation described by name."
+    },
+    {
+      "find": "SPS 515 paras 13, 17-18 (prudent and transparent fees; demonstrable purpose and funding source for expenditure)",
+      "replace": "SPS 515 - setting fees (each fee set prudently and transparently) and expenditure management (purpose of the expenditure, how it will be funded, how its results will be monitored)",
+      "why": "SPS 515 has no numbered paragraphs at these pinpoints; replaced with the obligation described by name."
+    },
+    {
+      "find": "demonstrate under SPS 515 paras 17-18 the purpose, funding source and monitoring metrics for that expenditure",
+      "replace": "demonstrate under SPS 515's expenditure management requirements the purpose of that expenditure, how it is funded and how its results are monitored",
+      "why": "SPS 515 has no numbered paragraphs at these pinpoints; replaced with the obligation described by name."
+    },
+    {
+      "find": "the eight-licensee liquidity subgroup represents 27% of funds under management and 5.4m member accounts",
+      "replace": "the eight licensees rated 'requires improvement' for liquidity risk management represent 27% of in-scope funds under management and 5.4m of the 18.7m in-scope member accounts",
+      "why": "The percentage's base was unstated; it is a share of the 23 reviewed licensees, not of the system."
+    },
+    {
+      "find": "SPS 515 paras 9-11 (business plan and financial projections); paras 30, 36-44 (transfer preparation)",
+      "replace": "SPS 515 - business plan and financial projections demonstrating ongoing financial soundness across scenarios; remedial actions and transfer planning (preparation for a transfer of beneficiaries out of, or into, an RSE)",
+      "why": "SPS 515 pinpoints unreliable; obligations named instead."
+    },
+    {
+      "find": "SPS 515 paras 24-28 (member cohorts); SPG 515; SPG 516",
+      "replace": "SPS 515 - business performance review (outcomes assessed having regard to different cohorts of beneficiaries); SPG 515; SPG 516",
+      "why": "Same."
+    },
+    {
+      "find": "SPS 515 para 8A",
+      "replace": "SPS 515 - strategic objectives and business plan",
+      "why": "Same."
     }
   ],
   "verified_facts": [

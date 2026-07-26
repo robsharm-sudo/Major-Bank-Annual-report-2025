@@ -137,7 +137,7 @@
     },
     {
       "figure": "The Council of Financial Regulators has four members: APRA, ASIC, the RBA and Treasury",
-      "meaning": "The ATO is not a member. Since the coordination that matters most for Division 296 is between APRA and the ATO, the CFR is not the natural forum for it, and bilateral engagement with the ATO and Treasury is the appropriate route. Included to prevent an avoidable correction in the meeting.",
+      "meaning": "The ATO is not a member. Since the coordination that matters most for Division 296 is between APRA and the ATO, the CFR is not the natural forum for it, and bilateral engagement with the ATO and Treasury is the appropriate route. Included because the CFR is sometimes assumed to be the coordinating forum for this measure.",
       "source": "Council of Financial Regulators, member agencies page",
       "as_at": "Retrieved 26 July 2026",
       "provenance": "sourced"
@@ -257,13 +257,13 @@
       "id": "P1",
       "title": "One administrator's calculation engine will serve many funds at once, and APRA already holds the register that maps it",
       "plain_english": "About fifty licensed super trustees must now work out, for each member with a very large balance, how much of the fund's investment income belongs to that member, report it to the Tax Office, and pay money out when the Tax Office demands it. They will not build fifty separate systems to do this. A small number of shared administration providers, custodians and external tax agents will build it once and run it for many funds. That is efficient, but it means one flawed build, or one provider that is late, is not one fund's problem - it is the same problem in every client fund, in the same few weeks, in the first year. It also means dozens of boards will in practice adopt a supplier's judgement about how to split income between members and call it their own. APRA does not need new data to see this: it already required every trustee to lodge a register of its material service providers by 1 October 2025, for exactly the purpose of spotting concentrations like this one.",
-      "why_it_matters": "This is the single largest operational-resilience feature of the measure and it is the one that turns an ordinary implementation risk into a correlated, industry-wide one. It also cuts against the assumption that a board-approved methodology means an independently formed methodology. The offsetting point is genuinely positive for a CEO conversation: APRA is not blind here. It holds the dataset that maps which licensees share which administrator, so it can size this exposure at essentially zero collection cost and target engagement at the providers rather than one licensee at a time.",
+      "why_it_matters": "This is the single largest operational-resilience feature of the measure and it is the one that turns an ordinary implementation risk into a correlated, industry-wide one. It also cuts against the assumption that a board-approved methodology means an independently formed methodology. The offsetting point cuts the other way: APRA is not blind here. It holds the dataset that maps which licensees share which administrator, so it can size this exposure at essentially zero collection cost and target engagement at the providers rather than one licensee at a time.",
       "materiality": 4,
       "likelihood": 3,
       "apra_proximity": 5,
       "grade": "A",
       "instruments": [
-        "CPS 230 Operational Risk Management, service provider management limb (Part 4, paras 48-60) - note this limb replaced SPS 231 Outsourcing from 1 July 2025",
+        "CPS 230 Operational Risk Management, service provider management limb (paras 47-60; policy at 47-48, material service provider register at 49, mandatory RSE licensee classifications at 50, annual submission to APRA at 51) - note this limb replaced SPS 231 Outsourcing from 1 July 2025",
         "CPS 230 paras 24, 35, 36(c), 38, 44 (critical operations, tolerance levels, business continuity testing)",
         "APRA material service provider register (template issued 2025; completed registers required from superannuation trustees by 1 October 2025)",
         "Targeted amendments to CPS 230 finalised 30 April 2026",
@@ -275,11 +275,11 @@
       "evidence_refs": [
         "GRADING RULE APPLIED TO THIS REGISTER (state on the page): Grade A where apra_proximity >= 4 AND materiality >= 4 AND likelihood >= 3. Grade B where the A test fails but materiality + likelihood + apra_proximity >= 9. Grade C where the sum is 8 or less. Applied mechanically; no overrides used. Likelihood throughout is scored as the probability that the named ADVERSE CONSEQUENCE crystallises in the named window, not the probability that a present-tense fact is true.",
         "LIKELIHOOD PROPOSITION: P(a defect, delay or methodology weakness originating in one shared provider produces a correlated, multi-fund Division 296 reporting or attribution failure in the FY2027-28 reporting window) = 3.",
-        "SOURCED: APRA required a completed material service provider register from all superannuation trustees by 1 October 2025, stating the purpose is to 'help APRA identify concentration risks across the financial services sector' - https://www.apra.gov.au/news-and-publications/apra-releases-material-service-provider-register-template",
+        "SOURCED: APRA required a completed material service provider register from all superannuation trustees by 1 October 2025, which APRA describes as its 'preferred method for regulated entities to submit their registers to APRA for meeting the requirement of paragraph 51 of Prudential Standard CPS 230'. INFERRED: that registers submitted on a common template can be read across licensees to identify shared providers - no concentration-risk purpose is stated in that release - https://www.apra.gov.au/news-and-publications/apra-releases-material-service-provider-register-template",
         "SOURCED: CPS 230 para 36 - an entity 'must, at a minimum, classify the following business operations as critical operations, unless it can justify otherwise: ... (c) for an RSE licensee: investment management and fund administration' - https://www.apra.gov.au/system/files/2023-07/Prudential%20Standard%20CPS%20230%20Operational%20Risk%20Management%20-%20clean.pdf",
         "SOURCED: CPS 230 para 24 (NOT para 23, which is senior management's duty to inform the Board) - 'An APRA-regulated entity must manage its full range of operational risks, including but not limited to legal risk, regulatory risk, compliance risk, conduct risk, technology risk, data risk and change management risk.'",
         "INFERRED CHAIN: (1) the Division 296 calculation, attribution, Tax Office lodgement and release-authority payment are all fund administration functions; (2) fund administration is overwhelmingly outsourced to a small number of providers, and the fund income tax return from which fund earnings derive is often prepared by an external tax agent; (3) therefore a single methodology or build defect propagates simultaneously across every client fund; (4) the CPS 230 service provider limb, not only the critical operations limb, is the governing requirement; (5) APRA already holds the register that identifies the providers.",
-        "GAP: the register does not yet identify WHICH providers dominate the Division 296 build. That is an internal data query, not new collection, and should be run before the meeting."
+        "GAP: the register does not yet identify WHICH providers dominate the Division 296 build. That would be an internal APRA data query rather than a new collection."
       ],
       "provenance": "inferred"
     },
@@ -294,10 +294,10 @@
       "grade": "A",
       "instruments": [
         "CPS 230 paras 24, 35, 36(c), 38, 44 (critical operations, tolerance levels, business continuity testing)",
-        "CPS 230 Part 4 (service provider management) - see P1",
+        "CPS 230 paras 47-60 (management of service provider arrangements) - see P1",
         "SPS 220 Risk Management paras 15, 18, 21, 32 (risk appetite statement; annual risk management declaration signed by two directors)",
         "SPS 114 Operational Risk Financial Requirement paras 8-12, 15-20",
-        "SPS 515 paras 9-11 (business plan and financial projections); paras 30, 36-44 (transfer preparation)",
+        "SPS 515 - business plan and financial projections demonstrating ongoing financial soundness across scenarios; remedial actions and transfer planning (preparation for a transfer of beneficiaries out of, or into, an RSE)",
         "CPS 234 Information Security paras 16, 21-22, 27-36",
         "Taxation Administration Act 1953 Sch 1 (Division 296 reporting and release authority obligations); Income Tax Assessment Act 1997 Div 296"
       ],
@@ -312,7 +312,7 @@
         "SOURCED: ASFA - 'It is relatively common for funds with more than 6 members to amend tax returns after they have been lodged ... (in particular, unlisted investment income)'; typical variation 'a few basis points'; ASFA asks for a 5% materiality threshold and a 12-month post-year-end reporting window - ASFA submission to Treasury, 7 April 2026, pp.4-5, https://www.superannuation.asn.au/wp-content/uploads/2026/05/202619_Treasury_Division-296_Regulations_7_April.pdf",
         "SOURCED: Tax Institute - amendment periods 'may extend for up to four years', so funds 'may be required to retrospectively identify affected members and re-perform attribution calculations across multiple income years' - Tax Institute submission, 16 April 2026",
         "SOURCED (existing release authority regime, NOT yet confirmed for Division 296): for existing release authority types APRA-regulated funds must pay and send the release authority statement within 10 business days, with a non-compliance penalty up to 20 penalty units, and the cashing order permits release of preserved benefits third in priority - https://www.ato.gov.au/tax-and-super-professionals/for-superannuation-professionals/apra-regulated-funds/paying-benefits/releasing-benefits/release-authorities . The ATO's published list of release authority types does not yet include Division 296, so the specific Division 296 timeframe is unconfirmed. Do not state the ten-day clock as settled for this tax.",
-        "SOURCED: the successor fund transfer protocol 'needs to be updated to accommodate the reporting of Div 296 tax information', and funds must amend Division 296 information within 30 days of becoming aware of a change - ATO Superannuation Administration Group key messages, 17 June 2025. CAVEAT: this material predates the October 2025 redesign and the enacted regulations and may have been overtaken. The associated 2025 'retrospective law' concern is obsolete - Royal Assent (13 March 2026) precedes commencement (1 July 2026), so there is no retrospectivity of the kind described.",
+        "SOURCED: the successor fund transfer protocol 'needs to be updated to accommodate the reporting of Div 296 tax information', and funds must amend Division 296 information within 30 days of becoming aware of a change - ATO Superannuation Administration Group key messages, 17 June 2025. CAVEAT: this material predates the October 2025 redesign and the enacted regulations and may have been overtaken. The associated 2025 'retrospective law' concern is obsolete - Royal Assent (13 March 2026) precedes commencement on 1 April 2026, and the charge first applies only from the 2026-27 income year, so there is no retrospectivity of the kind described.",
         "SOURCED: the ATO will reuse the existing Division 293 and Division Deferred SuperStream product type codes for Division 296 release authorities, distinguished by a reference number, avoiding a SuperStream change - ATO Superannuation Administration Group key messages, 17 June 2025. IMPORTANT DISCLOSURE: ASFA asked for exactly this reuse on cost-to-members grounds ('The ATO should use the existing Div 293 Release Authority channel and messaging in SuperStream with the messaging tagged'). APRA should therefore NOT ask for a new message type; the proportionate ask is a machine-readable Division 296 flag on the existing message so the flow can be isolated in fund and regulator reporting.",
         "INFERRED CHAIN: calculation, attribution, lodgement and release-authority payment are all fund administration; fund administration is a default critical operation under CPS 230 para 36(c); therefore the obligation binds today with no amendment, and the external response windows are natural CPS 230 para 38 tolerance levels.",
         "GAP: SPS 515 paragraph numbers carry a plus-or-minus-one risk; verify against the registered instrument before formal citation."
@@ -330,8 +330,8 @@
       "grade": "A",
       "instruments": [
         "Income Tax Assessment Act 1997 Div 296; Superannuation (Building a Stronger and Fairer Super System) Imposition Act 2026 (the Act that imposes the tax and fixes the rates)",
-        "Income Tax Assessment (1997 Act) Amendment Regulations 2026 (F2026L00726) Sch 1",
-        "SPG 530 Investment Governance para 9 (member equity risk)",
+        "Income Tax Assessment (1997 Act) Amendment (Building a Stronger and Fairer Super System and Other Measures) Regulations 2026 (F2026L00726) Sch 1",
+        "SPG 530 Investment Governance para 9 (member equity risk) - practice guide; APRA expectation, not an enforceable requirement",
         "SPS 530 paras 39-41 (valuation governance framework)",
         "SPS 220 Risk Management paras 15, 18, 32",
         "CPS 230 paras 24, 35, 36(c)",
@@ -349,9 +349,9 @@
         "SOURCED: ASFA proposes the 'fair and reasonable' approach 'be tested and governed in a similar way to how the current tax provision is attributed at the option level by each fund in the context of unit pricing and crediting rates. ASIC's Regulatory Guide 94 is relevant in this context', and notes Explanatory Statement Example 6 gives an attribution of 1.01 per cent with no working shown - ASFA submission, 7 April 2026, pp.2-3",
         "SOURCED (corrects an overstatement in the draft): ASFA states 'It will be open to individuals who receive a Division 296 assessment from the ATO to lodge an objection if they consider that the realised investment income reported by a fund is not correct', and recommends 'It should be the responsibility of the ATO to determine whether reporting by specific funds is fair and reasonable'. The trustee's number is an INPUT; the assessment and the member's statutory remedy sit with the Commissioner.",
         "SOURCED: SPG 530 para 9 - APRA expects the investment governance framework to consider member equity risk 'with a view to all beneficiaries being dealt with fairly' - https://www.apra.gov.au/system/files/2023-07/Prudential%20Practice%20Guide%20SPG%20530%20Investment%20Governance%20Integrated%20version%20-%20clean.pdf",
-        "CREATED (own arithmetic, illustrative, assumes a 6% earnings rate and the $3m threshold): taxed proportion = (TSB - $3m) / TSB. At $3.2m: earnings $192,000, proportion 6.25%, taxable earnings $12,000, tax at 15% = $1,800. At $4m: $240,000, 25%, $60,000, = $9,000. At $10m: $600,000, 70%, $420,000, = $63,000. This is APRA's own derivation, not a Treasury or ATO figure, and it should be labelled as such in the note.",
-        "CREATED (sizing inference APRA can own): APRA's own data shows 305,000 accounts in the $1,000,000+ bracket with an average balance of $1.45m, implying a steeply decaying right tail. Set against Treasury's superseded-design estimate of 31,800 affected individuals across APRA-regulated funds and exempt public sector schemes, this suggests a typical large licensee has in-scope members in the hundreds, not thousands. Use it to calibrate supervisory intensity, and state it as an inference.",
-        "INFERRED CHAIN: (1) Division 296 fund earnings is a whole-of-fund figure derived from the fund's income tax return; (2) a member's entitlement is a unit price struck on market value net of a deferred tax provision; (3) the two are built on different bases at different granularity and cannot be reconciled; (4) therefore attribution is an estimate produced by trustee judgement; (5) a judgement that drives an identified member's assessment is a member-equity question under SPG 530 para 9 and the s52(2) covenants.",
+        "CREATED (own arithmetic, illustrative, assumes a 6% earnings rate and the $3m threshold): taxed proportion = (TSB - $3m) / TSB. At $3.2m: earnings $192,000, proportion 6.25%, taxable earnings $12,000, tax at 15% = $1,800. At $4m: $240,000, 25%, $60,000, = $9,000. At $10m: $600,000, 70%, $420,000, = $63,000. This is the authors' own arithmetic from published parameters, not a Treasury, ATO or APRA figure, and it should be labelled as such in the note.",
+        "CREATED (sizing inference by the authors): APRA's own data shows 305,000 accounts in the $1,000,000+ bracket with an average balance of $1.45m, implying a steeply decaying right tail. Set against Treasury's superseded-design estimate of 31,800 affected individuals across APRA-regulated funds and exempt public sector schemes, this suggests a typical large licensee has in-scope members in the hundreds, not thousands. Use it to calibrate supervisory intensity, and state it as an inference.",
+        "INFERRED CHAIN: (1) Division 296 fund earnings is a whole-of-fund figure derived from the fund's income tax return; (2) a member's entitlement is a unit price struck on market value net of a deferred tax provision; (3) the two are built on different bases at different granularity and cannot be reconciled; (4) therefore attribution is an estimate produced by trustee judgement; (5) a judgement that drives an identified member's assessment is a member-equity question under the s52(2) covenants, and one APRA has said in SPG 530 para 9 it expects the investment governance framework to consider.",
         "GAP: the operative attribution text in F2026L00726 and its Explanatory Statement could not be read directly (the Federal Register serves documents through a JavaScript front end). The 'more than six members' boundary and the principles wording come from the Bills Digest, ASFA and practitioner commentary. Also unmeasured: the actual dispersion between two lawful methods."
       ],
       "provenance": "inferred"
@@ -395,7 +395,7 @@
       "grade": "B",
       "instruments": [
         "SPS 530 paras 39-41 (valuation governance framework; policy covering frequency, methodologies, interim valuation circumstances at 40(f) and triggers at 40(g))",
-        "SPG 530 paras 9, 109, 110, 114",
+        "SPG 530 paras 9, 109, 110, 114 - practice guide; APRA expectation, not an enforceable requirement",
         "SRS 553.0 Investment Exposure Concentrations and Valuations / SRF 553.3 Out Of Cycle Valuations",
         "Joint APRA-ASIC unit pricing good practice guidance; ASIC RG 94"
       ],
@@ -404,7 +404,7 @@
       "who_bears_it": "Funds with material unlisted allocations - industry funds at roughly 20-22% of investments and public sector funds at roughly 19-23%, retail at roughly 5-7%; platform trustees through externally managed exposures. Remaining members bear the equity consequence of stale or conflicted valuations.",
       "evidence_refs": [
         "LIKELIHOOD PROPOSITION: P(a valuation decision at 30 June 2027 produces a member complaint, a media allegation or an APRA finding connecting valuation governance to Division 296 outcomes, by FY2029) = 3.",
-        "SOURCED: the enacted design 'explicitly removes the taxation of unrealised gains, switching instead to a realised-earnings base' - Bills Digest No. 48, 2025-26. Arguments built on paper gains, forced realisation, unusable paper losses and unindexed bracket creep are all answered by the enacted design and should not be carried into the meeting.",
+        "SOURCED: the enacted design 'explicitly removes the taxation of unrealised gains, switching instead to a realised-earnings base' - Bills Digest No. 48, 2025-26. Arguments built on paper gains, forced realisation, unusable paper losses and unindexed bracket creep are all answered by the enacted design and should not be carried into the analysis.",
         "SOURCED: APRA thematic review, 17 December 2024 - only 11 of 23 licensees had a dedicated valuation committee; committee members included 'individuals whose remuneration may be dependent on the outcome of the valuation process'; 'some assets may not be revalued for multiple quarters at a time' - https://www.apra.gov.au/governance-of-unlisted-asset-valuation-and-liquidity-risk-management-superannuation-december-2024",
         "SOURCED: SPG 530 para 110 lists 'changes in Government policy settings' among triggers for more frequent valuations; para 114 requires protocols for reviewing interim valuations for unit pricing purposes.",
         "SOURCED: SRS 553.0 first reporting period is the December 2025 quarter - one cycle before Division 296 commenced - https://www.apra.gov.au/system/files/2024-12/Reporting%20Standard%20SRS%20553.0%20Investment%20Exposure%20Concentrations%20and%20Valuations_clean.pdf",
@@ -416,7 +416,7 @@
       "id": "P6",
       "title": "APRA cannot see the affected population, and the obvious remedy - Tax Office data - may not be lawful without amendment",
       "plain_english": "The tax applies above three million dollars and again above ten million. The highest balance band APRA collects and publishes is 'one million and above'. So APRA cannot count members above three million, cannot see where they are concentrated, and cannot size a fund's exposure. A deeper problem sits behind that: the threshold is measured across everything a person holds, in every fund including a self-managed one. APRA's collections are per fund and per account, so more balance bands would still not produce that view. Only the Tax Office holds it. But the obvious fix - a standing data feed from the Tax Office - runs into taxpayer secrecy law, and nobody has checked whether it is permitted. There is also a quieter gap: APRA collects nothing at all about the Division 296 process itself - not how many in-scope members a fund reports, not which method it uses, not how many release notices it received. Balance bands tell APRA who is exposed; a single process question would tell APRA who is ready.",
-      "why_it_matters": "Without this, every APRA statement about the measure's effect on regulated funds is an estimate rather than an observation, and APRA cannot challenge a licensee that says it has very few affected members. It is also the main reputational risk in a CEO-level conversation: APRA should not promise to monitor a population it structurally cannot see. The honest framing is that APRA can monitor large-account behaviour in APRA-regulated funds, not the affected population.",
+      "why_it_matters": "Without this, every APRA statement about the measure's effect on regulated funds is an estimate rather than an observation, and APRA cannot challenge a licensee that says it has very few affected members. It is also the main reputational risk in any public account of the measure: APRA should not promise to monitor a population it structurally cannot see. The honest framing is that APRA can monitor large-account behaviour in APRA-regulated funds, not the affected population.",
       "materiality": 3,
       "likelihood": 3,
       "apra_proximity": 5,
@@ -455,7 +455,7 @@
       "grade": "B",
       "instruments": [
         "CPS 230 para 24 (change management risk); paras 35, 36(c), 38, 44",
-        "CPS 230 Part 4 (service provider management)",
+        "CPS 230 paras 47-60 (management of service provider arrangements)",
         "SPS 220 paras 15, 18, 32",
         "APRA letter 'Payday Super Readiness', 25 March 2026"
       ],
@@ -465,8 +465,8 @@
       "evidence_refs": [
         "LIKELIHOOD PROPOSITION: P(Division 296 implementation is materially deprioritised behind Payday Super at one or more major administrators, contributing to a first-year failure) = 3.",
         "SOURCED: APRA, 'Payday Super Readiness', 25 March 2026 - warns that many licensees were not on track to implement the Member Verification Request component of the new SuperStream standard, tells them to revisit implementation timelines, states that contribution processing should be treated as a CPS 230 critical operation, and states that significant breaches would necessitate a breach notification - https://www.apra.gov.au/news-and-publications/payday-super-readiness-0",
-        "SOURCED: Payday Super first applies from 1 July 2026 (the start of the 2026-27 income year), the same day Division 296 commences.",
-        "INFERRED: the two changes share platforms, pipelines and a finite pool of administrator change capacity; Payday Super carries the earlier and more visible deadline; therefore Division 296 is the more likely casualty of capacity constraints. Unquantified - state as an APRA analytical proposition."
+        "SOURCED: Payday Super first applies from 1 July 2026 (the start of the 2026-27 income year), the same day Division 296 first applies (Division 296 itself commenced 1 April 2026).",
+        "INFERRED: the two changes share platforms, pipelines and a finite pool of administrator change capacity; Payday Super carries the earlier and more visible deadline; therefore Division 296 is the more likely casualty of capacity constraints. Unquantified - state as an analytical proposition of this note."
       ],
       "provenance": "sourced"
     },
@@ -480,10 +480,10 @@
       "apra_proximity": 4,
       "grade": "B",
       "instruments": [
-        "SPS 530 paras 31-38 (comprehensive investment stress testing programme at para 31; liquidity management plan at para 36) and paras 39-41 (valuation governance)",
-        "SPG 530 paras 9, 79, 92, 109-110, 114",
+        "SPS 530 paras 30-38 (comprehensive investment stress testing programme at para 31; liquidity management plan at para 36) and paras 39-41 (valuation governance)",
+        "SPG 530 paras 9, 79, 92, 109-110, 114 - practice guide; APRA expectation, not an enforceable requirement",
         "CPS 190 Recovery and Exit Planning paras 7, 8(b), 8(d)",
-        "SPS 515 paras 23-28 (business performance review, cohorts)"
+        "SPS 515 - business performance review (annual review against strategic objectives; outcomes assessed having regard to different cohorts of beneficiaries)"
       ],
       "action_type": "supervisory-practice",
       "recommended_apra_position": "Run a targeted Division 296 readiness review in FY2027 covering platform and wrap trustees and the licensees with the highest concentration of very large accounts, folded into existing remediation engagement rather than launched as a new programme. Reason it on the attribution difficulty in member-directed options, and cite the December 2024 thematic only as indicative evidence of general governance capacity, flagged as such. For small licensees with high-balance-skewed membership, ask whether sustained outflow from that cohort features in the CPS 190 trigger framework - losing a few hundred large accounts is a scale event for them and not for a mega-fund.",
@@ -511,13 +511,13 @@
       "instruments": [
         "Taxation Administration Act 1953 Sch 1 s 134-140 (notice of expected end benefit payment date, 14 days, approved form; express note as to AFCA complaints)",
         "Taxation Administration Act 1953 Sch 1 s 134-145 (correction of material change or omission within 7 days)",
-        "SPS 515 paras 30, 36-44 (transfer preparation and successor fund transfers)",
-        "CPS 230 paras 24, 35, 36(c), 38 and Part 4 (service provider management)",
+        "SPS 515 - remedial actions and transfer planning (steps to prepare for a transfer of beneficiaries out of, or into, an RSE); SIS Regulations reg 11.08 (written notice to APRA of a decision to undertake a successor fund transfer)",
+        "CPS 230 paras 24, 35, 36(c), 38 and paras 47-60 (management of service provider arrangements)",
         "CPS 234 Information Security (record retention through third parties)",
         "SPS 160 Defined Benefit Matters"
       ],
       "action_type": "supervisory-practice",
-      "recommended_apra_position": "Ask defined benefit and hybrid licensees to demonstrate how a Division 296 debt account record and its end benefit notification trigger will survive a merger, a successor fund transfer and an administrator change, and how the 14-day and 7-day clocks are controlled. Where a licensee is planning a successor fund transfer spanning the 30 June 2027 measurement date, ask specifically how member-level Division 296 and debt account data will transfer. Press the ATO to settle the transfer protocol before the FY2027 merger season. Note internally that the express complaints note in s 134-140 weighs against carving trustee Division 296 judgements out of external dispute resolution.",
+      "recommended_apra_position": "Ask defined benefit and hybrid licensees to demonstrate how a Division 296 debt account record and its end benefit notification trigger will survive a merger, a successor fund transfer and an administrator change, and how the 14-day and 7-day clocks are controlled. Where a licensee is planning a successor fund transfer spanning the 30 June 2027 measurement date, ask specifically how member-level Division 296 and debt account data will transfer. Press the ATO to settle the transfer protocol before the FY2027 merger season. Note that the express complaints note in s 134-140 weighs against carving trustee Division 296 judgements out of external dispute resolution.",
       "who_bears_it": "Defined benefit and hybrid licensees, and any fund receiving members through a transfer; members and estates, whose benefit payment can be delayed or mis-reported decades after the liability arose.",
       "evidence_refs": [
         "LIKELIHOOD PROPOSITION: P(a debt account or end benefit notification obligation is lost or missed through a merger, transfer or administrator change, producing member detriment or a Tax Office issue, over the next five years) = 3.",
@@ -540,10 +540,10 @@
       "grade": "B",
       "instruments": [
         "SPS 160 Defined Benefit Matters paras 8-14, 29, 31-35, 39-40",
-        "Income Tax Assessment (1997 Act) Amendment Regulations 2026 (F2026L00726) Sch 2 and Sch 4",
-        "CPS 230 Part 4 (service provider management) - note this replaced SPS 231 Outsourcing from 1 July 2025",
+        "Income Tax Assessment (1997 Act) Amendment (Building a Stronger and Fairer Super System and Other Measures) Regulations 2026 (F2026L00726) Sch 2 and Sch 4",
+        "CPS 230 paras 47-60 (management of service provider arrangements) - note this replaced SPS 231 Outsourcing from 1 July 2025",
         "SPS 220 Risk Management",
-        "SPS 515 paras 30, 36-44 (transfer preparation)"
+        "SPS 515 - remedial actions and transfer planning (preparation for a transfer of beneficiaries out of, or into, an RSE)"
       ],
       "action_type": "supervisory-practice",
       "recommended_apra_position": "De-prioritise defined benefit funds for liquidity purposes and prioritise them for operational readiness. Engage directly with the public sector licensees, UniSuper and residual corporate defined benefit funds. Treat the actuarial provider as a material service provider question, not a legacy outsourcing question: a handful of firms will perform every scheme's annual valuation on the same short clock. Identify small defined benefit plans for which the annual valuation cost is not economic and expect a considered response - a decision to wind up and transfer, taken deliberately and with member outcomes assessed - rather than drift. Do not frame the accumulation/defined benefit differential as a trustee equity failing; treat it as a member communication obligation.",
@@ -573,7 +573,7 @@
         "SIS Act ss 56 and 57 (limits on trustee indemnification out of fund assets, including for penalties)",
         "RSE governing rules / trust deeds",
         "SPS 114 Operational Risk Financial Requirement paras 8-12, 15-20",
-        "SPS 515 paras 13, 17-18 (fee-setting and expenditure decisions)",
+        "SPS 515 - setting fees (each fee set prudently and transparently) and expenditure management (purpose, funding source and monitoring of results)",
         "SIS Act s52(2)(c) best financial interests duty",
         "Taxation Administration Act 1953 Sch 1 (release authority obligations)"
       ],
@@ -586,7 +586,7 @@
         "SOURCED: SIS Act ss 56 and 57 restrict trustee indemnification from fund assets, including in respect of penalties.",
         "INFERRED: a release authority compels payment of preserved money outside the ordinary conditions of release; whether the trustee's own governing rules authorise that debit is a trust-law question that no prudential standard, and no Commonwealth instrument, answers for a given fund. It must be answered fund by fund, before the first notices arrive.",
         "INFERRED: the operational risk financial requirement exists to absorb losses to beneficiaries from operational risk, and is funded from fund assets; applying it to compensate an individual's personal tax detriment therefore transfers cost from affected to unaffected members. Whether that is permissible is a legal question the register cannot answer and should not assume.",
-        "CREATED: no source was found addressing deed capacity for Division 296 release authorities. This is an original proposition for the meeting, offered as a question to be settled, not as a finding."
+        "CREATED: no source was found addressing deed capacity for Division 296 release authorities. This is an original proposition of this note, offered as a question to be settled, not as a finding."
       ],
       "provenance": "created"
     },
@@ -601,12 +601,12 @@
       "grade": "B",
       "instruments": [
         "Annual superannuation performance test (administration fee metric combined with investment performance; two consecutive failures close the product to new members)",
-        "SPS 515 paras 13, 17-18 (prudent and transparent fees; demonstrable purpose and funding source for expenditure)",
-        "SPS 515 paras 24-28 and SPG 516 (business performance review, member cohorts)",
+        "SPS 515 - setting fees (each fee set prudently and transparently) and expenditure management (purpose of the expenditure, how it will be funded, how its results will be monitored)",
+        "SPS 515 - business performance review (outcomes assessed having regard to different cohorts of beneficiaries) and SPG 516 (guidance)",
         "SIS Act s52(2)(c) best financial interests duty"
       ],
       "action_type": "supervisory-practice",
-      "recommended_apra_position": "Ask licensees, before FY2028 fee-setting is locked in, how Division 296 build and run costs are being recovered and from whom, and to demonstrate under SPS 515 paras 17-18 the purpose, funding source and monitoring metrics for that expenditure - including whether they have modelled the effect on their FY2027 and FY2028 administration fee metric, and whether recovering from affected members only is both more defensible under the best financial interests duty and better for the metric. Consider updating SPG 516 to name high-balance members as an expected cohort in the annual business performance review. This is a low-materiality issue with a genuinely high-value, low-cost action, and saying so plainly builds credibility.",
+      "recommended_apra_position": "Ask licensees, before FY2028 fee-setting is locked in, how Division 296 build and run costs are being recovered and from whom, and to demonstrate under SPS 515's expenditure management requirements the purpose of that expenditure, how it is funded and how its results are monitored - including whether they have modelled the effect on their FY2027 and FY2028 administration fee metric, and whether recovering from affected members only is both more defensible under the best financial interests duty and better for the metric. Consider updating SPG 516 to name high-balance members as an expected cohort in the annual business performance review. This is a low-materiality issue with a genuinely high-value, low-cost action, and saying so plainly builds credibility.",
       "who_bears_it": "Members not affected by the tax, if the cost is recovered through flat fees; the licensee's board, which must justify the expenditure and fee decisions; products close to the performance test fee median.",
       "evidence_refs": [
         "LIKELIHOOD PROPOSITION: P(Division 296 cost recovery materially affects a product's performance test outcome, or produces a best-financial-interests finding, by FY2029) = 2.",
@@ -615,7 +615,7 @@
         "SOURCED: Treasury Impact Analysis (January 2024) rejected member-level calculation partly because 'This significant compliance costs would be borne across all 22.5 million member accounts in large APRA-regulated funds, not just the 0.5 per cent of account holders with a TSB exceeding $3 million'. Its only published ongoing costing for the chosen design is $1,421,858 a year across the sector, on an assumption of 'an additional half hour of work each for reporting on each affected member'.",
         "SOURCED: SPG 516 - 'Separate cohorts may also be established using membership characteristics that cut across superannuation products, for example cohorts based on balance size' - https://www.apra.gov.au/sites/default/files/Prudential%20Practice%20Guide%20SPG%20516%20-%20Business%20Performance%20Review_0.pdf",
         "INFERRED: the half-hour-per-member assumption was struck before the redesign moved the calculation from the ATO to funds, so the only published cost estimate almost certainly understates the enacted measure. Even at ten times that figure, roughly $14m a year across about 22.5m accounts is about 60 cents per account per year - which is why the materiality of the cost itself is low and the performance test transmission is the real point.",
-        "CREATED: the observation that a median-benchmarked fee test creates an incentive to absorb or capitalise the cost rather than recover it transparently is an original analytical proposition for this meeting."
+        "CREATED: the observation that a median-benchmarked fee test creates an incentive to absorb or capitalise the cost rather than recover it transparently is an original analytical proposition of this note."
       ],
       "provenance": "inferred"
     },
@@ -656,9 +656,9 @@
       "apra_proximity": 3,
       "grade": "B",
       "instruments": [
-        "SIS Act s52(8A) and s52AA retirement income covenant; SPS 515 para 8A",
+        "SIS Act s52(8A) and s52AA retirement income covenant; SPS 515 - strategic objectives and business plan",
         "SPS 521 Conflicts of Interest",
-        "SPS 515 paras 24-28 (member cohorts); SPG 515; SPG 516",
+        "SPS 515 - business performance review (outcomes assessed having regard to different cohorts of beneficiaries); SPG 515; SPG 516",
         "AFCA scheme jurisdiction (Corporations Act scheme approval and AFCA Rules); ASIC RG 271 internal dispute resolution",
         "Taxation Administration Act 1953 Sch 1 Div 355 (taxpayer confidentiality)",
         "Delivering Better Financial Outcomes reforms (scope of collectively charged advice; targeted prompts)"
@@ -711,7 +711,7 @@
     {
       "id": "P16",
       "title": "Perimeter: the capital gains reset favours SMALL funds - which includes some APRA-regulated ones - and the migration trend predates the tax",
-      "plain_english": "Small funds can make a one-off election to reset the tax cost of all their assets to market value at 30 June 2026, permanently removing gains built up before the tax started. Large funds get only a temporary discount that phases out. The important correction is that 'small' does not mean 'self-managed'. Small APRA funds - funds with no more than six members, trusteed by professional trustees APRA supervises - sit on the same side of the line. So a member can obtain the reset without leaving APRA's perimeter, and the design asymmetry is about fund size, not about who regulates the fund. The same six-member line means some of APRA's own licensees will attribute earnings by a completely different legal mechanism - a prescribed formula plus a compulsory annual actuarial certificate for every fund, every year, which is a real recurring cost for very small funds. On migration: net rollovers out of APRA-regulated funds into self-managed funds reached $12.2 billion in the year to March 2026, up 54 per cent. Whether this tax caused any of that is not established, and the largest single quarter was September 2025 - before the October 2025 redesign was announced.",
+      "plain_english": "Small funds can make a one-off election to reset the tax cost of all their assets to market value at 30 June 2026, permanently removing gains built up before the tax started. Large funds get only a temporary discount that phases out. The important correction is that 'small' does not mean 'self-managed'. Small APRA funds - funds with no more than six members, trusteed by professional trustees APRA supervises - sit on the same side of the line. So a member can obtain the reset without leaving APRA's perimeter, and the design asymmetry runs on member count, not on who regulates the fund. The same six-member line means some of APRA's own licensees will attribute earnings by a completely different legal mechanism - a prescribed formula plus a compulsory annual actuarial certificate for every fund, every year, which is a real recurring cost for very small funds. On migration: net rollovers out of APRA-regulated funds into self-managed funds reached $12.2 billion in the year to March 2026, up 54 per cent. Whether this tax caused any of that is not established, and the largest single quarter was September 2025 - before the October 2025 redesign was announced.",
       "why_it_matters": "The members most able to leave are the ones whose departure most erodes scale, and their fee contribution is disproportionate to their headcount where a percentage fee is capped. But this is squarely a Treasury design decision, not an APRA lever, and the causal story is not made out - which is why it is graded C. There is also a channel the analysis has missed entirely: a member can reduce their measured total by buying a lifetime income stream, and those are life company products that APRA also regulates. Part of what looks like a loss of perimeter is a transfer into another part of APRA's own house that has not been consulted.",
       "materiality": 3,
       "likelihood": 3,
@@ -719,17 +719,17 @@
       "grade": "C",
       "instruments": [
         "Income Tax (Transitional Provisions) Act 1997, Division 296 transitional cost base reset (small funds) and prescribed factor method (large funds and pooled superannuation trusts)",
-        "Income Tax Assessment (1997 Act) Amendment Regulations 2026 (F2026L00726) Sch 1",
+        "Income Tax Assessment (1997 Act) Amendment (Building a Stronger and Fairer Super System and Other Measures) Regulations 2026 (F2026L00726) Sch 1",
         "SRS 551.0 / SRS 611.0 (inability to decompose outflows)",
         "APRA-ATO data-sharing arrangements (subject to the secrecy question in P6)",
         "Life insurance prudential framework (lifetime income streams and investment bonds)"
       ],
       "action_type": "no-change-monitor",
-      "recommended_apra_position": "Do not assert causation, and do not describe the reset as an SMSF-only benefit. Put to Treasury that the size-based asymmetry disadvantages large APRA-regulated funds and platform and wrap licensees in particular, and support the request that funds with more than six members be permitted a bulk 30 June 2026 cost-base declaration for member-directed investment options. Monitor FY2026-27 rollover data as an observation, not an attribution. Add three things the analysis has been missing: brief APRA's life insurance supervision that some of this money may arrive in lifetime income streams and investment bonds; note that small APRA funds - APRA's own licensees - face the prescribed-formula and annual actuarial certificate regime, with a recurring cost on a fund type already declining sharply; and monitor contributions, not only outflows, since the rational response for this cohort includes ceasing voluntary and salary-sacrifice contributions, which is more immediate and more measurable than migration and is visible in existing APRA collections.",
+      "recommended_apra_position": "Do not assert causation, and do not describe the reset as an SMSF-only benefit. Put to Treasury that the member-count asymmetry disadvantages large APRA-regulated funds and platform and wrap licensees in particular, and support the request that funds with more than six members be permitted a bulk 30 June 2026 cost-base declaration for member-directed investment options. Monitor FY2026-27 rollover data as an observation, not an attribution. Add three things the analysis has been missing: brief APRA's life insurance supervision that some of this money may arrive in lifetime income streams and investment bonds; note that small APRA funds - APRA's own licensees - face the prescribed-formula and annual actuarial certificate regime, with a recurring cost on a fund type already declining sharply; and monitor contributions, not only outflows, since the rational response for this cohort includes ceasing voluntary and salary-sacrifice contributions, which is more immediate and more measurable than migration and is visible in existing APRA collections.",
       "who_bears_it": "Platform, wrap and master-trust licensees most directly; small APRA funds and their professional trustees; the APRA-regulated sector through scale erosion; remaining members through the cost base left behind.",
       "evidence_refs": [
         "LIKELIHOOD PROPOSITION: P(a Division 296-attributable outflow of high-balance members from APRA-regulated funds that is material to a licensee's scale, and identifiable as such, by FY2029) = 3.",
-        "SOURCED (with correction): Tax Institute, quoted in Bills Digest No. 48 at p.8 - 'SMSFs can opt in to adjust the cost base of all fund assets to their market value as at 30 June 2026 ... while large APRA funds are required to adjust their actual realised capital gains for the first four years (factor method).' CORRECTION: the legislated boundary is fund size - small funds, which include small APRA funds as well as SMSFs - not SMSF status. Pooled superannuation trusts are excluded alongside large funds. Verify the exact wording in the Income Tax (Transitional Provisions) Act 1997 before the meeting.",
+        "SOURCED (with correction): Tax Institute, quoted in Bills Digest No. 48 at p.8 - 'SMSFs can opt in to adjust the cost base of all fund assets to their market value as at 30 June 2026 ... while large APRA funds are required to adjust their actual realised capital gains for the first four years (factor method).' CORRECTION: the legislated boundary is member count, not SMSF status and not fund size: the reset is available to 'small superannuation funds' - those with six or fewer members - which includes small APRA funds as well as SMSFs. Pooled superannuation trusts are excluded alongside large funds. Verify the exact wording in the Income Tax (Transitional Provisions) Act 1997 before relying on it.",
         "SOURCED: ASFA asks that funds with more than six members be permitted 'to make a bulk declaration to cover all members in its member directed investment options in regard to adopting 30 June 2026 cost base' - ASFA submission, 7 April 2026, pp.3-4.",
         "SOURCED: net rollovers from APRA-regulated funds to SMSFs, year ended March 2026, -$12,184m versus -$7,922m a year earlier (+53.8%); the largest quarter was September 2025 at -$3,656m - APRA Quarterly Superannuation Performance Statistics to March 2026, Table 1a. NOTE: that quarter precedes the 13 October 2025 redesign announcement, which cuts against a Division 296 explanation.",
         "SOURCED: 4.7% of SMSF members had SMSF balances above $3m in 2023-24 (approximately 53,300 people), up from 3.1% five years earlier - ATO SMSF statistical overview 2023-24, Tables 1 and 25.",
@@ -750,7 +750,7 @@
       "apra_proximity": 2,
       "grade": "C",
       "instruments": [
-        "Income Tax Assessment (1997 Act) Amendment Regulations 2026 (F2026L00726) Sch 1 (post-death attribution; 'death benefit income stream')",
+        "Income Tax Assessment (1997 Act) Amendment (Building a Stronger and Fairer Super System and Other Measures) Regulations 2026 (F2026L00726) Sch 1 (post-death attribution; 'death benefit income stream')",
         "SIS Act and SIS Regulations cashing rules for death benefits (as soon as practicable)",
         "SPS 521 Conflicts of Interest",
         "SPS 515 member outcomes; internal dispute resolution obligations"
@@ -771,31 +771,31 @@
     {
       "id": "P18",
       "title": "This is not a system liquidity event - and here is the arithmetic that settles it",
-      "plain_english": "It is tempting to frame this as a risk that funds will be forced to sell assets in a hurry. The numbers do not support it. On APRA's own derivation, the annual amount drawn out of APRA-regulated funds is of the order of one per cent of the lump sums these funds already pay every year, and about three per cent of a single peak month in APRA's own stress test. The behavioural story does not hold either. For the first year only, whether a member pays depends on their balance at 30 June 2027, so in principle there is a deadline to get under three million. But a member at $3.2 million owes roughly $1,800 - nobody restructures a retirement portfolio and crystallises capital gains to avoid that. A member at eight or ten million has a bill worth managing, but cannot get under three million by any means short of destroying their position. The cohort with the incentive cannot act, and the cohort that can act has almost no incentive. Both tails argue against a rush. There is one residual point that is not about cash at all: because the tax falls on income received and gains realised, and not on growth left untouched, it gently rewards holding low-income, low-turnover assets - which points the same way as the growth in unlisted and private market holdings APRA has already flagged as a system risk.",
-      "why_it_matters": "Opening with a forced-sale narrative would repeat an argument the enacted law has already answered, and would cost credibility in the room. Stating the aggregate and behavioural position up front lets the meeting move to where the exposure actually is: operational, member-equity, third-party concentration and perimeter. The composition point is worth one paragraph because nobody else will raise it and it runs against, not with, APRA's stated system risk concern.",
+      "plain_english": "It is tempting to frame this as a risk that funds will be forced to sell assets in a hurry. The numbers do not support it. On this note's own derivation from published Treasury and APRA figures, the annual amount drawn out of APRA-regulated funds is of the order of one per cent of the lump sums these funds already pay every year, and about three per cent of a single peak month in APRA's own stress test. The behavioural story does not hold either. For the first year only, whether a member pays depends on their balance at 30 June 2027, so in principle there is a deadline to get under three million. But a member at $3.2 million owes roughly $1,800 - nobody restructures a retirement portfolio and crystallises capital gains to avoid that. A member at eight or ten million has a bill worth managing, but cannot get under three million by any means short of destroying their position. The cohort with the incentive cannot act, and the cohort that can act has almost no incentive. Both tails argue against a rush. There is one residual point that is not about cash at all: because the tax falls on income received and gains realised, and not on growth left untouched, it gently rewards holding low-income, low-turnover assets - which points the same way as the growth in unlisted and private market holdings APRA has already flagged as a system risk.",
+      "why_it_matters": "Opening with a forced-sale narrative would repeat an argument the enacted law has already answered, and would cost the analysis credibility. Stating the aggregate and behavioural position up front lets the meeting move to where the exposure actually is: operational, member-equity, third-party concentration and perimeter. The composition point is worth one paragraph because nobody else will raise it and it runs against, not with, APRA's stated system risk concern.",
       "materiality": 2,
       "likelihood": 2,
       "apra_proximity": 3,
       "grade": "C",
       "instruments": [
-        "SPS 530 paras 31-38 (comprehensive investment stress testing programme at para 31; liquidity management plan and liquidity event at para 36)",
-        "SPG 530 paras 79(a) and 79(e) (member-generated events; policy-driven events)",
+        "SPS 530 paras 30-38 (comprehensive investment stress testing programme at para 31; liquidity management plan and liquidity event at para 36)",
+        "SPG 530 paras 79(a) and 79(e) (member-generated events; policy-driven events) - practice guide; APRA expectation, not an enforceable requirement",
         "SRS 553.0 (out-of-cycle valuation baseline from the December 2025 quarter)",
         "APRA System Risk Stress Test framework"
       ],
       "action_type": "no-change-monitor",
-      "recommended_apra_position": "State the de minimis aggregate position explicitly at the top of the note, with the caveat that it is APRA's own derivation from a superseded-design revenue estimate, and put the per-member arithmetic ($1,800 / $9,000 / $63,000) alongside it. Then say clearly that the exposure is operational, member-equity, third-party concentration and perimeter - not liquidity - with two named exceptions: individual illiquid investment options, and licensees with concentrated high-balance membership. Keep the cheap test: ask materially exposed licensees to produce the SPG 530 para 79(e) policy-driven scenario for Division 296 covering the June 2027 quarter, and to confirm the liquidity management plan treats it as a liquidity event with defined actions. That is a low-cost, high-signal test of whether the plan is live, and it does not require the issue to be graded high. Add a monitoring line on portfolio composition against the SRS 553.0 baseline. Do not carry any 2023-vintage argument about unrealised gains, forced realisation, unusable paper losses or unindexed bracket creep into the meeting - all four were answered by the enacted design.",
+      "recommended_apra_position": "State the de minimis aggregate position explicitly at the top of the note, with the caveat that it is this note's own derivation from a superseded-design revenue estimate, and put the per-member arithmetic ($1,800 / $9,000 / $63,000) alongside it. Then say clearly that the exposure is operational, member-equity, third-party concentration and perimeter - not liquidity - with two named exceptions: individual illiquid investment options, and licensees with concentrated high-balance membership. Keep the cheap test: ask materially exposed licensees to produce the SPG 530 para 79(e) policy-driven scenario for Division 296 covering the June 2027 quarter, and to confirm the liquidity management plan treats it as a liquidity event with defined actions. That is a low-cost, high-signal test of whether the plan is live, and it does not require the issue to be graded high. Add a monitoring line on portfolio composition against the SRS 553.0 baseline. Do not carry any 2023-vintage argument about unrealised gains, forced realisation, unusable paper losses or unindexed bracket creep into the note - all four were answered by the enacted design.",
       "who_bears_it": "Nobody, in aggregate. Specific illiquid investment options and individual funds with concentrated high-balance membership remain exposed on a dispersion basis, as the 2020 early release episode showed.",
       "evidence_refs": [
         "LIKELIHOOD PROPOSITION: P(Division 296-driven outflow produces a liquidity event at a material APRA-regulated fund in FY2027 or FY2028) = 2.",
         "CREATED (own derivation, clearly labelled): Treasury's superseded-design costing implies roughly $28,750 of average annual liability per affected individual ($2.3bn in 2027-28 across about 80,000 individuals); applying the 31,800-of-80,000 APRA-side share gives an indicative $0.9bn a year, and less in practice. Against APRA-regulated lump sums of $79.7bn and assets of $3,141.1bn (year to March 2026), that is about 1.1% of annual lump sums and about 0.03% of assets, and about 3% of a single $30bn peak month in APRA's stress test. All comparisons use the same $0.9bn numerator. (The draft's 'one fifteenth of a peak month' mixed the whole-system numerator with the APRA-side one and is wrong.)",
-        "CREATED: the behavioural pricing above - $1,800 at $3.2m, $9,000 at $4m, $63,000 at $10m, on a 6% earnings assumption - is APRA's own arithmetic from the proportioning formula (TSB - $3m)/TSB. It is the single most useful number in the pack and should appear in the note.",
+        "CREATED: the behavioural pricing above - $1,800 at $3.2m, $9,000 at $4m, $63,000 at $10m, on a 6% earnings assumption - is the authors' own arithmetic applied to the statutory proportioning formula (TSB - $3m)/TSB. It is the single most useful figure in this note and should appear in the note.",
         "SOURCED (calibration): APRA System Risk Stress Test, 30 June 2026 - 'aggregate monthly liquidity calls peaking at around $30 billion and cumulative demands totalling $174 billion, or just under 16 per cent of net assets'; peak monthly calls 'less than 7 per cent of available liquid assets'; funds 'largely avoided selling unlisted assets', meeting the shock primarily through listed equities; allocations to illiquid assets in MySuper options increased substantially - https://www.apra.gov.au/news-and-publications/system-risk-stress-test . (Do not say funds sold 'not a single unlisted asset'; the source does not say that.)",
         "SOURCED (calibration): COVID-19 early release paid about $36-38bn, roughly 2% of system funds under management, but 'some large funds processed over 5% of their FUM' and switching reached 8% at some funds - RBA Financial Stability Review, April 2021, Box C. Dispersion, not aggregate, is the lesson.",
         "SOURCED: for 2026-27 liability is determined solely by the balance at the end of that year; from 2027-28 the reference amount is the greater of the opening and closing balance - Explanatory Memorandum para 1.219 via Bills Digest No. 48; ATO guidance on how Division 296 tax is calculated.",
         "SOURCED: SPG 530 para 79(e) - 'policy driven events: a change in Government policy, for example, related to access to accrued member assets'.",
         "CAVEAT: the $2.3bn and 80,000 figures come from the January 2024 Impact Analysis for the superseded design. The verified primary fiscal figure under the enacted design is MYEFO 2025-26, which books the redesign plus the low income offset increase as a $3.8bn decrease in receipts and $475.8m increase in payments over four years.",
-        "INFERRED (unquantified, APRA's own proposition): a realised-earnings base taxes distribution and disposal but not accrual, which is a deferral incentive favouring low-distribution, low-turnover, capital-growth assets over income-producing ones - the same direction as the private-market growth APRA has flagged as a system risk. There is an opposite-signed effect too: capital moving to SMSFs and direct holdings holds less unlisted infrastructure in aggregate than a large APRA-regulated fund does. Neither is measured; both belong in the note as analytical propositions."
+        "INFERRED (unquantified, this note's own proposition): a realised-earnings base taxes distribution and disposal but not accrual, which is a deferral incentive favouring low-distribution, low-turnover, capital-growth assets over income-producing ones - the same direction as the private-market growth APRA has flagged as a system risk. There is an opposite-signed effect too: capital moving to SMSFs and direct holdings holds less unlisted infrastructure in aggregate than a large APRA-regulated fund does. Neither is measured; both belong in the note as analytical propositions."
       ],
       "provenance": "created"
     }
@@ -817,7 +817,7 @@
     },
     {
       "instrument": "SPS 530 Investment Governance - stress testing and liquidity (paras 30-31, 36(d), 36(e), 38)",
-      "current_requirement": "VERIFIED. Para 30: 'An RSE licensee must have a comprehensive investment stress testing program that is approved by the Board and is integrated into an RSE licensee's investment governance framework.' Para 31 requires determination of appropriate adverse stress scenarios for the investment strategy of each option. Para 36 requires a Board-approved liquidity management plan for each RSE which, at 36(d), 'identifies the circumstances the RSE licensee considers to be a significantly adverse liquidity outcome that requires action (liquidity event)' and, at 36(e), 'outlines what action the RSE licensee will take when a liquidity event occurs'. Para 38 requires liquidity stress testing 'as part of the comprehensive investment stress testing program required in paragraph 31'. CORRECTION: the draft cited para 29 for the stress testing programme; para 29 concerns Board justification when amending an investment strategy. The standard's own cross-reference in para 38 points to para 31.",
+      "current_requirement": "VERIFIED. Para 30: 'An RSE licensee must have a comprehensive investment stress testing program that is approved by the Board and is integrated into an RSE licensee's investment governance framework.' Para 31 requires determination of appropriate adverse stress scenarios for the investment strategy of each option. Para 36 requires a Board-approved liquidity management plan for each RSE which, at 36(d), 'identifies the circumstances the RSE licensee considers to be a significantly adverse liquidity outcome that requires action (liquidity event)' and, at 36(e), 'outlines what action the RSE licensee will take when a liquidity event occurs'. Para 38 requires liquidity stress testing 'as part of the comprehensive investment stress testing program required in paragraph 31'. CORRECTION: the draft cited para 29 for the stress testing programme. Para 29 concerns the Board's justification for any decision to amend an investment strategy following a review. The programme obligation is at para 30; para 31 requires the adverse stress scenarios. Para 38 refers to 'the comprehensive investment stress testing program required in paragraph 31' - that internal cross-reference is an erratum in SPS 530, since the programme is required by para 30, and it should not be relied on.",
       "div296_stress": "The transitional first-year measurement date of 30 June 2027 and, from the following year, recurring release-authority outflows are both capable of being a liquidity event within para 36(d). The hook is well matched and no amendment is needed. The supervisory question is narrower and cheaper than an instrument change: whether any licensee has in fact run the scenario. Aggregate outflow is very unlikely to be a system liquidity event; residual exposure is confined to specific illiquid investment options and to licensees with concentrated high-balance membership.",
       "verdict": "no-change",
       "confidence": "high"
@@ -853,7 +853,7 @@
     {
       "instrument": "SPG 516 Business Performance Review",
       "current_requirement": "An RSE licensee has discretion to establish cohorts for the annual business performance review; APRA expects at least product-level cohorts. The guidance contemplates that 'separate cohorts may also be established using membership characteristics that cut across superannuation products, for example cohorts based on balance size'.",
-      "div296_stress": "High-balance members are already an assessable cohort under the existing guidance, but nothing names them. Naming them as an expected cohort would require trustees to assess whether outcomes for that cohort remain appropriate, and would surface any indifference to their departure - which is the mechanism by which scale, and therefore cost per remaining member, is eroded. This is one of the two strongest instrument-level options in the pack and is a low-cost guidance change rather than a standard amendment.",
+      "div296_stress": "High-balance members are already an assessable cohort under the existing guidance, but nothing names them. Naming them as an expected cohort would require trustees to assess whether outcomes for that cohort remain appropriate, and would surface any indifference to their departure - which is the mechanism by which scale, and therefore cost per remaining member, is eroded. This is one of the two strongest instrument-level options identified in this review and is a low-cost guidance change rather than a standard amendment.",
       "verdict": "update-guidance",
       "confidence": "medium"
     },
@@ -937,7 +937,7 @@
     {
       "instrument": "SPS 250 Insurance in Superannuation",
       "current_requirement": "Requires an insurance management framework and strategy, premium cost recovery arrangements, and demonstration to APRA that rules for attributing status to a beneficiary are fair and reasonable.",
-      "div296_stress": "Tested and cleared. Premium erosion is immaterial for members above the thresholds. Two second-order effects exist - a member who withdraws to reduce a balance may fall toward levels where cover lapses, and death benefit insurance proceeds can temporarily inflate a balance - but neither warrants supervisory reprioritisation. Recorded so that the framework review can be shown to be complete: naming what is not affected is as useful to the meeting as naming what is.",
+      "div296_stress": "Tested and cleared. Premium erosion is immaterial for members above the thresholds. Two second-order effects exist - a member who withdraws to reduce a balance may fall toward levels where cover lapses, and death benefit insurance proceeds can temporarily inflate a balance - but neither warrants supervisory reprioritisation. Recorded so that the framework review can be shown to be complete: identifying which standards are not engaged is as informative as identifying those that are.",
       "verdict": "no-change",
       "confidence": "low"
     },
@@ -999,7 +999,7 @@
     "ASK FOR A CURRENT IN-SCOPE HEADCOUNT, SPLIT BY SECTOR. The only Commonwealth estimate of the affected population was struck under the superseded design on older data, and no absolute headcount has been published for the enacted realised-earnings design. Without a current number split between APRA-regulated funds, exempt public sector schemes and self-managed funds, APRA cannot calibrate supervisory intensity, cannot test a licensee that says it has very few affected members, and cannot size the perimeter question. This is a low-cost ask and the ATO is the only party that can answer it.",
     "RESOLVE THE LEGAL GATEWAY BEFORE PURSUING A DATA EXCHANGE. A standing ATO-to-APRA data exchange covering balance distribution and Division 296 outflows by fund would substantially answer APRA's visibility problem without any change to APRA's own collections. The threshold question is whether taxpayer confidentiality in the taxation administration law permits it, and whether the existing APRA-ATO arrangements cover it or an amendment is needed. That question should be settled first, because if the answer is no, the remedy is a legislative one for Treasury rather than an administrative one for the ATO. Note also that the Council of Financial Regulators does not include the ATO, so this is a bilateral matter rather than a CFR one.",
     "PUT THE CHANGE-SATURATION POINT ON THE RECORD. Payday Super and Division 296 commenced on the same day, in the same administration systems, drawing on the same finite pool of administrator change capacity, with Payday Super carrying the earlier and more visible deadline. The foreseeable consequence is that Division 296 is the change most likely to be deprioritised - and it is the one with guidance still being developed, no external assurance, and a multi-year amendment tail. This is worth stating to Treasury and the ATO as a sequencing and transition-support consideration, and it is directly relevant to how much first-year flexibility the ATO builds in.",
-    "RECORD PRUDENTIAL AND MEMBER-OUTCOMES CONSEQUENCES, LEAVING THE REMEDIES TO THE POLICY OWNER. Several contested design features have real consequences for supervised entities and their members, but the remedies are tax design questions for Treasury and the ATO and APRA should not advocate specific tax mechanics. The consequences worth recording are: (a) continued attribution of earnings after a member's death sits awkwardly with the trustee's obligation to cash a death benefit as soon as practicable, and trustees will need to know which obligation yields - noting that this rule is now made law, so licensees must build to it rather than wait; (b) where a fund amends its income tax return, the resulting re-reporting can reopen personal assessments years later, which is an administrative and record-keeping burden on trustees disproportionate to the typically small change in any member's tax; (c) the cost-base transitional treatment differs by fund size rather than by regulator, so some APRA-regulated entities sit on each side of the line, and the asymmetry is a migration incentive worth monitoring rather than a settled cause of the recent rollover trend; and (d) industry has asked that trustee attribution judgements sit outside the external dispute resolution scheme - APRA should have a view before this is settled by default, noting that the new notification duty on providers in the taxation administration law carries an express note preserving AFCA complaints, which cuts against that request, and that the question is primarily ASIC's and Treasury's perimeter."
+    "RECORD PRUDENTIAL AND MEMBER-OUTCOMES CONSEQUENCES, LEAVING THE REMEDIES TO THE POLICY OWNER. Several contested design features have real consequences for supervised entities and their members, but the remedies are tax design questions for Treasury and the ATO and APRA should not advocate specific tax mechanics. The consequences worth recording are: (a) continued attribution of earnings after a member's death sits awkwardly with the trustee's obligation to cash a death benefit as soon as practicable, and trustees will need to know which obligation yields - noting that this rule is now made law, so licensees must build to it rather than wait; (b) where a fund amends its income tax return, the resulting re-reporting can reopen personal assessments years later, which is an administrative and record-keeping burden on trustees disproportionate to the typically small change in any member's tax; (c) the cost-base transitional treatment differs by member count - the election is available to funds with six or fewer members - rather than by regulator, so some APRA-regulated entities sit on each side of the line, and the asymmetry is a migration incentive worth monitoring rather than a settled cause of the recent rollover trend; and (d) industry has asked that trustee attribution judgements sit outside the external dispute resolution scheme - APRA should have a view before this is settled by default, noting that the new notification duty on providers in the taxation administration law carries an express note preserving AFCA complaints, which cuts against that request, and that the question is primarily ASIC's and Treasury's perimeter."
   ],
   "audit_trail": [
     {
@@ -1057,7 +1057,7 @@
       "verified": "unverified"
     },
     {
-      "assertion": "The final regulations, Income Tax Assessment (1997 Act) Amendment Regulations 2026 (F2026L00726), were made 11 June 2026 and registered 18 June 2026 - thirteen days before the first measurement year began.",
+      "assertion": "The final regulations, Income Tax Assessment (1997 Act) Amendment (Building a Stronger and Fairer Super System and Other Measures) Regulations 2026 (F2026L00726), were made 11 June 2026 and registered 18 June 2026 - thirteen days before the first measurement year began.",
       "provenance": "sourced",
       "basis": "Federal Register of Legislation, F2026L00726 'as made' metadata (https://www.legislation.gov.au/F2026L00726/asmade). Registration and making dates are readable from the register listing even where the instrument text is not.",
       "verified": "verified"
@@ -1099,7 +1099,7 @@
       "verified": "verified"
     },
     {
-      "assertion": "The comprehensive investment stress testing programme is SPS 530 paragraph 31, not paragraph 29; SPS 530 paragraph 38 cross-refers to 'paragraph 31'.",
+      "assertion": "The comprehensive investment stress testing programme is SPS 530 paragraph 30, not paragraph 29 (paragraph 31 sets the adverse stress scenarios). Paragraph 38 cross-refers to 'paragraph 31', but that cross-reference is an erratum in the standard.",
       "provenance": "sourced",
       "basis": "SPS 530 Investment Governance, read via the integrated SPS/SPG 530 text; para 38 self-referentially confirms para 31. Independently verified prior to this pass. Paragraph 29 concerns Board justification for amending an investment strategy.",
       "verified": "verified"
@@ -1141,7 +1141,7 @@
       "verified": "verified"
     },
     {
-      "assertion": "Payday Super and Division 296 commence on the same day, 1 July 2026, and land on the same administration platforms, data pipelines and finite administrator change capacity; Payday Super carries the earlier and more visible deadline, so Division 296 is the change more likely to be deprioritised.",
+      "assertion": "Payday Super commences on 1 July 2026 and Division 296 - which itself commenced on 1 April 2026 - first applies from that same date, and land on the same administration platforms, data pipelines and finite administrator change capacity; Payday Super carries the earlier and more visible deadline, so Division 296 is the change more likely to be deprioritised.",
       "provenance": "inferred",
       "basis": "Chain: (1) both measures first apply from 1 July 2026 (APRA Payday Super Readiness letter; Division 296 commencement); (2) both are delivered through fund administration and registry systems, which CPS 230 para 36(c) treats as a critical operation; (3) Payday Super has a daily, visible, employer-facing deadline while Division 296 has no external test until the ATO's first information requests in 2027-28; (4) scarce change capacity is therefore allocated to the visible deadline. Behavioural claim, not measured.",
       "verified": "unverified"
@@ -1173,7 +1173,7 @@
     {
       "assertion": "An affected member's liability is small near the lower threshold: on a 6% earnings assumption, roughly $1,800 at a $3.2m balance, roughly $9,000 at $4m and roughly $63,000 at $10m, because only the proportion of earnings referable to the balance above $3m is taxed.",
       "provenance": "created",
-      "basis": "Own arithmetic from the enacted proportioning mechanic (taxed proportion = (TSB - $3m)/TSB) and a stated 6% earnings assumption, generated for this meeting because no source publishes worked per-member amounts. Labelled in the note as APRA's own illustration with the assumption shown. It is the calibration figure against which the behavioural and materiality judgements in the note should be tested.",
+      "basis": "Own arithmetic from the enacted proportioning mechanic (taxed proportion = (TSB - $3m)/TSB) and a stated 6% earnings assumption, generated for this note because no source publishes worked per-member amounts. Labelled in the note as APRA's own illustration with the assumption shown. It is the calibration figure against which the behavioural and materiality judgements in the note should be tested.",
       "verified": "unverified"
     },
     {
@@ -1189,7 +1189,7 @@
       "verified": "verified"
     },
     {
-      "assertion": "APRA's December 2024 thematic reviewed 23 RSE licensees holding $2,018bn and 18.7m member accounts, and found 12 require material improvement in valuation governance, liquidity risk management or both; the eight-licensee liquidity subgroup represents 27% of funds under management and 5.4m member accounts.",
+      "assertion": "APRA's December 2024 thematic reviewed 23 RSE licensees holding $2,018bn and 18.7m member accounts, and found 12 require material improvement in valuation governance, liquidity risk management or both; the eight licensees rated 'requires improvement' for liquidity risk management represent 27% of in-scope funds under management and 5.4m of the 18.7m in-scope member accounts.",
       "provenance": "sourced",
       "basis": "APRA, 'Governance of unlisted asset valuation and liquidity risk management in superannuation', 17 December 2024. Corrected: the $2,018bn and 18.7m figures are the scope of the review, not the size of the 12 licensees requiring improvement, as the draft register implied.",
       "verified": "verified"
@@ -1251,7 +1251,7 @@
     {
       "assertion": "Division 296 build and run costs recovered through administration fees feed into the annual superannuation performance test, which assesses administration fees against the median for the product category on a combined basis with investment performance, with two consecutive failures prohibiting new members.",
       "provenance": "inferred",
-      "basis": "Chain: (1) the performance test benchmarks administration fees charged in the last financial year against a category median; (2) Division 296 costs recovered through those fees enter that metric; (3) because the benchmark is a median, a licensee with a small affected population relative to total membership spreads the same fixed build cost over a smaller base and moves against the median. The test mechanics are sourced from the legislated performance test framework but were not re-read this pass; the transmission mechanism and the resulting incentive to absorb rather than transparently recover the cost are APRA's own analysis.",
+      "basis": "Chain: (1) the performance test benchmarks administration fees charged in the last financial year against a category median; (2) Division 296 costs recovered through those fees enter that metric; (3) because the benchmark is a median, a licensee with a small affected population relative to total membership spreads the same fixed build cost over a smaller base and moves against the median. The test mechanics are sourced from the legislated performance test framework but were not re-read this pass; the transmission mechanism and the resulting incentive to absorb rather than transparently recover the cost are this note's own analysis.",
       "verified": "unverified"
     },
     {
@@ -1269,7 +1269,7 @@
     {
       "assertion": "The realised-earnings base taxes distribution and disposal but not accrual, which is a deferral incentive whose system-level tendency is toward low-distribution, low-turnover, capital-growth assets - the same direction as the illiquid-allocation trend APRA has already identified as a system risk.",
       "provenance": "created",
-      "basis": "Original analytical proposition written for this meeting, unquantified. It is offered as the reason the system-level file should not be closed on the flow question alone, paired with the SRS 553.0 out-of-cycle valuation series (first reporting period the December 2025 quarter) as a clean pre-commencement monitoring baseline. No source makes this argument and no behavioural magnitude is claimed.",
+      "basis": "Original analytical proposition written for this note, unquantified. It is offered as the reason the system-level file should not be closed on the flow question alone, paired with the SRS 553.0 out-of-cycle valuation series (first reporting period the December 2025 quarter) as a clean pre-commencement monitoring baseline. No source makes this argument and no behavioural magnitude is claimed.",
       "verified": "unverified"
     },
     {
@@ -1299,13 +1299,13 @@
     {
       "assertion": "The recommendations in this note are options for consideration, and the grading rule is stated on the page and applied mechanically, with any judgement override declared in one line.",
       "provenance": "created",
-      "basis": "Editorial and methodological decision for this meeting, made in response to review findings that the draft's grades were not monotonic in their own scores (two pairs of items with identical or dominating score vectors carried different grades) and that likelihood had been scored against whether a fact obtains rather than whether an adverse consequence crystallises in a named window. Likelihood is now stated as a dated proposition for each issue, and the A-grade count falls accordingly.",
+      "basis": "Editorial and methodological decision for this note, made in response to review findings that the draft's grades were not monotonic in their own scores (two pairs of items with identical or dominating score vectors carried different grades) and that likelihood had been scored against whether a fact obtains rather than whether an adverse consequence crystallises in a named window. Likelihood is now stated as a dated proposition for each issue, and the A-grade count falls accordingly.",
       "verified": "verified"
     }
   ],
   "redteam_disposition": [
     {
-      "attack": "FATAL. Consultation ask 8 quotes the ATO as being 'in the position of having retrospective law'. That statement is from June 2025 and is an artefact of the abandoned 1 July 2025 commencement; under the enacted law Assent (13 March 2026) precedes commencement (1 July 2026), so there is no retrospectivity.",
+      "attack": "FATAL. Consultation ask 8 quotes the ATO as being 'in the position of having retrospective law'. That statement is from June 2025 and is an artefact of the abandoned 1 July 2025 commencement; under the enacted law Assent (13 March 2026) precedes commencement on 1 April 2026, and the charge first applies only from the 2026-27 income year, so there is no retrospectivity.",
       "outcome": "accepted-and-fixed",
       "reasoning": "Correct and independently checked against the enacted timeline. Quote deleted. The successor fund transfer protocol ask survives on its own footing and is re-grounded on transfers spanning the 30 June 2027 measurement date. Carrying a stale-design quote into a CEO-level note is exactly the failure mode this pass exists to catch."
     },
@@ -1342,17 +1342,17 @@
     {
       "attack": "CPS 230 para 24 is misquoted throughout; the 'must manage its full range of operational risks' duty is para 24. Para 23 is senior management's duty to inform the Board.",
       "outcome": "accepted-and-fixed",
-      "reasoning": "Independently verified. Corrected in P1, P3, P8 and both framework verdicts. A repeated off-by-one on the register's most-cited standard would have been corrected in the room."
+      "reasoning": "Independently verified. Corrected in P1, P3, P8 and both framework verdicts."
     },
     {
-      "attack": "SPS 530 para 31 is not the investment stress testing programme; para 31 is, confirmed by para 38's own cross-reference.",
+      "attack": "SPS 530 para 29 is not the investment stress testing programme.",
       "outcome": "accepted-and-fixed",
-      "reasoning": "Independently verified. Citation changed to para 31 and the range restated as paras 31-38 throughout. Para 36(d)/(e) references are unaffected and retained."
+      "reasoning": "Independently verified against the standard text. The programme is para 30 ('must have a comprehensive investment stress testing program'); para 31 sets the adverse stress scenarios. Citation corrected to para 30 and the range restated as paras 30-38. Note that para 38 cross-refers to 'paragraph 31' - that cross-reference is an erratum in the standard and must not be relied on. Para 36(d)/(e) references are unaffected and retained."
     },
     {
-      "attack": "The elective 30 June 2026 cost-base reset is available to small funds - SMSFs and small APRA funds - not to SMSFs alone. The legislated boundary is fund size, not SMSF versus APRA-regulated, which weakens P7's perimeter framing.",
+      "attack": "The elective 30 June 2026 cost-base reset is available to small funds - SMSFs and small APRA funds - not to SMSFs alone. The legislated boundary is member count - a small superannuation fund is one with six or fewer members - not SMSF versus APRA-regulated, which weakens P7's perimeter framing.",
       "outcome": "accepted-and-fixed",
-      "reasoning": "Correct and consequential: small APRA funds sit inside APRA's own perimeter and on the favourable side of the line. P7 is restated around the size boundary, and the perimeter argument (migration to SMSFs) is separated from the design-asymmetry argument (large funds and pooled superannuation trusts disadvantaged against small funds, including APRA-regulated ones)."
+      "reasoning": "Correct and consequential: small APRA funds sit inside APRA's own perimeter and on the favourable side of the line. P7 is restated around the member-count boundary, and the perimeter argument (migration to SMSFs) is separated from the design-asymmetry argument (large funds and pooled superannuation trusts disadvantaged against small funds, including APRA-regulated ones)."
     },
     {
       "attack": "Four load-bearing quotes attributed to 2026 ATO Superannuation Administration Group key messages are in fact from the 17 June 2025 meeting; a reader following the citations will not find them.",
@@ -1367,7 +1367,7 @@
     {
       "attack": "The $2,018bn and 18.7m accounts belong to the 23 licensees reviewed, not the 12 requiring material improvement. The register roughly doubles the apparent scale of the adverse finding.",
       "outcome": "accepted-and-fixed",
-      "reasoning": "Verified against APRA's own December 2024 publication. Restated so the review scope, the 12, and the eight-licensee liquidity subgroup (27% of funds under management, 5.4m accounts) are separately attributed. This is the number most likely to be repeated verbatim and then corrected."
+      "reasoning": "Verified against APRA's own December 2024 publication. Restated so the review scope, the 12, and the eight licensees rated 'requires improvement' for liquidity risk management (27% of in-scope funds under management and 5.4m member accounts, in-scope meaning the 23 reviewed licensees) are separately attributed. This is the number most likely to be repeated verbatim and then corrected."
     },
     {
       "attack": "P5 builds a named supervisory shortlist on CSS at 23.58% of accounts above $1m while P10 disclaims the same entity's balance-bracket data as a probable reporting artefact.",
@@ -1422,7 +1422,7 @@
     {
       "attack": "P1's materiality 5 is the register's only 5 and nothing measures it; the spread between two lawful attribution methods is never estimated.",
       "outcome": "partially-accepted",
-      "reasoning": "Accepted that an unmeasured 5 cannot stand: materiality drops to 4 pending evidence, and the proposed test (ask two or three exposed licensees to run two defensible methods over FY2026-27 data to date and report the spread) is adopted as a pre-meeting action. Not fully accepted: the reviewer's premise that every lawful method 'must be broadly proportionate to member balances' is itself unsourced - the statute says only 'fair and reasonable' - so the inference that dispersion is structurally small is not established either. The score moves because the evidence is absent, not because the reviewer's alternative is proved."
+      "reasoning": "Accepted that an unmeasured 5 cannot stand: materiality drops to 4 pending evidence, and the proposed test (ask two or three exposed licensees to run two defensible methods over FY2026-27 data to date and report the spread) is adopted as a prior step. Not fully accepted: the reviewer's premise that every lawful method 'must be broadly proportionate to member balances' is itself unsourced - the statute says only 'fair and reasonable' - so the inference that dispersion is structurally small is not established either. The score moves because the evidence is absent, not because the reviewer's alternative is proved."
     },
     {
       "attack": "The register cites 305,000 accounts above $1m averaging $1.45m to argue APRA is blind, and never turns the same data round to bound the in-scope population, so no issue has a denominator.",
@@ -1467,7 +1467,7 @@
     {
       "attack": "P13 states the ten-business-day release authority clock and penalty as settled fact in plain English while its own gap records that the Division 296 release authority type is unconfirmed.",
       "outcome": "accepted-and-fixed",
-      "reasoning": "An unconfirmed statutory deadline cannot sit in the plain-English text with the caveat three fields away. Rewritten to state that other release authority types carry a ten-business-day clock and a penalty and that the Division 296 equivalent has not been published, pending confirmation with the ATO before the meeting."
+      "reasoning": "An unconfirmed statutory deadline cannot sit in the plain-English text with the caveat three fields away. Rewritten to state that other release authority types carry a ten-business-day clock and a penalty and that the Division 296 equivalent has not been published, pending confirmation with the ATO before relying on it."
     },
     {
       "attack": "P12 overstates APRA's proximity (AFCA jurisdiction is ASIC and Treasury territory) and recommends an ATO data request that taxpayer confidentiality does not permit.",
@@ -1477,12 +1477,12 @@
     {
       "attack": "P10 frames the accumulation/defined benefit differential tax base as an equitable-treatment failing, but a trustee cannot breach the covenant by complying with a statute that prescribes different bases.",
       "outcome": "accepted-and-fixed",
-      "reasoning": "Category error accepted. The equity framing is demoted to a member-communications point and the issue leads on what is genuinely trustee-side: the new annual actuarial valuation capability, the tighter response window, and decades-long deferred debt account tracking that must survive mergers and administrator changes. The 10,000 defined benefit members figure is caveated to the same standard as the other superseded-design numbers."
+      "reasoning": "Category error accepted. The equity framing is demoted to a member-communications point and the issue leads on what is genuinely trustee-side: the new annual actuarial valuation capability and the tighter response window - noting that the deferred debt account is maintained by the Commissioner and not by the fund, so what must survive mergers and administrator changes is the trustee's own valuation and member-level reporting record, not a debt account. The 10,000 defined benefit members figure is caveated to the same standard as the other superseded-design numbers."
     },
     {
       "attack": "P11's materiality 3 is unsupported: roughly $1.42m sector-wide (or even ten times that) spread across 22.5m accounts is cents per member, which is a governance-of-process point, not a member-outcomes harm.",
       "outcome": "accepted-and-fixed",
-      "reasoning": "The arithmetic is right and belongs in the note. Materiality reduced and the issue regraded, while the recommended action is kept unchanged - asking how build and run costs are recovered before FY2028 fee-setting is locked in is cheap, timely and useful, and the cohort proposal for business performance reviews is among the best instrument-level ideas in the pack. A lower-grade issue with a strong action is recorded as such."
+      "reasoning": "The arithmetic is right and belongs in the note. Materiality reduced and the issue regraded, while the recommended action is kept unchanged - asking how build and run costs are recovered before FY2028 fee-setting is locked in is cheap, timely and useful, and the cohort proposal for business performance reviews is among the best instrument-level ideas identified in this review. A lower-grade issue with a strong action is recorded as such."
     },
     {
       "attack": "About half the consultation asks are tax-design positions advanced in APRA's name (cost-base levelling, materiality thresholds, reserve treatment, post-death attribution, loss treatment, pooled superannuation trust mechanics) rather than prudential consequences.",
@@ -1502,7 +1502,7 @@
     {
       "attack": "No issue anywhere states what an affected member actually pays, so the proportioning mechanism - only the share of earnings above the threshold is taxed - is never explained and every materiality judgement is untestable.",
       "outcome": "accepted-and-fixed",
-      "reasoning": "The single most useful omission identified. A worked example is added at the front of the note ($3.2m about $1,800; $4m about $9,000; $10m about $63,000, with the arithmetic shown and labelled as APRA's own derivation), and every likelihood and materiality score is re-tested against it. This alone drove the demotion of the outflow issue."
+      "reasoning": "The single most useful omission identified. A worked example is added at the front of the note ($3.2m about $1,800; $4m about $9,000; $10m about $63,000, with the arithmetic shown and labelled as this note's own derivation from the enacted proportioning rule), and every likelihood and materiality score is re-tested against it. This alone drove the demotion of the outflow issue."
     },
     {
       "attack": "P2 recommends escalating an APRA-ATO coordination gap to the Council of Financial Regulators, of which the ATO is not a member; the relevant forum is the wider CFR Plus grouping. The register also recommends an ATO data exchange three times without checking whether taxation secrecy permits it.",
@@ -1517,7 +1517,7 @@
     {
       "attack": "P11 stops at fee-setting governance and misses the transmission mechanism: costs recovered through administration fees feed the annual performance test, which carries a product-closure consequence. Regrade to A.",
       "outcome": "partially-accepted",
-      "reasoning": "The transmission mechanism is accepted and added, together with the perverse incentive it creates to absorb or capitalise the cost rather than recover it transparently. The regrade to A is rejected: the performance test benchmarks administration fees against the median for the product category, so a cost incurred by the whole sector moves the median as well as the licensee, and the effect is differential rather than absolute. It bites only where a licensee's affected population is small relative to its fee base - a real but narrow exposure, better stated as a supervisory question than as a top-tier risk. The performance test citation is also marked for verification before it is put in front of the CEO."
+      "reasoning": "The transmission mechanism is accepted and added, together with the perverse incentive it creates to absorb or capitalise the cost rather than recover it transparently. The regrade to A is rejected: the performance test benchmarks administration fees against the median for the product category, so a cost incurred by the whole sector moves the median as well as the licensee, and the effect is differential rather than absolute. It bites only where a licensee's affected population is small relative to its fee base - a real but narrow exposure, better stated as a supervisory question than as a top-tier risk. The performance test citation is also marked for verification before publication."
     },
     {
       "attack": "P10 cites SPS 231 Outsourcing, which was replaced by CPS 230 on 1 July 2025, so the defined benefit actuarial capability question is analysed under a repealed standard.",
@@ -1532,7 +1532,7 @@
     {
       "attack": "The perimeter analysis has only one channel. Members can also reduce their measured balance via life-company lifetime income streams, and money leaving super often goes to investment bonds - both APRA-regulated products, so part of the supposed perimeter loss is a transfer within APRA's own perimeter.",
       "outcome": "accepted-and-fixed",
-      "reasoning": "Accepted as a monitoring item, labelled inferred and unquantified. It usefully reframes the CEO conversation from loss of visibility to an internal coordination step with life insurance supervision that costs nothing, and it connects to the total superannuation balance valuation changes already identified elsewhere in the register."
+      "reasoning": "Accepted as a monitoring item, labelled inferred and unquantified. It usefully reframes the issue from loss of visibility to an internal coordination step with life insurance supervision that costs nothing, and it connects to the total superannuation balance valuation changes already identified elsewhere in the register."
     },
     {
       "attack": "The liquidity item closes the system-level file after testing only aggregate outflow. A realised-earnings base is a deferral incentive that tilts portfolios toward low-distribution, low-turnover illiquid assets - compounding a trend APRA has already flagged.",
@@ -1557,7 +1557,7 @@
     "The trust-law layer beneath the operational analysis is untested. Whether an RSE's governing rules permit debiting a member's interest to satisfy a Division 296 release authority, and whether they permit recovering build and run costs from members, has not been checked and may require deed amendments across the industry before the first release authorities arrive.",
     "Where a trustee's attribution error causes a member a personal tax detriment or a penalty, it is unknown whether the trustee may indemnify itself from fund assets consistently with the SIS Act restrictions on indemnity, and whether the operational risk financial requirement - which is members' money - may lawfully be applied to compensate an individual's personal tax liability. Either answer has a significant member-equity consequence and neither has been researched.",
     "Two reporting-side questions remain open: whether SRS 710.0 Conditions of Release or SRS 610.1 Changes in Membership Profile already decompose outflows by reason, which would partly close the flow-visibility gap; and whether confidentiality and re-identification constraints would prevent publication of fund-level counts in a $10m+ balance bracket, which bears on the claim that adding brackets to SRS 611.0 is a cheap change.",
-    "It is not known whether the remediation plans arising from APRA's December 2024 valuation and liquidity thematic have been delivered and closed out. The exposed-cohort recommendation assumes they have not, and should be checked internally before the meeting.",
+    "It is not known whether the remediation plans arising from APRA's December 2024 valuation and liquidity thematic have been delivered and closed out. The exposed-cohort recommendation assumes they have not, and should be checked internally before relying on it.",
     "The extent and form of APRA's engagement with Treasury and the ATO on this measure since October 2025 is known to exist but not documented in this work. The finding that APRA has published nothing Division 296-specific is search-based and should be confirmed against APRA's own publication records before being stated externally.",
     "Whether the s 29JA breach-notification analysis is legally correct has not been confirmed against the provision's text. If a Division 296 failure is in fact notifiable on some other basis, the recommended letter is unnecessary; if it is not, the letter is the cheapest available fix.",
     "Several populations named in the note remain unanalysed for want of time: exempt public sector schemes and unfunded state schemes, which are outside APRA's supervision but inside the Commonwealth's affected-population estimate; constitutionally protected funds; crediting-rate and smoothed-return funds, where the note's unit-pricing governance analogy does not reach; deferred and innovative income streams; and migration into life-company lifetime income streams and investment bonds, which would move members between two parts of APRA's own perimeter rather than out of it. Each is identified as a gap rather than asserted."

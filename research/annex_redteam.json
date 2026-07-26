@@ -1,0 +1,742 @@
+{
+  "fixes": [
+    {
+      "item_id": "issuesA/P1 evidence_ref (MSP register purpose)",
+      "quote": "stating the purpose is to 'help APRA identify concentration risks across the financial services sector'",
+      "problem": "fabricated-quotation",
+      "severity": "critical",
+      "why": "I fetched the cited release twice. It contains no such sentence and no concentration-risk purpose at all; its only stated content is that the template is APRA's preferred method for meeting CPS 230 para 51, with registers due 1 October 2025. A fabricated direct quotation attributed to a named APRA publication is the single most damaging defect in the annex, and it is the sole support for P1's headline claim.",
+      "fix": "SOURCED: APRA required a completed material service provider register from ADIs, superannuation trustees and insurers by 1 October 2025, using a template it describes as 'APRA's preferred method for regulated entities to submit their registers to APRA for meeting the requirement of paragraph 51 of Prudential Standard CPS 230' - https://www.apra.gov.au/news-and-publications/apra-releases-material-service-provider-register-template . INFERRED: that registers submitted by every licensee on a common template can be read across licensees to identify shared providers. No concentration-risk purpose is stated in that release and none should be attributed to it.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesA/P2 and disposition 1 (retrospectivity sentence)",
+      "quote": "Royal Assent (13 March 2026) precedes commencement (1 July 2026), so there is no retrospectivity of the kind described.",
+      "problem": "contradicts-the-note",
+      "severity": "critical",
+      "why": "The note as it now stands says Division 296 'received Royal Assent on 13 March 2026 and commenced on 1 April 2026. It applies from the 2026-27 income year'. Consultation ask 4 in this same annex already states it correctly. The identical parenthetical survives in P2 and in red-team disposition 1 - the disposition that adjudicates a retrospectivity claim.",
+      "fix": "Global replace: \"Assent (13 March 2026) precedes commencement (1 July 2026)\" \u2192 \"Assent (13 March 2026) precedes commencement on 1 April 2026, and the charge first applies only from the 2026-27 income year\" (two occurrences: issuesA P2 evidence_ref, disposition 1 attack).",
+      "confidence": "certain",
+      "mechanical": true
+    },
+    {
+      "item_id": "audit row 24 (change saturation)",
+      "quote": "Payday Super and Division 296 commence on the same day, 1 July 2026, and land on the same administration platforms, data pipelines and finite administrator change capacity",
+      "problem": "contradicts-the-note",
+      "severity": "critical",
+      "why": "Payday Super commences 1 July 2026 (confirmed in the joint ATO-APRA letter); Division 296 commenced 1 April 2026 and first applies from 1 July 2026. This row is the annex's own provenance record for the change-saturation claim and its basis chain labels 1 July 2026 'Division 296 commencement', licensing the error downstream. The row is tagged 'verified'.",
+      "fix": "Assertion: 'Payday Super commences on 1 July 2026 and Division 296 - which itself commenced on 1 April 2026 - first applies from that same date, the start of the 2026-27 income year; both land on the same administration platforms, data pipelines and finite administrator change capacity; Payday Super carries the earlier and more visible deadline, so Division 296 is the change more likely to be deprioritised.' Basis step (1): 'both measures first apply from 1 July 2026 (joint ATO-APRA Payday Super Readiness letter; Division 296 first application, the Division having commenced 1 April 2026)'.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesB/P7 evidence_ref",
+      "quote": "SOURCED: Payday Super first applies from 1 July 2026 (the start of the 2026-27 income year), the same day Division 296 commences.",
+      "problem": "contradicts-the-note",
+      "severity": "critical",
+      "why": "Same error in a paraphrase the literal sweep missed, and tagged SOURCED, so a wrong legal proposition is presented as sourced fact in the item whose whole argument is a timing precedent.",
+      "fix": "SOURCED: Payday Super first applies from 1 July 2026 (the start of the 2026-27 income year) - the same day Division 296 first applies. Division 296 itself commenced on 1 April 2026, following Royal Assent on 13 March 2026.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesC/P16 evidence_ref (CORRECTION line)",
+      "quote": "CORRECTION: the legislated boundary is fund size - small funds, which include small APRA funds as well as SMSFs - not SMSF status.",
+      "problem": "contradicts-the-note",
+      "severity": "critical",
+      "why": "The note is explicit that 'The dividing line is member count, not which regulator applies'. The Act as enacted turns on 'small superannuation fund' (six or fewer members) - the same member-count line as the attribution split in ITAA 1997 s 296-65(4). Calling it 'fund size' invites the reader to test it against assets, and it does so inside the sentence that presents itself as the correction.",
+      "fix": "CORRECTION: the legislated boundary is member count, not SMSF status and not fund size. The reset is available to 'small superannuation funds' - funds with six or fewer members - which includes small APRA funds as well as SMSFs; funds with more than six members are on the prescribed factor method, alongside pooled superannuation trusts (Income Tax (Transitional Provisions) Act 1997 Subdiv 296-B, ss 296-50 and 296-60).",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "P16 plain English and recommendation; disposition 10; consultation ask 8(c)",
+      "quote": "the design asymmetry is about fund size, not about who regulates the fund",
+      "problem": "contradicts-the-note",
+      "severity": "critical",
+      "why": "Four further instances of the same 'fund size' error across three slices, including the ask that would be put to Treasury and the ATO, both of whom hold the instrument. P16 contradicts itself two sentences later ('funds with no more than six members').",
+      "fix": "Global replace: \"the design asymmetry is about fund size, not about who regulates the fund\" \u2192 \"the design asymmetry runs on member count, not on who regulates the fund\"; \"the size-based asymmetry\" \u2192 \"the member-count asymmetry\"; \"The legislated boundary is fund size, not SMSF versus APRA-regulated\" \u2192 \"The legislated boundary is member count - a small superannuation fund is one with six or fewer members - not SMSF versus APRA-regulated\"; \"P7 is restated around the size boundary\" \u2192 \"P7 is restated around the member-count boundary\"; \"differs by fund size rather than by regulator\" \u2192 \"differs by member count - the election is available to funds with six or fewer members - rather than by regulator\".",
+      "confidence": "certain",
+      "mechanical": true
+    },
+    {
+      "item_id": "P3, P7, P18, audit rows 28/29/42, disposition 40 (provenance of own analysis)",
+      "quote": "This is APRA's own derivation, not a Treasury or ATO figure, and it should be labelled as such in the note.",
+      "problem": "overclaimed-provenance",
+      "severity": "critical",
+      "why": "The arithmetic, the sizing inference and the fee-transmission analysis are the authors' own; APRA has published none of them. A document that disclaims affiliation cannot label its own work as the regulator's, and the $1,800 / $9,000 / $63,000 line is the most quotable in the note.",
+      "fix": "Global replace: \"This is APRA's own derivation, not a Treasury or ATO figure\" \u2192 \"This is the authors' own arithmetic from published parameters, not a Treasury, ATO or APRA figure\"; \"CREATED (sizing inference APRA can own)\" \u2192 \"CREATED (sizing inference by the authors)\"; \"On APRA's own derivation,\" \u2192 \"On our own derivation from published Treasury and APRA figures,\"; \"is APRA's own arithmetic from the proportioning formula\" \u2192 \"is the authors' own arithmetic applied to the statutory proportioning formula\"; \"It is the single most useful number in the pack\" \u2192 \"It is the single most useful figure in this note\"; \"Presented in the note as APRA's own inference used to calibrate supervisory intensity\" \u2192 \"Presented in the note as the authors' own inference from published APRA data\"; \"Labelled in the note as APRA's own illustration\" \u2192 \"Labelled in the note as the authors' own illustration\"; \"are APRA's own analysis\" \u2192 \"are this note's own analysis\"; \"labelled as APRA's own derivation\" \u2192 \"labelled as this note's own derivation from the enacted proportioning rule\"; \"state as an APRA analytical proposition\" \u2192 \"state as an analytical proposition of this note\"; \"INFERRED (unquantified, APRA's own proposition)\" \u2192 \"INFERRED (unquantified, this note's own proposition)\". Do not touch 'APRA's own data/collections/licensees/publication/stress test'.",
+      "confidence": "certain",
+      "mechanical": true
+    },
+    {
+      "item_id": "framework verdict SPS 530 (stress testing and liquidity)",
+      "quote": "CORRECTION: the draft cited para 29 for the stress testing programme; para 29 concerns Board justification when amending an investment strategy. The standard's own cross-reference in para 38 points to para 31.",
+      "problem": "internally-inconsistent",
+      "severity": "critical",
+      "why": "Verified against the registered SPS 530 (January 2023): para 30 is the programme, para 31 is the adverse stress scenarios, para 29 is Board justification on amending a strategy, and para 38's reference to 'the comprehensive investment stress testing program required in paragraph 31' is an erratum in the standard. The row quotes para 30 as the programme and then justifies its correction from the erratum, so it asserts both 30 and 31.",
+      "fix": "CORRECTION: the draft cited para 29 for the stress testing programme. Para 29 concerns the Board's justification for any decision to amend an investment strategy following a review. The programme obligation is at para 30; para 31 requires the adverse stress scenarios. Para 38 refers to 'the comprehensive investment stress testing program required in paragraph 31' - that internal cross-reference is an erratum in SPS 530, since the programme is required by para 30, and the paragraph 31 reference should not be relied on.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "disposition 9; audit row (SPS 530 correction); P8 and P18 instruments",
+      "quote": "SPS 530 para 31 is not the investment stress testing programme; para 31 is, confirmed by para 38's own cross-reference.",
+      "problem": "internally-inconsistent",
+      "severity": "critical",
+      "why": "An artefact of a literal string replacement on both sides of the contrast: the sentence says para 31 both is and is not the programme, so the disposition records nothing. The same wrong number then propagates to the audit trail and to two instruments lists. The correct paragraph is 30, not 31 (verified above).",
+      "fix": "Disposition 9 attack: 'SPS 530 para 29 is not the comprehensive investment stress testing programme; para 30 is - para 31 requires the adverse stress scenarios, and para 38's cross-reference to paragraph 31 is an erratum in the standard.' Then global replace: \"comprehensive investment stress testing programme at para 31\" \u2192 \"comprehensive investment stress testing programme at para 30\"; \"SPS 530 paras 31-38\" \u2192 \"SPS 530 paras 30-38\"; \"The comprehensive investment stress testing programme is SPS 530 paragraph 31, not paragraph 29\" \u2192 \"The comprehensive investment stress testing programme is SPS 530 paragraph 30, not paragraph 29 (paragraph 31 sets the adverse stress scenarios)\"; \"Citation changed to para 31 and the range restated as paras 31-38 throughout\" \u2192 \"Citation changed to para 30 and the range restated as paras 30-38 throughout\".",
+      "confidence": "certain",
+      "mechanical": true
+    },
+    {
+      "item_id": "disposition 35 (reasoning)",
+      "quote": "the new annual actuarial valuation capability, the tighter response window, and decades-long deferred debt account tracking that must survive mergers and administrator changes",
+      "problem": "contradicts-the-note",
+      "severity": "critical",
+      "why": "The note was corrected to say 'The Commissioner keeps the Division 296 debt account for decades, so the fund's member-level records behind it must survive mergers, transfers and changes of administrator.' Listing debt-account tracking as the trustee-side capability invents an obligation the law does not impose, in the disposition whose purpose is to separate genuine trustee duties from a category error.",
+      "fix": "the new annual actuarial valuation capability and the tighter response window - noting that the deferred debt account is maintained by the Commissioner and not by the fund, so what must survive mergers and administrator changes is the trustee's own valuation and member-level reporting record, not a debt account",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesA/P3 title and plain English",
+      "quote": "and no instrument governs how that judgement is made",
+      "problem": "contradicts-the-note",
+      "severity": "material",
+      "why": "The note says 'No prudential instrument governs how that judgement is made, signed off or independently checked' - the qualifier is load-bearing. ITAA 1997 s 296-65(3) as enacted requires the attribution to be 'determined on a fair and reasonable basis, having regard to the matters prescribed by the regulations', so the law does set a standard; what it omits is a method. P3 also cites Explanatory Statement Example 6, so it cannot assert that nothing governs the judgement.",
+      "fix": "Title: 'A trustee judgement now drives an identified member's personal tax bill, and no prudential instrument governs how that judgement is made'. Plain English, final sentence: 'The law requires the split to be fair and reasonable, having regard to matters prescribed by the regulations, but prescribes no method; and no prudential standard sets how a fund makes the judgement, how a board signs it off, or who independently checks it.'",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "residual uncertainty 2 (and the parallel GAP in P3 and audit row on attribution)",
+      "quote": "The 'more than six members' boundary, the 'fair and reasonable' wording, the prescribed formula and actuarial certificate for small funds, and the prescribed defined benefit reduction factor of 0.825 all rest on the Bills Digest, industry submissions and practitioner commentary on the draft, not on the made instrument.",
+      "problem": "overclaimed-uncertainty",
+      "severity": "material",
+      "why": "Wrong in substance: the 'fair and reasonable' test and the small-superannuation-fund carve-out (with regulations able to require an actuary's certificate) are in the enacting Act itself - ITAA 1997 s 296-65(3), (4), (5) and (6), Authorised Version C2026A00008. Recording the note's central design fact as unverified secondary inference tells the reader the note's spine is unsourced, on the basis of a retrieval difficulty rather than an evidentiary one.",
+      "fix": "The attribution boundary is settled in the enacting Act: ITAA 1997 s 296-65(3) requires attribution on a 'fair and reasonable basis, having regard to the matters prescribed by the regulations', and s 296-65(4)-(6) carve out interests in a 'small superannuation fund' (six or fewer members), for which the amount is determined in accordance with the regulations and may be determined by reference to an actuary's certificate. What could not be confirmed against the made regulations, because the Federal Register serves instrument documents through a JavaScript front end, is the prescribed matters themselves and the prescribed defined benefit reduction factor of 0.825; the register's earlier phase-in factors (20/40/60/80 per cent) were drawn from two practitioner readings of the draft and are not carried in the note. (Apply the same correction to P3's GAP and to the corresponding audit-trail row, which should move from 'unverified' to 'verified' as to the statutory boundary.)",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesA/P6 and audit row (bracket data citation)",
+      "quote": "APRA Quarterly Superannuation Industry Publication, March 2026, Table 8.",
+      "problem": "internally-inconsistent",
+      "severity": "material",
+      "why": "The note and P8 both cite APRA Quarterly Superannuation Fund Statistics, March 2026, Table 3 for the $1m+ account concentration; P6 and the audit trail cite a different publication and table for the same bracket data. The annex cannot cite two different sources for one dataset, and the note's citation should govern.",
+      "fix": "APRA Quarterly Superannuation Fund Statistics, March 2026, Table 3 - the same source cited for fund-level $1m+ concentrations elsewhere in this annex and in the note. (Apply to both occurrences; confirm the table number once against the published file before release.)",
+      "confidence": "likely",
+      "mechanical": true
+    },
+    {
+      "item_id": "issuesA/P1, P2, P7, P9, P10 instruments (CPS 230 service provider limb)",
+      "quote": "CPS 230 Operational Risk Management, service provider management limb (Part 4, paras 48-60) - note this limb replaced SPS 231 Outsourcing from 1 July 2025",
+      "problem": "wrong-citation",
+      "severity": "material",
+      "why": "Verified against the in-force July 2025 CPS 230: the standard has no numbered Parts, and the limb opens at para 47 ('must maintain a comprehensive service provider management policy'), with the register at 49, the mandatory RSE classifications at 50 and annual submission at 51. Starting at 48 drops the operative policy obligation the recommendation relies on. 'Part 4' appears four more times across the slices.",
+      "fix": "Global replace: \"service provider management limb (Part 4, paras 48-60)\" \u2192 \"service provider management limb (paras 47-60; policy at 47-48, material service provider register at 49, mandatory RSE licensee classifications at 50, annual submission to APRA at 51)\"; \"CPS 230 Part 4 (service provider management)\" \u2192 \"CPS 230 paras 47-60 (management of service provider arrangements)\"; \"CPS 230 paras 24, 35, 36(c), 38 and Part 4 (service provider management)\" \u2192 \"CPS 230 paras 24, 35, 36(c), 38 and paras 47-60 (management of service provider arrangements)\".",
+      "confidence": "certain",
+      "mechanical": true
+    },
+    {
+      "item_id": "issuesA/P5 evidence_ref (SPG 530 para 114)",
+      "quote": "para 114 requires protocols for reviewing interim valuations for unit pricing purposes.",
+      "problem": "overstates-guidance-as-obligation",
+      "severity": "material",
+      "why": "Verified text: 'The policy would also set out protocols for when and how the interim valuations are reviewed...'. SPG 530 is a practice guide and imposes no obligation. The note is careful about exactly this ('it is guidance rather than an enforceable standard'), so 'requires' contradicts the note's own discipline; the same overstatement runs into P5's recommendation, which asks APRA to 'confirm' a trigger 'under SPG 530 para 110', where the guide says a licensee 'would consider'.",
+      "fix": "SPG 530 para 114 states that the valuation policy 'would also set out protocols for when and how the interim valuations are reviewed for appropriateness and to determine whether any adjustments or reversals need to be made for unit pricing purposes'. SPG 530 is a practice guide and creates no obligation; the enforceable requirements are SPS 530 paras 40(f) and 40(g).",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "framework verdicts SPG 530 (both rows) and SPG 516",
+      "quote": "VERIFIED verbatim. Para 79 lists liquidity stress factors a prudent RSE licensee would consider",
+      "problem": "guidance-presented-as-requirement",
+      "severity": "material",
+      "why": "The quotations are accurate (I verified paras 9, 79(a), 79(e), 92, 109, 110, 114), but they sit in a field headed 'current_requirement', interleaved with CPS 230, SPS 530 and SPS 515 rows and graded on the same scale, with nothing saying the instrument is non-binding. A reader will take 'APRA expects valuations at least quarterly' as a requirement.",
+      "fix": "Prefix the current_requirement field of both SPG 530 rows and the SPG 516 row with: 'STATUS: a prudential practice guide - not enforceable, and imposing no obligation. Its paragraphs are framed as what a prudent RSE licensee \"would consider\" or what APRA \"expects\", and it is recorded here to show how far APRA's stated expectations already reach, not as a source of duty.' Then continue with the existing verbatim text.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "P3, P5, P8, P18 instruments (SPG entries)",
+      "quote": "SPG 530 Investment Governance para 9 (member equity risk)",
+      "problem": "guidance-presented-as-requirement",
+      "severity": "material",
+      "why": "Listing SPG 530 flat in 'instruments' arrays beside SPS 530, SPS 220, CPS 230, SPS 515 and the SIS Act covenants gives a practice guide the standing of enforceable authority - the failure mode the note explicitly avoids. P3's inferred chain then rests a member-equity conclusion on 'SPG 530 para 9 and the s52(2) covenants' as co-equal sources.",
+      "fix": "Rule: in every 'instruments' array, append ' - practice guide; APRA expectation, not an enforceable requirement' to any entry beginning 'SPG '. Additionally, in P3's inferred chain step (5), replace \"is a member-equity question under SPG 530 para 9 and the s52(2) covenants\" with \"is a member-equity question under the s52(2) covenants, and one APRA has said in SPG 530 para 9 it expects the investment governance framework to consider\".",
+      "confidence": "certain",
+      "mechanical": true
+    },
+    {
+      "item_id": "audit row 20 (SPG 516 cohorts)",
+      "quote": "SPG 516 already permits cohorts based on balance size, so high-balance members can be named as an expected cohort in the annual business performance review without amending a prudential standard.",
+      "problem": "wrong-citation",
+      "severity": "material",
+      "why": "A practice guide permits nothing. The discretion to determine cohorts is conferred by SPS 515 (business performance review: outcomes 'having regard to different cohorts of beneficiaries'); SPG 516 only illustrates it. The conclusion is right for the wrong reason, and the row is tagged sourced/verified on the guide alone.",
+      "fix": "SPS 515 requires the annual business performance review to assess outcomes having regard to different cohorts of beneficiaries and leaves the choice of cohort to the licensee; SPG 516 already illustrates that discretion with cohorts based on balance size. High-balance members could therefore be treated as a cohort without amending a prudential standard. SPG 516 imposes no obligation, so any expectation that such a cohort be adopted would have to come from a supervisory communication rather than from the guide.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesC/P18 recommended_apra_position",
+      "quote": "ask materially exposed licensees to produce the SPG 530 para 79(e) policy-driven scenario for Division 296 covering the June 2027 quarter",
+      "problem": "guidance-presented-as-requirement",
+      "severity": "material",
+      "why": "Para 79(e) describes an event a prudent licensee 'would consider'; nothing requires a licensee to produce a scenario. The note anchors the same ask correctly on SPS 530's stress testing programme and treats SPG 530 as an example. The enforceable hooks are SPS 530 para 30 (programme) and para 36(d)-(e) (liquidity event and actions), both of which P18 already cites.",
+      "fix": "ask materially exposed licensees to show how their SPS 530 para 36 liquidity management plan and para 30 stress testing programme treat a Division 296 policy-driven outflow over the June 2027 quarter, including whether it is identified as a liquidity event under para 36(d) and what actions para 36(e) specifies. SPG 530 para 79(e) is illustrative guidance on the kind of policy-driven event a prudent licensee would consider, not a requirement.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "headline figure 4 (liquidity subgroup)",
+      "quote": "This is the figure to use when describing how much of the system sits with licensees APRA has already judged to need material improvement on liquidity risk management.",
+      "problem": "factually-wrong",
+      "severity": "material",
+      "why": "Verified against APRA's December 2024 tables: the eight red-rated licensees represent 27% of in-scope FUM and 5.4m of the 18.7m accounts of the 23 reviewed licensees ($2,018bn), not of the system. Since the review covers about 80% of APRA-regulated superannuation assets, the system-equivalent share is about 22%. The annex commits a scope error in the very item that corrects one.",
+      "fix": "This is 27 per cent of the funds under management of the 23 licensees reviewed, and 5.4 million of their 18.7 million member accounts - not 27 per cent of the system. Because the reviewed population is around 80 per cent of APRA-regulated superannuation assets, the equivalent system-wide share is roughly 22 per cent of funds under management.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "disposition 13 and audit row (liquidity subgroup share)",
+      "quote": "the eight-licensee liquidity subgroup (27% of funds under management, 5.4m accounts)",
+      "problem": "wrong-citation",
+      "severity": "minor",
+      "why": "Same in-scope/system elision in two further places, one line below the correction it is meant to record. The subgroup should also be identified as the eight rated 'requires improvement' for liquidity risk management, since a different eight were red on valuation governance (21% of in-scope FUM, 4.4m accounts).",
+      "fix": "Global replace: \"the eight-licensee liquidity subgroup (27% of funds under management, 5.4m accounts)\" \u2192 \"the eight licensees rated 'requires improvement' for liquidity risk management (27% of in-scope funds under management and 5.4m member accounts, in-scope meaning the 23 reviewed licensees)\"; \"the eight-licensee liquidity subgroup represents 27% of funds under management and 5.4m member accounts\" \u2192 \"the eight licensees rated 'requires improvement' for liquidity risk management represent 27% of in-scope funds under management and 5.4m of the 18.7m in-scope member accounts\".",
+      "confidence": "certain",
+      "mechanical": true
+    },
+    {
+      "item_id": "framework verdict SRS 611.0",
+      "quote": "APRA therefore cannot count members above $3 million or $10 million from its own collections, cannot see where they are concentrated, and cannot size the assets sitting behind them.",
+      "problem": "overstated",
+      "severity": "material",
+      "why": "SRF 611.0 is reported per RSE, so APRA can see how many $1m+ accounts each fund holds - which is exactly the evidence the note's own cohort recommendation uses (Quarterly Superannuation Fund Statistics, March 2026, Table 3), and the note says 'more brackets would show where the very large accounts sit'. The defensible defect is absence of resolution inside an open-ended bracket, not blindness to concentration.",
+      "fix": "The top bracket opens at $1,000,000 - one third of the lower Division 296 threshold and one tenth of the upper - and is not subdivided above it. APRA can therefore see how many $1m-plus accounts each RSE holds and their aggregate benefits, and can identify which licensees are concentrated in them, but it cannot resolve within the bracket: it cannot count members above $3 million or $10 million, or size the assets sitting behind them.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesA/P4 why_it_matters",
+      "quote": "APRA did exactly this for another measure commencing the same day.",
+      "problem": "contradicts-the-note",
+      "severity": "material",
+      "why": "Two errors in one sentence. Payday Super commences 1 July 2026; Division 296 commenced 1 April 2026 and first applies 1 July 2026. And the 25 March 2026 readiness letter is a joint ATO-APRA letter, signed by an ATO Deputy Commissioner and an APRA General Manager - not an APRA solo act.",
+      "fix": "APRA did exactly this, jointly with the ATO, for Payday Super, which commences on 1 July 2026 - the day from which Division 296 first applies. (Division 296 itself commenced on 1 April 2026.)",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "disposition 42 (attack)",
+      "quote": "The register misses APRA's own Payday Super readiness letter of 25 March 2026 - a four-month-old, self-authored precedent for exactly the intervention the register proposes, on a measure commencing the same day.",
+      "problem": "overclaimed-provenance",
+      "severity": "material",
+      "why": "Verified on APRA's own page: the letter is issued jointly by the ATO and APRA. The disposition's argumentative value rests on self-authorship - that is what makes a Division 296 letter 'a consistency step'. The commencement clause repeats the date error, and the disposition's own reasoning field gets it right ('both measures first applying from 1 July 2026').",
+      "fix": "The register misses the joint ATO-APRA Payday Super readiness letter of 25 March 2026 - a four-month-old precedent APRA co-authored, for exactly the intervention the register proposes, on a measure that first applies from the same day.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "consultation ask 7",
+      "quote": "Payday Super and Division 296 commenced on the same day, in the same administration systems",
+      "problem": "contradicts-the-note",
+      "severity": "material",
+      "why": "This ask is to be put to Treasury and the ATO, who hold the commencement dates; a wrong commencement claim in the first clause discredits the sequencing point that follows. Ask 4 in the same list already states the correct dates.",
+      "fix": "Payday Super commences on 1 July 2026 and Division 296, which commenced on 1 April 2026, first applies from that same day - both landing in the same administration systems, drawing on the same finite pool of administrator change capacity, with Payday Super carrying the earlier and more visible deadline.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesB/P7 evidence_ref (Payday Super letter content)",
+      "quote": "warns that many licensees were not on track to implement the Member Verification Request component of the new SuperStream standard",
+      "problem": "wrong-regulator",
+      "severity": "material",
+      "why": "Verified: the letter says 'the ATO is concerned that a material number of RSE licensees are not currently on track to deliver all elements of SuperStream 3.0, particularly the key Member Verification Request service.' The annex credits APRA with the ATO's finding, in an item whose argument is what APRA has already done on its own initiative. The annex's own audit trail records the attribution correctly.",
+      "fix": "SOURCED: joint ATO-APRA letter, 'Payday Super Readiness', 25 March 2026 - relays the ATO's concern that a material number of RSE licensees are not currently on track to deliver all elements of SuperStream 3.0, particularly the Member Verification Request service; tells licensees to revisit implementation timelines; states that APRA would expect contribution processing to form part of a licensee's critical operations under CPS 230; and states that significant breaches would necessitate a breach notification to APRA",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesB/P8 plain English (enforcement)",
+      "quote": "APRA has separately taken enforcement action against five platform trustees for investment governance failings",
+      "problem": "overclaimed-provenance",
+      "severity": "material",
+      "why": "P8's own evidence_ref says 'five trustees' and names Diversa Trustees, Fiducian, Equity Trustees, HTFS and Netwealth - a mix of promoter/RSE-service trustees with one platform. 'Platform' is inserted by the author and does the work of tying the enforcement history to the platform shortlist.",
+      "fix": "APRA has separately taken enforcement action against five trustees for investment governance failings - additional licence conditions on Diversa Trustees, Fiducian, Equity Trustees and HTFS, and a court enforceable undertaking from Netwealth. Not all are platform trustees, so the overlap with the platform and wrap cohort is partial.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesB/P8 plain English (pooled options)",
+      "quote": "In a large pooled option the method matters much less, because every lawful method must start from the same whole-of-fund earnings figure and stay broadly proportionate to balances.",
+      "problem": "unsupported",
+      "severity": "material",
+      "why": "No proportionality constraint exists: ITAA 1997 s 296-65(3) requires only a 'fair and reasonable' basis having regard to prescribed matters. This is the analytic spine that licenses the platform/wrap shortlist, and it has no evidence_ref - and disposition 24 in this same annex expressly rejects the proportionality premise as 'itself unsourced'.",
+      "fix": "In a large pooled option the range of defensible answers is narrower, because members share a single earnings pool and the accounting inputs are common to all of them. The statutory test is the same either way: a fund with more than six members must attribute on a 'fair and reasonable' basis under ITAA 1997 s 296-65(3), with no prescribed formula and no proportionality constraint.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesB/P8 why_it_matters",
+      "quote": "Concentration also runs the other way: a handful of funds hold most of the very large accounts, so a targeted review covers most of the exposure at low cost.",
+      "problem": "internally-inconsistent",
+      "severity": "material",
+      "why": "P8's own evidence gives the largest absolute holders of $1m+ accounts as Australian Retirement Trust 37,570, AustralianSuper 35,590 and UniSuper 28,050 - none a platform or wrap trustee - and industry funds the lowest share at 0.89%. A review scoped to platforms covers a high-share, low-volume cohort, not most of the exposure.",
+      "fix": "Concentration runs two ways and they point at different funds: platform and wrap trustees have the highest share of very large accounts (Macquarie 8.17%, Avanteos 7.37%), while the largest absolute numbers sit at three large profit-to-member funds (Australian Retirement Trust 37,570, AustralianSuper 35,590, UniSuper 28,050). A review scoped to platform and wrap trustees tests the hardest attribution problems; covering the bulk of affected members would require adding those three.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesB/P12 evidence_ref (Treasury costing)",
+      "quote": "Its only published ongoing costing for the chosen design is $1,421,858 a year across the sector",
+      "problem": "stale-superseded-design",
+      "severity": "material",
+      "why": "Verified in the Impact Analysis: $1,421,858 is the Option 3 ongoing cost for large APRA-regulated funds and exempt public sector schemes, struck under the 2023 change-in-balance design with ATO-side calculation. Calling it the costing 'for the chosen design' presents a superseded figure as live, and the item contradicts itself two lines later; P10 and P18 caveat the same document correctly.",
+      "fix": "Its only published ongoing costing is $1,421,858 a year across large APRA-regulated funds and exempt public sector schemes, struck for the option Treasury preferred in January 2024 - ATO-side calculation under the change-in-balance design - on an assumption of 'an additional half hour of work each for reporting on each affected member'. CAVEAT: that design has been superseded by the realised-earnings redesign, which moves the calculation to funds; there is no published Commonwealth costing for the enacted measure.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesC/P15 GAP",
+      "quote": "Confirm internally with Policy and the Superannuation Division what engagement has occurred since October 2025 before raising this.",
+      "problem": "tone-reads-as-insider",
+      "severity": "material",
+      "why": "This instructs the reader to make an internal enquiry of named APRA business units, which only an APRA staff member could do. It is irreconcilable with a note assembled from public sources and disclaiming affiliation - the clearest single tell in the annex.",
+      "fix": "GAP: the published membership page for the Superannuation Administration Group does not list APRA, but a published membership page is not evidence of who attends a specific workstream and says nothing about bilateral engagement. The extent of APRA's engagement since October 2025 is not determinable from public sources and should not be characterised either way.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesB/P10 evidence_ref (gender equity)",
+      "quote": "Do not tell the CEO the gender-equity question is closed; confirm the position adopted in the made regulations.",
+      "problem": "tone-reads-as-insider",
+      "severity": "material",
+      "why": "Places the author inside APRA briefing an APRA executive, and converts an evidence caveat into an internal briefing instruction.",
+      "fix": "NOT SETTLED: ASFA's 7 April 2026 submission still contains a live section headed 'Use of only male valuation factors'. The gender-equity question should not be treated as closed until the position adopted in F2026L00726 as made is confirmed.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "audit rows 22 and 26 (internal clearance)",
+      "quote": "The s 29JA text was not read verbatim in this pass, so the legal premise should be confirmed by APRA Legal before the note is relied on externally.",
+      "problem": "tone-reads-as-insider",
+      "severity": "material",
+      "why": "Both rows describe an internal APRA clearance workflow the author does not have - routing a legal premise to 'APRA Legal', and checking a negative against 'APRA's internal publication index'. A published note has no internal index, no legal function, and no publication step separate from itself.",
+      "fix": "Row 22: 'The s 29JA text was not read verbatim in this pass, so the legal premise rests on a secondary description of the section and is stated provisionally. The recommended fix - stating an expectation of notification in a letter - does not depend on resolving it.' Row 26: 'This is a search-based negative finding over APRA's public website, not an exhaustive check of everything APRA has published, and is stated in the note on that basis.'",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesA/P1, P5, P6, P11, P12, P18, framework, audit and disposition slices (meeting register)",
+      "quote": "The offsetting point is genuinely positive for a CEO conversation: APRA is not blind here.",
+      "problem": "tone-reads-as-insider",
+      "severity": "material",
+      "why": "A published independent note has no meeting, no room, no Chair and no pack. The phrases recur at least fifteen times across five slices and, read together, position the annex as an internal APRA briefing pack, contradicting the note's own disclaimer.",
+      "fix": "Global replace: \"The offsetting point is genuinely positive for a CEO conversation:\" \u2192 \"The offsetting point cuts the other way:\"; \"That is an internal data query, not new collection, and should be run before the meeting.\" \u2192 \"That would be an internal APRA data query rather than a new collection.\"; \"should not be carried into the meeting\" \u2192 \"should not be carried into the analysis\"; \"in a CEO-level conversation\" \u2192 \"in any public account of the measure\"; \"This is an original proposition for the meeting\" \u2192 \"This is an original proposition of this note\"; \"an original analytical proposition for this meeting\" \u2192 \"an original analytical proposition of this note\"; \"before the meeting.\" \u2192 \"before relying on it.\"; \"generated for this meeting\" \u2192 \"generated for this note\"; \"written for this meeting\" \u2192 \"written for this note\"; \"Editorial and methodological decision for this meeting\" \u2192 \"Editorial and methodological decision for this note\"; \"naming what is not affected is as useful to the meeting as naming what is\" \u2192 \"identifying which standards are not engaged is as informative as identifying those that are\"; \"Included to prevent an avoidable correction in the meeting.\" \u2192 \"Included because the CFR is sometimes assumed to be the coordinating forum for this measure.\"; \"in the pack\" \u2192 \"identified in this review\"; \"A repeated off-by-one on the register's most-cited standard would have been corrected in the room.\" \u2192 (delete sentence); \"would cost credibility in the room\" \u2192 \"would cost the analysis credibility\"; \"adopted as a pre-meeting action\" \u2192 \"adopted as a prior step\"; \"pending confirmation with the ATO before the meeting\" \u2192 \"pending confirmation with the ATO\"; \"before it is put in front of the CEO\" \u2192 \"before publication\"; \"should be checked internally before the meeting\" \u2192 \"is not determinable from published sources\"; \"Note internally that\" \u2192 \"Note that\"; \"into the meeting - all four were answered\" \u2192 \"into the note - all four were answered\".",
+      "confidence": "certain",
+      "mechanical": true
+    },
+    {
+      "item_id": "issuesC/P17 provenance and plain English",
+      "quote": "Three technical bodies contested this at consultation and it survived into the final regulations unchanged.",
+      "problem": "overclaimed-provenance",
+      "severity": "material",
+      "why": "The item is tagged provenance 'sourced' while its own GAP concedes the made instrument has not been read, and only two bodies are cited (SMSF Association, Tax Institute). Consultation submissions on a draft cannot establish what the made regulation says; the recommendation compounds it with 'Confirm and communicate the final position, which is now determinable'.",
+      "fix": "Retag provenance as 'inferred'. Replace the quoted sentence with: 'Two technical bodies - the SMSF Association and the Tax Institute - contested this at consultation, and practitioner commentary on release reported no change to the post-death earnings treatment; the made text has not been read against the draft.' In the recommendation, replace 'Confirm and communicate the final position, which is now determinable' with 'Read F2026L00726 and its Explanatory Statement to establish the final position before relying on it'.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesC/P18 and audit row 30 (APRA-side share)",
+      "quote": "applying the 31,800-of-80,000 APRA-side share gives an indicative $0.9bn a year",
+      "problem": "factually-wrong",
+      "severity": "material",
+      "why": "Verified in the Impact Analysis (p.54): 31,800 is 'affected members of APRA-regulated funds and exempt public sector schemes' - APRA supervises neither the exempt public sector schemes nor SMSFs. The same document separately says only about 30,000 individuals above $3m hold an account in an APRA-regulated fund. P16's own CAVEAT and audit row 37 both record this; rows 30 and P18 drop it and propagate it into the headline materiality comparisons.",
+      "fix": "Both occurrences: replace \"the 31,800-of-80,000 APRA-side share\" with \"the 31,800-of-80,000 share for large APRA-regulated funds and exempt public sector schemes combined - an upper bound, since APRA supervises neither the exempt public sector schemes nor SMSFs (the Impact Analysis separately puts the APRA-regulated-fund population at approximately 30,000)\"; and in audit row 30 replace \"an indicative APRA-side liability of about $0.9bn a year\" with \"an indicative liability of about $0.9bn a year across APRA-regulated funds and exempt public sector schemes\".",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "audit row 42 (performance test transmission)",
+      "quote": "because the benchmark is a median, a licensee with a small affected population relative to total membership spreads the same fixed build cost over a smaller base and moves against the median",
+      "problem": "internally-inconsistent",
+      "severity": "material",
+      "why": "Administration fees are levied across the whole membership, so the base is total membership. A licensee with a small affected population relative to total membership by definition has a large base, which pushes per-member cost down, not up. The variable that produces the stated effect is small total membership, so the chain does not close on a row tagged 'inferred'.",
+      "fix": "(3) because the benchmark is a median administration fee for the product category, a licensee with a small total membership spreads the same fixed build cost over a smaller base and so moves against the median, irrespective of how many of its members are within Division 296 scope.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "consultation ask 6 (CFR)",
+      "quote": "Note also that the Council of Financial Regulators does not include the ATO, so this is a bilateral matter rather than a CFR one.",
+      "problem": "internally-inconsistent",
+      "severity": "material",
+      "why": "Disposition 41 records the forum as corrected to CFR Plus, and P6 and P15 both name CFR Plus (CFR agencies plus the ACCC, ATO, AUSTRAC and AFSA). Ask 6 discards the accepted fix and draws the opposite inference from the same true premise.",
+      "fix": "Note also that the ATO is not a member of the Council of Financial Regulators itself but is a member of the wider CFR Plus grouping, so the coordination route is CFR Plus or a bilateral APRA-ATO arrangement rather than the CFR proper.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "P2, P8, P9, P10, P11, P12, P14 instruments (SPS 515 pinpoints)",
+      "quote": "SPS 515 paras 30, 36-44 (transfer preparation and successor fund transfers)",
+      "problem": "wrong-citation",
+      "severity": "material",
+      "why": "Checked against the SPS 515 text available (September 2023): para 30 is remedial action and 31 is transfer preparation; paras 33-43 are the MySuper-transfer regime gated by para 33 (only where a MySuper authority is cancelled or may be cancelled) and the standard ends at 43, so 'para 44' does not exist; fee-setting is 16-17 and expenditure management 21-22, not 13/17-18; the business performance review is 25-26, not 23-28 or 24-28 (27-29 is the separate annual outcomes assessment). The annex's own framework row omits SPS 515 numbers as unverified, so the issue items should not assert them.",
+      "fix": "Global replace: \"SPS 515 paras 30, 36-44 (transfer preparation and successor fund transfers)\" \u2192 \"SPS 515 - remedial actions and transfer planning (obligation to take appropriate and timely steps to prepare for a transfer of beneficiaries out of, or into, an RSE); SIS Regulations reg 11.08 (written notice to APRA of a decision to undertake a successor fund transfer)\"; \"SPS 515 paras 30, 36-44 (transfer preparation)\" \u2192 \"SPS 515 - remedial actions and transfer planning (preparation for a transfer of beneficiaries out of, or into, an RSE)\"; \"SPS 515 paras 23-28 (business performance review, cohorts)\" and \"SPS 515 paras 24-28 and SPG 516 (business performance review, member cohorts)\" \u2192 \"SPS 515 - business performance review (annual review of performance against strategic objectives; outcomes assessed having regard to different cohorts of beneficiaries)\" (with 'and SPG 516 (guidance)' retained in P12); \"SPS 515 paras 13, 17-18 (fee-setting and expenditure decisions)\" and \"SPS 515 paras 13, 17-18 (prudent and transparent fees; demonstrable purpose and funding source for expenditure)\" \u2192 \"SPS 515 - setting fees (each fee set prudently and transparently) and expenditure management (purpose of the expenditure, how it will be funded, how its results will be monitored)\"; and in P12's recommendation, \"demonstrate under SPS 515 paras 17-18 the purpose, funding source and monitoring metrics for that expenditure\" \u2192 \"demonstrate under SPS 515's expenditure management requirements the purpose of that expenditure, how it is funded and how its results are monitored\".",
+      "confidence": "likely",
+      "mechanical": true
+    },
+    {
+      "item_id": "issuesC/P16 evidence_ref (small APRA fund count)",
+      "quote": "there were 673 at June 2025, down about 1,000 on the prior year",
+      "problem": "unsupported",
+      "severity": "material",
+      "why": "Tagged SOURCED with no source, and the annex's own audit trail says the count 'was not re-verified this pass'. APRA's Annual superannuation bulletin 2024-25 highlights records 'a net reduction of 12 pooled superannuation trusts (PSTs) and 796 small APRA funds (six or less members) over the period' - June 2020 to June 2025 - which is incompatible with a fall of about 1,000 in a single year.",
+      "fix": "SOURCED: small APRA funds are APRA-regulated funds with no more than six members; APRA recorded a net reduction of 796 small APRA funds over the five years to June 2025 - APRA, Annual superannuation bulletin 2024-25 highlights.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesC/P16 title",
+      "quote": "Perimeter: the capital gains reset favours SMALL funds - which includes some APRA-regulated ones - and the migration trend predates the tax",
+      "problem": "internally-inconsistent",
+      "severity": "material",
+      "why": "Disposition 39 in this same annex expressly rejects that reasoning: 'the September 2025 quarter predates the redesign but not the measure, which had been public policy since February 2023 ... causation is unestablished in both directions'. The title asserts what the body and the disposition record disclaim.",
+      "fix": "Perimeter: the capital gains reset favours funds with six or fewer members - which includes some APRA-regulated ones - and the migration trend is not shown to be driven by the tax",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "audit row 15 (register held)",
+      "quote": "APRA already holds a completed material service provider register from every superannuation trustee, submitted by 1 October 2025, collected for the stated purpose of identifying concentration risk across the sector",
+      "problem": "unsupported",
+      "severity": "material",
+      "why": "Two problems. A due date is not evidence that every licensee submitted, or that every register was complete. And the concentration-risk purpose is not in the cited release, which I fetched twice - so the row's basis line ('purpose includes identifying where multiple entities rely on a single provider') is also unsupported. Row 46 then builds its first recommended step on those registers.",
+      "fix": "Assertion: 'CPS 230 carries a service provider management limb under which material service provider registers were due to APRA from ADIs, superannuation trustees and insurers by 1 October 2025 (CPS 230 para 51), so APRA should now hold a register from each RSE licensee.' Basis: delete 'purpose includes identifying where multiple entities rely on a single provider'; the release states only that the template is APRA's preferred submission method for meeting para 51.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesA/P1 plain English",
+      "quote": "About fifty licensed super trustees must now work out, for each member with a very large balance, how much of the fund's investment income belongs to that member",
+      "problem": "unsupported",
+      "severity": "material",
+      "why": "No evidence_ref supports 'about fifty' and no such figure appears anywhere in the item. It is the denominator for P1's whole correlation argument (fifty trustees behind a handful of administrators), and it looks low against APRA's published List of superannuation institutions.",
+      "fix": "Every RSE licensee with in-scope members - a population APRA publishes in its List of superannuation institutions - must now work out, for each member with a very large balance, how much of the fund's investment income belongs to that member",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "disposition 20 against disposition 23",
+      "quote": "Under the rule both sit at B; P6 is then folded into the liquidity item and P9 retains its own entry.",
+      "problem": "internally-inconsistent",
+      "severity": "material",
+      "why": "Disposition 23 says of the same item 'Likelihood cut, P6 demoted to C'. The two dispositions are the audit trail for one regrade and give different final grades, which defeats the deterministic rubric adopted at disposition 3.",
+      "fix": "Under the rule both sit at B on their original vectors; P6's likelihood is then cut for the reason given in the liability-size disposition, which takes it to C, and it is folded into the liquidity item, while P9 retains its own entry at B.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesA/P5 recommended_apra_position",
+      "quote": "Reinforce SPS 530 para 40 expectations on conflicted valuation committee membership at the licensees identified in the December 2024 thematic.",
+      "problem": "unsupported",
+      "severity": "material",
+      "why": "The thematic names no trustees, so 'the licensees identified' cannot be identified from the published report - the phrasing only works from inside APRA and implies the report contains a list it does not. The note's own recommendation was corrected to build the cohort from published concentration data instead. Conflicted committee membership sits under SPS 530 para 40(a).",
+      "fix": "Reinforce SPS 530 para 40(a) expectations on the composition of, and conflicts within, the bodies overseeing valuation, in the cohort the December 2024 review found requiring material improvement - described there as mainly mid-sized and platform-based licensees. The review names no individual trustees, so the licensees cannot be identified from the published report.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "audit row 14 (CPS 230 paragraphs)",
+      "quote": "paragraphs 35, 38 and 44 (tolerance levels and business continuity testing) apply accordingly",
+      "problem": "wrong-citation",
+      "severity": "minor",
+      "why": "Verified against the in-force CPS 230: para 35 is the definition of a critical operation, not a tolerance or testing obligation, so the parenthetical label does not map to it; the systematic BCP testing programme is para 43, with para 44 tailoring it. On a row tagged 'verified', in an annex whose flagship correction is a CPS 230 off-by-one.",
+      "fix": "paragraph 35 (definition of critical operations, extending to processes performed by a service provider), paragraph 38 (tolerance levels for each critical operation) and paragraphs 43-44 (the systematic BCP testing programme, including severe but plausible scenarios involving disruption to material service providers) apply accordingly",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "audit row 1 (statutory status)",
+      "quote": "Royal Assent 13 March 2026, first applies from 1 July 2026 (the start of the 2026-27 income year), first measurement date 30 June 2027.",
+      "problem": "incomplete",
+      "severity": "minor",
+      "why": "The row that establishes the measure's statutory status, and to which every downstream timing statement traces, omits commencement altogether. That omission is what let row 24 call 1 July 2026 'commencement' without tripping a check. The row is tagged 'verified'.",
+      "fix": "Royal Assent 13 March 2026, commenced 1 April 2026, first applies from the 2026-27 income year (that is, from 1 July 2026), first measurement date 30 June 2027.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "audit row 34 (CSS concentration)",
+      "quote": "\"provenance\": \"sourced\"",
+      "problem": "overclaimed-provenance",
+      "severity": "minor",
+      "why": "The row's own basis says 'Derived from' - APRA publishes no 23.58% figure; it is a ratio computed from two columns of Table 3. A computed ratio presented as sourced matters more than usual here because it is a named-entity concentration claim the row itself flags as a possible reporting artefact.",
+      "fix": "Set provenance to 'created' and open the basis: 'Own calculation from APRA Quarterly Superannuation Fund Statistics, March 2026, Table 3 (accounts above $1m divided by total accounts for the reporting entity); APRA publishes no such percentage.' Remainder of the basis unchanged.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesA/P6 evidence_ref (SRS 611.0 URL)",
+      "quote": "https://www.apra.gov.au/sites/default/files/2021-10/Reporting%20Standard%20SRS%20611.0%20Member%20Accounts%20-%20marked%20up.pdf",
+      "problem": "weak-citation",
+      "severity": "minor",
+      "why": "Confirmed: the file is the tracked-changes consultation version - its header reads 'MarchSeptember 2021' and the bracket list renders as '$1,000,000+.+'. The valid-value list happens to be right, but a marked-up draft is not authority for what an operative reporting standard requires.",
+      "fix": "Cite the registered instrument on the Federal Register of Legislation (SRS 611.0 Member Accounts, current compilation) or APRA's clean published version, not the 2021 marked-up consultation draft.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "P3, P10, P16, P17 instruments (regulation short title)",
+      "quote": "Income Tax Assessment (1997 Act) Amendment Regulations 2026 (F2026L00726) Sch 1",
+      "problem": "wrong-citation",
+      "severity": "minor",
+      "why": "The registered title is 'Income Tax Assessment (1997 Act) Amendment (Building a Stronger and Fairer Super System and Other Measures) Regulations 2026'; the truncated form is not the instrument's name. Headline figure 9 in the same annex gives the full title, so the annex is inconsistent with itself.",
+      "fix": "Global replace: \"Income Tax Assessment (1997 Act) Amendment Regulations 2026 (F2026L00726)\" \u2192 \"Income Tax Assessment (1997 Act) Amendment (Building a Stronger and Fairer Super System and Other Measures) Regulations 2026 (F2026L00726)\". In P10, add to the Sch 2 / Sch 4 entry: 'schedule references to be confirmed against the instrument as made, which this pass did not read.'",
+      "confidence": "certain",
+      "mechanical": true
+    },
+    {
+      "item_id": "issuesA/P5 instruments (SRF 553.3)",
+      "quote": "SRS 553.0 Investment Exposure Concentrations and Valuations / SRF 553.3 Out Of Cycle Valuations",
+      "problem": "wrong-citation",
+      "severity": "minor",
+      "why": "Verified against the registered standard: SRF 553.3 is titled 'Valuations'. 'Out Of Cycle Valuations' is the heading of Tables 1 and 2 within it (Table 3 is RSE Valuation Profile). P5's recommendation compounds this by treating 'the SRS 553.0 out-of-cycle valuation series' as a standalone collection.",
+      "fix": "SRS 553.0 Investment Exposure Concentrations and Valuations / SRF 553.3 Valuations, Tables 1 and 2 (Out Of Cycle Valuations - Material Unlisted Investments; Out Of Cycle Valuations - Material Impact On Investment Options)",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesA/P5 plain English (thematic population)",
+      "quote": "only eleven of twenty-three large trustees had a dedicated valuation committee",
+      "problem": "factually-wrong",
+      "severity": "minor",
+      "why": "The review population was 23 RSE licensees that 'ranged in asset size and operated a range of business models', covering about 80% of APRA-regulated superannuation assets. Describing all 23 as 'large trustees' misstates the population and overstates how much of the largest tier lacked a committee.",
+      "fix": "only eleven of the twenty-three RSE licensees reviewed - a group spanning large, mid-sized and platform-based trustees, covering around 80 per cent of APRA-regulated superannuation assets - had a dedicated valuation committee",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesA/P5 who_bears_it",
+      "quote": "industry funds at roughly 20-22% of investments and public sector funds at roughly 19-23%, retail at roughly 5-7%",
+      "problem": "unsupported",
+      "severity": "minor",
+      "why": "Three ranges with no evidence_ref anywhere in P5; none of its five refs touches asset allocation by fund type. They are the only quantification of who bears the valuation exposure and the retail figure drives the item's implicit segmentation of supervisory attention.",
+      "fix": "Funds with material unlisted allocations, concentrated in the industry and public sector segments and lowest in retail; platform trustees through externally managed exposures. (Restore the percentages only with a cited table and pinpoint.)",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesB/P9 instruments (CPS 234)",
+      "quote": "CPS 234 Information Security (record retention through third parties)",
+      "problem": "wrong-citation",
+      "severity": "minor",
+      "why": "CPS 234 governs information security capability, controls and the security of information assets managed by related parties and third parties. It imposes no record-retention obligation, so it is the wrong hook for a thirty- to forty-year custody argument; CPS 230's service provider limb and the SIS record-keeping obligations are.",
+      "fix": "CPS 234 Information Security (security of information assets managed by third parties - note CPS 234 governs information security, not record retention; the retention duty sits in the SIS Act and Regulations)",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesB/P10 instruments (SPS 160)",
+      "quote": "SPS 160 Defined Benefit Matters paras 8-14, 29, 31-35, 39-40",
+      "problem": "wrong-citation",
+      "severity": "minor",
+      "why": "The annex's own framework row records SPS 160 paragraph numbers as not independently verified, yet the issue item asserts five ranges - and the reviewer reports paras 39-41 are transitional arrangements for investigations commenced before 1 July 2013, which have nothing to do with Division 296. I could not verify either numbering against the registered standard, so the safe course is to cite by subject, not to swap one unverified pinpoint set for another.",
+      "fix": "SPS 160 Defined Benefit Matters - shortfall limit, actuarial investigations and reports, and the unsatisfactory financial position and restoration provisions (paragraph numbers not verified in this pass and deliberately omitted, consistent with the framework verdict for this standard)",
+      "confidence": "arguable",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesC/P13 instruments (TSB regulations)",
+      "quote": "Income Tax Assessment (1997 Act) Regulations 2021, reg 307-230A series (per ASFA)",
+      "problem": "wrong-citation",
+      "severity": "minor",
+      "why": "There is no regulation numbered 307-230A. The 2021 Regulations number these provisions 307-230.01 / 307-230.02, made under s 307-230 ITAA 1997, and it is those that value superannuation interests for total superannuation balance purposes.",
+      "fix": "Income Tax Assessment (1997 Act) Regulations 2021 (F2021L00206), regs 307-230.01-307-230.02 (value of superannuation interests for total superannuation balance purposes)",
+      "confidence": "likely",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesC/P13 title",
+      "quote": "defined benefit members can lose the ability to contribute because of it",
+      "problem": "internally-inconsistent",
+      "severity": "minor",
+      "why": "The title asserts the upward failure mode (a higher measured balance closing contribution room), but the item's stated 'concrete harm' is the opposite - a lower reported balance relied on for a contribution or bring-forward election, producing an excess contributions assessment - and only that case is evidenced by the ASFA material cited.",
+      "fix": "The Act also rewrites how every member's total balance is measured, and defined benefit members can be misled about their contribution room because of it",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesC/P14 why_it_matters",
+      "quote": "It is joint APRA-ASIC territory rather than APRA's alone, which is why proximity is scored low.",
+      "problem": "internally-inconsistent",
+      "severity": "minor",
+      "why": "apra_proximity is 3 of 5 - mid-range, the same as P13 and P18 and higher than P16 and P17, which score 2. The text describes a score the item does not carry.",
+      "fix": "It is joint APRA-ASIC territory rather than APRA's alone, which is why proximity is scored mid-range rather than high.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesC/P14 evidence_ref (retirement phase share)",
+      "quote": "SOURCED: Treasury Impact Analysis (January 2024) - about 65% of affected individuals are in retirement phase",
+      "problem": "stale-superseded-design",
+      "severity": "minor",
+      "why": "The figure checks out (Impact Analysis p.19), but it models the superseded 2023 design on an 80,000-person cohort with no $10m tier. P10, P12 and P18 all caveat the same document; P14 uses it bare, so the annex treats one source two ways.",
+      "fix": "SOURCED: Treasury Impact Analysis (January 2024) - about 65% of affected individuals are in retirement phase. CAVEAT: this is the Impact Analysis for the superseded design and the modelled cohort differs from the enacted one, so treat the composition as indicative only.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesC/P17 evidence_ref (Tax Institute date)",
+      "quote": "SOURCED: Tax Institute recommends 'Division 296 liabilities should cease on death' - submission, 16 April 2026.",
+      "problem": "internally-inconsistent",
+      "severity": "minor",
+      "why": "P16 and P17 both state that consultation on the draft regulations closed on 7 April 2026. A submission dated nine days later is either a late lodgement, which should be said, or a wrong date; as drafted both cannot be as described.",
+      "fix": "SOURCED: Tax Institute recommends 'Division 296 liabilities should cease on death' - submission to Treasury, published 16 April 2026 (after the 7 April closing date; confirm the lodgement date before relying on it).",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesC/P18 evidence_ref (RBA Box C)",
+      "quote": "and switching reached 8% at some funds - RBA Financial Stability Review, April 2021, Box C",
+      "problem": "wrong-citation",
+      "severity": "minor",
+      "why": "Verified: Box C says member switching flows 'were as high as 3-4 per cent of FUM for several large funds and 8 per cent for one medium-sized fund', against about 1.5 per cent system-wide. 'Some funds' pluralises a single-fund observation and drops the size qualifier. The $36bn / 2 per cent and 'more than 5 per cent of FUM' figures in the same ref are sound.",
+      "fix": "and switching reached 8% of FUM at one medium-sized fund, with several large funds at 3-4% against about 1.5% system-wide - RBA Financial Stability Review, April 2021, Box C",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "issuesB/P12 plain English (cost per member)",
+      "quote": "even on a generous assumption it is of the order of a dollar or two per member per year",
+      "problem": "internally-inconsistent",
+      "severity": "minor",
+      "why": "The item's own arithmetic runs the generous case at ten times the Treasury figure and lands on 'about 60 cents per account per year'. The plain-English number is two to three times the item's own generous estimate and has no derivation.",
+      "fix": "even on a generous assumption - ten times the only published Commonwealth costing - it is of the order of 60 cents per member per year",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "audit row 37 (Impact Analysis authorship)",
+      "quote": "Office of Impact Analysis, 'Impact Analysis: Better Targeted Superannuation Concessions', Treasury, January 2024.",
+      "problem": "wrong-attribution",
+      "severity": "minor",
+      "why": "The document is Treasury's - its copyright and attribution pages are Treasury's own. The Office of Impact Analysis (in PM&C) assesses and publishes impact analyses; it does not author them. The note refers to it simply as the Treasury Impact Analysis.",
+      "fix": "Treasury, 'Impact Analysis: Better Targeted Superannuation Concessions', January 2024, assessed and published by the Office of Impact Analysis (Department of the Prime Minister and Cabinet).",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "audit row 27 (bracket denominator)",
+      "quote": "$441.5bn of members' benefits (13.8%)",
+      "problem": "internally-inconsistent",
+      "severity": "minor",
+      "why": "13.8% implies a denominator of about $3,199bn in total members' benefits, while row 30 uses APRA-regulated assets of $3,141.1bn at the same date. Members' benefits cannot exceed assets for one population, so the two rows are drawing on different collections and the row - tagged 'verified' - leaves the reader to infer it.",
+      "fix": "and $441.5bn of members' benefits, being 13.8% of the $3,206.2bn of total members' benefits reported in that table - a different and larger denominator than the $3,141.1bn of total APRA-regulated assets used elsewhere in this annex - with an average balance in the bracket of $1.45m.",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "framework verdict SPS 515 (paragraph caution)",
+      "quote": "two of the paragraph numbers that were checked elsewhere in the draft proved to be off by one",
+      "problem": "internally-inconsistent",
+      "severity": "minor",
+      "why": "The annex records three paragraph corrections: CPS 230 para 23 to 24, the CPS 230 service provider limb starting at 47 not 48, and SPS 530's stress testing programme (para 29 to 30). Understating the error rate weakens the caution the sentence exists to justify.",
+      "fix": "three of the paragraph numbers checked elsewhere in the draft proved to be wrong, by one or two paragraphs",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "headline figure 8 (ATO request timetable)",
+      "quote": "other APRA-regulated funds from April with 28 calendar days",
+      "problem": "incomplete",
+      "severity": "minor",
+      "why": "'April' carries no year in a list where every other date is fully specified, and the accompanying meaning field makes clear the competing dates are February 2028 and April 2028. This is the item most likely to be lifted and quoted.",
+      "fix": "other APRA-regulated funds from April 2028 with 28 calendar days",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "provisions table, Division 131 Sch 1 TAA 1953",
+      "quote": "Release authorities",
+      "problem": "wrong-citation",
+      "severity": "minor",
+      "why": "The registered heading of Division 131 in Schedule 1 to the TAA 1953 is 'Releasing money from superannuation' (inserted by Act No 81 of 2016). The table's other rows quote genuine headings, so an informal name in the heading column reads as an error.",
+      "fix": "Heading cell: 'Releasing money from superannuation'. Move the gloss into the 'what' column: 'The release authority machinery, extended to Division 296, so a member can direct that the liability be paid from their superannuation.'",
+      "confidence": "likely",
+      "mechanical": false
+    },
+    {
+      "item_id": "disposition 24 (attack)",
+      "quote": "P1's materiality 5 is the register's only 5",
+      "problem": "internally-inconsistent",
+      "severity": "minor",
+      "why": "Disposition 2 records six likelihood-5 scores, four of which fall to 2-3, leaving two. P1's materiality 5 is therefore at most the only materiality 5, and the claim of singularity does rhetorical work in the argument that the score is unmeasured.",
+      "fix": "P1's materiality 5 is the register's only materiality 5",
+      "confidence": "certain",
+      "mechanical": false
+    },
+    {
+      "item_id": "disposition 36 (attack)",
+      "quote": "roughly $1.42m sector-wide (or even ten times that) spread across 22.5m accounts is cents per member",
+      "problem": "unsupported",
+      "severity": "minor",
+      "why": "The figure drives an accepted materiality reduction and a regrade but carries no attribution in the disposition, and six cents per account is implausibly small for an industry-wide build - which is why the attack hedges with 'or even ten times that'. The number is attributable: it is Treasury's Impact Analysis estimate.",
+      "fix": "roughly $1.42m sector-wide - Treasury's January 2024 Impact Analysis ongoing-cost estimate of $1,421,858 for large APRA-regulated funds and exempt public sector schemes, struck under the superseded design - or even ten times that, spread across 22.5m accounts, is cents per member",
+      "confidence": "certain",
+      "mechanical": false
+    }
+  ],
+  "overall": "fix-then-ship",
+  "rejected": [
+    {
+      "claim": "P4: the SOURCED statement that the enacting Act 'does not use the term RSE licensee at all; it uses superannuation provider' is an unsupported absolute negative and should be hedged with 'Verify the absence of RSE licensee against the Act text before asserting it' plus a '[x]' schedule placeholder.",
+      "why_rejected": "I ran the check the reviewer asked for. The authorised text of the enacting Act (C2026A00008, registered 16/03/2026) contains zero occurrences of 'RSE licensee' and fifteen of 'superannuation provider'. The claim is true, the note states it in its own provisions introduction, and the proposed fix would insert a bracketed placeholder and a verify-before-asserting instruction into a published annex for a fact that is verified. Adding a pinpoint to the inserting Schedule is a cosmetic improvement at most."
+    },
+    {
+      "claim": "Provisions table: 'Better targeted superannuation concessions' is the Division heading, not the Subdivision 296-B heading, so the table mixes levels.",
+      "why_rejected": "Refuted by the primary source. Schedule 1 of the enacting Act reads 'Subdivision 296-B\u2014Better targeted superannuation concessions', immediately followed by 'Guide to Subdivision 296-B'. The annex quotes the registered Subdivision heading correctly, and the proposed replacement would substitute an invented heading."
+    },
+    {
+      "claim": "Audit row 33: the December 2024 thematic 'named no trustees and did not characterise the 12 licensees requiring material improvement by business model or by size', so 'the platform and mid-sized cohort' is an unpublished attribution.",
+      "why_rejected": "Half true and the load-bearing half is wrong. The publication does characterise the cohorts: the eight red-rated on liquidity 'comprised mainly medium sized RSE licensees or those operating a platform business model', and the eight red-rated on valuation governance were 'two platforms, four mid-sized funds and two large funds'. The row's characterisation is sourced. (If anything is worth adding, it is that the valuation limb also included two large funds - not a rewrite of the row.)"
+    },
+    {
+      "claim": "Headline figure 2: 'APRA cannot count, locate or size the affected population from its own collections' is factually wrong because APRA can locate $1m-plus accounts by fund.",
+      "why_rejected": "Duplicate of the SRS 611.0 verdict-row defect, which I have accepted, and the reviewer's replacement would make this item worse: it deletes the whole-of-person point ('the tax threshold is measured across all of a person's superannuation, so more brackets still could not produce the threshold view') that the note itself makes and that is the real reason the affected population cannot be located. The sentence is also about the affected population - people above $3m - not about $1m-plus accounts, and the qualification already follows in the same field. Fix the verdict row only."
+    },
+    {
+      "claim": "Consultation asks 2-8: recast all seven imperative headers as observations, and convert 'APRA should / APRA can' to 'the open question is'.",
+      "why_rejected": "This would make the annex worse and proves too much. The asks are introduced by a framing note explaining they are points to carry into existing engagement, the note itself carries an 'Implications' section addressed to APRA, and every issue in the register has a 'recommended_apra_position' field. An independent research note is entitled to recommend courses of action to a regulator; what it may not do is speak as the regulator. The genuine insider tells - internal enquiries, meetings, the room, the Chair, and the note's own analysis labelled as APRA's - are fixed above."
+    },
+    {
+      "claim": "Framework SRS 611.0: 'Any external commitment should be framed as monitoring large-account behaviour in APRA-regulated funds rather than monitoring the affected population' is an insider imperative directing APRA's public communications.",
+      "why_rejected": "Same reason. It is a recommendation about how a claim would have to be framed to be accurate, and the note makes the identical point ('the honest framing is...'). Recommending is not impersonating. The genuinely overstated part of that row - 'cannot see where they are concentrated' - is fixed separately."
+    },
+    {
+      "claim": "Disposition 25: rewrite the recorded attack 'The register cites 305,000 accounts above $1m averaging $1.45m to argue APRA is blind...' to reframe it around resolution within an open-ended bracket.",
+      "why_rejected": "The disposition table is a record of challenges made and how they were disposed of. Rewriting the words of a recorded attack to improve its analysis falsifies the audit trail, which is the one thing this slice exists to preserve. The substantive point is corrected once, at the SRS 611.0 verdict row."
+    },
+    {
+      "claim": "Disposition 9 should read 'SPS 530 para 29 is not the comprehensive investment stress testing programme; para 31 is, confirmed by para 38's own cross-reference.'",
+      "why_rejected": "The defect is real but the proposed replacement is wrong on the primary source. In the registered SPS 530 (January 2023) para 30 is the programme and para 31 is the adverse stress scenarios; para 38's reference to 'paragraph 31' is an erratum inside the standard. Adopting the reviewer's wording would entrench the wrong number in the very row that records the correction. Corrected wording is given in the fixes."
+    },
+    {
+      "claim": "Audit row 40: 'Provenance should read unverified rather than sourced until the 2025 page is read.'",
+      "why_rejected": "Category error against the annex's own schema: 'unverified' is a value of the separate 'verified' field, not of 'provenance' (whose values are sourced / inferred / created). Applying it would corrupt the taxonomy across the audit trail. The substantive point - that redirecting a citation to a date where the proposition has not been checked is not sourcing - is sound, and the correct fix is to set verified: 'unverified' and add the disclosure sentence to the basis, which the drafters should do; I have not counted it as a separate wording change."
+    },
+    {
+      "claim": "issuesB/P10: 'they face the shorter response window when the Tax Office asks' is unsupported because the window is never defined, quantified or sourced, and the only clocks the slice cites are the 14-day and 7-day duties in s 134-140 and s 134-145.",
+      "why_rejected": "The premise is wrong. The shorter window is the ATO's indicative 10 business days for defined benefit and alternative-method funds against 28 calendar days for other APRA-regulated funds, sourced in P2 and set out again in headline figure 8 with the timing discrepancy disclosed. P10 is the defined benefit item, so the reference is unambiguous in context; requiring every item to restate a figure sourced elsewhere in the same annex is pedantic."
+    },
+    {
+      "claim": "issuesC/P16 instruments: 'SRS 551.0 / SRS 611.0 (inability to decompose outflows)' is a wrong citation because neither standard collects rollovers by destination fund type.",
+      "why_rejected": "The parenthetical describes the limitation of those collections, which is exactly what P6 establishes at length; it does not assert that either standard carries the field. Expanding it to full titles is a marginal tidy, not a defect, and the annex already names both standards in full in P6."
+    }
+  ],
+  "summary": "Adjudicated 76 raised defects down to 65 surviving fixes after dedupe (the commencement-date, member-count, SPG-as-obligation, SPS 530 para-31, insider-register, own-analysis-as-APRA's and CPS 230 'Part 4' classes each collapse to one rule covering multiple slices), with 11 rejections. Verified against primary sources: the enacting Act C2026A00008, CPS 230 (July 2025), SPS 530 (Jan 2023), SPG 530, SPS 515, SRS 553.0, SRS 611.0, APRA's December 2024 thematic, the Treasury Impact Analysis, APRA's MSP-register release, the joint ATO-APRA Payday Super letter, RBA FSR April 2021 Box C and APRA's 2024-25 bulletin highlights. The red team is right about the two worst things: P1 attributes to a named APRA release a purpose quotation that release does not contain (I fetched it twice), and the corrected commencement position in the note - commenced 1 April 2026, first applies 1 July 2026 - is contradicted in six places across four slices, including the row that adjudicates retrospectivity and the ask that would be put to Treasury. It is wrong about four things I could refute from source: the Act genuinely never says 'RSE licensee'; 'Better targeted superannuation concessions' genuinely is the Subdivision 296-B heading; the December 2024 thematic genuinely does characterise the deficient cohorts as platform and mid-sized; and its own replacement for the SPS 530 stress-testing correction perpetuates the wrong paragraph (the programme is para 30, not 31 - para 38's cross-reference is an erratum in the standard). I also declined the wholesale recasting of the consultation asks and of recommendations addressed to APRA: an independent note may recommend to a regulator, and the proposed rewrite would gut the deliverable to cure a tone problem that is properly fixed by removing the meeting, the room, the Chair, the internal enquiries, and the note's own arithmetic labelled as APRA's derivation. Nothing found is unfixable; the annex should not ship until the seven mechanical rules and the ten critical hand-edits are applied."
+}
