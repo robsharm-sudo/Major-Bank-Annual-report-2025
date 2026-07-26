@@ -1,0 +1,50 @@
+{
+  "_note": "Paragraph-level corrections verified by reading the in-force instruments directly, not taken on trust from any agent. Applied by assemble.js across every text field of the register so a wrong citation cannot reach the page. Each entry records what was checked and how.",
+
+  "corrections": [
+    {
+      "find": "CPS 230 para 23",
+      "replace": "CPS 230 para 24",
+      "why": "The obligation to 'manage its full range of operational risks, including but not limited to legal risk, regulatory risk, compliance risk, conduct risk...' is para 24. Para 23 is the separate duty on senior management to give the Board information on impacts to critical operations. Verified against the in-force CPS 230 text."
+    },
+    {
+      "find": "CPS 230 paragraph 23",
+      "replace": "CPS 230 paragraph 24",
+      "why": "Same correction, long form."
+    },
+    {
+      "find": "SPS 530 para 29",
+      "replace": "SPS 530 para 31",
+      "why": "The comprehensive investment stress testing programme is para 31. Para 29 is the Board's duty to ensure a decision to amend an investment strategy is supported by sufficient justification and analysis. Self-confirmed by SPS 530 para 38, which refers to 'the comprehensive investment stress testing program required in paragraph 31'."
+    },
+    {
+      "find": "SPS 530 paragraph 29",
+      "replace": "SPS 530 paragraph 31",
+      "why": "Same correction, long form."
+    },
+    {
+      "find": "SPS 530 paras 29-38",
+      "replace": "SPS 530 paras 31-38",
+      "why": "Range began at the wrong paragraph for the same reason."
+    }
+  ],
+
+  "verified_facts": [
+    {
+      "fact": "Subdivision 296-A of the ITAA 1997 contains only s 296-5, an objects clause, and imposes no obligation on any party.",
+      "basis": "Read verbatim from compiled Income Tax Assessment Act 1997, Compilation No. 266, compilation date 1 July 2026."
+    },
+    {
+      "fact": "The term 'RSE licensee' does not appear in the Treasury Laws Amendment (Building a Stronger and Fairer Super System) Act 2026. The Act uses 'superannuation provider' throughout.",
+      "basis": "Zero matches for 'RSE licensee' against 16 for 'superannuation provider' in the as-made Act text."
+    },
+    {
+      "fact": "s 134-140 of Schedule 1 to the Taxation Administration Act 1953 requires a superannuation provider to notify the Commissioner of the expected payment date of a Division 296 end benefit within 14 days, in the approved form, where the Commissioner keeps a Division 296 debt account for the interest. The section carries an express note that a dissatisfied person may complain under the AFCA scheme.",
+      "basis": "Read verbatim from the as-made Act."
+    },
+    {
+      "fact": "s 134-145 of Schedule 1 to the Taxation Administration Act 1953 requires a material change or omission in a s 134-140 notice to be corrected within 7 days of the entity becoming aware of it.",
+      "basis": "Read verbatim from the as-made Act."
+    }
+  ]
+}

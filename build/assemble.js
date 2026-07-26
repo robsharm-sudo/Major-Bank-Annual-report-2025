@@ -18,8 +18,36 @@ const [researchPath, prosePath, outPath] = process.argv.slice(2);
 const R = JSON.parse(fs.readFileSync(researchPath, "utf8"));
 const P = JSON.parse(fs.readFileSync(prosePath, "utf8"));
 
-const final = R.final || R;           // tolerate either wrapper or bare register
+let final = R.final || R;             // tolerate either wrapper or bare register
 const VALID_PROV = new Set(["sourced", "inferred", "created"]);
+
+// Apply the paragraph-level corrections verified by reading the in-force
+// instruments directly. Done here rather than trusting the register, so a
+// citation we know to be wrong cannot survive into the document.
+let correctionCount = 0;
+try {
+  const VC = JSON.parse(fs.readFileSync(
+    require("path").join(__dirname, "verified_corrections.json"), "utf8"));
+  const walk = node => {
+    if (typeof node === "string") {
+      let s = node;
+      for (const c of VC.corrections) {
+        if (s.includes(c.find)) { s = s.split(c.find).join(c.replace); correctionCount++; }
+      }
+      return s;
+    }
+    if (Array.isArray(node)) return node.map(walk);
+    if (node && typeof node === "object") {
+      const o = {};
+      for (const k of Object.keys(node)) o[k] = walk(node[k]);
+      return o;
+    }
+    return node;
+  };
+  final = walk(final);
+} catch (e) {
+  console.log(`  WARNING: could not apply verified corrections — ${e.message}`);
+}
 
 const problems = [];
 function requireProv(obj, where) {
@@ -81,6 +109,7 @@ console.log(`  framework verdicts: ${out.framework_verdicts.length}`);
 console.log(`  audit rows: ${audit.length}  (verified=${audit.filter(a => a.verified === "verified").length}, contested=${audit.filter(a => a.verified === "contested").length})`);
 console.log(`  red-team dispositions: ${out.redteam_disposition.length}`);
 console.log(`  sources: ${out.sources.length}`);
+console.log(`  verified citation corrections applied: ${correctionCount}`);
 if (problems.length) {
   console.log(`\n  ${problems.length} PROVENANCE PROBLEM(S) - defaulted to "created" so nothing is over-claimed:`);
   problems.slice(0, 20).forEach(p => console.log("   -", p));
