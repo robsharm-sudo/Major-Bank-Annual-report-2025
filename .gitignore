@@ -5,3 +5,5 @@ build/page-*.png
 build/page-*.jpg
 __pycache__/
 *.pyc
+build/_note_*.txt
+build/*.docx
